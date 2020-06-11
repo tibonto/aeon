@@ -1,4 +1,4 @@
-@prefix : <http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#> .
+@prefix : <https://github.com/tibonto/aeon#> .
 @prefix dc: <http://dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/> .
 @prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix bfo: <http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl#> .
@@ -7,16 +7,16 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix aeon: <http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#> .
+@prefix aeon: <https://github.com/tibonto/aeon#> .
 @prefix obda: <https://w3id.org/obda/vocabulary#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent> .
+@base <https://github.com/tibonto/aeon> .
 
-<http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent> rdf:type owl:Ontology ;
-                                                                     owl:versionIRI <http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent/0.3.3> ;
-                                                                     dc:creator "Philip Strömert" ;
-                                                                     rdfs:label "Ontology for the ConfIDent project of TIB and RWTH." ;
-                                                                     owl:versionInfo "version 0.3.4" .
+<https://github.com/tibonto/aeon> rdf:type owl:Ontology ;
+                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.0.1> ;
+                                   dc:creator "Philip Strömert" ;
+                                   <http://purl.org/dc/elements/1.1/description> "The Academic Event Ontology (AEON) is used to represent information regarding academic events. The ontology supports the identification, development, management, evaluation, and impact assessment of events, components of events and event series, as well as identification and reuse of works presented or developed at events. The ontology is independent of knowledge, creative domain, or topics related to events. AEON is focused on events and assumes the representation of many entities associated with events such as attendees, locations, academic works, datetimes, and processes are defined in compatible ontologies." ;
+                                   owl:versionInfo "version 0.0.1" .
 
 #################################################################
 #    Annotation properties
@@ -58,56 +58,56 @@ obo:IAO_0000600 rdf:type owl:AnnotationProperty .
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#definition
-aeon:definition rdf:type owl:AnnotationProperty .
-
-
 ###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
 ns:term_status rdf:type owl:AnnotationProperty .
+
+
+###  https://github.com/tibonto/aeon#definition
+aeon:definition rdf:type owl:AnnotationProperty .
 
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#definesProgram
+###  https://github.com/tibonto/aeon#definesProgram
 aeon:definesProgram rdf:type owl:ObjectProperty ;
                     rdfs:domain aeon:Organizer ;
                     rdfs:range aeon:Program .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#hasAward
+###  https://github.com/tibonto/aeon#hasAward
 aeon:hasAward rdf:type owl:ObjectProperty ;
               rdfs:domain aeon:Event ;
               rdfs:range aeon:Award .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#hasDeadline
+###  https://github.com/tibonto/aeon#hasDeadline
 aeon:hasDeadline rdf:type owl:ObjectProperty ;
                  rdfs:domain aeon:Event ;
                  rdfs:range aeon:Deadline .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#hasDuration
+###  https://github.com/tibonto/aeon#hasDuration
 aeon:hasDuration rdf:type owl:ObjectProperty ;
                  rdfs:domain aeon:Event ,
                              aeon:Role ;
                  rdfs:range aeon:Duration .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#hasEventType
+###  https://github.com/tibonto/aeon#hasEventType
 aeon:hasEventType rdf:type owl:ObjectProperty ;
                   rdfs:domain aeon:Event ;
                   rdfs:range aeon:EventType .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#hasFee
+###  https://github.com/tibonto/aeon#hasFee
 aeon:hasFee rdf:type owl:ObjectProperty ;
             rdfs:domain aeon:Event ;
             rdfs:range aeon:Fee .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#hasIRI
+###  https://github.com/tibonto/aeon#hasIRI
 aeon:hasIRI rdf:type owl:ObjectProperty ;
             rdfs:domain aeon:Agent ,
                         aeon:Event ,
@@ -117,95 +117,95 @@ aeon:hasIRI rdf:type owl:ObjectProperty ;
             rdfs:range aeon:IRI .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#hasLocation
+###  https://github.com/tibonto/aeon#hasLocation
 aeon:hasLocation rdf:type owl:ObjectProperty ;
                  rdfs:domain aeon:Event ;
                  rdfs:range aeon:Location .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#hasOutput
+###  https://github.com/tibonto/aeon#hasOutput
 aeon:hasOutput rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf owl:topObjectProperty ;
                rdfs:domain aeon:Event ;
                rdfs:range aeon:Output .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#hasPart
+###  https://github.com/tibonto/aeon#hasPart
 aeon:hasPart rdf:type owl:ObjectProperty ;
              rdfs:domain aeon:Event ;
              rdfs:range aeon:Event .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#hasProgram
+###  https://github.com/tibonto/aeon#hasProgram
 aeon:hasProgram rdf:type owl:ObjectProperty ;
                 rdfs:domain aeon:Event ;
                 rdfs:range aeon:Program .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#hasRole
+###  https://github.com/tibonto/aeon#hasRole
 aeon:hasRole rdf:type owl:ObjectProperty ;
              owl:inverseOf aeon:isRoleOf ;
              rdfs:domain aeon:Agent ;
              rdfs:range aeon:Role .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#hasSeries
+###  https://github.com/tibonto/aeon#hasSeries
 aeon:hasSeries rdf:type owl:ObjectProperty ;
                owl:inverseOf aeon:isSeriesOf ;
                rdfs:domain aeon:Event ;
                rdfs:range aeon:EventSeries .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#hasUmbrellaEvent
+###  https://github.com/tibonto/aeon#hasUmbrellaEvent
 aeon:hasUmbrellaEvent rdf:type owl:ObjectProperty ;
                       rdfs:domain aeon:Event ;
                       rdfs:range aeon:Event .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#isAbout
+###  https://github.com/tibonto/aeon#isAbout
 aeon:isAbout rdf:type owl:ObjectProperty ;
              rdfs:domain aeon:Event ;
              rdfs:range aeon:Topic .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#isColocatedWith
+###  https://github.com/tibonto/aeon#isColocatedWith
 aeon:isColocatedWith rdf:type owl:ObjectProperty ;
                      rdfs:domain aeon:Event ;
                      rdfs:range aeon:Event .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#isJointEventOf
+###  https://github.com/tibonto/aeon#isJointEventOf
 aeon:isJointEventOf rdf:type owl:ObjectProperty ;
                     rdfs:domain aeon:Event ;
                     rdfs:range aeon:Event .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#isRealizedBy
+###  https://github.com/tibonto/aeon#isRealizedBy
 aeon:isRealizedBy rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:realizesEvent ;
                   rdfs:domain aeon:Event ;
                   rdfs:range aeon:Role .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#isRoleOf
+###  https://github.com/tibonto/aeon#isRoleOf
 aeon:isRoleOf rdf:type owl:ObjectProperty ;
               rdfs:domain aeon:Role ;
               rdfs:range aeon:Agent .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#isSeriesOf
+###  https://github.com/tibonto/aeon#isSeriesOf
 aeon:isSeriesOf rdf:type owl:ObjectProperty ;
                 rdfs:domain aeon:EventSeries ;
                 rdfs:range aeon:Event .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#maintainsSeries
+###  https://github.com/tibonto/aeon#maintainsSeries
 aeon:maintainsSeries rdf:type owl:ObjectProperty ;
                      rdfs:domain aeon:Organizer ;
                      rdfs:range aeon:EventSeries .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#realizesEvent
+###  https://github.com/tibonto/aeon#realizesEvent
 aeon:realizesEvent rdf:type owl:ObjectProperty ;
                    rdfs:domain aeon:Role ;
                    rdfs:range aeon:Event .
@@ -215,32 +215,36 @@ aeon:realizesEvent rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#coordinates
+###  http://www.w3.org/2002/07/owl#topDataProperty
+owl:topDataProperty rdfs:range rdfs:Literal .
+
+
+###  https://github.com/tibonto/aeon#coordinates
 aeon:coordinates rdf:type owl:DatatypeProperty ;
                  rdfs:domain aeon:PhysicalLocation .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#deadlineType
+###  https://github.com/tibonto/aeon#deadlineType
 aeon:deadlineType rdf:type owl:DatatypeProperty ;
                   rdfs:domain aeon:Deadline ;
                   rdfs:range xsd:string ;
                   rdfs:comment "This property should be used to describe the type of deadline. It's possible values are probably a controlled list of strings, such as: submission deadline, notofication deadline, camera-ready deadline, ..."^^xsd:string .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#endDate
+###  https://github.com/tibonto/aeon#endDate
 aeon:endDate rdf:type owl:DatatypeProperty ;
              rdfs:domain aeon:Deadline ,
                          aeon:Duration ;
              rdfs:range xsd:dateTime .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#feeCurrency
+###  https://github.com/tibonto/aeon#feeCurrency
 aeon:feeCurrency rdf:type owl:DatatypeProperty ;
                  rdfs:domain aeon:Fee ;
                  rdfs:comment "This property should have a value from the controlled list defined by the ISO_4217 standard (https://en.wikipedia.org/wiki/ISO_4217)." .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#feeType
+###  https://github.com/tibonto/aeon#feeType
 aeon:feeType rdf:type owl:DatatypeProperty ;
              rdfs:domain aeon:Fee ;
              rdfs:range xsd:string ;
@@ -248,38 +252,34 @@ aeon:feeType rdf:type owl:DatatypeProperty ;
 It might be a controlled list with values such as: normal fee, early bird fee, member fee, reduced fee, student fee."""^^xsd:string .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#feeValue
+###  https://github.com/tibonto/aeon#feeValue
 aeon:feeValue rdf:type owl:DatatypeProperty ;
               rdfs:domain aeon:Fee ;
               rdfs:range xsd:double .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#iriPath
+###  https://github.com/tibonto/aeon#iriPath
 aeon:iriPath rdf:type owl:DatatypeProperty ;
              rdfs:domain aeon:IRI ;
              rdfs:range xsd:anyURI .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#iriScheme
+###  https://github.com/tibonto/aeon#iriScheme
 aeon:iriScheme rdf:type owl:DatatypeProperty ;
                rdfs:domain aeon:IRI ;
                rdfs:range xsd:anyURI .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#isCommitteeChair
+###  https://github.com/tibonto/aeon#isCommitteeChair
 aeon:isCommitteeChair rdf:type owl:DatatypeProperty ;
                       rdfs:domain aeon:CommitteeMember ;
                       rdfs:range xsd:boolean .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#startDate
+###  https://github.com/tibonto/aeon#startDate
 aeon:startDate rdf:type owl:DatatypeProperty ;
                rdfs:domain aeon:Duration ;
                rdfs:range xsd:dateTime .
-
-
-###  http://www.w3.org/2002/07/owl#topDataProperty
-owl:topDataProperty rdfs:range rdfs:Literal .
 
 
 #################################################################
@@ -297,122 +297,122 @@ obo:BFO_0000023 rdf:type owl:Class ;
                                                                                      rdfs:label "bfo:process" .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Agent
+###  https://github.com/tibonto/aeon#Agent
 aeon:Agent rdf:type owl:Class ;
            obo:IAO_0000115 "A material entity (either a human being or an aggregate of humans such as an organization) which is active in a process or has the relevant capabilities of intentionality." ;
            rdfs:label "Agent" .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Attendee
+###  https://github.com/tibonto/aeon#Attendee
 aeon:Attendee rdf:type owl:Class ;
               rdfs:subClassOf aeon:Role .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Award
+###  https://github.com/tibonto/aeon#Award
 aeon:Award rdf:type owl:Class ;
            aeon:definition "An award honours a certain contribution of an academic event. It is usually awarded by the program committee. E.g.: best paper award" .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#City
+###  https://github.com/tibonto/aeon#City
 aeon:City rdf:type owl:Class ;
           rdfs:subClassOf aeon:PhysicalLocation .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Colloquium
+###  https://github.com/tibonto/aeon#Colloquium
 aeon:Colloquium rdf:type owl:Class ;
                 rdfs:subClassOf aeon:EventType .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#CommitteeMember
+###  https://github.com/tibonto/aeon#CommitteeMember
 aeon:CommitteeMember rdf:type owl:Class ;
                      rdfs:subClassOf aeon:Organizer .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Conference
+###  https://github.com/tibonto/aeon#Conference
 aeon:Conference rdf:type owl:Class ;
                 rdfs:subClassOf aeon:EventType .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#ContactPerson
+###  https://github.com/tibonto/aeon#ContactPerson
 aeon:ContactPerson rdf:type owl:Class ;
                    rdfs:subClassOf aeon:Organizer .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Country
+###  https://github.com/tibonto/aeon#Country
 aeon:Country rdf:type owl:Class ;
              rdfs:subClassOf aeon:PhysicalLocation .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Deadline
+###  https://github.com/tibonto/aeon#Deadline
 aeon:Deadline rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Duration
+###  https://github.com/tibonto/aeon#Duration
 aeon:Duration rdf:type owl:Class ;
               rdfs:comment "A timespan constituted by a start time and an end time." .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Event
+###  https://github.com/tibonto/aeon#Event
 aeon:Event rdf:type owl:Class ;
            rdfs:subClassOf <http://www.ontobee.org/ontology/BFO?iri=http://purl.obolibrary.org/obo/BFO_0000015> ;
            obo:IAO_0000112 "The 19th International Semantic Web Conference (ISWC2020) is a scientific event." ;
-           aeon:definition "A scientific event is an organized gathering for researchers (not necessarily academics) to present and discuss their work." ;
-           rdfs:label "Event" .
+           rdfs:label "Event" ;
+           aeon:definition "A scientific event is an organized gathering for researchers (not necessarily academics) to present and discuss their work." .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#EventSeries
+###  https://github.com/tibonto/aeon#EventSeries
 aeon:EventSeries rdf:type owl:Class ;
                  rdfs:subClassOf <http://www.ontobee.org/ontology/BFO?iri=http://purl.obolibrary.org/obo/BFO_0000015> ;
                  obo:IAO_0000112 "International Semantic Web Conference (ISWC) series" ;
                  rdfs:label "Event Series" .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#EventType
+###  https://github.com/tibonto/aeon#EventType
 aeon:EventType rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Fee
+###  https://github.com/tibonto/aeon#Fee
 aeon:Fee rdf:type owl:Class ;
          obo:IAO_0000115 "The financial cost of attendance at a scientific event." .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Forum
+###  https://github.com/tibonto/aeon#Forum
 aeon:Forum rdf:type owl:Class ;
            rdfs:subClassOf aeon:EventType .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Group
+###  https://github.com/tibonto/aeon#Group
 aeon:Group rdf:type owl:Class ;
            rdfs:subClassOf aeon:Agent ;
            obo:IAO_0000112 "The program committee is a 'group' of persons who have the role to organize the program of a scientific event." ;
            obo:IAO_0000115 "A grouping of persons/individuals who participate in a scientific event via a certain role." .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Hackathon
+###  https://github.com/tibonto/aeon#Hackathon
 aeon:Hackathon rdf:type owl:Class ;
                rdfs:subClassOf aeon:EventType .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#IRI
+###  https://github.com/tibonto/aeon#IRI
 aeon:IRI rdf:type owl:Class ;
          rdfs:comment "URI is used to refer to persistent and non-persistent ressource identifiers." .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#KeynoteSpeaker
+###  https://github.com/tibonto/aeon#KeynoteSpeaker
 aeon:KeynoteSpeaker rdf:type owl:Class ;
                     rdfs:subClassOf aeon:Speaker .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Location
+###  https://github.com/tibonto/aeon#Location
 aeon:Location rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Moderator
+###  https://github.com/tibonto/aeon#Moderator
 aeon:Moderator rdf:type owl:Class ;
                rdfs:subClassOf aeon:Role .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Organisation
+###  https://github.com/tibonto/aeon#Organisation
 aeon:Organisation rdf:type owl:Class ;
                   rdfs:subClassOf aeon:Agent ;
                   obo:IAO_0000112 "TIB is an organisation." ;
@@ -420,17 +420,17 @@ aeon:Organisation rdf:type owl:Class ;
                   obo:IAO_0000600 "institutional body (research organization, society, association etc.)" .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Organizer
+###  https://github.com/tibonto/aeon#Organizer
 aeon:Organizer rdf:type owl:Class ;
                rdfs:subClassOf aeon:Role .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Output
+###  https://github.com/tibonto/aeon#Output
 aeon:Output rdf:type owl:Class ;
             rdfs:comment "The container for information about the event publications (including non academic publications)" .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Person
+###  https://github.com/tibonto/aeon#Person
 aeon:Person rdf:type owl:Class ;
             rdfs:subClassOf aeon:Agent ;
             obo:IAO_0000112 "Tim Berners Lee is a person." ;
@@ -438,82 +438,82 @@ aeon:Person rdf:type owl:Class ;
             obo:IAO_0000118 "human; human being; individual" .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#PhysicalLocation
+###  https://github.com/tibonto/aeon#PhysicalLocation
 aeon:PhysicalLocation rdf:type owl:Class ;
                       rdfs:subClassOf aeon:Location ;
                       rdfs:label "Physical Location" .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Program
+###  https://github.com/tibonto/aeon#Program
 aeon:Program rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Reviewer
+###  https://github.com/tibonto/aeon#Reviewer
 aeon:Reviewer rdf:type owl:Class ;
               rdfs:subClassOf aeon:Role .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Role
+###  https://github.com/tibonto/aeon#Role
 aeon:Role rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Seminar
+###  https://github.com/tibonto/aeon#Seminar
 aeon:Seminar rdf:type owl:Class ;
              rdfs:subClassOf aeon:EventType .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Session
+###  https://github.com/tibonto/aeon#Session
 aeon:Session rdf:type owl:Class ;
              rdfs:subClassOf aeon:EventType ;
              obo:IAO_0000115 "A part of a scientific event." .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Speaker
+###  https://github.com/tibonto/aeon#Speaker
 aeon:Speaker rdf:type owl:Class ;
              rdfs:subClassOf aeon:Role .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Sponsor
+###  https://github.com/tibonto/aeon#Sponsor
 aeon:Sponsor rdf:type owl:Class ;
              rdfs:subClassOf aeon:Role .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#State
+###  https://github.com/tibonto/aeon#State
 aeon:State rdf:type owl:Class ;
            rdfs:subClassOf aeon:PhysicalLocation .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Symposium
+###  https://github.com/tibonto/aeon#Symposium
 aeon:Symposium rdf:type owl:Class ;
                rdfs:subClassOf aeon:EventType .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Talk
+###  https://github.com/tibonto/aeon#Talk
 aeon:Talk rdf:type owl:Class ;
           rdfs:subClassOf aeon:EventType .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Topic
+###  https://github.com/tibonto/aeon#Topic
 aeon:Topic rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Tutorial
+###  https://github.com/tibonto/aeon#Tutorial
 aeon:Tutorial rdf:type owl:Class ;
               rdfs:subClassOf aeon:EventType .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Venue
+###  https://github.com/tibonto/aeon#Venue
 aeon:Venue rdf:type owl:Class ;
            rdfs:subClassOf aeon:PhysicalLocation .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#VirtualLocation
+###  https://github.com/tibonto/aeon#VirtualLocation
 aeon:VirtualLocation rdf:type owl:Class ;
                      rdfs:subClassOf aeon:Location ;
                      rdfs:label "Virtual Location" .
 
 
-###  http://www.semanticweb.org/stroemertp/ontologies/2019/9/confIDent#Workshop
+###  https://github.com/tibonto/aeon#Workshop
 aeon:Workshop rdf:type owl:Class ;
               rdfs:subClassOf aeon:EventType .
 
