@@ -1,0 +1,16 @@
+# Ontology metadata attributes required for registration in the TIB ontology hub.
+# This file should be maintained under the source control and must be released anongside the ontology, under the same versioning scheme.
+# The file name is identical to the ontology's ttl file with .txt extension.
+
+shortName: AEON
+title: Academic Event Ontology
+description: The Academic Event Ontology (AEON) is used to represent information regarding academic events. The ontology supports the identification, development, management, evaluation, and impact assessment of events, components of events and event series, as well as identification and reuse of works presented or developed at events. The ontology is independent of knowledge, creative domain, or topics related to events. AEON is focused on events and assumes the representation of many entities associated with events such as attendees, locations, academic works, datetimes, and processes are defined in compatible ontologies.
+autorFullName: Philip Strömert; Christian Hauschke; Mike Conlon
+authorEmail: philip.stroemert@tib.eu
+maintainerFullname: Project ConfIDent
+maintainerEmail: confIDent@tib.eu
+keywords: academic events, research impact; scientometrics
+license: GNU General Public License v3.0
+version: v0.1
+repositoryURL: https://github.com/tibonto/aeon
+releaseURL: https://github.com/tibonto/aeon/releases/tag/v0.1
