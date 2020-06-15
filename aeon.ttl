@@ -16,6 +16,7 @@
                                    owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.0.1> ;
                                    dc:creator "Philip Strömert" ;
                                    <http://purl.org/dc/elements/1.1/description> "The Academic Event Ontology (AEON) is used to represent information regarding academic events. The ontology supports the identification, development, management, evaluation, and impact assessment of events, components of events and event series, as well as identification and reuse of works presented or developed at events. The ontology is independent of knowledge, creative domain, or topics related to events. AEON is focused on events and assumes the representation of many entities associated with events such as attendees, locations, academic works, datetimes, and processes are defined in compatible ontologies." ;
+                                   <http://purl.org/dc/elements/1.1/title> "Academic Event Ontology"@en ;
                                    owl:versionInfo "version 0.0.1" .
 
 #################################################################
@@ -111,6 +112,7 @@ aeon:hasFee rdf:type owl:ObjectProperty ;
 aeon:hasIRI rdf:type owl:ObjectProperty ;
             rdfs:domain aeon:Agent ,
                         aeon:Event ,
+                        aeon:EventSeries ,
                         aeon:Location ,
                         aeon:Output ,
                         aeon:Topic ;
@@ -224,13 +226,6 @@ aeon:coordinates rdf:type owl:DatatypeProperty ;
                  rdfs:domain aeon:PhysicalLocation .
 
 
-###  https://github.com/tibonto/aeon#deadlineType
-aeon:deadlineType rdf:type owl:DatatypeProperty ;
-                  rdfs:domain aeon:Deadline ;
-                  rdfs:range xsd:string ;
-                  rdfs:comment "This property should be used to describe the type of deadline. It's possible values are probably a controlled list of strings, such as: submission deadline, notofication deadline, camera-ready deadline, ..."^^xsd:string .
-
-
 ###  https://github.com/tibonto/aeon#endDate
 aeon:endDate rdf:type owl:DatatypeProperty ;
              rdfs:domain aeon:Deadline ,
@@ -242,14 +237,6 @@ aeon:endDate rdf:type owl:DatatypeProperty ;
 aeon:feeCurrency rdf:type owl:DatatypeProperty ;
                  rdfs:domain aeon:Fee ;
                  rdfs:comment "This property should have a value from the controlled list defined by the ISO_4217 standard (https://en.wikipedia.org/wiki/ISO_4217)." .
-
-
-###  https://github.com/tibonto/aeon#feeType
-aeon:feeType rdf:type owl:DatatypeProperty ;
-             rdfs:domain aeon:Fee ;
-             rdfs:range xsd:string ;
-             rdfs:comment """This string should be used to decribe the type of the fee.
-It might be a controlled list with values such as: normal fee, early bird fee, member fee, reduced fee, student fee."""^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#feeValue
@@ -268,12 +255,6 @@ aeon:iriPath rdf:type owl:DatatypeProperty ;
 aeon:iriScheme rdf:type owl:DatatypeProperty ;
                rdfs:domain aeon:IRI ;
                rdfs:range xsd:anyURI .
-
-
-###  https://github.com/tibonto/aeon#isCommitteeChair
-aeon:isCommitteeChair rdf:type owl:DatatypeProperty ;
-                      rdfs:domain aeon:CommitteeMember ;
-                      rdfs:range xsd:boolean .
 
 
 ###  https://github.com/tibonto/aeon#startDate
@@ -295,6 +276,12 @@ obo:BFO_0000023 rdf:type owl:Class ;
 ###  http://www.ontobee.org/ontology/BFO?iri=http://purl.obolibrary.org/obo/BFO_0000015
 <http://www.ontobee.org/ontology/BFO?iri=http://purl.obolibrary.org/obo/BFO_0000015> rdf:type owl:Class ;
                                                                                      rdfs:label "bfo:process" .
+
+
+###  https://github.com/tibonto/aeon#Abstract_Deadline
+aeon:Abstract_Deadline rdf:type owl:Class ;
+                       rdfs:subClassOf aeon:Deadline ;
+                       rdfs:label "Abstract Deadline" .
 
 
 ###  https://github.com/tibonto/aeon#Agent
@@ -323,6 +310,11 @@ aeon:Colloquium rdf:type owl:Class ;
                 rdfs:subClassOf aeon:EventType .
 
 
+###  https://github.com/tibonto/aeon#CommitteeChair
+aeon:CommitteeChair rdf:type owl:Class ;
+                    rdfs:subClassOf aeon:CommitteeMember .
+
+
 ###  https://github.com/tibonto/aeon#CommitteeMember
 aeon:CommitteeMember rdf:type owl:Class ;
                      rdfs:subClassOf aeon:Organizer .
@@ -347,6 +339,12 @@ aeon:Country rdf:type owl:Class ;
 aeon:Deadline rdf:type owl:Class .
 
 
+###  https://github.com/tibonto/aeon#Demo_Deadline
+aeon:Demo_Deadline rdf:type owl:Class ;
+                   rdfs:subClassOf aeon:Deadline ;
+                   rdfs:label "Demo Deadline" .
+
+
 ###  https://github.com/tibonto/aeon#Duration
 aeon:Duration rdf:type owl:Class ;
               rdfs:comment "A timespan constituted by a start time and an end time." .
@@ -355,6 +353,7 @@ aeon:Duration rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#Event
 aeon:Event rdf:type owl:Class ;
            rdfs:subClassOf <http://www.ontobee.org/ontology/BFO?iri=http://purl.obolibrary.org/obo/BFO_0000015> ;
+           owl:disjointWith aeon:EventSeries ;
            obo:IAO_0000112 "The 19th International Semantic Web Conference (ISWC2020) is a scientific event." ;
            rdfs:label "Event" ;
            aeon:definition "A scientific event is an organized gathering for researchers (not necessarily academics) to present and discuss their work." .
@@ -412,6 +411,12 @@ aeon:Moderator rdf:type owl:Class ;
                rdfs:subClassOf aeon:Role .
 
 
+###  https://github.com/tibonto/aeon#Notification_Deadline
+aeon:Notification_Deadline rdf:type owl:Class ;
+                           rdfs:subClassOf aeon:Deadline ;
+                           rdfs:label "Notification Deadline" .
+
+
 ###  https://github.com/tibonto/aeon#Organisation
 aeon:Organisation rdf:type owl:Class ;
                   rdfs:subClassOf aeon:Agent ;
@@ -430,6 +435,12 @@ aeon:Output rdf:type owl:Class ;
             rdfs:comment "The container for information about the event publications (including non academic publications)" .
 
 
+###  https://github.com/tibonto/aeon#Paper_Deadline
+aeon:Paper_Deadline rdf:type owl:Class ;
+                    rdfs:subClassOf aeon:Deadline ;
+                    rdfs:label "Paper Deadline" .
+
+
 ###  https://github.com/tibonto/aeon#Person
 aeon:Person rdf:type owl:Class ;
             rdfs:subClassOf aeon:Agent ;
@@ -441,7 +452,14 @@ aeon:Person rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#PhysicalLocation
 aeon:PhysicalLocation rdf:type owl:Class ;
                       rdfs:subClassOf aeon:Location ;
+                      owl:disjointWith aeon:VirtualLocation ;
                       rdfs:label "Physical Location" .
+
+
+###  https://github.com/tibonto/aeon#Poster_Deadline
+aeon:Poster_Deadline rdf:type owl:Class ;
+                     rdfs:subClassOf aeon:Deadline ;
+                     rdfs:label "Poster Deadline" .
 
 
 ###  https://github.com/tibonto/aeon#Program
@@ -483,6 +501,12 @@ aeon:State rdf:type owl:Class ;
            rdfs:subClassOf aeon:PhysicalLocation .
 
 
+###  https://github.com/tibonto/aeon#Submission_Deadline
+aeon:Submission_Deadline rdf:type owl:Class ;
+                         rdfs:subClassOf aeon:Deadline ;
+                         rdfs:label "Submission Deadline" .
+
+
 ###  https://github.com/tibonto/aeon#Symposium
 aeon:Symposium rdf:type owl:Class ;
                rdfs:subClassOf aeon:EventType .
@@ -502,6 +526,12 @@ aeon:Tutorial rdf:type owl:Class ;
               rdfs:subClassOf aeon:EventType .
 
 
+###  https://github.com/tibonto/aeon#Tutorial_Deadline
+aeon:Tutorial_Deadline rdf:type owl:Class ;
+                       rdfs:subClassOf aeon:Deadline ;
+                       rdfs:label "Tutorial Deadline" .
+
+
 ###  https://github.com/tibonto/aeon#Venue
 aeon:Venue rdf:type owl:Class ;
            rdfs:subClassOf aeon:PhysicalLocation .
@@ -518,6 +548,12 @@ aeon:Workshop rdf:type owl:Class ;
               rdfs:subClassOf aeon:EventType .
 
 
+###  https://github.com/tibonto/aeon#Workshop_Deadline
+aeon:Workshop_Deadline rdf:type owl:Class ;
+                       rdfs:subClassOf aeon:Deadline ;
+                       rdfs:label "Workshop Deadline" .
+
+
 [ rdfs:label "example"
 ] .
 
@@ -526,18 +562,31 @@ aeon:Workshop rdf:type owl:Class ;
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-   owl:members ( aeon:Colloquium
-                 aeon:Conference
-                 aeon:Forum
-                 aeon:Hackathon
-                 aeon:Seminar
-                 aeon:Session
-                 aeon:Symposium
-                 aeon:Talk
-                 aeon:Tutorial
-                 aeon:Workshop
+   owl:members ( aeon:Abstract_Deadline
+                 aeon:Demo_Deadline
+                 aeon:Notification_Deadline
+                 aeon:Paper_Deadline
+                 aeon:Poster_Deadline
+                 aeon:Submission_Deadline
+                 aeon:Tutorial_Deadline
+                 aeon:Workshop_Deadline
                )
  ] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( aeon:Colloquium
+                aeon:Conference
+                aeon:Forum
+                aeon:Hackathon
+                aeon:Seminar
+                aeon:Session
+                aeon:Symposium
+                aeon:Talk
+                aeon:Tutorial
+                aeon:Workshop
+              )
+] .
 
 
 [ rdf:type owl:AllDisjointClasses ;
@@ -549,6 +598,25 @@ aeon:Workshop rdf:type owl:Class ;
                 aeon:Talk
                 aeon:Tutorial
                 aeon:Workshop
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( aeon:Group
+                aeon:Organisation
+                aeon:Person
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( aeon:Moderator
+                aeon:Organizer
+                aeon:Reviewer
+                aeon:Speaker
+                aeon:Sponsor
+                aeon:VirtualLocation
               )
 ] .
 
