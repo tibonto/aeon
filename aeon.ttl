@@ -1,4 +1,4 @@
-@prefix : <https://github.com/tibonto/aeon#> .
+@prefix : <https://github.com/tibonto/aeon/> .
 @prefix dc: <http://dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/> .
 @prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix bfo: <http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl#> .
@@ -269,15 +269,17 @@ aeon:startDate rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
+###  http://purl.obolibrary.org/obo/BFO_0000015
+obo:BFO_0000015 rdf:type owl:Class ;
+                obo:IAO_0000115 "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])"@en ;
+                rdfs:isDefinedBy "http://purl.obolibrary.org/obo/bfo.owl"^^xsd:anyURI ;
+                rdfs:label "Process"@en .
+
+
 ###  http://purl.obolibrary.org/obo/BFO_0000023
 obo:BFO_0000023 rdf:type owl:Class ;
                 owl:equivalentClass aeon:Role ;
                 rdfs:label "bfo:role" .
-
-
-###  http://www.ontobee.org/ontology/BFO?iri=http://purl.obolibrary.org/obo/BFO_0000015
-<http://www.ontobee.org/ontology/BFO?iri=http://purl.obolibrary.org/obo/BFO_0000015> rdf:type owl:Class ;
-                                                                                     rdfs:label "bfo:process" .
 
 
 ###  https://github.com/tibonto/aeon#Abstract_Deadline
@@ -354,7 +356,7 @@ aeon:Duration rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#Event
 aeon:Event rdf:type owl:Class ;
-           rdfs:subClassOf <http://www.ontobee.org/ontology/BFO?iri=http://purl.obolibrary.org/obo/BFO_0000015> ;
+           rdfs:subClassOf obo:BFO_0000015 ;
            owl:disjointWith aeon:EventSeries ;
            obo:IAO_0000112 "The 19th International Semantic Web Conference (ISWC2020) is a scientific event." ;
            rdfs:label "Event" ;
@@ -363,7 +365,7 @@ aeon:Event rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#EventSeries
 aeon:EventSeries rdf:type owl:Class ;
-                 rdfs:subClassOf <http://www.ontobee.org/ontology/BFO?iri=http://purl.obolibrary.org/obo/BFO_0000015> ;
+                 rdfs:subClassOf obo:BFO_0000015 ;
                  obo:IAO_0000112 "International Semantic Web Conference (ISWC) series" ;
                  rdfs:label "Event Series" .
 
