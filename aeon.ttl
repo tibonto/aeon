@@ -13,7 +13,7 @@
 @base <https://github.com/tibonto/aeon> .
 
 <https://github.com/tibonto/aeon> rdf:type owl:Ontology ;
-                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.0.1> ;
+                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/confident_v0.0.1> ;
                                    dc:creator "Philip Strömert" ;
                                    <http://purl.org/dc/elements/1.1/creator> "Christian Hauschke" ,
                                                                              "Michael Conlon" ;
@@ -63,6 +63,14 @@ obo:IAO_0000600 rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
 ns:term_status rdf:type owl:AnnotationProperty .
+
+
+###  https://github.com/tibonto/aeon#BFO_0000180
+aeon:BFO_0000180 rdf:type owl:AnnotationProperty .
+
+
+###  https://github.com/tibonto/aeon#IAO_0000112
+aeon:IAO_0000112 rdf:type owl:AnnotationProperty .
 
 
 ###  https://github.com/tibonto/aeon#definition
@@ -256,7 +264,33 @@ aeon:iriPath rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#iriScheme
 aeon:iriScheme rdf:type owl:DatatypeProperty ;
                rdfs:domain aeon:IRI ;
-               rdfs:range xsd:anyURI .
+               rdfs:range xsd:string .
+
+
+###  https://github.com/tibonto/aeon#iriType
+aeon:iriType rdf:type owl:DatatypeProperty ;
+             rdfs:domain aeon:IRI ;
+             rdfs:range [ rdf:type rdfs:Datatype ;
+                          owl:oneOf [ rdf:type rdf:List ;
+                                      rdf:first "DOI" ;
+                                      rdf:rest [ rdf:type rdf:List ;
+                                                 rdf:first "GRID" ;
+                                                 rdf:rest [ rdf:type rdf:List ;
+                                                            rdf:first "ISSN" ;
+                                                            rdf:rest [ rdf:type rdf:List ;
+                                                                       rdf:first "ORCID" ;
+                                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                                  rdf:first "ROR" ;
+                                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                                             rdf:first "other" ;
+                                                                                             rdf:rest rdf:nil
+                                                                                           ]
+                                                                                ]
+                                                                     ]
+                                                          ]
+                                               ]
+                                    ]
+                        ] .
 
 
 ###  https://github.com/tibonto/aeon#startDate
@@ -273,13 +307,14 @@ aeon:startDate rdf:type owl:DatatypeProperty ;
 obo:BFO_0000015 rdf:type owl:Class ;
                 obo:IAO_0000115 "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])"@en ;
                 rdfs:isDefinedBy "http://purl.obolibrary.org/obo/bfo.owl"^^xsd:anyURI ;
-                rdfs:label "Process"@en .
+                rdfs:label "Process"@en ;
+                aeon:BFO_0000180 "Process" .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000023
 obo:BFO_0000023 rdf:type owl:Class ;
                 owl:equivalentClass aeon:Role ;
-                rdfs:label "bfo:role" .
+                rdfs:label "Role"@en .
 
 
 ###  https://github.com/tibonto/aeon#Abstract_Deadline
@@ -556,6 +591,39 @@ aeon:Workshop rdf:type owl:Class ;
 aeon:Workshop_Deadline rdf:type owl:Class ;
                        rdfs:subClassOf aeon:Deadline ;
                        rdfs:label "Workshop Deadline" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://github.com/tibonto/aeon#ORCID-1
+aeon:ORCID-1 rdf:type owl:NamedIndividual ,
+                      aeon:IRI ;
+             aeon:iriPath "0000-0002-1595-3213" ;
+             aeon:iriScheme "https://orcid.org/" ;
+             aeon:iriType "ORCID" .
+
+
+###  https://github.com/tibonto/aeon#PIDapalooza
+aeon:PIDapalooza rdf:type owl:NamedIndividual ,
+                          aeon:EventSeries ;
+                 aeon:isSeriesOf aeon:PIDapalooza2020 ;
+                 rdfs:label "PIDapalooza"@en .
+
+
+###  https://github.com/tibonto/aeon#PIDapalooza2020
+aeon:PIDapalooza2020 rdf:type owl:NamedIndividual ,
+                              aeon:Event ;
+                     aeon:hasSeries aeon:PIDapalooza ;
+                     aeon:isRealizedBy aeon:PS ;
+                     rdfs:label "PIDapalooza2020"@en .
+
+
+###  https://github.com/tibonto/aeon#PS
+aeon:PS rdf:type owl:NamedIndividual ,
+                 aeon:Person ;
+        rdfs:label "Philip Strömert"@en .
 
 
 [ rdfs:label "example"
