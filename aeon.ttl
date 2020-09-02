@@ -98,14 +98,14 @@ aeon:has_attendee rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_committee_chair
 aeon:has_committee_chair rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf aeon:has_committee_member ;
-                         rdfs:domain aeon:Event ;
+                         rdfs:domain aeon:Committee ;
                          rdfs:range aeon:Person .
 
 
 ###  https://github.com/tibonto/aeon#has_committee_member
 aeon:has_committee_member rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf aeon:has_organizer ;
-                          rdfs:domain aeon:Event ;
+                          rdfs:domain aeon:Committee ;
                           rdfs:range aeon:Person .
 
 
@@ -132,14 +132,17 @@ aeon:has_event_type rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_external_identifier
 aeon:has_external_identifier rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf aeon:has_identifier ;
-                             rdfs:range aeon:ExternalIdentifier ;
-                             rdfs:label "external_ID"^^xsd:string .
+                             rdfs:range aeon:ExternalIdentifier .
 
 
 ###  https://github.com/tibonto/aeon#has_fee
 aeon:has_fee rdf:type owl:ObjectProperty ;
              rdfs:domain aeon:Event ;
-             rdfs:range aeon:Fee .
+             rdfs:range aeon:Fee ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty aeon:event_fee ;
+                          owl:someValuesFrom rdfs:Literal
+                        ] .
 
 
 ###  https://github.com/tibonto/aeon#has_finance_committee_chair
@@ -151,17 +154,23 @@ aeon:has_finance_committee_chair rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_finance_committee_member
 aeon:has_finance_committee_member rdf:type owl:ObjectProperty ;
-                                  rdfs:subPropertyOf aeon:has_committee_member .
+                                  rdfs:subPropertyOf aeon:has_committee_member ;
+                                  rdfs:domain aeon:Event ;
+                                  rdfs:range aeon:Person .
 
 
 ###  https://github.com/tibonto/aeon#has_general_committee_chair
 aeon:has_general_committee_chair rdf:type owl:ObjectProperty ;
-                                 rdfs:subPropertyOf aeon:has_committee_member .
+                                 rdfs:subPropertyOf aeon:has_committee_member ;
+                                 rdfs:domain aeon:Event ;
+                                 rdfs:range aeon:Person .
 
 
 ###  https://github.com/tibonto/aeon#has_general_committee_member
 aeon:has_general_committee_member rdf:type owl:ObjectProperty ;
-                                  rdfs:subPropertyOf aeon:has_committee_member .
+                                  rdfs:subPropertyOf aeon:has_committee_member ;
+                                  rdfs:domain aeon:Event ;
+                                  rdfs:range aeon:Person .
 
 
 ###  https://github.com/tibonto/aeon#has_identifier
@@ -186,12 +195,16 @@ aeon:has_keynote_speaker rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_local_committee_chair
 aeon:has_local_committee_chair rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf aeon:has_committee_member .
+                               rdfs:subPropertyOf aeon:has_committee_member ;
+                               rdfs:domain aeon:Event ;
+                               rdfs:range aeon:Person .
 
 
 ###  https://github.com/tibonto/aeon#has_local_committee_member
 aeon:has_local_committee_member rdf:type owl:ObjectProperty ;
-                                rdfs:subPropertyOf aeon:has_committee_member .
+                                rdfs:subPropertyOf aeon:has_committee_member ;
+                                rdfs:domain aeon:Event ;
+                                rdfs:range aeon:Person .
 
 
 ###  https://github.com/tibonto/aeon#has_moderator
@@ -244,32 +257,44 @@ aeon:has_person_identifier rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_programme_committee_chair
 aeon:has_programme_committee_chair rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf aeon:has_committee_member .
+                                   rdfs:subPropertyOf aeon:has_committee_member ;
+                                   rdfs:domain aeon:Event ;
+                                   rdfs:range aeon:Person .
 
 
 ###  https://github.com/tibonto/aeon#has_programme_committee_member
 aeon:has_programme_committee_member rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf aeon:has_committee_member .
+                                    rdfs:subPropertyOf aeon:has_committee_member ;
+                                    rdfs:domain aeon:Event ;
+                                    rdfs:range aeon:Person .
 
 
 ###  https://github.com/tibonto/aeon#has_publication_committee_chair
 aeon:has_publication_committee_chair rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf aeon:has_committee_member .
+                                     rdfs:subPropertyOf aeon:has_committee_member ;
+                                     rdfs:domain aeon:Event ;
+                                     rdfs:range aeon:Person .
 
 
 ###  https://github.com/tibonto/aeon#has_publication_committee_member
 aeon:has_publication_committee_member rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf aeon:has_committee_member .
+                                      rdfs:subPropertyOf aeon:has_committee_member ;
+                                      rdfs:domain aeon:Event ;
+                                      rdfs:range aeon:Person .
 
 
 ###  https://github.com/tibonto/aeon#has_publicity_committee_chair
 aeon:has_publicity_committee_chair rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf aeon:has_committee_member .
+                                   rdfs:subPropertyOf aeon:has_committee_member ;
+                                   rdfs:domain aeon:Event ;
+                                   rdfs:range aeon:Person .
 
 
 ###  https://github.com/tibonto/aeon#has_publicity_committee_member
 aeon:has_publicity_committee_member rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf aeon:has_committee_member .
+                                    rdfs:subPropertyOf aeon:has_committee_member ;
+                                    rdfs:domain aeon:Event ;
+                                    rdfs:range aeon:Person .
 
 
 ###  https://github.com/tibonto/aeon#has_reviewer
@@ -290,37 +315,50 @@ aeon:has_speaker rdf:type owl:ObjectProperty ;
 aeon:has_sponsor rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf owl:topObjectProperty ;
                  rdfs:domain obo:BFO_0000015 ;
-                 rdfs:range aeon:Agent .
+                 rdfs:range aeon:Agent ;
+                 rdfs:comment "PS 2-9-2020: The various types of sponsorships (e.g. gold, silver, bronce...) still need to be modeled, preferably with a property \"sponsor_type\". Yet the possible sponsor types shoud not be limited, as there are various schemes."@en .
 
 
 ###  https://github.com/tibonto/aeon#has_sponsorship_committee_chair
 aeon:has_sponsorship_committee_chair rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf aeon:has_committee_member .
+                                     rdfs:subPropertyOf aeon:has_committee_member ;
+                                     rdfs:domain aeon:Event ;
+                                     rdfs:range aeon:Person .
 
 
 ###  https://github.com/tibonto/aeon#has_sponsorship_committee_member
 aeon:has_sponsorship_committee_member rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf aeon:has_committee_member .
+                                      rdfs:subPropertyOf aeon:has_committee_member ;
+                                      rdfs:domain aeon:Event ;
+                                      rdfs:range aeon:Person .
 
 
 ###  https://github.com/tibonto/aeon#has_steering_committee_chair
 aeon:has_steering_committee_chair rdf:type owl:ObjectProperty ;
-                                  rdfs:subPropertyOf aeon:has_committee_member .
+                                  rdfs:subPropertyOf aeon:has_committee_member ;
+                                  rdfs:domain aeon:Event ;
+                                  rdfs:range aeon:Person .
 
 
 ###  https://github.com/tibonto/aeon#has_steering_committee_member
 aeon:has_steering_committee_member rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf aeon:has_committee_member .
+                                   rdfs:subPropertyOf aeon:has_committee_member ;
+                                   rdfs:domain aeon:Event ;
+                                   rdfs:range aeon:Person .
 
 
 ###  https://github.com/tibonto/aeon#has_technical_committee_chair
 aeon:has_technical_committee_chair rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf aeon:has_committee_member .
+                                   rdfs:subPropertyOf aeon:has_committee_member ;
+                                   rdfs:domain aeon:Event ;
+                                   rdfs:range aeon:Person .
 
 
 ###  https://github.com/tibonto/aeon#has_technical_committee_member
 aeon:has_technical_committee_member rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf aeon:has_committee_member .
+                                    rdfs:subPropertyOf aeon:has_committee_member ;
+                                    rdfs:domain aeon:Event ;
+                                    rdfs:range aeon:Person .
 
 
 ###  https://github.com/tibonto/aeon#is_about
@@ -338,7 +376,8 @@ aeon:joint_event_of rdf:type owl:ObjectProperty ;
 
 
 ###  https://github.com/tibonto/aeon#occurs_in
-aeon:occurs_in rdf:type owl:ObjectProperty ;
+aeon:occurs_in rdf:type owl:ObjectProperty ,
+                        owl:TransitiveProperty ;
                rdfs:domain aeon:Event ;
                rdfs:range aeon:Location ;
                rdfs:isDefinedBy "http://purl.obolibrary.org/obo/BFO_0000066" .
@@ -382,6 +421,7 @@ aeon:occurs_in_virtual_place rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#part_of
 aeon:part_of rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf owl:topObjectProperty ;
+             rdf:type owl:TransitiveProperty ;
              rdfs:isDefinedBy "http://purl.obolibrary.org/obo/BFO_0000050" .
 
 
@@ -405,6 +445,11 @@ aeon:umbrella_event_of rdf:type owl:ObjectProperty ;
 
 ###  http://www.w3.org/2002/07/owl#topDataProperty
 owl:topDataProperty rdfs:range rdfs:Literal .
+
+
+###  https://github.com/tibonto/aeon#CORE_ranking
+aeon:CORE_ranking rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf aeon:metric .
 
 
 ###  https://github.com/tibonto/aeon#ID
@@ -437,9 +482,25 @@ aeon:abstract_deadline rdf:type owl:DatatypeProperty ;
                        rdfs:range xsd:dateTime .
 
 
+###  https://github.com/tibonto/aeon#acceptance_rate
+aeon:acceptance_rate rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf aeon:metric .
+
+
+###  https://github.com/tibonto/aeon#accepted_papers
+aeon:accepted_papers rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf aeon:metric .
+
+
+###  https://github.com/tibonto/aeon#accepted_short_papers
+aeon:accepted_short_papers rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf aeon:metric .
+
+
 ###  https://github.com/tibonto/aeon#agent_name
 aeon:agent_name rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf aeon:name ;
+                rdfs:domain aeon:Agent ;
                 rdfs:comment "The Literal value of the name to denote an agent."@en .
 
 
@@ -452,27 +513,32 @@ aeon:camera-ready_deadline rdf:type owl:DatatypeProperty ;
 
 ###  https://github.com/tibonto/aeon#city
 aeon:city rdf:type owl:DatatypeProperty ;
-          rdfs:subPropertyOf aeon:location .
+          rdfs:subPropertyOf aeon:location ;
+          rdfs:domain aeon:City .
 
 
 ###  https://github.com/tibonto/aeon#contact
 aeon:contact rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf owl:topDataProperty .
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain aeon:ContactPerson .
 
 
 ###  https://github.com/tibonto/aeon#contact_email
 aeon:contact_email rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf aeon:contact .
+                   rdfs:subPropertyOf aeon:contact ;
+                   rdfs:domain aeon:ContactPerson .
 
 
 ###  https://github.com/tibonto/aeon#contact_person_name
 aeon:contact_person_name rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf aeon:contact .
+                         rdfs:subPropertyOf aeon:contact ;
+                         rdfs:domain aeon:ContactPerson .
 
 
 ###  https://github.com/tibonto/aeon#contact_phone
 aeon:contact_phone rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf aeon:contact .
+                   rdfs:subPropertyOf aeon:contact ;
+                   rdfs:domain aeon:ContactPerson .
 
 
 ###  https://github.com/tibonto/aeon#coordinates
@@ -483,13 +549,8 @@ aeon:coordinates rdf:type owl:DatatypeProperty ;
 
 ###  https://github.com/tibonto/aeon#country
 aeon:country rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf aeon:location .
-
-
-###  https://github.com/tibonto/aeon#currency
-aeon:currency rdf:type owl:DatatypeProperty ;
-              rdfs:subPropertyOf aeon:event_fee ;
-              rdfs:comment "This property should have a value from the controlled list defined by the ISO_4217 standard (https://en.wikipedia.org/wiki/ISO_4217)." .
+             rdfs:subPropertyOf aeon:location ;
+             rdfs:domain aeon:Country .
 
 
 ###  https://github.com/tibonto/aeon#deadline
@@ -508,7 +569,8 @@ aeon:demo_deadline rdf:type owl:DatatypeProperty ;
 
 ###  https://github.com/tibonto/aeon#duration
 aeon:duration rdf:type owl:DatatypeProperty ;
-              rdfs:subPropertyOf owl:topDataProperty .
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain aeon:Event .
 
 
 ###  https://github.com/tibonto/aeon#end_date
@@ -521,22 +583,64 @@ aeon:end_date rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#event_fee
 aeon:event_fee rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain aeon:Fee ;
                rdfs:comment "The Literal value of the fee of an aeon:event. Probably best set on the fly as a concatination of event_fee_value and event_fee_currency."@en .
+
+
+###  https://github.com/tibonto/aeon#event_fee_currency
+aeon:event_fee_currency rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf aeon:event_fee ;
+                        rdfs:domain aeon:Fee ;
+                        rdfs:comment "This property should have a value from the controlled list defined by the ISO_4217 standard (https://en.wikipedia.org/wiki/ISO_4217)." .
+
+
+###  https://github.com/tibonto/aeon#event_fee_value
+aeon:event_fee_value rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf aeon:event_fee ;
+                     rdfs:domain aeon:Fee .
+
+
+###  https://github.com/tibonto/aeon#event_frequency
+aeon:event_frequency rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf aeon:metric .
 
 
 ###  https://github.com/tibonto/aeon#event_status
 aeon:event_status rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf owl:topDataProperty .
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain aeon:Event ;
+                  rdfs:range [ rdf:type rdfs:Datatype ;
+                               owl:oneOf [ rdf:type rdf:List ;
+                                           rdf:first "canceled" ;
+                                           rdf:rest [ rdf:type rdf:List ;
+                                                      rdf:first "postponed" ;
+                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                 rdf:first "scheduled" ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ]
+                             ] ;
+                  rdfs:comment """maps_to: DataCite:dateType 
+---
+allowed value mapping 
+ConfIDent → DataCite
+
+scheduled → valid
+postponed → updated
+cancled → withdrawn"""@en .
 
 
 ###  https://github.com/tibonto/aeon#event_type_other
 aeon:event_type_other rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty .
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain aeon:EventType .
 
 
 ###  https://github.com/tibonto/aeon#first_name
 aeon:first_name rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf aeon:personal_name ;
+                rdfs:domain aeon:Person ;
                 rdfs:comment "The Literal value of the first name of a person."@en .
 
 
@@ -548,20 +652,44 @@ aeon:landing_page rdf:type owl:DatatypeProperty ;
                   rdfs:comment "The Literal value of the landing page (URL) an ID resolves to when following the ID_URL."@en .
 
 
+###  https://github.com/tibonto/aeon#language
+aeon:language rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty .
+
+
 ###  https://github.com/tibonto/aeon#last_name
 aeon:last_name rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf aeon:personal_name ;
+               rdfs:domain aeon:Person ;
                rdfs:comment "The Literal value of the last name, or family name, of a person."@en .
 
 
 ###  https://github.com/tibonto/aeon#location
 aeon:location rdf:type owl:DatatypeProperty ;
-              rdfs:subPropertyOf owl:topDataProperty .
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain aeon:Location .
+
+
+###  https://github.com/tibonto/aeon#logo
+aeon:logo rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty .
 
 
 ###  https://github.com/tibonto/aeon#meeting_URL
 aeon:meeting_URL rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf aeon:location .
+                 rdfs:subPropertyOf aeon:location ;
+                 rdfs:domain aeon:VirtualLocation ;
+                 rdfs:range xsd:anyURI .
+
+
+###  https://github.com/tibonto/aeon#metric
+aeon:metric rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  https://github.com/tibonto/aeon#metric_value
+aeon:metric_value rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf aeon:metric .
 
 
 ###  https://github.com/tibonto/aeon#name
@@ -577,9 +705,20 @@ aeon:notofication_deadline rdf:type owl:DatatypeProperty ;
                            rdfs:range xsd:dateTime .
 
 
+###  https://github.com/tibonto/aeon#number_of_attendees
+aeon:number_of_attendees rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf aeon:metric .
+
+
+###  https://github.com/tibonto/aeon#number_of_tracks
+aeon:number_of_tracks rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf aeon:metric .
+
+
 ###  https://github.com/tibonto/aeon#organizational_name
 aeon:organizational_name rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:agent_name ;
+                         rdfs:domain aeon:Organisation ;
                          rdfs:comment "The Literal value of the name to denote an organization."@en .
 
 
@@ -593,6 +732,7 @@ aeon:paper_deadline rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#personal_name
 aeon:personal_name rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf aeon:agent_name ;
+                   rdfs:domain aeon:Person ;
                    rdfs:comment "The Literal value of the name to denote a person."@en .
 
 
@@ -605,23 +745,34 @@ aeon:poster_deadline rdf:type owl:DatatypeProperty ;
 
 ###  https://github.com/tibonto/aeon#previous_end_date
 aeon:previous_end_date rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf aeon:end_date .
+                       rdfs:subPropertyOf aeon:end_date ;
+                       rdfs:domain aeon:Event ;
+                       rdfs:range xsd:dateTime .
 
 
 ###  https://github.com/tibonto/aeon#previous_start_date
 aeon:previous_start_date rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf aeon:start_date .
+                         rdfs:subPropertyOf aeon:start_date ;
+                         rdfs:domain aeon:Event ;
+                         rdfs:range xsd:dateTime .
+
+
+###  https://github.com/tibonto/aeon#proceedings_site_count
+aeon:proceedings_site_count rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf aeon:metric .
 
 
 ###  https://github.com/tibonto/aeon#procees_translated_name
 aeon:procees_translated_name rdf:type owl:DatatypeProperty ;
                              rdfs:subPropertyOf aeon:process_name ;
+                             rdfs:domain obo:BFO_0000015 ;
                              rdfs:comment "The Literal value of the translation of the official name (title) of an aeon:process, that is either an academic event or event series."@en .
 
 
 ###  https://github.com/tibonto/aeon#process_acronym
 aeon:process_acronym rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf aeon:process_name ;
+                     rdfs:domain obo:BFO_0000015 ;
                      rdfs:comment "Example: \"DILS 2019\" is the official acronym of the academic event \"13th International Conference on Data Integration in Life Science\""@en ,
                                   "The Literal value of the official acronym of an aeon:process, that is either an academic event or event series."@en .
 
@@ -629,19 +780,27 @@ aeon:process_acronym rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#process_alternative_name
 aeon:process_alternative_name rdf:type owl:DatatypeProperty ;
                               rdfs:subPropertyOf aeon:process_name ;
+                              rdfs:domain obo:BFO_0000015 ;
                               rdfs:comment "The Literal value of an alternative name of an aeon:process, that is either an academic event or event series."@en .
 
 
 ###  https://github.com/tibonto/aeon#process_former_name
 aeon:process_former_name rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:process_name ;
+                         rdfs:domain obo:BFO_0000015 ;
                          rdfs:comment "The Literal value of the former official name of an aeon:process, that is either an academic event or event series."@en .
 
 
 ###  https://github.com/tibonto/aeon#process_name
 aeon:process_name rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf aeon:name ;
+                  rdfs:domain obo:BFO_0000015 ;
                   rdfs:comment "The Literal value of the official name (title) of an aeon:process, that is either an academic event or event series."@en .
+
+
+###  https://github.com/tibonto/aeon#series_cite_count
+aeon:series_cite_count rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf aeon:metric .
 
 
 ###  https://github.com/tibonto/aeon#start_date
@@ -653,12 +812,14 @@ aeon:start_date rdf:type owl:DatatypeProperty ;
 
 ###  https://github.com/tibonto/aeon#state
 aeon:state rdf:type owl:DatatypeProperty ;
-           rdfs:subPropertyOf aeon:location .
+           rdfs:subPropertyOf aeon:location ;
+           rdfs:domain aeon:State .
 
 
 ###  https://github.com/tibonto/aeon#subject
 aeon:subject rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf owl:topDataProperty .
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain aeon:Subject .
 
 
 ###  https://github.com/tibonto/aeon#submission_deadline
@@ -668,6 +829,21 @@ aeon:submission_deadline rdf:type owl:DatatypeProperty ;
                          rdfs:range xsd:dateTime .
 
 
+###  https://github.com/tibonto/aeon#submitted_papers
+aeon:submitted_papers rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf aeon:metric .
+
+
+###  https://github.com/tibonto/aeon#summary
+aeon:summary rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  https://github.com/tibonto/aeon#summary_licence
+aeon:summary_licence rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf aeon:summary .
+
+
 ###  https://github.com/tibonto/aeon#tutorial_deadline
 aeon:tutorial_deadline rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf aeon:deadline ;
@@ -675,19 +851,17 @@ aeon:tutorial_deadline rdf:type owl:DatatypeProperty ;
                        rdfs:range xsd:dateTime .
 
 
-###  https://github.com/tibonto/aeon#value
-aeon:value rdf:type owl:DatatypeProperty ;
-           rdfs:subPropertyOf aeon:event_fee .
-
-
 ###  https://github.com/tibonto/aeon#venue
 aeon:venue rdf:type owl:DatatypeProperty ;
-           rdfs:subPropertyOf aeon:location .
+           rdfs:subPropertyOf aeon:location ;
+           rdfs:domain aeon:Venue .
 
 
 ###  https://github.com/tibonto/aeon#venue_URL
 aeon:venue_URL rdf:type owl:DatatypeProperty ;
-               rdfs:subPropertyOf aeon:venue .
+               rdfs:subPropertyOf aeon:venue ;
+               rdfs:domain aeon:Venue ;
+               rdfs:range xsd:anyURI .
 
 
 ###  https://github.com/tibonto/aeon#workshop_deadline
@@ -732,6 +906,11 @@ aeon:City rdf:type owl:Class ;
           rdfs:subClassOf aeon:PhysicalLocation .
 
 
+###  https://github.com/tibonto/aeon#Committee
+aeon:Committee rdf:type owl:Class ;
+               rdfs:subClassOf aeon:Group .
+
+
 ###  https://github.com/tibonto/aeon#CommitteeChair
 aeon:CommitteeChair rdf:type owl:Class ;
                     rdfs:subClassOf aeon:CommitteeMember .
@@ -766,9 +945,9 @@ aeon:DOI rdf:type owl:Class ;
 aeon:Event rdf:type owl:Class ;
            rdfs:subClassOf obo:BFO_0000015 ;
            owl:disjointWith aeon:EventSeries ;
-           obo:IAO_0000112 "The 19th International Semantic Web Conference (ISWC2020) is a scientific event." ;
-           rdfs:label "Event" ;
-           aeon:definition "A scientific event is an organized gathering for researchers (not necessarily academics) to present and discuss their work." .
+           obo:IAO_0000112 "The 19th International Semantic Web Conference (ISWC2020) is an academic  event."@en ;
+           rdfs:label "Event"@en ;
+           aeon:definition "An academic event is an organized gathering for researchers (not necessarily academics) to present and discuss their work."@en .
 
 
 ###  https://github.com/tibonto/aeon#EventSeries
@@ -831,11 +1010,6 @@ aeon:KeynoteSpeaker rdf:type owl:Class ;
 aeon:Location rdf:type owl:Class .
 
 
-###  https://github.com/tibonto/aeon#MemberFee
-aeon:MemberFee rdf:type owl:Class ;
-               rdfs:subClassOf aeon:ReducedFee .
-
-
 ###  https://github.com/tibonto/aeon#Moderator
 aeon:Moderator rdf:type owl:Class ;
                rdfs:subClassOf aeon:Contributor .
@@ -884,11 +1058,6 @@ aeon:ROR rdf:type owl:Class ;
          rdfs:subClassOf aeon:ExternalIdentifier .
 
 
-###  https://github.com/tibonto/aeon#ReducedFee
-aeon:ReducedFee rdf:type owl:Class ;
-                rdfs:subClassOf aeon:Fee .
-
-
 ###  https://github.com/tibonto/aeon#Reviewer
 aeon:Reviewer rdf:type owl:Class ;
               rdfs:subClassOf aeon:Contributor .
@@ -907,11 +1076,6 @@ aeon:Sponsor rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#State
 aeon:State rdf:type owl:Class ;
            rdfs:subClassOf aeon:PhysicalLocation .
-
-
-###  https://github.com/tibonto/aeon#StudentFee
-aeon:StudentFee rdf:type owl:Class ;
-                rdfs:subClassOf aeon:ReducedFee .
 
 
 ###  https://github.com/tibonto/aeon#Subject
@@ -943,21 +1107,9 @@ aeon:Colloquium rdf:type owl:NamedIndividual ,
                          aeon:EventType .
 
 
-###  https://github.com/tibonto/aeon#ConfIDentID_1
-aeon:ConfIDentID_1 rdf:type owl:NamedIndividual ;
-                   aeon:ID "PIDapalooza_2020"^^xsd:string ;
-                   aeon:ID_URL "https://www.confident-conference.org/r/vanilla/index.php/PIDapalooza_2020"^^xsd:anyURI ;
-                   aeon:ID_base_URL "https://www.confident-conference.org/r/vanilla/index.php/"^^xsd:anyURI .
-
-
 ###  https://github.com/tibonto/aeon#Conference
 aeon:Conference rdf:type owl:NamedIndividual ,
                          aeon:EventType .
-
-
-###  https://github.com/tibonto/aeon#EventType_other
-aeon:EventType_other rdf:type owl:NamedIndividual ,
-                              aeon:EventType .
 
 
 ###  https://github.com/tibonto/aeon#Forum
@@ -974,17 +1126,6 @@ aeon:Hackathon rdf:type owl:NamedIndividual ,
 aeon:Lisbon rdf:type owl:NamedIndividual .
 
 
-###  https://github.com/tibonto/aeon#ORCID_1
-aeon:ORCID_1 rdf:type owl:NamedIndividual ;
-             aeon:ID "0000-0002-1595-3213"^^xsd:string .
-
-
-###  https://github.com/tibonto/aeon#Organization_1
-aeon:Organization_1 rdf:type owl:NamedIndividual ,
-                             aeon:Organisation ;
-                    aeon:organizational_name "DataCite"^^xsd:string .
-
-
 ###  https://github.com/tibonto/aeon#PIDapalooza
 aeon:PIDapalooza rdf:type owl:NamedIndividual ,
                           aeon:EventSeries ;
@@ -994,23 +1135,20 @@ aeon:PIDapalooza rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#PIDapalooza2020
 aeon:PIDapalooza2020 rdf:type owl:NamedIndividual ,
                               aeon:Event ;
-                     aeon:has_event_type aeon:Conference ;
+                     aeon:has_event_type aeon:Conference ,
+                                         aeon:_EventType_other_1 ;
                      aeon:has_external_identifier aeon:WDQID_1 ;
-                     aeon:has_internal_identifier aeon:ConfIDentID_1 ;
-                     aeon:has_organizer aeon:Organization_1 ;
+                     aeon:has_internal_identifier aeon:_ConfIDentID_1 ;
+                     aeon:has_organizer aeon:_Organization_1 ;
+                     aeon:has_speaker aeon:_Person_1 ;
                      aeon:occurs_in_city aeon:Lisbon ;
                      aeon:occurs_in_country aeon:Portugal ;
                      aeon:part_of_series aeon:PIDapalooza ;
                      aeon:end_date "2020-01-30T17:00:00"^^xsd:dateTime ;
+                     aeon:number_of_attendees 117 ;
+                     aeon:number_of_tracks 13 ;
                      aeon:start_date "2020-01-29T09:00:00"^^xsd:dateTime ;
                      rdfs:label "PIDapalooza2020"@en .
-
-
-###  https://github.com/tibonto/aeon#Person_1
-aeon:Person_1 rdf:type owl:NamedIndividual ;
-              aeon:has_person_identifier aeon:ORCID_1 ;
-              aeon:first_name "Philip"^^xsd:string ;
-              aeon:last_name "Strömert"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#Portugal
@@ -1057,6 +1195,45 @@ aeon:WDQID_1 rdf:type owl:NamedIndividual ;
 ###  https://github.com/tibonto/aeon#Workshop
 aeon:Workshop rdf:type owl:NamedIndividual ,
                        aeon:EventType .
+
+
+###  https://github.com/tibonto/aeon#_ConfIDentID_1
+aeon:_ConfIDentID_1 rdf:type owl:NamedIndividual ;
+                    aeon:ID "PIDapalooza_2020"^^xsd:string ;
+                    aeon:ID_URL "https://www.confident-conference.org/r/vanilla/index.php/PIDapalooza_2020"^^xsd:anyURI ;
+                    aeon:ID_base_URL "https://www.confident-conference.org/r/vanilla/index.php/"^^xsd:anyURI .
+
+
+###  https://github.com/tibonto/aeon#_EventType_other_1
+aeon:_EventType_other_1 rdf:type owl:NamedIndividual ;
+                        aeon:event_type_other "festival" .
+
+
+###  https://github.com/tibonto/aeon#_Fee_1
+aeon:_Fee_1 rdf:type owl:NamedIndividual ;
+            aeon:event_fee "regular fee" ;
+            aeon:event_fee_currency "EUR" ;
+            aeon:event_fee_value "100,00" .
+
+
+###  https://github.com/tibonto/aeon#_ORCID_1
+aeon:_ORCID_1 rdf:type owl:NamedIndividual ;
+              aeon:ID "0000-0002-1595-3213"^^xsd:string ;
+              aeon:ID_URL "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+              aeon:ID_base_URL "https://orcid.org/"^^xsd:anyURI .
+
+
+###  https://github.com/tibonto/aeon#_Organization_1
+aeon:_Organization_1 rdf:type owl:NamedIndividual ,
+                              aeon:Organisation ;
+                     aeon:organizational_name "DataCite"^^xsd:string .
+
+
+###  https://github.com/tibonto/aeon#_Person_1
+aeon:_Person_1 rdf:type owl:NamedIndividual ;
+               aeon:has_person_identifier aeon:_ORCID_1 ;
+               aeon:first_name "Philip"^^xsd:string ;
+               aeon:last_name "Strömert"^^xsd:string .
 
 
 [ rdfs:label "example"
