@@ -31,19 +31,27 @@ dc:creator rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000112
-obo:IAO_0000112 rdf:type owl:AnnotationProperty .
+obo:IAO_0000112 rdf:type owl:AnnotationProperty ;
+                rdfs:label "example of usage"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000115
-obo:IAO_0000115 rdf:type owl:AnnotationProperty .
+obo:IAO_0000115 rdf:type owl:AnnotationProperty ;
+                rdfs:label "definition"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000118
-obo:IAO_0000118 rdf:type owl:AnnotationProperty .
+obo:IAO_0000118 rdf:type owl:AnnotationProperty ;
+                rdfs:label "alternative term"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000600
-obo:IAO_0000600 rdf:type owl:AnnotationProperty .
+obo:IAO_0000600 rdf:type owl:AnnotationProperty ;
+                rdfs:label "elucidation"@en .
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/creator
@@ -66,16 +74,8 @@ obo:IAO_0000600 rdf:type owl:AnnotationProperty .
 ns:term_status rdf:type owl:AnnotationProperty .
 
 
-###  https://github.com/tibonto/aeon#BFO_0000180
-aeon:BFO_0000180 rdf:type owl:AnnotationProperty .
-
-
-###  https://github.com/tibonto/aeon#IAO_0000112
-aeon:IAO_0000112 rdf:type owl:AnnotationProperty .
-
-
-###  https://github.com/tibonto/aeon#definition
-aeon:definition rdf:type owl:AnnotationProperty .
+###  https://github.com/tibonto/aeon#SMW_datatype
+aeon:SMW_datatype rdf:type owl:AnnotationProperty .
 
 
 #################################################################
