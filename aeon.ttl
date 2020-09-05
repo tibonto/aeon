@@ -973,7 +973,7 @@ obo:BFO_0000015 rdf:type owl:Class ;
                 rdfs:isDefinedBy "http://purl.obolibrary.org/obo/bfo.owl"^^xsd:anyURI ;
                 rdfs:label "Process"@en ;
                 aeon:SMW_datatype "Category" ;
-                aeon:SMW_import_info "[[Category:Imported vocabulary]]" .
+                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000023
@@ -988,7 +988,7 @@ aeon:Agent rdf:type owl:Class ;
            obo:IAO_0000115 "A material entity (either a human being or an aggregate of humans such as an organization) which is active in a process or has the relevant capabilities of intentionality." ;
            rdfs:label "Agent" ;
            aeon:SMW_datatype "Category" ;
-           aeon:SMW_import_info "[[Category:Imported vocabulary]]" .
+           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#Attendee
@@ -1004,7 +1004,7 @@ aeon:City rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#Committee
 aeon:Committee rdf:type owl:Class ;
                rdfs:subClassOf aeon:Group_of_Agents ;
-               aeon:SMW_import_info "[[Category:Imported vocabulary]]" .
+               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#CommitteeChair
@@ -1045,7 +1045,7 @@ aeon:Event rdf:type owl:Class ;
            obo:IAO_0000115 "An academic event is an organized gathering for researchers (not necessarily academics) to present and discuss their work."@en ;
            rdfs:label "Event"@en ;
            aeon:SMW_datatype "Category" ;
-           aeon:SMW_import_info "[[Category:Imported vocabulary]]" .
+           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#EventSeries
@@ -1054,14 +1054,14 @@ aeon:EventSeries rdf:type owl:Class ;
                  obo:IAO_0000112 "International Semantic Web Conference (ISWC) series" ;
                  rdfs:label "Event Series" ;
                  aeon:SMW_datatype "Category" ;
-                 aeon:SMW_import_info "[[Category:Imported vocabulary]]" .
+                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#EventType
 aeon:EventType rdf:type owl:Class ;
                aeon:SMW_import_info """The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_has_event_type]].
 
-[[Category:Imported vocabulary]]""" .
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#ExternalIdentifier
@@ -1070,13 +1070,13 @@ aeon:ExternalIdentifier rdf:type owl:Class ;
                         owl:disjointWith aeon:InternalIdentifier ;
                         rdfs:label "External ID"@en ;
                         aeon:SMW_datatype "" ;
-                        aeon:SMW_import_info "[[Category:Imported vocabulary]]" .
+                        aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#Fee
 aeon:Fee rdf:type owl:Class ;
          obo:IAO_0000115 "The financial cost of attendance at a scientific event." ;
-         aeon:SMW_import_info "[[Category:Imported vocabulary]]" .
+         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#GND
@@ -1089,7 +1089,7 @@ aeon:Group_of_Agents rdf:type owl:Class ;
                      rdfs:subClassOf aeon:Agent ;
                      obo:IAO_0000112 "The program committee is a 'group' of persons who have the role to organize the program of a scientific event." ;
                      obo:IAO_0000115 "A grouping of persons/individuals who participate in a scientific event via a certain role." ;
-                     aeon:SMW_import_info "[[Category:Imported vocabulary]]" .
+                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#ISNI
@@ -1100,7 +1100,7 @@ aeon:ISNI rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#Identifier
 aeon:Identifier rdf:type owl:Class ;
                 rdfs:seeAlso "http://purl.obolibrary.org/obo/IAO_0020000"@en ;
-                aeon:SMW_import_info "[[Category:Imported vocabulary]]" .
+                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#InternalIdentifier
@@ -1110,7 +1110,7 @@ aeon:InternalIdentifier rdf:type owl:Class ;
 
 You will probably want to change that in your implementation."""@en ;
                         rdfs:label "ConfIDent ID"@en ;
-                        aeon:SMW_import_info "[[Category:Imported vocabulary]]" .
+                        aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#KeynoteSpeaker
@@ -1138,7 +1138,7 @@ aeon:Organisation rdf:type owl:Class ;
                   obo:IAO_0000112 "TIB is an organisation." ;
                   obo:IAO_0000115 "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members." ;
                   obo:IAO_0000600 "institutional body (research organization, society, association etc.)" ;
-                  aeon:SMW_import_info "[[Category:Imported vocabulary]]" .
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#Organizer
@@ -1157,7 +1157,7 @@ aeon:Person rdf:type owl:Class ;
             obo:IAO_0000112 "Tim Berners Lee is a person." ;
             obo:IAO_0000115 "A person is an individual agent that participates via a role in some way in a scientific event or event series." ;
             obo:IAO_0000118 "human; human being; individual" ;
-            aeon:SMW_import_info "[[Category:Imported vocabulary]]" .
+            aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#PhysicalLocation
