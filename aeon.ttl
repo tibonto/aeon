@@ -1257,9 +1257,7 @@ aeon:EventSeries rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#EventType
 aeon:EventType rdf:type owl:Class ;
                aeon:SMW_datatype "Category" ;
-               aeon:SMW_import_info """The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_has_event_type]].
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+               aeon:SMW_import_info "The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_has_event_type]]. [[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#ExternalIdentifier
@@ -1276,7 +1274,7 @@ aeon:ExternalIdentifier rdf:type owl:Class ;
 aeon:Fee rdf:type owl:Class ;
          obo:IAO_0000115 "The financial cost of attendance at a scientific event." ;
          aeon:SMW_datatype "Category" ;
-         aeon:SMW_import_info "The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_Has_fee]].\\n[[Category:AEON]] [[Category:Imported vocabulary]]" .
+         aeon:SMW_import_info "The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_Has_fee]]. [[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#GND
@@ -1312,9 +1310,7 @@ aeon:Identifier rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#InternalIdentifier
 aeon:InternalIdentifier rdf:type owl:Class ;
                         rdfs:subClassOf aeon:Identifier ;
-                        rdfs:comment """The \"rdfs:label ConfIDent_ID\" is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident/) to be used in its service. Thus the internal identifier is called ConfIDent_ID. 
-
-You will probably want to change that in your implementation."""@en ;
+                        rdfs:comment "The \"rdfs:label ConfIDent_ID\" is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident/) to be used in its service. Thus the internal identifier is called ConfIDent_ID. You will probably want to change that in your implementation."@en ;
                         rdfs:label "ConfIDent ID"@en ;
                         aeon:SMW_datatype "Category" ;
                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1416,7 +1412,7 @@ aeon:Sponsor rdf:type owl:Class ;
              rdfs:subClassOf obo:BFO_0000023 ;
              rdfs:comment "PS 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...). As the possible sponsor types can have various schemes, it seems best to have named individuals of the aeon:Sponsor class at the moment." ;
              aeon:SMW_datatype "Category" ;
-             aeon:SMW_import_info "The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_Sponsor]].\\n[[Category:AEON]] [[Category:Imported vocabulary]]" .
+             aeon:SMW_import_info "The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_Sponsor]]. [[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#State
