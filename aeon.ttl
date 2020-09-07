@@ -1458,6 +1458,11 @@ aeon:WDQID rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
+###  https://github.com/tibonto/aeon#Bronze_Sponsor
+aeon:Bronze_Sponsor rdf:type owl:NamedIndividual ,
+                             aeon:Sponsor .
+
+
 ###  https://github.com/tibonto/aeon#Colloquium
 aeon:Colloquium rdf:type owl:NamedIndividual ,
                          aeon:EventType .
@@ -1471,6 +1476,11 @@ aeon:Conference rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#Forum
 aeon:Forum rdf:type owl:NamedIndividual ,
                     aeon:EventType .
+
+
+###  https://github.com/tibonto/aeon#Gold_Sponsor
+aeon:Gold_Sponsor rdf:type owl:NamedIndividual ,
+                           aeon:Sponsor .
 
 
 ###  https://github.com/tibonto/aeon#Hackathon
@@ -1534,6 +1544,11 @@ aeon:Seminar rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#Session
 aeon:Session rdf:type owl:NamedIndividual ,
                       aeon:EventType .
+
+
+###  https://github.com/tibonto/aeon#Silver_Sponsor
+aeon:Silver_Sponsor rdf:type owl:NamedIndividual ,
+                             aeon:Sponsor .
 
 
 ###  https://github.com/tibonto/aeon#Symposium
