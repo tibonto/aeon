@@ -1483,7 +1483,8 @@ aeon:Lisbon rdf:type owl:NamedIndividual .
 
 
 ###  https://github.com/tibonto/aeon#Member_Fee
-aeon:Member_Fee rdf:type owl:NamedIndividual .
+aeon:Member_Fee rdf:type owl:NamedIndividual ,
+                         aeon:Fee .
 
 
 ###  https://github.com/tibonto/aeon#PIDapalooza
@@ -1516,11 +1517,13 @@ aeon:Portugal rdf:type owl:NamedIndividual .
 
 
 ###  https://github.com/tibonto/aeon#Reduced_Fee
-aeon:Reduced_Fee rdf:type owl:NamedIndividual .
+aeon:Reduced_Fee rdf:type owl:NamedIndividual ,
+                          aeon:Fee .
 
 
 ###  https://github.com/tibonto/aeon#Regular_Fee
-aeon:Regular_Fee rdf:type owl:NamedIndividual .
+aeon:Regular_Fee rdf:type owl:NamedIndividual ,
+                          aeon:Fee .
 
 
 ###  https://github.com/tibonto/aeon#Seminar
@@ -1588,18 +1591,11 @@ aeon:_Fee_1 rdf:type owl:NamedIndividual ;
             aeon:fee_currency "EUR" ;
             aeon:fee_value "100,00" .
 
-
-###  https://github.com/tibonto/aeon#_ORCID_1
-aeon:_ORCID_1 rdf:type owl:NamedIndividual ;
-              aeon:ID "0000-0002-1595-3213"^^xsd:string ;
-              aeon:ID_URL "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-              aeon:ID_base_URL "https://orcid.org/"^^xsd:anyURI .
+aeon:_EventType_other_1 rdf:type owl:NamedIndividual .
 
 
 ###  https://github.com/tibonto/aeon#_Organization_1
-aeon:_Organization_1 rdf:type owl:NamedIndividual ,
-                              aeon:Organisation ;
-                     aeon:organizational_name "DataCite"^^xsd:string .
+aeon:_Organization_1 rdf:type owl:NamedIndividual .
 
 
 ###  https://github.com/tibonto/aeon#_Person_1
@@ -1612,6 +1608,7 @@ aeon:_Person_1 rdf:type owl:NamedIndividual ;
 ] .
 
 #################################################################
+#    General axioms
 #    General axioms
 #################################################################
 
