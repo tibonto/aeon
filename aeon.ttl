@@ -196,7 +196,8 @@ aeon:has_event_type rdf:type owl:ObjectProperty ;
                     rdfs:domain aeon:Event ;
                     rdfs:range aeon:EventType ;
                     aeon:SMW_datatype "Text" ;
-                    aeon:SMW_import_info "[[Allows value list::has_event_type]]\\nThe allowed value list for this property is defined in\\n[[MediaWiki:Smw_allows_list_has_event_type]].\\n[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                    aeon:SMW_import_info """[[Allows value list::has_event_type]] The allowed value list for this property is defined in [[MediaWiki:Smw_allows_list_has_event_type]].
+ [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#has_external_identifier
@@ -217,7 +218,7 @@ aeon:has_fee rdf:type owl:ObjectProperty ;
                           owl:someValuesFrom rdfs:Literal
                         ] ;
              aeon:SMW_datatype "Text" ;
-             aeon:SMW_import_info "[[Allows value list::Has_fee]]\\nThe allowed value list for this property is defined in [[MediaWiki:Smw_allows_list_Has_fee]].\\n\\n[[Category:AEON]] [[Category:Imported vocabulary]]" .
+             aeon:SMW_import_info "[[Allows value list::Has_fee]] The allowed value list for this property is defined in [[MediaWiki:Smw_allows_list_Has_fee]].  [[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#has_finance_committee_chair
@@ -481,8 +482,7 @@ aeon:is_about rdf:type owl:ObjectProperty ;
               rdfs:range aeon:Subject ;
               rdfs:isDefinedBy "http://purl.obolibrary.org/obo/IAO_0000136" ;
               aeon:SMW_datatype "Text" ;
-              aeon:SMW_import_info "[[Allows value list::Subject]]\\nControlled vocabulary in\\n[[MediaWiki:Smw_allows_list_Subject]]\\n[[Category:IAO]] [[Category:Imported vocabulary]]" .
-
+              aeon:SMW_import_info "[[Allows value list::Subject]] Controlled vocabulary in [[MediaWiki:Smw_allows_list_Subject]] [[Category:IAO]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#joint_event_of
@@ -768,7 +768,7 @@ aeon:event_frequency rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf aeon:metric ;
                      rdfs:domain aeon:EventSeries ;
                      aeon:SMW_datatype "Quantity" ;
-                     aeon:SMW_import_info "The event frequency is the literal value of the number of month until the next event in a certain takes place.\\n[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                     aeon:SMW_import_info "The event frequency is the literal value of the number of month until the next event in a certain takes place. [[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#event_status
@@ -822,7 +822,7 @@ aeon:fee_currency rdf:type owl:DatatypeProperty ;
                   rdfs:domain aeon:Fee ;
                   rdfs:comment "This property should have a value from the controlled list defined by the ISO_4217 standard (https://en.wikipedia.org/wiki/ISO_4217)." ;
                   aeon:SMW_datatype "Text" ;
-                  aeon:SMW_import_info "[[Allows value list::Fee_currency]]\\nControlled vocabulary in [[MediaWiki:Smw_allows_list_Fee_currency]]\\n[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  aeon:SMW_import_info "[[Allows value list::Fee_currency]] Controlled vocabulary in [[MediaWiki:Smw_allows_list_Fee_currency]] [[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#fee_value
