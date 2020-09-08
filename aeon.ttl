@@ -316,7 +316,7 @@ aeon:has_moderator rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_organizer
 aeon:has_organizer rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:subPropertyOf aeon:has_contributor ;
                    rdfs:domain obo:BFO_0000015 ;
                    rdfs:range aeon:Agent ;
                    aeon:SMW_datatype "Page" ;
@@ -415,10 +415,11 @@ aeon:has_speaker rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_sponsor
 aeon:has_sponsor rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:subPropertyOf aeon:has_contributor ;
                  rdfs:domain obo:BFO_0000015 ;
                  rdfs:range aeon:Agent ;
-                 rdfs:comment "PS 2-9-2020: The various types of sponsorships (e.g. gold, silver, bronce...) still need to be modeled, preferably with a property \"sponsor_type\". Yet the possible sponsor types shoud not be limited, as there are various schemes."@en ;
+                 rdfs:comment "PS 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...). As the possible sponsor types can have various schemes, it seems best to have named individuals of the aeon:Sponsor class at the moment, which will make up the range of the data property aeon_sponsor_type."@en ;
+                 aeon:SMW_datatype "Page" ;
                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
@@ -1055,6 +1056,14 @@ aeon:series_cite_count rdf:type owl:DatatypeProperty ;
                        rdfs:domain aeon:EventSeries ;
                        aeon:SMW_datatype "Number" ;
                        aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#sponsor_type
+aeon:sponsor_type rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain aeon:Sponsor ;
+                  aeon:SMW_datatype "Text" ;
+                  aeon:SMW_import_info "[[Allows value list::Sponsor_type]] Controlled vocabulary in [[MediaWiki:Smw _allows_list_Sponsor_type]] [[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#start_date
