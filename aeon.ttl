@@ -1050,6 +1050,15 @@ aeon:process_name rdf:type owl:DatatypeProperty ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
+###  https://github.com/tibonto/aeon#process_website
+aeon:process_website rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdfs:domain obo:BFO_0000015 ;
+                     rdfs:range xsd:anyURI ;
+                     aeon:SMW_datatype "URL" ;
+                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
 ###  https://github.com/tibonto/aeon#series_cite_count
 aeon:series_cite_count rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf aeon:metric ;
