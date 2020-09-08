@@ -1180,7 +1180,7 @@ aeon:Agent rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#Attendee
 aeon:Attendee rdf:type owl:Class ;
-              rdfs:subClassOf obo:BFO_0000023 ;
+              rdfs:subClassOf aeon:Contributor ;
               aeon:SMW_datatype "Category" ;
               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1195,6 +1195,7 @@ aeon:City rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#Committee
 aeon:Committee rdf:type owl:Class ;
                rdfs:subClassOf aeon:Group_of_Agents ;
+               owl:disjointWith aeon:Organisation ;
                aeon:SMW_datatype "Category" ;
                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1223,6 +1224,8 @@ aeon:ContactPerson rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#Contributor
 aeon:Contributor rdf:type owl:Class ;
                  rdfs:subClassOf obo:BFO_0000023 ;
+                 rdfs:comment "ToDo: use CRO IRI" ;
+                 rdfs:isDefinedBy "http://purl.obolibrary.org/obo/CRO_0000000" ;
                  aeon:SMW_datatype "Category" ;
                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1361,7 +1364,7 @@ aeon:Organisation rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#Organizer
 aeon:Organizer rdf:type owl:Class ;
-               rdfs:subClassOf obo:BFO_0000023 ;
+               rdfs:subClassOf aeon:Contributor ;
                aeon:SMW_datatype "Category" ;
                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1402,6 +1405,10 @@ aeon:ROR rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#Reviewer
 aeon:Reviewer rdf:type owl:Class ;
               rdfs:subClassOf aeon:Contributor ;
+              obo:IAO_0000115 "Evaluation of scientific, academic, or professional work, such as manuscripts or grants by others working in the same field. [definition source: https://www.lexico.com/en/definition/peer_review][definition source: https://www.lexico.com/en/definition/peer_review]" ;
+              obo:IAO_0000118 "manuscript review role" ;
+              rdfs:comment "ToDo: use CRO IRI" ;
+              rdfs:isDefinedBy "http://purl.obolibrary.org/obo/CRO_0000101" ;
               aeon:SMW_datatype "Category" ;
               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1415,7 +1422,7 @@ aeon:Speaker rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#Sponsor
 aeon:Sponsor rdf:type owl:Class ;
-             rdfs:subClassOf obo:BFO_0000023 ;
+             rdfs:subClassOf aeon:Contributor ;
              rdfs:comment "PS 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...). As the possible sponsor types can have various schemes, it seems best to have named individuals of the aeon:Sponsor class at the moment." ;
              aeon:SMW_datatype "Category" ;
              aeon:SMW_import_info "The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_Sponsor]]. [[Category:AEON]] [[Category:Imported vocabulary]]" .
