@@ -191,6 +191,16 @@ aeon:has_contributor rdf:type owl:ObjectProperty ;
                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
+###  https://github.com/tibonto/aeon#has_event
+aeon:has_event rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf aeon:has_part ;
+               owl:inverseOf aeon:part_of_series ;
+               rdfs:domain aeon:EventSeries ;
+               rdfs:range aeon:Event ;
+               aeon:SMW_datatype "Page" ;
+               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
 ###  https://github.com/tibonto/aeon#has_event_type
 aeon:has_event_type rdf:type owl:ObjectProperty ;
                     rdfs:domain aeon:Event ;
