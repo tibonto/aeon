@@ -348,7 +348,7 @@ aeon:has_part rdf:type owl:ObjectProperty ;
               owl:inverseOf aeon:part_of ;
               rdfs:isDefinedBy "http://purl.obolibrary.org/obo/BFO_0000051" ;
               aeon:SMW_datatype "Page" ;
-              aeon:SMW_import_info "[[Category:BFO]] [[Category:Imported vocabulary]]" .
+              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#has_programme_committee_chair
@@ -506,13 +506,12 @@ aeon:joint_event_of rdf:type owl:ObjectProperty ;
 
 
 ###  https://github.com/tibonto/aeon#occurs_in
-aeon:occurs_in rdf:type owl:ObjectProperty ,
-                        owl:TransitiveProperty ;
+aeon:occurs_in rdf:type owl:ObjectProperty ;
                rdfs:domain aeon:Event ;
                rdfs:range aeon:Location ;
                rdfs:isDefinedBy "http://purl.obolibrary.org/obo/BFO_0000066" ;
                aeon:SMW_datatype "Text" ;
-               aeon:SMW_import_info "[[Category:BFO]] [[Category:Imported vocabulary]]" .
+               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#occurs_in_city
@@ -563,10 +562,9 @@ aeon:occurs_in_virtual_place rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#part_of
 aeon:part_of rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf owl:topObjectProperty ;
-             rdf:type owl:TransitiveProperty ;
              rdfs:isDefinedBy "http://purl.obolibrary.org/obo/BFO_0000050" ;
              aeon:SMW_datatype "Page" ;
-             aeon:SMW_import_info "[[Category:BFO]] [[Category:Imported vocabulary]]" .
+             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#part_of_series
