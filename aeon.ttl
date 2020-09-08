@@ -1501,11 +1501,6 @@ aeon:Hackathon rdf:type owl:NamedIndividual ,
 aeon:Lisbon rdf:type owl:NamedIndividual .
 
 
-###  https://github.com/tibonto/aeon#Member_Fee
-aeon:Member_Fee rdf:type owl:NamedIndividual ,
-                         aeon:Fee .
-
-
 ###  https://github.com/tibonto/aeon#PIDapalooza
 aeon:PIDapalooza rdf:type owl:NamedIndividual ,
                           aeon:EventSeries ;
@@ -1607,15 +1602,6 @@ aeon:_ConfIDentID_1 rdf:type owl:NamedIndividual ;
 ###  https://github.com/tibonto/aeon#_EventType_other_1
 aeon:_EventType_other_1 rdf:type owl:NamedIndividual ;
                         aeon:event_type_other "festival" .
-
-
-###  https://github.com/tibonto/aeon#_Fee_1
-aeon:_Fee_1 rdf:type owl:NamedIndividual ;
-            aeon:fee "regular fee" ;
-            aeon:fee_currency "EUR" ;
-            aeon:fee_value "100,00" .
-
-aeon:_EventType_other_1 rdf:type owl:NamedIndividual .
 
 
 ###  https://github.com/tibonto/aeon#_Organization_1
