@@ -158,7 +158,7 @@ aeon:has_attendee rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_committee_chair
 aeon:has_committee_chair rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf aeon:has_committee_member ;
-                         rdfs:domain aeon:Committee ;
+                         rdfs:domain aeon:Event ;
                          rdfs:range aeon:Person ;
                          aeon:SMW_datatype "Page" ;
                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -167,7 +167,7 @@ aeon:has_committee_chair rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_committee_member
 aeon:has_committee_member rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf aeon:has_organizer ;
-                          rdfs:domain aeon:Committee ;
+                          rdfs:domain aeon:Event ;
                           rdfs:range aeon:Person ;
                           aeon:SMW_datatype "Page" ;
                           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -895,6 +895,7 @@ aeon:meeting_URL rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#metric
 aeon:metric rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain obo:BFO_0000015 ;
             aeon:SMW_datatype "Text" ;
             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -902,6 +903,7 @@ aeon:metric rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#metric_value
 aeon:metric_value rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf aeon:metric ;
+                  rdfs:domain obo:BFO_0000015 ;
                   aeon:SMW_datatype "Text" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -926,6 +928,7 @@ aeon:notofication_deadline rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#number_of_attendees
 aeon:number_of_attendees rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:metric ;
+                         rdfs:domain aeon:Event ;
                          aeon:SMW_datatype "Number" ;
                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -933,6 +936,7 @@ aeon:number_of_attendees rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#number_of_tracks
 aeon:number_of_tracks rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf aeon:metric ;
+                      rdfs:domain aeon:Event ;
                       aeon:SMW_datatype "Number" ;
                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -994,6 +998,7 @@ aeon:previous_start_date rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#proceedings_site_count
 aeon:proceedings_site_count rdf:type owl:DatatypeProperty ;
                             rdfs:subPropertyOf aeon:metric ;
+                            rdfs:domain aeon:Event ;
                             aeon:SMW_datatype "Number" ;
                             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1047,6 +1052,7 @@ aeon:process_name rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#series_cite_count
 aeon:series_cite_count rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf aeon:metric ;
+                       rdfs:domain aeon:EventSeries ;
                        aeon:SMW_datatype "Number" ;
                        aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1088,6 +1094,7 @@ aeon:submission_deadline rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#submitted_papers
 aeon:submitted_papers rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf aeon:metric ;
+                      rdfs:domain aeon:Event ;
                       aeon:SMW_datatype "Number" ;
                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
