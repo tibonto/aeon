@@ -1272,8 +1272,7 @@ aeon:ExternalIdentifier rdf:type owl:Class ;
                         rdfs:subClassOf aeon:Identifier ;
                         owl:disjointWith aeon:InternalIdentifier ;
                         rdfs:label "External ID"@en ;
-                        aeon:SMW_datatype "" ,
-                                          "Category" ;
+                        aeon:SMW_datatype "Category" ;
                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
@@ -1626,7 +1625,6 @@ aeon:_Person_1 rdf:type owl:NamedIndividual ;
 ] .
 
 #################################################################
-#    General axioms
 #    General axioms
 #################################################################
 
