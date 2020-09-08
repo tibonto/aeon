@@ -827,8 +827,7 @@ aeon:event_type_other rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#event_year
 aeon:event_year rdf:type owl:DatatypeProperty ;
                 rdfs:domain aeon:Event ;
-                rdfs:range xsd:integer ,
-                           xsd:positiveInteger ;
+                rdfs:range xsd:integer ;
                 obo:IAO_0000115 "The year in which an event takes place."@en ;
                 aeon:SMW_datatype "Number" ;
                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
