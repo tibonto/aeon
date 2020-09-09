@@ -153,6 +153,7 @@ aeon:has_attendee rdf:type owl:ObjectProperty ;
                   rdfs:range aeon:Person ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info """[[partOfSubobject::Attendee]]
+                  aeon:SMW_import_info """[[partOfSubobject::Contributor]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
@@ -368,8 +369,6 @@ aeon:has_part rdf:type owl:ObjectProperty ;
               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#has_programme_committee_chair
-aeon:has_programme_committee_chair rdf:type owl:ObjectProperty ;
                                    rdfs:subPropertyOf aeon:has_committee_chair ;
                                    rdfs:domain aeon:Event ;
                                    rdfs:range aeon:Person ;
@@ -377,8 +376,6 @@ aeon:has_programme_committee_chair rdf:type owl:ObjectProperty ;
                                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#has_programme_committee_member
-aeon:has_programme_committee_member rdf:type owl:ObjectProperty ;
                                     rdfs:subPropertyOf aeon:has_committee_member ;
                                     rdfs:domain aeon:Event ;
                                     rdfs:range aeon:Person ;
@@ -978,8 +975,8 @@ aeon:name rdf:type owl:DatatypeProperty ;
           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#notofication_deadline
-aeon:notofication_deadline rdf:type owl:DatatypeProperty ;
+###  https://github.com/tibonto/aeon#notification_deadline
+aeon:notification_deadline rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf aeon:deadline ;
                            rdfs:domain aeon:Event ;
                            rdfs:range xsd:dateTime ;
