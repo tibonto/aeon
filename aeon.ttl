@@ -112,7 +112,11 @@ aeon:has_GND rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf aeon:has_external_identifier ;
              rdfs:range aeon:GND ;
              aeon:SMW_datatype "External identifier" ;
-             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+             aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#has_ISNI
@@ -121,7 +125,10 @@ aeon:has_ISNI rdf:type owl:ObjectProperty ;
               rdfs:domain aeon:Agent ;
               rdfs:range aeon:ISNI ;
               aeon:SMW_datatype "External identifier" ;
-              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+              aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#has_ORCID
@@ -151,7 +158,11 @@ aeon:has_WDQID rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf aeon:has_external_identifier ;
                rdfs:range aeon:WDQID ;
                aeon:SMW_datatype "External identifier" ;
-               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+               aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Process_External_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#has_attendee
@@ -232,7 +243,9 @@ aeon:has_external_identifier rdf:type owl:ObjectProperty ;
                              rdfs:range aeon:ExternalIdentifier ;
                              rdfs:comment "This is an abstract property that most likely will never be used, as it just serves as a parent for known external IDs."@en ;
                              aeon:SMW_datatype "Text" ;
-                             aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_ID]]
+                             aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
@@ -685,7 +698,9 @@ aeon:ID rdf:type owl:DatatypeProperty ;
         rdfs:domain aeon:Identifier ;
         obo:IAO_0000115 "The literal value of an identifier."@en ;
         aeon:SMW_datatype "Text" ;
-        aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_ID]]
+        aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
@@ -697,7 +712,9 @@ aeon:ID_URL rdf:type owl:DatatypeProperty ;
             rdfs:range xsd:anyURI ;
             rdfs:comment "The literal value of the full URL used by the identifier scheme, based on the concatination of base URL and ID (ID_URL:value = ID_base_URL:value + ID:value)."@en ;
             aeon:SMW_datatype "URL" ;
-            aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_ID]]
+            aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
@@ -709,7 +726,9 @@ aeon:ID_base_URL rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:anyURI ;
                  rdfs:comment "The literal value of the base URL used by the identifier scheme."@en ;
                  aeon:SMW_datatype "URL" ;
-                 aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_ID]]
+                 aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
@@ -984,7 +1003,9 @@ aeon:landing_page rdf:type owl:DatatypeProperty ;
                   rdfs:range xsd:anyURI ;
                   rdfs:comment "The literal value of the landing page (URL) an ID resolves to when following the ID_URL."@en ;
                   aeon:SMW_datatype "URL" ;
-                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_ID]]
+                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
@@ -1464,7 +1485,11 @@ aeon:ExternalIdentifier rdf:type owl:Class ;
                         owl:disjointWith aeon:InternalIdentifier ;
                         rdfs:label "External ID"@en ;
                         aeon:SMW_datatype "Category" ;
-                        aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                        aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#Fee
@@ -1482,7 +1507,11 @@ aeon:Fee rdf:type owl:Class ;
 aeon:GND rdf:type owl:Class ;
          rdfs:subClassOf aeon:ExternalIdentifier ;
          aeon:SMW_datatype "Category" ;
-         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+         aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#Group_of_Agents
@@ -1498,7 +1527,10 @@ aeon:Group_of_Agents rdf:type owl:Class ;
 aeon:ISNI rdf:type owl:Class ;
           rdfs:subClassOf aeon:ExternalIdentifier ;
           aeon:SMW_datatype "Category" ;
-          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+          aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#Identifier
@@ -1541,7 +1573,9 @@ aeon:Moderator rdf:type owl:Class ;
 aeon:ORCID rdf:type owl:Class ;
            rdfs:subClassOf aeon:ExternalIdentifier ;
            aeon:SMW_datatype "Category" ;
-           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+           aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Person_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#Organisation
@@ -1593,7 +1627,9 @@ aeon:PhysicalLocation rdf:type owl:Class ;
 aeon:ROR rdf:type owl:Class ;
          rdfs:subClassOf aeon:ExternalIdentifier ;
          aeon:SMW_datatype "Category" ;
-         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+         aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#Reviewer
@@ -1656,7 +1692,11 @@ aeon:VirtualLocation rdf:type owl:Class ;
 aeon:WDQID rdf:type owl:Class ;
            rdfs:subClassOf aeon:ExternalIdentifier ;
            aeon:SMW_datatype "Category" ;
-           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+           aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Process_External_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 #################################################################
