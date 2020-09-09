@@ -1391,7 +1391,9 @@ aeon:CommitteeChair rdf:type owl:Class ;
 aeon:CommitteeMember rdf:type owl:Class ;
                      rdfs:subClassOf aeon:Organizer ;
                      aeon:SMW_datatype "Category" ;
-                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                     aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#ContactPerson
@@ -1408,6 +1410,10 @@ aeon:Contributor rdf:type owl:Class ;
                  rdfs:isDefinedBy "http://purl.obolibrary.org/obo/CRO_0000000" ;
                  aeon:SMW_datatype "Category" ;
                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                 aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
+
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#Country
@@ -1432,7 +1438,9 @@ aeon:Event rdf:type owl:Class ;
            obo:IAO_0000115 "An academic event is an organized gathering for researchers (not necessarily academics) to present and discuss their work."@en ;
            rdfs:label "Event"@en ;
            aeon:SMW_datatype "Category" ;
-           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+           aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Relation]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#EventSeries
@@ -1464,6 +1472,8 @@ aeon:Fee rdf:type owl:Class ;
          obo:IAO_0000115 "The financial cost of attendance at a scientific event." ;
          aeon:SMW_datatype "Category" ;
          aeon:SMW_import_info """The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_Has_fee]].
+
+[[partOfSubobject::Template:Subobject Fee]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
@@ -1548,7 +1558,9 @@ aeon:Organisation rdf:type owl:Class ;
 aeon:Organizer rdf:type owl:Class ;
                rdfs:subClassOf aeon:Contributor ;
                aeon:SMW_datatype "Category" ;
-               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+               aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Organizer]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#Output
@@ -1607,7 +1619,9 @@ aeon:Sponsor rdf:type owl:Class ;
              rdfs:subClassOf aeon:Contributor ;
              rdfs:comment "PS 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...). As the possible sponsor types can have various schemes, it seems best to have named individuals of the aeon:Sponsor class at the moment." ;
              aeon:SMW_datatype "Category" ;
-             aeon:SMW_import_info "The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_Sponsor]]. [[Category:AEON]] [[Category:Imported vocabulary]]" .
+             aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Sponsor]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#State
