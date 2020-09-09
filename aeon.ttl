@@ -152,7 +152,9 @@ aeon:has_attendee rdf:type owl:ObjectProperty ;
                   rdfs:domain aeon:Event ;
                   rdfs:range aeon:Person ;
                   aeon:SMW_datatype "Page" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  aeon:SMW_import_info """[[partOfSubobject::Attendee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#has_committee_chair
@@ -161,7 +163,9 @@ aeon:has_committee_chair rdf:type owl:ObjectProperty ;
                          rdfs:domain aeon:Event ;
                          rdfs:range aeon:Person ;
                          aeon:SMW_datatype "Page" ;
-                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                         aeon:SMW_import_info """[[partOfSubobject::CommitteeChair]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#has_committee_member
@@ -170,7 +174,9 @@ aeon:has_committee_member rdf:type owl:ObjectProperty ;
                           rdfs:domain aeon:Event ;
                           rdfs:range aeon:Person ;
                           aeon:SMW_datatype "Page" ;
-                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                          aeon:SMW_import_info """[[partOfSubobject::CommitteeMember]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#has_contact_person
@@ -228,7 +234,12 @@ aeon:has_fee rdf:type owl:ObjectProperty ;
                           owl:someValuesFrom rdfs:Literal
                         ] ;
              aeon:SMW_datatype "Text" ;
-             aeon:SMW_import_info "[[Allows value list::Has_fee]] The allowed value list for this property is defined in [[MediaWiki:Smw_allows_list_Has_fee]].  [[Category:AEON]] [[Category:Imported vocabulary]]" .
+             aeon:SMW_import_info """[[Allows value list::Has_fee]] 
+The allowed value list for this property is defined in [[MediaWiki:Smw_allows_list_Has_fee]].
+
+[[partOfSubobject::Fee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#has_finance_committee_chair
@@ -246,7 +257,9 @@ aeon:has_finance_committee_member rdf:type owl:ObjectProperty ;
                                   rdfs:domain aeon:Event ;
                                   rdfs:range aeon:Person ;
                                   aeon:SMW_datatype "Page" ;
-                                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                                  aeon:SMW_import_info """[[partOfSubobject::FinanceCommitteeMember]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#has_general_committee_chair
@@ -321,7 +334,9 @@ aeon:has_moderator rdf:type owl:ObjectProperty ;
                    rdfs:domain aeon:Event ;
                    rdfs:range aeon:Person ;
                    aeon:SMW_datatype "Page" ;
-                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                   aeon:SMW_import_info """[[partOfSubobject::Moderator]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#has_organizer
@@ -330,7 +345,9 @@ aeon:has_organizer rdf:type owl:ObjectProperty ;
                    rdfs:domain obo:BFO_0000015 ;
                    rdfs:range aeon:Agent ;
                    aeon:SMW_datatype "Page" ;
-                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                   aeon:SMW_import_info """[[partOfSubobject::Organizer]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#has_output
@@ -849,7 +866,11 @@ aeon:fee_currency rdf:type owl:DatatypeProperty ;
                   rdfs:domain aeon:Fee ;
                   rdfs:comment "This property should have a value from the controlled list defined by the ISO_4217 standard (https://en.wikipedia.org/wiki/ISO_4217)." ;
                   aeon:SMW_datatype "Text" ;
-                  aeon:SMW_import_info "[[Allows value list::Fee_currency]] Controlled vocabulary in [[MediaWiki:Smw_allows_list_Fee_currency]] [[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  aeon:SMW_import_info """[[Allows value list::Fee_currency]] Controlled vocabulary in [[MediaWiki:Smw_allows_list_Fee_currency]]
+
+[[partOfSubobject::Fee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#fee_value
@@ -857,7 +878,9 @@ aeon:fee_value rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf aeon:fee ;
                rdfs:domain aeon:Fee ;
                aeon:SMW_datatype "Number" ;
-               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+               aeon:SMW_import_info """[[partOfSubobject::Fee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#first_name
@@ -866,7 +889,13 @@ aeon:first_name rdf:type owl:DatatypeProperty ;
                 rdfs:domain aeon:Person ;
                 obo:IAO_0000115 "The literal value of the first name of a person."@en ;
                 aeon:SMW_datatype "Text" ;
-                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                aeon:SMW_import_info """[[partOfSubobject::Attendee]]
+[[partOfSubobject::Moderator]]
+[[partOfSubobject::Organizer]]
+[[partOfSubobject::CommitteeMember]]
+[[partOfSubobject::CommitteeChair]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#landing_page
@@ -892,7 +921,13 @@ aeon:last_name rdf:type owl:DatatypeProperty ;
                rdfs:domain aeon:Person ;
                obo:IAO_0000115 "The literal value of the last name, or family name, of a person."@en ;
                aeon:SMW_datatype "Text" ;
-               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+               aeon:SMW_import_info """[[partOfSubobject::Attendee]]
+[[partOfSubobject::Moderator]]
+[[partOfSubobject::Organizer]]
+[[partOfSubobject::CommitteeMember]]
+[[partOfSubobject::CommitteeChair]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#location
@@ -974,7 +1009,9 @@ aeon:organizational_name rdf:type owl:DatatypeProperty ;
                          rdfs:domain aeon:Organisation ;
                          obo:IAO_0000115 "The literal value of the name to denote an organization."@en ;
                          aeon:SMW_datatype "Text" ;
-                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                         aeon:SMW_import_info """[[partOfSubobject::Organizer]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#paper_deadline
@@ -992,7 +1029,14 @@ aeon:personal_name rdf:type owl:DatatypeProperty ;
                    rdfs:domain aeon:Person ;
                    obo:IAO_0000115 "The literal value of the name to denote a person."@en ;
                    aeon:SMW_datatype "Text" ;
-                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                   aeon:SMW_import_info """[[partOfSubobject::Attendee]]
+[[partOfSubobject::Moderator]]
+[[partOfSubobject::Organizer]]
+[[partOfSubobject::CommitteeMember]]
+[[partOfSubobject::CommitteeChair]]
+[[partOfSubobject::FinanceCommitteeMember]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#poster_deadline
@@ -1226,7 +1270,9 @@ aeon:Agent rdf:type owl:Class ;
 aeon:Attendee rdf:type owl:Class ;
               rdfs:subClassOf aeon:Contributor ;
               aeon:SMW_datatype "Category" ;
-              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+              aeon:SMW_import_info """[[partOfSubobject::Attendee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#City
@@ -1248,14 +1294,18 @@ aeon:Committee rdf:type owl:Class ;
 aeon:CommitteeChair rdf:type owl:Class ;
                     rdfs:subClassOf aeon:CommitteeMember ;
                     aeon:SMW_datatype "Category" ;
-                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                    aeon:SMW_import_info """[[partOfSubobject::CommitteeChair]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#CommitteeMember
 aeon:CommitteeMember rdf:type owl:Class ;
                      rdfs:subClassOf aeon:Organizer ;
                      aeon:SMW_datatype "Category" ;
-                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                     aeon:SMW_import_info """[[partOfSubobject::CommitteeMember]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#ContactPerson
@@ -1327,7 +1377,11 @@ aeon:ExternalIdentifier rdf:type owl:Class ;
 aeon:Fee rdf:type owl:Class ;
          obo:IAO_0000115 "The financial cost of attendance at a scientific event." ;
          aeon:SMW_datatype "Category" ;
-         aeon:SMW_import_info "The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_Has_fee]]. [[Category:AEON]] [[Category:Imported vocabulary]]" .
+         aeon:SMW_import_info """The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_Has_fee]].
+
+[[partOfSubobject::Fee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#GND
@@ -1386,7 +1440,9 @@ aeon:Location rdf:type owl:Class ;
 aeon:Moderator rdf:type owl:Class ;
                rdfs:subClassOf aeon:Contributor ;
                aeon:SMW_datatype "Category" ;
-               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+               aeon:SMW_import_info """[[partOfSubobject::Moderator]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#ORCID
@@ -1410,7 +1466,9 @@ aeon:Organisation rdf:type owl:Class ;
 aeon:Organizer rdf:type owl:Class ;
                rdfs:subClassOf aeon:Contributor ;
                aeon:SMW_datatype "Category" ;
-               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+               aeon:SMW_import_info """[[partOfSubobject::Organizer]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#Output
