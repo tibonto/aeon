@@ -680,9 +680,7 @@ aeon:CORE_ranking rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf aeon:metric ;
                   rdfs:domain aeon:Event ;
                   aeon:SMW_datatype "Text" ;
-                  aeon:SMW_import_info """[[partOfSubobject::EventMetric]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#ID
@@ -736,9 +734,7 @@ aeon:acceptance_rate rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf aeon:metric ;
                      rdfs:domain aeon:Event ;
                      aeon:SMW_datatype "Number" ;
-                     aeon:SMW_import_info """[[partOfSubobject::EventMetric]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#accepted_papers
@@ -746,8 +742,7 @@ aeon:accepted_papers rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf aeon:metric ;
                      rdfs:domain aeon:Event ;
                      aeon:SMW_datatype "Number" ;
-                     aeon:SMW_import_info """[[partOfSubobject::EventMetric]]
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#accepted_short_papers
@@ -755,9 +750,7 @@ aeon:accepted_short_papers rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf aeon:metric ;
                            rdfs:domain aeon:Event ;
                            aeon:SMW_datatype "Number" ;
-                           aeon:SMW_import_info """[[partOfSubobject::EventMetric]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#agent_name
@@ -881,9 +874,7 @@ aeon:event_frequency rdf:type owl:DatatypeProperty ;
                      rdfs:domain aeon:EventSeries ;
                      obo:IAO_0000115 "The event frequency is the literal value of the number of month until the next event in a certain takes place." ;
                      aeon:SMW_datatype "Quantity" ;
-                     aeon:SMW_import_info """[[partOfSubobject::EventSeriesMetric]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#event_number
@@ -1047,8 +1038,7 @@ aeon:metric rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf owl:topDataProperty ;
             rdfs:domain obo:BFO_0000015 ;
             aeon:SMW_datatype "Text" ;
-            aeon:SMW_import_info """[[partOfSubobject::EventMetric]]
-[[partOfSubobject::EventSeriesMetric]]
+            aeon:SMW_import_info """[[partOfSubobject::Metric]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
@@ -1058,8 +1048,7 @@ aeon:metric_value rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf aeon:metric ;
                   rdfs:domain obo:BFO_0000015 ;
                   aeon:SMW_datatype "Text" ;
-                  aeon:SMW_import_info """[[partOfSubobject::EventMetric]]
-[[partOfSubobject::EventSeriesMetric]]
+                  aeon:SMW_import_info """[[partOfSubobject::Metric]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
@@ -1088,9 +1077,7 @@ aeon:number_of_attendees rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:metric ;
                          rdfs:domain aeon:Event ;
                          aeon:SMW_datatype "Number" ;
-                         aeon:SMW_import_info """[[partOfSubobject::EventMetric]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#number_of_tracks
@@ -1098,9 +1085,7 @@ aeon:number_of_tracks rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf aeon:metric ;
                       rdfs:domain aeon:Event ;
                       aeon:SMW_datatype "Number" ;
-                      aeon:SMW_import_info """[[partOfSubobject::EventMetric]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#organizational_name
@@ -1166,9 +1151,7 @@ aeon:proceedings_site_count rdf:type owl:DatatypeProperty ;
                             rdfs:subPropertyOf aeon:metric ;
                             rdfs:domain aeon:Event ;
                             aeon:SMW_datatype "Number" ;
-                            aeon:SMW_import_info """[[partOfSubobject::EventMetric]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                            aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#procees_translated_name
@@ -1237,9 +1220,7 @@ aeon:series_cite_count rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf aeon:metric ;
                        rdfs:domain aeon:EventSeries ;
                        aeon:SMW_datatype "Number" ;
-                       aeon:SMW_import_info """[[partOfSubobject::EventSeriesMetric]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#sponsor_type
@@ -1295,9 +1276,7 @@ aeon:submitted_papers rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf aeon:metric ;
                       rdfs:domain aeon:Event ;
                       aeon:SMW_datatype "Number" ;
-                      aeon:SMW_import_info """[[partOfSubobject::EventMetric]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#summary
