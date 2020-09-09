@@ -214,9 +214,7 @@ aeon:has_event rdf:type owl:ObjectProperty ;
                rdfs:domain aeon:EventSeries ;
                rdfs:range aeon:Event ;
                aeon:SMW_datatype "Page" ;
-               aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Relation]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#has_event_type
@@ -651,9 +649,7 @@ aeon:part_of_series rdf:type owl:ObjectProperty ;
                     rdfs:domain aeon:Event ;
                     rdfs:range aeon:EventSeries ;
                     aeon:SMW_datatype "Page" ;
-                    aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Relation]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#umbrella_event_of
