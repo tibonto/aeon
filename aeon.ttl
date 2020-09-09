@@ -780,6 +780,15 @@ aeon:event_frequency rdf:type owl:DatatypeProperty ;
                      aeon:SMW_import_info "The event frequency is the literal value of the number of month until the next event in a certain takes place. [[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
+###  https://github.com/tibonto/aeon#event_number
+aeon:event_number rdf:type owl:DatatypeProperty ;
+                  rdfs:domain aeon:Event ;
+                  rdfs:range xsd:string ;
+                  obo:IAO_0000115 "The ordinal number of an academic event, if it is a part of an event series." ;
+                  aeon:SMW_datatype "Text" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
 ###  https://github.com/tibonto/aeon#event_status
 aeon:event_status rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf owl:topDataProperty ;
@@ -814,6 +823,15 @@ aeon:event_type_other rdf:type owl:DatatypeProperty ;
                       rdfs:domain aeon:EventType ;
                       aeon:SMW_datatype "Text" ;
                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#event_year
+aeon:event_year rdf:type owl:DatatypeProperty ;
+                rdfs:domain aeon:Event ;
+                rdfs:range xsd:integer ;
+                obo:IAO_0000115 "The year in which an event takes place."@en ;
+                aeon:SMW_datatype "Number" ;
+                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#fee
