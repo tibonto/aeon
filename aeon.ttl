@@ -244,7 +244,7 @@ The allowed value list for this property is defined in [[MediaWiki:Smw_allows_li
 
 ###  https://github.com/tibonto/aeon#has_finance_committee_chair
 aeon:has_finance_committee_chair rdf:type owl:ObjectProperty ;
-                                 rdfs:subPropertyOf aeon:has_committee_member ;
+                                 rdfs:subPropertyOf aeon:has_committee_chair ;
                                  rdfs:domain aeon:Event ;
                                  rdfs:range aeon:Person ;
                                  aeon:SMW_datatype "Page" ;
@@ -264,7 +264,7 @@ aeon:has_finance_committee_member rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_general_committee_chair
 aeon:has_general_committee_chair rdf:type owl:ObjectProperty ;
-                                 rdfs:subPropertyOf aeon:has_committee_member ;
+                                 rdfs:subPropertyOf aeon:has_committee_chair ;
                                  rdfs:domain aeon:Event ;
                                  rdfs:range aeon:Person ;
                                  aeon:SMW_datatype "Page" ;
@@ -312,7 +312,7 @@ aeon:has_keynote_speaker rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_local_committee_chair
 aeon:has_local_committee_chair rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf aeon:has_committee_member ;
+                               rdfs:subPropertyOf aeon:has_committee_chair ;
                                rdfs:domain aeon:Event ;
                                rdfs:range aeon:Person ;
                                aeon:SMW_datatype "Page" ;
@@ -370,7 +370,7 @@ aeon:has_part rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_programme_committee_chair
 aeon:has_programme_committee_chair rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf aeon:has_committee_member ;
+                                   rdfs:subPropertyOf aeon:has_committee_chair ;
                                    rdfs:domain aeon:Event ;
                                    rdfs:range aeon:Person ;
                                    aeon:SMW_datatype "Page" ;
@@ -388,7 +388,7 @@ aeon:has_programme_committee_member rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_publication_committee_chair
 aeon:has_publication_committee_chair rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf aeon:has_committee_member ;
+                                     rdfs:subPropertyOf aeon:has_committee_chair ;
                                      rdfs:domain aeon:Event ;
                                      rdfs:range aeon:Person ;
                                      aeon:SMW_datatype "Page" ;
@@ -406,7 +406,7 @@ aeon:has_publication_committee_member rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_publicity_committee_chair
 aeon:has_publicity_committee_chair rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf aeon:has_committee_member ;
+                                   rdfs:subPropertyOf aeon:has_committee_chair ;
                                    rdfs:domain aeon:Event ;
                                    rdfs:range aeon:Person ;
                                    aeon:SMW_datatype "Page" ;
@@ -452,7 +452,7 @@ aeon:has_sponsor rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_sponsorship_committee_chair
 aeon:has_sponsorship_committee_chair rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf aeon:has_committee_member ;
+                                     rdfs:subPropertyOf aeon:has_committee_chair ;
                                      rdfs:domain aeon:Event ;
                                      rdfs:range aeon:Person ;
                                      aeon:SMW_datatype "Page" ;
@@ -470,7 +470,7 @@ aeon:has_sponsorship_committee_member rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_steering_committee_chair
 aeon:has_steering_committee_chair rdf:type owl:ObjectProperty ;
-                                  rdfs:subPropertyOf aeon:has_committee_member ;
+                                  rdfs:subPropertyOf aeon:has_committee_chair ;
                                   rdfs:domain aeon:Event ;
                                   rdfs:range aeon:Person ;
                                   aeon:SMW_datatype "Page" ;
@@ -488,7 +488,7 @@ aeon:has_steering_committee_member rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_technical_committee_chair
 aeon:has_technical_committee_chair rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf aeon:has_committee_member ;
+                                   rdfs:subPropertyOf aeon:has_committee_chair ;
                                    rdfs:domain aeon:Event ;
                                    rdfs:range aeon:Person ;
                                    aeon:SMW_datatype "Page" ;
