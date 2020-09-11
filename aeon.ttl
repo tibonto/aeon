@@ -82,6 +82,16 @@ aeon:SMW_datatype rdf:type owl:AnnotationProperty .
 aeon:SMW_import_info rdf:type owl:AnnotationProperty .
 
 
+###  https://github.com/tibonto/aeon#WikidataLabel
+aeon:WikidataLabel rdf:type owl:AnnotationProperty ;
+                   obo:IAO_0000115 "WikidataLabel is used to map a class or property to a certain label in the Wikidata namespace." .
+
+
+###  https://github.com/tibonto/aeon#WikidataURI
+aeon:WikidataURI rdf:type owl:AnnotationProperty ;
+                 obo:IAO_0000115 "WikidataURI is used to map a class or property to the URI in the Wikidata namespace." .
+
+
 #################################################################
 #    Object Properties
 #################################################################
@@ -116,7 +126,9 @@ aeon:has_GND rdf:type owl:ObjectProperty ;
 [[partOfSubobject::Template:Subobject Person_ID]]
 [[partOfSubobject::Template:Subobject Organization_ID]]
 
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
+             aeon:WikidataLabel "GND_ID" ;
+             aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P227" .
 
 
 ###  https://github.com/tibonto/aeon#has_ISNI
@@ -162,7 +174,8 @@ aeon:has_WDQID rdf:type owl:ObjectProperty ;
 [[partOfSubobject::Template:Subobject Person_ID]]
 [[partOfSubobject::Template:Subobject Organization_ID]]
 
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
+               aeon:WikidataLabel "item" .
 
 
 ###  https://github.com/tibonto/aeon#has_attendee
@@ -173,7 +186,9 @@ aeon:has_attendee rdf:type owl:ObjectProperty ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
 
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
+                  aeon:WikidataLabel "participant" ;
+                  aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P710" .
 
 
 ###  https://github.com/tibonto/aeon#has_committee_chair
@@ -234,7 +249,8 @@ aeon:has_event_type rdf:type owl:ObjectProperty ;
                     rdfs:range aeon:EventType ;
                     aeon:SMW_datatype "Text" ;
                     aeon:SMW_import_info """[[Allows value list::has_event_type]] The allowed value list for this property is defined in [[MediaWiki:Smw_allows_list_has_event_type]].
- [[Category:AEON]] [[Category:Imported vocabulary]]""" .
+[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
+                    aeon:WikidataLabel "event_type" .
 
 
 ###  https://github.com/tibonto/aeon#has_external_identifier
@@ -247,7 +263,11 @@ aeon:has_external_identifier rdf:type owl:ObjectProperty ;
 [[partOfSubobject::Template:Subobject Person_ID]]
 [[partOfSubobject::Template:Subobject Organization_ID]]
 
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
+                             aeon:WikidataLabel "Freebase_ID" ,
+                                                "WikiCFP_conference_series_ID" ;
+                             aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P5127" ,
+                                              "https://www.wikidata.org/wiki/Property:P646" .
 
 
 ###  https://github.com/tibonto/aeon#has_fee
@@ -384,7 +404,9 @@ aeon:has_organizer rdf:type owl:ObjectProperty ;
                    aeon:SMW_datatype "Page" ;
                    aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Organizer]]
 
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
+                   aeon:WikidataLabel "organizer" ;
+                   aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P664" .
 
 
 ###  https://github.com/tibonto/aeon#has_output
@@ -493,7 +515,9 @@ aeon:has_speaker rdf:type owl:ObjectProperty ;
                  aeon:SMW_datatype "Page" ;
                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
 
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
+                 aeon:WikidataLabel "speaker" ;
+                 aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P823" .
 
 
 ###  https://github.com/tibonto/aeon#has_sponsor
@@ -580,7 +604,9 @@ aeon:is_about rdf:type owl:ObjectProperty ;
               rdfs:range aeon:Subject ;
               rdfs:isDefinedBy "http://purl.obolibrary.org/obo/IAO_0000136" ;
               aeon:SMW_datatype "Text" ;
-              aeon:SMW_import_info "[[Allows value list::Subject]] Controlled vocabulary in [[MediaWiki:Smw_allows_list_Subject]] [[Category:AEON]] [[Category:Imported vocabulary]]" .
+              aeon:SMW_import_info "[[Allows value list::Subject]] Controlled vocabulary in [[MediaWiki:Smw_allows_list_Subject]] [[Category:AEON]] [[Category:Imported vocabulary]]" ;
+              aeon:WikidataLabel "main_subjectLabel" ;
+              aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P921" .
 
 
 ###  https://github.com/tibonto/aeon#joint_event_of
@@ -618,7 +644,9 @@ aeon:occurs_in_country rdf:type owl:ObjectProperty ;
                        rdfs:domain aeon:Event ;
                        rdfs:range aeon:Country ;
                        aeon:SMW_datatype "Text" ;
-                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
+                       aeon:WikidataLabel "countryLabel" ;
+                       aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P17" .
 
 
 ###  https://github.com/tibonto/aeon#occurs_in_state
@@ -870,8 +898,10 @@ aeon:demo_deadline rdf:type owl:DatatypeProperty ;
 aeon:duration rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain aeon:Event ;
-              aeon:SMW_datatype "Date" ;
-              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+              aeon:SMW_datatype "Quantity" ;
+              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
+              aeon:WikidataLabel "durationLabel" ;
+              aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P2047" .
 
 
 ###  https://github.com/tibonto/aeon#end_date
@@ -880,7 +910,9 @@ aeon:end_date rdf:type owl:DatatypeProperty ;
               rdfs:domain aeon:Event ;
               rdfs:range xsd:dateTime ;
               aeon:SMW_datatype "Date" ;
-              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
+              aeon:WikidataLabel "end_timeLabel" ;
+              aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P582" .
 
 
 ###  https://github.com/tibonto/aeon#event_frequency
@@ -890,7 +922,10 @@ aeon:event_frequency rdf:type owl:DatatypeProperty ;
                      obo:IAO_0000115 "The event frequency is the literal value of the number of month until the next event in a certain takes place." ;
                      aeon:SMW_datatype "Quantity" ;
                      aeon:SMW_import_info """[[Corresponds to::1 month]] [[Corresponds to::1 months]] [[display units::months]]
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
+                     aeon:WikidataLabel "event_intervalLabel_inmonths" ;
+                     aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P2257" .
 
 
 ###  https://github.com/tibonto/aeon#event_number
@@ -1015,7 +1050,9 @@ aeon:landing_page rdf:type owl:DatatypeProperty ;
 aeon:language rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
               aeon:SMW_datatype "Text" ;
-              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
+              aeon:WikidataLabel "language_usedLabel" ;
+              aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P2936" .
 
 
 ###  https://github.com/tibonto/aeon#last_name
@@ -1190,7 +1227,9 @@ aeon:process_acronym rdf:type owl:DatatypeProperty ;
                      obo:IAO_0000112 "\"DILS 2019\" is the official acronym of the academic event \"13th International Conference on Data Integration in Life Science\""@en ;
                      obo:IAO_0000115 "The literal value of the official acronym of an aeon:process, that is either an academic event or event series."@en ;
                      aeon:SMW_datatype "Text" ;
-                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
+                     aeon:WikidataLabel "short_nameLabel" ;
+                     aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P1813" .
 
 
 ###  https://github.com/tibonto/aeon#process_alternative_name
@@ -1221,7 +1260,8 @@ aeon:process_name rdf:type owl:DatatypeProperty ;
                   rdfs:domain obo:BFO_0000015 ;
                   obo:IAO_0000115 "The literal value of the official name (title) of an aeon:process, that is either an academic event or event series."@en ;
                   aeon:SMW_datatype "Text" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
+                  aeon:WikidataLabel "itemLabel" .
 
 
 ###  https://github.com/tibonto/aeon#process_website
@@ -1230,7 +1270,9 @@ aeon:process_website rdf:type owl:DatatypeProperty ;
                      rdfs:domain obo:BFO_0000015 ;
                      rdfs:range xsd:anyURI ;
                      aeon:SMW_datatype "URL" ;
-                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
+                     aeon:WikidataLabel "official_website" ;
+                     aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P856" .
 
 
 ###  https://github.com/tibonto/aeon#series_cite_count
@@ -1259,7 +1301,9 @@ aeon:start_date rdf:type owl:DatatypeProperty ;
                 rdfs:domain aeon:Event ;
                 rdfs:range xsd:dateTime ;
                 aeon:SMW_datatype "Date" ;
-                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
+                aeon:WikidataLabel "start_time" ;
+                aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P580" .
 
 
 ###  https://github.com/tibonto/aeon#state
@@ -1431,8 +1475,8 @@ aeon:Contributor rdf:type owl:Class ;
                  rdfs:comment "ToDo: use CRO IRI" ;
                  rdfs:isDefinedBy "http://purl.obolibrary.org/obo/CRO_0000000" ;
                  aeon:SMW_datatype "Category" ;
-                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
-                 aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
+                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ,
+                                      """[[partOfSubobject::Template:Subobject Contributor]]
 
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
