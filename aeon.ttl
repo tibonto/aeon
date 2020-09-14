@@ -112,7 +112,9 @@ aeon:has_DOI rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf aeon:has_external_identifier ;
              rdfs:range aeon:DOI ;
              aeon:SMW_datatype "External identifier" ;
-             aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Relation]]
+             aeon:SMW_import_info """External formatter uri [[External formatter uri::https://doi.org/$1]]
+
+[[partOfSubobject::Template:Subobject Relation]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
@@ -122,7 +124,9 @@ aeon:has_GND rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf aeon:has_external_identifier ;
              rdfs:range aeon:GND ;
              aeon:SMW_datatype "External identifier" ;
-             aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
+             aeon:SMW_import_info """External formatter uri [[External formatter uri::http://d-nb.info/gnd/$1]]
+
+[[partOfSubobject::Template:Subobject External_Process_ID]]
 [[partOfSubobject::Template:Subobject Person_ID]]
 [[partOfSubobject::Template:Subobject Organization_ID]]
 
@@ -137,7 +141,9 @@ aeon:has_ISNI rdf:type owl:ObjectProperty ;
               rdfs:domain aeon:Agent ;
               rdfs:range aeon:ISNI ;
               aeon:SMW_datatype "External identifier" ;
-              aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Person_ID]]
+              aeon:SMW_import_info """External formatter uri [[External formatter uri::https://isni.org/isni/$1]]
+
+[[partOfSubobject::Template:Subobject Person_ID]]
 [[partOfSubobject::Template:Subobject Organization_ID]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
@@ -149,7 +155,9 @@ aeon:has_ORCID rdf:type owl:ObjectProperty ;
                rdfs:domain aeon:Person ;
                rdfs:range aeon:ORCID ;
                aeon:SMW_datatype "External identifier" ;
-               aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Person_ID]]
+               aeon:SMW_import_info """External formatter uri [[External formatter uri::https://orcid.org/$1]]
+
+[[partOfSubobject::Template:Subobject Person_ID]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
@@ -160,7 +168,9 @@ aeon:has_ROR rdf:type owl:ObjectProperty ;
              rdfs:domain aeon:Organisation ;
              rdfs:range aeon:ROR ;
              aeon:SMW_datatype "External identifier" ;
-             aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Organization_ID]]
+             aeon:SMW_import_info """External formatter uri [[External formatter uri::https://ror.org/$1]]
+
+[[partOfSubobject::Template:Subobject Organization_ID]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
@@ -170,7 +180,9 @@ aeon:has_WDQID rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf aeon:has_external_identifier ;
                rdfs:range aeon:WDQID ;
                aeon:SMW_datatype "External identifier" ;
-               aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Process_External_ID]]
+               aeon:SMW_import_info """External formatter uri [[External formatter uri::https://www.wikidata.org/wiki/$1]]
+
+[[partOfSubobject::Template:Subobject Process_External_ID]]
 [[partOfSubobject::Template:Subobject Person_ID]]
 [[partOfSubobject::Template:Subobject Organization_ID]]
 
