@@ -187,7 +187,7 @@ aeon:has_WDQID rdf:type owl:ObjectProperty ;
 [[partOfSubobject::Template:Subobject Organization_ID]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" ;
-               aeon:WikidataLabel "item" .
+               aeon:WikidataLabel "itemID" .
 
 
 ###  https://github.com/tibonto/aeon#has_attendee
