@@ -13,13 +13,14 @@
 @base <https://github.com/tibonto/aeon> .
 
 <https://github.com/tibonto/aeon> rdf:type owl:Ontology ;
-                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.0.1> ;
-                                   dc:creator "Philip Strömert" ;
-                                   <http://purl.org/dc/elements/1.1/creator> "Christian Hauschke" ,
-                                                                             "Michael Conlon" ;
+                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.2.0> ;
+                                   <http://purl.org/dc/elements/1.1/contributor> "Christian Hauschke" ,
+                                                                                 "Michael Conlon" ,
+                                                                                 "Philip Strömert" ;
+                                   <http://purl.org/dc/elements/1.1/creator> "ConfIDent project" ;
                                    <http://purl.org/dc/elements/1.1/description> "The Academic Event Ontology (AEON) is used to represent information regarding academic events. The ontology supports the identification, development, management, evaluation, and impact assessment of events, components of events and event series, as well as identification and reuse of works presented or developed at events. The ontology is independent of knowledge, creative domain, or topics related to events. AEON is focused on events and assumes the representation of many entities associated with events such as attendees, locations, academic works, datetimes, and processes are defined in compatible ontologies." ;
                                    <http://purl.org/dc/elements/1.1/title> "Academic Event Ontology"@en ;
-                                   owl:versionInfo "version 0.0.1" .
+                                   owl:versionInfo "v0.2.0 ConfIDent edition" .
 
 #################################################################
 #    Annotation properties
@@ -30,19 +31,27 @@ dc:creator rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000112
-obo:IAO_0000112 rdf:type owl:AnnotationProperty .
+obo:IAO_0000112 rdf:type owl:AnnotationProperty ;
+                rdfs:label "example of usage"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000115
-obo:IAO_0000115 rdf:type owl:AnnotationProperty .
+obo:IAO_0000115 rdf:type owl:AnnotationProperty ;
+                rdfs:label "definition"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000118
-obo:IAO_0000118 rdf:type owl:AnnotationProperty .
+obo:IAO_0000118 rdf:type owl:AnnotationProperty ;
+                rdfs:label "alternative term"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000600
-obo:IAO_0000600 rdf:type owl:AnnotationProperty .
+obo:IAO_0000600 rdf:type owl:AnnotationProperty ;
+                rdfs:label "elucidation"@en .
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/creator
@@ -65,154 +74,645 @@ obo:IAO_0000600 rdf:type owl:AnnotationProperty .
 ns:term_status rdf:type owl:AnnotationProperty .
 
 
-###  https://github.com/tibonto/aeon#definition
-aeon:definition rdf:type owl:AnnotationProperty .
+###  https://github.com/tibonto/aeon#SMW_datatype
+aeon:SMW_datatype rdf:type owl:AnnotationProperty .
+
+
+###  https://github.com/tibonto/aeon#SMW_import_info
+aeon:SMW_import_info rdf:type owl:AnnotationProperty .
+
+
+###  https://github.com/tibonto/aeon#WikidataLabel
+aeon:WikidataLabel rdf:type owl:AnnotationProperty ;
+                   obo:IAO_0000115 "WikidataLabel is used to map a class or property to a certain label in the Wikidata namespace." .
+
+
+###  https://github.com/tibonto/aeon#WikidataURI
+aeon:WikidataURI rdf:type owl:AnnotationProperty ;
+                 obo:IAO_0000115 "WikidataURI is used to map a class or property to the URI in the Wikidata namespace." .
 
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  https://github.com/tibonto/aeon#definesProgram
-aeon:definesProgram rdf:type owl:ObjectProperty ;
-                    rdfs:domain aeon:Organizer ;
-                    rdfs:range aeon:Program .
+###  https://github.com/tibonto/aeon#collocated_event_of
+aeon:collocated_event_of rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf aeon:part_of ;
+                         rdfs:domain aeon:Event ;
+                         rdfs:range aeon:Event ;
+                         aeon:SMW_datatype "Page" ;
+                         aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Relation]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#hasAward
-aeon:hasAward rdf:type owl:ObjectProperty ;
-              rdfs:domain aeon:Event ;
-              rdfs:range aeon:Award .
+###  https://github.com/tibonto/aeon#has_DOI
+aeon:has_DOI rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf aeon:has_external_identifier ;
+             rdfs:range aeon:DOI ;
+             aeon:SMW_datatype "External identifier" ;
+             aeon:SMW_import_info """External formatter uri [[External formatter uri::https://doi.org/$1]]
+
+[[partOfSubobject::Template:Subobject Relation]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#hasDeadline
-aeon:hasDeadline rdf:type owl:ObjectProperty ;
-                 rdfs:domain aeon:Event ;
-                 rdfs:range aeon:Deadline .
+###  https://github.com/tibonto/aeon#has_GND
+aeon:has_GND rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf aeon:has_external_identifier ;
+             rdfs:range aeon:GND ;
+             aeon:SMW_datatype "External identifier" ;
+             aeon:SMW_import_info """External formatter uri [[External formatter uri::http://d-nb.info/gnd/$1]]
+
+[[partOfSubobject::Template:Subobject External_Process_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
+             aeon:WikidataLabel "GND_ID" ;
+             aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P227" .
 
 
-###  https://github.com/tibonto/aeon#hasDuration
-aeon:hasDuration rdf:type owl:ObjectProperty ;
-                 rdfs:domain aeon:Event ,
-                             aeon:Role ;
-                 rdfs:range aeon:Duration .
+###  https://github.com/tibonto/aeon#has_ISNI
+aeon:has_ISNI rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf aeon:has_external_identifier ;
+              rdfs:domain aeon:Agent ;
+              rdfs:range aeon:ISNI ;
+              aeon:SMW_datatype "External identifier" ;
+              aeon:SMW_import_info """External formatter uri [[External formatter uri::https://isni.org/isni/$1]]
+
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#hasEventType
-aeon:hasEventType rdf:type owl:ObjectProperty ;
+###  https://github.com/tibonto/aeon#has_ORCID
+aeon:has_ORCID rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf aeon:has_external_identifier ;
+               rdfs:domain aeon:Person ;
+               rdfs:range aeon:ORCID ;
+               aeon:SMW_datatype "External identifier" ;
+               aeon:SMW_import_info """External formatter uri [[External formatter uri::https://orcid.org/$1]]
+
+[[partOfSubobject::Template:Subobject Person_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_ROR
+aeon:has_ROR rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf aeon:has_external_identifier ;
+             rdfs:domain aeon:Organisation ;
+             rdfs:range aeon:ROR ;
+             aeon:SMW_datatype "External identifier" ;
+             aeon:SMW_import_info """External formatter uri [[External formatter uri::https://ror.org/$1]]
+
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_WDQID
+aeon:has_WDQID rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf aeon:has_external_identifier ;
+               rdfs:range aeon:WDQID ;
+               aeon:SMW_datatype "External identifier" ;
+               aeon:SMW_import_info """External formatter uri [[External formatter uri::https://www.wikidata.org/wiki/$1]]
+
+[[partOfSubobject::Template:Subobject Process_External_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
+               aeon:WikidataLabel "itemID" .
+
+
+###  https://github.com/tibonto/aeon#has_attendee
+aeon:has_attendee rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:has_contributor ;
                   rdfs:domain aeon:Event ;
-                  rdfs:range aeon:EventType .
+                  rdfs:range aeon:Person ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
+                  aeon:WikidataLabel "participant" ;
+                  aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P710" .
 
 
-###  https://github.com/tibonto/aeon#hasFee
-aeon:hasFee rdf:type owl:ObjectProperty ;
-            rdfs:domain aeon:Event ;
-            rdfs:range aeon:Fee .
+###  https://github.com/tibonto/aeon#has_committee_chair
+aeon:has_committee_chair rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf aeon:has_committee_member ;
+                         rdfs:domain aeon:Event ;
+                         rdfs:range aeon:Person ;
+                         aeon:SMW_datatype "Page" ;
+                         aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#hasIRI
-aeon:hasIRI rdf:type owl:ObjectProperty ;
-            rdfs:domain aeon:Agent ,
-                        aeon:Event ,
-                        aeon:EventSeries ,
-                        aeon:Location ,
-                        aeon:Output ,
-                        aeon:Topic ;
-            rdfs:range aeon:IRI .
+###  https://github.com/tibonto/aeon#has_committee_member
+aeon:has_committee_member rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf aeon:has_organizer ;
+                          rdfs:domain aeon:Event ;
+                          rdfs:range aeon:Person ;
+                          aeon:SMW_datatype "Page" ;
+                          aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#hasLocation
-aeon:hasLocation rdf:type owl:ObjectProperty ;
-                 rdfs:domain aeon:Event ;
-                 rdfs:range aeon:Location .
+###  https://github.com/tibonto/aeon#has_contact_person
+aeon:has_contact_person rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf aeon:has_organizer ;
+                        rdfs:domain obo:BFO_0000015 ;
+                        rdfs:range aeon:Person ;
+                        aeon:SMW_datatype "Page" ;
+                        aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#hasOutput
-aeon:hasOutput rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf owl:topObjectProperty ;
-               rdfs:domain aeon:Event ;
-               rdfs:range aeon:Output .
-
-
-###  https://github.com/tibonto/aeon#hasPart
-aeon:hasPart rdf:type owl:ObjectProperty ;
-             rdfs:domain aeon:Event ;
-             rdfs:range aeon:Event .
-
-
-###  https://github.com/tibonto/aeon#hasProgram
-aeon:hasProgram rdf:type owl:ObjectProperty ;
-                rdfs:domain aeon:Event ;
-                rdfs:range aeon:Program .
-
-
-###  https://github.com/tibonto/aeon#hasRole
-aeon:hasRole rdf:type owl:ObjectProperty ;
-             owl:inverseOf aeon:isRoleOf ;
-             rdfs:domain aeon:Agent ;
-             rdfs:range aeon:Role .
-
-
-###  https://github.com/tibonto/aeon#hasSeries
-aeon:hasSeries rdf:type owl:ObjectProperty ;
-               owl:inverseOf aeon:isSeriesOf ;
-               rdfs:domain aeon:Event ;
-               rdfs:range aeon:EventSeries .
-
-
-###  https://github.com/tibonto/aeon#hasUmbrellaEvent
-aeon:hasUmbrellaEvent rdf:type owl:ObjectProperty ;
-                      rdfs:domain aeon:Event ;
-                      rdfs:range aeon:Event .
-
-
-###  https://github.com/tibonto/aeon#isAbout
-aeon:isAbout rdf:type owl:ObjectProperty ;
-             rdfs:domain aeon:Event ;
-             rdfs:range aeon:Topic .
-
-
-###  https://github.com/tibonto/aeon#isColocatedWith
-aeon:isColocatedWith rdf:type owl:ObjectProperty ;
+###  https://github.com/tibonto/aeon#has_contributor
+aeon:has_contributor rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
                      rdfs:domain aeon:Event ;
-                     rdfs:range aeon:Event .
+                     rdfs:range aeon:Person ;
+                     aeon:SMW_datatype "Page" ;
+                     aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#isJointEventOf
-aeon:isJointEventOf rdf:type owl:ObjectProperty ;
+###  https://github.com/tibonto/aeon#has_event
+aeon:has_event rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf aeon:has_part ;
+               owl:inverseOf aeon:part_of_series ;
+               rdfs:domain aeon:EventSeries ;
+               rdfs:range aeon:Event ;
+               aeon:SMW_datatype "Page" ;
+               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#has_event_type
+aeon:has_event_type rdf:type owl:ObjectProperty ;
                     rdfs:domain aeon:Event ;
-                    rdfs:range aeon:Event .
+                    rdfs:range aeon:EventType ;
+                    aeon:SMW_datatype "Text" ;
+                    aeon:SMW_import_info """[[Allows value list::has_event_type]] The allowed value list for this property is defined in [[MediaWiki:Smw_allows_list_has_event_type]].
+[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
+                    aeon:WikidataLabel "event_type" .
 
 
-###  https://github.com/tibonto/aeon#isRealizedBy
-aeon:isRealizedBy rdf:type owl:ObjectProperty ;
-                  owl:inverseOf aeon:realizesEvent ;
+###  https://github.com/tibonto/aeon#has_external_identifier
+aeon:has_external_identifier rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf aeon:has_identifier ;
+                             rdfs:range aeon:ExternalIdentifier ;
+                             rdfs:comment "This is an abstract property that most likely will never be used, as it just serves as a parent for known external IDs."@en ;
+                             aeon:SMW_datatype "Text" ;
+                             aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
+                             aeon:WikidataLabel "Freebase_ID" ,
+                                                "WikiCFP_conference_series_ID" ;
+                             aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P5127" ,
+                                              "https://www.wikidata.org/wiki/Property:P646" .
+
+
+###  https://github.com/tibonto/aeon#has_fee
+aeon:has_fee rdf:type owl:ObjectProperty ;
+             rdfs:domain aeon:Event ;
+             rdfs:range aeon:Fee ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty aeon:fee ;
+                          owl:someValuesFrom rdfs:Literal
+                        ] ;
+             aeon:SMW_datatype "Text" ;
+             aeon:SMW_import_info """The allowed value list for this property is defined in [[MediaWiki:Smw_allows_list_Has_fee]].
+
+[[partOfSubobject::Template:Subobject Fee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_finance_committee_chair
+aeon:has_finance_committee_chair rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf aeon:has_committee_chair ;
+                                 rdfs:domain aeon:Event ;
+                                 rdfs:range aeon:Person ;
+                                 aeon:SMW_datatype "Page" ;
+                                 aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_finance_committee_member
+aeon:has_finance_committee_member rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf aeon:has_committee_member ;
+                                  rdfs:domain aeon:Event ;
+                                  rdfs:range aeon:Person ;
+                                  aeon:SMW_datatype "Page" ;
+                                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_general_committee_chair
+aeon:has_general_committee_chair rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf aeon:has_committee_chair ;
+                                 rdfs:domain aeon:Event ;
+                                 rdfs:range aeon:Person ;
+                                 aeon:SMW_datatype "Page" ;
+                                 aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_general_committee_member
+aeon:has_general_committee_member rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf aeon:has_committee_member ;
+                                  rdfs:domain aeon:Event ;
+                                  rdfs:range aeon:Person ;
+                                  aeon:SMW_datatype "Page" ;
+                                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_identifier
+aeon:has_identifier rdf:type owl:ObjectProperty ;
+                    rdfs:range aeon:Identifier ;
+                    aeon:SMW_datatype "Text" ;
+                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#has_internal_identifier
+aeon:has_internal_identifier rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf aeon:has_identifier ;
+                             rdfs:domain obo:BFO_0000015 ;
+                             rdfs:range aeon:InternalIdentifier ;
+                             obo:IAO_0000115 "The literal value of the internal identifier used by a system implementing this ontology."@en ;
+                             rdfs:comment """The \"rdfs:label has_ConfIDent_ID\" is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident/) to be used in its service. Thus the internal identifier is called ConfIDent_ID. 
+
+You will probably want to change that in your implementation."""@en ;
+                             rdfs:label "ConfIDent_ID"^^xsd:string ;
+                             aeon:SMW_datatype "Text" ;
+                             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#has_keynote_speaker
+aeon:has_keynote_speaker rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf aeon:has_speaker ;
+                         rdfs:domain aeon:Event ;
+                         rdfs:range aeon:Person ;
+                         aeon:SMW_datatype "Page" ;
+                         aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_local_committee_chair
+aeon:has_local_committee_chair rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf aeon:has_committee_chair ;
+                               rdfs:domain aeon:Event ;
+                               rdfs:range aeon:Person ;
+                               aeon:SMW_datatype "Page" ;
+                               aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_local_committee_member
+aeon:has_local_committee_member rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf aeon:has_committee_member ;
+                                rdfs:domain aeon:Event ;
+                                rdfs:range aeon:Person ;
+                                aeon:SMW_datatype "Page" ;
+                                aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_moderator
+aeon:has_moderator rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf aeon:has_contributor ;
+                   rdfs:domain aeon:Event ;
+                   rdfs:range aeon:Person ;
+                   aeon:SMW_datatype "Page" ;
+                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_organizer
+aeon:has_organizer rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf aeon:has_contributor ;
+                   rdfs:domain obo:BFO_0000015 ;
+                   rdfs:range aeon:Agent ;
+                   aeon:SMW_datatype "Page" ;
+                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Organizer]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
+                   aeon:WikidataLabel "organizer" ;
+                   aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P664" .
+
+
+###  https://github.com/tibonto/aeon#has_output
+aeon:has_output rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain aeon:Event ;
+                rdfs:range aeon:Output ;
+                obo:IAO_0000115 "To say that an academic event A has an output means that there exists some form of publication B that is caused by A." ;
+                aeon:SMW_datatype "Text" ;
+                aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Output]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_part
+aeon:has_part rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              owl:inverseOf aeon:part_of ;
+              rdfs:isDefinedBy "http://purl.obolibrary.org/obo/BFO_0000051" ;
+              aeon:SMW_datatype "Page" ;
+              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#has_program_committee_chair
+aeon:has_program_committee_chair rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf aeon:has_committee_chair ;
+                                 rdfs:domain aeon:Event ;
+                                 rdfs:range aeon:Person ;
+                                 aeon:SMW_datatype "Page" ;
+                                 aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_program_committee_member
+aeon:has_program_committee_member rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf aeon:has_committee_member ;
+                                  rdfs:domain aeon:Event ;
+                                  rdfs:range aeon:Person ;
+                                  aeon:SMW_datatype "Page" ;
+                                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_publication_committee_chair
+aeon:has_publication_committee_chair rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf aeon:has_committee_chair ;
+                                     rdfs:domain aeon:Event ;
+                                     rdfs:range aeon:Person ;
+                                     aeon:SMW_datatype "Page" ;
+                                     aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_publication_committee_member
+aeon:has_publication_committee_member rdf:type owl:ObjectProperty ;
+                                      rdfs:subPropertyOf aeon:has_committee_member ;
+                                      rdfs:domain aeon:Event ;
+                                      rdfs:range aeon:Person ;
+                                      aeon:SMW_datatype "Page" ;
+                                      aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_publicity_committee_chair
+aeon:has_publicity_committee_chair rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf aeon:has_committee_chair ;
+                                   rdfs:domain aeon:Event ;
+                                   rdfs:range aeon:Person ;
+                                   aeon:SMW_datatype "Page" ;
+                                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_publicity_committee_member
+aeon:has_publicity_committee_member rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf aeon:has_committee_member ;
+                                    rdfs:domain aeon:Event ;
+                                    rdfs:range aeon:Person ;
+                                    aeon:SMW_datatype "Page" ;
+                                    aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_reviewer
+aeon:has_reviewer rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:has_contributor ;
                   rdfs:domain aeon:Event ;
-                  rdfs:range aeon:Role .
+                  rdfs:range aeon:Person ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#isRoleOf
-aeon:isRoleOf rdf:type owl:ObjectProperty ;
-              rdfs:domain aeon:Role ;
-              rdfs:range aeon:Agent .
+###  https://github.com/tibonto/aeon#has_speaker
+aeon:has_speaker rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf aeon:has_contributor ;
+                 rdfs:domain aeon:Event ;
+                 rdfs:range aeon:Person ;
+                 aeon:SMW_datatype "Page" ;
+                 aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
+                 aeon:WikidataLabel "speaker" ;
+                 aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P823" .
 
 
-###  https://github.com/tibonto/aeon#isSeriesOf
-aeon:isSeriesOf rdf:type owl:ObjectProperty ;
-                rdfs:domain aeon:EventSeries ;
-                rdfs:range aeon:Event .
+###  https://github.com/tibonto/aeon#has_sponsor
+aeon:has_sponsor rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf aeon:has_contributor ;
+                 rdfs:domain obo:BFO_0000015 ;
+                 rdfs:range aeon:Agent ;
+                 rdfs:comment "PS 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...). As the possible sponsor types can have various schemes, it seems best to have named individuals of the aeon:Sponsor class at the moment, which will make up the range of the data property aeon_sponsor_type."@en ;
+                 aeon:SMW_datatype "Page" ;
+                 aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Sponsor]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#maintainsSeries
-aeon:maintainsSeries rdf:type owl:ObjectProperty ;
-                     rdfs:domain aeon:Organizer ;
-                     rdfs:range aeon:EventSeries .
+###  https://github.com/tibonto/aeon#has_sponsorship_committee_chair
+aeon:has_sponsorship_committee_chair rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf aeon:has_committee_chair ;
+                                     rdfs:domain aeon:Event ;
+                                     rdfs:range aeon:Person ;
+                                     aeon:SMW_datatype "Page" ;
+                                     aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#realizesEvent
-aeon:realizesEvent rdf:type owl:ObjectProperty ;
-                   rdfs:domain aeon:Role ;
-                   rdfs:range aeon:Event .
+###  https://github.com/tibonto/aeon#has_sponsorship_committee_member
+aeon:has_sponsorship_committee_member rdf:type owl:ObjectProperty ;
+                                      rdfs:subPropertyOf aeon:has_committee_member ;
+                                      rdfs:domain aeon:Event ;
+                                      rdfs:range aeon:Person ;
+                                      aeon:SMW_datatype "Page" ;
+                                      aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_steering_committee_chair
+aeon:has_steering_committee_chair rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf aeon:has_committee_chair ;
+                                  rdfs:domain aeon:Event ;
+                                  rdfs:range aeon:Person ;
+                                  aeon:SMW_datatype "Page" ;
+                                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_steering_committee_member
+aeon:has_steering_committee_member rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf aeon:has_committee_member ;
+                                   rdfs:domain aeon:Event ;
+                                   rdfs:range aeon:Person ;
+                                   aeon:SMW_datatype "Page" ;
+                                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_technical_committee_chair
+aeon:has_technical_committee_chair rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf aeon:has_committee_chair ;
+                                   rdfs:domain aeon:Event ;
+                                   rdfs:range aeon:Person ;
+                                   aeon:SMW_datatype "Page" ;
+                                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#has_technical_committee_member
+aeon:has_technical_committee_member rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf aeon:has_committee_member ;
+                                    rdfs:domain aeon:Event ;
+                                    rdfs:range aeon:Person ;
+                                    aeon:SMW_datatype "Page" ;
+                                    aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#is_about
+aeon:is_about rdf:type owl:ObjectProperty ;
+              rdfs:domain obo:BFO_0000015 ;
+              rdfs:range aeon:Subject ;
+              rdfs:isDefinedBy "http://purl.obolibrary.org/obo/IAO_0000136" ;
+              aeon:SMW_datatype "Text" ;
+              aeon:SMW_import_info "[[Allows value list::Subject]] Controlled vocabulary in [[MediaWiki:Smw_allows_list_Subject]] [[Category:AEON]] [[Category:Imported vocabulary]]" ;
+              aeon:WikidataLabel "main_subjectLabel" ;
+              aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P921" .
+
+
+###  https://github.com/tibonto/aeon#joint_event_of
+aeon:joint_event_of rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf aeon:part_of ;
+                    rdfs:domain aeon:Event ;
+                    rdfs:range aeon:Event ;
+                    aeon:SMW_datatype "Page" ;
+                    aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Relation]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#occurs_in
+aeon:occurs_in rdf:type owl:ObjectProperty ;
+               rdfs:domain aeon:Event ;
+               rdfs:range aeon:Location ;
+               rdfs:isDefinedBy "http://purl.obolibrary.org/obo/BFO_0000066" ;
+               aeon:SMW_datatype "Text" ;
+               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#occurs_in_city
+aeon:occurs_in_city rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf aeon:occurs_in ;
+                    rdfs:domain aeon:Event ;
+                    rdfs:range aeon:City ;
+                    aeon:SMW_datatype "Text" ;
+                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#occurs_in_country
+aeon:occurs_in_country rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf aeon:occurs_in ;
+                       rdfs:domain aeon:Event ;
+                       rdfs:range aeon:Country ;
+                       aeon:SMW_datatype "Text" ;
+                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
+                       aeon:WikidataLabel "countryLabel" ;
+                       aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P17" .
+
+
+###  https://github.com/tibonto/aeon#occurs_in_state
+aeon:occurs_in_state rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf aeon:occurs_in ;
+                     rdfs:domain aeon:Event ;
+                     rdfs:range aeon:State ;
+                     aeon:SMW_datatype "Text" ;
+                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#occurs_in_venue
+aeon:occurs_in_venue rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf aeon:occurs_in ;
+                     rdfs:domain aeon:Event ;
+                     rdfs:range aeon:Venue ;
+                     aeon:SMW_datatype "Text" ;
+                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#occurs_in_virtual_place
+aeon:occurs_in_virtual_place rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf aeon:occurs_in ;
+                             rdfs:domain aeon:Event ;
+                             rdfs:range aeon:VirtualLocation ;
+                             aeon:SMW_datatype "URL" ;
+                             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#part_of
+aeon:part_of rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:isDefinedBy "http://purl.obolibrary.org/obo/BFO_0000050" ;
+             aeon:SMW_datatype "Page" ;
+             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#part_of_series
+aeon:part_of_series rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf aeon:part_of ;
+                    rdfs:domain aeon:Event ;
+                    rdfs:range aeon:EventSeries ;
+                    aeon:SMW_datatype "Page" ;
+                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#umbrella_event_of
+aeon:umbrella_event_of rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf aeon:part_of ;
+                       rdfs:domain aeon:Event ;
+                       rdfs:range aeon:Event ;
+                       aeon:SMW_datatype "Page" ;
+                       aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Relation]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 #################################################################
@@ -223,46 +723,686 @@ aeon:realizesEvent rdf:type owl:ObjectProperty ;
 owl:topDataProperty rdfs:range rdfs:Literal .
 
 
+###  https://github.com/tibonto/aeon#CORE_ranking
+aeon:CORE_ranking rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf aeon:metric ;
+                  rdfs:domain aeon:Event ;
+                  aeon:SMW_datatype "Text" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#ID
+aeon:ID rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:domain aeon:Identifier ;
+        obo:IAO_0000115 "The literal value of an identifier."@en ;
+        aeon:SMW_datatype "Text" ;
+        aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#ID_URL
+aeon:ID_URL rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf aeon:ID ;
+            rdfs:domain aeon:Identifier ;
+            rdfs:range xsd:anyURI ;
+            rdfs:comment "The literal value of the full URL used by the identifier scheme, based on the concatination of base URL and ID (ID_URL:value = ID_base_URL:value + ID:value)."@en ;
+            aeon:SMW_datatype "URL" ;
+            aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#ID_base_URL
+aeon:ID_base_URL rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf aeon:ID ;
+                 rdfs:domain aeon:Identifier ;
+                 rdfs:range xsd:anyURI ;
+                 rdfs:comment "The literal value of the base URL used by the identifier scheme."@en ;
+                 aeon:SMW_datatype "URL" ;
+                 aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#abstract_deadline
+aeon:abstract_deadline rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf aeon:deadline ;
+                       rdfs:domain aeon:Event ;
+                       rdfs:range xsd:dateTime ;
+                       aeon:SMW_datatype "Date" ;
+                       aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Deadline]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#acceptance_rate
+aeon:acceptance_rate rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf aeon:metric ;
+                     rdfs:domain aeon:Event ;
+                     aeon:SMW_datatype "Number" ;
+                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#accepted_papers
+aeon:accepted_papers rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf aeon:metric ;
+                     rdfs:domain aeon:Event ;
+                     aeon:SMW_datatype "Number" ;
+                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#accepted_short_papers
+aeon:accepted_short_papers rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf aeon:metric ;
+                           rdfs:domain aeon:Event ;
+                           aeon:SMW_datatype "Number" ;
+                           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#agent_name
+aeon:agent_name rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf aeon:name ;
+                rdfs:domain aeon:Agent ;
+                obo:IAO_0000115 "The literal value of the name to denote an agent."@en ;
+                aeon:SMW_datatype "Text" ;
+                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#camera-ready_deadline
+aeon:camera-ready_deadline rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf aeon:deadline ;
+                           rdfs:domain aeon:Event ;
+                           rdfs:range xsd:dateTime ;
+                           aeon:SMW_datatype "Date" ;
+                           aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Deadline]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#city
+aeon:city rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf aeon:location ;
+          rdfs:domain aeon:City ;
+          aeon:SMW_datatype "Text" ;
+          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#contact
+aeon:contact rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain aeon:ContactPerson ;
+             aeon:SMW_datatype "Text" ;
+             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#contact_email
+aeon:contact_email rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf aeon:contact ;
+                   rdfs:domain aeon:ContactPerson ;
+                   aeon:SMW_datatype "Email" ;
+                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#contact_person_name
+aeon:contact_person_name rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf aeon:contact ;
+                         rdfs:domain aeon:ContactPerson ;
+                         aeon:SMW_datatype "Text" ;
+                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#contact_phone
+aeon:contact_phone rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf aeon:contact ;
+                   rdfs:domain aeon:ContactPerson ;
+                   aeon:SMW_datatype "Telephone number" ;
+                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
 ###  https://github.com/tibonto/aeon#coordinates
 aeon:coordinates rdf:type owl:DatatypeProperty ;
-                 rdfs:domain aeon:PhysicalLocation .
+                 rdfs:subPropertyOf aeon:location ;
+                 rdfs:domain aeon:PhysicalLocation ;
+                 aeon:SMW_datatype "Geographic coordinates" ;
+                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#endDate
-aeon:endDate rdf:type owl:DatatypeProperty ;
-             rdfs:domain aeon:Deadline ,
-                         aeon:Duration ;
-             rdfs:range xsd:dateTime .
+###  https://github.com/tibonto/aeon#country
+aeon:country rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf aeon:location ;
+             rdfs:domain aeon:Country ;
+             aeon:SMW_datatype "Text" ;
+             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#feeCurrency
-aeon:feeCurrency rdf:type owl:DatatypeProperty ;
-                 rdfs:domain aeon:Fee ;
-                 rdfs:comment "This property should have a value from the controlled list defined by the ISO_4217 standard (https://en.wikipedia.org/wiki/ISO_4217)." .
+###  https://github.com/tibonto/aeon#deadline
+aeon:deadline rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain aeon:Event ;
+              rdfs:range xsd:dateTime ;
+              aeon:SMW_datatype "Date" ;
+              aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Deadline]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#feeValue
-aeon:feeValue rdf:type owl:DatatypeProperty ;
-              rdfs:domain aeon:Fee ;
-              rdfs:range xsd:double .
+###  https://github.com/tibonto/aeon#demo_deadline
+aeon:demo_deadline rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf aeon:deadline ;
+                   rdfs:domain aeon:Event ;
+                   rdfs:range xsd:dateTime ;
+                   aeon:SMW_datatype "Date" ;
+                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Deadline]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#iriPath
-aeon:iriPath rdf:type owl:DatatypeProperty ;
-             rdfs:domain aeon:IRI ;
-             rdfs:range xsd:anyURI .
+###  https://github.com/tibonto/aeon#duration
+aeon:duration rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain aeon:Event ;
+              aeon:SMW_datatype "Quantity" ;
+              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
+              aeon:WikidataLabel "durationLabel" ;
+              aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P2047" .
 
 
-###  https://github.com/tibonto/aeon#iriScheme
-aeon:iriScheme rdf:type owl:DatatypeProperty ;
-               rdfs:domain aeon:IRI ;
-               rdfs:range xsd:anyURI .
+###  https://github.com/tibonto/aeon#end_date
+aeon:end_date rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf aeon:duration ;
+              rdfs:domain aeon:Event ;
+              rdfs:range xsd:dateTime ;
+              aeon:SMW_datatype "Date" ;
+              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
+              aeon:WikidataLabel "end_timeLabel" ;
+              aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P582" .
 
 
-###  https://github.com/tibonto/aeon#startDate
-aeon:startDate rdf:type owl:DatatypeProperty ;
-               rdfs:domain aeon:Duration ;
-               rdfs:range xsd:dateTime .
+###  https://github.com/tibonto/aeon#event_frequency
+aeon:event_frequency rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf aeon:metric ;
+                     rdfs:domain aeon:EventSeries ;
+                     obo:IAO_0000115 "The event frequency is the literal value of the number of month until the next event in a certain takes place." ;
+                     aeon:SMW_datatype "Quantity" ;
+                     aeon:SMW_import_info """[[Corresponds to::1 month]] [[Corresponds to::1 months]] [[display units::months]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
+                     aeon:WikidataLabel "event_intervalLabel_inmonths" ;
+                     aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P2257" .
+
+
+###  https://github.com/tibonto/aeon#event_number
+aeon:event_number rdf:type owl:DatatypeProperty ;
+                  rdfs:domain aeon:Event ;
+                  rdfs:range xsd:string ;
+                  obo:IAO_0000115 "The ordinal number of an academic event, if it is a part of an event series." ;
+                  aeon:SMW_datatype "Text" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#event_status
+aeon:event_status rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain aeon:Event ;
+                  rdfs:range [ rdf:type rdfs:Datatype ;
+                               owl:oneOf [ rdf:type rdf:List ;
+                                           rdf:first "as scheduled" ;
+                                           rdf:rest [ rdf:type rdf:List ;
+                                                      rdf:first "canceled" ;
+                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                 rdf:first "delayed" ;
+                                                                 rdf:rest [ rdf:type rdf:List ;
+                                                                            rdf:first "planned" ;
+                                                                            rdf:rest [ rdf:type rdf:List ;
+                                                                                       rdf:first "postponed" ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ]
+                             ] ;
+                  rdfs:comment """maps_to: DataCite:dateType 
+---
+allowed value mapping 
+ConfIDent → DataCite
+
+scheduled → valid
+postponed → updated
+cancled → withdrawn"""@en ;
+                  aeon:SMW_datatype "Text" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#event_type_other
+aeon:event_type_other rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain aeon:EventType ;
+                      aeon:SMW_datatype "Text" ;
+                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#event_year
+aeon:event_year rdf:type owl:DatatypeProperty ;
+                rdfs:domain aeon:Event ;
+                rdfs:range xsd:integer ;
+                obo:IAO_0000115 "The year in which an event takes place."@en ;
+                aeon:SMW_datatype "Number" ;
+                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#fee
+aeon:fee rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain aeon:Fee ;
+         obo:IAO_0000115 "The literal value of the type of fee an aeon:event can have."@en ;
+         obo:IAO_0000600 "There are various type of fees for an event, such as the regular fee, a reduced fee, a member fee and so forth." ;
+         aeon:SMW_datatype "Text" ;
+         aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Fee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#fee_currency
+aeon:fee_currency rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf aeon:fee ;
+                  rdfs:domain aeon:Fee ;
+                  rdfs:comment "This property should have a value from the controlled list defined by the ISO_4217 standard (https://en.wikipedia.org/wiki/ISO_4217)." ;
+                  aeon:SMW_datatype "Text" ;
+                  aeon:SMW_import_info """Controlled vocabulary in [[MediaWiki:Smw_allows_list_Fee_currency]]
+
+[[partOfSubobject::Template:Subobject Fee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#fee_value
+aeon:fee_value rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf aeon:fee ;
+               rdfs:domain aeon:Fee ;
+               aeon:SMW_datatype "Number" ;
+               aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Fee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#first_name
+aeon:first_name rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf aeon:personal_name ;
+                rdfs:domain aeon:Person ;
+                obo:IAO_0000115 "The literal value of the first name of a person."@en ;
+                aeon:SMW_datatype "Text" ;
+                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#landing_page
+aeon:landing_page rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf aeon:ID ;
+                  rdfs:domain aeon:Identifier ;
+                  rdfs:range xsd:anyURI ;
+                  rdfs:comment "The literal value of the landing page (URL) an ID resolves to when following the ID_URL."@en ;
+                  aeon:SMW_datatype "URL" ;
+                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#language
+aeon:language rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              aeon:SMW_datatype "Text" ;
+              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
+              aeon:WikidataLabel "language_usedLabel" ;
+              aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P2936" .
+
+
+###  https://github.com/tibonto/aeon#last_name
+aeon:last_name rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf aeon:personal_name ;
+               rdfs:domain aeon:Person ;
+               obo:IAO_0000115 "The literal value of the last name, or family name, of a person."@en ;
+               aeon:SMW_datatype "Text" ;
+               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#location
+aeon:location rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain aeon:Location ;
+              aeon:SMW_datatype "Text" ;
+              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#logo
+aeon:logo rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          aeon:SMW_datatype "Page" ;
+          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#meeting_URL
+aeon:meeting_URL rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf aeon:location ;
+                 rdfs:domain aeon:VirtualLocation ;
+                 rdfs:range xsd:anyURI ;
+                 aeon:SMW_datatype "URL" ;
+                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#metric
+aeon:metric rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain obo:BFO_0000015 ;
+            aeon:SMW_datatype "Text" ;
+            aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Metric]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#metric_value
+aeon:metric_value rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf aeon:metric ;
+                  rdfs:domain obo:BFO_0000015 ;
+                  aeon:SMW_datatype "Text" ;
+                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Metric]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#name
+aeon:name rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          obo:IAO_0000115 "The literal value of the name of a thing."@en ;
+          aeon:SMW_datatype "Text" ;
+          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#notification_deadline
+aeon:notification_deadline rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf aeon:deadline ;
+                           rdfs:domain aeon:Event ;
+                           rdfs:range xsd:dateTime ;
+                           aeon:SMW_datatype "Date" ;
+                           aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Deadline]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#number_of_attendees
+aeon:number_of_attendees rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf aeon:metric ;
+                         rdfs:domain aeon:Event ;
+                         aeon:SMW_datatype "Number" ;
+                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#number_of_tracks
+aeon:number_of_tracks rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf aeon:metric ;
+                      rdfs:domain aeon:Event ;
+                      aeon:SMW_datatype "Number" ;
+                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#organizational_name
+aeon:organizational_name rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf aeon:agent_name ;
+                         rdfs:domain aeon:Organisation ;
+                         obo:IAO_0000115 "The literal value of the name to denote an organization."@en ;
+                         aeon:SMW_datatype "Text" ;
+                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#paper_deadline
+aeon:paper_deadline rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf aeon:deadline ;
+                    rdfs:domain aeon:Event ;
+                    rdfs:range xsd:dateTime ;
+                    aeon:SMW_datatype "Date" ;
+                    aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Deadline]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#personal_name
+aeon:personal_name rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf aeon:agent_name ;
+                   rdfs:domain aeon:Person ;
+                   obo:IAO_0000115 "The literal value of the name to denote a person."@en ;
+                   aeon:SMW_datatype "Text" ;
+                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#poster_deadline
+aeon:poster_deadline rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf aeon:deadline ;
+                     rdfs:domain aeon:Event ;
+                     rdfs:range xsd:dateTime ;
+                     aeon:SMW_datatype "Date" ;
+                     aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Deadline]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#previous_end_date
+aeon:previous_end_date rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf aeon:end_date ;
+                       rdfs:domain aeon:Event ;
+                       rdfs:range xsd:dateTime ;
+                       aeon:SMW_datatype "Date" ;
+                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#previous_start_date
+aeon:previous_start_date rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf aeon:start_date ;
+                         rdfs:domain aeon:Event ;
+                         rdfs:range xsd:dateTime ;
+                         aeon:SMW_datatype "Date" ;
+                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#proceedings_site_count
+aeon:proceedings_site_count rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf aeon:metric ;
+                            rdfs:domain aeon:Event ;
+                            aeon:SMW_datatype "Number" ;
+                            aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#process_acronym
+aeon:process_acronym rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf aeon:process_name ;
+                     rdfs:domain obo:BFO_0000015 ;
+                     obo:IAO_0000112 "\"DILS 2019\" is the official acronym of the academic event \"13th International Conference on Data Integration in Life Science\""@en ;
+                     obo:IAO_0000115 "The literal value of the official acronym of an aeon:process, that is either an academic event or event series."@en ;
+                     aeon:SMW_datatype "Text" ;
+                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
+                     aeon:WikidataLabel "short_nameLabel" ;
+                     aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P1813" .
+
+
+###  https://github.com/tibonto/aeon#process_alternative_name
+aeon:process_alternative_name rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf aeon:process_name ;
+                              rdfs:domain obo:BFO_0000015 ;
+                              rdfs:comment "The Literal value of an alternative name of an aeon:process, that is either an academic event or event series."@en ;
+                              aeon:SMW_datatype "Text" ;
+                              aeon:SMW_import_info """[[partOfSubobject::Template:Subobject AdditionalProcessName]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#process_former_name
+aeon:process_former_name rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf aeon:process_name ;
+                         rdfs:domain obo:BFO_0000015 ;
+                         rdfs:comment "The Literal value of the former official name of an aeon:process, that is either an academic event or event series."@en ;
+                         aeon:SMW_datatype "Text" ;
+                         aeon:SMW_import_info """[[partOfSubobject::Template:Subobject AdditionalProcessName]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#process_name
+aeon:process_name rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf aeon:name ;
+                  rdfs:domain obo:BFO_0000015 ;
+                  obo:IAO_0000115 "The literal value of the official name (title) of an aeon:process, that is either an academic event or event series."@en ;
+                  aeon:SMW_datatype "Text" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
+                  aeon:WikidataLabel "itemLabel" .
+
+
+###  https://github.com/tibonto/aeon#process_translated_name
+aeon:process_translated_name rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf aeon:process_name ;
+                             rdfs:domain obo:BFO_0000015 ;
+                             obo:IAO_0000115 "The literal value of the translation of the official name (title) of an aeon:process, that is either an academic event or event series."@en ;
+                             aeon:SMW_datatype "Text" ;
+                             aeon:SMW_import_info """[[partOfSubobject::Template:Subobject AdditionalProcessName]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#process_website
+aeon:process_website rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdfs:domain obo:BFO_0000015 ;
+                     rdfs:range xsd:anyURI ;
+                     aeon:SMW_datatype "URL" ;
+                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
+                     aeon:WikidataLabel "official_website" ;
+                     aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P856" .
+
+
+###  https://github.com/tibonto/aeon#series_cite_count
+aeon:series_cite_count rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf aeon:metric ;
+                       rdfs:domain aeon:EventSeries ;
+                       aeon:SMW_datatype "Number" ;
+                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#sponsor_type
+aeon:sponsor_type rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain aeon:Sponsor ;
+                  aeon:SMW_datatype "Text" ;
+                  aeon:SMW_import_info """Controlled vocabulary in [[MediaWiki:Smw _allows_list_Sponsor_type]] 
+
+[[partOfSubobject::Template:Subobject Sponsor]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#start_date
+aeon:start_date rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf aeon:duration ;
+                rdfs:domain aeon:Event ;
+                rdfs:range xsd:dateTime ;
+                aeon:SMW_datatype "Date" ;
+                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
+                aeon:WikidataLabel "start_time" ;
+                aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P580" .
+
+
+###  https://github.com/tibonto/aeon#state
+aeon:state rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf aeon:location ;
+           rdfs:domain aeon:State ;
+           aeon:SMW_datatype "Text" ;
+           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#subject
+aeon:subject rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain aeon:Subject ;
+             aeon:SMW_datatype "Text" ;
+             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#submission_deadline
+aeon:submission_deadline rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf aeon:deadline ;
+                         rdfs:domain aeon:Event ;
+                         rdfs:range xsd:dateTime ;
+                         aeon:SMW_datatype "Date" ;
+                         aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Deadline]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#submitted_papers
+aeon:submitted_papers rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf aeon:metric ;
+                      rdfs:domain aeon:Event ;
+                      aeon:SMW_datatype "Number" ;
+                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#summary
+aeon:summary rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             aeon:SMW_datatype "Text" ;
+             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#summary_licence
+aeon:summary_licence rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf aeon:summary ;
+                     aeon:SMW_datatype "Text" ;
+                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#tutorial_deadline
+aeon:tutorial_deadline rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf aeon:deadline ;
+                       rdfs:domain aeon:Event ;
+                       rdfs:range xsd:dateTime ;
+                       aeon:SMW_datatype "Date" ;
+                       aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Deadline]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#venue
+aeon:venue rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf aeon:location ;
+           rdfs:domain aeon:Venue ;
+           aeon:SMW_datatype "Text" ;
+           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#venue_URL
+aeon:venue_URL rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf aeon:venue ;
+               rdfs:domain aeon:Venue ;
+               rdfs:range xsd:anyURI ;
+               aeon:SMW_datatype "URL" ;
+               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#workshop_deadline
+aeon:workshop_deadline rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf aeon:deadline ;
+                       rdfs:domain aeon:Event ;
+                       rdfs:range xsd:dateTime ;
+                       aeon:SMW_datatype "Date" ;
+                       aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Deadline]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 #################################################################
@@ -273,176 +1413,251 @@ aeon:startDate rdf:type owl:DatatypeProperty ;
 obo:BFO_0000015 rdf:type owl:Class ;
                 obo:IAO_0000115 "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])"@en ;
                 rdfs:isDefinedBy "http://purl.obolibrary.org/obo/bfo.owl"^^xsd:anyURI ;
-                rdfs:label "Process"@en .
+                rdfs:label "Process"@en ;
+                aeon:SMW_datatype "Category" ;
+                aeon:SMW_import_info "[[Category:BFO]] [[Category:Imported vocabulary]]" .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000023
 obo:BFO_0000023 rdf:type owl:Class ;
-                owl:equivalentClass aeon:Role ;
-                rdfs:label "bfo:role" .
-
-
-###  https://github.com/tibonto/aeon#Abstract_Deadline
-aeon:Abstract_Deadline rdf:type owl:Class ;
-                       rdfs:subClassOf aeon:Deadline ;
-                       rdfs:label "Abstract Deadline" .
+                rdfs:comment "example of usage:the role of subject in a clinical trial; the role of a boundary to demarcate two neighboring administrative territories; the role of a building in serving as a military target; the priest role; John’s role of husband to Mary is dependent on Mary’s role of wife to John, and both are dependent on the object aggregate comprising John and Mary as member parts joined together through the relational quality of being married.; the role of a stone in marking a property boundary; the student role"@en ;
+                rdfs:isDefinedBy "http://purl.obolibrary.org/obo/bfo.owl"@en ;
+                rdfs:label "Role"@en ;
+                aeon:SMW_datatype "Category" ;
+                aeon:SMW_import_info "[[Category:BFO]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#Agent
 aeon:Agent rdf:type owl:Class ;
            obo:IAO_0000115 "A material entity (either a human being or an aggregate of humans such as an organization) which is active in a process or has the relevant capabilities of intentionality." ;
-           rdfs:label "Agent" .
+           rdfs:label "Agent" ;
+           aeon:SMW_datatype "Category" ;
+           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#Attendee
 aeon:Attendee rdf:type owl:Class ;
-              rdfs:subClassOf aeon:Role .
-
-
-###  https://github.com/tibonto/aeon#Award
-aeon:Award rdf:type owl:Class ;
-           aeon:definition "An award honours a certain contribution of an academic event. It is usually awarded by the program committee. E.g.: best paper award" .
+              rdfs:subClassOf aeon:Contributor ;
+              aeon:SMW_datatype "Category" ;
+              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#City
 aeon:City rdf:type owl:Class ;
-          rdfs:subClassOf aeon:PhysicalLocation .
+          rdfs:subClassOf aeon:PhysicalLocation ;
+          aeon:SMW_datatype "Category" ;
+          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#Colloquium
-aeon:Colloquium rdf:type owl:Class ;
-                rdfs:subClassOf aeon:EventType .
+###  https://github.com/tibonto/aeon#Committee
+aeon:Committee rdf:type owl:Class ;
+               rdfs:subClassOf aeon:Group_of_Agents ;
+               owl:disjointWith aeon:Organisation ;
+               aeon:SMW_datatype "Category" ;
+               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#CommitteeChair
 aeon:CommitteeChair rdf:type owl:Class ;
-                    rdfs:subClassOf aeon:CommitteeMember .
+                    rdfs:subClassOf aeon:CommitteeMember ;
+                    aeon:SMW_datatype "Category" ;
+                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#CommitteeMember
 aeon:CommitteeMember rdf:type owl:Class ;
-                     rdfs:subClassOf aeon:Organizer .
+                     rdfs:subClassOf aeon:Organizer ;
+                     aeon:SMW_datatype "Category" ;
+                     aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
 
-
-###  https://github.com/tibonto/aeon#Conference
-aeon:Conference rdf:type owl:Class ;
-                rdfs:subClassOf aeon:EventType .
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#ContactPerson
 aeon:ContactPerson rdf:type owl:Class ;
-                   rdfs:subClassOf aeon:Organizer .
+                   rdfs:subClassOf aeon:Organizer ;
+                   aeon:SMW_datatype "Category" ;
+                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#Contributor
+aeon:Contributor rdf:type owl:Class ;
+                 rdfs:subClassOf obo:BFO_0000023 ;
+                 rdfs:comment "ToDo: use CRO IRI" ;
+                 rdfs:isDefinedBy "http://purl.obolibrary.org/obo/CRO_0000000" ;
+                 aeon:SMW_datatype "Category" ;
+                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ,
+                                      """[[partOfSubobject::Template:Subobject Contributor]]
+
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#Country
 aeon:Country rdf:type owl:Class ;
-             rdfs:subClassOf aeon:PhysicalLocation .
+             rdfs:subClassOf aeon:PhysicalLocation ;
+             aeon:SMW_datatype "Category" ;
+             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#Deadline
-aeon:Deadline rdf:type owl:Class .
-
-
-###  https://github.com/tibonto/aeon#Demo_Deadline
-aeon:Demo_Deadline rdf:type owl:Class ;
-                   rdfs:subClassOf aeon:Deadline ;
-                   rdfs:label "Demo Deadline" .
-
-
-###  https://github.com/tibonto/aeon#Duration
-aeon:Duration rdf:type owl:Class ;
-              rdfs:comment "A timespan constituted by a start time and an end time." .
+###  https://github.com/tibonto/aeon#DOI
+aeon:DOI rdf:type owl:Class ;
+         rdfs:subClassOf aeon:ExternalIdentifier ;
+         aeon:SMW_datatype "Category" ;
+         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#Event
 aeon:Event rdf:type owl:Class ;
            rdfs:subClassOf obo:BFO_0000015 ;
            owl:disjointWith aeon:EventSeries ;
-           obo:IAO_0000112 "The 19th International Semantic Web Conference (ISWC2020) is a scientific event." ;
-           rdfs:label "Event" ;
-           aeon:definition "A scientific event is an organized gathering for researchers (not necessarily academics) to present and discuss their work." .
+           obo:IAO_0000112 "The 19th International Semantic Web Conference (ISWC2020) is an academic  event."@en ;
+           obo:IAO_0000115 "An academic event is an organized gathering for researchers (not necessarily academics) to present and discuss their work."@en ;
+           rdfs:label "Event"@en ;
+           aeon:SMW_datatype "Category" ;
+           aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Relation]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#EventSeries
 aeon:EventSeries rdf:type owl:Class ;
                  rdfs:subClassOf obo:BFO_0000015 ;
                  obo:IAO_0000112 "International Semantic Web Conference (ISWC) series" ;
-                 rdfs:label "Event Series" .
+                 rdfs:label "Event Series" ;
+                 aeon:SMW_datatype "Category" ;
+                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#EventType
-aeon:EventType rdf:type owl:Class .
+aeon:EventType rdf:type owl:Class ;
+               aeon:SMW_datatype "Category" ;
+               aeon:SMW_import_info "The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_has_event_type]]. [[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#ExternalIdentifier
+aeon:ExternalIdentifier rdf:type owl:Class ;
+                        rdfs:subClassOf aeon:Identifier ;
+                        owl:disjointWith aeon:InternalIdentifier ;
+                        rdfs:label "External ID"@en ;
+                        aeon:SMW_datatype "Category" ;
+                        aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#Fee
 aeon:Fee rdf:type owl:Class ;
-         obo:IAO_0000115 "The financial cost of attendance at a scientific event." .
+         obo:IAO_0000115 "The financial cost of attendance at a scientific event." ;
+         aeon:SMW_datatype "Category" ;
+         aeon:SMW_import_info """The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_Has_fee]].
+
+[[partOfSubobject::Template:Subobject Fee]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#Forum
-aeon:Forum rdf:type owl:Class ;
-           rdfs:subClassOf aeon:EventType .
+###  https://github.com/tibonto/aeon#GND
+aeon:GND rdf:type owl:Class ;
+         rdfs:subClassOf aeon:ExternalIdentifier ;
+         aeon:SMW_datatype "Category" ;
+         aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#Group
-aeon:Group rdf:type owl:Class ;
-           rdfs:subClassOf aeon:Agent ;
-           obo:IAO_0000112 "The program committee is a 'group' of persons who have the role to organize the program of a scientific event." ;
-           obo:IAO_0000115 "A grouping of persons/individuals who participate in a scientific event via a certain role." .
+###  https://github.com/tibonto/aeon#Group_of_Agents
+aeon:Group_of_Agents rdf:type owl:Class ;
+                     rdfs:subClassOf aeon:Agent ;
+                     obo:IAO_0000112 "The program committee is a 'group' of persons who have the role to organize the program of a scientific event." ;
+                     obo:IAO_0000115 "A grouping of persons/individuals who participate in a scientific event via a certain role." ;
+                     aeon:SMW_datatype "Category" ;
+                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#Hackathon
-aeon:Hackathon rdf:type owl:Class ;
-               rdfs:subClassOf aeon:EventType .
+###  https://github.com/tibonto/aeon#ISNI
+aeon:ISNI rdf:type owl:Class ;
+          rdfs:subClassOf aeon:ExternalIdentifier ;
+          aeon:SMW_datatype "Category" ;
+          aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#IRI
-aeon:IRI rdf:type owl:Class ;
-         rdfs:comment "URI is used to refer to persistent and non-persistent ressource identifiers." .
+###  https://github.com/tibonto/aeon#Identifier
+aeon:Identifier rdf:type owl:Class ;
+                rdfs:seeAlso "http://purl.obolibrary.org/obo/IAO_0020000"@en ;
+                aeon:SMW_datatype "Category" ;
+                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#InternalIdentifier
+aeon:InternalIdentifier rdf:type owl:Class ;
+                        rdfs:subClassOf aeon:Identifier ;
+                        rdfs:comment "The \"rdfs:label ConfIDent_ID\" is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident/) to be used in its service. Thus the internal identifier is called ConfIDent_ID. You will probably want to change that in your implementation."@en ;
+                        rdfs:label "ConfIDent ID"@en ;
+                        aeon:SMW_datatype "Category" ;
+                        aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#KeynoteSpeaker
 aeon:KeynoteSpeaker rdf:type owl:Class ;
-                    rdfs:subClassOf aeon:Speaker .
+                    rdfs:subClassOf aeon:Speaker ;
+                    aeon:SMW_datatype "Category" ;
+                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#Location
-aeon:Location rdf:type owl:Class .
+aeon:Location rdf:type owl:Class ;
+              aeon:SMW_datatype "Category" ;
+              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#Moderator
 aeon:Moderator rdf:type owl:Class ;
-               rdfs:subClassOf aeon:Role .
+               rdfs:subClassOf aeon:Contributor ;
+               aeon:SMW_datatype "Category" ;
+               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#Notification_Deadline
-aeon:Notification_Deadline rdf:type owl:Class ;
-                           rdfs:subClassOf aeon:Deadline ;
-                           rdfs:label "Notification Deadline" .
+###  https://github.com/tibonto/aeon#ORCID
+aeon:ORCID rdf:type owl:Class ;
+           rdfs:subClassOf aeon:ExternalIdentifier ;
+           aeon:SMW_datatype "Category" ;
+           aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Person_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#Organisation
 aeon:Organisation rdf:type owl:Class ;
-                  rdfs:subClassOf aeon:Agent ;
+                  rdfs:subClassOf aeon:Group_of_Agents ;
                   obo:IAO_0000112 "TIB is an organisation." ;
                   obo:IAO_0000115 "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members." ;
-                  obo:IAO_0000600 "institutional body (research organization, society, association etc.)" .
+                  obo:IAO_0000600 "institutional body (research organization, society, association etc.)" ;
+                  aeon:SMW_datatype "Category" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#Organizer
 aeon:Organizer rdf:type owl:Class ;
-               rdfs:subClassOf aeon:Role .
+               rdfs:subClassOf aeon:Contributor ;
+               aeon:SMW_datatype "Category" ;
+               aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Organizer]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#Output
 aeon:Output rdf:type owl:Class ;
-            rdfs:comment "The container for information about the event publications (including non academic publications)" .
-
-
-###  https://github.com/tibonto/aeon#Paper_Deadline
-aeon:Paper_Deadline rdf:type owl:Class ;
-                    rdfs:subClassOf aeon:Deadline ;
-                    rdfs:label "Paper Deadline" .
+            rdfs:comment "The container for information about the event publications (including non academic publications)" ;
+            aeon:SMW_datatype "Category" ;
+            aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#Person
@@ -450,112 +1665,250 @@ aeon:Person rdf:type owl:Class ;
             rdfs:subClassOf aeon:Agent ;
             obo:IAO_0000112 "Tim Berners Lee is a person." ;
             obo:IAO_0000115 "A person is an individual agent that participates via a role in some way in a scientific event or event series." ;
-            obo:IAO_0000118 "human; human being; individual" .
+            obo:IAO_0000118 "human; human being; individual" ;
+            aeon:SMW_datatype "Category" ;
+            aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#PhysicalLocation
 aeon:PhysicalLocation rdf:type owl:Class ;
                       rdfs:subClassOf aeon:Location ;
                       owl:disjointWith aeon:VirtualLocation ;
-                      rdfs:label "Physical Location" .
+                      rdfs:label "Physical Location" ;
+                      aeon:SMW_datatype "Category" ;
+                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#Poster_Deadline
-aeon:Poster_Deadline rdf:type owl:Class ;
-                     rdfs:subClassOf aeon:Deadline ;
-                     rdfs:label "Poster Deadline" .
+###  https://github.com/tibonto/aeon#ROR
+aeon:ROR rdf:type owl:Class ;
+         rdfs:subClassOf aeon:ExternalIdentifier ;
+         aeon:SMW_datatype "Category" ;
+         aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Organization_ID]]
 
-
-###  https://github.com/tibonto/aeon#Program
-aeon:Program rdf:type owl:Class .
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#Reviewer
 aeon:Reviewer rdf:type owl:Class ;
-              rdfs:subClassOf aeon:Role .
-
-
-###  https://github.com/tibonto/aeon#Role
-aeon:Role rdf:type owl:Class .
-
-
-###  https://github.com/tibonto/aeon#Seminar
-aeon:Seminar rdf:type owl:Class ;
-             rdfs:subClassOf aeon:EventType .
-
-
-###  https://github.com/tibonto/aeon#Session
-aeon:Session rdf:type owl:Class ;
-             rdfs:subClassOf aeon:EventType ;
-             obo:IAO_0000115 "A part of a scientific event." .
+              rdfs:subClassOf aeon:Contributor ;
+              obo:IAO_0000115 "Evaluation of scientific, academic, or professional work, such as manuscripts or grants by others working in the same field. [definition source: https://www.lexico.com/en/definition/peer_review][definition source: https://www.lexico.com/en/definition/peer_review]" ;
+              obo:IAO_0000118 "manuscript review role" ;
+              rdfs:comment "ToDo: use CRO IRI" ;
+              rdfs:isDefinedBy "http://purl.obolibrary.org/obo/CRO_0000101" ;
+              aeon:SMW_datatype "Category" ;
+              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#Speaker
 aeon:Speaker rdf:type owl:Class ;
-             rdfs:subClassOf aeon:Role .
+             rdfs:subClassOf aeon:Contributor ;
+             aeon:SMW_datatype "Category" ;
+             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#Sponsor
 aeon:Sponsor rdf:type owl:Class ;
-             rdfs:subClassOf aeon:Role .
+             rdfs:subClassOf aeon:Contributor ;
+             rdfs:comment "PS 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...). As the possible sponsor types can have various schemes, it seems best to have named individuals of the aeon:Sponsor class at the moment." ;
+             aeon:SMW_datatype "Category" ;
+             aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Sponsor]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#State
 aeon:State rdf:type owl:Class ;
-           rdfs:subClassOf aeon:PhysicalLocation .
+           rdfs:subClassOf aeon:PhysicalLocation ;
+           aeon:SMW_datatype "Category" ;
+           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#Submission_Deadline
-aeon:Submission_Deadline rdf:type owl:Class ;
-                         rdfs:subClassOf aeon:Deadline ;
-                         rdfs:label "Submission Deadline" .
-
-
-###  https://github.com/tibonto/aeon#Symposium
-aeon:Symposium rdf:type owl:Class ;
-               rdfs:subClassOf aeon:EventType .
-
-
-###  https://github.com/tibonto/aeon#Talk
-aeon:Talk rdf:type owl:Class ;
-          rdfs:subClassOf aeon:EventType .
-
-
-###  https://github.com/tibonto/aeon#Topic
-aeon:Topic rdf:type owl:Class .
-
-
-###  https://github.com/tibonto/aeon#Tutorial
-aeon:Tutorial rdf:type owl:Class ;
-              rdfs:subClassOf aeon:EventType .
-
-
-###  https://github.com/tibonto/aeon#Tutorial_Deadline
-aeon:Tutorial_Deadline rdf:type owl:Class ;
-                       rdfs:subClassOf aeon:Deadline ;
-                       rdfs:label "Tutorial Deadline" .
+###  https://github.com/tibonto/aeon#Subject
+aeon:Subject rdf:type owl:Class ;
+             aeon:SMW_datatype "Category" ;
+             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#Venue
 aeon:Venue rdf:type owl:Class ;
-           rdfs:subClassOf aeon:PhysicalLocation .
+           rdfs:subClassOf aeon:PhysicalLocation ;
+           aeon:SMW_datatype "Category" ;
+           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#VirtualLocation
 aeon:VirtualLocation rdf:type owl:Class ;
                      rdfs:subClassOf aeon:Location ;
-                     rdfs:label "Virtual Location" .
+                     rdfs:label "Virtual Location" ;
+                     aeon:SMW_datatype "Category" ;
+                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#WDQID
+aeon:WDQID rdf:type owl:Class ;
+           rdfs:subClassOf aeon:ExternalIdentifier ;
+           aeon:SMW_datatype "Category" ;
+           aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Process_External_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://github.com/tibonto/aeon#Bronze_Sponsor
+aeon:Bronze_Sponsor rdf:type owl:NamedIndividual ,
+                             aeon:Sponsor .
+
+
+###  https://github.com/tibonto/aeon#Colloquium
+aeon:Colloquium rdf:type owl:NamedIndividual ,
+                         aeon:EventType .
+
+
+###  https://github.com/tibonto/aeon#Conference
+aeon:Conference rdf:type owl:NamedIndividual ,
+                         aeon:EventType .
+
+
+###  https://github.com/tibonto/aeon#Forum
+aeon:Forum rdf:type owl:NamedIndividual ,
+                    aeon:EventType .
+
+
+###  https://github.com/tibonto/aeon#Gold_Sponsor
+aeon:Gold_Sponsor rdf:type owl:NamedIndividual ,
+                           aeon:Sponsor .
+
+
+###  https://github.com/tibonto/aeon#Hackathon
+aeon:Hackathon rdf:type owl:NamedIndividual ,
+                        aeon:EventType .
+
+
+###  https://github.com/tibonto/aeon#Lisbon
+aeon:Lisbon rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/tibonto/aeon#Member_Fee
+aeon:Member_Fee rdf:type owl:NamedIndividual ,
+                         aeon:Fee .
+
+
+###  https://github.com/tibonto/aeon#PIDapalooza
+aeon:PIDapalooza rdf:type owl:NamedIndividual ,
+                          aeon:EventSeries ;
+                 rdfs:label "PIDapalooza"@en .
+
+
+###  https://github.com/tibonto/aeon#PIDapalooza2020
+aeon:PIDapalooza2020 rdf:type owl:NamedIndividual ,
+                              aeon:Event ;
+                     aeon:has_event_type aeon:Conference ,
+                                         aeon:_EventType_other_1 ;
+                     aeon:has_external_identifier aeon:WDQID_1 ;
+                     aeon:has_internal_identifier aeon:_ConfIDentID_1 ;
+                     aeon:has_organizer aeon:_Organization_1 ;
+                     aeon:has_speaker aeon:_Person_1 ;
+                     aeon:occurs_in_city aeon:Lisbon ;
+                     aeon:occurs_in_country aeon:Portugal ;
+                     aeon:part_of_series aeon:PIDapalooza ;
+                     aeon:end_date "2020-01-30T17:00:00"^^xsd:dateTime ;
+                     aeon:number_of_attendees 117 ;
+                     aeon:number_of_tracks 13 ;
+                     aeon:start_date "2020-01-29T09:00:00"^^xsd:dateTime ;
+                     rdfs:label "PIDapalooza2020"@en .
+
+
+###  https://github.com/tibonto/aeon#Portugal
+aeon:Portugal rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/tibonto/aeon#Reduced_Fee
+aeon:Reduced_Fee rdf:type owl:NamedIndividual ,
+                          aeon:Fee .
+
+
+###  https://github.com/tibonto/aeon#Regular_Fee
+aeon:Regular_Fee rdf:type owl:NamedIndividual ,
+                          aeon:Fee .
+
+
+###  https://github.com/tibonto/aeon#Seminar
+aeon:Seminar rdf:type owl:NamedIndividual ,
+                      aeon:EventType .
+
+
+###  https://github.com/tibonto/aeon#Session
+aeon:Session rdf:type owl:NamedIndividual ,
+                      aeon:EventType .
+
+
+###  https://github.com/tibonto/aeon#Silver_Sponsor
+aeon:Silver_Sponsor rdf:type owl:NamedIndividual ,
+                             aeon:Sponsor .
+
+
+###  https://github.com/tibonto/aeon#Symposium
+aeon:Symposium rdf:type owl:NamedIndividual ,
+                        aeon:EventType .
+
+
+###  https://github.com/tibonto/aeon#Talk
+aeon:Talk rdf:type owl:NamedIndividual ,
+                   aeon:EventType .
+
+
+###  https://github.com/tibonto/aeon#Track
+aeon:Track rdf:type owl:NamedIndividual ,
+                    aeon:EventType .
+
+
+###  https://github.com/tibonto/aeon#Tutorial
+aeon:Tutorial rdf:type owl:NamedIndividual ,
+                       aeon:EventType .
+
+
+###  https://github.com/tibonto/aeon#WDQID_1
+aeon:WDQID_1 rdf:type owl:NamedIndividual ;
+             aeon:ID "Q65929359"^^xsd:string ;
+             aeon:ID_URL "https://www.wikidata.org/wiki/Q65929359"^^xsd:anyURI ;
+             aeon:ID_base_URL "https://www.wikidata.org/wiki/"^^xsd:anyURI .
 
 
 ###  https://github.com/tibonto/aeon#Workshop
-aeon:Workshop rdf:type owl:Class ;
-              rdfs:subClassOf aeon:EventType .
+aeon:Workshop rdf:type owl:NamedIndividual ,
+                       aeon:EventType .
 
 
-###  https://github.com/tibonto/aeon#Workshop_Deadline
-aeon:Workshop_Deadline rdf:type owl:Class ;
-                       rdfs:subClassOf aeon:Deadline ;
-                       rdfs:label "Workshop Deadline" .
+###  https://github.com/tibonto/aeon#_City_1
+aeon:_City_1 rdf:type owl:NamedIndividual ;
+             aeon:city "Berlin" .
+
+
+###  https://github.com/tibonto/aeon#_ConfIDentID_1
+aeon:_ConfIDentID_1 rdf:type owl:NamedIndividual ;
+                    aeon:ID "PIDapalooza_2020"^^xsd:string ;
+                    aeon:ID_URL "https://www.confident-conference.org/r/vanilla/index.php/PIDapalooza_2020"^^xsd:anyURI ;
+                    aeon:ID_base_URL "https://www.confident-conference.org/r/vanilla/index.php/"^^xsd:anyURI .
+
+
+###  https://github.com/tibonto/aeon#_EventType_other_1
+aeon:_EventType_other_1 rdf:type owl:NamedIndividual ;
+                        aeon:event_type_other "festival" .
+
+
+###  https://github.com/tibonto/aeon#_Organization_1
+aeon:_Organization_1 rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/tibonto/aeon#_Person_1
+aeon:_Person_1 rdf:type owl:NamedIndividual ;
+               aeon:first_name "Philip"^^xsd:string ;
+               aeon:last_name "Strömert"^^xsd:string .
 
 
 [ rdfs:label "example"
@@ -566,63 +1919,11 @@ aeon:Workshop_Deadline rdf:type owl:Class ;
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-   owl:members ( aeon:Abstract_Deadline
-                 aeon:Demo_Deadline
-                 aeon:Notification_Deadline
-                 aeon:Paper_Deadline
-                 aeon:Poster_Deadline
-                 aeon:Submission_Deadline
-                 aeon:Tutorial_Deadline
-                 aeon:Workshop_Deadline
+   owl:members ( aeon:Group_of_Agents
+                 aeon:Organisation
+                 aeon:Person
                )
  ] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( aeon:Colloquium
-                aeon:Conference
-                aeon:Forum
-                aeon:Hackathon
-                aeon:Seminar
-                aeon:Session
-                aeon:Symposium
-                aeon:Talk
-                aeon:Tutorial
-                aeon:Workshop
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( aeon:Colloquium
-                aeon:Conference
-                aeon:Forum
-                aeon:Seminar
-                aeon:Symposium
-                aeon:Talk
-                aeon:Tutorial
-                aeon:Workshop
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( aeon:Group
-                aeon:Organisation
-                aeon:Person
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( aeon:Moderator
-                aeon:Organizer
-                aeon:Reviewer
-                aeon:Speaker
-                aeon:Sponsor
-                aeon:VirtualLocation
-              )
-] .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
