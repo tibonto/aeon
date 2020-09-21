@@ -136,7 +136,6 @@ aeon:has_GND rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_ISNI
 aeon:has_ISNI rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf aeon:has_external_identifier ;
-              rdfs:domain aeon:Agent ;
               rdfs:range aeon:ISNI ;
               aeon:SMW_datatype "External identifier" ;
               aeon:SMW_import_info """External formatter uri [[External formatter uri::https://isni.org/isni/$1]]
@@ -150,7 +149,6 @@ aeon:has_ISNI rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_ORCID
 aeon:has_ORCID rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf aeon:has_external_identifier ;
-               rdfs:domain aeon:Person ;
                rdfs:range aeon:ORCID ;
                aeon:SMW_datatype "External identifier" ;
                aeon:SMW_import_info """External formatter uri [[External formatter uri::https://orcid.org/$1]]
@@ -163,7 +161,6 @@ aeon:has_ORCID rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_ROR
 aeon:has_ROR rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf aeon:has_external_identifier ;
-             rdfs:domain aeon:Organisation ;
              rdfs:range aeon:ROR ;
              aeon:SMW_datatype "External identifier" ;
              aeon:SMW_import_info """External formatter uri [[External formatter uri::https://ror.org/$1]]
@@ -192,7 +189,6 @@ aeon:has_WDQID rdf:type owl:ObjectProperty ;
 aeon:has_attendee rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:has_contributor ;
                   rdfs:domain aeon:Event ;
-                  rdfs:range aeon:Person ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
                   aeon:WikidataLabel "participantLabel" ;
@@ -203,7 +199,6 @@ aeon:has_attendee rdf:type owl:ObjectProperty ;
 aeon:has_committee_chair rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf aeon:has_committee_member ;
                          rdfs:domain aeon:Event ;
-                         rdfs:range aeon:Person ;
                          aeon:SMW_datatype "Page" ;
                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -212,7 +207,6 @@ aeon:has_committee_chair rdf:type owl:ObjectProperty ;
 aeon:has_committee_member rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf aeon:has_organizer ;
                           rdfs:domain aeon:Event ;
-                          rdfs:range aeon:Person ;
                           aeon:SMW_datatype "Page" ;
                           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -221,7 +215,6 @@ aeon:has_committee_member rdf:type owl:ObjectProperty ;
 aeon:has_contact_person rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf aeon:has_organizer ;
                         rdfs:domain obo:BFO_0000015 ;
-                        rdfs:range aeon:Person ;
                         aeon:SMW_datatype "Page" ;
                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -230,7 +223,6 @@ aeon:has_contact_person rdf:type owl:ObjectProperty ;
 aeon:has_contributor rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf owl:topObjectProperty ;
                      rdfs:domain aeon:Event ;
-                     rdfs:range aeon:Person ;
                      aeon:SMW_datatype "Page" ;
                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -292,7 +284,6 @@ aeon:has_fee rdf:type owl:ObjectProperty ;
 aeon:has_finance_committee_chair rdf:type owl:ObjectProperty ;
                                  rdfs:subPropertyOf aeon:has_committee_chair ;
                                  rdfs:domain aeon:Event ;
-                                 rdfs:range aeon:Person ;
                                  aeon:SMW_datatype "Page" ;
                                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -301,7 +292,6 @@ aeon:has_finance_committee_chair rdf:type owl:ObjectProperty ;
 aeon:has_finance_committee_member rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf aeon:has_committee_member ;
                                   rdfs:domain aeon:Event ;
-                                  rdfs:range aeon:Person ;
                                   aeon:SMW_datatype "Page" ;
                                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -310,7 +300,6 @@ aeon:has_finance_committee_member rdf:type owl:ObjectProperty ;
 aeon:has_general_committee_chair rdf:type owl:ObjectProperty ;
                                  rdfs:subPropertyOf aeon:has_committee_chair ;
                                  rdfs:domain aeon:Event ;
-                                 rdfs:range aeon:Person ;
                                  aeon:SMW_datatype "Page" ;
                                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -319,7 +308,6 @@ aeon:has_general_committee_chair rdf:type owl:ObjectProperty ;
 aeon:has_general_committee_member rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf aeon:has_committee_member ;
                                   rdfs:domain aeon:Event ;
-                                  rdfs:range aeon:Person ;
                                   aeon:SMW_datatype "Page" ;
                                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -349,7 +337,6 @@ You will probably want to change that in your implementation."""@en ;
 aeon:has_keynote_speaker rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf aeon:has_speaker ;
                          rdfs:domain aeon:Event ;
-                         rdfs:range aeon:Person ;
                          aeon:SMW_datatype "Page" ;
                          aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
 
@@ -360,7 +347,6 @@ aeon:has_keynote_speaker rdf:type owl:ObjectProperty ;
 aeon:has_local_committee_chair rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf aeon:has_committee_chair ;
                                rdfs:domain aeon:Event ;
-                               rdfs:range aeon:Person ;
                                aeon:SMW_datatype "Page" ;
                                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -369,7 +355,6 @@ aeon:has_local_committee_chair rdf:type owl:ObjectProperty ;
 aeon:has_local_committee_member rdf:type owl:ObjectProperty ;
                                 rdfs:subPropertyOf aeon:has_committee_member ;
                                 rdfs:domain aeon:Event ;
-                                rdfs:range aeon:Person ;
                                 aeon:SMW_datatype "Page" ;
                                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -378,7 +363,6 @@ aeon:has_local_committee_member rdf:type owl:ObjectProperty ;
 aeon:has_moderator rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf aeon:has_contributor ;
                    rdfs:domain aeon:Event ;
-                   rdfs:range aeon:Person ;
                    aeon:SMW_datatype "Page" ;
                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -387,7 +371,6 @@ aeon:has_moderator rdf:type owl:ObjectProperty ;
 aeon:has_organizer rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf aeon:has_contributor ;
                    rdfs:domain obo:BFO_0000015 ;
-                   rdfs:range aeon:Agent ;
                    aeon:SMW_datatype "Page" ;
                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
                    aeon:WikidataLabel "organizerLabel" ;
@@ -419,7 +402,6 @@ aeon:has_part rdf:type owl:ObjectProperty ;
 aeon:has_program_committee_chair rdf:type owl:ObjectProperty ;
                                  rdfs:subPropertyOf aeon:has_committee_chair ;
                                  rdfs:domain aeon:Event ;
-                                 rdfs:range aeon:Person ;
                                  aeon:SMW_datatype "Page" ;
                                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -428,7 +410,6 @@ aeon:has_program_committee_chair rdf:type owl:ObjectProperty ;
 aeon:has_program_committee_member rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf aeon:has_committee_member ;
                                   rdfs:domain aeon:Event ;
-                                  rdfs:range aeon:Person ;
                                   aeon:SMW_datatype "Page" ;
                                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -437,7 +418,6 @@ aeon:has_program_committee_member rdf:type owl:ObjectProperty ;
 aeon:has_publication_committee_chair rdf:type owl:ObjectProperty ;
                                      rdfs:subPropertyOf aeon:has_committee_chair ;
                                      rdfs:domain aeon:Event ;
-                                     rdfs:range aeon:Person ;
                                      aeon:SMW_datatype "Page" ;
                                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -446,7 +426,6 @@ aeon:has_publication_committee_chair rdf:type owl:ObjectProperty ;
 aeon:has_publication_committee_member rdf:type owl:ObjectProperty ;
                                       rdfs:subPropertyOf aeon:has_committee_member ;
                                       rdfs:domain aeon:Event ;
-                                      rdfs:range aeon:Person ;
                                       aeon:SMW_datatype "Page" ;
                                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -455,7 +434,6 @@ aeon:has_publication_committee_member rdf:type owl:ObjectProperty ;
 aeon:has_publicity_committee_chair rdf:type owl:ObjectProperty ;
                                    rdfs:subPropertyOf aeon:has_committee_chair ;
                                    rdfs:domain aeon:Event ;
-                                   rdfs:range aeon:Person ;
                                    aeon:SMW_datatype "Page" ;
                                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -464,7 +442,6 @@ aeon:has_publicity_committee_chair rdf:type owl:ObjectProperty ;
 aeon:has_publicity_committee_member rdf:type owl:ObjectProperty ;
                                     rdfs:subPropertyOf aeon:has_committee_member ;
                                     rdfs:domain aeon:Event ;
-                                    rdfs:range aeon:Person ;
                                     aeon:SMW_datatype "Page" ;
                                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -473,7 +450,6 @@ aeon:has_publicity_committee_member rdf:type owl:ObjectProperty ;
 aeon:has_reviewer rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:has_contributor ;
                   rdfs:domain aeon:Event ;
-                  rdfs:range aeon:Person ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
 
@@ -484,7 +460,6 @@ aeon:has_reviewer rdf:type owl:ObjectProperty ;
 aeon:has_speaker rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf aeon:has_contributor ;
                  rdfs:domain aeon:Event ;
-                 rdfs:range aeon:Person ;
                  aeon:SMW_datatype "Page" ;
                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
 
@@ -497,7 +472,6 @@ aeon:has_speaker rdf:type owl:ObjectProperty ;
 aeon:has_sponsor rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf aeon:has_contributor ;
                  rdfs:domain obo:BFO_0000015 ;
-                 rdfs:range aeon:Agent ;
                  rdfs:comment "PS 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...). As the possible sponsor types can have various schemes, it seems best to have named individuals of the aeon:Sponsor class at the moment, which will make up the range of the data property aeon_sponsor_type."@en ;
                  aeon:SMW_datatype "Page" ;
                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Sponsor]]
@@ -509,7 +483,6 @@ aeon:has_sponsor rdf:type owl:ObjectProperty ;
 aeon:has_sponsorship_committee_chair rdf:type owl:ObjectProperty ;
                                      rdfs:subPropertyOf aeon:has_committee_chair ;
                                      rdfs:domain aeon:Event ;
-                                     rdfs:range aeon:Person ;
                                      aeon:SMW_datatype "Page" ;
                                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -518,7 +491,6 @@ aeon:has_sponsorship_committee_chair rdf:type owl:ObjectProperty ;
 aeon:has_sponsorship_committee_member rdf:type owl:ObjectProperty ;
                                       rdfs:subPropertyOf aeon:has_committee_member ;
                                       rdfs:domain aeon:Event ;
-                                      rdfs:range aeon:Person ;
                                       aeon:SMW_datatype "Page" ;
                                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -527,7 +499,6 @@ aeon:has_sponsorship_committee_member rdf:type owl:ObjectProperty ;
 aeon:has_steering_committee_chair rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf aeon:has_committee_chair ;
                                   rdfs:domain aeon:Event ;
-                                  rdfs:range aeon:Person ;
                                   aeon:SMW_datatype "Page" ;
                                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -536,7 +507,6 @@ aeon:has_steering_committee_chair rdf:type owl:ObjectProperty ;
 aeon:has_steering_committee_member rdf:type owl:ObjectProperty ;
                                    rdfs:subPropertyOf aeon:has_committee_member ;
                                    rdfs:domain aeon:Event ;
-                                   rdfs:range aeon:Person ;
                                    aeon:SMW_datatype "Page" ;
                                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -545,7 +515,6 @@ aeon:has_steering_committee_member rdf:type owl:ObjectProperty ;
 aeon:has_technical_committee_chair rdf:type owl:ObjectProperty ;
                                    rdfs:subPropertyOf aeon:has_committee_chair ;
                                    rdfs:domain aeon:Event ;
-                                   rdfs:range aeon:Person ;
                                    aeon:SMW_datatype "Page" ;
                                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -554,7 +523,6 @@ aeon:has_technical_committee_chair rdf:type owl:ObjectProperty ;
 aeon:has_technical_committee_member rdf:type owl:ObjectProperty ;
                                     rdfs:subPropertyOf aeon:has_committee_member ;
                                     rdfs:domain aeon:Event ;
-                                    rdfs:range aeon:Person ;
                                     aeon:SMW_datatype "Page" ;
                                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -754,7 +722,6 @@ aeon:accepted_short_papers rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#agent_name
 aeon:agent_name rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf aeon:name ;
-                rdfs:domain aeon:Agent ;
                 obo:IAO_0000115 "The literal value of the name to denote an agent."@en ;
                 aeon:SMW_datatype "Text" ;
                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -975,7 +942,6 @@ aeon:fee_value rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#first_name
 aeon:first_name rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf aeon:personal_name ;
-                rdfs:domain aeon:Person ;
                 obo:IAO_0000115 "The literal value of the first name of a person."@en ;
                 aeon:SMW_datatype "Text" ;
                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1007,7 +973,6 @@ aeon:language rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#last_name
 aeon:last_name rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf aeon:personal_name ;
-               rdfs:domain aeon:Person ;
                obo:IAO_0000115 "The literal value of the last name, or family name, of a person."@en ;
                aeon:SMW_datatype "Text" ;
                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1093,7 +1058,6 @@ aeon:number_of_tracks rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#organizational_name
 aeon:organizational_name rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:agent_name ;
-                         rdfs:domain aeon:Organisation ;
                          obo:IAO_0000115 "The literal value of the name to denote an organization."@en ;
                          aeon:SMW_datatype "Text" ;
                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1111,7 +1075,6 @@ aeon:paper_deadline rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#personal_name
 aeon:personal_name rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf aeon:agent_name ;
-                   rdfs:domain aeon:Person ;
                    obo:IAO_0000115 "The literal value of the name to denote a person."@en ;
                    aeon:SMW_datatype "Text" ;
                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1345,12 +1308,69 @@ obo:BFO_0000023 rdf:type owl:Class ;
                 aeon:SMW_import_info "[[Category:BFO]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#Agent
-aeon:Agent rdf:type owl:Class ;
-           obo:IAO_0000115 "A material entity (either a human being or an aggregate of humans such as an organization) which is active in a process or has the relevant capabilities of intentionality." ;
-           rdfs:label "Agent" ;
-           aeon:SMW_datatype "Category" ;
-           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+###  http://purl.obolibrary.org/obo/ICO_0000048
+obo:ICO_0000048 rdf:type owl:Class ;
+                rdfs:subClassOf obo:OBI_0000245 ;
+                obo:IAO_0000115 "An organization that is operated without the principal goal of making a financial profit."@en ;
+                rdfs:label "nonprofit organization"@en ;
+                aeon:SMW_datatype "Category" ;
+                aeon:SMW_import_info "[[Category:ICO]] [[Category:Imported vocabulary]]" .
+
+
+###  http://purl.obolibrary.org/obo/ICO_0000049
+obo:ICO_0000049 rdf:type owl:Class ;
+                rdfs:subClassOf obo:OBI_0000245 ;
+                obo:IAO_0000115 "An organization which has the principle goal of earning financial profit."@en ;
+                rdfs:label "profit organization"@en ;
+                aeon:SMW_datatype "Category" ;
+                aeon:SMW_import_info "[[Category:ICO]] [[Category:Imported vocabulary]]" .
+
+
+###  http://purl.obolibrary.org/obo/ICO_0000220
+obo:ICO_0000220 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000030 ;
+                obo:IAO_0000115 "A material entity (either a human being or an aggregate of humans such as an organization) which is active in a process or has the relevant capabilities of intentionality."@en ;
+                obo:IAO_0000117 "Jonathan Vajda"@en ;
+                rdfs:label "agent"@en ;
+                aeon:SMW_datatype "Category" ;
+                aeon:SMW_import_info "[[Category:ICO]] [[Category:Imported vocabulary]]" .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_9606
+obo:NCBITaxon_9606 rdf:type owl:Class ;
+                   rdfs:subClassOf obo:ICO_0000220 ,
+                                   obo:OBI_0100026 ;
+                   rdfs:label "Homo sapiens" ;
+                   aeon:SMW_datatype "Category" ;
+                   aeon:SMW_import_info "[[Category:NCBITaxon]] [[Category:Imported vocabulary]]" .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000245
+obo:OBI_0000245 rdf:type owl:Class ;
+                rdfs:subClassOf obo:ICO_0000220 ,
+                                aeon:group_of_agents ;
+                obo:IAO_0000112 "PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods."@en ;
+                obo:IAO_0000114 "ready for release"@en ;
+                obo:IAO_0000115 "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."@en ;
+                obo:IAO_0000116 "BP: The definition summarizes long email discussions on the OBI developer, roles, biomaterial and denrie branches. It leaves open if an organization is a material entity or a dependent continuant, as no consensus was reached on that. The current placement as material is therefore temporary, in order to move forward with development. Here is the entire email summary, on which the definition is based: 1) there are organization_member_roles (president, treasurer, branch editor), with individual persons as bearers 2) there are organization_roles (employer, owner, vendor, patent holder) 3) an organization has a charter / rules / bylaws, which specify what roles there are, how they should be realized, and how to modify the charter/rules/bylaws themselves. It is debatable what the organization itself is (some kind of dependent continuant or an aggregate of people). This also determines who/what the bearer of organization_roles' are. My personal favorite is still to define organization as a kind of 'legal entity', but thinking it through leads to all kinds of questions that are clearly outside the scope of OBI. Interestingly enough, it does not seem to matter much where we place organization itself, as long as we can subclass it (University, Corporation, Government Agency, Hospital), instantiate it (Affymetrix, NCBI, NIH, ISO, W3C, University of Oklahoma), and have it play roles. This leads to my proposal: We define organization through the statements 1 - 3 above, but without an 'is a' statement for now. We can leave it in its current place in the is_a hierarchy (material entity) or move it up to 'continuant'. We leave further clarifications to BFO, and close this issue for now."@en ;
+                obo:IAO_0000119 "GROUP: OBI"@en ;
+                obo:IAO_0000412 "http://purl.obolibrary.org/obo/obi.owl"@en ;
+                obo:IAO_0000600 "institutional body (research organization, society, association etc.)"@en ;
+                rdfs:label "organization"@en ;
+                aeon:SMW_datatype "Category" ;
+                aeon:SMW_import_info "[[Category:OBI]] [[Category:Imported vocabulary]]" .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0100026
+obo:OBI_0100026 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000030 ;
+                obo:IAO_0000112 "fungus; plant; virus; animal"@en ;
+                obo:IAO_0000114 "organizational term"@en ;
+                obo:IAO_0000115 "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." ;
+                obo:IAO_0000116 "10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and 'other organisms')"@en ,
+                                "13-02-2009: OBI doesn't take position as to when an organism starts or ends being an organism - e.g. sperm, foetus. This issue is outside the scope of OBI."@en ;
+                obo:IAO_0000119 "WEB: http://en.wikipedia.org/wiki/Organism"@en ;
+                rdfs:label "organism"@en .
 
 
 ###  https://github.com/tibonto/aeon#Attendee
@@ -1365,14 +1385,6 @@ aeon:City rdf:type owl:Class ;
           rdfs:subClassOf aeon:PhysicalLocation ;
           aeon:SMW_datatype "Category" ;
           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#Committee
-aeon:Committee rdf:type owl:Class ;
-               rdfs:subClassOf aeon:Group_of_Agents ;
-               owl:disjointWith aeon:Organisation ;
-               aeon:SMW_datatype "Category" ;
-               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#CommitteeChair
@@ -1488,15 +1500,6 @@ aeon:GND rdf:type owl:Class ;
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#Group_of_Agents
-aeon:Group_of_Agents rdf:type owl:Class ;
-                     rdfs:subClassOf aeon:Agent ;
-                     obo:IAO_0000112 "The program committee is a 'group' of persons who have the role to organize the program of a scientific event." ;
-                     obo:IAO_0000115 "A grouping of persons/individuals who participate in a scientific event via a certain role." ;
-                     aeon:SMW_datatype "Category" ;
-                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
 ###  https://github.com/tibonto/aeon#ISNI
 aeon:ISNI rdf:type owl:Class ;
           rdfs:subClassOf obo:IAO_0000578 ;
@@ -1553,16 +1556,6 @@ aeon:ORCID rdf:type owl:Class ;
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#Organisation
-aeon:Organisation rdf:type owl:Class ;
-                  rdfs:subClassOf aeon:Group_of_Agents ;
-                  obo:IAO_0000112 "TIB is an organisation." ;
-                  obo:IAO_0000115 "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members." ;
-                  obo:IAO_0000600 "institutional body (research organization, society, association etc.)" ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
 ###  https://github.com/tibonto/aeon#Organizer
 aeon:Organizer rdf:type owl:Class ;
                rdfs:subClassOf aeon:Contributor ;
@@ -1575,16 +1568,6 @@ aeon:Organizer rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#Output
 aeon:Output rdf:type owl:Class ;
             rdfs:comment "The container for information about the event publications (including non academic publications)" ;
-            aeon:SMW_datatype "Category" ;
-            aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#Person
-aeon:Person rdf:type owl:Class ;
-            rdfs:subClassOf aeon:Agent ;
-            obo:IAO_0000112 "Tim Berners Lee is a person." ;
-            obo:IAO_0000115 "A person is an individual agent that participates via a role in some way in a scientific event or event series." ;
-            obo:IAO_0000118 "human; human being; individual" ;
             aeon:SMW_datatype "Category" ;
             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1670,6 +1653,22 @@ aeon:WDQID rdf:type owl:Class ;
 [[partOfSubobject::Template:Subobject Organization_ID]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#committee
+aeon:committee rdf:type owl:Class ;
+               rdfs:subClassOf aeon:group_of_agents ;
+               aeon:SMW_datatype "Category" ;
+               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#group_of_agents
+aeon:group_of_agents rdf:type owl:Class ;
+                     rdfs:subClassOf obo:BFO_0000027 ;
+                     obo:IAO_0000112 "The program committee is a 'group' of persons who have the role to organize the program of a scientific event." ;
+                     obo:IAO_0000115 "A grouping of persons/individuals who participate in a scientific event via a certain role." ;
+                     aeon:SMW_datatype "Category" ;
+                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 #################################################################
@@ -1830,17 +1829,5 @@ aeon:_Person_1 rdf:type owl:NamedIndividual ;
 
 [ rdfs:label "example"
 ] .
-
-#################################################################
-#    General axioms
-#################################################################
-
-[ rdf:type owl:AllDisjointClasses ;
-   owl:members ( aeon:Group_of_Agents
-                 aeon:Organisation
-                 aeon:Person
-               )
- ] .
-
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
