@@ -199,7 +199,7 @@ aeon:has_attendee rdf:type owl:ObjectProperty ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" ;
-                  aeon:WikidataLabel "participant" ;
+                  aeon:WikidataLabel "participantLabel" ;
                   aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P710" .
 
 
@@ -416,7 +416,7 @@ aeon:has_organizer rdf:type owl:ObjectProperty ;
                    aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Organizer]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" ;
-                   aeon:WikidataLabel "organizer" ;
+                   aeon:WikidataLabel "organizerLabel" ;
                    aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P664" .
 
 
@@ -911,7 +911,7 @@ aeon:duration rdf:type owl:DatatypeProperty ;
               rdfs:domain aeon:Event ;
               aeon:SMW_datatype "Quantity" ;
               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
-              aeon:WikidataLabel "durationLabel" ;
+              aeon:WikidataLabel "duration" ;
               aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P2047" .
 
 
@@ -922,7 +922,7 @@ aeon:end_date rdf:type owl:DatatypeProperty ;
               rdfs:range xsd:dateTime ;
               aeon:SMW_datatype "Date" ;
               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
-              aeon:WikidataLabel "end_timeLabel" ;
+              aeon:WikidataLabel "end_time" ;
               aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P582" .
 
 
@@ -935,7 +935,7 @@ aeon:event_frequency rdf:type owl:DatatypeProperty ;
                      aeon:SMW_import_info """[[Corresponds to::1 month]] [[Corresponds to::1 months]] [[display units::months]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" ;
-                     aeon:WikidataLabel "event_intervalLabel_inmonths" ;
+                     aeon:WikidataLabel "event_interval_inmonths" ;
                      aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P2257" .
 
 
