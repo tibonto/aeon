@@ -935,7 +935,7 @@ aeon:event_frequency rdf:type owl:DatatypeProperty ;
                      aeon:SMW_import_info """[[Corresponds to::1 month]] [[Corresponds to::1 months]] [[display units::months]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" ;
-                     aeon:WikidataLabel "event_intervalLabel_inmonths" ;
+                     aeon:WikidataLabel "event_interval_inmonths" ;
                      aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P2257" .
 
 
