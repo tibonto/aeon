@@ -20,7 +20,7 @@
                                    <http://purl.org/dc/elements/1.1/creator> "ConfIDent project" ;
                                    <http://purl.org/dc/elements/1.1/description> "The Academic Event Ontology (AEON) is used to represent information regarding academic events. The ontology supports the identification, development, management, evaluation, and impact assessment of events, components of events and event series, as well as identification and reuse of works presented or developed at events. The ontology is independent of knowledge, creative domain, or topics related to events. AEON is focused on events and assumes the representation of many entities associated with events such as attendees, locations, academic works, datetimes, and processes are defined in compatible ontologies." ;
                                    <http://purl.org/dc/elements/1.1/title> "Academic Event Ontology"@en ;
-                                   owl:versionInfo "v0.2.3 ConfIDent edition" .
+                                   owl:versionInfo "v0.2.4 ConfIDent edition" .
 
 #################################################################
 #    Annotation properties
@@ -1226,8 +1226,6 @@ aeon:sponsor_type rdf:type owl:DatatypeProperty ;
                   aeon:SMW_datatype "Text" ;
                   aeon:SMW_import_info """[[Allows value list::Sponsor_type]] Controlled vocabulary in [[MediaWiki:Smw _allows_list_Sponsor_type]] 
 
-[[partOfSubobject::Template:Subobject Sponsor]]
-
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
@@ -1629,9 +1627,7 @@ aeon:Sponsor rdf:type owl:Class ;
              rdfs:subClassOf aeon:Contributor ;
              rdfs:comment "PS 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...). As the possible sponsor types can have various schemes, it seems best to have named individuals of the aeon:Sponsor class at the moment." ;
              aeon:SMW_datatype "Category" ;
-             aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Sponsor]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#State
