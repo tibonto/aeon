@@ -1420,7 +1420,7 @@ aeon:Country rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#DOI
 aeon:DOI rdf:type owl:Class ;
-         rdfs:subClassOf aeon:ExternalIdentifier ;
+         rdfs:subClassOf obo:IAO_0000578 ;
          aeon:SMW_datatype "Category" ;
          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1456,6 +1456,7 @@ aeon:EventType rdf:type owl:Class ;
 aeon:ExternalIdentifier rdf:type owl:Class ;
                         rdfs:subClassOf aeon:Identifier ;
                         owl:disjointWith aeon:InternalIdentifier ;
+                        obo:IAO_0000116 "This class is probably obsolete after completing the BFO subsumtion hierarchy." ;
                         rdfs:label "External ID"@en ;
                         aeon:SMW_datatype "Category" ;
                         aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
@@ -1478,7 +1479,7 @@ aeon:Fee rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#GND
 aeon:GND rdf:type owl:Class ;
-         rdfs:subClassOf aeon:ExternalIdentifier ;
+         rdfs:subClassOf obo:IAO_0000578 ;
          aeon:SMW_datatype "Category" ;
          aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
 [[partOfSubobject::Template:Subobject Person_ID]]
@@ -1498,7 +1499,7 @@ aeon:Group_of_Agents rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#ISNI
 aeon:ISNI rdf:type owl:Class ;
-          rdfs:subClassOf aeon:ExternalIdentifier ;
+          rdfs:subClassOf obo:IAO_0000578 ;
           aeon:SMW_datatype "Category" ;
           aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Person_ID]]
 [[partOfSubobject::Template:Subobject Organization_ID]]
@@ -1508,6 +1509,7 @@ aeon:ISNI rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#Identifier
 aeon:Identifier rdf:type owl:Class ;
+                obo:IAO_0000116 "This class is probably obsolete after completing the BFO subsumtion hierarchy." ;
                 rdfs:seeAlso "http://purl.obolibrary.org/obo/IAO_0020000"@en ;
                 aeon:SMW_datatype "Category" ;
                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1515,7 +1517,7 @@ aeon:Identifier rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#InternalIdentifier
 aeon:InternalIdentifier rdf:type owl:Class ;
-                        rdfs:subClassOf aeon:Identifier ;
+                        rdfs:subClassOf obo:IAO_0000578 ;
                         rdfs:comment "The \"rdfs:label ConfIDent_ID\" is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident/) to be used in its service. Thus the internal identifier is called ConfIDent_ID. You will probably want to change that in your implementation."@en ;
                         rdfs:label "ConfIDent ID"@en ;
                         aeon:SMW_datatype "Category" ;
@@ -1544,7 +1546,7 @@ aeon:Moderator rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#ORCID
 aeon:ORCID rdf:type owl:Class ;
-           rdfs:subClassOf aeon:ExternalIdentifier ;
+           rdfs:subClassOf obo:IAO_0000578 ;
            aeon:SMW_datatype "Category" ;
            aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Person_ID]]
 
@@ -1598,7 +1600,7 @@ aeon:PhysicalLocation rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#ROR
 aeon:ROR rdf:type owl:Class ;
-         rdfs:subClassOf aeon:ExternalIdentifier ;
+         rdfs:subClassOf obo:IAO_0000578 ;
          aeon:SMW_datatype "Category" ;
          aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Organization_ID]]
 
@@ -1661,7 +1663,7 @@ aeon:VirtualLocation rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#WDQID
 aeon:WDQID rdf:type owl:Class ;
-           rdfs:subClassOf aeon:ExternalIdentifier ;
+           rdfs:subClassOf obo:IAO_0000578 ;
            aeon:SMW_datatype "Category" ;
            aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Process_External_ID]]
 [[partOfSubobject::Template:Subobject Person_ID]]
