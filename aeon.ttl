@@ -911,7 +911,7 @@ aeon:duration rdf:type owl:DatatypeProperty ;
               rdfs:domain aeon:Event ;
               aeon:SMW_datatype "Quantity" ;
               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
-              aeon:WikidataLabel "durationLabel" ;
+              aeon:WikidataLabel "duration" ;
               aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P2047" .
 
 
