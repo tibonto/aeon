@@ -2660,40 +2660,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000024 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:BFO_0000179>fiat-object-part</obo:BFO_0000179>
-        <obo:BFO_0000180>FiatObjectPart</obo:BFO_0000180>
-        <obo:IAO_0000112 xml:lang="en">or with divisions drawn by cognitive subjects for practical reasons, such as the division of a cake (before slicing) into (what will become) slices (and thus member parts of an object aggregate). However, this does not mean that fiat object parts are dependent for their existence on divisions or delineations effected by cognitive subjects. If, for example, it is correct to conceive geological layers of the Earth as fiat object parts of the Earth, then even though these layers were first delineated in recent times, still existed long before such delineation and what holds of these layers (for example that the oldest layers are also the lowest layers) did not begin to hold because of our acts of delineation.Treatment of material entity in BFOExamples viewed by some as problematic cases for the trichotomy of fiat object part, object, and object aggregate include: a mussel on (and attached to) a rock, a slime mold, a pizza, a cloud, a galaxy, a railway train with engine and multiple carriages, a clonal stand of quaking aspen, a bacterial community (biofilm), a broken femur. Note that, as Aristotle already clearly recognized, such problematic cases – which lie at or near the penumbra of instances defined by the categories in question – need not invalidate these categories. The existence of grey objects does not prove that there are not objects which are black and objects which are white; the existence of mules does not prove that there are not objects which are donkeys and objects which are horses. It does, however, show that the examples in question need to be addressed carefully in order to show how they can be fitted into the proposed scheme, for example by recognizing additional subdivisions [29</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the FMA:regional parts of an intact human body.</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the Western hemisphere of the Earth</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the division of the brain into regions</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the division of the planet into hemispheres</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the dorsal and ventral surfaces of the body</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the upper and lower lobes of the left lung</obo:IAO_0000112>
-        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Most examples of fiat object parts are associated with theoretically drawn divisions</obo:IAO_0000116>
-        <obo:IAO_0000600 xml:lang="en">b is a fiat object part = Def. b is a material entity which is such that for all times t, if b exists at t then there is some object c such that b proper continuant_part of  c at t and c is demarcated from the remainder of c by a two-dimensional continuant fiat boundary. (axiom label in BFO2 Reference: [027-004])</obo:IAO_0000600>
-        <obo:IAO_0000602>(forall (x) (if (FiatObjectPart x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y) (and (Object y) (properContinuantPartOfAt x y t)))))))) // axiom label in BFO2 CLIF: [027-004] </obo:IAO_0000602>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <rdfs:label xml:lang="en">fiat object part</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
-        <owl:annotatedTarget xml:lang="en">b is a fiat object part = Def. b is a material entity which is such that for all times t, if b exists at t then there is some object c such that b proper continuant_part of  c at t and c is demarcated from the remainder of c by a two-dimensional continuant fiat boundary. (axiom label in BFO2 Reference: [027-004])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/027-004"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <owl:annotatedTarget>(forall (x) (if (FiatObjectPart x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y) (and (Object y) (properContinuantPartOfAt x y t)))))))) // axiom label in BFO2 CLIF: [027-004] </owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/027-004"/>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000026">
@@ -4124,38 +4090,6 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000178 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000178">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000111 xml:lang="en">material information bearer</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">A page of a paperback novel with writing on it. The paper itself is a material information bearer, the pattern of ink is the information carrier.</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">a brain</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">a hard drive</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A material entity in which a concretization of an information content entity inheres.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">GROUP: IAO</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">material information bearer</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000179 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000179">
@@ -4280,7 +4214,6 @@ clustering algorithm.</obo:IAO_0000115>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000178"/>
         <obo:IAO_0000111 xml:lang="en">photographic print</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A photographic print is a material entity upon which a photograph generically depends.</obo:IAO_0000115>

@@ -1648,19 +1648,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000024 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <dc:identifier>027-BFO</dc:identifier>
-        <rdfs:label xml:lang="en">fiat object part</rdfs:label>
-        <j.0:definition xml:lang="en">(Elucidation) a fiat object part b is a material entity which is such that for all times t, if b exists at t then there is some object c such that b is a proper continuant part of c at t and b is demarcated from the remainder of c by one or more fiat surfaces</j.0:definition>
-        <j.0:example xml:lang="en">The upper and lower lobes of the left lung, the dorsal and ventral surfaces of the body, the Western hemisphere of the Earth, the FMA:regional parts of an intact human body. </j.0:example>
-        <j.0:prefLabel xml:lang="en">fiat object part</j.0:prefLabel>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000026">
@@ -1767,7 +1754,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000030">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <dc:identifier>024-BFO</dc:identifier>
         <rdfs:label xml:lang="en">object</rdfs:label>
         <j.0:definition xml:lang="en">(Elucidation) an object is a material entity which manifests causal unity &amp; is of a type instances of which are maximal relative to the sort of causal unity manifested</j.0:definition>
