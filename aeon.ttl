@@ -199,7 +199,7 @@ aeon:has_attendee rdf:type owl:ObjectProperty ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" ;
-                  aeon:WikidataLabel "participant" ;
+                  aeon:WikidataLabel "participantLabel" ;
                   aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P710" .
 
 
