@@ -1720,24 +1720,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000008">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000010"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000096"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115 xml:lang="en">A planned process that has specified output a software product and that involves the creation of source code.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
@@ -1800,28 +1782,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000522">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000096"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000096"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">software source code version control repository</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A document that comprises at least one source code module and provenance data about who contributed the set of files making up the module(s), and optionally comprises also multiple versions of files with detailed change history about who committed files and when, a license for the software, readme files, documentation, executables, etc.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
@@ -1835,27 +1795,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000524">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000008"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000010"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000096"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">process of compiling software</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A planned process that converts human-written or curated software into a machine-executable or interpretable set of instructions.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
@@ -2316,36 +2255,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <owl:annotatedTarget>(forall (r) (if (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion r r))) // axiom label in BFO2 CLIF: [107-002] </owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/107-002"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <owl:annotatedTarget>(forall (x t) (if (SpatioTemporalRegion x) (exists (y) (and (SpatialRegion y) (spatiallyProjectsOntoAt x y t))))) // axiom label in BFO2 CLIF: [099-001] </owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/099-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <owl:annotatedTarget>(forall (x y) (if (and (SpatioTemporalRegion x) (occurrentPartOf y x)) (SpatioTemporalRegion y))) // axiom label in BFO2 CLIF: [096-001] </owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/096-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <owl:annotatedTarget>(forall (x) (if (SpatioTemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [095-001] </owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/095-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <owl:annotatedTarget>(forall (x) (if (SpatioTemporalRegion x) (exists (y) (and (TemporalRegion y) (temporallyProjectsOnto x y))))) // axiom label in BFO2 CLIF: [098-001] </owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/098-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
         <owl:annotatedTarget xml:lang="en">A spatiotemporal region is an occurrent entity that is part of spacetime. (axiom label in BFO2 Reference: [095-001])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/095-001"/>
@@ -2373,6 +2282,36 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">Every spatiotemporal region s is such that s occupies_spatiotemporal_region s. (axiom label in BFO2 Reference: [107-002])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/107-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (r) (if (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion r r))) // axiom label in BFO2 CLIF: [107-002] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/107-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x t) (if (SpatioTemporalRegion x) (exists (y) (and (SpatialRegion y) (spatiallyProjectsOntoAt x y t))))) // axiom label in BFO2 CLIF: [099-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/099-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x y) (if (and (SpatioTemporalRegion x) (occurrentPartOf y x)) (SpatioTemporalRegion y))) // axiom label in BFO2 CLIF: [096-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/096-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (SpatioTemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [095-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/095-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (SpatioTemporalRegion x) (exists (y) (and (TemporalRegion y) (temporallyProjectsOnto x y))))) // axiom label in BFO2 CLIF: [098-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/098-001"/>
     </owl:Axiom>
     
 
@@ -3330,21 +3269,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:IAO_0000111 xml:lang="en">conditional specification</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">A directive information entity that specifies what should happen if the trigger condition is fulfilled.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">OBI_0000349</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">conditional specification</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000003">
@@ -3362,29 +3286,6 @@ of this, different, term.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <rdfs:label xml:lang="en">measurement unit label</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:IAO_0000111 xml:lang="en">objective specification</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction.</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">2009-03-16: original definition when imported from OBI read: &quot;objective is an non realizable information entity which can serve as that  proper part of a plan towards which the realization of the plan is directed.&quot;</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">2014-03-31: In the example of usage (&quot;In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction&quot;) there is a protocol which is the ChIP assay protocol. In addition to being concretized on paper, the protocol can be concretized as a realizable entity, such as a plan that inheres in a person. The objective specification is the part that says that some protein and DNA interactions are identified. This is a specification of a process endpoint: the boundary in the process before which they are not identified and after which they are. During the realization of the plan, the goal is to get to the point of having the interactions, and participants in the realization of the plan try to do that.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Answers the question, why did you do this experiment?</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Barry Smith</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Jennifer Fostel</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">goal specification</obo:IAO_0000118>
-        <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process/Roles Branch</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">OBI_0000217</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">objective specification</rdfs:label>
     </owl:Class>
     
 
@@ -3407,20 +3308,6 @@ of this, different, term.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000007 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:IAO_0000112 xml:lang="en">Pour the contents of flask 1 into flask 2</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A directive information entity that describes an action the bearer will take.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process branch</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">action specification</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000009">
@@ -3433,25 +3320,6 @@ of this, different, term.</obo:IAO_0000116>
         <obo:IAO_0000232>9/22/11 BP: changed the rdfs:label for this class from &apos;label&apos; to &apos;datum label&apos; to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
 </obo:IAO_0000232>
         <rdfs:label xml:lang="en">datum label</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000010 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-        <obo:IAO_0000111 xml:lang="en">software</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">Software is a plan specification composed of a series of instructions that can be 
-interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">see sourceforge tracker discussion at http://sourceforge.net/tracker/index.php?func=detail&amp;aid=1958818&amp;group_id=177891&amp;atid=886178</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">GROUP: OBI</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">software</rdfs:label>
     </owl:Class>
     
 
@@ -3511,23 +3379,6 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">manufactered items may have more than one model number, sometimes by rebranding, or because companies are sold and the products issued new model numbers</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Person: Alan Ruttenberg</obo:IAO_0000117>
         <rdfs:label xml:lang="en">model number</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000025 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000025">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-        <obo:IAO_0000111 xml:lang="en">programming language</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">R, Perl, Java</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">A language in which source code is written that is intended to be executed/run by a software interpreter. Programming languages are ways to write instructions that specify what to do, and sometimes, how to do it.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">OBI_0000058</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">programming language</rdfs:label>
     </owl:Class>
     
 
@@ -3660,41 +3511,6 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  &quot;is the specification of a process that can be concretized and realized by an actor&quot; with alternative term  &quot;instruction&quot;.It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">2013-05-30 Alan Ruttenberg: What differentiates a directive information entity from an information concretization is that it can have concretizations that are either qualities or realizable entities. The concretizations that are realizable entities are created when an individual chooses to take up the direction, i.e. has the intention to (try to) realize it.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">8/6/2009 Alan Ruttenberg: Changed label from &quot;information entity about a realizable&quot; after discussions at ICBO</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Werner pushed back on calling it realizable information entity as it isn&apos;t realizable. However this name isn&apos;t right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn&apos;t about the plan, it, once concretized, *is* the plan. -Alan</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">directive information entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000034 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000034">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000001"/>
-        <obo:IAO_0000111 xml:lang="en">time trigger</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
-        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">time trigger</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000037 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000037">
@@ -3729,23 +3545,6 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000055 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000055">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000001"/>
-        <obo:IAO_0000111 xml:lang="en">rule</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">example to be added</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000115 xml:lang="en">A rule is an executable which guides, defines, restricts actions.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">MSI</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">PRS</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">OBI_0500021</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">PRS</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">rule</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000057 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000057">
@@ -3759,41 +3558,6 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">OBI_0000246</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">group:Flow Cytometry community</obo:IAO_0000119>
         <rdfs:label xml:lang="en">contour plot</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000064 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000064">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-        <obo:IAO_0000111 xml:lang="en">algorithm</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">PMID: 18378114.Genomics. 2008 Mar 28. LINKGEN: A new algorithm to process data in genetic linkage studies.</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">A plan specification which describes the inputs and output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">OBI_0000270</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">adapted from discussion on OBI list (Matthew Pocock, Christian Cocos, Alan Ruttenberg)</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">algorithm</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000065 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000065">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
-        <obo:IAO_0000111 xml:lang="en">software interpreter</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">R program, Perl interpreter, Java virtual machine</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">A software interpreter is a software application that executes some specified input software.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">Do we care? Jennifer: Yes, there was a particular version of R that had a bug and it was fixed later. That would imply that we mean specific version of an interpreter. So an instance of this would be a particular version of the interpreter</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">OBI_0000199</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">software interpreter</rdfs:label>
     </owl:Class>
     
 
@@ -3874,43 +3638,6 @@ whole sentence is deleted.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000096 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000096">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:IAO_0000111 xml:lang="en">source code module</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">The written source code that implements part of an algorithm. Test - if you know that it was written in a specific language, then it can be source code module. We mean here, roughly, the wording of a document such as a perl script.</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000115 xml:lang="en">A source code module is a directive information entity that specifies, using a programming language, some algorithm.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">OBI_0000039</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">source code module</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000098 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000098">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:IAO_0000111 xml:lang="en">data format specification</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000115 xml:lang="en">A data format specification is the information content borne by the document published defining the specification.
-Example: The ISO document specifying what encompasses an XML document; The instructions in a XSD file</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: term imported from OBI_0000187, which had original definition &quot;A data format specification is a plan which organizes
-information. Example: The ISO document specifying what encompasses an
-XML document; The instructions in a XSD file&quot;</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">OBI_0000187</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">data format specification</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000100">
@@ -3955,44 +3682,6 @@ XML document; The instructions in a XSD file&quot;</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">Data about an ontology part is a data item about a part of an ontology, for example a term</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
         <rdfs:label xml:lang="en">data about an ontology part</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000111 xml:lang="en">plan specification</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice.</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term a plan was proposed for OBI (OBI_0000344) , edited by the PlanAndPlannedProcess branch. Original definition was &quot; a plan is a specification of a process that is realized by an actor to achieve the objective specified as part of the plan&quot;. It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">2014-03-31: A plan specification can have other parts, such as conditional specifications.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Alternative previous definition: a plan is a set of instructions that specify how an objective should be achieved</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process branch</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">OBI_0000344</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">2/3/2009 Comment from OBI review.
-
-Action specification not well enough specified.
-Conditional specification not well enough specified.
-Question whether all plan specifications have objective specifications.
-
-Request that IAO either clarify these or change definitions not to use them</rdfs:comment>
-        <rdfs:label xml:lang="en">plan specification</rdfs:label>
     </owl:Class>
     
 
@@ -4517,12 +4206,6 @@ GO   gene ontology</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000316">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">introduction to a publication about an investigation</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Section labelled &apos;introduction&apos; of a typical scientific journal article</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -4539,12 +4222,6 @@ GO   gene ontology</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000317">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">methods section</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">The section labelled &apos;Methods&apos; or &apos;Materials and Methods&apos; in a typical scientific journal article.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -5396,76 +5073,6 @@ points together with a line.</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000591 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000591">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000115 xml:lang="en">A software method (also called subroutine, subprogram, procedure, method, function, or routine) is software designed to execute a specific task.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Michel Dumontier</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">software method</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000592 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000592">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000115 xml:lang="en">A software module is software composed of a collection of software methods.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Melanei Courtot</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Michel Dumontier</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">software module</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000593 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000593">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000115 xml:lang="en">A software library is software composed of a collection of software modules and/or software methods in a form that can be statically or dynamically linked to some software application.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Michel Dumontier</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">software library</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000594 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000594">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000115 xml:lang="en">A software application is software that can be directly executed by some processing unit.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Michel Dumontier</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">software application</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000595 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000595">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000115 xml:lang="en">A software script is software whose instructions can be executed using a software interpreter.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Michel Dumontier</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">software script</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000605 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000605">
@@ -5788,12 +5395,6 @@ Written informed consent was obtained from the patient’s parents for publicati
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000621">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">ethical approval textual entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">From McLean et al. Br J Gen Pract. 2014 Jul; 64(624): e440–e447 (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4073730/):
 
@@ -6000,12 +5601,6 @@ Exon orthology; alternative splicing; exon duplication; intron-exon structure.</
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000632"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">study limitations section</obo:IAO_0000111>
@@ -6294,17 +5889,6 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
         <obo:IAO_0000115 xml:lang="en">An identifier that denotes some postal delivery route, some aggregate of postal delivery routes or a geographical region and was created for the purpose of sorting and delivering mail.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">postal code</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000647 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000647">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-        <obo:IAO_0000115 xml:lang="en">A plan specification that if realized, is realized by the delivery of mail to some facility or mailbox within some geographical region.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">Postal delivery route</rdfs:label>
     </owl:Class>
     
 
@@ -6674,18 +6258,6 @@ No imports</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A planned process that produces output data from input data.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label xml:lang="en">data transformation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0500000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-        <obo:IAO_0000111 xml:lang="en">study design</obo:IAO_0000111>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">study design</rdfs:label>
     </owl:Class>
     
 
