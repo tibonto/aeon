@@ -1373,6 +1373,10 @@ obo:OBI_0100026 rdf:type owl:Class ;
                 rdfs:label "organism"@en .
 
 
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
 ###  https://github.com/tibonto/aeon#Attendee
 aeon:Attendee rdf:type owl:Class ;
               rdfs:subClassOf aeon:Contributor ;
@@ -1460,6 +1464,7 @@ aeon:EventSeries rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#EventType
 aeon:EventType rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
                aeon:SMW_datatype "Category" ;
                aeon:SMW_import_info "The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_has_event_type]]. [[Category:AEON]] [[Category:Imported vocabulary]]" .
 
