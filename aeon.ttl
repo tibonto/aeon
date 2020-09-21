@@ -922,7 +922,7 @@ aeon:end_date rdf:type owl:DatatypeProperty ;
               rdfs:range xsd:dateTime ;
               aeon:SMW_datatype "Date" ;
               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
-              aeon:WikidataLabel "end_timeLabel" ;
+              aeon:WikidataLabel "end_time" ;
               aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P582" .
 
 
