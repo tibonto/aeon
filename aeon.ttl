@@ -416,7 +416,7 @@ aeon:has_organizer rdf:type owl:ObjectProperty ;
                    aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Organizer]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" ;
-                   aeon:WikidataLabel "organizer" ;
+                   aeon:WikidataLabel "organizerLabel" ;
                    aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P664" .
 
 
