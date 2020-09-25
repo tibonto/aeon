@@ -426,7 +426,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000113">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000218"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <dc:identifier>243-BFO</dc:identifier>
         <rdfs:label xml:lang="en">has material basis at all times</rdfs:label>
@@ -537,7 +536,6 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000127">
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000218"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <dc:identifier>244-BFO</dc:identifier>
         <rdfs:label xml:lang="en">material basis of at some time</rdfs:label>
         <j.0:definition xml:lang="en">b material basis of c at some time =Def at some time t (c has material basis b at t)</j.0:definition>
@@ -658,7 +656,6 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000163">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000127"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <dc:identifier>245-BFO</dc:identifier>
         <rdfs:label xml:lang="en">material basis of at all times</rdfs:label>
         <j.0:definition xml:lang="en">b material basis of c at all times =Def for all times t, b exists at t implies (c has material basis b at t)</j.0:definition>
@@ -1238,7 +1235,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000218 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000218">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <dc:identifier>242-BFO</dc:identifier>
         <rdfs:label xml:lang="en">has material basis at some time</rdfs:label>
@@ -1559,21 +1555,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <dc:identifier>062-BFO</dc:identifier>
-        <rdfs:label xml:lang="en">disposition</rdfs:label>
-        <j.0:altLabel xml:lang="en">internally-grounded realizable entity </j.0:altLabel>
-        <j.0:definition xml:lang="en">(Elucidation) b is a disposition means:  b is a realizable entity  &amp; b&apos;s bearer is some material entity  &amp; b is such that if it ceases to exist, then its bearer is physically changed,  &amp; b&apos;s realization occurs when and because this bearer is in some special physical circumstances,  &amp; this realization occurs in virtue of the bearer&apos;s physical make-up</j.0:definition>
-        <j.0:example xml:lang="en">An atom of element X has the disposition to decay to an atom of element Y; the cell wall is disposed to transport cellular material through endocytosis and exocytosis; certain people have a predisposition to colon cancer; children are innately disposed to categorize objects in certain ways.</j.0:example>
-        <j.0:prefLabel xml:lang="en">disposition</j.0:prefLabel>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
@@ -1711,19 +1692,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000140"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
                 <owl:allValuesFrom>
                     <owl:Class>
@@ -1772,19 +1740,6 @@
         <j.0:definition xml:lang="en">(Elucidation) a generically dependent continuant is an entity that exists in virtue of the fact that there is at least one of what may be multiple copies; it is the content or the pattern that the multiple copies share</j.0:definition>
         <j.0:example xml:lang="en">The pdf file on your laptop, the pdf file that is a copy thereof on my laptop; the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule; the content that is shared by a string of dots and dashes written on a page and the transmitted Morse code signal; the content of a sentence; an engineering blueprint. </j.0:example>
         <j.0:prefLabel xml:lang="en">generically dependent continuant</j.0:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-        <dc:identifier>064-BFO</dc:identifier>
-        <rdfs:label xml:lang="en">function</rdfs:label>
-        <j.0:definition xml:lang="en">(Elucidation) A function is a disposition that exists in virtue of the bearer&apos;s physical make-up and this physical make-up is something the bearer possesses because it came into being either through evolution (in the case of natural biological entities) or through intentional design (in the case of artefacts), in order to realize processes of a certain sort</j.0:definition>
-        <j.0:example xml:lang="en">The function of a hammer to drive in nails, the function of a heart pacemaker to regulate the beating of a heart through electricity. </j.0:example>
-        <j.0:prefLabel xml:lang="en">function</j.0:prefLabel>
     </owl:Class>
     
 
@@ -1866,20 +1821,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000140"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
             </owl:Restriction>
@@ -1890,30 +1831,6 @@
         <j.0:definition xml:lang="en">(Elucidation) A material entity is an independent continuant that at all times at which it exists has some portion of matter as continuant part</j.0:definition>
         <j.0:example xml:lang="en">A human being, the undetached arm of a human being, an aggregate of human beings. </j.0:example>
         <j.0:prefLabel xml:lang="en">material entity</j.0:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000140 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000140">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000140"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000170"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000140"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <dc:identifier>029-BFO</dc:identifier>
-        <rdfs:label xml:lang="en">continuant fiat boundary</rdfs:label>
-        <j.0:definition xml:lang="en">(Elucidation) b is a continuant fiat boundary means: b is an immaterial entity that is of zero, one or two dimensions, which is such that there is no time t when b has a spatial region as continuant part at t, and whose location is determined in relation to some material entity</j.0:definition>
-        <j.0:example xml:lang="en">As for fiat point, fiat line, fiat surface. </j.0:example>
-        <j.0:prefLabel xml:lang="en">continuant fiat boundary</j.0:prefLabel>
     </owl:Class>
     
 
@@ -1931,32 +1848,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000142 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000142">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000140"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000142"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000147"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <dc:identifier>032-BFO</dc:identifier>
-        <rdfs:label xml:lang="en">fiat line</rdfs:label>
-        <j.0:definition xml:lang="en">(Elucidation) a fiat line is a one-dimensional continuant fiat boundary that is continuous</j.0:definition>
-        <j.0:example xml:lang="en">The Equator, all geopolitical boundaries, all lines of latitude and longitude, the median sulcus of your tongue, the line separating the outer surface of the mucosa of the lower lip from the outer surface of the skin of the chin. </j.0:example>
-        <j.0:prefLabel xml:lang="en">fiat line</j.0:prefLabel>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000145 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000145">
@@ -1966,44 +1857,6 @@
         <j.0:definition xml:lang="en">b is a relational quality =Def b is a quality and there exists c and d such that b and c are not identical, &amp; b s-depends on c &amp; b s-depends on d</j.0:definition>
         <j.0:example xml:lang="en">A marriage bond, an instance of love, an obligation between one person and another. </j.0:example>
         <j.0:prefLabel xml:lang="en">relational quality</j.0:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000146 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000146">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000140"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000140"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <dc:identifier>033-BFO</dc:identifier>
-        <rdfs:label xml:lang="en">fiat surface</rdfs:label>
-        <j.0:definition xml:lang="en">(Elucidation) a fiat surface is a two-dimensional continuant fiat boundary that is self-connected</j.0:definition>
-        <j.0:example xml:lang="en">The surface of the Earth, the plane separating the smoking from the non-smoking zone in a restaurant </j.0:example>
-        <j.0:prefLabel xml:lang="en">fiat surface</j.0:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000147 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000147">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000140"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000147"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <dc:identifier>031-BFO</dc:identifier>
-        <rdfs:label xml:lang="en">fiat point</rdfs:label>
-        <j.0:definition xml:lang="en">(Elucidation) a fiat point is a zero-dimensional continuant fiat boundary that consists of a single point</j.0:definition>
-        <j.0:example xml:lang="en">The geographic North Pole; the quadripoint where the boundaries of Colorado, Utah, New Mexico and Arizona meet, the point of origin of some spatial coordinate system. </j.0:example>
-        <j.0:prefLabel xml:lang="en">fiat point</j.0:prefLabel>
     </owl:Class>
     
 
@@ -2105,14 +1958,6 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000006"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000140"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000008"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000011"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
@@ -2126,14 +1971,6 @@
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000018"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000026"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000028"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000142"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000146"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000147"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
