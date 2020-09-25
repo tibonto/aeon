@@ -1677,7 +1677,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <dc:identifier>025-BFO</dc:identifier>
         <rdfs:label xml:lang="en">object aggregate</rdfs:label>
         <j.0:definition xml:lang="en">(Elucidation) an object aggregate is a material entity consisting exactly of a plurality (≥1) of objects as member parts which together form a unit</j.0:definition>
@@ -1898,7 +1897,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000140 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000140">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
