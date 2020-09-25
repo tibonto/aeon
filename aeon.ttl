@@ -1471,10 +1471,9 @@ aeon:EventType rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#ExternalIdentifier
 aeon:ExternalIdentifier rdf:type owl:Class ;
-                        rdfs:subClassOf aeon:Identifier ;
-                        owl:disjointWith aeon:InternalIdentifier ;
                         obo:IAO_0000116 "This class is probably obsolete after completing the BFO subsumtion hierarchy." ;
-                        rdfs:label "External ID"@en ;
+                        rdfs:label "obsolete External ID"^^xsd:string ;
+                        owl:deprecated "true"^^xsd:boolean ;
                         aeon:SMW_datatype "Category" ;
                         aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
 [[partOfSubobject::Template:Subobject Person_ID]]
@@ -1519,6 +1518,7 @@ aeon:ISNI rdf:type owl:Class ;
 aeon:Identifier rdf:type owl:Class ;
                 obo:IAO_0000116 "This class is probably obsolete after completing the BFO subsumtion hierarchy." ;
                 rdfs:seeAlso "http://purl.obolibrary.org/obo/IAO_0020000"@en ;
+                owl:deprecated "true"^^xsd:boolean ;
                 aeon:SMW_datatype "Category" ;
                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1541,6 +1541,7 @@ aeon:KeynoteSpeaker rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#Location
 aeon:Location rdf:type owl:Class ;
+              owl:deprecated "true"^^xsd:boolean ;
               aeon:SMW_datatype "Category" ;
               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1579,9 +1580,8 @@ aeon:Output rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#PhysicalLocation
 aeon:PhysicalLocation rdf:type owl:Class ;
-                      rdfs:subClassOf aeon:Location ;
-                      owl:disjointWith aeon:VirtualLocation ;
-                      rdfs:label "Physical Location" ;
+                      rdfs:label "obsolete Physical Location"^^xsd:string ;
+                      owl:deprecated "true"^^xsd:boolean ;
                       aeon:SMW_datatype "Category" ;
                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1643,8 +1643,8 @@ aeon:Venue rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#VirtualLocation
 aeon:VirtualLocation rdf:type owl:Class ;
-                     rdfs:subClassOf aeon:Location ;
-                     rdfs:label "Virtual Location" ;
+                     rdfs:label "obsolete Virtual Location"^^xsd:string ;
+                     owl:deprecated "true"^^xsd:boolean ;
                      aeon:SMW_datatype "Category" ;
                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
