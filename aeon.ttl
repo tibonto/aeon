@@ -323,7 +323,7 @@ aeon:has_identifier rdf:type owl:ObjectProperty ;
 aeon:has_internal_identifier rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf aeon:has_identifier ;
                              rdfs:domain obo:BFO_0000015 ;
-                             rdfs:range aeon:InternalIdentifier ;
+                             rdfs:range aeon:ConfIDentID ;
                              obo:IAO_0000115 "The literal value of the internal identifier used by a system implementing this ontology."@en ;
                              rdfs:comment """The \"rdfs:label has_ConfIDent_ID\" is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident/) to be used in its service. Thus the internal identifier is called ConfIDent_ID. 
 
@@ -1395,6 +1395,15 @@ aeon:CommitteeMember rdf:type owl:Class ;
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
+###  https://github.com/tibonto/aeon#ConfIDentID
+aeon:ConfIDentID rdf:type owl:Class ;
+                 rdfs:subClassOf obo:IAO_0000578 ;
+                 rdfs:comment "The \"rdfs:label ConfIDent_ID\" is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident/) to be used in its service. Thus the internal identifier is called ConfIDent_ID. You will probably want to change that in your implementation."@en ;
+                 rdfs:label "ConfIDent ID"@en ;
+                 aeon:SMW_datatype "Category" ;
+                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
 ###  https://github.com/tibonto/aeon#ContactPerson
 aeon:ContactPerson rdf:type owl:Class ;
                    rdfs:subClassOf aeon:Organizer ;
@@ -1509,15 +1518,6 @@ aeon:Identifier rdf:type owl:Class ;
                 owl:deprecated "true"^^xsd:boolean ;
                 aeon:SMW_datatype "Category" ;
                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#InternalIdentifier
-aeon:InternalIdentifier rdf:type owl:Class ;
-                        rdfs:subClassOf obo:IAO_0000578 ;
-                        rdfs:comment "The \"rdfs:label ConfIDent_ID\" is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident/) to be used in its service. Thus the internal identifier is called ConfIDent_ID. You will probably want to change that in your implementation."@en ;
-                        rdfs:label "ConfIDent ID"@en ;
-                        aeon:SMW_datatype "Category" ;
-                        aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#KeynoteSpeaker
