@@ -1791,11 +1791,6 @@ aeon:Workshop rdf:type owl:NamedIndividual ,
                        aeon:EventType .
 
 
-###  https://github.com/tibonto/aeon#_City_1
-aeon:_City_1 rdf:type owl:NamedIndividual ;
-             aeon:city "Berlin" .
-
-
 ###  https://github.com/tibonto/aeon#_ConfIDentID_1
 aeon:_ConfIDentID_1 rdf:type owl:NamedIndividual ;
                     aeon:ID "PIDapalooza_2020"^^xsd:string ;
