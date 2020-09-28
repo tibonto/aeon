@@ -1614,8 +1614,19 @@ aeon:State rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#Subject
 aeon:Subject rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+             obo:IAO_0000115 "The subject of an academic event or event series is a skos:Concept from a controlled vocabulary, which is used to denote the academic field of the event or event series." ;
              aeon:SMW_datatype "Category" ;
              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#Topic
+aeon:Topic rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+           obo:IAO_0000115 "The topic of an academic event or event series is a skos:Concept that denotes what the event or series is about." ;
+           obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
+           <http://purl.org/dc/elements/1.1/date> "2020-09-25T12:52:39Z"^^xsd:dateTime ;
+           rdfs:label "Topic"@de .
 
 
 ###  https://github.com/tibonto/aeon#Venue
