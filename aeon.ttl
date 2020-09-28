@@ -1701,11 +1701,6 @@ aeon:Hackathon rdf:type owl:NamedIndividual ,
 aeon:Lisbon rdf:type owl:NamedIndividual .
 
 
-###  https://github.com/tibonto/aeon#Member_Fee
-aeon:Member_Fee rdf:type owl:NamedIndividual ,
-                         aeon:Fee .
-
-
 ###  https://github.com/tibonto/aeon#PIDapalooza
 aeon:PIDapalooza rdf:type owl:NamedIndividual ,
                           aeon:EventSeries ;
@@ -1732,16 +1727,6 @@ aeon:PIDapalooza2020 rdf:type owl:NamedIndividual ,
 
 ###  https://github.com/tibonto/aeon#Portugal
 aeon:Portugal rdf:type owl:NamedIndividual .
-
-
-###  https://github.com/tibonto/aeon#Reduced_Fee
-aeon:Reduced_Fee rdf:type owl:NamedIndividual ,
-                          aeon:Fee .
-
-
-###  https://github.com/tibonto/aeon#Regular_Fee
-aeon:Regular_Fee rdf:type owl:NamedIndividual ,
-                          aeon:Fee .
 
 
 ###  https://github.com/tibonto/aeon#Seminar
