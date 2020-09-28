@@ -1795,7 +1795,9 @@ aeon:other_EventType rdf:type owl:NamedIndividual ,
 
 
 ###  https://www.wikidata.org/wiki/Q65929359
-<https://www.wikidata.org/wiki/Q65929359> rdf:type owl:NamedIndividual .
+<https://www.wikidata.org/wiki/Q65929359> rdf:type owl:NamedIndividual ,
+                                                   aeon:WDQID ;
+                                          rdfs:comment obo:IAO_0000002 .
 
 
 #################################################################
