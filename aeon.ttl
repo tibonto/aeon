@@ -1801,15 +1801,26 @@ aeon:_Person_1 rdf:type owl:NamedIndividual ,
 #################################################################
 
 [ rdf:type owl:AllDifferent ;
-   owl:distinctMembers ( aeon:Bronze_Sponsor
-                         aeon:Gold_Sponsor
-                       )
- ] .
+  owl:distinctMembers ( aeon:Bronze_Sponsor
+                        aeon:Gold_Sponsor
+                        aeon:Silver_Sponsor
+                      )
+] .
 
 
 [ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( aeon:Bronze_Sponsor
-                        aeon:Silver_Sponsor
+  owl:distinctMembers ( aeon:Colloquium
+                        aeon:Conference
+                        aeon:Forum
+                        aeon:Hackathon
+                        aeon:Seminar
+                        aeon:Session
+                        aeon:Symposium
+                        aeon:Talk
+                        aeon:Track
+                        aeon:Tutorial
+                        aeon:Workshop
+                        aeon:other_EventType
                       )
 ] .
 
