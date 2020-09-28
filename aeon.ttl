@@ -381,7 +381,6 @@ aeon:has_organizer rdf:type owl:ObjectProperty ;
 aeon:has_output rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf owl:topObjectProperty ;
                 rdfs:domain aeon:Event ;
-                rdfs:range aeon:Output ;
                 obo:IAO_0000115 "To say that an academic event A has an output means that there exists some form of publication B that is caused by A." ;
                 aeon:SMW_datatype "Text" ;
                 aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Output]]
@@ -1557,13 +1556,6 @@ aeon:Organizer rdf:type owl:Class ;
                aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Organizer]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
-
-
-###  https://github.com/tibonto/aeon#Output
-aeon:Output rdf:type owl:Class ;
-            rdfs:comment "The container for information about the event publications (including non academic publications)" ;
-            aeon:SMW_datatype "Category" ;
-            aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#PhysicalLocation
