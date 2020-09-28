@@ -1701,25 +1701,19 @@ aeon:Hackathon rdf:type owl:NamedIndividual ,
 aeon:Lisbon rdf:type owl:NamedIndividual .
 
 
-###  https://github.com/tibonto/aeon#Member_Fee
-aeon:Member_Fee rdf:type owl:NamedIndividual ,
-                         aeon:Fee .
-
-
 ###  https://github.com/tibonto/aeon#PIDapalooza
 aeon:PIDapalooza rdf:type owl:NamedIndividual ,
                           aeon:EventSeries ;
+                 rdfs:comment obo:IAO_0000002 ;
                  rdfs:label "PIDapalooza"@en .
 
 
 ###  https://github.com/tibonto/aeon#PIDapalooza2020
 aeon:PIDapalooza2020 rdf:type owl:NamedIndividual ,
                               aeon:Event ;
-                     aeon:has_event_type aeon:Conference ,
-                                         aeon:_EventType_other_1 ;
-                     aeon:has_external_identifier aeon:WDQID_1 ;
+                     aeon:has_WDQID <https://www.wikidata.org/wiki/Q65929359> ;
+                     aeon:has_event_type aeon:Conference ;
                      aeon:has_internal_identifier aeon:_ConfIDentID_1 ;
-                     aeon:has_organizer aeon:_Organization_1 ;
                      aeon:has_speaker aeon:_Person_1 ;
                      aeon:occurs_in_city aeon:Lisbon ;
                      aeon:occurs_in_country aeon:Portugal ;
@@ -1728,21 +1722,12 @@ aeon:PIDapalooza2020 rdf:type owl:NamedIndividual ,
                      aeon:number_of_attendees 117 ;
                      aeon:number_of_tracks 13 ;
                      aeon:start_date "2020-01-29T09:00:00"^^xsd:dateTime ;
+                     rdfs:comment obo:IAO_0000002 ;
                      rdfs:label "PIDapalooza2020"@en .
 
 
 ###  https://github.com/tibonto/aeon#Portugal
 aeon:Portugal rdf:type owl:NamedIndividual .
-
-
-###  https://github.com/tibonto/aeon#Reduced_Fee
-aeon:Reduced_Fee rdf:type owl:NamedIndividual ,
-                          aeon:Fee .
-
-
-###  https://github.com/tibonto/aeon#Regular_Fee
-aeon:Regular_Fee rdf:type owl:NamedIndividual ,
-                          aeon:Fee .
 
 
 ###  https://github.com/tibonto/aeon#Seminar
@@ -1780,13 +1765,6 @@ aeon:Tutorial rdf:type owl:NamedIndividual ,
                        aeon:EventType .
 
 
-###  https://github.com/tibonto/aeon#WDQID_1
-aeon:WDQID_1 rdf:type owl:NamedIndividual ;
-             aeon:ID "Q65929359"^^xsd:string ;
-             aeon:ID_URL "https://www.wikidata.org/wiki/Q65929359"^^xsd:anyURI ;
-             aeon:ID_base_URL "https://www.wikidata.org/wiki/"^^xsd:anyURI .
-
-
 ###  https://github.com/tibonto/aeon#Workshop
 aeon:Workshop rdf:type owl:NamedIndividual ,
                        aeon:EventType .
@@ -1796,23 +1774,30 @@ aeon:Workshop rdf:type owl:NamedIndividual ,
 aeon:_ConfIDentID_1 rdf:type owl:NamedIndividual ;
                     aeon:ID "PIDapalooza_2020"^^xsd:string ;
                     aeon:ID_URL "https://www.confident-conference.org/r/vanilla/index.php/PIDapalooza_2020"^^xsd:anyURI ;
-                    aeon:ID_base_URL "https://www.confident-conference.org/r/vanilla/index.php/"^^xsd:anyURI .
-
-
-###  https://github.com/tibonto/aeon#_EventType_other_1
-aeon:_EventType_other_1 rdf:type owl:NamedIndividual ;
-                        aeon:event_type_other "festival" .
-
-
-###  https://github.com/tibonto/aeon#_Organization_1
-aeon:_Organization_1 rdf:type owl:NamedIndividual .
+                    aeon:ID_base_URL "https://www.confident-conference.org/r/vanilla/index.php/"^^xsd:anyURI ;
+                    rdfs:comment obo:IAO_0000002 .
 
 
 ###  https://github.com/tibonto/aeon#_Person_1
-aeon:_Person_1 rdf:type owl:NamedIndividual ;
+aeon:_Person_1 rdf:type owl:NamedIndividual ,
+                        obo:NCBITaxon_9606 ;
                aeon:first_name "Philip"^^xsd:string ;
-               aeon:last_name "Strömert"^^xsd:string .
+               aeon:last_name "Strömert"^^xsd:string ;
+               rdfs:comment obo:IAO_0000002 .
 
+
+###  https://github.com/tibonto/aeon#other_EventType
+aeon:other_EventType rdf:type owl:NamedIndividual ,
+                              aeon:EventType ;
+                     obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
+                     <http://purl.org/dc/elements/1.1/date> "2020-09-28T11:57:10Z"^^xsd:dateTime ;
+                     rdfs:label "other EventType"@de .
+
+
+###  https://www.wikidata.org/wiki/Q65929359
+<https://www.wikidata.org/wiki/Q65929359> rdf:type owl:NamedIndividual ,
+                                                   aeon:WDQID ;
+                                          rdfs:comment obo:IAO_0000002 .
 
 
 #################################################################
@@ -1820,15 +1805,26 @@ aeon:_Person_1 rdf:type owl:NamedIndividual ;
 #################################################################
 
 [ rdf:type owl:AllDifferent ;
-   owl:distinctMembers ( aeon:Bronze_Sponsor
-                         aeon:Gold_Sponsor
-                       )
- ] .
+  owl:distinctMembers ( aeon:Bronze_Sponsor
+                        aeon:Gold_Sponsor
+                        aeon:Silver_Sponsor
+                      )
+] .
 
 
 [ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( aeon:Bronze_Sponsor
-                        aeon:Silver_Sponsor
+  owl:distinctMembers ( aeon:Colloquium
+                        aeon:Conference
+                        aeon:Forum
+                        aeon:Hackathon
+                        aeon:Seminar
+                        aeon:Session
+                        aeon:Symposium
+                        aeon:Talk
+                        aeon:Track
+                        aeon:Tutorial
+                        aeon:Workshop
+                        aeon:other_EventType
                       )
 ] .
 
