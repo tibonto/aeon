@@ -13,16 +13,17 @@
 @base <https://github.com/tibonto/aeon> .
 
 <https://github.com/tibonto/aeon> rdf:type owl:Ontology ;
-                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.2.4> ;
+                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.2.5> ;
                                    owl:imports <http://purl.obolibrary.org/obo/bfo/2020/bfo.owl> ,
                                                <http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl> ;
                                    <http://purl.org/dc/elements/1.1/contributor> "Christian Hauschke" ,
+                                                                                 "Christoph Lange" ,
                                                                                  "Michael Conlon" ,
                                                                                  "Philip Strömert" ;
                                    <http://purl.org/dc/elements/1.1/creator> "ConfIDent project" ;
                                    <http://purl.org/dc/elements/1.1/description> "The Academic Event Ontology (AEON) is used to represent information regarding academic events. The ontology supports the identification, development, management, evaluation, and impact assessment of events, components of events and event series, as well as identification and reuse of works presented or developed at events. The ontology is independent of knowledge, creative domain, or topics related to events. AEON is focused on events and assumes the representation of many entities associated with events such as attendees, locations, academic works, datetimes, and processes are defined in compatible ontologies." ;
                                    <http://purl.org/dc/elements/1.1/title> "Academic Event Ontology"@en ;
-                                   owl:versionInfo "v0.2.4" .
+                                   owl:versionInfo "v0.2.5" .
 
 #################################################################
 #    Annotation properties
@@ -689,7 +690,7 @@ aeon:ID_base_URL rdf:type owl:DatatypeProperty ;
 aeon:abstract_deadline rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf aeon:deadline ;
                        rdfs:domain aeon:Event ;
-                       rdfs:range xsd:dateTime ;
+                       rdfs:range xsd:dateTimeStamp ;
                        aeon:SMW_datatype "Date" ;
                        aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -730,7 +731,7 @@ aeon:agent_name rdf:type owl:DatatypeProperty ;
 aeon:camera-ready_deadline rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf aeon:deadline ;
                            rdfs:domain aeon:Event ;
-                           rdfs:range xsd:dateTime ;
+                           rdfs:range xsd:dateTimeStamp ;
                            aeon:SMW_datatype "Date" ;
                            aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -804,7 +805,7 @@ aeon:deadline rdf:type owl:DatatypeProperty ;
 aeon:demo_deadline rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf aeon:deadline ;
                    rdfs:domain aeon:Event ;
-                   rdfs:range xsd:dateTime ;
+                   rdfs:range xsd:dateTimeStamp ;
                    aeon:SMW_datatype "Date" ;
                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -823,7 +824,7 @@ aeon:duration rdf:type owl:DatatypeProperty ;
 aeon:end_date rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf aeon:duration ;
               rdfs:domain aeon:Event ;
-              rdfs:range xsd:dateTime ;
+              rdfs:range xsd:dateTimeStamp ;
               aeon:SMW_datatype "Date" ;
               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
               aeon:WikidataLabel "end_time" ;
@@ -1033,7 +1034,7 @@ aeon:name rdf:type owl:DatatypeProperty ;
 aeon:notification_deadline rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf aeon:deadline ;
                            rdfs:domain aeon:Event ;
-                           rdfs:range xsd:dateTime ;
+                           rdfs:range xsd:dateTimeStamp ;
                            aeon:SMW_datatype "Date" ;
                            aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1066,7 +1067,7 @@ aeon:organizational_name rdf:type owl:DatatypeProperty ;
 aeon:paper_deadline rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf aeon:deadline ;
                     rdfs:domain aeon:Event ;
-                    rdfs:range xsd:dateTime ;
+                    rdfs:range xsd:dateTimeStamp ;
                     aeon:SMW_datatype "Date" ;
                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1083,7 +1084,7 @@ aeon:personal_name rdf:type owl:DatatypeProperty ;
 aeon:poster_deadline rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf aeon:deadline ;
                      rdfs:domain aeon:Event ;
-                     rdfs:range xsd:dateTime ;
+                     rdfs:range xsd:dateTimeStamp ;
                      aeon:SMW_datatype "Date" ;
                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1101,7 +1102,7 @@ aeon:previous_end_date rdf:type owl:DatatypeProperty ;
 aeon:previous_start_date rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:start_date ;
                          rdfs:domain aeon:Event ;
-                         rdfs:range xsd:dateTime ;
+                         rdfs:range xsd:dateTimeStamp ;
                          aeon:SMW_datatype "Date" ;
                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1223,7 +1224,7 @@ aeon:subject rdf:type owl:DatatypeProperty ;
 aeon:submission_deadline rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:deadline ;
                          rdfs:domain aeon:Event ;
-                         rdfs:range xsd:dateTime ;
+                         rdfs:range xsd:dateTimeStamp ;
                          aeon:SMW_datatype "Date" ;
                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1254,7 +1255,7 @@ aeon:summary_licence rdf:type owl:DatatypeProperty ;
 aeon:tutorial_deadline rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf aeon:deadline ;
                        rdfs:domain aeon:Event ;
-                       rdfs:range xsd:dateTime ;
+                       rdfs:range xsd:dateTimeStamp ;
                        aeon:SMW_datatype "Date" ;
                        aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1280,7 +1281,7 @@ aeon:venue_URL rdf:type owl:DatatypeProperty ;
 aeon:workshop_deadline rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf aeon:deadline ;
                        rdfs:domain aeon:Event ;
-                       rdfs:range xsd:dateTime ;
+                       rdfs:range xsd:dateTimeStamp ;
                        aeon:SMW_datatype "Date" ;
                        aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
