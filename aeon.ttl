@@ -1439,6 +1439,10 @@ aeon:DOI rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#Event
 aeon:Event rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                 owl:onProperty obo:BFO_0000132 ;
+                                 owl:someValuesFrom aeon:EventSeries
+                               ] ;
            rdfs:subClassOf obo:BFO_0000015 ;
            owl:disjointWith aeon:EventSeries ;
            obo:IAO_0000112 "The 19th International Semantic Web Conference (ISWC2020) is an academic  event."@en ;
