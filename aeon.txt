@@ -1,4 +1,4 @@
-# Ontology metadata attributes required for registration in the TIB ontology hub.
+﻿# Ontology metadata attributes required for registration in the TIB ontology hub.
 # This file should be maintained under the source control and must be released anongside the ontology, under the same versioning scheme.
 # The file name is identical to the ontology's ttl file with .txt extension.
 
@@ -11,6 +11,6 @@ maintainerFullname: Project ConfIDent
 maintainerEmail: confident@tib.eu
 keywords: academic events, research impact; scientometrics
 license: GNU General Public License v3.0
-version: v0.0.1
+version: v0.2.6
 repositoryURL: https://github.com/tibonto/aeon
-releaseURL: https://github.com/tibonto/aeon/releases/tag/v0.0.1
+releaseURL: https://github.com/tibonto/aeon/releases/tag/v0.2.6
