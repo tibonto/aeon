@@ -3931,7 +3931,7 @@ obo:OBI_0000011 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/OBI_0000245
 obo:OBI_0000245 rdf:type owl:Class ;
-                rdfs:subClassOf obo:BFO_0000040 ;
+                rdfs:subClassOf obo:BFO_0000027 ;
                 obo:IAO_0000112 "PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods."@en ;
                 obo:IAO_0000114 "ready for release"@en ;
                 obo:IAO_0000115 "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."@en ;
