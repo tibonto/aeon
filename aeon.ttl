@@ -3975,6 +3975,7 @@ The notion of a SKOS concept is useful when describing the conceptual or intelle
 
 Note that, because SKOS is designed to be a vehicle for representing semi-formal KOS, such as thesauri and classification schemes, a certain amount of flexibility has been built in to the formal definition of this class.""" ;
                                               rdfs:label "Concept" ;
+                                              aeon:SMW_datatype "Category" ;
                                               aeon:SMW_import_info "[[Category:SKOS]] [[Category:Imported vocabulary]]" .
 
 
