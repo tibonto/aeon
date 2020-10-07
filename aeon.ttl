@@ -3975,6 +3975,7 @@ The notion of a SKOS concept is useful when describing the conceptual or intelle
 
 Note that, because SKOS is designed to be a vehicle for representing semi-formal KOS, such as thesauri and classification schemes, a certain amount of flexibility has been built in to the formal definition of this class.""" ;
                                               rdfs:label "Concept" ;
+                                              aeon:SMW_datatype "Category" ;
                                               aeon:SMW_import_info "[[Category:SKOS]] [[Category:Imported vocabulary]]" .
 
 
@@ -4220,13 +4221,7 @@ aeon:AEON_0000025 rdf:type owl:Class ;
 aeon:ExternalIdentifier rdf:type owl:Class ;
                         obo:IAO_0000116 "This class is probably obsolete after completing the BFO subsumtion hierarchy." ;
                         rdfs:label "obsolete External ID"^^xsd:string ;
-                        owl:deprecated "true"^^xsd:boolean ;
-                        aeon:SMW_datatype "Category" ;
-                        aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
-[[partOfSubobject::Template:Subobject Person_ID]]
-[[partOfSubobject::Template:Subobject Organization_ID]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                        owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://github.com/tibonto/aeon#Fee
@@ -4244,24 +4239,18 @@ aeon:Fee rdf:type owl:Class ;
 aeon:Identifier rdf:type owl:Class ;
                 obo:IAO_0000116 "This class is probably obsolete after completing the BFO subsumtion hierarchy." ;
                 rdfs:seeAlso "http://purl.obolibrary.org/obo/IAO_0020000"@en ;
-                owl:deprecated "true"^^xsd:boolean ;
-                aeon:SMW_datatype "Category" ;
-                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://github.com/tibonto/aeon#Location
 aeon:Location rdf:type owl:Class ;
-              owl:deprecated "true"^^xsd:boolean ;
-              aeon:SMW_datatype "Category" ;
-              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+              owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://github.com/tibonto/aeon#PhysicalLocation
 aeon:PhysicalLocation rdf:type owl:Class ;
                       rdfs:label "obsolete Physical Location"^^xsd:string ;
-                      owl:deprecated "true"^^xsd:boolean ;
-                      aeon:SMW_datatype "Category" ;
-                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                      owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://github.com/tibonto/aeon#Subject
@@ -4284,9 +4273,7 @@ aeon:Topic rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#VirtualLocation
 aeon:VirtualLocation rdf:type owl:Class ;
                      rdfs:label "obsolete Virtual Location"^^xsd:string ;
-                     owl:deprecated "true"^^xsd:boolean ;
-                     aeon:SMW_datatype "Category" ;
-                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                     owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://github.com/tibonto/aeon#committee
