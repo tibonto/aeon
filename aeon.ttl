@@ -4225,6 +4225,15 @@ aeon:AEON_0000027 rdf:type owl:Class ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
+###  https://github.com/tibonto/aeon#AEON_0000028
+aeon:AEON_0000028 rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                  obo:IAO_0000115 "The topic of an academic event or event series is a skos:Concept that denotes what the event or series is about." ;
+                  obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
+                  <http://purl.org/dc/elements/1.1/date> "2020-09-25T12:52:39Z"^^xsd:dateTime ;
+                  rdfs:label "topic" .
+
+
 ###  https://github.com/tibonto/aeon#ExternalIdentifier
 aeon:ExternalIdentifier rdf:type owl:Class ;
                         obo:IAO_0000116 "This class is probably obsolete after completing the BFO subsumtion hierarchy." ;
@@ -4271,15 +4280,6 @@ aeon:PhysicalLocation rdf:type owl:Class ;
                       owl:deprecated "true"^^xsd:boolean ;
                       aeon:SMW_datatype "Category" ;
                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#Topic
-aeon:Topic rdf:type owl:Class ;
-           rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
-           obo:IAO_0000115 "The topic of an academic event or event series is a skos:Concept that denotes what the event or series is about." ;
-           obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
-           <http://purl.org/dc/elements/1.1/date> "2020-09-25T12:52:39Z"^^xsd:dateTime ;
-           rdfs:label "Topic"@de .
 
 
 ###  https://github.com/tibonto/aeon#VirtualLocation
