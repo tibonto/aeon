@@ -4216,6 +4216,15 @@ aeon:AEON_0000025 rdf:type owl:Class ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
+###  https://github.com/tibonto/aeon#AEON_0000026
+aeon:AEON_0000026 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000029 ;
+                  obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
+                  rdfs:label "virtual location"@de ;
+                  aeon:SMW_datatype "Category" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
 ###  https://github.com/tibonto/aeon#AEON_0000027
 aeon:AEON_0000027 rdf:type owl:Class ;
                   rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
