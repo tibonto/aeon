@@ -11,6 +11,7 @@
 @prefix aeon: <https://github.com/tibonto/aeon#> .
 @prefix obda: <https://w3id.org/obda/vocabulary#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @base <https://github.com/tibonto/aeon> .
 
 <https://github.com/tibonto/aeon> rdf:type owl:Ontology ;
@@ -347,23 +348,23 @@ ns:term_status rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#altLabel
-<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
+skos:altLabel rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#definition
-<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+skos:definition rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#example
-<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty .
+skos:example rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#prefLabel
-<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+skos:prefLabel rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#scopeNote
-<http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty .
+skos:scopeNote rdf:type owl:AnnotationProperty .
 
 
 ###  https://github.com/tibonto/aeon#SMW_datatype
@@ -443,9 +444,9 @@ obo:BFO_0000054 rdf:type owl:ObjectProperty ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "has realization"@en ,
                            "realized in"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "b has realization c =Def c realizes b"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "As for realizes"@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "has realization"@en .
+                skos:definition "b has realization c =Def c realizes b"@en ;
+                skos:example "As for realizes"@en ;
+                skos:prefLabel "has realization"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000055
@@ -461,9 +462,9 @@ obo:BFO_0000055 rdf:type owl:ObjectProperty ;
                 rdfs:comment "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process" ;
                 rdfs:isDefinedBy obo:iao.owl ;
                 rdfs:label "realizes"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) b realizes c means: b is a process & c is a realizable entity that inheres in d & for all t, if b has participant d at t then c exists at t & the type instantiated by b is correlated with the type instantiated by c"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "A disposition to go bald is realized in a balding process; a role of student is realized in studying processes; the pumping function of a heart is realized in processes of pumping."@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "realizes"@en .
+                skos:definition "(Elucidation) b realizes c means: b is a process & c is a realizable entity that inheres in d & for all t, if b has participant d at t then c exists at t & the type instantiated by b is correlated with the type instantiated by c"@en ;
+                skos:example "A disposition to go bald is realized in a balding process; a role of student is realized in studying processes; the pumping function of a heart is realized in processes of pumping."@en ;
+                skos:prefLabel "realizes"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000056
@@ -484,8 +485,8 @@ obo:BFO_0000056 rdf:type owl:ObjectProperty ;
                 rdfs:range obo:BFO_0000015 ;
                 <http://purl.org/dc/elements/1.1/identifier> "250-BFO" ;
                 rdfs:label "participates in at some time"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "b participates in p at some time =Def for some time t (p has participant b at t)"@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "participates in at some time"@en .
+                skos:definition "b participates in p at some time =Def for some time t (p has participant b at t)"@en ;
+                skos:prefLabel "participates in at some time"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000057
@@ -505,8 +506,8 @@ obo:BFO_0000057 rdf:type owl:ObjectProperty ;
                            ] ;
                 <http://purl.org/dc/elements/1.1/identifier> "248-BFO" ;
                 rdfs:label "has participant at some time"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "p has participant c at some time =Def for some time t (b is a process, c is a continuant, and c participates in p some way at t"@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "has participant at some time"@en .
+                skos:definition "p has participant c at some time =Def for some time t (b is a process, c is a continuant, and c participates in p some way at t"@en ;
+                skos:prefLabel "has participant at some time"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000066
@@ -533,9 +534,9 @@ obo:BFO_0000066 rdf:type owl:ObjectProperty ;
                 rdfs:comment "Paraphrase of definition: a relation between a process and an independent continuant, in which the process takes place entirely within the independent continuant" ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "occurs in"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "b occurs in c =Def b is a process or a process boundary and c is a material entity or immaterial entity & there exists a spatiotemporal region r and b occupies spatiotemporal region r & for all t, if b exists at t then c exists at t & there exist spatial regions s and s' where b spatially projects onto s at t & c occupies spatial region s' at t & s is a continuant part of s' at t"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "A process of digestion occurs in the interior of an organism, a process of loading artillery rounds into a tank cannon occurs in the interior of the tank. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "occurs in"@en .
+                skos:definition "b occurs in c =Def b is a process or a process boundary and c is a material entity or immaterial entity & there exists a spatiotemporal region r and b occupies spatiotemporal region r & for all t, if b exists at t then c exists at t & there exist spatial regions s and s' where b spatially projects onto s at t & c occupies spatial region s' at t & s is a continuant part of s' at t"@en ;
+                skos:example "A process of digestion occurs in the interior of an organism, a process of loading artillery rounds into a tank cannon occurs in the interior of the tank. "@en ;
+                skos:prefLabel "occurs in"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000067
@@ -567,8 +568,8 @@ obo:BFO_0000082 rdf:type owl:ObjectProperty ;
                            ] ;
                 <http://purl.org/dc/elements/1.1/identifier> "235-BFO" ;
                 rdfs:label "located in at all times"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "b located in c at all times =Def for all times t, b exists at t implies (b and c are independent continuants and not spatial regions, and the spatial region which b occupies at t is a (proper or improper) continuant part of the spatial region which c occupies at t)"@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "located in at all times"@en .
+                skos:definition "b located in c at all times =Def for all times t, b exists at t implies (b and c are independent continuants and not spatial regions, and the spatial region which b occupies at t is a (proper or improper) continuant part of the spatial region which c occupies at t)"@en ;
+                skos:prefLabel "located in at all times"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000110
@@ -579,8 +580,8 @@ obo:BFO_0000110 rdf:type owl:ObjectProperty ;
                 rdfs:range obo:BFO_0000002 ;
                 <http://purl.org/dc/elements/1.1/identifier> "223-BFO" ;
                 rdfs:label "has continuant part at all times"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "b has continuant part c at all times =Def for all times t, b exists at t implies (b and c are continuants & b is a part of c at t)"@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "has continuant part at all times"@en .
+                skos:definition "b has continuant part c at all times =Def for all times t, b exists at t implies (b and c are continuants & b is a part of c at t)"@en ;
+                skos:prefLabel "has continuant part at all times"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000115
@@ -590,8 +591,8 @@ obo:BFO_0000115 rdf:type owl:ObjectProperty ;
                 rdfs:range obo:BFO_0000040 ;
                 <http://purl.org/dc/elements/1.1/identifier> "230-BFO" ;
                 rdfs:label "has member part at some time"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "b has member part c at some time =Def for some time t (c member part of b at t)"@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "has member part at some time"@en .
+                skos:definition "b has member part c at some time =Def for some time t (c member part of b at t)"@en ;
+                skos:prefLabel "has member part at some time"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000117
@@ -602,9 +603,9 @@ obo:BFO_0000117 rdf:type owl:ObjectProperty ;
                 rdfs:range obo:BFO_0000003 ;
                 <http://purl.org/dc/elements/1.1/identifier> "202-BFO" ;
                 rdfs:label "has occurrent part"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) b has occurrent part c means: c is a part of b & b and c are occurrents"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "Mary's life has occurrent part Mary's 5th birthday. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "has occurrent part"@en .
+                skos:definition "(Elucidation) b has occurrent part c means: c is a part of b & b and c are occurrents"@en ;
+                skos:example "Mary's life has occurrent part Mary's 5th birthday. "@en ;
+                skos:prefLabel "has occurrent part"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000118
@@ -615,9 +616,9 @@ obo:BFO_0000118 rdf:type owl:ObjectProperty ;
                 rdfs:range obo:BFO_0000003 ;
                 <http://purl.org/dc/elements/1.1/identifier> "154-BFO" ;
                 rdfs:label "has proper occurrent part"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "b has proper occurrent part c =Def b has occurrent part c & b and c are not identical"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "As for has occurrent part. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "has proper occurrent part"@en .
+                skos:definition "b has proper occurrent part c =Def b has occurrent part c & b and c are not identical"@en ;
+                skos:example "As for has occurrent part. "@en ;
+                skos:prefLabel "has proper occurrent part"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000121
@@ -629,9 +630,9 @@ obo:BFO_0000121 rdf:type owl:ObjectProperty ;
                 rdfs:range obo:BFO_0000003 ;
                 <http://purl.org/dc/elements/1.1/identifier> "211-BFO" ;
                 rdfs:label "has temporal part"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "b has temporal part c =Def c temporal part of b"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "Your life has temporal part the first year of your life. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "has temporal part"@en .
+                skos:definition "b has temporal part c =Def c temporal part of b"@en ;
+                skos:example "Your life has temporal part the first year of your life. "@en ;
+                skos:prefLabel "has temporal part"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000124
@@ -653,8 +654,8 @@ obo:BFO_0000124 rdf:type owl:ObjectProperty ;
                            ] ;
                 <http://purl.org/dc/elements/1.1/identifier> "236-BFO" ;
                 rdfs:label "location of at some time"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "b location of c at some time =Def for some time t (c located in b at t)"@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "location of at some time"@en .
+                skos:definition "b location of c at some time =Def for some time t (c located in b at t)"@en ;
+                skos:prefLabel "location of at some time"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000132
@@ -664,9 +665,9 @@ obo:BFO_0000132 rdf:type owl:ObjectProperty ,
                 rdfs:range obo:BFO_0000003 ;
                 <http://purl.org/dc/elements/1.1/identifier> "003-BFO" ;
                 rdfs:label "occurrent part of"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) b occurrent part of c =Def b is a part of c & b and c are occurrents"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "Mary's 5th birthday is an occurrent part of Mary's life; the first set of the tennis match is an occurrent part of the tennis match.  "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "occurrent part of"@en .
+                skos:definition "(Elucidation) b occurrent part of c =Def b is a part of c & b and c are occurrents"@en ;
+                skos:example "Mary's 5th birthday is an occurrent part of Mary's life; the first set of the tennis match is an occurrent part of the tennis match.  "@en ;
+                skos:prefLabel "occurrent part of"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000136
@@ -677,9 +678,9 @@ obo:BFO_0000136 rdf:type owl:ObjectProperty ;
                 rdfs:range obo:BFO_0000003 ;
                 <http://purl.org/dc/elements/1.1/identifier> "116-BFO" ;
                 rdfs:label "proper temporal part of"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "b proper temporal part of c =Def b temporal part of c & not (b = c)"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "As for temporal part of. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "proper temporal part of"@en .
+                skos:definition "b proper temporal part of c =Def b temporal part of c & not (b = c)"@en ;
+                skos:example "As for temporal part of. "@en ;
+                skos:prefLabel "proper temporal part of"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000138
@@ -689,9 +690,9 @@ obo:BFO_0000138 rdf:type owl:ObjectProperty ;
                 rdfs:range obo:BFO_0000003 ;
                 <http://purl.org/dc/elements/1.1/identifier> "005-BFO" ;
                 rdfs:label "proper occurrent part of"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "b proper occurrent part of c =Def b occurrent part of c & b and c are not identical"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "As for occurrent part of. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "proper occurrent part of"@en .
+                skos:definition "b proper occurrent part of c =Def b occurrent part of c & b and c are not identical"@en ;
+                skos:example "As for occurrent part of. "@en ;
+                skos:prefLabel "proper occurrent part of"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000139
@@ -702,9 +703,9 @@ obo:BFO_0000139 rdf:type owl:ObjectProperty ;
                 rdfs:range obo:BFO_0000003 ;
                 <http://purl.org/dc/elements/1.1/identifier> "078-BFO" ;
                 rdfs:label "temporal part of"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "b temporal part of c =Def b occurrent part of c & either b and c are temporal regions or  b and c are spatiotemporal regions & b temporally projects onto an occurrent part of the temporal region that c temporally projects onto  or b and c are processes or process boundaries & b occupies a temporal region that is an occurrent part of the temporal region that c occupies"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "Your heart beating from 4pm to 5pm today is a temporal part of the process of your heart beating; the 4th year of your life is a temporal part of your life, as is the process boundary which separates the 3rd and 4th years of your life; the first quarter of a game of football is a temporal part of the whole game."@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "temporal part of"@en .
+                skos:definition "b temporal part of c =Def b occurrent part of c & either b and c are temporal regions or  b and c are spatiotemporal regions & b temporally projects onto an occurrent part of the temporal region that c temporally projects onto  or b and c are processes or process boundaries & b occupies a temporal region that is an occurrent part of the temporal region that c occupies"@en ;
+                skos:example "Your heart beating from 4pm to 5pm today is a temporal part of the process of your heart beating; the 4th year of your life is a temporal part of your life, as is the process boundary which separates the 3rd and 4th years of your life; the first quarter of a game of football is a temporal part of the whole game."@en ;
+                skos:prefLabel "temporal part of"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000166
@@ -725,8 +726,8 @@ obo:BFO_0000166 rdf:type owl:ObjectProperty ;
                 rdfs:range obo:BFO_0000015 ;
                 <http://purl.org/dc/elements/1.1/identifier> "251-BFO" ;
                 rdfs:label "participates in at all times"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "b participates in p at all times =Def for all times t, b exists at t implies (p has participant b at t)"@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "participates in at all times"@en .
+                skos:definition "b participates in p at all times =Def for all times t, b exists at t implies (p has participant b at t)"@en ;
+                skos:prefLabel "participates in at all times"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000167
@@ -747,8 +748,8 @@ obo:BFO_0000167 rdf:type owl:ObjectProperty ;
                            ] ;
                 <http://purl.org/dc/elements/1.1/identifier> "249-BFO" ;
                 rdfs:label "has participant at all times"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "p has participant c at all times =Def for all times t, b exists at t implies (b is a process, c is a continuant, and c participates in p some way at t)"@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "has participant at all times"@en .
+                skos:definition "p has participant c at all times =Def for all times t, b exists at t implies (b is a process, c is a continuant, and c participates in p some way at t)"@en ;
+                skos:prefLabel "has participant at all times"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000170
@@ -771,8 +772,8 @@ obo:BFO_0000170 rdf:type owl:ObjectProperty ;
                            ] ;
                 <http://purl.org/dc/elements/1.1/identifier> "237-BFO" ;
                 rdfs:label "location of at all times"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "b location of c at all times =Def for all times t, b exists at t implies (c located in b at t)"@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "location of at all times"@en .
+                skos:definition "b location of c at all times =Def for all times t, b exists at t implies (c located in b at t)"@en ;
+                skos:prefLabel "location of at all times"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000171
@@ -793,8 +794,8 @@ obo:BFO_0000171 rdf:type owl:ObjectProperty ;
                            ] ;
                 <http://purl.org/dc/elements/1.1/identifier> "234-BFO" ;
                 rdfs:label "located in at some time"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "b located in c at some time =Def for some time t (b and c are independent continuants and not spatial regions, and the spatial region which b occupies at t is a (proper or improper) continuant part of the spatial region which c occupies at t)"@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "located in at some time"@en .
+                skos:definition "b located in c at some time =Def for some time t (b and c are independent continuants and not spatial regions, and the spatial region which b occupies at t is a (proper or improper) continuant part of the spatial region which c occupies at t)"@en ;
+                skos:prefLabel "located in at some time"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000174
@@ -804,8 +805,8 @@ obo:BFO_0000174 rdf:type owl:ObjectProperty ;
                 rdfs:range obo:BFO_0000002 ;
                 <http://purl.org/dc/elements/1.1/identifier> "226-BFO" ;
                 rdfs:label "has proper continuant part at some time"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "b has proper continuant part c at some time =Def c proper continuant part of b at some time"@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "has proper continuant part at some time"@en .
+                skos:definition "b has proper continuant part c at some time =Def c proper continuant part of b at some time"@en ;
+                skos:prefLabel "has proper continuant part at some time"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000178
@@ -814,8 +815,8 @@ obo:BFO_0000178 rdf:type owl:ObjectProperty ;
                 rdfs:range obo:BFO_0000002 ;
                 <http://purl.org/dc/elements/1.1/identifier> "271-BFO" ;
                 rdfs:label "has continuant part at some time"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "b has continuant part c at some time =Def for some time t (b and c are continuants & b is a part of c at t)"@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "has continuant part at some time"@en .
+                skos:definition "b has continuant part c at some time =Def for some time t (b and c are continuants & b is a part of c at t)"@en ;
+                skos:prefLabel "has continuant part at some time"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000181
@@ -825,9 +826,9 @@ obo:BFO_0000181 rdf:type owl:ObjectProperty ;
                 rdfs:range obo:BFO_0000003 ;
                 <http://purl.org/dc/elements/1.1/identifier> "212-BFO" ;
                 rdfs:label "has proper temporal part"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "b has proper temporal part c =Def c proper temporal part of b"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "As for has temporal part. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "has proper temporal part"@en .
+                skos:definition "b has proper temporal part c =Def c proper temporal part of b"@en ;
+                skos:example "As for has temporal part. "@en ;
+                skos:prefLabel "has proper temporal part"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000210
@@ -842,8 +843,8 @@ obo:BFO_0000210 rdf:type owl:ObjectProperty ;
                 rdfs:range obo:BFO_0000006 ;
                 <http://purl.org/dc/elements/1.1/identifier> "232-BFO" ;
                 rdfs:label "occupies spatial region at some time"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "an independent continuant c that is not a spatial region occupies spatial region r at some time =Def for some time t (every continuant part of c occupies some continuant part of r at t and no continuant part of c occupies any spatial region that is not a continuant part of r at t)"@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "occupies spatial region at some time"@en .
+                skos:definition "an independent continuant c that is not a spatial region occupies spatial region r at some time =Def for some time t (every continuant part of c occupies some continuant part of r at t and no continuant part of c occupies any spatial region that is not a continuant part of r at t)"@en ;
+                skos:prefLabel "occupies spatial region at some time"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000211
@@ -860,8 +861,8 @@ obo:BFO_0000211 rdf:type owl:ObjectProperty ;
                 rdfs:range obo:BFO_0000006 ;
                 <http://purl.org/dc/elements/1.1/identifier> "233-BFO" ;
                 rdfs:label "occupies spatial region at all times"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "an independent continuant c that is not a spatial region occupies spatial region r at all times =Def for all times t, b exists at t implies (every continuant part of c occupies some continuant part of r at t and no continuant part of c occupies any spatial region that is not a continuant part of r at t)"@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "occupies spatial region at all times"@en .
+                skos:definition "an independent continuant c that is not a spatial region occupies spatial region r at all times =Def for all times t, b exists at t implies (every continuant part of c occupies some continuant part of r at t and no continuant part of c occupies any spatial region that is not a continuant part of r at t)"@en ;
+                skos:prefLabel "occupies spatial region at all times"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000039
@@ -2448,9 +2449,9 @@ obo:BFO_0000001 rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/identifier> "001-BFO" ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "entity"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) An entity is anything that exists or has existed or will exist"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "Julius Caesar, the Second World War, your body mass index, Verdi's Requiem. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "entity"@en .
+                skos:definition "(Elucidation) An entity is anything that exists or has existed or will exist"@en ;
+                skos:example "Julius Caesar, the Second World War, your body mass index, Verdi's Requiem. "@en ;
+                skos:prefLabel "entity"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000001 ;
@@ -2493,9 +2494,9 @@ obo:BFO_0000002 rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/identifier> "008-BFO" ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "continuant"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "A human being, a tennis ball, a cave, a region of space, someone's temperature. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "continuant"@en .
+                skos:definition "(Elucidation) A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity"@en ;
+                skos:example "A human being, a tennis ball, a cave, a region of space, someone's temperature. "@en ;
+                skos:prefLabel "continuant"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000002 ;
@@ -2583,9 +2584,9 @@ obo:BFO_0000003 rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/identifier> "077-BFO" ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "occurrent"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) An occurrent is an entity that unfolds itself in time or it is the start or end of such an entity or it is a temporal or spatiotemporal region"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "As for process, history, process boundary, spatiotemporal region, zero-dimensional temporal region, one-dimensional temporal region, temporal interval, temporal instant. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "occurrent"@en .
+                skos:definition "(Elucidation) An occurrent is an entity that unfolds itself in time or it is the start or end of such an entity or it is a temporal or spatiotemporal region"@en ;
+                skos:example "As for process, history, process boundary, spatiotemporal region, zero-dimensional temporal region, one-dimensional temporal region, temporal interval, temporal instant. "@en ;
+                skos:prefLabel "occurrent"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000003 ;
@@ -2665,9 +2666,9 @@ obo:BFO_0000004 rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/identifier> "017-BFO" ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "independent continuant"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "b is an independent continuant =Def b is a continuant which is such that there is no c such that b s-depends on c and no c such that b g-depends on c"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "An atom, a molecule, an organism, a heart, a chair, the bottom right portion of a human torso, a leg; the interior of your mouth; a spatial region; an orchestra. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "independent continuant"@en .
+                skos:definition "b is an independent continuant =Def b is a continuant which is such that there is no c such that b s-depends on c and no c such that b g-depends on c"@en ;
+                skos:example "An atom, a molecule, an organism, a heart, a chair, the bottom right portion of a human torso, a leg; the interior of your mouth; a spatial region; an orchestra. "@en ;
+                skos:prefLabel "independent continuant"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000004 ;
@@ -2727,9 +2728,9 @@ obo:BFO_0000006 rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/identifier> "035-BFO" ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "spatial region"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) A spatial region is a continuant entity that is a continuant part of the spatial projection of a portion of spacetime at a given time"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "As for zero-dimensional spatial region, one-dimensional spatial region, two-dimensional spatial region, three-dimensional spatial region. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "spatial region"@en .
+                skos:definition "(Elucidation) A spatial region is a continuant entity that is a continuant part of the spatial projection of a portion of spacetime at a given time"@en ;
+                skos:example "As for zero-dimensional spatial region, one-dimensional spatial region, two-dimensional spatial region, three-dimensional spatial region. "@en ;
+                skos:prefLabel "spatial region"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000006 ;
@@ -2794,9 +2795,9 @@ obo:BFO_0000008 rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/identifier> "100-BFO" ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "temporal region"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) A temporal region is an occurrent over which processes can unfold"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "As for zero-dimensional temporal region and one-dimensional temporal region. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "temporal region"@en .
+                skos:definition "(Elucidation) A temporal region is an occurrent over which processes can unfold"@en ;
+                skos:example "As for zero-dimensional temporal region and one-dimensional temporal region. "@en ;
+                skos:prefLabel "temporal region"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000008 ;
@@ -2879,10 +2880,10 @@ obo:BFO_0000011 rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/identifier> "095-BFO" ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "spatiotemporal region"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) A spatiotemporal region is an occurrent that is an occurrent part of spacetime"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "The spatiotemporal region occupied by the development of a cancer tumour, the spatiotemporal region occupied by an orbiting satellite. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "spatiotemporal region"@en ;
-                <http://www.w3.org/2004/02/skos/core#scopeNote> "'Spacetime' here refers to the maximal instance of the universal spatiotemporal region. "@en .
+                skos:definition "(Elucidation) A spatiotemporal region is an occurrent that is an occurrent part of spacetime"@en ;
+                skos:example "The spatiotemporal region occupied by the development of a cancer tumour, the spatiotemporal region occupied by an orbiting satellite. "@en ;
+                skos:prefLabel "spatiotemporal region"@en ;
+                skos:scopeNote "'Spacetime' here refers to the maximal instance of the universal spatiotemporal region. "@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000011 ;
@@ -2988,9 +2989,9 @@ obo:BFO_0000015 rdf:type owl:Class ;
                                  "http://purl.obolibrary.org/obo/bfo.owl"^^xsd:anyURI ;
                 rdfs:label "Process"@en ,
                            "process"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) p is a process =Def p is an occurrent that has some temporal proper part and for some time t, p has some material entity as participant"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "An act of selling, the life of an organism, a process of sleeping, a process of cell-division, a beating of the heart, a process of meiosis, the taxiing of an aircraft, the programming of a computer. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "process"@en ;
+                skos:definition "(Elucidation) p is a process =Def p is an occurrent that has some temporal proper part and for some time t, p has some material entity as participant"@en ;
+                skos:example "An act of selling, the life of an organism, a process of sleeping, a process of cell-division, a beating of the heart, a process of meiosis, the taxiing of an aircraft, the programming of a computer. "@en ;
+                skos:prefLabel "process"@en ;
                 aeon:SMW_datatype "Category" ;
                 aeon:SMW_import_info "[[Category:BFO]] [[Category:Imported vocabulary]]" .
 
@@ -3028,9 +3029,9 @@ obo:BFO_0000017 rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/identifier> "058-BFO" ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "realizable entity"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) b is a realizable entity means: b is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region and is of a type some instances of which are realized in processes of a correlated type"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "The role of being a doctor, the role of this boundary to delineate where Utah and Colorado meet, the function of your reproductive organs, the disposition of your blood to coagulate, the disposition of this piece of metal to conduct electricity."@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "realizable entity"@en .
+                skos:definition "(Elucidation) b is a realizable entity means: b is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region and is of a type some instances of which are realized in processes of a correlated type"@en ;
+                skos:example "The role of being a doctor, the role of this boundary to delineate where Utah and Colorado meet, the function of your reproductive organs, the disposition of your blood to coagulate, the disposition of this piece of metal to conduct electricity."@en ;
+                skos:prefLabel "realizable entity"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000017 ;
@@ -3079,9 +3080,9 @@ obo:BFO_0000019 rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/identifier> "055-BFO" ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "quality"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "The colour of a tomato, the ambient temperature of this portion of air, the length of the circumference of your waist, the shape of your nose, the shape of your nostril, the mass of this piece of gold. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "quality"@en .
+                skos:definition "(Elucidation) a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized"@en ;
+                skos:example "The colour of a tomato, the ambient temperature of this portion of air, the length of the circumference of your waist, the shape of your nose, the shape of your nostril, the mass of this piece of gold. "@en ;
+                skos:prefLabel "quality"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000019 ;
@@ -3136,10 +3137,10 @@ obo:BFO_0000020 rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/identifier> "050-BFO" ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "specifically dependent continuant"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "b is a specifically dependent continuant =Def b is a continuant & there is some independent continuant c which is not a spatial region & which is such that b s-depends on c"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "(with one bearer) The mass of this tomato, the pink colour of a medium rare piece of grilled filet mignon at its centre, the smell of this portion of mozzarella, the disposition of this fish to decay, the role of being a doctor, the function of this heart: to pump blood, the shape of this hole; (with multiple bearers:) John's love for Mary, the ownership relation between John and this statue, the relation of authority between John and his subordinates. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "specifically dependent continuant"@en ;
-                <http://www.w3.org/2004/02/skos/core#scopeNote> "On the multiple bearers case, see relational quality. "@en .
+                skos:definition "b is a specifically dependent continuant =Def b is a continuant & there is some independent continuant c which is not a spatial region & which is such that b s-depends on c"@en ;
+                skos:example "(with one bearer) The mass of this tomato, the pink colour of a medium rare piece of grilled filet mignon at its centre, the smell of this portion of mozzarella, the disposition of this fish to decay, the role of being a doctor, the function of this heart: to pump blood, the shape of this hole; (with multiple bearers:) John's love for Mary, the ownership relation between John and this statue, the relation of authority between John and his subordinates. "@en ;
+                skos:prefLabel "specifically dependent continuant"@en ;
+                skos:scopeNote "On the multiple bearers case, see relational quality. "@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000020 ;
@@ -3186,10 +3187,10 @@ obo:BFO_0000023 rdf:type owl:Class ;
                                  "http://purl.obolibrary.org/obo/bfo.owl"@en ;
                 rdfs:label "Role"@en ,
                            "role"@en ;
-                <http://www.w3.org/2004/02/skos/core#altLabel> "externally-grounded realizable entity"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be & b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "The priest role, the student role, the role of subject in a clinical trial, the role of a stone in marking a property boundary, the role of a boundary to demarcate two neighbouring administrative territories, the role of a building in serving as a military target. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "role"@en ;
+                skos:altLabel "externally-grounded realizable entity"@en ;
+                skos:definition "(Elucidation) b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be & b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed"@en ;
+                skos:example "The priest role, the student role, the role of subject in a clinical trial, the role of a stone in marking a property boundary, the role of a boundary to demarcate two neighbouring administrative territories, the role of a building in serving as a military target. "@en ;
+                skos:prefLabel "role"@en ;
                 aeon:SMW_datatype "Category" ;
                 aeon:SMW_import_info "[[Category:BFO]] [[Category:Imported vocabulary]]" .
 
@@ -3234,9 +3235,9 @@ obo:BFO_0000027 rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/identifier> "025-BFO" ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "object aggregate"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) an object aggregate is a material entity consisting exactly of a plurality (≥1) of objects as member parts which together form a unit"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "A symphony orchestra, the aggregate of bearings in a constant velocity axle joint, the nitrogen atoms in the atmosphere, a collection of cells in a blood biobank.  NOTE 1: 'Exactly' means that there are no parts of the object aggregate other than its member parts.  NOTE 2: The unit can, at certain times, consist of exactly one object, for example, when a fire brigade loses all but one of its members, but it must at some time have a plurality of member parts. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "object aggregate"@en ;
+                skos:definition "(Elucidation) an object aggregate is a material entity consisting exactly of a plurality (≥1) of objects as member parts which together form a unit"@en ;
+                skos:example "A symphony orchestra, the aggregate of bearings in a constant velocity axle joint, the nitrogen atoms in the atmosphere, a collection of cells in a blood biobank.  NOTE 1: 'Exactly' means that there are no parts of the object aggregate other than its member parts.  NOTE 2: The unit can, at certain times, consist of exactly one object, for example, when a fire brigade loses all but one of its members, but it must at some time have a plurality of member parts. "@en ;
+                skos:prefLabel "object aggregate"@en ;
                 aeon:SMW_datatype "Category" ;
                 aeon:SMW_import_info "[[Category:BFO]] [[Category:Imported vocabulary]]" .
 
@@ -3301,9 +3302,9 @@ obo:BFO_0000029 rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/identifier> "034-BFO" ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "site"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) b is a site means: b is a three-dimensional immaterial entity whose boundaries either (1) (partially or wholly) coincide with the boundaries of one or more material entities or (2) have locations determined in relation to some material entity"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "A hole in a portion of cheese, a rabbit hole, the Grand Canyon, the Piazza San Marco, the kangaroo-joey-containing hole of a kangaroo pouch, your left nostril (a fiat part - the opening - of your left nasal cavity), the lumen of your gut, the hold of a ship, the interior of the trunk of your car, hole in an engineered floor joist; An air traffic control region of type A is determined in terms of elevation above mean sea level of lower and upper boundaries. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "site"@en ;
+                skos:definition "(Elucidation) b is a site means: b is a three-dimensional immaterial entity whose boundaries either (1) (partially or wholly) coincide with the boundaries of one or more material entities or (2) have locations determined in relation to some material entity"@en ;
+                skos:example "A hole in a portion of cheese, a rabbit hole, the Grand Canyon, the Piazza San Marco, the kangaroo-joey-containing hole of a kangaroo pouch, your left nostril (a fiat part - the opening - of your left nasal cavity), the lumen of your gut, the hold of a ship, the interior of the trunk of your car, hole in an engineered floor joist; An air traffic control region of type A is determined in terms of elevation above mean sea level of lower and upper boundaries. "@en ;
+                skos:prefLabel "site"@en ;
                 aeon:SMW_datatype "Category" ;
                 aeon:SMW_import_info "[[Category:BFO]] [[Category:Imported vocabulary]]" .
 
@@ -3347,10 +3348,10 @@ obo:BFO_0000030 rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/identifier> "024-BFO" ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "object"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) an object is a material entity which manifests causal unity & is of a type instances of which are maximal relative to the sort of causal unity manifested"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "An organism, a fish tank, a planet, a laptop, a valve, a block of marble, an ice cube. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "object"@en ;
-                <http://www.w3.org/2004/02/skos/core#scopeNote> "A description of three primary sorts of causal unity is provided in Basic Formal Ontology 2.0. Specification and User’s Guide "@en ;
+                skos:definition "(Elucidation) an object is a material entity which manifests causal unity & is of a type instances of which are maximal relative to the sort of causal unity manifested"@en ;
+                skos:example "An organism, a fish tank, a planet, a laptop, a valve, a block of marble, an ice cube. "@en ;
+                skos:prefLabel "object"@en ;
+                skos:scopeNote "A description of three primary sorts of causal unity is provided in Basic Formal Ontology 2.0. Specification and User’s Guide "@en ;
                 aeon:SMW_datatype "Category" ;
                 aeon:SMW_import_info "[[Category:BFO]] [[Category:Imported vocabulary]]" .
 
@@ -3376,10 +3377,10 @@ obo:BFO_0000031 rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/identifier> "074-BFO" ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "generically dependent continuant"@en ;
-                <http://www.w3.org/2004/02/skos/core#altLabel> "g-dependent continuant"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) a generically dependent continuant is an entity that exists in virtue of the fact that there is at least one of what may be multiple copies; it is the content or the pattern that the multiple copies share"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "The pdf file on your laptop, the pdf file that is a copy thereof on my laptop; the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule; the content that is shared by a string of dots and dashes written on a page and the transmitted Morse code signal; the content of a sentence; an engineering blueprint. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "generically dependent continuant"@en .
+                skos:altLabel "g-dependent continuant"@en ;
+                skos:definition "(Elucidation) a generically dependent continuant is an entity that exists in virtue of the fact that there is at least one of what may be multiple copies; it is the content or the pattern that the multiple copies share"@en ;
+                skos:example "The pdf file on your laptop, the pdf file that is a copy thereof on my laptop; the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule; the content that is shared by a string of dots and dashes written on a page and the transmitted Morse code signal; the content of a sentence; an engineering blueprint. "@en ;
+                skos:prefLabel "generically dependent continuant"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000031 ;
@@ -3425,9 +3426,9 @@ obo:BFO_0000035 rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/identifier> "084-BFO" ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "process boundary"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "p is a process boundary =Def p is a temporal part of a process & p has no proper temporal parts"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "The boundary between the 2nd and 3rd year of your life. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "process boundary"@en .
+                skos:definition "p is a process boundary =Def p is a temporal part of a process & p has no proper temporal parts"@en ;
+                skos:example "The boundary between the 2nd and 3rd year of your life. "@en ;
+                skos:prefLabel "process boundary"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000035 ;
@@ -3489,9 +3490,9 @@ obo:BFO_0000040 rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/identifier> "019-BFO" ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "material entity"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) A material entity is an independent continuant that at all times at which it exists has some portion of matter as continuant part"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "A human being, the undetached arm of a human being, an aggregate of human beings. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "material entity"@en .
+                skos:definition "(Elucidation) A material entity is an independent continuant that at all times at which it exists has some portion of matter as continuant part"@en ;
+                skos:example "A human being, the undetached arm of a human being, an aggregate of human beings. "@en ;
+                skos:prefLabel "material entity"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000040 ;
@@ -3545,9 +3546,9 @@ obo:BFO_0000141 rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/identifier> "028-BFO" ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "immaterial entity"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "a is an immaterial entity =Def a is an independent continuant which is such that there is no time t when it has a material entity as continuant part at t"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "As for fiat point, fiat line, fiat surface, site. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "immaterial entity"@en .
+                skos:definition "a is an immaterial entity =Def a is an independent continuant which is such that there is no time t when it has a material entity as continuant part at t"@en ;
+                skos:example "As for fiat point, fiat line, fiat surface, site. "@en ;
+                skos:prefLabel "immaterial entity"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000145
@@ -3562,9 +3563,9 @@ obo:BFO_0000145 rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/identifier> "057-BFO" ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "relational quality"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "b is a relational quality =Def b is a quality and there exists c and d such that b and c are not identical, & b s-depends on c & b s-depends on d"@en ;
-                <http://www.w3.org/2004/02/skos/core#example> "A marriage bond, an instance of love, an obligation between one person and another. "@en ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "relational quality"@en .
+                skos:definition "b is a relational quality =Def b is a quality and there exists c and d such that b and c are not identical, & b s-depends on c & b s-depends on d"@en ;
+                skos:example "A marriage bond, an instance of love, an obligation between one person and another. "@en ;
+                skos:prefLabel "relational quality"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000145 ;
@@ -3966,17 +3967,17 @@ obo:UO_0000003 rdf:type owl:Class ;
 
 
 ###  http://www.w3.org/2004/02/skos/core#Concept
-<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class ;
-                                              obo:IAO_0000115 """The class skos:Concept is the class of SKOS concepts.
+skos:Concept rdf:type owl:Class ;
+             obo:IAO_0000115 """The class skos:Concept is the class of SKOS concepts.
 
 A SKOS concept can be viewed as an idea or notion; a unit of thought. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive.
 
 The notion of a SKOS concept is useful when describing the conceptual or intellectual structure of a knowledge organization system, and when referring to specific ideas or meanings established within a KOS.
 
 Note that, because SKOS is designed to be a vehicle for representing semi-formal KOS, such as thesauri and classification schemes, a certain amount of flexibility has been built in to the formal definition of this class.""" ;
-                                              rdfs:label "Concept" ;
-                                              aeon:SMW_datatype "Category" ;
-                                              aeon:SMW_import_info "[[Category:SKOS]] [[Category:Imported vocabulary]]" .
+             rdfs:label "Concept" ;
+             aeon:SMW_datatype "Category" ;
+             aeon:SMW_import_info "[[Category:SKOS]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000001
@@ -4015,7 +4016,7 @@ aeon:AEON_0000003 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000004
 aeon:AEON_0000004 rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                  rdfs:subClassOf skos:Concept ;
                   rdfs:label "event type"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_has_event_type]]. [[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -4255,7 +4256,7 @@ aeon:PhysicalLocation rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#Subject
 aeon:Subject rdf:type owl:Class ;
-             rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+             rdfs:subClassOf skos:Concept ;
              obo:IAO_0000115 "The subject of an academic event or event series is a skos:Concept from a controlled vocabulary, which is used to denote the academic field of the event or event series." ;
              aeon:SMW_datatype "Category" ;
              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -4263,7 +4264,7 @@ aeon:Subject rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#Topic
 aeon:Topic rdf:type owl:Class ;
-           rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+           rdfs:subClassOf skos:Concept ;
            obo:IAO_0000115 "The topic of an academic event or event series is a skos:Concept that denotes what the event or series is about." ;
            obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
            <http://purl.org/dc/elements/1.1/date> "2020-09-25T12:52:39Z"^^xsd:dateTime ;
