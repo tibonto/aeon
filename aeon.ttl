@@ -1727,6 +1727,7 @@ aeon:occurs_in_state rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf aeon:occurs_in ;
                      rdfs:domain aeon:AEON_0000001 ;
                      rdfs:range aeon:AEON_0000024 ;
+                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P131\", \"label\": \"located_in_the_administrative_territorial_entityLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_state\", \"label\": \"Has_location_state\"}}"^^xsd:string ;
                      aeon:SMW_datatype "Text" ;
                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
