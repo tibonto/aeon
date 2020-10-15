@@ -1675,6 +1675,7 @@ aeon:is_about rdf:type owl:ObjectProperty ;
               rdfs:domain obo:BFO_0000015 ;
               rdfs:range aeon:Subject ;
               rdfs:isDefinedBy "http://purl.obolibrary.org/obo/IAO_0000136" ;
+              aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P921\", \"label\": \"main_subjectLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Field\", \"label\": \"Field\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#topic\", \"label\": \"Topic that is related to a corporate body, conference, person, family, subject heading or work.\"}}"^^xsd:string ;
               aeon:SMW_datatype "Text" ;
               aeon:SMW_import_info "Controlled vocabulary in [[MediaWiki:Smw_allows_list_Subject]] [[Category:AEON]] [[Category:Imported vocabulary]]" ;
               aeon:WikidataLabel "main_subjectLabel" ;
