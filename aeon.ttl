@@ -367,6 +367,13 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 skos:scopeNote rdf:type owl:AnnotationProperty .
 
 
+###  https://github.com/tibonto/aeon#AEON_0000026
+aeon:AEON_0000026 rdf:type owl:AnnotationProperty ;
+                  obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
+                  <http://purl.org/dc/elements/1.1/date> "2020-10-14T15:31:27Z"^^xsd:dateTime ;
+                  rdfs:label "maps to"@de .
+
+
 ###  https://github.com/tibonto/aeon#SMW_datatype
 aeon:SMW_datatype rdf:type owl:AnnotationProperty .
 
