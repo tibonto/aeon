@@ -1705,6 +1705,7 @@ aeon:occurs_in_city rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf aeon:occurs_in ;
                     rdfs:domain aeon:AEON_0000001 ;
                     rdfs:range aeon:AEON_0000022 ;
+                    aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P276\", \"label\": \"locationLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_city\", \"label\": \"Has_location_city\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#placeOfConferenceOrEvent\", \"label\": \"Place of conference or event\"}}"^^xsd:string ;
                     aeon:SMW_datatype "Text" ;
                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
