@@ -1228,6 +1228,7 @@ aeon:has_DOI rdf:type owl:ObjectProperty ;
 aeon:has_GND rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf aeon:has_external_identifier ;
              rdfs:range aeon:AEON_0000017 ;
+             aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P227\", \"label\": \"GND_ID\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#gndIdentifier\", \"label\": \"GND-Identifier\"}}"^^xsd:string ;
              aeon:SMW_datatype "External identifier" ;
              aeon:SMW_import_info """External formatter uri [[External formatter uri::http://d-nb.info/gnd/$1]]
 
