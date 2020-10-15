@@ -2279,6 +2279,7 @@ aeon:process_acronym rdf:type owl:DatatypeProperty ;
                      rdfs:domain obo:BFO_0000015 ;
                      obo:IAO_0000112 "\"DILS 2019\" is the official acronym of the academic event \"13th International Conference on Data Integration in Life Science\""@en ;
                      obo:IAO_0000115 "The literal value of the official acronym of an aeon:process, that is either an academic event or event series."@en ;
+                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P1813\", \"label\": \"short_nameLabel\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#abbreviatedNameForTheConferenceOrEvent\", \"label\": \"Abbreviated name for the conference or event\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Acronym\", \"label\": \"Acronym\"}}"^^xsd:string ;
                      aeon:SMW_datatype "Text" ;
                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
                      aeon:WikidataLabel "short_nameLabel" ;
