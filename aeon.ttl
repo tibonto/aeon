@@ -1982,6 +1982,7 @@ aeon:end_date rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf aeon:duration ;
               rdfs:domain aeon:AEON_0000001 ;
               rdfs:range xsd:dateTimeStamp ;
+              aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P582\", \"label\": \"end_time\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:End_date\", \"label\": \"End_date\"}}"^^xsd:string ;
               aeon:SMW_datatype "Date" ;
               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
               aeon:WikidataLabel "end_time" ;
