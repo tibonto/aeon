@@ -1366,6 +1366,7 @@ aeon:has_external_identifier rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf aeon:has_identifier ;
                              rdfs:range aeon:ExternalIdentifier ;
                              rdfs:comment "This is an abstract property that most likely will never be used, as it just serves as a parent for known external IDs."@en ;
+                             aeon:AEON_0000026 "{\"wikidata\": [{\"uri\": \"https://www.wikidata.org/wiki/Property:P646\", \"label\": \"Freebase_ID\"}, {\"uri\": \"https://www.wikidata.org/wiki/Property:P5127\", \"label\": \"WikiCFP_conference_series_ID\"}]}"^^xsd:string ;
                              aeon:SMW_datatype "Text" ;
                              aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
 [[partOfSubobject::Template:Subobject Person_ID]]
