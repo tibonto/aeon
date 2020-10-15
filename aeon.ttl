@@ -2330,6 +2330,7 @@ aeon:process_website rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf owl:topDataProperty ;
                      rdfs:domain obo:BFO_0000015 ;
                      rdfs:range xsd:anyURI ;
+                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P856\", \"label\": \"official_website\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Homepage\", \"label\": \"Homepage\"}}"^^xsd:string ;
                      aeon:SMW_datatype "URL" ;
                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
                      aeon:WikidataLabel "official_website" ;
