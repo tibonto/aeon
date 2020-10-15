@@ -1715,6 +1715,7 @@ aeon:occurs_in_country rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf aeon:occurs_in ;
                        rdfs:domain aeon:AEON_0000001 ;
                        rdfs:range aeon:AEON_0000023 ;
+                       aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P17\", \"label\": \"countryLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_country\", \"label\": \"Has_location_country\"}}"^^xsd:string ;
                        aeon:SMW_datatype "Text" ;
                        aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
                        aeon:WikidataLabel "countryLabel" ;
