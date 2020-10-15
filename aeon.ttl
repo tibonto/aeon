@@ -1970,6 +1970,7 @@ aeon:demo_deadline rdf:type owl:DatatypeProperty ;
 aeon:duration rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain aeon:AEON_0000001 ;
+              aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2047\", \"label\": \"duration\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#dateOfConferenceOrEvent\", \"label\": \"Date of conference or event\"}}"^^xsd:string ;
               aeon:SMW_datatype "Quantity" ;
               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
               aeon:WikidataLabel "duration" ;
