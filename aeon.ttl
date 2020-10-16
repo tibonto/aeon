@@ -2210,6 +2210,7 @@ aeon:notification_deadline rdf:type owl:DatatypeProperty ;
 aeon:number_of_attendees rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:metric ;
                          rdfs:domain aeon:AEON_0000001 ;
+                         aeon:AEON_0000026 "{\"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Attendees\", \"label\": \"Attendees\"}}"^^xsd:string ;
                          aeon:SMW_datatype "Number" ;
                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
