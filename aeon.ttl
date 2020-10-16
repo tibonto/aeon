@@ -2130,6 +2130,7 @@ aeon:landing_page rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#language
 aeon:language rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
+              aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2936\", \"label\": \"language_usedLabel\"}}"^^xsd:string ;
               aeon:SMW_datatype "Text" ;
               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
               aeon:WikidataLabel "language_usedLabel" ;
