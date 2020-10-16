@@ -1598,6 +1598,7 @@ aeon:has_speaker rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf aeon:has_contributor ;
                  rdfs:domain aeon:AEON_0000001 ;
                  rdfs:range obo:NCBITaxon_9606 ;
+                 aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P823\", \"label\": \"speaker\"}}"^^xsd:string ;
                  aeon:SMW_datatype "Page" ;
                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
 
