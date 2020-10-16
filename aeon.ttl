@@ -2001,6 +2001,7 @@ aeon:event_frequency rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf aeon:metric ;
                      rdfs:domain aeon:AEON_0000002 ;
                      obo:IAO_0000115 "The event frequency is the literal value of the number of month until the next event in a certain takes place." ;
+                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2257\", \"label\": \"event_interval_inmonths\"}}"^^xsd:string ;
                      aeon:SMW_datatype "Quantity" ;
                      aeon:SMW_import_info """[[Corresponds to::1 month]] [[Corresponds to::1 months]] [[display units::months]]
 
