@@ -1501,7 +1501,7 @@ aeon:has_organizer rdf:type owl:ObjectProperty ;
                                               obo:OBI_0000245
                                             )
                               ] ;
-                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P664\", \"label\": \"organizerLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_organizer\", \"label\": \"Has_organizer\"}}"^^xsd:string ;
+                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P664\", \"label\": \"organizerLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_organizer\", \"label\": \"Has_organizer\"},\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"sponsor\"}}}"^^xsd:string ;
                    aeon:SMW_datatype "Page" ;
                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
                    aeon:WikidataLabel "organizerLabel" ;
