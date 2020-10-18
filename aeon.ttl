@@ -2303,7 +2303,7 @@ aeon:process_alternative_name rdf:type owl:DatatypeProperty ;
                               rdfs:subPropertyOf aeon:process_name ;
                               rdfs:domain obo:BFO_0000015 ;
                               rdfs:comment "The Literal value of an alternative name of an aeon:process, that is either an academic event or event series."@en ;
-                              aeon:AEON_0000026 "{\"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#variantNameForTheConferenceOrEvent\", \"label\": \"Variant name for the conference or event\"}}"^^xsd:string ;
+                              aeon:AEON_0000026 "{\"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#variantNameForTheConferenceOrEvent\", \"label\": \"Variant name for the conference or event\"}, \"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=title\", \"json_api_key\": \"title\"}}"^^xsd:string ;
                               aeon:SMW_datatype "Text" ;
                               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
