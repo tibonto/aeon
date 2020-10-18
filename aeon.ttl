@@ -1703,6 +1703,7 @@ aeon:occurs_in rdf:type owl:ObjectProperty ;
                rdfs:domain aeon:AEON_0000001 ;
                rdfs:range aeon:Location ;
                rdfs:isDefinedBy "http://purl.obolibrary.org/obo/BFO_0000066" ;
+               aeon:AEON_0000026 "{\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"location\"}}}"^^xsd:string ;
                aeon:SMW_datatype "Text" ;
                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
