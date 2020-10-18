@@ -2016,6 +2016,7 @@ aeon:event_number rdf:type owl:DatatypeProperty ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range xsd:string ;
                   obo:IAO_0000115 "The ordinal number of an academic event, if it is a part of an event series." ;
+                  aeon:AEON_0000026 "{\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"number\"}}}"^^xsd:string ;
                   aeon:SMW_datatype "Text" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
