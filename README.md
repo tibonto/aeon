@@ -142,11 +142,11 @@ You can see a visualization of this branch's aeon.ttl under http://www.visualdat
 ## Development
 
 ### Create test enviroment
-* create python venv
+* create python virtual environment
 * install python libaries `pip install -r requirements.txt`
 * test files are located in `tests/` dir and start with test*.py
 * test definitions, such as markers are set in `pytest.ini`
 
 ### Run tests
-* **all tests**: `pytests`  
+* **all tests**: `pytest`  
 * **some tests**, using the marker to specify which tests, ie: `pytest -m ontology`
