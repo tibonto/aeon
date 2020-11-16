@@ -137,3 +137,16 @@ answerable.
 
 ## Visualization
 You can see a visualization of this branch's aeon.ttl under http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/tibonto/aeon/master/aeon.ttl
+
+
+## Development
+
+### Create test enviroment
+* create python venv
+* install python libaries `pip install -r requirements.txt`
+* test files are located in `tests/` dir and start with test*.py
+* test definitions, such as markers are set in `pytest.ini`
+
+### Run tests
+* **all tests**: `pytests`  
+* **some tests**, using the marker to specify which tests, ie: `pytest -m ontology`

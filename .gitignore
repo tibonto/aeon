@@ -1,2 +1,5 @@
 
 *.ipynb
+.idea
+tests/__pycache__
+venv
