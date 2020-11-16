@@ -4251,11 +4251,12 @@ aeon:AEON_0000025 rdf:type owl:Class ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#AEON_0000026
-aeon:AEON_0000026 rdf:type owl:Class ;
+###  https://github.com/tibonto/aeon#AEON_0000029
+aeon:AEON_0000029 rdf:type owl:Class ;
                   rdfs:subClassOf obo:BFO_0000029 ;
-                  obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
                   rdfs:label "virtual location"@de ;
+                  obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
+                  <http://purl.org/dc/elements/1.1/date> "2020-10-14T15:31:27Z"^^xsd:dateTime ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
