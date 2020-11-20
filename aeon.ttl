@@ -1227,6 +1227,7 @@ aeon:collocated_event_of rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_DOI
 aeon:has_DOI rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf aeon:has_external_identifier ;
+             rdfs:domain obo:BFO_0000001 ;
              rdfs:range aeon:AEON_0000016 ;
              aeon:SMW_datatype "External identifier" ;
              aeon:SMW_import_info """External formatter uri [[External formatter uri::https://doi.org/$1]]
@@ -1237,6 +1238,7 @@ aeon:has_DOI rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_GND
 aeon:has_GND rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf aeon:has_external_identifier ;
+             rdfs:domain obo:BFO_0000001 ;
              rdfs:range aeon:AEON_0000017 ;
              aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P227\", \"label\": \"GND_ID\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#gndIdentifier\", \"label\": \"GND-Identifier\"}}"^^xsd:string ;
              aeon:SMW_datatype "External identifier" ;
@@ -1254,6 +1256,7 @@ aeon:has_GND rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_ISNI
 aeon:has_ISNI rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf aeon:has_external_identifier ;
+              rdfs:domain obo:OBI_0000245 ;
               rdfs:range aeon:AEON_0000018 ;
               aeon:SMW_datatype "External identifier" ;
               aeon:SMW_import_info """External formatter uri [[External formatter uri::https://isni.org/isni/$1]]
@@ -1267,6 +1270,7 @@ aeon:has_ISNI rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_ORCID
 aeon:has_ORCID rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf aeon:has_external_identifier ;
+               rdfs:domain obo:NCBITaxon_9606 ;
                rdfs:range aeon:AEON_0000019 ;
                aeon:SMW_datatype "External identifier" ;
                aeon:SMW_import_info """External formatter uri [[External formatter uri::https://orcid.org/$1]]
@@ -1279,6 +1283,7 @@ aeon:has_ORCID rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_ROR
 aeon:has_ROR rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf aeon:has_external_identifier ;
+             rdfs:domain obo:OBI_0000245 ;
              rdfs:range aeon:AEON_0000020 ;
              aeon:SMW_datatype "External identifier" ;
              aeon:SMW_import_info """External formatter uri [[External formatter uri::https://ror.org/$1]]
@@ -1291,6 +1296,7 @@ aeon:has_ROR rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_WDQID
 aeon:has_WDQID rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf aeon:has_external_identifier ;
+               rdfs:domain obo:BFO_0000001 ;
                rdfs:range aeon:AEON_0000021 ;
                aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"itemID\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Wikidataid\", \"label\": \"Wikidataid\"}}"^^xsd:string ;
                aeon:SMW_datatype "External identifier" ;
@@ -1384,6 +1390,7 @@ aeon:has_event_type rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_external_identifier
 aeon:has_external_identifier rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf aeon:has_identifier ;
+                             rdfs:domain obo:BFO_0000001 ;
                              rdfs:range obo:IAO_0020000 ;
                              rdfs:comment "This is an abstract property that most likely will never be used, as it just serves as a parent for known external IDs."@en ;
                              aeon:AEON_0000026 "{\"wikidata\": [{\"uri\": \"https://www.wikidata.org/wiki/Property:P646\", \"label\": \"Freebase_ID\"}, {\"uri\": \"https://www.wikidata.org/wiki/Property:P5127\", \"label\": \"WikiCFP_conference_series_ID\"}]}"^^xsd:string ;
