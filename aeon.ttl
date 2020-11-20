@@ -4251,16 +4251,6 @@ aeon:AEON_0000025 rdf:type owl:Class ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#AEON_0000029
-aeon:AEON_0000029 rdf:type owl:Class ;
-                  rdfs:subClassOf obo:BFO_0000029 ;
-                  rdfs:label "virtual location"@de ;
-                  obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
-                  <http://purl.org/dc/elements/1.1/date> "2020-10-14T15:31:27Z"^^xsd:dateTime ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
 ###  https://github.com/tibonto/aeon#AEON_0000027
 aeon:AEON_0000027 rdf:type owl:Class ;
                   rdfs:subClassOf skos:Concept ;
@@ -4279,11 +4269,14 @@ aeon:AEON_0000028 rdf:type owl:Class ;
                   rdfs:label "topic" .
 
 
-###  https://github.com/tibonto/aeon#ExternalIdentifier
-aeon:ExternalIdentifier rdf:type owl:Class ;
-                        obo:IAO_0000116 "This class is probably obsolete after completing the BFO subsumtion hierarchy." ;
-                        rdfs:label "obsolete External ID"^^xsd:string ;
-                        owl:deprecated "true"^^xsd:boolean .
+###  https://github.com/tibonto/aeon#AEON_0000029
+aeon:AEON_0000029 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000029 ;
+                  obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
+                  <http://purl.org/dc/elements/1.1/date> "2020-10-14T15:31:27Z"^^xsd:dateTime ;
+                  rdfs:label "virtual location"@de ;
+                  aeon:SMW_datatype "Category" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000030
@@ -4299,6 +4292,13 @@ aeon:AEON_0000030 rdf:type owl:Class ;
 [[partOfSubobject::Template:Subobject Fee]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#ExternalIdentifier
+aeon:ExternalIdentifier rdf:type owl:Class ;
+                        obo:IAO_0000116 "This class is probably obsolete after completing the BFO subsumtion hierarchy." ;
+                        rdfs:label "obsolete External ID"^^xsd:string ;
+                        owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://github.com/tibonto/aeon#Identifier
