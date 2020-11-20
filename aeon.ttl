@@ -1334,7 +1334,11 @@ aeon:has_committee_member rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_contact_person
 aeon:has_contact_person rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf aeon:has_organizer ;
-                        rdfs:domain obo:BFO_0000015 ;
+                        rdfs:domain [ rdf:type owl:Class ;
+                                      owl:unionOf ( aeon:AEON_0000001
+                                                    aeon:AEON_0000002
+                                                  )
+                                    ] ;
                         rdfs:range obo:NCBITaxon_9606 ;
                         aeon:SMW_datatype "Page" ;
                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1342,8 +1346,12 @@ aeon:has_contact_person rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_contributor
 aeon:has_contributor rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf owl:topObjectProperty ;
-                     rdfs:domain aeon:AEON_0000001 ;
+                     rdfs:subPropertyOf obo:BFO_0000057 ;
+                     rdfs:domain [ rdf:type owl:Class ;
+                                   owl:unionOf ( aeon:AEON_0000001
+                                                 aeon:AEON_0000002
+                                               )
+                                 ] ;
                      rdfs:range obo:NCBITaxon_9606 ;
                      aeon:SMW_datatype "Page" ;
                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1503,7 +1511,11 @@ aeon:has_moderator rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_organizer
 aeon:has_organizer rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf aeon:has_contributor ;
-                   rdfs:domain obo:BFO_0000015 ;
+                   rdfs:domain [ rdf:type owl:Class ;
+                                 owl:unionOf ( aeon:AEON_0000001
+                                               aeon:AEON_0000002
+                                             )
+                               ] ;
                    rdfs:range [ rdf:type owl:Class ;
                                 owl:unionOf ( obo:NCBITaxon_9606
                                               obo:OBI_0000245
@@ -1609,7 +1621,11 @@ aeon:has_speaker rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_sponsor
 aeon:has_sponsor rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf aeon:has_contributor ;
-                 rdfs:domain obo:BFO_0000015 ;
+                 rdfs:domain [ rdf:type owl:Class ;
+                               owl:unionOf ( aeon:AEON_0000001
+                                             aeon:AEON_0000002
+                                           )
+                             ] ;
                  rdfs:range [ rdf:type owl:Class ;
                               owl:unionOf ( obo:NCBITaxon_9606
                                             obo:OBI_0000245
