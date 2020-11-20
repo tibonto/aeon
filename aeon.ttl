@@ -1754,7 +1754,7 @@ aeon:occurs_in_venue rdf:type owl:ObjectProperty ;
 aeon:occurs_in_virtual_place rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf aeon:occurs_in ;
                              rdfs:domain aeon:AEON_0000001 ;
-                             rdfs:range aeon:VirtualLocation ;
+                             rdfs:range aeon:AEON_0000029 ;
                              aeon:SMW_datatype "URL" ;
                              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -2166,7 +2166,7 @@ aeon:logo rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#meeting_URL
 aeon:meeting_URL rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf aeon:location ;
-                 rdfs:domain aeon:VirtualLocation ;
+                 rdfs:domain aeon:AEON_0000029 ;
                  rdfs:range xsd:anyURI ;
                  aeon:SMW_datatype "URL" ;
                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -4293,12 +4293,6 @@ aeon:AEON_0000030 rdf:type owl:Class ;
 [[partOfSubobject::Template:Subobject Fee]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
-
-
-###  https://github.com/tibonto/aeon#VirtualLocation
-aeon:VirtualLocation rdf:type owl:Class ;
-                     rdfs:label "obsolete Virtual Location"^^xsd:string ;
-                     owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://github.com/tibonto/aeon#committee
