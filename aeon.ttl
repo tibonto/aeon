@@ -1214,7 +1214,7 @@ obo:RO_0002351 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#collocated_event_of
 aeon:collocated_event_of rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf obo:BFO_0000050 ;
+                         rdfs:subPropertyOf obo:BFO_0000138 ;
                          rdfs:domain aeon:AEON_0000001 ;
                          rdfs:range aeon:AEON_0000001 ;
                          aeon:SMW_datatype "Page" ;
@@ -1690,7 +1690,7 @@ aeon:is_about rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#joint_event_of
 aeon:joint_event_of rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf obo:BFO_0000050 ;
+                    rdfs:subPropertyOf obo:BFO_0000138 ;
                     rdfs:domain aeon:AEON_0000001 ;
                     rdfs:range aeon:AEON_0000001 ;
                     aeon:SMW_datatype "Page" ;
@@ -1749,7 +1749,7 @@ aeon:occurs_in_virtual_place rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#part_of_series
 aeon:part_of_series rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf obo:BFO_0000050 ;
+                    rdfs:subPropertyOf obo:BFO_0000138 ;
                     rdfs:domain aeon:AEON_0000001 ;
                     rdfs:range aeon:AEON_0000002 ;
                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P179\", \"label\": \"part_of_the_seriesLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Event_in_series\", \"label\": \"Event_in_series\"}}"^^xsd:string ;
@@ -1759,7 +1759,7 @@ aeon:part_of_series rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#umbrella_event_of
 aeon:umbrella_event_of rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf obo:BFO_0000050 ;
+                       rdfs:subPropertyOf obo:BFO_0000138 ;
                        rdfs:domain aeon:AEON_0000001 ;
                        rdfs:range aeon:AEON_0000001 ;
                        aeon:SMW_datatype "Page" ;
