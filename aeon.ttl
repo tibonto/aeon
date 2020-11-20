@@ -1351,7 +1351,7 @@ aeon:has_contributor rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_event
 aeon:has_event rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf obo:BFO_0000051 ;
+               rdfs:subPropertyOf obo:BFO_0000118 ;
                owl:inverseOf aeon:part_of_series ;
                rdfs:domain aeon:AEON_0000002 ;
                rdfs:range aeon:AEON_0000001 ;
