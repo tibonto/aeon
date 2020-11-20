@@ -1366,7 +1366,7 @@ aeon:has_event_type rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_external_identifier
 aeon:has_external_identifier rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf aeon:has_identifier ;
-                             rdfs:range aeon:ExternalIdentifier ;
+                             rdfs:range obo:IAO_0020000 ;
                              rdfs:comment "This is an abstract property that most likely will never be used, as it just serves as a parent for known external IDs."@en ;
                              aeon:AEON_0000026 "{\"wikidata\": [{\"uri\": \"https://www.wikidata.org/wiki/Property:P646\", \"label\": \"Freebase_ID\"}, {\"uri\": \"https://www.wikidata.org/wiki/Property:P5127\", \"label\": \"WikiCFP_conference_series_ID\"}]}"^^xsd:string ;
                              aeon:SMW_datatype "Text" ;
@@ -1435,7 +1435,8 @@ aeon:has_general_committee_member rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_identifier
 aeon:has_identifier rdf:type owl:ObjectProperty ;
-                    rdfs:range aeon:Identifier ;
+                    rdfs:domain obo:BFO_0000001 ;
+                    rdfs:range obo:IAO_0020000 ;
                     aeon:SMW_datatype "Text" ;
                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1812,7 +1813,7 @@ aeon:CORE_ranking rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#ID
 aeon:ID rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf owl:topDataProperty ;
-        rdfs:domain aeon:Identifier ;
+        rdfs:domain obo:IAO_0020000 ;
         obo:IAO_0000115 "The literal value of an identifier."@en ;
         aeon:SMW_datatype "Text" ;
         aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
@@ -1825,7 +1826,7 @@ aeon:ID rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#ID_URL
 aeon:ID_URL rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf aeon:ID ;
-            rdfs:domain aeon:Identifier ;
+            rdfs:domain obo:IAO_0020000 ;
             rdfs:range xsd:anyURI ;
             rdfs:comment "The literal value of the full URL used by the identifier scheme, based on the concatination of base URL and ID (ID_URL:value = ID_base_URL:value + ID:value)."@en ;
             aeon:SMW_datatype "URL" ;
@@ -1839,7 +1840,7 @@ aeon:ID_URL rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#ID_base_URL
 aeon:ID_base_URL rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf aeon:ID ;
-                 rdfs:domain aeon:Identifier ;
+                 rdfs:domain obo:IAO_0020000 ;
                  rdfs:range xsd:anyURI ;
                  rdfs:comment "The literal value of the base URL used by the identifier scheme."@en ;
                  aeon:SMW_datatype "URL" ;
@@ -2118,7 +2119,7 @@ aeon:first_name rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#landing_page
 aeon:landing_page rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf aeon:ID ;
-                  rdfs:domain aeon:Identifier ;
+                  rdfs:domain obo:IAO_0020000 ;
                   rdfs:range xsd:anyURI ;
                   rdfs:comment "The literal value of the landing page (URL) an ID resolves to when following the ID_URL."@en ;
                   aeon:SMW_datatype "URL" ;
@@ -4292,20 +4293,6 @@ aeon:AEON_0000030 rdf:type owl:Class ;
 [[partOfSubobject::Template:Subobject Fee]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
-
-
-###  https://github.com/tibonto/aeon#ExternalIdentifier
-aeon:ExternalIdentifier rdf:type owl:Class ;
-                        obo:IAO_0000116 "This class is probably obsolete after completing the BFO subsumtion hierarchy." ;
-                        rdfs:label "obsolete External ID"^^xsd:string ;
-                        owl:deprecated "true"^^xsd:boolean .
-
-
-###  https://github.com/tibonto/aeon#Identifier
-aeon:Identifier rdf:type owl:Class ;
-                obo:IAO_0000116 "This class is probably obsolete after completing the BFO subsumtion hierarchy." ;
-                rdfs:seeAlso "http://purl.obolibrary.org/obo/IAO_0020000"@en ;
-                owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://github.com/tibonto/aeon#Location
