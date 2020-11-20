@@ -1,0 +1,90 @@
+Change history:
+
+
+v0.2.12 - date: 20.11.2020
+	* refactor aeon:Fee --> AEON_0000030
+	* delete depricated classes 
+		* (aeon:Identifier, aeon:Location, aeon:ExternalIdentifier, aeon:PhysicalLocation, aeon:VirtualLocation)
+	* deleted aeon:part_of
+		* aeon:collocated_event_of, aeon:joint_event_of, aeon:part_of_series, aeon:umbrella_event_of --> rdfs:subPropertyOf obo:BFO_0000138
+	* deleted aeon:has_part
+		* aeon:has_event --> rdfs:subPropertyOf obo:BFO_0000118	
+	* aeon:occurs_in --> BFO_0000066
+	* aeon:has_contributor & subproperties --> subPropertyOf obo:BFO_0000057
+	* aeon:has_identifier --> rdfs:subPropertyOf obo:IAO_0000235
+	* aeon:is_about --> IAO_0000136
+	* aeon:has_event_type, aeon:has_fee, aeon:has_output --> rdfs:subPropertyOf obo:IAO_0000235 #13
+
+
+v0.2.11 - date: 17.11.2020
+	* add testing scripts & modules
+
+
+v0.2.10 - date: 16.11.2020
+	* added mapping to GND, Wikidata, Crossref & OpenResearch
+
+
+v0.2.9 - date: 07.10.2020
+working on BFO subsumption hierarchy and BFO conform naming:
+	* OBI_0000245 --> rdfs:subclassOf BFO_0000027
+	* OBI_0100026 --> rdfs:subclassOf BFO_0000030
+	* added --> AEON_0000026 # was falsely made obsolete w/ 77a0ce7
+	* refactor aeon:Subject --> AEON_0000027
+	* refactor aeon:Topic --> AEON_0000028
+
+
+v0.2.8 - date: 07.10.2020
+adding SMW_datatype and SMW_import_info to:
+	* BFO_0000027
+	* BFO_0000029
+	* BFO_0000030
+	* gaz:GAZ_00000448
+	* iao:IAO_0000578
+	* ncbit:NCBITaxon_9606
+	* skos:Concept
+
+v0.2.7 - date: 05.10.2020
+aeon:AEON_0000026	--> added
+
+v0.2.6 - date: 28.09.2020
+
+v0.2.5 - date: 28.09.2020
+
+v0.2.4 - date: 28.09.2020
+	* Commit beaa46b 
+		* aeon:ExternalIdentifier 	--> depricated
+		* obo:IAO_0000578 			--> added	(rdfs:label "centrally registered identifier")
+		* aeon:ISNI					--> subsumed under obo:IAO_0000578 
+		* aeon:GND					--> subsumed under obo:IAO_0000578 
+		* aeon:ROR					--> subsumed under obo:IAO_0000578 
+		* aeon:ORCID				--> subsumed under obo:IAO_0000578 
+		* aeon:WDQID				--> subsumed under obo:IAO_0000578 
+
+	* Commit a73f529 
+		* aeon:Agent 				--> deleted
+		* obo:ICO_0000220 			--> added	(rdfs:label "agent"@en)
+		* obo:OBI_0000245			--> added	(rdfs:label "organization"@en)
+		* obo:ICO_0000048 			--> added
+		* obo:ICO_0000049 			--> added	(rdfs:label "profit organization"@en)
+		* obo:NCBITaxon_9606 		--> added	(rdfs:label "Homo sapiens")
+		* obo:OBI_0100026			--> added
+
+
+
+Version 0.2.3 AEON ConfIDent Edition September 2020 - date: 20.09.2020
+    * remove unecessary subobjects annotations in aeon:SMW_import_info
+    * correct typo in aeon:WikidataLabel
+
+
+Version 0.2.2 AEON ConfIDent Edition September 2020 - date: 17.09.2020
+	* remove allowed value list annotations in aeon:SMW_import_info
+
+
+Version 0.2.1 AEON ConfIDent Edition September 2020 - date: 16.09.2020
+	* store WikiData URI and Label as literals in the annotation properties: aeon:SMW_datatype & aeon:SMW_import_info
+
+
+Version 0.2.0 AEON ConfIDent Edition September 2020 - date: 16.09.2020
+	* this version was based on v0.0.1 from the master branch and developted in its own branch (https://github.com/tibonto/aeon/tree/confIDent)
+	* a lot of changes were made in order to get the protoype working in the Semantic Media Wiki instance
+	  * a detailed list of changes will be added here later
