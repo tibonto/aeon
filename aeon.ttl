@@ -433,7 +433,9 @@ obo:BFO_0000051 rdf:type owl:ObjectProperty ,
 A continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'."""@en ;
                 obo:IAO_0000118 "has_part"@en ;
                 obo:RO_0001900 obo:RO_0001901 ;
-                rdfs:label "has part"@en .
+                rdfs:label "has part"@en ;
+                aeon:SMW_datatype "Page" ;
+                aeon:SMW_import_info "[[Category:BFO]] [[Category:Imported vocabulary]]" .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000054
@@ -1349,7 +1351,7 @@ aeon:has_contributor rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_event
 aeon:has_event rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf aeon:has_part ;
+               rdfs:subPropertyOf obo:BFO_0000051 ;
                owl:inverseOf aeon:part_of_series ;
                rdfs:domain aeon:AEON_0000002 ;
                rdfs:range aeon:AEON_0000001 ;
@@ -1523,14 +1525,6 @@ aeon:has_output rdf:type owl:ObjectProperty ;
                 aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Output]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
-
-
-###  https://github.com/tibonto/aeon#has_part
-aeon:has_part rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf owl:topObjectProperty ;
-              rdfs:isDefinedBy "http://purl.obolibrary.org/obo/BFO_0000051" ;
-              aeon:SMW_datatype "Page" ;
-              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#has_program_committee_chair
