@@ -1384,7 +1384,7 @@ aeon:has_external_identifier rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_fee
 aeon:has_fee rdf:type owl:ObjectProperty ;
              rdfs:domain aeon:AEON_0000001 ;
-             rdfs:range aeon:Fee ,
+             rdfs:range aeon:AEON_0000030 ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty aeon:fee ;
                           owl:someValuesFrom rdfs:Literal
@@ -2075,7 +2075,7 @@ aeon:event_year rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#fee
 aeon:fee rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf owl:topDataProperty ;
-         rdfs:domain aeon:Fee ;
+         rdfs:domain aeon:AEON_0000030 ;
          obo:IAO_0000115 "The literal value of the type of fee an aeon:event can have."@en ;
          obo:IAO_0000600 "There are various type of fees for an event, such as the regular fee, a reduced fee, a member fee and so forth." ;
          aeon:SMW_datatype "Text" ;
@@ -2087,7 +2087,7 @@ aeon:fee rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#fee_currency
 aeon:fee_currency rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf aeon:fee ;
-                  rdfs:domain aeon:Fee ;
+                  rdfs:domain aeon:AEON_0000030 ;
                   rdfs:comment "This property should have a value from the controlled list defined by the ISO_4217 standard (https://en.wikipedia.org/wiki/ISO_4217)." ;
                   aeon:SMW_datatype "Text" ;
                   aeon:SMW_import_info """Controlled vocabulary in [[MediaWiki:Smw_allows_list_Fee_currency]]
@@ -2100,7 +2100,7 @@ aeon:fee_currency rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#fee_value
 aeon:fee_value rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf aeon:fee ;
-               rdfs:domain aeon:Fee ;
+               rdfs:domain aeon:AEON_0000030 ;
                aeon:SMW_datatype "Number" ;
                aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Fee]]
 
@@ -4286,11 +4286,15 @@ aeon:ExternalIdentifier rdf:type owl:Class ;
                         owl:deprecated "true"^^xsd:boolean .
 
 
-###  https://github.com/tibonto/aeon#Fee
-aeon:Fee rdf:type owl:Class ;
-         obo:IAO_0000115 "The financial cost of attendance at a scientific event." ;
-         aeon:SMW_datatype "Category" ;
-         aeon:SMW_import_info """The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_Has_fee]].
+###  https://github.com/tibonto/aeon#AEON_0000030
+aeon:AEON_0000030 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:IAO_0000030 ;
+                  obo:IAO_0000115 "The financial cost of attendance at a scientific event." ;
+                  obo:IAO_0000116 "PS: It needs to be discussed, if having fee as ICE is sufficient/correct."@en ;
+                  obo:IAO_0000117 "Philip Strömert" ;
+                  rdfs:label "fee"@en ;
+                  aeon:SMW_datatype "Category" ;
+                  aeon:SMW_import_info """The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_Has_fee]].
 
 [[partOfSubobject::Template:Subobject Fee]]
 
