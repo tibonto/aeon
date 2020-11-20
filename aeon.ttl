@@ -1944,7 +1944,7 @@ aeon:contact_phone rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#coordinates
 aeon:coordinates rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf aeon:location ;
-                 rdfs:domain aeon:PhysicalLocation ;
+                 rdfs:domain obo:GAZ_00000448 ;
                  aeon:SMW_datatype "Geographic coordinates" ;
                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -4293,12 +4293,6 @@ aeon:AEON_0000030 rdf:type owl:Class ;
 [[partOfSubobject::Template:Subobject Fee]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
-
-
-###  https://github.com/tibonto/aeon#PhysicalLocation
-aeon:PhysicalLocation rdf:type owl:Class ;
-                      rdfs:label "obsolete Physical Location"^^xsd:string ;
-                      owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://github.com/tibonto/aeon#VirtualLocation
