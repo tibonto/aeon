@@ -15,7 +15,7 @@
 @base <https://github.com/tibonto/aeon> .
 
 <https://github.com/tibonto/aeon> rdf:type owl:Ontology ;
-                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.2.10> ;
+                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.2.12> ;
                                    <http://purl.org/dc/elements/1.1/contributor> "Christian Hauschke" ,
                                                                                  "Christoph Lange" ,
                                                                                  "Michael Conlon" ,
@@ -23,7 +23,7 @@
                                    <http://purl.org/dc/elements/1.1/creator> "ConfIDent project" ;
                                    <http://purl.org/dc/elements/1.1/description> "The Academic Event Ontology (AEON) is used to represent information regarding academic events. The ontology supports the identification, development, management, evaluation, and impact assessment of events, components of events and event series, as well as identification and reuse of works presented or developed at events. The ontology is independent of knowledge, creative domain, or topics related to events. AEON is focused on events and assumes the representation of many entities associated with events such as attendees, locations, academic works, datetimes, and processes are defined in compatible ontologies." ;
                                    <http://purl.org/dc/elements/1.1/title> "Academic Event Ontology"@en ;
-                                   owl:versionInfo "v0.2.10" .
+                                   owl:versionInfo "v0.2.12" .
 
 #################################################################
 #    Annotation properties
@@ -413,7 +413,9 @@ A continuant cannot be part of an occurrent: use 'participates in'. An occurrent
                 obo:IAO_0000118 "part_of"@en ;
                 obo:RO_0001900 obo:RO_0001901 ;
                 rdfs:label "part of"@en ;
-                rdfs:seeAlso "http://www.obofoundry.org/ro/#OBO_REL:part_of" .
+                rdfs:seeAlso "http://www.obofoundry.org/ro/#OBO_REL:part_of" ;
+                aeon:SMW_datatype "Page" ;
+                aeon:SMW_import_info "[[Category:BFO]] [[Category:Imported vocabulary]]" .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000051
@@ -431,7 +433,9 @@ obo:BFO_0000051 rdf:type owl:ObjectProperty ,
 A continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'."""@en ;
                 obo:IAO_0000118 "has_part"@en ;
                 obo:RO_0001900 obo:RO_0001901 ;
-                rdfs:label "has part"@en .
+                rdfs:label "has part"@en ;
+                aeon:SMW_datatype "Page" ;
+                aeon:SMW_import_info "[[Category:BFO]] [[Category:Imported vocabulary]]" .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000054
@@ -533,7 +537,7 @@ obo:BFO_0000066 rdf:type owl:ObjectProperty ;
                                          )
                            ] ;
                 obo:IAO_0000111 "occurs in"@en ;
-                obo:IAO_0000115 "b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t"@en ;
+                obo:IAO_0000115 "b occurs_in c =def b is a process and c is a material entity or immaterial entity & there exists a spatiotemporal region r and b occupies spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t"@en ;
                 obo:IAO_0000118 "occurs_in"@en ,
                                 "unfolds in"@en ,
                                 "unfolds_in"@en ;
@@ -543,7 +547,10 @@ obo:BFO_0000066 rdf:type owl:ObjectProperty ;
                 rdfs:label "occurs in"@en ;
                 skos:definition "b occurs in c =Def b is a process or a process boundary and c is a material entity or immaterial entity & there exists a spatiotemporal region r and b occupies spatiotemporal region r & for all t, if b exists at t then c exists at t & there exist spatial regions s and s' where b spatially projects onto s at t & c occupies spatial region s' at t & s is a continuant part of s' at t"@en ;
                 skos:example "A process of digestion occurs in the interior of an organism, a process of loading artillery rounds into a tank cannon occurs in the interior of the tank. "@en ;
-                skos:prefLabel "occurs in"@en .
+                skos:prefLabel "occurs in"@en ;
+                aeon:AEON_0000026 "{\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"location\"}}}"^^xsd:string ;
+                aeon:SMW_datatype "Text" ;
+                aeon:SMW_import_info "[[Category:BFO]] [[Category:Imported vocabulary]]" .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000067
@@ -893,7 +900,10 @@ We will try to build it back up by elaborating the various subproperties that ar
 Some currently missing phenomena that should be considered \"about\" are predications - \"The only person who knows the answer is sitting beside me\" , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic."""@en ;
                 obo:IAO_0000117 "person:Alan Ruttenberg"@en ;
                 obo:IAO_0000119 "Smith, Ceusters, Ruttenberg, 2000 years of philosophy"@en ;
-                rdfs:label "is about"@en .
+                rdfs:label "is about"@en ;
+                aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P921\", \"label\": \"main_subjectLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Field\", \"label\": \"Field\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#topic\", \"label\": \"Topic that is related to a corporate body, conference, person, family, subject heading or work.\"}}"^^xsd:string ;
+                aeon:SMW_datatype "Text" ;
+                aeon:SMW_import_info "Controlled vocabulary in [[MediaWiki:Smw_allows_list_Subject]] [[Category:IAO]] [[Category:Imported vocabulary]]" .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000219
@@ -1207,7 +1217,7 @@ obo:RO_0002351 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#collocated_event_of
 aeon:collocated_event_of rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf aeon:part_of ;
+                         rdfs:subPropertyOf obo:BFO_0000138 ;
                          rdfs:domain aeon:AEON_0000001 ;
                          rdfs:range aeon:AEON_0000001 ;
                          aeon:SMW_datatype "Page" ;
@@ -1217,6 +1227,7 @@ aeon:collocated_event_of rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_DOI
 aeon:has_DOI rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf aeon:has_external_identifier ;
+             rdfs:domain obo:BFO_0000001 ;
              rdfs:range aeon:AEON_0000016 ;
              aeon:SMW_datatype "External identifier" ;
              aeon:SMW_import_info """External formatter uri [[External formatter uri::https://doi.org/$1]]
@@ -1227,6 +1238,7 @@ aeon:has_DOI rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_GND
 aeon:has_GND rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf aeon:has_external_identifier ;
+             rdfs:domain obo:BFO_0000001 ;
              rdfs:range aeon:AEON_0000017 ;
              aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P227\", \"label\": \"GND_ID\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#gndIdentifier\", \"label\": \"GND-Identifier\"}}"^^xsd:string ;
              aeon:SMW_datatype "External identifier" ;
@@ -1244,6 +1256,7 @@ aeon:has_GND rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_ISNI
 aeon:has_ISNI rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf aeon:has_external_identifier ;
+              rdfs:domain obo:OBI_0000245 ;
               rdfs:range aeon:AEON_0000018 ;
               aeon:SMW_datatype "External identifier" ;
               aeon:SMW_import_info """External formatter uri [[External formatter uri::https://isni.org/isni/$1]]
@@ -1257,6 +1270,7 @@ aeon:has_ISNI rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_ORCID
 aeon:has_ORCID rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf aeon:has_external_identifier ;
+               rdfs:domain obo:NCBITaxon_9606 ;
                rdfs:range aeon:AEON_0000019 ;
                aeon:SMW_datatype "External identifier" ;
                aeon:SMW_import_info """External formatter uri [[External formatter uri::https://orcid.org/$1]]
@@ -1269,6 +1283,7 @@ aeon:has_ORCID rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_ROR
 aeon:has_ROR rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf aeon:has_external_identifier ;
+             rdfs:domain obo:OBI_0000245 ;
              rdfs:range aeon:AEON_0000020 ;
              aeon:SMW_datatype "External identifier" ;
              aeon:SMW_import_info """External formatter uri [[External formatter uri::https://ror.org/$1]]
@@ -1281,6 +1296,7 @@ aeon:has_ROR rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_WDQID
 aeon:has_WDQID rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf aeon:has_external_identifier ;
+               rdfs:domain obo:BFO_0000001 ;
                rdfs:range aeon:AEON_0000021 ;
                aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"itemID\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Wikidataid\", \"label\": \"Wikidataid\"}}"^^xsd:string ;
                aeon:SMW_datatype "External identifier" ;
@@ -1327,7 +1343,11 @@ aeon:has_committee_member rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_contact_person
 aeon:has_contact_person rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf aeon:has_organizer ;
-                        rdfs:domain obo:BFO_0000015 ;
+                        rdfs:domain [ rdf:type owl:Class ;
+                                      owl:unionOf ( aeon:AEON_0000001
+                                                    aeon:AEON_0000002
+                                                  )
+                                    ] ;
                         rdfs:range obo:NCBITaxon_9606 ;
                         aeon:SMW_datatype "Page" ;
                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1335,8 +1355,12 @@ aeon:has_contact_person rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_contributor
 aeon:has_contributor rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf owl:topObjectProperty ;
-                     rdfs:domain aeon:AEON_0000001 ;
+                     rdfs:subPropertyOf obo:BFO_0000057 ;
+                     rdfs:domain [ rdf:type owl:Class ;
+                                   owl:unionOf ( aeon:AEON_0000001
+                                                 aeon:AEON_0000002
+                                               )
+                                 ] ;
                      rdfs:range obo:NCBITaxon_9606 ;
                      aeon:SMW_datatype "Page" ;
                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1344,7 +1368,7 @@ aeon:has_contributor rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_event
 aeon:has_event rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf aeon:has_part ;
+               rdfs:subPropertyOf obo:BFO_0000118 ;
                owl:inverseOf aeon:part_of_series ;
                rdfs:domain aeon:AEON_0000002 ;
                rdfs:range aeon:AEON_0000001 ;
@@ -1354,6 +1378,7 @@ aeon:has_event rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_event_type
 aeon:has_event_type rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf obo:IAO_0000235 ;
                     rdfs:domain aeon:AEON_0000001 ;
                     rdfs:range aeon:AEON_0000004 ;
                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"event_type\"}, \"openresearch\": {\"uri\": null, \"label\": \"Type\"}}"^^xsd:string ;
@@ -1366,7 +1391,8 @@ aeon:has_event_type rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_external_identifier
 aeon:has_external_identifier rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf aeon:has_identifier ;
-                             rdfs:range aeon:ExternalIdentifier ;
+                             rdfs:domain obo:BFO_0000001 ;
+                             rdfs:range obo:IAO_0020000 ;
                              rdfs:comment "This is an abstract property that most likely will never be used, as it just serves as a parent for known external IDs."@en ;
                              aeon:AEON_0000026 "{\"wikidata\": [{\"uri\": \"https://www.wikidata.org/wiki/Property:P646\", \"label\": \"Freebase_ID\"}, {\"uri\": \"https://www.wikidata.org/wiki/Property:P5127\", \"label\": \"WikiCFP_conference_series_ID\"}]}"^^xsd:string ;
                              aeon:SMW_datatype "Text" ;
@@ -1383,8 +1409,9 @@ aeon:has_external_identifier rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_fee
 aeon:has_fee rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf obo:IAO_0000235 ;
              rdfs:domain aeon:AEON_0000001 ;
-             rdfs:range aeon:Fee ,
+             rdfs:range aeon:AEON_0000030 ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty aeon:fee ;
                           owl:someValuesFrom rdfs:Literal
@@ -1435,7 +1462,9 @@ aeon:has_general_committee_member rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_identifier
 aeon:has_identifier rdf:type owl:ObjectProperty ;
-                    rdfs:range aeon:Identifier ;
+                    rdfs:subPropertyOf obo:IAO_0000235 ;
+                    rdfs:domain obo:BFO_0000001 ;
+                    rdfs:range obo:IAO_0020000 ;
                     aeon:SMW_datatype "Text" ;
                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1495,7 +1524,11 @@ aeon:has_moderator rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_organizer
 aeon:has_organizer rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf aeon:has_contributor ;
-                   rdfs:domain obo:BFO_0000015 ;
+                   rdfs:domain [ rdf:type owl:Class ;
+                                 owl:unionOf ( aeon:AEON_0000001
+                                               aeon:AEON_0000002
+                                             )
+                               ] ;
                    rdfs:range [ rdf:type owl:Class ;
                                 owl:unionOf ( obo:NCBITaxon_9606
                                               obo:OBI_0000245
@@ -1510,22 +1543,13 @@ aeon:has_organizer rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_output
 aeon:has_output rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:subPropertyOf obo:IAO_0000235 ;
                 rdfs:domain aeon:AEON_0000001 ;
                 obo:IAO_0000115 "To say that an academic event A has an output means that there exists some form of publication B that is caused by A." ;
                 aeon:SMW_datatype "Text" ;
                 aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Output]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
-
-
-###  https://github.com/tibonto/aeon#has_part
-aeon:has_part rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf owl:topObjectProperty ;
-              owl:inverseOf aeon:part_of ;
-              rdfs:isDefinedBy "http://purl.obolibrary.org/obo/BFO_0000051" ;
-              aeon:SMW_datatype "Page" ;
-              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#has_program_committee_chair
@@ -1610,7 +1634,11 @@ aeon:has_speaker rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_sponsor
 aeon:has_sponsor rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf aeon:has_contributor ;
-                 rdfs:domain obo:BFO_0000015 ;
+                 rdfs:domain [ rdf:type owl:Class ;
+                               owl:unionOf ( aeon:AEON_0000001
+                                             aeon:AEON_0000002
+                                           )
+                             ] ;
                  rdfs:range [ rdf:type owl:Class ;
                               owl:unionOf ( obo:NCBITaxon_9606
                                             obo:OBI_0000245
@@ -1677,40 +1705,18 @@ aeon:has_technical_committee_member rdf:type owl:ObjectProperty ;
                                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#is_about
-aeon:is_about rdf:type owl:ObjectProperty ;
-              rdfs:domain obo:BFO_0000015 ;
-              rdfs:range aeon:Subject ;
-              rdfs:isDefinedBy "http://purl.obolibrary.org/obo/IAO_0000136" ;
-              aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P921\", \"label\": \"main_subjectLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Field\", \"label\": \"Field\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#topic\", \"label\": \"Topic that is related to a corporate body, conference, person, family, subject heading or work.\"}}"^^xsd:string ;
-              aeon:SMW_datatype "Text" ;
-              aeon:SMW_import_info "Controlled vocabulary in [[MediaWiki:Smw_allows_list_Subject]] [[Category:AEON]] [[Category:Imported vocabulary]]" ;
-              aeon:WikidataLabel "main_subjectLabel" ;
-              aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P921" .
-
-
 ###  https://github.com/tibonto/aeon#joint_event_of
 aeon:joint_event_of rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf aeon:part_of ;
+                    rdfs:subPropertyOf obo:BFO_0000138 ;
                     rdfs:domain aeon:AEON_0000001 ;
                     rdfs:range aeon:AEON_0000001 ;
                     aeon:SMW_datatype "Page" ;
                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#occurs_in
-aeon:occurs_in rdf:type owl:ObjectProperty ;
-               rdfs:domain aeon:AEON_0000001 ;
-               rdfs:range aeon:Location ;
-               rdfs:isDefinedBy "http://purl.obolibrary.org/obo/BFO_0000066" ;
-               aeon:AEON_0000026 "{\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"location\"}}}"^^xsd:string ;
-               aeon:SMW_datatype "Text" ;
-               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
 ###  https://github.com/tibonto/aeon#occurs_in_city
 aeon:occurs_in_city rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf aeon:occurs_in ;
+                    rdfs:subPropertyOf obo:BFO_0000066 ;
                     rdfs:domain aeon:AEON_0000001 ;
                     rdfs:range aeon:AEON_0000022 ;
                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P276\", \"label\": \"locationLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_city\", \"label\": \"Has_location_city\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#placeOfConferenceOrEvent\", \"label\": \"Place of conference or event\"}}"^^xsd:string ;
@@ -1720,7 +1726,7 @@ aeon:occurs_in_city rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#occurs_in_country
 aeon:occurs_in_country rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf aeon:occurs_in ;
+                       rdfs:subPropertyOf obo:BFO_0000066 ;
                        rdfs:domain aeon:AEON_0000001 ;
                        rdfs:range aeon:AEON_0000023 ;
                        aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P17\", \"label\": \"countryLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_country\", \"label\": \"Has_location_country\"}}"^^xsd:string ;
@@ -1732,7 +1738,7 @@ aeon:occurs_in_country rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#occurs_in_state
 aeon:occurs_in_state rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf aeon:occurs_in ;
+                     rdfs:subPropertyOf obo:BFO_0000066 ;
                      rdfs:domain aeon:AEON_0000001 ;
                      rdfs:range aeon:AEON_0000024 ;
                      aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P131\", \"label\": \"located_in_the_administrative_territorial_entityLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_state\", \"label\": \"Has_location_state\"}}"^^xsd:string ;
@@ -1742,7 +1748,7 @@ aeon:occurs_in_state rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#occurs_in_venue
 aeon:occurs_in_venue rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf aeon:occurs_in ;
+                     rdfs:subPropertyOf obo:BFO_0000066 ;
                      rdfs:domain aeon:AEON_0000001 ;
                      rdfs:range aeon:AEON_0000025 ;
                      aeon:SMW_datatype "Text" ;
@@ -1751,24 +1757,16 @@ aeon:occurs_in_venue rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#occurs_in_virtual_place
 aeon:occurs_in_virtual_place rdf:type owl:ObjectProperty ;
-                             rdfs:subPropertyOf aeon:occurs_in ;
+                             rdfs:subPropertyOf obo:BFO_0000066 ;
                              rdfs:domain aeon:AEON_0000001 ;
-                             rdfs:range aeon:VirtualLocation ;
+                             rdfs:range aeon:AEON_0000029 ;
                              aeon:SMW_datatype "URL" ;
                              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#part_of
-aeon:part_of rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
-             rdfs:isDefinedBy "http://purl.obolibrary.org/obo/BFO_0000050" ;
-             aeon:SMW_datatype "Page" ;
-             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
 ###  https://github.com/tibonto/aeon#part_of_series
 aeon:part_of_series rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf aeon:part_of ;
+                    rdfs:subPropertyOf obo:BFO_0000138 ;
                     rdfs:domain aeon:AEON_0000001 ;
                     rdfs:range aeon:AEON_0000002 ;
                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P179\", \"label\": \"part_of_the_seriesLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Event_in_series\", \"label\": \"Event_in_series\"}}"^^xsd:string ;
@@ -1778,7 +1776,7 @@ aeon:part_of_series rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#umbrella_event_of
 aeon:umbrella_event_of rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf aeon:part_of ;
+                       rdfs:subPropertyOf obo:BFO_0000138 ;
                        rdfs:domain aeon:AEON_0000001 ;
                        rdfs:range aeon:AEON_0000001 ;
                        aeon:SMW_datatype "Page" ;
@@ -1812,7 +1810,7 @@ aeon:CORE_ranking rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#ID
 aeon:ID rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf owl:topDataProperty ;
-        rdfs:domain aeon:Identifier ;
+        rdfs:domain obo:IAO_0020000 ;
         obo:IAO_0000115 "The literal value of an identifier."@en ;
         aeon:SMW_datatype "Text" ;
         aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
@@ -1825,7 +1823,7 @@ aeon:ID rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#ID_URL
 aeon:ID_URL rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf aeon:ID ;
-            rdfs:domain aeon:Identifier ;
+            rdfs:domain obo:IAO_0020000 ;
             rdfs:range xsd:anyURI ;
             rdfs:comment "The literal value of the full URL used by the identifier scheme, based on the concatination of base URL and ID (ID_URL:value = ID_base_URL:value + ID:value)."@en ;
             aeon:SMW_datatype "URL" ;
@@ -1839,7 +1837,7 @@ aeon:ID_URL rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#ID_base_URL
 aeon:ID_base_URL rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf aeon:ID ;
-                 rdfs:domain aeon:Identifier ;
+                 rdfs:domain obo:IAO_0020000 ;
                  rdfs:range xsd:anyURI ;
                  rdfs:comment "The literal value of the base URL used by the identifier scheme."@en ;
                  aeon:SMW_datatype "URL" ;
@@ -1943,7 +1941,7 @@ aeon:contact_phone rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#coordinates
 aeon:coordinates rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf aeon:location ;
-                 rdfs:domain aeon:PhysicalLocation ;
+                 rdfs:domain obo:GAZ_00000448 ;
                  aeon:SMW_datatype "Geographic coordinates" ;
                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -2075,7 +2073,7 @@ aeon:event_year rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#fee
 aeon:fee rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf owl:topDataProperty ;
-         rdfs:domain aeon:Fee ;
+         rdfs:domain aeon:AEON_0000030 ;
          obo:IAO_0000115 "The literal value of the type of fee an aeon:event can have."@en ;
          obo:IAO_0000600 "There are various type of fees for an event, such as the regular fee, a reduced fee, a member fee and so forth." ;
          aeon:SMW_datatype "Text" ;
@@ -2087,7 +2085,7 @@ aeon:fee rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#fee_currency
 aeon:fee_currency rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf aeon:fee ;
-                  rdfs:domain aeon:Fee ;
+                  rdfs:domain aeon:AEON_0000030 ;
                   rdfs:comment "This property should have a value from the controlled list defined by the ISO_4217 standard (https://en.wikipedia.org/wiki/ISO_4217)." ;
                   aeon:SMW_datatype "Text" ;
                   aeon:SMW_import_info """Controlled vocabulary in [[MediaWiki:Smw_allows_list_Fee_currency]]
@@ -2100,7 +2098,7 @@ aeon:fee_currency rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#fee_value
 aeon:fee_value rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf aeon:fee ;
-               rdfs:domain aeon:Fee ;
+               rdfs:domain aeon:AEON_0000030 ;
                aeon:SMW_datatype "Number" ;
                aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Fee]]
 
@@ -2118,7 +2116,7 @@ aeon:first_name rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#landing_page
 aeon:landing_page rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf aeon:ID ;
-                  rdfs:domain aeon:Identifier ;
+                  rdfs:domain obo:IAO_0020000 ;
                   rdfs:range xsd:anyURI ;
                   rdfs:comment "The literal value of the landing page (URL) an ID resolves to when following the ID_URL."@en ;
                   aeon:SMW_datatype "URL" ;
@@ -2150,7 +2148,7 @@ aeon:last_name rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#location
 aeon:location rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
-              rdfs:domain aeon:Location ;
+              rdfs:domain obo:BFO_0000029 ;
               aeon:SMW_datatype "Text" ;
               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -2165,7 +2163,7 @@ aeon:logo rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#meeting_URL
 aeon:meeting_URL rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf aeon:location ;
-                 rdfs:domain aeon:VirtualLocation ;
+                 rdfs:domain aeon:AEON_0000029 ;
                  rdfs:range xsd:anyURI ;
                  aeon:SMW_datatype "URL" ;
                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -2390,7 +2388,7 @@ aeon:state rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#subject
 aeon:subject rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
-             rdfs:domain aeon:Subject ;
+             rdfs:domain aeon:AEON_0000027 ;
              aeon:SMW_datatype "Text" ;
              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -3963,7 +3961,7 @@ obo:OBI_0000011 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/OBI_0000245
 obo:OBI_0000245 rdf:type owl:Class ;
-                rdfs:subClassOf obo:BFO_0000040 ;
+                rdfs:subClassOf obo:BFO_0000027 ;
                 obo:IAO_0000112 "PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods."@en ;
                 obo:IAO_0000114 "ready for release"@en ;
                 obo:IAO_0000115 "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."@en ;
@@ -3978,7 +3976,7 @@ obo:OBI_0000245 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/OBI_0100026
 obo:OBI_0100026 rdf:type owl:Class ;
-                rdfs:subClassOf obo:BFO_0000040 ;
+                rdfs:subClassOf obo:BFO_0000030 ;
                 obo:IAO_0000112 "fungus; plant; virus; animal"@en ;
                 obo:IAO_0000114 "organizational term"@en ;
                 obo:IAO_0000115 "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." ;
@@ -4251,63 +4249,47 @@ aeon:AEON_0000025 rdf:type owl:Class ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#ExternalIdentifier
-aeon:ExternalIdentifier rdf:type owl:Class ;
-                        obo:IAO_0000116 "This class is probably obsolete after completing the BFO subsumtion hierarchy." ;
-                        rdfs:label "obsolete External ID"^^xsd:string ;
-                        owl:deprecated "true"^^xsd:boolean .
+###  https://github.com/tibonto/aeon#AEON_0000027
+aeon:AEON_0000027 rdf:type owl:Class ;
+                  rdfs:subClassOf skos:Concept ;
+                  obo:IAO_0000115 "The subject of an academic event or event series is a skos:Concept from a controlled vocabulary, which is used to denote the academic field of the event or event series." ;
+                  rdfs:label "subject" ;
+                  aeon:SMW_datatype "Category" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#Fee
-aeon:Fee rdf:type owl:Class ;
-         obo:IAO_0000115 "The financial cost of attendance at a scientific event." ;
-         aeon:SMW_datatype "Category" ;
-         aeon:SMW_import_info """The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_Has_fee]].
+###  https://github.com/tibonto/aeon#AEON_0000028
+aeon:AEON_0000028 rdf:type owl:Class ;
+                  rdfs:subClassOf skos:Concept ;
+                  obo:IAO_0000115 "The topic of an academic event or event series is a skos:Concept that denotes what the event or series is about." ;
+                  obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
+                  <http://purl.org/dc/elements/1.1/date> "2020-09-25T12:52:39Z"^^xsd:dateTime ;
+                  rdfs:label "topic" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000029
+aeon:AEON_0000029 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000029 ;
+                  obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
+                  <http://purl.org/dc/elements/1.1/date> "2020-10-14T15:31:27Z"^^xsd:dateTime ;
+                  rdfs:label "virtual location"@de ;
+                  aeon:SMW_datatype "Category" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000030
+aeon:AEON_0000030 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:IAO_0000030 ;
+                  obo:IAO_0000115 "The financial cost of attendance at a scientific event." ;
+                  obo:IAO_0000116 "PS: It needs to be discussed, if having fee as ICE is sufficient/correct."@en ;
+                  obo:IAO_0000117 "Philip Strömert" ;
+                  rdfs:label "fee"@en ;
+                  aeon:SMW_datatype "Category" ;
+                  aeon:SMW_import_info """The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_Has_fee]].
 
 [[partOfSubobject::Template:Subobject Fee]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
-
-
-###  https://github.com/tibonto/aeon#Identifier
-aeon:Identifier rdf:type owl:Class ;
-                obo:IAO_0000116 "This class is probably obsolete after completing the BFO subsumtion hierarchy." ;
-                rdfs:seeAlso "http://purl.obolibrary.org/obo/IAO_0020000"@en ;
-                owl:deprecated "true"^^xsd:boolean .
-
-
-###  https://github.com/tibonto/aeon#Location
-aeon:Location rdf:type owl:Class ;
-              owl:deprecated "true"^^xsd:boolean .
-
-
-###  https://github.com/tibonto/aeon#PhysicalLocation
-aeon:PhysicalLocation rdf:type owl:Class ;
-                      rdfs:label "obsolete Physical Location"^^xsd:string ;
-                      owl:deprecated "true"^^xsd:boolean .
-
-
-###  https://github.com/tibonto/aeon#Subject
-aeon:Subject rdf:type owl:Class ;
-             rdfs:subClassOf skos:Concept ;
-             obo:IAO_0000115 "The subject of an academic event or event series is a skos:Concept from a controlled vocabulary, which is used to denote the academic field of the event or event series." ;
-             aeon:SMW_datatype "Category" ;
-             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#Topic
-aeon:Topic rdf:type owl:Class ;
-           rdfs:subClassOf skos:Concept ;
-           obo:IAO_0000115 "The topic of an academic event or event series is a skos:Concept that denotes what the event or series is about." ;
-           obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
-           <http://purl.org/dc/elements/1.1/date> "2020-09-25T12:52:39Z"^^xsd:dateTime ;
-           rdfs:label "Topic"@de .
-
-
-###  https://github.com/tibonto/aeon#VirtualLocation
-aeon:VirtualLocation rdf:type owl:Class ;
-                     rdfs:label "obsolete Virtual Location"^^xsd:string ;
-                     owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://github.com/tibonto/aeon#committee
