@@ -1450,6 +1450,7 @@ aeon:has_general_committee_member rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_identifier
 aeon:has_identifier rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf obo:IAO_0000235 ;
                     rdfs:domain obo:BFO_0000001 ;
                     rdfs:range obo:IAO_0020000 ;
                     aeon:SMW_datatype "Text" ;
