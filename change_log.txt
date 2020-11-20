@@ -1,5 +1,29 @@
 Change history:
 
+
+v0.2.12 - date: 20.11.2020
+	* refactor aeon:Fee --> AEON_0000030
+	* delete depricated classes 
+		* (aeon:Identifier, aeon:Location, aeon:ExternalIdentifier, aeon:PhysicalLocation, aeon:VirtualLocation)
+	* deleted aeon:part_of
+		* aeon:collocated_event_of, aeon:joint_event_of, aeon:part_of_series, aeon:umbrella_event_of --> rdfs:subPropertyOf obo:BFO_0000138
+	* deleted aeon:has_part
+		* aeon:has_event --> rdfs:subPropertyOf obo:BFO_0000118	
+	* aeon:occurs_in --> BFO_0000066
+	* aeon:has_contributor & subproperties --> subPropertyOf obo:BFO_0000057
+	* aeon:has_identifier --> rdfs:subPropertyOf obo:IAO_0000235
+	* aeon:is_about --> IAO_0000136
+	* aeon:has_event_type, aeon:has_fee, aeon:has_output --> rdfs:subPropertyOf obo:IAO_0000235 #13
+
+
+v0.2.11 - date: 17.11.2020
+	* add testing scripts & modules
+
+
+v0.2.10 - date: 16.11.2020
+	* added mapping to GND, Wikidata, Crossref & OpenResearch
+
+
 v0.2.9 - date: 07.10.2020
 working on BFO subsumption hierarchy and BFO conform naming:
 	* OBI_0000245 --> rdfs:subclassOf BFO_0000027
@@ -18,7 +42,6 @@ adding SMW_datatype and SMW_import_info to:
 	* iao:IAO_0000578
 	* ncbit:NCBITaxon_9606
 	* skos:Concept
-
 
 v0.2.7 - date: 05.10.2020
 aeon:AEON_0000026	--> added
@@ -56,8 +79,10 @@ Version 0.2.3 AEON ConfIDent Edition September 2020 - date: 20.09.2020
 Version 0.2.2 AEON ConfIDent Edition September 2020 - date: 17.09.2020
 	* remove allowed value list annotations in aeon:SMW_import_info
 
+
 Version 0.2.1 AEON ConfIDent Edition September 2020 - date: 16.09.2020
 	* store WikiData URI and Label as literals in the annotation properties: aeon:SMW_datatype & aeon:SMW_import_info
+
 
 Version 0.2.0 AEON ConfIDent Edition September 2020 - date: 16.09.2020
 	* this version was based on v0.0.1 from the master branch and developted in its own branch (https://github.com/tibonto/aeon/tree/confIDent)
