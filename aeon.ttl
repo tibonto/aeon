@@ -932,6 +932,7 @@ obo:IAO_0000235 rdf:type owl:ObjectProperty ;
                 obo:IAO_0000115 "inverse of the relation 'denotes'"@en ;
                 obo:IAO_0000117 "Person: Jie Zheng, Chris Stoeckert, Mike Conlon"@en ;
                 obo:IAO_0000233 <https://github.com/information-artifact-ontology/IAO/issues/206> ;
+                rdfs:comment "Definiton: Some entity is denoted by an information content entity."@en ;
                 rdfs:label "denoted by"@en .
 
 
@@ -4345,6 +4346,7 @@ aeon:PIDapalooza2020 rdf:type owl:NamedIndividual ,
                               aeon:AEON_0000001 ;
                      aeon:has_WDQID <https://www.wikidata.org/wiki/Q65929359> ;
                      aeon:has_event_type aeon:Conference ;
+                     aeon:has_identifier aeon:_ConfIDentID_1 ;
                      aeon:has_speaker aeon:_Person_1 ;
                      aeon:occurs_in_city aeon:Lisbon ;
                      aeon:occurs_in_country aeon:Portugal ;
@@ -4353,6 +4355,7 @@ aeon:PIDapalooza2020 rdf:type owl:NamedIndividual ,
                      aeon:number_of_attendees 117 ;
                      aeon:number_of_tracks 13 ;
                      aeon:start_date "2020-01-29T09:00:00"^^xsd:dateTime ;
+                     obo:IAO_0000117 "This individual serves as an example of usage for describing academic events with AEON."@en ;
                      rdfs:comment obo:IAO_0000002 ;
                      rdfs:label "PIDapalooza2020"@en .
 
@@ -4410,8 +4413,7 @@ aeon:_ConfIDentID_1 rdf:type owl:NamedIndividual ;
 
 
 ###  https://github.com/tibonto/aeon#_Person_1
-aeon:_Person_1 rdf:type owl:NamedIndividual ,
-                        obo:NCBITaxon_9606 ;
+aeon:_Person_1 rdf:type owl:NamedIndividual ;
                aeon:first_name "Philip"^^xsd:string ;
                aeon:last_name "Strömert"^^xsd:string ;
                rdfs:comment obo:IAO_0000002 .
@@ -4426,8 +4428,7 @@ aeon:other_EventType rdf:type owl:NamedIndividual ,
 
 
 ###  https://www.wikidata.org/wiki/Q65929359
-<https://www.wikidata.org/wiki/Q65929359> rdf:type owl:NamedIndividual ,
-                                                   aeon:AEON_0000021 ;
+<https://www.wikidata.org/wiki/Q65929359> rdf:type owl:NamedIndividual ;
                                           rdfs:comment obo:IAO_0000002 .
 
 
