@@ -900,7 +900,10 @@ We will try to build it back up by elaborating the various subproperties that ar
 Some currently missing phenomena that should be considered \"about\" are predications - \"The only person who knows the answer is sitting beside me\" , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic."""@en ;
                 obo:IAO_0000117 "person:Alan Ruttenberg"@en ;
                 obo:IAO_0000119 "Smith, Ceusters, Ruttenberg, 2000 years of philosophy"@en ;
-                rdfs:label "is about"@en .
+                rdfs:label "is about"@en ;
+                aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P921\", \"label\": \"main_subjectLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Field\", \"label\": \"Field\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#topic\", \"label\": \"Topic that is related to a corporate body, conference, person, family, subject heading or work.\"}}"^^xsd:string ;
+                aeon:SMW_datatype "Text" ;
+                aeon:SMW_import_info "Controlled vocabulary in [[MediaWiki:Smw_allows_list_Subject]] [[Category:IAO]] [[Category:Imported vocabulary]]" .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000219
@@ -1691,18 +1694,6 @@ aeon:has_technical_committee_member rdf:type owl:ObjectProperty ;
                                     rdfs:range obo:NCBITaxon_9606 ;
                                     aeon:SMW_datatype "Page" ;
                                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#is_about
-aeon:is_about rdf:type owl:ObjectProperty ;
-              rdfs:domain obo:BFO_0000015 ;
-              rdfs:range aeon:AEON_0000027 ;
-              rdfs:isDefinedBy "http://purl.obolibrary.org/obo/IAO_0000136" ;
-              aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P921\", \"label\": \"main_subjectLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Field\", \"label\": \"Field\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#topic\", \"label\": \"Topic that is related to a corporate body, conference, person, family, subject heading or work.\"}}"^^xsd:string ;
-              aeon:SMW_datatype "Text" ;
-              aeon:SMW_import_info "Controlled vocabulary in [[MediaWiki:Smw_allows_list_Subject]] [[Category:AEON]] [[Category:Imported vocabulary]]" ;
-              aeon:WikidataLabel "main_subjectLabel" ;
-              aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P921" .
 
 
 ###  https://github.com/tibonto/aeon#joint_event_of
