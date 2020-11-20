@@ -413,7 +413,9 @@ A continuant cannot be part of an occurrent: use 'participates in'. An occurrent
                 obo:IAO_0000118 "part_of"@en ;
                 obo:RO_0001900 obo:RO_0001901 ;
                 rdfs:label "part of"@en ;
-                rdfs:seeAlso "http://www.obofoundry.org/ro/#OBO_REL:part_of" .
+                rdfs:seeAlso "http://www.obofoundry.org/ro/#OBO_REL:part_of" ;
+                aeon:SMW_datatype "Page" ;
+                aeon:SMW_import_info "[[Category:BFO]] [[Category:Imported vocabulary]]" .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000051
@@ -1207,7 +1209,7 @@ obo:RO_0002351 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#collocated_event_of
 aeon:collocated_event_of rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf aeon:part_of ;
+                         rdfs:subPropertyOf obo:BFO_0000050 ;
                          rdfs:domain aeon:AEON_0000001 ;
                          rdfs:range aeon:AEON_0000001 ;
                          aeon:SMW_datatype "Page" ;
@@ -1523,7 +1525,6 @@ aeon:has_output rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#has_part
 aeon:has_part rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf owl:topObjectProperty ;
-              owl:inverseOf aeon:part_of ;
               rdfs:isDefinedBy "http://purl.obolibrary.org/obo/BFO_0000051" ;
               aeon:SMW_datatype "Page" ;
               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1692,7 +1693,7 @@ aeon:is_about rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#joint_event_of
 aeon:joint_event_of rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf aeon:part_of ;
+                    rdfs:subPropertyOf obo:BFO_0000050 ;
                     rdfs:domain aeon:AEON_0000001 ;
                     rdfs:range aeon:AEON_0000001 ;
                     aeon:SMW_datatype "Page" ;
@@ -1759,17 +1760,9 @@ aeon:occurs_in_virtual_place rdf:type owl:ObjectProperty ;
                              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#part_of
-aeon:part_of rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
-             rdfs:isDefinedBy "http://purl.obolibrary.org/obo/BFO_0000050" ;
-             aeon:SMW_datatype "Page" ;
-             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
 ###  https://github.com/tibonto/aeon#part_of_series
 aeon:part_of_series rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf aeon:part_of ;
+                    rdfs:subPropertyOf obo:BFO_0000050 ;
                     rdfs:domain aeon:AEON_0000001 ;
                     rdfs:range aeon:AEON_0000002 ;
                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P179\", \"label\": \"part_of_the_seriesLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Event_in_series\", \"label\": \"Event_in_series\"}}"^^xsd:string ;
@@ -1779,7 +1772,7 @@ aeon:part_of_series rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#umbrella_event_of
 aeon:umbrella_event_of rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf aeon:part_of ;
+                       rdfs:subPropertyOf obo:BFO_0000050 ;
                        rdfs:domain aeon:AEON_0000001 ;
                        rdfs:range aeon:AEON_0000001 ;
                        aeon:SMW_datatype "Page" ;
