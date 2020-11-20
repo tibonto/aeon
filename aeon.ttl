@@ -535,7 +535,7 @@ obo:BFO_0000066 rdf:type owl:ObjectProperty ;
                                          )
                            ] ;
                 obo:IAO_0000111 "occurs in"@en ;
-                obo:IAO_0000115 "b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t"@en ;
+                obo:IAO_0000115 "b occurs_in c =def b is a process and c is a material entity or immaterial entity & there exists a spatiotemporal region r and b occupies spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t"@en ;
                 obo:IAO_0000118 "occurs_in"@en ,
                                 "unfolds in"@en ,
                                 "unfolds_in"@en ;
@@ -545,7 +545,10 @@ obo:BFO_0000066 rdf:type owl:ObjectProperty ;
                 rdfs:label "occurs in"@en ;
                 skos:definition "b occurs in c =Def b is a process or a process boundary and c is a material entity or immaterial entity & there exists a spatiotemporal region r and b occupies spatiotemporal region r & for all t, if b exists at t then c exists at t & there exist spatial regions s and s' where b spatially projects onto s at t & c occupies spatial region s' at t & s is a continuant part of s' at t"@en ;
                 skos:example "A process of digestion occurs in the interior of an organism, a process of loading artillery rounds into a tank cannon occurs in the interior of the tank. "@en ;
-                skos:prefLabel "occurs in"@en .
+                skos:prefLabel "occurs in"@en ;
+                aeon:AEON_0000026 "{\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"location\"}}}"^^xsd:string ;
+                aeon:SMW_datatype "Text" ;
+                aeon:SMW_import_info "[[Category:BFO]] [[Category:Imported vocabulary]]" .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000067
@@ -1700,19 +1703,9 @@ aeon:joint_event_of rdf:type owl:ObjectProperty ;
                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#occurs_in
-aeon:occurs_in rdf:type owl:ObjectProperty ;
-               rdfs:domain aeon:AEON_0000001 ;
-               rdfs:range obo:BFO_0000029 ;
-               rdfs:isDefinedBy "http://purl.obolibrary.org/obo/BFO_0000066" ;
-               aeon:AEON_0000026 "{\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"location\"}}}"^^xsd:string ;
-               aeon:SMW_datatype "Text" ;
-               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
 ###  https://github.com/tibonto/aeon#occurs_in_city
 aeon:occurs_in_city rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf aeon:occurs_in ;
+                    rdfs:subPropertyOf obo:BFO_0000066 ;
                     rdfs:domain aeon:AEON_0000001 ;
                     rdfs:range aeon:AEON_0000022 ;
                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P276\", \"label\": \"locationLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_city\", \"label\": \"Has_location_city\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#placeOfConferenceOrEvent\", \"label\": \"Place of conference or event\"}}"^^xsd:string ;
@@ -1722,7 +1715,7 @@ aeon:occurs_in_city rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#occurs_in_country
 aeon:occurs_in_country rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf aeon:occurs_in ;
+                       rdfs:subPropertyOf obo:BFO_0000066 ;
                        rdfs:domain aeon:AEON_0000001 ;
                        rdfs:range aeon:AEON_0000023 ;
                        aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P17\", \"label\": \"countryLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_country\", \"label\": \"Has_location_country\"}}"^^xsd:string ;
@@ -1734,7 +1727,7 @@ aeon:occurs_in_country rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#occurs_in_state
 aeon:occurs_in_state rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf aeon:occurs_in ;
+                     rdfs:subPropertyOf obo:BFO_0000066 ;
                      rdfs:domain aeon:AEON_0000001 ;
                      rdfs:range aeon:AEON_0000024 ;
                      aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P131\", \"label\": \"located_in_the_administrative_territorial_entityLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_state\", \"label\": \"Has_location_state\"}}"^^xsd:string ;
@@ -1744,7 +1737,7 @@ aeon:occurs_in_state rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#occurs_in_venue
 aeon:occurs_in_venue rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf aeon:occurs_in ;
+                     rdfs:subPropertyOf obo:BFO_0000066 ;
                      rdfs:domain aeon:AEON_0000001 ;
                      rdfs:range aeon:AEON_0000025 ;
                      aeon:SMW_datatype "Text" ;
@@ -1753,7 +1746,7 @@ aeon:occurs_in_venue rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#occurs_in_virtual_place
 aeon:occurs_in_virtual_place rdf:type owl:ObjectProperty ;
-                             rdfs:subPropertyOf aeon:occurs_in ;
+                             rdfs:subPropertyOf obo:BFO_0000066 ;
                              rdfs:domain aeon:AEON_0000001 ;
                              rdfs:range aeon:AEON_0000029 ;
                              aeon:SMW_datatype "URL" ;
