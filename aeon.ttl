@@ -1215,6 +1215,13 @@ obo:RO_0002351 rdf:type owl:ObjectProperty ;
                rdfs:label "has member"@en .
 
 
+###  https://github.com/tibonto/aeon#AEON_0000031
+aeon:AEON_0000031 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf obo:IAO_0000235 ;
+                  obo:IAO_0000116 "This is an abstract property that most likely will never be used, as it just serves as an ordering parent property for known centrally registered identifiers."@en ;
+                  rdfs:label "has centrally registered identifier"@de .
+
+
 ###  https://github.com/tibonto/aeon#collocated_event_of
 aeon:collocated_event_of rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf obo:BFO_0000138 ;
@@ -1226,7 +1233,7 @@ aeon:collocated_event_of rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_DOI
 aeon:has_DOI rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf aeon:has_external_identifier ;
+             rdfs:subPropertyOf aeon:AEON_0000031 ;
              rdfs:domain obo:BFO_0000001 ;
              rdfs:range aeon:AEON_0000016 ;
              aeon:SMW_datatype "External identifier" ;
@@ -1237,7 +1244,7 @@ aeon:has_DOI rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_GND
 aeon:has_GND rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf aeon:has_external_identifier ;
+             rdfs:subPropertyOf aeon:AEON_0000031 ;
              rdfs:domain obo:BFO_0000001 ;
              rdfs:range aeon:AEON_0000017 ;
              aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P227\", \"label\": \"GND_ID\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#gndIdentifier\", \"label\": \"GND-Identifier\"}}"^^xsd:string ;
@@ -1255,7 +1262,7 @@ aeon:has_GND rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_ISNI
 aeon:has_ISNI rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf aeon:has_external_identifier ;
+              rdfs:subPropertyOf aeon:AEON_0000031 ;
               rdfs:domain obo:OBI_0000245 ;
               rdfs:range aeon:AEON_0000018 ;
               aeon:SMW_datatype "External identifier" ;
@@ -1269,7 +1276,7 @@ aeon:has_ISNI rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_ORCID
 aeon:has_ORCID rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf aeon:has_external_identifier ;
+               rdfs:subPropertyOf aeon:AEON_0000031 ;
                rdfs:domain obo:NCBITaxon_9606 ;
                rdfs:range aeon:AEON_0000019 ;
                aeon:SMW_datatype "External identifier" ;
@@ -1282,7 +1289,7 @@ aeon:has_ORCID rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_ROR
 aeon:has_ROR rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf aeon:has_external_identifier ;
+             rdfs:subPropertyOf aeon:AEON_0000031 ;
              rdfs:domain obo:OBI_0000245 ;
              rdfs:range aeon:AEON_0000020 ;
              aeon:SMW_datatype "External identifier" ;
@@ -1295,7 +1302,7 @@ aeon:has_ROR rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_WDQID
 aeon:has_WDQID rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf aeon:has_external_identifier ;
+               rdfs:subPropertyOf aeon:AEON_0000031 ;
                rdfs:domain obo:BFO_0000001 ;
                rdfs:range aeon:AEON_0000021 ;
                aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"itemID\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Wikidataid\", \"label\": \"Wikidataid\"}}"^^xsd:string ;
@@ -1388,12 +1395,13 @@ aeon:has_event_type rdf:type owl:ObjectProperty ;
                     aeon:WikidataLabel "event_type" .
 
 
-###  https://github.com/tibonto/aeon#has_external_identifier
-aeon:has_external_identifier rdf:type owl:ObjectProperty ;
-                             rdfs:subPropertyOf aeon:has_identifier ;
+###  https://github.com/tibonto/aeon#has_identifier
+aeon:has_identifier rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf obo:IAO_0000235 ;
                              rdfs:domain obo:BFO_0000001 ;
-                             rdfs:range obo:IAO_0020000 ;
-                             rdfs:comment "This is an abstract property that most likely will never be used, as it just serves as a parent for known external IDs."@en ;
+                             rdfs:range obo:IAO_0000578 ,
+                                        obo:IAO_0020000 ;
+                             obo:IAO_0000116 "This is an abstract property that most likely will never be used, as it just serves as an ordering parent property for known centrally registered identifiers."@en ;
                              aeon:AEON_0000026 "{\"wikidata\": [{\"uri\": \"https://www.wikidata.org/wiki/Property:P646\", \"label\": \"Freebase_ID\"}, {\"uri\": \"https://www.wikidata.org/wiki/Property:P5127\", \"label\": \"WikiCFP_conference_series_ID\"}]}"^^xsd:string ;
                              aeon:SMW_datatype "Text" ;
                              aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
@@ -1458,29 +1466,6 @@ aeon:has_general_committee_member rdf:type owl:ObjectProperty ;
                                   rdfs:range obo:NCBITaxon_9606 ;
                                   aeon:SMW_datatype "Page" ;
                                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#has_identifier
-aeon:has_identifier rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf obo:IAO_0000235 ;
-                    rdfs:domain obo:BFO_0000001 ;
-                    rdfs:range obo:IAO_0020000 ;
-                    aeon:SMW_datatype "Text" ;
-                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#has_internal_identifier
-aeon:has_internal_identifier rdf:type owl:ObjectProperty ;
-                             rdfs:subPropertyOf aeon:has_identifier ;
-                             rdfs:domain obo:BFO_0000015 ;
-                             rdfs:range aeon:AEON_0000003 ;
-                             obo:IAO_0000115 "The literal value of the internal identifier used by a system implementing this ontology."@en ;
-                             rdfs:comment """The \"rdfs:label has_ConfIDent_ID\" is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident/) to be used in its service. Thus the internal identifier is called ConfIDent_ID. 
-
-You will probably want to change that in your implementation."""@en ;
-                             rdfs:label "ConfIDent_ID"^^xsd:string ;
-                             aeon:SMW_datatype "Text" ;
-                             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#has_keynote_speaker
@@ -4349,7 +4334,6 @@ aeon:PIDapalooza2020 rdf:type owl:NamedIndividual ,
                               aeon:AEON_0000001 ;
                      aeon:has_WDQID <https://www.wikidata.org/wiki/Q65929359> ;
                      aeon:has_event_type aeon:Conference ;
-                     aeon:has_internal_identifier aeon:_ConfIDentID_1 ;
                      aeon:has_speaker aeon:_Person_1 ;
                      aeon:occurs_in_city aeon:Lisbon ;
                      aeon:occurs_in_country aeon:Portugal ;
