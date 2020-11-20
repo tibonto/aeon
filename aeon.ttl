@@ -1389,7 +1389,7 @@ aeon:has_event rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_event_type
 aeon:has_event_type rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf obo:IAO_0000235 ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
                     rdfs:domain aeon:AEON_0000001 ;
                     rdfs:range aeon:AEON_0000004 ;
                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"event_type\"}, \"openresearch\": {\"uri\": null, \"label\": \"Type\"}}"^^xsd:string ;
@@ -1401,13 +1401,9 @@ aeon:has_event_type rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_fee
 aeon:has_fee rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf obo:IAO_0000235 ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
              rdfs:domain aeon:AEON_0000001 ;
-             rdfs:range aeon:AEON_0000030 ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty aeon:fee ;
-                          owl:someValuesFrom rdfs:Literal
-                        ] ;
+             rdfs:range aeon:AEON_0000030 ;
              aeon:SMW_datatype "Text" ;
              aeon:SMW_import_info """The allowed value list for this property is defined in [[MediaWiki:Smw_allows_list_Has_fee]].
 
@@ -1531,8 +1527,9 @@ aeon:has_organizer rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_output
 aeon:has_output rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:IAO_0000235 ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
                 rdfs:domain aeon:AEON_0000001 ;
+                rdfs:range obo:IAO_0000310 ;
                 obo:IAO_0000115 "To say that an academic event A has an output means that there exists some form of publication B that is caused by A." ;
                 aeon:SMW_datatype "Text" ;
                 aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Output]]
@@ -3795,6 +3792,17 @@ obo:IAO_0000308 rdf:type owl:Class ;
                 obo:IAO_0000115 "An information content entity consisting of a two dimensional arrangement of information content entities such that the arrangement itself is about something."@en ;
                 obo:IAO_0000117 "PERSON: Lawrence Hunter"@en ;
                 rdfs:label "figure"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000310
+obo:IAO_0000310 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0000030 ;
+                obo:IAO_0000111 "document"@en ;
+                obo:IAO_0000112 "A journal article, patent application, laboratory notebook, or a book"@en ;
+                obo:IAO_0000114 obo:IAO_0000120 ;
+                obo:IAO_0000115 "A collection of information content entities intended to be understood together as a whole"@en ;
+                obo:IAO_0000117 "PERSON: Lawrence Hunter"@en ;
+                rdfs:label "document"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000416
