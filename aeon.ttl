@@ -964,7 +964,7 @@ aeon:AEON_0000031 rdf:type owl:ObjectProperty ;
                   obo:IAO_0000116 """PS: This is an abstract property that should not be used, as it seems better to add new CRID subclasses, for not yet existing CRIDs.
 It mainly serves as an ordering parent property for known centrally registered identifiers."""@en ;
                   obo:IAO_0000117 "Philip Strömert" ;
-                  rdfs:label "has centrally registered identifier"@de .
+                  rdfs:label "has centrally registered identifier"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000033
@@ -2755,8 +2755,7 @@ obo:BFO_0000015 rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/identifier> "083-BFO" ;
                 rdfs:isDefinedBy obo:bfo.owl ,
                                  "http://purl.obolibrary.org/obo/bfo.owl"^^xsd:anyURI ;
-                rdfs:label "Process"@en ,
-                           "process"@en ;
+                rdfs:label "process"@en ;
                 skos:definition "(Elucidation) p is a process =Def p is an occurrent that has some temporal proper part and for some time t, p has some material entity as participant"@en ;
                 skos:example "An act of selling, the life of an organism, a process of sleeping, a process of cell-division, a beating of the heart, a process of meiosis, the taxiing of an aircraft, the programming of a computer. "@en ;
                 skos:prefLabel "process"@en ;
@@ -2953,8 +2952,7 @@ obo:BFO_0000023 rdf:type owl:Class ;
                 rdfs:comment "example of usage:the role of subject in a clinical trial; the role of a boundary to demarcate two neighboring administrative territories; the role of a building in serving as a military target; the priest role; John’s role of husband to Mary is dependent on Mary’s role of wife to John, and both are dependent on the object aggregate comprising John and Mary as member parts joined together through the relational quality of being married.; the role of a stone in marking a property boundary; the student role"@en ;
                 rdfs:isDefinedBy obo:bfo.owl ,
                                  "http://purl.obolibrary.org/obo/bfo.owl"@en ;
-                rdfs:label "Role"@en ,
-                           "role"@en ;
+                rdfs:label "role"@en ;
                 skos:altLabel "externally-grounded realizable entity"@en ;
                 skos:definition "(Elucidation) b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be & b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed"@en ;
                 skos:example "The priest role, the student role, the role of subject in a clinical trial, the role of a stone in marking a property boundary, the role of a boundary to demarcate two neighbouring administrative territories, the role of a building in serving as a military target. "@en ;
@@ -3831,7 +3829,7 @@ aeon:AEON_0000005 rdf:type owl:Class ;
                   rdfs:subClassOf obo:BFO_0000023 ;
                   obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
                   <http://purl.org/dc/elements/1.1/date> "2020-09-28T12:51:02Z"^^xsd:dateTime ;
-                  rdfs:label "contributor role"@de ;
+                  rdfs:label "contributor role"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -4045,7 +4043,7 @@ aeon:AEON_0000029 rdf:type owl:Class ;
                   rdfs:subClassOf obo:BFO_0000029 ;
                   obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
                   <http://purl.org/dc/elements/1.1/date> "2020-10-14T15:31:27Z"^^xsd:dateTime ;
-                  rdfs:label "virtual location"@de ;
+                  rdfs:label "virtual location"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -4070,7 +4068,7 @@ aeon:AEON_0000034 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0020000 ;
                   obo:IAO_0000117 "StroemertP"^^xsd:string ;
                   <http://purl.org/dc/elements/1.1/date> "2020-11-20T17:31:33Z"^^xsd:dateTime ;
-                  rdfs:label "distributed identifier"@de .
+                  rdfs:label "distributed identifier"@en .
 
 
 ###  https://github.com/tibonto/aeon#committee
