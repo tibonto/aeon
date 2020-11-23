@@ -1802,7 +1802,7 @@ aeon:event_year rdf:type owl:DatatypeProperty ;
                 rdfs:domain aeon:AEON_0000001 ;
                 rdfs:range xsd:integer ;
                 obo:IAO_0000115 "The year in which an event takes place."@en ;
-                aeon:SMW_datatype "Number" ;
+                aeon:SMW_datatype "Date" ;
                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
