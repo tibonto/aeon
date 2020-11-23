@@ -4102,6 +4102,30 @@ aeon:AEON_0000034 rdf:type owl:Class ;
                   rdfs:label "distributed identifier"@en .
 
 
+###  https://github.com/tibonto/aeon#AEON_0000037
+aeon:AEON_0000037 rdf:type owl:Class ;
+                  rdfs:subClassOf aeon:AEON_0000015 ;
+                  obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                  <http://purl.org/dc/elements/1.1/date> "2020-11-23T11:34:27Z"^^xsd:dateTime ;
+                  rdfs:label "gold sponsor role"@en .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000038
+aeon:AEON_0000038 rdf:type owl:Class ;
+                  rdfs:subClassOf aeon:AEON_0000015 ;
+                  obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                  <http://purl.org/dc/elements/1.1/date> "2020-11-23T11:34:27Z"^^xsd:dateTime ;
+                  rdfs:label "silver sponsor role"@en .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000039
+aeon:AEON_0000039 rdf:type owl:Class ;
+                  rdfs:subClassOf aeon:AEON_0000015 ;
+                  obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                  <http://purl.org/dc/elements/1.1/date> "2020-11-23T11:34:27Z"^^xsd:dateTime ;
+                  rdfs:label "bronze sponsor role"@en .
+
+
 ###  https://github.com/tibonto/aeon#committee
 aeon:committee rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000027 ;
