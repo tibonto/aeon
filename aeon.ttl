@@ -2459,6 +2459,7 @@ obo:BFO_0000008 rdf:type owl:Class ;
                                 "(forall (x y) (if (and (TemporalRegion x) (occurrentPartOf y x)) (TemporalRegion y))) // axiom label in BFO2 CLIF: [101-001] " ,
                                 "(forall (x) (if (TemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [100-001] " ;
                 <http://purl.org/dc/elements/1.1/identifier> "100-BFO" ;
+                rdfs:comment "PS: unsure yet if, this class will be needed in AEON."@en ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "temporal region"@en ;
                 skos:definition "(Elucidation) A temporal region is an occurrent over which processes can unfold"@en ;
@@ -2544,6 +2545,7 @@ obo:BFO_0000011 rdf:type owl:Class ;
                                 "(forall (x) (if (SpatioTemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [095-001] " ,
                                 "(forall (x) (if (SpatioTemporalRegion x) (exists (y) (and (TemporalRegion y) (temporallyProjectsOnto x y))))) // axiom label in BFO2 CLIF: [098-001] " ;
                 <http://purl.org/dc/elements/1.1/identifier> "095-BFO" ;
+                rdfs:comment "PS: unsure yet if, this class will be needed in AEON."@en ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "spatiotemporal region"@en ;
                 skos:definition "(Elucidation) A spatiotemporal region is an occurrent that is an occurrent part of spacetime"@en ;
@@ -3088,6 +3090,7 @@ obo:BFO_0000035 rdf:type owl:Class ;
                 obo:IAO_0000602 "(forall (x) (if (ProcessBoundary x) (exists (y) (and (ZeroDimensionalTemporalRegion y) (occupiesTemporalRegion x y))))) // axiom label in BFO2 CLIF: [085-002] " ,
                                 "(iff (ProcessBoundary a) (exists (p) (and (Process p) (temporalPartOf a p) (not (exists (b) (properTemporalPartOf b a)))))) // axiom label in BFO2 CLIF: [084-001] " ;
                 <http://purl.org/dc/elements/1.1/identifier> "084-BFO" ;
+                rdfs:comment "PS: unsure yet if, this class will be needed in AEON."@en ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "process boundary"@en ;
                 skos:definition "p is a process boundary =Def p is a temporal part of a process & p has no proper temporal parts"@en ;
@@ -3494,6 +3497,7 @@ obo:OBI_0000011 rdf:type owl:Class ;
                 obo:IAO_0000111 "planned process"@en ;
                 obo:IAO_0000115 "A process that realizes a plan which is the concretization of a plan specification."@en ;
                 obo:IAO_0000412 obo:obi.owl ;
+                rdfs:comment "PS, 11-2020: I'm unsure yet if, this class will be needed in AEON, but it seems that this class is more accurate as parent for an academic event or event seires, as both are always unfolding according to a plan."@en ;
                 rdfs:label "planned process"@en .
 
 
@@ -3548,6 +3552,9 @@ aeon:AEON_0000001 rdf:type owl:Class ;
                   owl:disjointWith aeon:AEON_0000002 ;
                   obo:IAO_0000112 "The 19th International Semantic Web Conference (ISWC2020) is an academic  event."@en ;
                   obo:IAO_0000115 "An academic event is an organized gathering for researchers (not necessarily academics) to present and discuss their work."@en ;
+                  rdfs:comment """TODO: 1. It needs to be discussed, if events and event series should rather be subsumed under planned processes instead of just processes.
+2. It needs to be discussed, if we need the \"process boundary\" class to describe the start and end of an academic event or event series.
+3. It needs to be discussed, if we need the \"temporal region\" and \"spatiotemporal region\"  classes to describe the duration and manifestation in spacetime of an academic event or event series."""@en ;
                   rdfs:label "academic event"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Q1656682\", \"label\": \"eventLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Category:Event\", \"label\": \"Event\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#ConferenceOrEvent\", \"label\": \"Conference or Event\"}}"^^xsd:string ;
                   aeon:SMW_datatype "Category" ;
@@ -3559,6 +3566,7 @@ aeon:AEON_0000001 rdf:type owl:Class ;
 aeon:AEON_0000002 rdf:type owl:Class ;
                   rdfs:subClassOf obo:BFO_0000015 ;
                   obo:IAO_0000112 "International Semantic Web Conference (ISWC) series" ;
+                  rdfs:comment "TODO: It needs to be discussed, if events and event series should rather be subsumed under planned processes instead of just processes."@en ;
                   rdfs:label "academic event series" ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Q15900647\", \"label\": \"conference_seriesLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Category:Event_series\", \"label\": \"Event_series\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#SeriesOfConferenceOrEvent\", \"label\": \"Series of conference or event\"}}"^^xsd:string ;
                   aeon:SMW_datatype "Category" ;
@@ -3856,6 +3864,8 @@ aeon:AEON_0000039 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#committee
 aeon:committee rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000027 ;
+               obo:IAO_0000117 "TODO: It needs to be discussed if this class ir really needed. One could argue, that the various committee roles and committee memeber properties totally suffice."@en ;
+               ns:term_status "pending"@en ;
                aeon:SMW_datatype "Category" ;
                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
