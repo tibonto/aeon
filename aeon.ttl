@@ -4096,9 +4096,20 @@ aeon:AEON_0000035 rdf:type owl:NamedIndividual ;
                   rdfs:label "_did_1"@de .
 
 
-###  https://github.com/tibonto/aeon#Bronze_Sponsor
-aeon:Bronze_Sponsor rdf:type owl:NamedIndividual ,
-                             aeon:AEON_0000015 .
+###  https://github.com/tibonto/aeon#AEON_0000040
+aeon:AEON_0000040 rdf:type owl:NamedIndividual ;
+                  obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                  <http://purl.org/dc/elements/1.1/date> "2020-11-23T11:35:42Z"^^xsd:dateTime ;
+                  rdfs:label "_gold_sponsor_1"@de .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000041
+aeon:AEON_0000041 rdf:type owl:NamedIndividual ;
+                  obo:RO_0000087 aeon:AEON_0000040 ;
+                  aeon:organizational_name "Datacite" ;
+                  obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                  <http://purl.org/dc/elements/1.1/date> "2020-11-23T11:36:38Z"^^xsd:dateTime ;
+                  rdfs:label "_organization_1"@de .
 
 
 ###  https://github.com/tibonto/aeon#Colloquium
@@ -4114,11 +4125,6 @@ aeon:Conference rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#Forum
 aeon:Forum rdf:type owl:NamedIndividual ,
                     aeon:AEON_0000004 .
-
-
-###  https://github.com/tibonto/aeon#Gold_Sponsor
-aeon:Gold_Sponsor rdf:type owl:NamedIndividual ,
-                           aeon:AEON_0000015 .
 
 
 ###  https://github.com/tibonto/aeon#Hackathon
@@ -4140,11 +4146,13 @@ aeon:PIDapalooza rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#PIDapalooza2020
 aeon:PIDapalooza2020 rdf:type owl:NamedIndividual ,
                               aeon:AEON_0000001 ;
-                     obo:BFO_0000055 aeon:AEON_0000032 ;
+                     obo:BFO_0000055 aeon:AEON_0000032 ,
+                                     aeon:AEON_0000040 ;
                      aeon:has_WDQID <https://www.wikidata.org/wiki/Q65929359> ;
                      aeon:has_event_type aeon:Conference ;
                      aeon:has_identifier aeon:_ConfIDentID_1 ;
                      aeon:has_speaker aeon:_Person_1 ;
+                     aeon:has_sponsor aeon:AEON_0000041 ;
                      aeon:occurs_in_city aeon:Lisbon ;
                      aeon:occurs_in_country aeon:Portugal ;
                      aeon:part_of_series aeon:PIDapalooza ;
@@ -4169,11 +4177,6 @@ aeon:Seminar rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#Session
 aeon:Session rdf:type owl:NamedIndividual ,
                       aeon:AEON_0000004 .
-
-
-###  https://github.com/tibonto/aeon#Silver_Sponsor
-aeon:Silver_Sponsor rdf:type owl:NamedIndividual ,
-                             aeon:AEON_0000015 .
 
 
 ###  https://github.com/tibonto/aeon#Symposium
@@ -4257,11 +4260,11 @@ aeon:other_EventType rdf:type owl:NamedIndividual ,
 ] .
 
 
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( aeon:Bronze_Sponsor
-                        aeon:Gold_Sponsor
-                        aeon:Silver_Sponsor
-                      )
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( aeon:AEON_0000037
+                aeon:AEON_0000038
+                aeon:AEON_0000039
+              )
 ] .
 
 
