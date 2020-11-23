@@ -1624,14 +1624,6 @@ aeon:accepted_short_papers rdf:type owl:DatatypeProperty ;
                            aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#agent_name
-aeon:agent_name rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf aeon:name ;
-                obo:IAO_0000115 "The literal value of the name to denote an agent."@en ;
-                aeon:SMW_datatype "Text" ;
-                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
 ###  https://github.com/tibonto/aeon#camera-ready_deadline
 aeon:camera-ready_deadline rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf aeon:deadline ;
@@ -1983,7 +1975,7 @@ aeon:number_of_tracks rdf:type owl:DatatypeProperty ;
 
 ###  https://github.com/tibonto/aeon#organizational_name
 aeon:organizational_name rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf aeon:agent_name ;
+                         rdfs:subPropertyOf aeon:name ;
                          rdfs:domain obo:OBI_0000245 ;
                          rdfs:range xsd:string ;
                          obo:IAO_0000115 "The literal value of the name to denote an organization."@en ;
@@ -2002,7 +1994,7 @@ aeon:paper_deadline rdf:type owl:DatatypeProperty ;
 
 ###  https://github.com/tibonto/aeon#personal_name
 aeon:personal_name rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf aeon:agent_name ;
+                   rdfs:subPropertyOf aeon:name ;
                    rdfs:domain obo:NCBITaxon_9606 ;
                    rdfs:range xsd:string ;
                    obo:IAO_0000115 "The literal value of the name to denote a person."@en ;
