@@ -967,6 +967,19 @@ It mainly serves as an ordering parent property for known centrally registered i
                   rdfs:label "has centrally registered identifier"@de .
 
 
+###  https://github.com/tibonto/aeon#AEON_0000033
+aeon:AEON_0000033 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf obo:IAO_0000235 ;
+                  rdfs:domain obo:BFO_0000001 ;
+                  rdfs:range aeon:AEON_0000034 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty aeon:ID_URL ;
+                               owl:someValuesFrom xsd:anyURI
+                             ] ;
+                  obo:IAO_0000117 "Philip Stroemert"^^xsd:string ;
+                  rdfs:label "has distributed identifier"@en .
+
+
 ###  https://github.com/tibonto/aeon#collocated_event_of
 aeon:collocated_event_of rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf obo:BFO_0000138 ;
