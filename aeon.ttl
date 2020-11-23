@@ -3656,7 +3656,11 @@ obo:IAO_0020000 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000030 ;
                 obo:IAO_0000111 "identifier"@en ;
                 obo:IAO_0000115 "An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity."@en ;
+                obo:IAO_0000117 "Mathias Brochhausen" ;
+                obo:IAO_0000118 "proper name"@en ;
                 obo:IAO_0000412 <http://purl.obolibrary.org/obo/iao/pno.owl> ;
+                <http://purl.org/dc/elements/1.1/creator> "Mathias Brochhausen" ;
+                rdfs:comment "Sep 29, 2016: The current definition has been amended from the previous version: \"A proper name is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.\" to more accuratly reflect the necessary and sufficient condition on the class. (MB)"@en ;
                 rdfs:label "identifier"@en .
 
 
@@ -4029,6 +4033,14 @@ aeon:AEON_0000030 rdf:type owl:Class ;
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
+###  https://github.com/tibonto/aeon#AEON_0000034
+aeon:AEON_0000034 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:IAO_0020000 ;
+                  obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                  <http://purl.org/dc/elements/1.1/date> "2020-11-20T17:31:33Z"^^xsd:dateTime ;
+                  rdfs:label "distributed identifier"@de .
+
+
 ###  https://github.com/tibonto/aeon#committee
 aeon:committee rdf:type owl:Class ;
                rdfs:subClassOf obo:BFO_0000027 ;
@@ -4039,6 +4051,20 @@ aeon:committee rdf:type owl:Class ;
 #################################################################
 #    Individuals
 #################################################################
+
+###  https://github.com/tibonto/aeon#AEON_0000032
+aeon:AEON_0000032 rdf:type owl:NamedIndividual ;
+                  <http://purl.org/dc/elements/1.1/creator> "StroemertP"^^xsd:string ;
+                  <http://purl.org/dc/elements/1.1/date> "1605891687588"^^xsd:long ;
+                  rdfs:label "_PIDapalooza_Speaker_1"@de .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000035
+aeon:AEON_0000035 rdf:type owl:NamedIndividual ;
+                  obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                  <http://purl.org/dc/elements/1.1/date> "2020-11-20T17:34:24Z"^^xsd:dateTime ;
+                  rdfs:label "_did_1"@de .
+
 
 ###  https://github.com/tibonto/aeon#Bronze_Sponsor
 aeon:Bronze_Sponsor rdf:type owl:NamedIndividual ,
@@ -4084,6 +4110,7 @@ aeon:PIDapalooza rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#PIDapalooza2020
 aeon:PIDapalooza2020 rdf:type owl:NamedIndividual ,
                               aeon:AEON_0000001 ;
+                     obo:BFO_0000055 aeon:AEON_0000032 ;
                      aeon:has_WDQID <https://www.wikidata.org/wiki/Q65929359> ;
                      aeon:has_event_type aeon:Conference ;
                      aeon:has_identifier aeon:_ConfIDentID_1 ;
@@ -4154,6 +4181,9 @@ aeon:_ConfIDentID_1 rdf:type owl:NamedIndividual ;
 
 ###  https://github.com/tibonto/aeon#_Person_1
 aeon:_Person_1 rdf:type owl:NamedIndividual ;
+               obo:RO_0000087 aeon:AEON_0000032 ;
+               aeon:AEON_0000033 aeon:AEON_0000035 ;
+               aeon:has_ORCID <https://orcid.org/0000-0002-1595-3213> ;
                aeon:first_name "Philip"^^xsd:string ;
                aeon:last_name "Strömert"^^xsd:string ;
                rdfs:comment obo:IAO_0000002 .
@@ -4165,6 +4195,10 @@ aeon:other_EventType rdf:type owl:NamedIndividual ,
                      obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
                      <http://purl.org/dc/elements/1.1/date> "2020-09-28T11:57:10Z"^^xsd:dateTime ;
                      rdfs:label "other EventType"@de .
+
+
+###  https://orcid.org/0000-0002-1595-3213
+<https://orcid.org/0000-0002-1595-3213> rdf:type owl:NamedIndividual .
 
 
 ###  https://www.wikidata.org/wiki/Q65929359
