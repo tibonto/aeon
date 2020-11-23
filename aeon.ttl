@@ -562,29 +562,6 @@ obo:BFO_0000067 rdf:type owl:ObjectProperty ;
                 rdfs:label "contains process"@en .
 
 
-###  http://purl.obolibrary.org/obo/BFO_0000110
-obo:BFO_0000110 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:BFO_0000178 ;
-                rdf:type owl:TransitiveProperty ;
-                rdfs:domain obo:BFO_0000002 ;
-                rdfs:range obo:BFO_0000002 ;
-                <http://purl.org/dc/elements/1.1/identifier> "223-BFO" ;
-                rdfs:label "has continuant part at all times"@en ;
-                skos:definition "b has continuant part c at all times =Def for all times t, b exists at t implies (b and c are continuants & b is a part of c at t)"@en ;
-                skos:prefLabel "has continuant part at all times"@en .
-
-
-###  http://purl.obolibrary.org/obo/BFO_0000115
-obo:BFO_0000115 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:BFO_0000178 ;
-                rdfs:domain obo:BFO_0000040 ;
-                rdfs:range obo:BFO_0000040 ;
-                <http://purl.org/dc/elements/1.1/identifier> "230-BFO" ;
-                rdfs:label "has member part at some time"@en ;
-                skos:definition "b has member part c at some time =Def for some time t (c member part of b at t)"@en ;
-                skos:prefLabel "has member part at some time"@en .
-
-
 ###  http://purl.obolibrary.org/obo/BFO_0000117
 obo:BFO_0000117 rdf:type owl:ObjectProperty ;
                 owl:inverseOf obo:BFO_0000132 ;
@@ -719,27 +696,6 @@ obo:BFO_0000167 rdf:type owl:ObjectProperty ;
                 skos:prefLabel "has participant at all times"@en .
 
 
-###  http://purl.obolibrary.org/obo/BFO_0000174
-obo:BFO_0000174 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:BFO_0000178 ;
-                rdfs:domain obo:BFO_0000002 ;
-                rdfs:range obo:BFO_0000002 ;
-                <http://purl.org/dc/elements/1.1/identifier> "226-BFO" ;
-                rdfs:label "has proper continuant part at some time"@en ;
-                skos:definition "b has proper continuant part c at some time =Def c proper continuant part of b at some time"@en ;
-                skos:prefLabel "has proper continuant part at some time"@en .
-
-
-###  http://purl.obolibrary.org/obo/BFO_0000178
-obo:BFO_0000178 rdf:type owl:ObjectProperty ;
-                rdfs:domain obo:BFO_0000002 ;
-                rdfs:range obo:BFO_0000002 ;
-                <http://purl.org/dc/elements/1.1/identifier> "271-BFO" ;
-                rdfs:label "has continuant part at some time"@en ;
-                skos:definition "b has continuant part c at some time =Def for some time t (b and c are continuants & b is a part of c at t)"@en ;
-                skos:prefLabel "has continuant part at some time"@en .
-
-
 ###  http://purl.obolibrary.org/obo/BFO_0000181
 obo:BFO_0000181 rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf obo:BFO_0000121 ;
@@ -750,14 +706,6 @@ obo:BFO_0000181 rdf:type owl:ObjectProperty ;
                 skos:definition "b has proper temporal part c =Def c proper temporal part of b"@en ;
                 skos:example "As for has temporal part. "@en ;
                 skos:prefLabel "has proper temporal part"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000039
-obo:IAO_0000039 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:BFO_0000051 ;
-                rdf:type owl:FunctionalProperty ;
-                rdfs:range obo:IAO_0000003 ;
-                rdfs:label "has measurement unit label"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000136
@@ -809,46 +757,6 @@ obo:IAO_0000235 rdf:type owl:ObjectProperty ;
                 rdfs:label "denoted by"@en .
 
 
-###  http://purl.obolibrary.org/obo/IAO_0000413
-obo:IAO_0000413 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:IAO_0000136 ;
-                rdfs:domain obo:IAO_0000416 ;
-                rdfs:range obo:BFO_0000015 ;
-                obo:IAO_0000114 obo:IAO_0000120 ;
-                obo:IAO_0000115 "relates a process to a time-measurement-datum that represents the duration of the process"@en ;
-                obo:IAO_0000117 "Person:Alan Ruttenberg"@en ;
-                rdfs:label "is duration of"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000581
-obo:IAO_0000581 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:BFO_0000051 ;
-                rdf:type owl:FunctionalProperty ;
-                rdfs:domain obo:IAO_0000582 ;
-                rdfs:range obo:IAO_0000416 ;
-                obo:IAO_0000114 obo:IAO_0000123 ;
-                obo:IAO_0000115 "relates a time stamped measurement datum to the time measurement datum that denotes the time when the measurement was taken"@en ;
-                obo:IAO_0000117 "Alan Ruttenberg"@en ;
-                rdfs:label "has time stamp"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000583
-obo:IAO_0000583 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:BFO_0000051 ;
-                rdfs:domain obo:IAO_0000582 ;
-                rdfs:range [ owl:intersectionOf ( obo:IAO_0000109
-                                                  [ rdf:type owl:Class ;
-                                                    owl:complementOf obo:IAO_0000416
-                                                  ]
-                                                ) ;
-                             rdf:type owl:Class
-                           ] ;
-                obo:IAO_0000114 obo:IAO_0000123 ;
-                obo:IAO_0000115 "relates a time stamped measurement datum to the measurement datum that was measured"@en ;
-                obo:IAO_0000117 "Alan Ruttenberg"@en ;
-                rdfs:label "has measurement datum"@en .
-
-
 ###  http://purl.obolibrary.org/obo/RO_0000052
 obo:RO_0000052 rdf:type owl:ObjectProperty ;
                owl:inverseOf obo:RO_0000053 ;
@@ -874,16 +782,6 @@ obo:RO_0000053 rdf:type owl:ObjectProperty ;
                                "is bearer of"@en ;
                obo:RO_0001900 obo:RO_0001901 ;
                rdfs:label "bearer of"@en .
-
-
-###  http://purl.obolibrary.org/obo/RO_0000059
-obo:RO_0000059 rdf:type owl:ObjectProperty ;
-               rdfs:domain obo:BFO_0000020 ;
-               rdfs:range obo:BFO_0000031 ;
-               obo:IAO_0000112 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)."@en ,
-                               "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."@en ;
-               obo:IAO_0000115 "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant."@en ;
-               rdfs:label "concretizes"@en .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0000080
@@ -931,29 +829,6 @@ obo:RO_0000087 rdf:type owl:ObjectProperty ;
                obo:IAO_0000116 "A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists."@en ;
                obo:IAO_0000118 "has_role"@en ;
                rdfs:label "has role"@en .
-
-
-###  http://purl.obolibrary.org/obo/RO_0002350
-obo:RO_0002350 rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf obo:BFO_0000050 ;
-               owl:inverseOf obo:RO_0002351 ;
-               obo:IAO_0000112 "An organism that is a member of a population of organisms" ;
-               obo:IAO_0000115 "is member of is a mereological relation between a item and a collection." ;
-               obo:IAO_0000118 "is member of" ,
-                               "member part of" ;
-               obo:IAO_0000119 "SIO" ;
-               obo:RO_0001900 obo:RO_0001901 ;
-               rdfs:label "member of"@en .
-
-
-###  http://purl.obolibrary.org/obo/RO_0002351
-obo:RO_0002351 rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf obo:BFO_0000051 ;
-               rdf:type owl:IrreflexiveProperty ;
-               obo:IAO_0000115 "has member is a mereological relation between a collection and an item." ;
-               obo:IAO_0000119 "SIO" ;
-               obo:RO_0001900 obo:RO_0001901 ;
-               rdfs:label "has member"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000031
@@ -1529,14 +1404,6 @@ aeon:umbrella_event_of rdf:type owl:ObjectProperty ;
 #################################################################
 #    Data properties
 #################################################################
-
-###  http://purl.obolibrary.org/obo/IAO_0000004
-obo:IAO_0000004 rdf:type owl:DatatypeProperty ,
-                         owl:FunctionalProperty ;
-                rdfs:domain obo:IAO_0000032 ;
-                rdfs:range xsd:double ;
-                rdfs:label "has measurement value"@en .
-
 
 ###  http://www.w3.org/2002/07/owl#topDataProperty
 owl:topDataProperty rdfs:range rdfs:Literal .
@@ -3407,37 +3274,6 @@ obo:GAZ_00000448 rdf:type owl:Class ;
                  aeon:SMW_import_info "[[Category:GAZ]] [[Category:Imported vocabulary]]" .
 
 
-###  http://purl.obolibrary.org/obo/IAO_0000003
-obo:IAO_0000003 rdf:type owl:Class ;
-                rdfs:subClassOf obo:IAO_0000009 ;
-                obo:IAO_0000111 "measurement unit label"@en ;
-                obo:IAO_0000112 "Examples of measurement unit labels are liters, inches, weight per volume."@en ;
-                obo:IAO_0000114 obo:IAO_0000125 ;
-                obo:IAO_0000115 "A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure."@en ;
-                obo:IAO_0000116 """2009-03-16: provenance: a term measurement unit was
-proposed for OBI (OBI_0000176) , edited by Chris Stoeckert and
-Cristian Cocos, and subsequently moved to IAO where the objective for
-which the original term was defined was satisfied with the definition
-of this, different, term."""@en ,
-                                "2009-03-16: review of this term done during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI."@en ;
-                obo:IAO_0000117 "PERSON: Alan Ruttenberg"@en ,
-                                "PERSON: Melanie Courtot"@en ;
-                rdfs:label "measurement unit label"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000009
-obo:IAO_0000009 rdf:type owl:Class ;
-                rdfs:subClassOf obo:IAO_0000030 ;
-                obo:IAO_0000111 "datum label"@en ;
-                obo:IAO_0000114 obo:IAO_0000123 ;
-                obo:IAO_0000115 "A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label"@en ;
-                obo:IAO_0000116 "http://www.golovchenko.org/cgi-bin/wnsearch?q=label#4n"@en ;
-                obo:IAO_0000117 "GROUP: IAO"@en ;
-                obo:IAO_0000232 """9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
-""" ;
-                rdfs:label "datum label"@en .
-
-
 ###  http://purl.obolibrary.org/obo/IAO_0000027
 obo:IAO_0000027 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000030 ;
@@ -3500,28 +3336,6 @@ Previous. An information content entity is a non-realizable information entity t
                 rdfs:label "information content entity"@en .
 
 
-###  http://purl.obolibrary.org/obo/IAO_0000032
-obo:IAO_0000032 rdf:type owl:Class ;
-                rdfs:subClassOf obo:IAO_0000109 ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty obo:IAO_0000039 ;
-                                  owl:minCardinality "1"^^xsd:nonNegativeInteger
-                                ] ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty obo:IAO_0000004 ;
-                                  owl:minCardinality "1"^^xsd:nonNegativeInteger
-                                ] ;
-                obo:IAO_0000112 "10 feet. 3 ml."@en ;
-                obo:IAO_0000114 obo:IAO_0000120 ;
-                obo:IAO_0000115 "A scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label."@en ;
-                obo:IAO_0000116 """2009-03-16: we decided to keep datum singular in scalar measurement datum, as in
-this case we explicitly refer to the singular form"""@en ,
-                                "Would write this as: has_part some 'measurement unit label' and has_part some numeral and has_part exactly 2, except for the fact that this won't let us take advantage of OWL reasoning over the numbers. Instead use has measurment value property to represent the same. Use has measurement unit label (subproperty of has_part) so we can easily say that there is only one of them."@en ;
-                obo:IAO_0000117 "PERSON: Alan Ruttenberg"@en ,
-                                "PERSON: Melanie Courtot"@en ;
-                rdfs:label "scalar measurement datum"@en .
-
-
 ###  http://purl.obolibrary.org/obo/IAO_0000100
 obo:IAO_0000100 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000027 ;
@@ -3538,45 +3352,6 @@ obo:IAO_0000100 rdf:type owl:Class ;
                 rdfs:label "data set"@en .
 
 
-###  http://purl.obolibrary.org/obo/IAO_0000101
-obo:IAO_0000101 rdf:type owl:Class ;
-                rdfs:subClassOf obo:IAO_0000308 ;
-                obo:IAO_0000111 "image"@en ;
-                obo:IAO_0000114 obo:IAO_0000122 ;
-                obo:IAO_0000115 "An image is an affine projection to a two dimensional surface, of measurements of some quality of an entity or entities repeated at regular intervals across a spatial range, where the measurements are represented as color and luminosity on the projected on surface."@en ;
-                obo:IAO_0000117 "person:Alan Ruttenberg"@en ,
-                                "person:Allyson"@en ,
-                                "person:Chris Stoeckert"@en ;
-                obo:IAO_0000119 "OBI_0000030"@en ,
-                                "group:OBI"@en ;
-                rdfs:label "image"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000109
-obo:IAO_0000109 rdf:type owl:Class ;
-                rdfs:subClassOf obo:IAO_0000027 ;
-                obo:IAO_0000111 "measurement datum"@en ;
-                obo:IAO_0000112 "Examples of measurement data are the recoding of the weight of a mouse as {40,mass,\"grams\"}, the recording of an observation of the behavior of the mouse {,process,\"agitated\"}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}."@en ;
-                obo:IAO_0000114 obo:IAO_0000125 ;
-                obo:IAO_0000115 "A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device."@en ;
-                obo:IAO_0000116 "2/2/2009 is_specified_output of some assay?"@en ;
-                obo:IAO_0000117 "person:Chris Stoeckert"@en ;
-                obo:IAO_0000119 "OBI_0000305"@en ,
-                                "group:OBI"@en ;
-                rdfs:label "measurement datum"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000308
-obo:IAO_0000308 rdf:type owl:Class ;
-                rdfs:subClassOf obo:IAO_0000030 ;
-                obo:IAO_0000111 "figure"@en ;
-                obo:IAO_0000112 "Any picture, diagram or table"@en ;
-                obo:IAO_0000114 obo:IAO_0000120 ;
-                obo:IAO_0000115 "An information content entity consisting of a two dimensional arrangement of information content entities such that the arrangement itself is about something."@en ;
-                obo:IAO_0000117 "PERSON: Lawrence Hunter"@en ;
-                rdfs:label "figure"@en .
-
-
 ###  http://purl.obolibrary.org/obo/IAO_0000310
 obo:IAO_0000310 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000030 ;
@@ -3586,27 +3361,6 @@ obo:IAO_0000310 rdf:type owl:Class ;
                 obo:IAO_0000115 "A collection of information content entities intended to be understood together as a whole"@en ;
                 obo:IAO_0000117 "PERSON: Lawrence Hunter"@en ;
                 rdfs:label "document"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000416
-obo:IAO_0000416 rdf:type owl:Class ;
-                rdfs:subClassOf obo:IAO_0000032 ,
-                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                         owl:onProperty obo:IAO_0000039 ;
-                                                         owl:allValuesFrom obo:UO_0000003
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty obo:IAO_0000413 ;
-                                                         owl:allValuesFrom obo:BFO_0000015
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ;
-                obo:IAO_0000114 obo:IAO_0000123 ;
-                obo:IAO_0000115 "A scalar measurement datum that is the result of measuring a temporal interval"@en ;
-                obo:IAO_0000116 "2009/09/28 Alan Ruttenberg. Fucoidan-use-case"@en ;
-                obo:IAO_0000117 "Person:Alan Ruttenberg"@en ;
-                rdfs:label "time measurement datum"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000577
@@ -3673,24 +3427,6 @@ obo:IAO_0000579 rdf:type owl:Class ;
                 obo:IAO_0000118 "CRID registry" ;
                 obo:IAO_0000119 "Original proposal from Bjoern, discussions at IAO calls"@en ;
                 rdfs:label "centrally registered identifier registry"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000582
-obo:IAO_0000582 rdf:type owl:Class ;
-                rdfs:subClassOf obo:IAO_0000109 ,
-                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                         owl:onProperty obo:IAO_0000581 ;
-                                                         owl:someValuesFrom obo:IAO_0000416
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty obo:IAO_0000583 ;
-                                                         owl:someValuesFrom obo:IAO_0000109
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ;
-                obo:IAO_0000114 obo:IAO_0000123 ;
-                rdfs:label "time stamped measurement datum"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0020000
@@ -3786,15 +3522,6 @@ obo:OBI_0100026 rdf:type owl:Class ;
                                 "13-02-2009: OBI doesn't take position as to when an organism starts or ends being an organism - e.g. sperm, foetus. This issue is outside the scope of OBI."@en ;
                 obo:IAO_0000119 "WEB: http://en.wikipedia.org/wiki/Organism"@en ;
                 rdfs:label "organism"@en .
-
-
-###  http://purl.obolibrary.org/obo/UO_0000003
-obo:UO_0000003 rdf:type owl:Class ;
-               rdfs:subClassOf obo:IAO_0000003 ;
-               obo:IAO_0000111 "time unit"^^xsd:string ;
-               obo:IAO_0000115 "A unit which is a standard measure of the dimension in which events occur in sequence."^^xsd:string ;
-               obo:IAO_0000412 obo:uo.owl ;
-               rdfs:label "time unit"^^xsd:string .
 
 
 ###  http://www.w3.org/2004/02/skos/core#Concept
