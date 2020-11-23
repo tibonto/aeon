@@ -562,30 +562,6 @@ obo:BFO_0000067 rdf:type owl:ObjectProperty ;
                 rdfs:label "contains process"@en .
 
 
-###  http://purl.obolibrary.org/obo/BFO_0000082
-obo:BFO_0000082 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:BFO_0000171 ;
-                rdf:type owl:TransitiveProperty ;
-                rdfs:domain [ owl:intersectionOf ( obo:BFO_0000004
-                                                   [ rdf:type owl:Class ;
-                                                     owl:complementOf obo:BFO_0000006
-                                                   ]
-                                                 ) ;
-                              rdf:type owl:Class
-                            ] ;
-                rdfs:range [ owl:intersectionOf ( obo:BFO_0000004
-                                                  [ rdf:type owl:Class ;
-                                                    owl:complementOf obo:BFO_0000006
-                                                  ]
-                                                ) ;
-                             rdf:type owl:Class
-                           ] ;
-                <http://purl.org/dc/elements/1.1/identifier> "235-BFO" ;
-                rdfs:label "located in at all times"@en ;
-                skos:definition "b located in c at all times =Def for all times t, b exists at t implies (b and c are independent continuants and not spatial regions, and the spatial region which b occupies at t is a (proper or improper) continuant part of the spatial region which c occupies at t)"@en ;
-                skos:prefLabel "located in at all times"@en .
-
-
 ###  http://purl.obolibrary.org/obo/BFO_0000110
 obo:BFO_0000110 rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf obo:BFO_0000178 ;
@@ -647,29 +623,6 @@ obo:BFO_0000121 rdf:type owl:ObjectProperty ;
                 skos:definition "b has temporal part c =Def c temporal part of b"@en ;
                 skos:example "Your life has temporal part the first year of your life. "@en ;
                 skos:prefLabel "has temporal part"@en .
-
-
-###  http://purl.obolibrary.org/obo/BFO_0000124
-obo:BFO_0000124 rdf:type owl:ObjectProperty ;
-                owl:inverseOf obo:BFO_0000171 ;
-                rdfs:domain [ owl:intersectionOf ( obo:BFO_0000004
-                                                   [ rdf:type owl:Class ;
-                                                     owl:complementOf obo:BFO_0000006
-                                                   ]
-                                                 ) ;
-                              rdf:type owl:Class
-                            ] ;
-                rdfs:range [ owl:intersectionOf ( obo:BFO_0000004
-                                                  [ rdf:type owl:Class ;
-                                                    owl:complementOf obo:BFO_0000006
-                                                  ]
-                                                ) ;
-                             rdf:type owl:Class
-                           ] ;
-                <http://purl.org/dc/elements/1.1/identifier> "236-BFO" ;
-                rdfs:label "location of at some time"@en ;
-                skos:definition "b location of c at some time =Def for some time t (c located in b at t)"@en ;
-                skos:prefLabel "location of at some time"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000132
@@ -766,52 +719,6 @@ obo:BFO_0000167 rdf:type owl:ObjectProperty ;
                 skos:prefLabel "has participant at all times"@en .
 
 
-###  http://purl.obolibrary.org/obo/BFO_0000170
-obo:BFO_0000170 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:BFO_0000124 ;
-                rdf:type owl:TransitiveProperty ;
-                rdfs:domain [ owl:intersectionOf ( obo:BFO_0000004
-                                                   [ rdf:type owl:Class ;
-                                                     owl:complementOf obo:BFO_0000006
-                                                   ]
-                                                 ) ;
-                              rdf:type owl:Class
-                            ] ;
-                rdfs:range [ owl:intersectionOf ( obo:BFO_0000004
-                                                  [ rdf:type owl:Class ;
-                                                    owl:complementOf obo:BFO_0000006
-                                                  ]
-                                                ) ;
-                             rdf:type owl:Class
-                           ] ;
-                <http://purl.org/dc/elements/1.1/identifier> "237-BFO" ;
-                rdfs:label "location of at all times"@en ;
-                skos:definition "b location of c at all times =Def for all times t, b exists at t implies (c located in b at t)"@en ;
-                skos:prefLabel "location of at all times"@en .
-
-
-###  http://purl.obolibrary.org/obo/BFO_0000171
-obo:BFO_0000171 rdf:type owl:ObjectProperty ;
-                rdfs:domain [ owl:intersectionOf ( obo:BFO_0000004
-                                                   [ rdf:type owl:Class ;
-                                                     owl:complementOf obo:BFO_0000006
-                                                   ]
-                                                 ) ;
-                              rdf:type owl:Class
-                            ] ;
-                rdfs:range [ owl:intersectionOf ( obo:BFO_0000004
-                                                  [ rdf:type owl:Class ;
-                                                    owl:complementOf obo:BFO_0000006
-                                                  ]
-                                                ) ;
-                             rdf:type owl:Class
-                           ] ;
-                <http://purl.org/dc/elements/1.1/identifier> "234-BFO" ;
-                rdfs:label "located in at some time"@en ;
-                skos:definition "b located in c at some time =Def for some time t (b and c are independent continuants and not spatial regions, and the spatial region which b occupies at t is a (proper or improper) continuant part of the spatial region which c occupies at t)"@en ;
-                skos:prefLabel "located in at some time"@en .
-
-
 ###  http://purl.obolibrary.org/obo/BFO_0000174
 obo:BFO_0000174 rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf obo:BFO_0000178 ;
@@ -843,40 +750,6 @@ obo:BFO_0000181 rdf:type owl:ObjectProperty ;
                 skos:definition "b has proper temporal part c =Def c proper temporal part of b"@en ;
                 skos:example "As for has temporal part. "@en ;
                 skos:prefLabel "has proper temporal part"@en .
-
-
-###  http://purl.obolibrary.org/obo/BFO_0000210
-obo:BFO_0000210 rdf:type owl:ObjectProperty ;
-                rdfs:domain [ owl:intersectionOf ( obo:BFO_0000004
-                                                   [ rdf:type owl:Class ;
-                                                     owl:complementOf obo:BFO_0000006
-                                                   ]
-                                                 ) ;
-                              rdf:type owl:Class
-                            ] ;
-                rdfs:range obo:BFO_0000006 ;
-                <http://purl.org/dc/elements/1.1/identifier> "232-BFO" ;
-                rdfs:label "occupies spatial region at some time"@en ;
-                skos:definition "an independent continuant c that is not a spatial region occupies spatial region r at some time =Def for some time t (every continuant part of c occupies some continuant part of r at t and no continuant part of c occupies any spatial region that is not a continuant part of r at t)"@en ;
-                skos:prefLabel "occupies spatial region at some time"@en .
-
-
-###  http://purl.obolibrary.org/obo/BFO_0000211
-obo:BFO_0000211 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:BFO_0000210 ;
-                rdf:type owl:FunctionalProperty ;
-                rdfs:domain [ owl:intersectionOf ( obo:BFO_0000004
-                                                   [ rdf:type owl:Class ;
-                                                     owl:complementOf obo:BFO_0000006
-                                                   ]
-                                                 ) ;
-                              rdf:type owl:Class
-                            ] ;
-                rdfs:range obo:BFO_0000006 ;
-                <http://purl.org/dc/elements/1.1/identifier> "233-BFO" ;
-                rdfs:label "occupies spatial region at all times"@en ;
-                skos:definition "an independent continuant c that is not a spatial region occupies spatial region r at all times =Def for all times t, b exists at t implies (every continuant part of c occupies some continuant part of r at t and no continuant part of c occupies any spatial region that is not a continuant part of r at t)"@en ;
-                skos:prefLabel "occupies spatial region at all times"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000039
@@ -976,40 +849,6 @@ obo:IAO_0000583 rdf:type owl:ObjectProperty ;
                 rdfs:label "has measurement datum"@en .
 
 
-###  http://purl.obolibrary.org/obo/OBI_0000293
-obo:OBI_0000293 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:RO_0000057 ;
-                rdfs:domain obo:OBI_0000011 ;
-                obo:IAO_0000111 "has_specified_input"@en ,
-                                "has_specified_input"^^xsd:string ;
-                obo:IAO_0000112 "see is_input_of example_of_usage"@en ;
-                obo:IAO_0000114 obo:IAO_0000122 ;
-                obo:IAO_0000115 "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of."@en ;
-                obo:IAO_0000116 "8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how 'has participant' works."^^xsd:string ;
-                obo:IAO_0000117 "PERSON: Alan Ruttenberg"@en ,
-                                "PERSON: Bjoern Peters"^^xsd:string ,
-                                "PERSON: Larry Hunter"^^xsd:string ,
-                                "PERSON: Melanie Coutot"^^xsd:string ;
-                obo:IAO_0000412 obo:obi.owl ;
-                rdfs:label "has_specified_input"@en .
-
-
-###  http://purl.obolibrary.org/obo/OBI_0000299
-obo:OBI_0000299 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:RO_0000057 ;
-                rdfs:domain obo:OBI_0000011 ;
-                obo:IAO_0000111 "has_specified_output"@en ,
-                                "has_specified_output"^^xsd:string ;
-                obo:IAO_0000114 obo:IAO_0000122 ;
-                obo:IAO_0000115 "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."@en ;
-                obo:IAO_0000117 "PERSON: Alan Ruttenberg"@en ,
-                                "PERSON: Bjoern Peters"^^xsd:string ,
-                                "PERSON: Larry Hunter"^^xsd:string ,
-                                "PERSON: Melanie Courtot"^^xsd:string ;
-                obo:IAO_0000412 obo:obi.owl ;
-                rdfs:label "has_specified_output"@en .
-
-
 ###  http://purl.obolibrary.org/obo/RO_0000052
 obo:RO_0000052 rdf:type owl:ObjectProperty ;
                owl:inverseOf obo:RO_0000053 ;
@@ -1035,46 +874,6 @@ obo:RO_0000053 rdf:type owl:ObjectProperty ;
                                "is bearer of"@en ;
                obo:RO_0001900 obo:RO_0001901 ;
                rdfs:label "bearer of"@en .
-
-
-###  http://purl.obolibrary.org/obo/RO_0000056
-obo:RO_0000056 rdf:type owl:ObjectProperty ;
-               owl:inverseOf obo:RO_0000057 ;
-               rdfs:domain obo:BFO_0000002 ;
-               rdfs:range obo:BFO_0000003 ;
-               obo:IAO_0000111 "participates in"@en ;
-               obo:IAO_0000112 "this blood clot participates in this blood coagulation"@en ,
-                               "this input material (or this output material) participates in this process"@en ,
-                               "this investigator participates in this investigation"@en ;
-               obo:IAO_0000115 "a relation between a continuant and a process, in which the continuant is somehow involved in the process"@en ;
-               obo:IAO_0000118 "participates_in"@en ;
-               rdfs:label "participates in"@en .
-
-
-###  http://purl.obolibrary.org/obo/RO_0000057
-obo:RO_0000057 rdf:type owl:ObjectProperty ;
-               rdfs:domain obo:BFO_0000003 ;
-               rdfs:range obo:BFO_0000002 ;
-               obo:IAO_0000111 "has participant"@en ;
-               obo:IAO_0000112 "this blood coagulation has participant this blood clot"@en ,
-                               "this investigation has participant this investigator"@en ,
-                               "this process has participant this input material (or this output material)"@en ;
-               obo:IAO_0000115 "a relation between a process and a continuant, in which the continuant is somehow involved in the process"@en ;
-               obo:IAO_0000116 "Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time."@en ;
-               obo:IAO_0000118 "has_participant"@en ;
-               <http://purl.org/dc/elements/1.1/source> "http://www.obofoundry.org/ro/#OBO_REL:has_participant" ;
-               rdfs:label "has participant"@en .
-
-
-###  http://purl.obolibrary.org/obo/RO_0000058
-obo:RO_0000058 rdf:type owl:ObjectProperty ;
-               owl:inverseOf obo:RO_0000059 ;
-               rdfs:domain obo:BFO_0000031 ;
-               rdfs:range obo:BFO_0000020 ;
-               obo:IAO_0000112 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)."@en ,
-                               "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."@en ;
-               obo:IAO_0000115 "A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants."@en ;
-               rdfs:label "is concretized as"@en .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0000059
@@ -1132,65 +931,6 @@ obo:RO_0000087 rdf:type owl:ObjectProperty ;
                obo:IAO_0000116 "A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists."@en ;
                obo:IAO_0000118 "has_role"@en ;
                rdfs:label "has role"@en .
-
-
-###  http://purl.obolibrary.org/obo/RO_0001015
-obo:RO_0001015 rdf:type owl:ObjectProperty ;
-               owl:inverseOf obo:RO_0001025 ;
-               rdf:type owl:TransitiveProperty ;
-               obo:IAO_0000111 "is location of"@en ;
-               obo:IAO_0000112 "my head is the location of my brain"@en ,
-                               "this cage is the location of this rat"@en ;
-               obo:IAO_0000115 "a relation between two independent continuants, the location and the target, in which the target is entirely within the location"@en ;
-               obo:IAO_0000116 "Most location relations will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"@en ;
-               obo:IAO_0000118 "location_of"@en ;
-               obo:RO_0001900 obo:RO_0001901 ;
-               rdfs:label "location of"@en .
-
-
-###  http://purl.obolibrary.org/obo/RO_0001025
-obo:RO_0001025 rdf:type owl:ObjectProperty ,
-                        owl:TransitiveProperty ;
-               rdfs:domain obo:BFO_0000004 ,
-                           [ owl:intersectionOf ( obo:BFO_0000004
-                                                  [ rdf:type owl:Class ;
-                                                    owl:complementOf obo:BFO_0000006
-                                                  ]
-                                                ) ;
-                             rdf:type owl:Class
-                           ] ;
-               rdfs:range obo:BFO_0000004 ,
-                          [ owl:intersectionOf ( obo:BFO_0000004
-                                                 [ rdf:type owl:Class ;
-                                                   owl:complementOf obo:BFO_0000006
-                                                 ]
-                                               ) ;
-                            rdf:type owl:Class
-                          ] ;
-               obo:IAO_0000111 "located in"@en ;
-               obo:IAO_0000112 "my brain is located in my head"@en ,
-                               "this rat is located in this cage"@en ;
-               obo:IAO_0000115 "a relation between two independent continuants, the target and the location, in which the target is entirely within the location"@en ;
-               obo:IAO_0000116 "Location as a relation between instances: The primitive instance-level relation c located_in r at t reflects the fact that each continuant is at any given time associated with exactly one spatial region, namely its exact location. Following we can use this relation to define a further instance-level location relation - not between a continuant and the region which it exactly occupies, but rather between one continuant and another. c is located in c1, in this sense, whenever the spatial region occupied by c is part_of the spatial region occupied by c1.    Note that this relation comprehends both the relation of exact location between one continuant and another which obtains when r and r1 are identical (for example, when a portion of fluid exactly fills a cavity), as well as those sorts of inexact location relations which obtain, for example, between brain and head or between ovum and uterus"@en ,
-                               "Most location relations will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"@en ;
-               obo:IAO_0000118 "located_in"@en ;
-               obo:RO_0001900 obo:RO_0001901 ;
-               <http://purl.org/dc/elements/1.1/source> "http://www.obofoundry.org/ro/#OBO_REL:located_in" ;
-               rdfs:label "located in"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource obo:RO_0001025 ;
-   owl:annotatedProperty rdfs:domain ;
-   owl:annotatedTarget obo:BFO_0000004 ;
-   obo:IAO_0000116 "This is redundant with the more specific 'independent and not spatial region' constraint. We leave in the redundant axiom for use with reasoners that do not use negation."
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource obo:RO_0001025 ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget obo:BFO_0000004 ;
-   obo:IAO_0000116 "This is redundant with the more specific 'independent and not spatial region' constraint. We leave in the redundant axiom for use with reasoners that do not use negation."
- ] .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0002350
