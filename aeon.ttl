@@ -3664,6 +3664,25 @@ obo:IAO_0020000 rdf:type owl:Class ;
                 rdfs:label "identifier"@en .
 
 
+###  http://purl.obolibrary.org/obo/IAO_0020015
+obo:IAO_0020015 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( obo:IAO_0020000
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty obo:IAO_0000219 ;
+                                                             owl:allValuesFrom obo:NCBITaxon_9606
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf obo:IAO_0020000 ;
+                obo:IAO_0000115 "A personal name is a proper name identifying an individual person."@en ;
+                obo:IAO_0000117 "Mathias Brochhausen" ;
+                obo:IAO_0000119 "http://en.wikipedia.org/wiki/Personal_name" ;
+                rdfs:comment "Personal names \"today usually comprises a given name bestowed at birth or at a young age plus a surname. It is nearly universal for a human to have a name; except in rare cases, for example feral children growing up in isolation, or infants orphaned by natural disaster for whom no written record survives.[citation needed] The Convention on the Rights of the Child specifies that a child has the right from birth to a name. Certain isolated tribes, such as the Machiguenga of the Amazon, also lack personal names.\" (http://en.wikipedia.org/wiki/Personal_name)"@en ,
+                             "Sep 29, 2016: The comment that including the wikipedia definition of personal name is not to be interpreted in a way that restricts this class to only contain strings of letters. A numerical or alphanumerical identifier that denotes a human is being is a personal name, too. (MB)"@en ;
+                rdfs:label "personal name"@en .
+
+
 ###  http://purl.obolibrary.org/obo/ICO_0000048
 obo:ICO_0000048 rdf:type owl:Class ;
                 rdfs:subClassOf obo:OBI_0000245 ;
