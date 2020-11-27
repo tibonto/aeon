@@ -2273,27 +2273,6 @@ obo:BFO_0000003 rdf:type owl:Class ;
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000003 ;
-   owl:annotatedProperty obo:IAO_0000601 ;
-   owl:annotatedTarget "b is an occurrent entity iff b is an entity that has temporal parts. (axiom label in BFO2 Reference: [079-001])"@en ;
-   obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/079-001>
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource obo:BFO_0000003 ;
-   owl:annotatedProperty obo:IAO_0000602 ;
-   owl:annotatedTarget "(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] " ;
-   obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/108-001>
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource obo:BFO_0000003 ;
-   owl:annotatedProperty obo:IAO_0000602 ;
-   owl:annotatedTarget "(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] " ;
-   obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/079-001>
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource obo:BFO_0000003 ;
    owl:annotatedProperty obo:IAO_0000116 ;
    owl:annotatedTarget "Occurrent doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. An example would be the sum of a process and the process boundary of another process."@en ;
    obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/0000006> ;
@@ -2319,6 +2298,27 @@ obo:BFO_0000003 rdf:type owl:Class ;
    owl:annotatedProperty obo:IAO_0000601 ;
    owl:annotatedTarget "Every occurrent occupies_spatiotemporal_region some spatiotemporal region. (axiom label in BFO2 Reference: [108-001])"@en ;
    obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/108-001>
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:BFO_0000003 ;
+   owl:annotatedProperty obo:IAO_0000601 ;
+   owl:annotatedTarget "b is an occurrent entity iff b is an entity that has temporal parts. (axiom label in BFO2 Reference: [079-001])"@en ;
+   obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/079-001>
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:BFO_0000003 ;
+   owl:annotatedProperty obo:IAO_0000602 ;
+   owl:annotatedTarget "(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] " ;
+   obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/108-001>
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:BFO_0000003 ;
+   owl:annotatedProperty obo:IAO_0000602 ;
+   owl:annotatedTarget "(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] " ;
+   obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/079-001>
  ] .
 
 
