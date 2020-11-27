@@ -868,6 +868,7 @@ It mainly serves as an ordering parent property for known centrally registered i
 aeon:AEON_0000032 rdf:type owl:ObjectProperty ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:label "has event type"@en ;
+                  rdfs:range aeon:AEON_0000004 ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"event_type\"}, \"openresearch\": {\"uri\": null, \"label\": \"Type\"}}"^^xsd:string ;
                   aeon:SMW_datatype "Text" ;
                   aeon:SMW_import_info """The allowed value list for this property is defined in [[MediaWiki:Smw_allows_list_has_event_type]].
@@ -3597,6 +3598,14 @@ aeon:AEON_0000003 rdf:type owl:Class ;
                   rdfs:label "ConfIDent ID"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000004
+aeon:AEON_0000004 rdf:type owl:Class ;
+                  rdfs:subClassOf skos:Concept ;
+                  rdfs:label "event type"@en ;
+                  aeon:SMW_datatype "Category" ;
+                  aeon:SMW_import_info "The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_has_event_type]]. [[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000005
