@@ -831,28 +831,6 @@ obo:RO_0000087 rdf:type owl:ObjectProperty ;
                rdfs:label "has role"@en .
 
 
-###  https://github.com/tibonto/aeon#AEON_0000027
-aeon:AEON_0000027 rdf:type owl:ObjectProperty ;
-                  rdfs:domain [ rdf:type owl:Class ;
-                                owl:unionOf ( aeon:AEON_0000001
-                                              aeon:AEON_0000002
-                                            )
-                              ] ;
-                  rdfs:range skos:Concept ;
-                  rdfs:label "has academic field"@en .
-
-
-###  https://github.com/tibonto/aeon#AEON_0000028
-aeon:AEON_0000028 rdf:type owl:ObjectProperty ;
-                  rdfs:domain [ rdf:type owl:Class ;
-                                owl:unionOf ( aeon:AEON_0000001
-                                              aeon:AEON_0000002
-                                            )
-                              ] ;
-                  rdfs:range skos:Concept ;
-                  rdfs:label "has topic"@en .
-
-
 ###  https://github.com/tibonto/aeon#AEON_0000031
 aeon:AEON_0000031 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:has_identifier ;
@@ -883,6 +861,28 @@ aeon:AEON_0000033 rdf:type owl:ObjectProperty ;
                   rdfs:range aeon:AEON_0000034 ;
                   obo:IAO_0000117 "Philip Stroemert"^^xsd:string ;
                   rdfs:label "has distributed identifier"@en .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000040
+aeon:AEON_0000040 rdf:type owl:ObjectProperty ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( aeon:AEON_0000001
+                                              aeon:AEON_0000002
+                                            )
+                              ] ;
+                  rdfs:range aeon:AEON_0000027 ;
+                  rdfs:label "has academic field"@en .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000041
+aeon:AEON_0000041 rdf:type owl:ObjectProperty ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( aeon:AEON_0000001
+                                              aeon:AEON_0000002
+                                            )
+                              ] ;
+                  rdfs:range aeon:AEON_0000028 ;
+                  rdfs:label "has topic"@en .
 
 
 ###  https://github.com/tibonto/aeon#collocated_event_of
@@ -3802,6 +3802,23 @@ aeon:AEON_0000025 rdf:type owl:Class ;
                   rdfs:label "event venue"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000027
+aeon:AEON_0000027 rdf:type owl:Class ;
+                  rdfs:subClassOf skos:Concept ;
+                  obo:IAO_0000115 "Subject is a skos:Concept, which most likely comes from a controlled vocabulary (e.g. DDC), and which is used to describe the research field of an academic event or event series."@en ;
+                  rdfs:label "academic field"@en ;
+                  aeon:SMW_datatype "Category" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000028
+aeon:AEON_0000028 rdf:type owl:Class ;
+                  rdfs:subClassOf skos:Concept ;
+                  obo:IAO_0000115 "Topic is a skos:Concept that describes the central theme of an academic event or event series." ;
+                  obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
+                  rdfs:label "topic"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000029
