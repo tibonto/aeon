@@ -831,6 +831,28 @@ obo:RO_0000087 rdf:type owl:ObjectProperty ;
                rdfs:label "has role"@en .
 
 
+###  https://github.com/tibonto/aeon#AEON_0000027
+aeon:AEON_0000027 rdf:type owl:ObjectProperty ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( aeon:AEON_0000001
+                                              aeon:AEON_0000002
+                                            )
+                              ] ;
+                  rdfs:range skos:Concept ;
+                  rdfs:label "has academic field"@en .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000028
+aeon:AEON_0000028 rdf:type owl:ObjectProperty ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( aeon:AEON_0000001
+                                              aeon:AEON_0000002
+                                            )
+                              ] ;
+                  rdfs:range skos:Concept ;
+                  rdfs:label "has topic"@en .
+
+
 ###  https://github.com/tibonto/aeon#AEON_0000031
 aeon:AEON_0000031 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
@@ -3784,24 +3806,6 @@ aeon:AEON_0000025 rdf:type owl:Class ;
                   rdfs:label "event venue"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#AEON_0000027
-aeon:AEON_0000027 rdf:type owl:Class ;
-                  rdfs:subClassOf skos:Concept ;
-                  obo:IAO_0000115 "The subject of an academic event or event series is a skos:Concept from a controlled vocabulary, which is used to denote the academic field of the event or event series." ;
-                  rdfs:label "subject" ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#AEON_0000028
-aeon:AEON_0000028 rdf:type owl:Class ;
-                  rdfs:subClassOf skos:Concept ;
-                  obo:IAO_0000115 "The topic of an academic event or event series is a skos:Concept that denotes what the event or series is about." ;
-                  obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
-                  <http://purl.org/dc/elements/1.1/date> "2020-09-25T12:52:39Z"^^xsd:dateTime ;
-                  rdfs:label "topic" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000029
