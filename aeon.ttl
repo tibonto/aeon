@@ -3895,24 +3895,77 @@ aeon:committee rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  https://github.com/tibonto/aeon#Colloquium
-aeon:Colloquium rdf:type owl:NamedIndividual ,
-                         aeon:AEON_0000004 .
+
+###  https://github.com/tibonto/aeon#AEON_0010000
+aeon:AEON_0010000 rdf:type owl:NamedIndividual ,
+                           aeon:AEON_0000004 ;
+                  rdfs:label "Colloquium" .
 
 
-###  https://github.com/tibonto/aeon#Conference
-aeon:Conference rdf:type owl:NamedIndividual ,
-                         aeon:AEON_0000004 .
+###  https://github.com/tibonto/aeon#AEON_0010001
+aeon:AEON_0010001 rdf:type owl:NamedIndividual ,
+                           aeon:AEON_0000004 ;
+                  rdfs:label "Conference" .
 
 
-###  https://github.com/tibonto/aeon#Forum
-aeon:Forum rdf:type owl:NamedIndividual ,
-                    aeon:AEON_0000004 .
+###  https://github.com/tibonto/aeon#AEON_0010002
+aeon:AEON_0010002 rdf:type owl:NamedIndividual ,
+                           aeon:AEON_0000004 ;
+                  rdfs:label "Forum" .
 
 
-###  https://github.com/tibonto/aeon#Hackathon
-aeon:Hackathon rdf:type owl:NamedIndividual ,
-                        aeon:AEON_0000004 .
+###  https://github.com/tibonto/aeon#AEON_0010003
+aeon:AEON_0010003 rdf:type owl:NamedIndividual ,
+                           aeon:AEON_0000004 ;
+                  rdfs:label "Hackathon" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0010004
+aeon:AEON_0010004 rdf:type owl:NamedIndividual ,
+                           aeon:AEON_0000004 ;
+                  rdfs:label "Seminar" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0010005
+aeon:AEON_0010005 rdf:type owl:NamedIndividual ,
+                           aeon:AEON_0000004 ;
+                  rdfs:label "Session" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0010006
+aeon:AEON_0010006 rdf:type owl:NamedIndividual ,
+                           aeon:AEON_0000004 ;
+                  rdfs:label "Symposium" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0010007
+aeon:AEON_0010007 rdf:type owl:NamedIndividual ,
+                           aeon:AEON_0000004 ;
+                  rdfs:label "Talk" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0010008
+aeon:AEON_0010008 rdf:type owl:NamedIndividual ,
+                           aeon:AEON_0000004 ;
+                  rdfs:label "Track" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0010009
+aeon:AEON_0010009 rdf:type owl:NamedIndividual ,
+                           aeon:AEON_0000004 ;
+                  rdfs:label "Tutorial" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0010010
+aeon:AEON_0010010 rdf:type owl:NamedIndividual ,
+                           aeon:AEON_0000004 ;
+                  rdfs:label "Workshop" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0010011
+aeon:AEON_0010011 rdf:type owl:NamedIndividual ,
+                           aeon:AEON_0000004 ;
+                  rdfs:label "other Type of Event" .
 
 
 ###  https://github.com/tibonto/aeon#Lisbon
@@ -3929,7 +3982,7 @@ aeon:PIDapalooza rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#PIDapalooza2020
 aeon:PIDapalooza2020 rdf:type owl:NamedIndividual ,
                               aeon:AEON_0000001 ;
-                     aeon:AEON_0000032 aeon:Conference ;
+                     aeon:AEON_0000032 aeon:AEON_0010001 ;
                      aeon:has_WDQID <https://www.wikidata.org/wiki/Q65929359> ;
                      aeon:has_identifier aeon:_ConfIDentID_1 ;
                      aeon:has_speaker aeon:_Person_1 ;
@@ -3947,41 +4000,6 @@ aeon:PIDapalooza2020 rdf:type owl:NamedIndividual ,
 
 ###  https://github.com/tibonto/aeon#Portugal
 aeon:Portugal rdf:type owl:NamedIndividual .
-
-
-###  https://github.com/tibonto/aeon#Seminar
-aeon:Seminar rdf:type owl:NamedIndividual ,
-                      aeon:AEON_0000004 .
-
-
-###  https://github.com/tibonto/aeon#Session
-aeon:Session rdf:type owl:NamedIndividual ,
-                      aeon:AEON_0000004 .
-
-
-###  https://github.com/tibonto/aeon#Symposium
-aeon:Symposium rdf:type owl:NamedIndividual ,
-                        aeon:AEON_0000004 .
-
-
-###  https://github.com/tibonto/aeon#Talk
-aeon:Talk rdf:type owl:NamedIndividual ,
-                   aeon:AEON_0000004 .
-
-
-###  https://github.com/tibonto/aeon#Track
-aeon:Track rdf:type owl:NamedIndividual ,
-                    aeon:AEON_0000004 .
-
-
-###  https://github.com/tibonto/aeon#Tutorial
-aeon:Tutorial rdf:type owl:NamedIndividual ,
-                       aeon:AEON_0000004 .
-
-
-###  https://github.com/tibonto/aeon#Workshop
-aeon:Workshop rdf:type owl:NamedIndividual ,
-                       aeon:AEON_0000004 .
 
 
 ###  https://github.com/tibonto/aeon#_ConfIDentID_1
@@ -4051,18 +4069,18 @@ aeon:other_EventType rdf:type owl:NamedIndividual ,
 
 
 [ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( aeon:Colloquium
-                        aeon:Conference
-                        aeon:Forum
-                        aeon:Hackathon
-                        aeon:Seminar
-                        aeon:Session
-                        aeon:Symposium
-                        aeon:Talk
-                        aeon:Track
-                        aeon:Tutorial
-                        aeon:Workshop
-                        aeon:other_EventType
+  owl:distinctMembers ( aeon:AEON_0010000
+                        aeon:AEON_0010001
+                        aeon:AEON_0010002
+                        aeon:AEON_0010003
+                        aeon:AEON_0010004
+                        aeon:AEON_0010005
+                        aeon:AEON_0010006
+                        aeon:AEON_0010007
+                        aeon:AEON_0010008
+                        aeon:AEON_0010009
+                        aeon:AEON_0010010
+                        aeon:AEON_0010011
                       )
 ] .
 
