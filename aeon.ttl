@@ -3895,36 +3895,6 @@ aeon:committee rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  https://github.com/tibonto/aeon#AEON_0000032
-aeon:AEON_0000032 rdf:type owl:NamedIndividual ;
-                  <http://purl.org/dc/elements/1.1/creator> "StroemertP"^^xsd:string ;
-                  <http://purl.org/dc/elements/1.1/date> "1605891687588"^^xsd:long ;
-                  rdfs:label "_PIDapalooza_Speaker_1"@de .
-
-
-###  https://github.com/tibonto/aeon#AEON_0000035
-aeon:AEON_0000035 rdf:type owl:NamedIndividual ;
-                  obo:IAO_0000117 "StroemertP"^^xsd:string ;
-                  <http://purl.org/dc/elements/1.1/date> "2020-11-20T17:34:24Z"^^xsd:dateTime ;
-                  rdfs:label "_did_1"@de .
-
-
-###  https://github.com/tibonto/aeon#AEON_0000040
-aeon:AEON_0000040 rdf:type owl:NamedIndividual ;
-                  obo:IAO_0000117 "StroemertP"^^xsd:string ;
-                  <http://purl.org/dc/elements/1.1/date> "2020-11-23T11:35:42Z"^^xsd:dateTime ;
-                  rdfs:label "_gold_sponsor_1"@de .
-
-
-###  https://github.com/tibonto/aeon#AEON_0000041
-aeon:AEON_0000041 rdf:type owl:NamedIndividual ;
-                  obo:RO_0000087 aeon:AEON_0000040 ;
-                  aeon:organizational_name "Datacite" ;
-                  obo:IAO_0000117 "StroemertP"^^xsd:string ;
-                  <http://purl.org/dc/elements/1.1/date> "2020-11-23T11:36:38Z"^^xsd:dateTime ;
-                  rdfs:label "_organization_1"@de .
-
-
 ###  https://github.com/tibonto/aeon#Colloquium
 aeon:Colloquium rdf:type owl:NamedIndividual ,
                          aeon:AEON_0000004 .
@@ -3959,13 +3929,10 @@ aeon:PIDapalooza rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#PIDapalooza2020
 aeon:PIDapalooza2020 rdf:type owl:NamedIndividual ,
                               aeon:AEON_0000001 ;
-                     obo:BFO_0000055 aeon:AEON_0000032 ,
-                                     aeon:AEON_0000040 ;
+                     aeon:AEON_0000032 aeon:Conference ;
                      aeon:has_WDQID <https://www.wikidata.org/wiki/Q65929359> ;
-                     aeon:has_event_type aeon:Conference ;
                      aeon:has_identifier aeon:_ConfIDentID_1 ;
                      aeon:has_speaker aeon:_Person_1 ;
-                     aeon:has_sponsor aeon:AEON_0000041 ;
                      aeon:occurs_in_city aeon:Lisbon ;
                      aeon:occurs_in_country aeon:Portugal ;
                      aeon:part_of_series aeon:PIDapalooza ;
@@ -4025,10 +3992,12 @@ aeon:_ConfIDentID_1 rdf:type owl:NamedIndividual ;
                     rdfs:comment obo:IAO_0000002 .
 
 
+###  https://github.com/tibonto/aeon#_PIDapalooza_Speaker_1
+aeon:_PIDapalooza_Speaker_1 rdf:type owl:NamedIndividual .
+
+
 ###  https://github.com/tibonto/aeon#_Person_1
 aeon:_Person_1 rdf:type owl:NamedIndividual ;
-               obo:RO_0000087 aeon:AEON_0000032 ;
-               aeon:AEON_0000033 aeon:AEON_0000035 ;
                aeon:has_ORCID <https://orcid.org/0000-0002-1595-3213> ;
                aeon:first_name "Philip"^^xsd:string ;
                aeon:last_name "Strömert"^^xsd:string ;
