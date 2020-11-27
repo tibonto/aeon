@@ -1,5 +1,10 @@
 Change history:
 
+v0.2.13 - date: 20.11.2020
+	* add change_log.txt
+	* add IAO_0000310 as range
+	* delete aeon:has_internal_identifer
+
 
 v0.2.12 - date: 20.11.2020
 	* refactor aeon:Fee --> AEON_0000030

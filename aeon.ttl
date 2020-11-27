@@ -15,7 +15,7 @@
 @base <https://github.com/tibonto/aeon> .
 
 <https://github.com/tibonto/aeon> rdf:type owl:Ontology ;
-                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.2.12> ;
+                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.2.13> ;
                                    <http://purl.org/dc/elements/1.1/contributor> "Christian Hauschke" ,
                                                                                  "Christoph Lange" ,
                                                                                  "Michael Conlon" ,
@@ -23,7 +23,7 @@
                                    <http://purl.org/dc/elements/1.1/creator> "ConfIDent project" ;
                                    <http://purl.org/dc/elements/1.1/description> "The Academic Event Ontology (AEON) is used to represent information regarding academic events. The ontology supports the identification, development, management, evaluation, and impact assessment of events, components of events and event series, as well as identification and reuse of works presented or developed at events. The ontology is independent of knowledge, creative domain, or topics related to events. AEON is focused on events and assumes the representation of many entities associated with events such as attendees, locations, academic works, datetimes, and processes are defined in compatible ontologies." ;
                                    <http://purl.org/dc/elements/1.1/title> "Academic Event Ontology"@en ;
-                                   owl:versionInfo "v0.2.12" .
+                                   owl:versionInfo "v0.2.13" .
 
 #################################################################
 #    Annotation properties
@@ -562,53 +562,6 @@ obo:BFO_0000067 rdf:type owl:ObjectProperty ;
                 rdfs:label "contains process"@en .
 
 
-###  http://purl.obolibrary.org/obo/BFO_0000082
-obo:BFO_0000082 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:BFO_0000171 ;
-                rdf:type owl:TransitiveProperty ;
-                rdfs:domain [ owl:intersectionOf ( obo:BFO_0000004
-                                                   [ rdf:type owl:Class ;
-                                                     owl:complementOf obo:BFO_0000006
-                                                   ]
-                                                 ) ;
-                              rdf:type owl:Class
-                            ] ;
-                rdfs:range [ owl:intersectionOf ( obo:BFO_0000004
-                                                  [ rdf:type owl:Class ;
-                                                    owl:complementOf obo:BFO_0000006
-                                                  ]
-                                                ) ;
-                             rdf:type owl:Class
-                           ] ;
-                <http://purl.org/dc/elements/1.1/identifier> "235-BFO" ;
-                rdfs:label "located in at all times"@en ;
-                skos:definition "b located in c at all times =Def for all times t, b exists at t implies (b and c are independent continuants and not spatial regions, and the spatial region which b occupies at t is a (proper or improper) continuant part of the spatial region which c occupies at t)"@en ;
-                skos:prefLabel "located in at all times"@en .
-
-
-###  http://purl.obolibrary.org/obo/BFO_0000110
-obo:BFO_0000110 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:BFO_0000178 ;
-                rdf:type owl:TransitiveProperty ;
-                rdfs:domain obo:BFO_0000002 ;
-                rdfs:range obo:BFO_0000002 ;
-                <http://purl.org/dc/elements/1.1/identifier> "223-BFO" ;
-                rdfs:label "has continuant part at all times"@en ;
-                skos:definition "b has continuant part c at all times =Def for all times t, b exists at t implies (b and c are continuants & b is a part of c at t)"@en ;
-                skos:prefLabel "has continuant part at all times"@en .
-
-
-###  http://purl.obolibrary.org/obo/BFO_0000115
-obo:BFO_0000115 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:BFO_0000178 ;
-                rdfs:domain obo:BFO_0000040 ;
-                rdfs:range obo:BFO_0000040 ;
-                <http://purl.org/dc/elements/1.1/identifier> "230-BFO" ;
-                rdfs:label "has member part at some time"@en ;
-                skos:definition "b has member part c at some time =Def for some time t (c member part of b at t)"@en ;
-                skos:prefLabel "has member part at some time"@en .
-
-
 ###  http://purl.obolibrary.org/obo/BFO_0000117
 obo:BFO_0000117 rdf:type owl:ObjectProperty ;
                 owl:inverseOf obo:BFO_0000132 ;
@@ -647,29 +600,6 @@ obo:BFO_0000121 rdf:type owl:ObjectProperty ;
                 skos:definition "b has temporal part c =Def c temporal part of b"@en ;
                 skos:example "Your life has temporal part the first year of your life. "@en ;
                 skos:prefLabel "has temporal part"@en .
-
-
-###  http://purl.obolibrary.org/obo/BFO_0000124
-obo:BFO_0000124 rdf:type owl:ObjectProperty ;
-                owl:inverseOf obo:BFO_0000171 ;
-                rdfs:domain [ owl:intersectionOf ( obo:BFO_0000004
-                                                   [ rdf:type owl:Class ;
-                                                     owl:complementOf obo:BFO_0000006
-                                                   ]
-                                                 ) ;
-                              rdf:type owl:Class
-                            ] ;
-                rdfs:range [ owl:intersectionOf ( obo:BFO_0000004
-                                                  [ rdf:type owl:Class ;
-                                                    owl:complementOf obo:BFO_0000006
-                                                  ]
-                                                ) ;
-                             rdf:type owl:Class
-                           ] ;
-                <http://purl.org/dc/elements/1.1/identifier> "236-BFO" ;
-                rdfs:label "location of at some time"@en ;
-                skos:definition "b location of c at some time =Def for some time t (c located in b at t)"@en ;
-                skos:prefLabel "location of at some time"@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000132
@@ -766,73 +696,6 @@ obo:BFO_0000167 rdf:type owl:ObjectProperty ;
                 skos:prefLabel "has participant at all times"@en .
 
 
-###  http://purl.obolibrary.org/obo/BFO_0000170
-obo:BFO_0000170 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:BFO_0000124 ;
-                rdf:type owl:TransitiveProperty ;
-                rdfs:domain [ owl:intersectionOf ( obo:BFO_0000004
-                                                   [ rdf:type owl:Class ;
-                                                     owl:complementOf obo:BFO_0000006
-                                                   ]
-                                                 ) ;
-                              rdf:type owl:Class
-                            ] ;
-                rdfs:range [ owl:intersectionOf ( obo:BFO_0000004
-                                                  [ rdf:type owl:Class ;
-                                                    owl:complementOf obo:BFO_0000006
-                                                  ]
-                                                ) ;
-                             rdf:type owl:Class
-                           ] ;
-                <http://purl.org/dc/elements/1.1/identifier> "237-BFO" ;
-                rdfs:label "location of at all times"@en ;
-                skos:definition "b location of c at all times =Def for all times t, b exists at t implies (c located in b at t)"@en ;
-                skos:prefLabel "location of at all times"@en .
-
-
-###  http://purl.obolibrary.org/obo/BFO_0000171
-obo:BFO_0000171 rdf:type owl:ObjectProperty ;
-                rdfs:domain [ owl:intersectionOf ( obo:BFO_0000004
-                                                   [ rdf:type owl:Class ;
-                                                     owl:complementOf obo:BFO_0000006
-                                                   ]
-                                                 ) ;
-                              rdf:type owl:Class
-                            ] ;
-                rdfs:range [ owl:intersectionOf ( obo:BFO_0000004
-                                                  [ rdf:type owl:Class ;
-                                                    owl:complementOf obo:BFO_0000006
-                                                  ]
-                                                ) ;
-                             rdf:type owl:Class
-                           ] ;
-                <http://purl.org/dc/elements/1.1/identifier> "234-BFO" ;
-                rdfs:label "located in at some time"@en ;
-                skos:definition "b located in c at some time =Def for some time t (b and c are independent continuants and not spatial regions, and the spatial region which b occupies at t is a (proper or improper) continuant part of the spatial region which c occupies at t)"@en ;
-                skos:prefLabel "located in at some time"@en .
-
-
-###  http://purl.obolibrary.org/obo/BFO_0000174
-obo:BFO_0000174 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:BFO_0000178 ;
-                rdfs:domain obo:BFO_0000002 ;
-                rdfs:range obo:BFO_0000002 ;
-                <http://purl.org/dc/elements/1.1/identifier> "226-BFO" ;
-                rdfs:label "has proper continuant part at some time"@en ;
-                skos:definition "b has proper continuant part c at some time =Def c proper continuant part of b at some time"@en ;
-                skos:prefLabel "has proper continuant part at some time"@en .
-
-
-###  http://purl.obolibrary.org/obo/BFO_0000178
-obo:BFO_0000178 rdf:type owl:ObjectProperty ;
-                rdfs:domain obo:BFO_0000002 ;
-                rdfs:range obo:BFO_0000002 ;
-                <http://purl.org/dc/elements/1.1/identifier> "271-BFO" ;
-                rdfs:label "has continuant part at some time"@en ;
-                skos:definition "b has continuant part c at some time =Def for some time t (b and c are continuants & b is a part of c at t)"@en ;
-                skos:prefLabel "has continuant part at some time"@en .
-
-
 ###  http://purl.obolibrary.org/obo/BFO_0000181
 obo:BFO_0000181 rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf obo:BFO_0000121 ;
@@ -843,48 +706,6 @@ obo:BFO_0000181 rdf:type owl:ObjectProperty ;
                 skos:definition "b has proper temporal part c =Def c proper temporal part of b"@en ;
                 skos:example "As for has temporal part. "@en ;
                 skos:prefLabel "has proper temporal part"@en .
-
-
-###  http://purl.obolibrary.org/obo/BFO_0000210
-obo:BFO_0000210 rdf:type owl:ObjectProperty ;
-                rdfs:domain [ owl:intersectionOf ( obo:BFO_0000004
-                                                   [ rdf:type owl:Class ;
-                                                     owl:complementOf obo:BFO_0000006
-                                                   ]
-                                                 ) ;
-                              rdf:type owl:Class
-                            ] ;
-                rdfs:range obo:BFO_0000006 ;
-                <http://purl.org/dc/elements/1.1/identifier> "232-BFO" ;
-                rdfs:label "occupies spatial region at some time"@en ;
-                skos:definition "an independent continuant c that is not a spatial region occupies spatial region r at some time =Def for some time t (every continuant part of c occupies some continuant part of r at t and no continuant part of c occupies any spatial region that is not a continuant part of r at t)"@en ;
-                skos:prefLabel "occupies spatial region at some time"@en .
-
-
-###  http://purl.obolibrary.org/obo/BFO_0000211
-obo:BFO_0000211 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:BFO_0000210 ;
-                rdf:type owl:FunctionalProperty ;
-                rdfs:domain [ owl:intersectionOf ( obo:BFO_0000004
-                                                   [ rdf:type owl:Class ;
-                                                     owl:complementOf obo:BFO_0000006
-                                                   ]
-                                                 ) ;
-                              rdf:type owl:Class
-                            ] ;
-                rdfs:range obo:BFO_0000006 ;
-                <http://purl.org/dc/elements/1.1/identifier> "233-BFO" ;
-                rdfs:label "occupies spatial region at all times"@en ;
-                skos:definition "an independent continuant c that is not a spatial region occupies spatial region r at all times =Def for all times t, b exists at t implies (every continuant part of c occupies some continuant part of r at t and no continuant part of c occupies any spatial region that is not a continuant part of r at t)"@en ;
-                skos:prefLabel "occupies spatial region at all times"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000039
-obo:IAO_0000039 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:BFO_0000051 ;
-                rdf:type owl:FunctionalProperty ;
-                rdfs:range obo:IAO_0000003 ;
-                rdfs:label "has measurement unit label"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000136
@@ -932,81 +753,8 @@ obo:IAO_0000235 rdf:type owl:ObjectProperty ;
                 obo:IAO_0000115 "inverse of the relation 'denotes'"@en ;
                 obo:IAO_0000117 "Person: Jie Zheng, Chris Stoeckert, Mike Conlon"@en ;
                 obo:IAO_0000233 <https://github.com/information-artifact-ontology/IAO/issues/206> ;
+                rdfs:comment "Definiton: Some entity is denoted by an information content entity."@en ;
                 rdfs:label "denoted by"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000413
-obo:IAO_0000413 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:IAO_0000136 ;
-                rdfs:domain obo:IAO_0000416 ;
-                rdfs:range obo:BFO_0000015 ;
-                obo:IAO_0000114 obo:IAO_0000120 ;
-                obo:IAO_0000115 "relates a process to a time-measurement-datum that represents the duration of the process"@en ;
-                obo:IAO_0000117 "Person:Alan Ruttenberg"@en ;
-                rdfs:label "is duration of"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000581
-obo:IAO_0000581 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:BFO_0000051 ;
-                rdf:type owl:FunctionalProperty ;
-                rdfs:domain obo:IAO_0000582 ;
-                rdfs:range obo:IAO_0000416 ;
-                obo:IAO_0000114 obo:IAO_0000123 ;
-                obo:IAO_0000115 "relates a time stamped measurement datum to the time measurement datum that denotes the time when the measurement was taken"@en ;
-                obo:IAO_0000117 "Alan Ruttenberg"@en ;
-                rdfs:label "has time stamp"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000583
-obo:IAO_0000583 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:BFO_0000051 ;
-                rdfs:domain obo:IAO_0000582 ;
-                rdfs:range [ owl:intersectionOf ( obo:IAO_0000109
-                                                  [ rdf:type owl:Class ;
-                                                    owl:complementOf obo:IAO_0000416
-                                                  ]
-                                                ) ;
-                             rdf:type owl:Class
-                           ] ;
-                obo:IAO_0000114 obo:IAO_0000123 ;
-                obo:IAO_0000115 "relates a time stamped measurement datum to the measurement datum that was measured"@en ;
-                obo:IAO_0000117 "Alan Ruttenberg"@en ;
-                rdfs:label "has measurement datum"@en .
-
-
-###  http://purl.obolibrary.org/obo/OBI_0000293
-obo:OBI_0000293 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:RO_0000057 ;
-                rdfs:domain obo:OBI_0000011 ;
-                obo:IAO_0000111 "has_specified_input"@en ,
-                                "has_specified_input"^^xsd:string ;
-                obo:IAO_0000112 "see is_input_of example_of_usage"@en ;
-                obo:IAO_0000114 obo:IAO_0000122 ;
-                obo:IAO_0000115 "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of."@en ;
-                obo:IAO_0000116 "8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how 'has participant' works."^^xsd:string ;
-                obo:IAO_0000117 "PERSON: Alan Ruttenberg"@en ,
-                                "PERSON: Bjoern Peters"^^xsd:string ,
-                                "PERSON: Larry Hunter"^^xsd:string ,
-                                "PERSON: Melanie Coutot"^^xsd:string ;
-                obo:IAO_0000412 obo:obi.owl ;
-                rdfs:label "has_specified_input"@en .
-
-
-###  http://purl.obolibrary.org/obo/OBI_0000299
-obo:OBI_0000299 rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:RO_0000057 ;
-                rdfs:domain obo:OBI_0000011 ;
-                obo:IAO_0000111 "has_specified_output"@en ,
-                                "has_specified_output"^^xsd:string ;
-                obo:IAO_0000114 obo:IAO_0000122 ;
-                obo:IAO_0000115 "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."@en ;
-                obo:IAO_0000117 "PERSON: Alan Ruttenberg"@en ,
-                                "PERSON: Bjoern Peters"^^xsd:string ,
-                                "PERSON: Larry Hunter"^^xsd:string ,
-                                "PERSON: Melanie Courtot"^^xsd:string ;
-                obo:IAO_0000412 obo:obi.owl ;
-                rdfs:label "has_specified_output"@en .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0000052
@@ -1034,56 +782,6 @@ obo:RO_0000053 rdf:type owl:ObjectProperty ;
                                "is bearer of"@en ;
                obo:RO_0001900 obo:RO_0001901 ;
                rdfs:label "bearer of"@en .
-
-
-###  http://purl.obolibrary.org/obo/RO_0000056
-obo:RO_0000056 rdf:type owl:ObjectProperty ;
-               owl:inverseOf obo:RO_0000057 ;
-               rdfs:domain obo:BFO_0000002 ;
-               rdfs:range obo:BFO_0000003 ;
-               obo:IAO_0000111 "participates in"@en ;
-               obo:IAO_0000112 "this blood clot participates in this blood coagulation"@en ,
-                               "this input material (or this output material) participates in this process"@en ,
-                               "this investigator participates in this investigation"@en ;
-               obo:IAO_0000115 "a relation between a continuant and a process, in which the continuant is somehow involved in the process"@en ;
-               obo:IAO_0000118 "participates_in"@en ;
-               rdfs:label "participates in"@en .
-
-
-###  http://purl.obolibrary.org/obo/RO_0000057
-obo:RO_0000057 rdf:type owl:ObjectProperty ;
-               rdfs:domain obo:BFO_0000003 ;
-               rdfs:range obo:BFO_0000002 ;
-               obo:IAO_0000111 "has participant"@en ;
-               obo:IAO_0000112 "this blood coagulation has participant this blood clot"@en ,
-                               "this investigation has participant this investigator"@en ,
-                               "this process has participant this input material (or this output material)"@en ;
-               obo:IAO_0000115 "a relation between a process and a continuant, in which the continuant is somehow involved in the process"@en ;
-               obo:IAO_0000116 "Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time."@en ;
-               obo:IAO_0000118 "has_participant"@en ;
-               <http://purl.org/dc/elements/1.1/source> "http://www.obofoundry.org/ro/#OBO_REL:has_participant" ;
-               rdfs:label "has participant"@en .
-
-
-###  http://purl.obolibrary.org/obo/RO_0000058
-obo:RO_0000058 rdf:type owl:ObjectProperty ;
-               owl:inverseOf obo:RO_0000059 ;
-               rdfs:domain obo:BFO_0000031 ;
-               rdfs:range obo:BFO_0000020 ;
-               obo:IAO_0000112 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)."@en ,
-                               "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."@en ;
-               obo:IAO_0000115 "A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants."@en ;
-               rdfs:label "is concretized as"@en .
-
-
-###  http://purl.obolibrary.org/obo/RO_0000059
-obo:RO_0000059 rdf:type owl:ObjectProperty ;
-               rdfs:domain obo:BFO_0000020 ;
-               rdfs:range obo:BFO_0000031 ;
-               obo:IAO_0000112 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)."@en ,
-                               "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."@en ;
-               obo:IAO_0000115 "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant."@en ;
-               rdfs:label "concretizes"@en .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0000080
@@ -1133,86 +831,58 @@ obo:RO_0000087 rdf:type owl:ObjectProperty ;
                rdfs:label "has role"@en .
 
 
-###  http://purl.obolibrary.org/obo/RO_0001015
-obo:RO_0001015 rdf:type owl:ObjectProperty ;
-               owl:inverseOf obo:RO_0001025 ;
-               rdf:type owl:TransitiveProperty ;
-               obo:IAO_0000111 "is location of"@en ;
-               obo:IAO_0000112 "my head is the location of my brain"@en ,
-                               "this cage is the location of this rat"@en ;
-               obo:IAO_0000115 "a relation between two independent continuants, the location and the target, in which the target is entirely within the location"@en ;
-               obo:IAO_0000116 "Most location relations will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"@en ;
-               obo:IAO_0000118 "location_of"@en ;
-               obo:RO_0001900 obo:RO_0001901 ;
-               rdfs:label "location of"@en .
+###  https://github.com/tibonto/aeon#AEON_0000031
+aeon:AEON_0000031 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:has_identifier ;
+                  rdfs:domain obo:BFO_0000001 ;
+                  rdfs:range obo:IAO_0000578 ;
+                  obo:IAO_0000116 """PS: This is an abstract property that should not be used, as it seems better to add new CRID subclasses, for not yet existing CRIDs.
+It mainly serves as an ordering parent property for known centrally registered identifiers."""@en ;
+                  obo:IAO_0000117 "Philip Strömert" ;
+                  rdfs:label "has centrally registered identifier"@en .
 
 
-###  http://purl.obolibrary.org/obo/RO_0001025
-obo:RO_0001025 rdf:type owl:ObjectProperty ,
-                        owl:TransitiveProperty ;
-               rdfs:domain obo:BFO_0000004 ,
-                           [ owl:intersectionOf ( obo:BFO_0000004
-                                                  [ rdf:type owl:Class ;
-                                                    owl:complementOf obo:BFO_0000006
-                                                  ]
-                                                ) ;
-                             rdf:type owl:Class
-                           ] ;
-               rdfs:range obo:BFO_0000004 ,
-                          [ owl:intersectionOf ( obo:BFO_0000004
-                                                 [ rdf:type owl:Class ;
-                                                   owl:complementOf obo:BFO_0000006
-                                                 ]
-                                               ) ;
-                            rdf:type owl:Class
-                          ] ;
-               obo:IAO_0000111 "located in"@en ;
-               obo:IAO_0000112 "my brain is located in my head"@en ,
-                               "this rat is located in this cage"@en ;
-               obo:IAO_0000115 "a relation between two independent continuants, the target and the location, in which the target is entirely within the location"@en ;
-               obo:IAO_0000116 "Location as a relation between instances: The primitive instance-level relation c located_in r at t reflects the fact that each continuant is at any given time associated with exactly one spatial region, namely its exact location. Following we can use this relation to define a further instance-level location relation - not between a continuant and the region which it exactly occupies, but rather between one continuant and another. c is located in c1, in this sense, whenever the spatial region occupied by c is part_of the spatial region occupied by c1.    Note that this relation comprehends both the relation of exact location between one continuant and another which obtains when r and r1 are identical (for example, when a portion of fluid exactly fills a cavity), as well as those sorts of inexact location relations which obtain, for example, between brain and head or between ovum and uterus"@en ,
-                               "Most location relations will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"@en ;
-               obo:IAO_0000118 "located_in"@en ;
-               obo:RO_0001900 obo:RO_0001901 ;
-               <http://purl.org/dc/elements/1.1/source> "http://www.obofoundry.org/ro/#OBO_REL:located_in" ;
-               rdfs:label "located in"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource obo:RO_0001025 ;
-   owl:annotatedProperty rdfs:domain ;
-   owl:annotatedTarget obo:BFO_0000004 ;
-   obo:IAO_0000116 "This is redundant with the more specific 'independent and not spatial region' constraint. We leave in the redundant axiom for use with reasoners that do not use negation."
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource obo:RO_0001025 ;
-   owl:annotatedProperty rdfs:range ;
-   owl:annotatedTarget obo:BFO_0000004 ;
-   obo:IAO_0000116 "This is redundant with the more specific 'independent and not spatial region' constraint. We leave in the redundant axiom for use with reasoners that do not use negation."
- ] .
+###  https://github.com/tibonto/aeon#AEON_0000032
+aeon:AEON_0000032 rdf:type owl:ObjectProperty ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range aeon:AEON_0000004 ;
+                  rdfs:label "has event type"@en ;
+                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"event_type\"}, \"openresearch\": {\"uri\": null, \"label\": \"Type\"}}"^^xsd:string ;
+                  aeon:SMW_datatype "Text" ;
+                  aeon:SMW_import_info """The allowed value list for this property is defined in [[MediaWiki:Smw_allows_list_has_event_type]].
+[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
+                  aeon:WikidataLabel "event_type" .
 
 
-###  http://purl.obolibrary.org/obo/RO_0002350
-obo:RO_0002350 rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf obo:BFO_0000050 ;
-               owl:inverseOf obo:RO_0002351 ;
-               obo:IAO_0000112 "An organism that is a member of a population of organisms" ;
-               obo:IAO_0000115 "is member of is a mereological relation between a item and a collection." ;
-               obo:IAO_0000118 "is member of" ,
-                               "member part of" ;
-               obo:IAO_0000119 "SIO" ;
-               obo:RO_0001900 obo:RO_0001901 ;
-               rdfs:label "member of"@en .
+###  https://github.com/tibonto/aeon#AEON_0000033
+aeon:AEON_0000033 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:has_identifier ;
+                  rdfs:domain obo:BFO_0000001 ;
+                  rdfs:range aeon:AEON_0000034 ;
+                  obo:IAO_0000117 "Philip Stroemert"^^xsd:string ;
+                  rdfs:label "has distributed identifier"@en .
 
 
-###  http://purl.obolibrary.org/obo/RO_0002351
-obo:RO_0002351 rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf obo:BFO_0000051 ;
-               rdf:type owl:IrreflexiveProperty ;
-               obo:IAO_0000115 "has member is a mereological relation between a collection and an item." ;
-               obo:IAO_0000119 "SIO" ;
-               obo:RO_0001900 obo:RO_0001901 ;
-               rdfs:label "has member"@en .
+###  https://github.com/tibonto/aeon#AEON_0000040
+aeon:AEON_0000040 rdf:type owl:ObjectProperty ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( aeon:AEON_0000001
+                                              aeon:AEON_0000002
+                                            )
+                              ] ;
+                  rdfs:range aeon:AEON_0000027 ;
+                  rdfs:label "has academic field"@en .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000041
+aeon:AEON_0000041 rdf:type owl:ObjectProperty ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( aeon:AEON_0000001
+                                              aeon:AEON_0000002
+                                            )
+                              ] ;
+                  rdfs:range aeon:AEON_0000028 ;
+                  rdfs:label "has topic"@en .
 
 
 ###  https://github.com/tibonto/aeon#collocated_event_of
@@ -1226,7 +896,7 @@ aeon:collocated_event_of rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_DOI
 aeon:has_DOI rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf aeon:has_external_identifier ;
+             rdfs:subPropertyOf aeon:AEON_0000031 ;
              rdfs:domain obo:BFO_0000001 ;
              rdfs:range aeon:AEON_0000016 ;
              aeon:SMW_datatype "External identifier" ;
@@ -1237,7 +907,7 @@ aeon:has_DOI rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_GND
 aeon:has_GND rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf aeon:has_external_identifier ;
+             rdfs:subPropertyOf aeon:AEON_0000031 ;
              rdfs:domain obo:BFO_0000001 ;
              rdfs:range aeon:AEON_0000017 ;
              aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P227\", \"label\": \"GND_ID\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#gndIdentifier\", \"label\": \"GND-Identifier\"}}"^^xsd:string ;
@@ -1255,7 +925,7 @@ aeon:has_GND rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_ISNI
 aeon:has_ISNI rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf aeon:has_external_identifier ;
+              rdfs:subPropertyOf aeon:AEON_0000031 ;
               rdfs:domain obo:OBI_0000245 ;
               rdfs:range aeon:AEON_0000018 ;
               aeon:SMW_datatype "External identifier" ;
@@ -1269,7 +939,7 @@ aeon:has_ISNI rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_ORCID
 aeon:has_ORCID rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf aeon:has_external_identifier ;
+               rdfs:subPropertyOf aeon:AEON_0000031 ;
                rdfs:domain obo:NCBITaxon_9606 ;
                rdfs:range aeon:AEON_0000019 ;
                aeon:SMW_datatype "External identifier" ;
@@ -1282,7 +952,7 @@ aeon:has_ORCID rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_ROR
 aeon:has_ROR rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf aeon:has_external_identifier ;
+             rdfs:subPropertyOf aeon:AEON_0000031 ;
              rdfs:domain obo:OBI_0000245 ;
              rdfs:range aeon:AEON_0000020 ;
              aeon:SMW_datatype "External identifier" ;
@@ -1295,9 +965,13 @@ aeon:has_ROR rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_WDQID
 aeon:has_WDQID rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf aeon:has_external_identifier ;
+               rdfs:subPropertyOf aeon:AEON_0000031 ;
                rdfs:domain obo:BFO_0000001 ;
-               rdfs:range aeon:AEON_0000021 ;
+               rdfs:range aeon:AEON_0000021 ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty aeon:ID_base_URL ;
+                            owl:hasValue "https://www.wikidata.org/wiki/"^^xsd:anyURI
+                          ] ;
                aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"itemID\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Wikidataid\", \"label\": \"Wikidataid\"}}"^^xsd:string ;
                aeon:SMW_datatype "External identifier" ;
                aeon:SMW_import_info """External formatter uri [[External formatter uri::https://www.wikidata.org/wiki/$1]]
@@ -1361,7 +1035,11 @@ aeon:has_contributor rdf:type owl:ObjectProperty ;
                                                  aeon:AEON_0000002
                                                )
                                  ] ;
-                     rdfs:range obo:NCBITaxon_9606 ;
+                     rdfs:range [ rdf:type owl:Class ;
+                                  owl:unionOf ( obo:NCBITaxon_9606
+                                                obo:OBI_0000245
+                                              )
+                                ] ;
                      aeon:SMW_datatype "Page" ;
                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1376,46 +1054,11 @@ aeon:has_event rdf:type owl:ObjectProperty ;
                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#has_event_type
-aeon:has_event_type rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf obo:IAO_0000235 ;
-                    rdfs:domain aeon:AEON_0000001 ;
-                    rdfs:range aeon:AEON_0000004 ;
-                    aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"event_type\"}, \"openresearch\": {\"uri\": null, \"label\": \"Type\"}}"^^xsd:string ;
-                    aeon:SMW_datatype "Text" ;
-                    aeon:SMW_import_info """The allowed value list for this property is defined in [[MediaWiki:Smw_allows_list_has_event_type]].
-[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
-                    aeon:WikidataLabel "event_type" .
-
-
-###  https://github.com/tibonto/aeon#has_external_identifier
-aeon:has_external_identifier rdf:type owl:ObjectProperty ;
-                             rdfs:subPropertyOf aeon:has_identifier ;
-                             rdfs:domain obo:BFO_0000001 ;
-                             rdfs:range obo:IAO_0020000 ;
-                             rdfs:comment "This is an abstract property that most likely will never be used, as it just serves as a parent for known external IDs."@en ;
-                             aeon:AEON_0000026 "{\"wikidata\": [{\"uri\": \"https://www.wikidata.org/wiki/Property:P646\", \"label\": \"Freebase_ID\"}, {\"uri\": \"https://www.wikidata.org/wiki/Property:P5127\", \"label\": \"WikiCFP_conference_series_ID\"}]}"^^xsd:string ;
-                             aeon:SMW_datatype "Text" ;
-                             aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
-[[partOfSubobject::Template:Subobject Person_ID]]
-[[partOfSubobject::Template:Subobject Organization_ID]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
-                             aeon:WikidataLabel "Freebase_ID" ,
-                                                "WikiCFP_conference_series_ID" ;
-                             aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P5127" ,
-                                              "https://www.wikidata.org/wiki/Property:P646" .
-
-
 ###  https://github.com/tibonto/aeon#has_fee
 aeon:has_fee rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf obo:IAO_0000235 ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
              rdfs:domain aeon:AEON_0000001 ;
-             rdfs:range aeon:AEON_0000030 ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty aeon:fee ;
-                          owl:someValuesFrom rdfs:Literal
-                        ] ;
+             rdfs:range aeon:AEON_0000030 ;
              aeon:SMW_datatype "Text" ;
              aeon:SMW_import_info """The allowed value list for this property is defined in [[MediaWiki:Smw_allows_list_Has_fee]].
 
@@ -1465,22 +1108,18 @@ aeon:has_identifier rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf obo:IAO_0000235 ;
                     rdfs:domain obo:BFO_0000001 ;
                     rdfs:range obo:IAO_0020000 ;
+                    rdfs:label "has identifier"@en ;
+                    aeon:AEON_0000026 "{\"wikidata\": [{\"uri\": \"https://www.wikidata.org/wiki/Property:P646\", \"label\": \"Freebase_ID\"}, {\"uri\": \"https://www.wikidata.org/wiki/Property:P5127\", \"label\": \"WikiCFP_conference_series_ID\"}]}"^^xsd:string ;
                     aeon:SMW_datatype "Text" ;
-                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                    aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
 
-
-###  https://github.com/tibonto/aeon#has_internal_identifier
-aeon:has_internal_identifier rdf:type owl:ObjectProperty ;
-                             rdfs:subPropertyOf aeon:has_identifier ;
-                             rdfs:domain obo:BFO_0000015 ;
-                             rdfs:range aeon:AEON_0000003 ;
-                             obo:IAO_0000115 "The literal value of the internal identifier used by a system implementing this ontology."@en ;
-                             rdfs:comment """The \"rdfs:label has_ConfIDent_ID\" is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident/) to be used in its service. Thus the internal identifier is called ConfIDent_ID. 
-
-You will probably want to change that in your implementation."""@en ;
-                             rdfs:label "ConfIDent_ID"^^xsd:string ;
-                             aeon:SMW_datatype "Text" ;
-                             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
+                    aeon:WikidataLabel "Freebase_ID" ,
+                                       "WikiCFP_conference_series_ID" ;
+                    aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P5127" ,
+                                     "https://www.wikidata.org/wiki/Property:P646" .
 
 
 ###  https://github.com/tibonto/aeon#has_keynote_speaker
@@ -1543,8 +1182,9 @@ aeon:has_organizer rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#has_output
 aeon:has_output rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf obo:IAO_0000235 ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
                 rdfs:domain aeon:AEON_0000001 ;
+                rdfs:range obo:IAO_0000310 ;
                 obo:IAO_0000115 "To say that an academic event A has an output means that there exists some form of publication B that is caused by A." ;
                 aeon:SMW_datatype "Text" ;
                 aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Output]]
@@ -1787,14 +1427,6 @@ aeon:umbrella_event_of rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  http://purl.obolibrary.org/obo/IAO_0000004
-obo:IAO_0000004 rdf:type owl:DatatypeProperty ,
-                         owl:FunctionalProperty ;
-                rdfs:domain obo:IAO_0000032 ;
-                rdfs:range xsd:double ;
-                rdfs:label "has measurement value"@en .
-
-
 ###  http://www.w3.org/2002/07/owl#topDataProperty
 owl:topDataProperty rdfs:range rdfs:Literal .
 
@@ -1879,14 +1511,6 @@ aeon:accepted_short_papers rdf:type owl:DatatypeProperty ;
                            rdfs:domain aeon:AEON_0000001 ;
                            aeon:SMW_datatype "Number" ;
                            aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#agent_name
-aeon:agent_name rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf aeon:name ;
-                obo:IAO_0000115 "The literal value of the name to denote an agent."@en ;
-                aeon:SMW_datatype "Text" ;
-                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#camera-ready_deadline
@@ -2057,6 +1681,7 @@ cancled → withdrawn"""@en ;
 aeon:event_type_other rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf owl:topDataProperty ;
                       rdfs:domain aeon:AEON_0000004 ;
+                      rdfs:range xsd:string ;
                       aeon:SMW_datatype "Text" ;
                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -2066,7 +1691,7 @@ aeon:event_year rdf:type owl:DatatypeProperty ;
                 rdfs:domain aeon:AEON_0000001 ;
                 rdfs:range xsd:integer ;
                 obo:IAO_0000115 "The year in which an event takes place."@en ;
-                aeon:SMW_datatype "Number" ;
+                aeon:SMW_datatype "Date" ;
                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
@@ -2108,6 +1733,8 @@ aeon:fee_value rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#first_name
 aeon:first_name rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf aeon:personal_name ;
+                rdfs:domain obo:NCBITaxon_9606 ;
+                rdfs:range xsd:string ;
                 obo:IAO_0000115 "The literal value of the first name of a person."@en ;
                 aeon:SMW_datatype "Text" ;
                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -2130,6 +1757,11 @@ aeon:landing_page rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#language
 aeon:language rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( aeon:AEON_0000001
+                                          aeon:AEON_0000002
+                                        )
+                          ] ;
               aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2936\", \"label\": \"language_usedLabel\"}}"^^xsd:string ;
               aeon:SMW_datatype "Text" ;
               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
@@ -2140,6 +1772,8 @@ aeon:language rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#last_name
 aeon:last_name rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf aeon:personal_name ;
+               rdfs:domain obo:NCBITaxon_9606 ;
+               rdfs:range xsd:string ;
                obo:IAO_0000115 "The literal value of the last name, or family name, of a person."@en ;
                aeon:SMW_datatype "Text" ;
                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -2156,6 +1790,11 @@ aeon:location rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#logo
 aeon:logo rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( aeon:AEON_0000001
+                                      aeon:AEON_0000002
+                                    )
+                      ] ;
           aeon:SMW_datatype "Page" ;
           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -2225,7 +1864,9 @@ aeon:number_of_tracks rdf:type owl:DatatypeProperty ;
 
 ###  https://github.com/tibonto/aeon#organizational_name
 aeon:organizational_name rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf aeon:agent_name ;
+                         rdfs:subPropertyOf aeon:name ;
+                         rdfs:domain obo:OBI_0000245 ;
+                         rdfs:range xsd:string ;
                          obo:IAO_0000115 "The literal value of the name to denote an organization."@en ;
                          aeon:SMW_datatype "Text" ;
                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -2242,7 +1883,9 @@ aeon:paper_deadline rdf:type owl:DatatypeProperty ;
 
 ###  https://github.com/tibonto/aeon#personal_name
 aeon:personal_name rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf aeon:agent_name ;
+                   rdfs:subPropertyOf aeon:name ;
+                   rdfs:domain obo:NCBITaxon_9606 ;
+                   rdfs:range xsd:string ;
                    obo:IAO_0000115 "The literal value of the name to denote a person."@en ;
                    aeon:SMW_datatype "Text" ;
                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -2287,6 +1930,7 @@ aeon:proceedings_site_count rdf:type owl:DatatypeProperty ;
 aeon:process_acronym rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf aeon:process_name ;
                      rdfs:domain obo:BFO_0000015 ;
+                     rdfs:range xsd:string ;
                      obo:IAO_0000112 "\"DILS 2019\" is the official acronym of the academic event \"13th International Conference on Data Integration in Life Science\""@en ;
                      obo:IAO_0000115 "The literal value of the official acronym of an aeon:process, that is either an academic event or event series."@en ;
                      aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P1813\", \"label\": \"short_nameLabel\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#abbreviatedNameForTheConferenceOrEvent\", \"label\": \"Abbreviated name for the conference or event\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Acronym\", \"label\": \"Acronym\"}, \"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"acronym\"}}}"^^xsd:string ;
@@ -2300,6 +1944,7 @@ aeon:process_acronym rdf:type owl:DatatypeProperty ;
 aeon:process_alternative_name rdf:type owl:DatatypeProperty ;
                               rdfs:subPropertyOf aeon:process_name ;
                               rdfs:domain obo:BFO_0000015 ;
+                              rdfs:range xsd:string ;
                               rdfs:comment "The Literal value of an alternative name of an aeon:process, that is either an academic event or event series."@en ;
                               aeon:AEON_0000026 "{\"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#variantNameForTheConferenceOrEvent\", \"label\": \"Variant name for the conference or event\"}, \"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=title\", \"json_api_key\": \"title\"}}"^^xsd:string ;
                               aeon:SMW_datatype "Text" ;
@@ -2310,6 +1955,7 @@ aeon:process_alternative_name rdf:type owl:DatatypeProperty ;
 aeon:process_former_name rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:process_name ;
                          rdfs:domain obo:BFO_0000015 ;
+                         rdfs:range xsd:string ;
                          rdfs:comment "The Literal value of the former official name of an aeon:process, that is either an academic event or event series."@en ;
                          aeon:SMW_datatype "Text" ;
                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -2319,6 +1965,7 @@ aeon:process_former_name rdf:type owl:DatatypeProperty ;
 aeon:process_name rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf aeon:name ;
                   rdfs:domain obo:BFO_0000015 ;
+                  rdfs:range xsd:string ;
                   obo:IAO_0000115 "The literal value of the official name (title) of an aeon:process, that is either an academic event or event series."@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"itemLabel\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#preferredNameForTheConferenceOrEvent\", \"label\": \"Preferred name for the conference or event\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Title\", \"label\": \"Title\"}, \"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"name\"}}}"^^xsd:string ;
                   aeon:SMW_datatype "Text" ;
@@ -2330,6 +1977,7 @@ aeon:process_name rdf:type owl:DatatypeProperty ;
 aeon:process_translated_name rdf:type owl:DatatypeProperty ;
                              rdfs:subPropertyOf aeon:process_name ;
                              rdfs:domain obo:BFO_0000015 ;
+                             rdfs:range xsd:string ;
                              obo:IAO_0000115 "The literal value of the translation of the official name (title) of an aeon:process, that is either an academic event or event series."@en ;
                              aeon:SMW_datatype "Text" ;
                              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -2359,6 +2007,7 @@ aeon:series_cite_count rdf:type owl:DatatypeProperty ;
 aeon:sponsor_type rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf owl:topDataProperty ;
                   rdfs:domain aeon:AEON_0000015 ;
+                  rdfs:range xsd:string ;
                   aeon:SMW_datatype "Text" ;
                   aeon:SMW_import_info """Controlled vocabulary in [[MediaWiki:Smw _allows_list_Sponsor_type]] 
 
@@ -2413,6 +2062,11 @@ aeon:submitted_papers rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#summary
 aeon:summary rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( aeon:AEON_0000001
+                                         aeon:AEON_0000002
+                                       )
+                         ] ;
              aeon:SMW_datatype "Text" ;
              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -2420,6 +2074,11 @@ aeon:summary rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#summary_licence
 aeon:summary_licence rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf aeon:summary ;
+                     rdfs:domain [ rdf:type owl:Class ;
+                                   owl:unionOf ( aeon:AEON_0000001
+                                                 aeon:AEON_0000002
+                                               )
+                                 ] ;
                      aeon:SMW_datatype "Text" ;
                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -2619,21 +2278,6 @@ obo:BFO_0000003 rdf:type owl:Class ;
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000003 ;
-   owl:annotatedProperty obo:IAO_0000116 ;
-   owl:annotatedTarget "Occurrent doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. An example would be the sum of a process and the process boundary of another process."@en ;
-   obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/0000006> ;
-   rdfs:comment "per discussion with Barry Smith"
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource obo:BFO_0000003 ;
-   owl:annotatedProperty obo:IAO_0000116 ;
-   owl:annotatedTarget "Simons uses different terminology for relations of occurrents to regions: Denote the spatio-temporal location of a given occurrent e by 'spn[e]' and call this region its span. We may say an occurrent is at its span, in any larger region, and covers any smaller region. Now suppose we have fixed a frame of reference so that we can speak not merely of spatio-temporal but also of spatial regions (places) and temporal regions (times). The spread of an occurrent, (relative to a frame of reference) is the space it exactly occupies, and its spell is likewise the time it exactly occupies. We write 'spr[e]' and `spl[e]' respectively for the spread and spell of e, omitting mention of the frame." ;
-   obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/0000012>
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource obo:BFO_0000003 ;
    owl:annotatedProperty obo:IAO_0000600 ;
    owl:annotatedTarget "An occurrent is an entity that unfolds itself in time or it is the instantaneous boundary of such an entity (for example a beginning or an ending) or it is a temporal or spatiotemporal region which such an entity occupies_temporal_region or occupies_spatiotemporal_region. (axiom label in BFO2 Reference: [077-002])"@en ;
    obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/077-002>
@@ -2665,6 +2309,21 @@ obo:BFO_0000003 rdf:type owl:Class ;
    owl:annotatedProperty obo:IAO_0000602 ;
    owl:annotatedTarget "(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] " ;
    obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/079-001>
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:BFO_0000003 ;
+   owl:annotatedProperty obo:IAO_0000116 ;
+   owl:annotatedTarget "Occurrent doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. An example would be the sum of a process and the process boundary of another process."@en ;
+   obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/0000006> ;
+   rdfs:comment "per discussion with Barry Smith"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:BFO_0000003 ;
+   owl:annotatedProperty obo:IAO_0000116 ;
+   owl:annotatedTarget "Simons uses different terminology for relations of occurrents to regions: Denote the spatio-temporal location of a given occurrent e by 'spn[e]' and call this region its span. We may say an occurrent is at its span, in any larger region, and covers any smaller region. Now suppose we have fixed a frame of reference so that we can speak not merely of spatio-temporal but also of spatial regions (places) and temporal regions (times). The spread of an occurrent, (relative to a frame of reference) is the space it exactly occupies, and its spell is likewise the time it exactly occupies. We write 'spr[e]' and `spl[e]' respectively for the spread and spell of e, omitting mention of the frame." ;
+   obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/0000012>
  ] .
 
 
@@ -2822,6 +2481,7 @@ obo:BFO_0000008 rdf:type owl:Class ;
                                 "(forall (x y) (if (and (TemporalRegion x) (occurrentPartOf y x)) (TemporalRegion y))) // axiom label in BFO2 CLIF: [101-001] " ,
                                 "(forall (x) (if (TemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [100-001] " ;
                 <http://purl.org/dc/elements/1.1/identifier> "100-BFO" ;
+                rdfs:comment "PS: unsure yet if, this class will be needed in AEON."@en ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "temporal region"@en ;
                 skos:definition "(Elucidation) A temporal region is an occurrent over which processes can unfold"@en ;
@@ -2907,6 +2567,7 @@ obo:BFO_0000011 rdf:type owl:Class ;
                                 "(forall (x) (if (SpatioTemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [095-001] " ,
                                 "(forall (x) (if (SpatioTemporalRegion x) (exists (y) (and (TemporalRegion y) (temporallyProjectsOnto x y))))) // axiom label in BFO2 CLIF: [098-001] " ;
                 <http://purl.org/dc/elements/1.1/identifier> "095-BFO" ;
+                rdfs:comment "PS: unsure yet if, this class will be needed in AEON."@en ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "spatiotemporal region"@en ;
                 skos:definition "(Elucidation) A spatiotemporal region is an occurrent that is an occurrent part of spacetime"@en ;
@@ -3016,8 +2677,7 @@ obo:BFO_0000015 rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/identifier> "083-BFO" ;
                 rdfs:isDefinedBy obo:bfo.owl ,
                                  "http://purl.obolibrary.org/obo/bfo.owl"^^xsd:anyURI ;
-                rdfs:label "Process"@en ,
-                           "process"@en ;
+                rdfs:label "process"@en ;
                 skos:definition "(Elucidation) p is a process =Def p is an occurrent that has some temporal proper part and for some time t, p has some material entity as participant"@en ;
                 skos:example "An act of selling, the life of an organism, a process of sleeping, a process of cell-division, a beating of the heart, a process of meiosis, the taxiing of an aircraft, the programming of a computer. "@en ;
                 skos:prefLabel "process"@en ;
@@ -3214,8 +2874,7 @@ obo:BFO_0000023 rdf:type owl:Class ;
                 rdfs:comment "example of usage:the role of subject in a clinical trial; the role of a boundary to demarcate two neighboring administrative territories; the role of a building in serving as a military target; the priest role; John’s role of husband to Mary is dependent on Mary’s role of wife to John, and both are dependent on the object aggregate comprising John and Mary as member parts joined together through the relational quality of being married.; the role of a stone in marking a property boundary; the student role"@en ;
                 rdfs:isDefinedBy obo:bfo.owl ,
                                  "http://purl.obolibrary.org/obo/bfo.owl"@en ;
-                rdfs:label "Role"@en ,
-                           "role"@en ;
+                rdfs:label "role"@en ;
                 skos:altLabel "externally-grounded realizable entity"@en ;
                 skos:definition "(Elucidation) b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be & b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed"@en ;
                 skos:example "The priest role, the student role, the role of subject in a clinical trial, the role of a stone in marking a property boundary, the role of a boundary to demarcate two neighbouring administrative territories, the role of a building in serving as a military target. "@en ;
@@ -3453,6 +3112,7 @@ obo:BFO_0000035 rdf:type owl:Class ;
                 obo:IAO_0000602 "(forall (x) (if (ProcessBoundary x) (exists (y) (and (ZeroDimensionalTemporalRegion y) (occupiesTemporalRegion x y))))) // axiom label in BFO2 CLIF: [085-002] " ,
                                 "(iff (ProcessBoundary a) (exists (p) (and (Process p) (temporalPartOf a p) (not (exists (b) (properTemporalPartOf b a)))))) // axiom label in BFO2 CLIF: [084-001] " ;
                 <http://purl.org/dc/elements/1.1/identifier> "084-BFO" ;
+                rdfs:comment "PS: unsure yet if, this class will be needed in AEON."@en ;
                 rdfs:isDefinedBy obo:bfo.owl ;
                 rdfs:label "process boundary"@en ;
                 skos:definition "p is a process boundary =Def p is a temporal part of a process & p has no proper temporal parts"@en ;
@@ -3639,37 +3299,6 @@ obo:GAZ_00000448 rdf:type owl:Class ;
                  aeon:SMW_import_info "[[Category:GAZ]] [[Category:Imported vocabulary]]" .
 
 
-###  http://purl.obolibrary.org/obo/IAO_0000003
-obo:IAO_0000003 rdf:type owl:Class ;
-                rdfs:subClassOf obo:IAO_0000009 ;
-                obo:IAO_0000111 "measurement unit label"@en ;
-                obo:IAO_0000112 "Examples of measurement unit labels are liters, inches, weight per volume."@en ;
-                obo:IAO_0000114 obo:IAO_0000125 ;
-                obo:IAO_0000115 "A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure."@en ;
-                obo:IAO_0000116 """2009-03-16: provenance: a term measurement unit was
-proposed for OBI (OBI_0000176) , edited by Chris Stoeckert and
-Cristian Cocos, and subsequently moved to IAO where the objective for
-which the original term was defined was satisfied with the definition
-of this, different, term."""@en ,
-                                "2009-03-16: review of this term done during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI."@en ;
-                obo:IAO_0000117 "PERSON: Alan Ruttenberg"@en ,
-                                "PERSON: Melanie Courtot"@en ;
-                rdfs:label "measurement unit label"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000009
-obo:IAO_0000009 rdf:type owl:Class ;
-                rdfs:subClassOf obo:IAO_0000030 ;
-                obo:IAO_0000111 "datum label"@en ;
-                obo:IAO_0000114 obo:IAO_0000123 ;
-                obo:IAO_0000115 "A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label"@en ;
-                obo:IAO_0000116 "http://www.golovchenko.org/cgi-bin/wnsearch?q=label#4n"@en ;
-                obo:IAO_0000117 "GROUP: IAO"@en ;
-                obo:IAO_0000232 """9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
-""" ;
-                rdfs:label "datum label"@en .
-
-
 ###  http://purl.obolibrary.org/obo/IAO_0000027
 obo:IAO_0000027 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000030 ;
@@ -3732,28 +3361,6 @@ Previous. An information content entity is a non-realizable information entity t
                 rdfs:label "information content entity"@en .
 
 
-###  http://purl.obolibrary.org/obo/IAO_0000032
-obo:IAO_0000032 rdf:type owl:Class ;
-                rdfs:subClassOf obo:IAO_0000109 ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty obo:IAO_0000039 ;
-                                  owl:minCardinality "1"^^xsd:nonNegativeInteger
-                                ] ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty obo:IAO_0000004 ;
-                                  owl:minCardinality "1"^^xsd:nonNegativeInteger
-                                ] ;
-                obo:IAO_0000112 "10 feet. 3 ml."@en ;
-                obo:IAO_0000114 obo:IAO_0000120 ;
-                obo:IAO_0000115 "A scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label."@en ;
-                obo:IAO_0000116 """2009-03-16: we decided to keep datum singular in scalar measurement datum, as in
-this case we explicitly refer to the singular form"""@en ,
-                                "Would write this as: has_part some 'measurement unit label' and has_part some numeral and has_part exactly 2, except for the fact that this won't let us take advantage of OWL reasoning over the numbers. Instead use has measurment value property to represent the same. Use has measurement unit label (subproperty of has_part) so we can easily say that there is only one of them."@en ;
-                obo:IAO_0000117 "PERSON: Alan Ruttenberg"@en ,
-                                "PERSON: Melanie Courtot"@en ;
-                rdfs:label "scalar measurement datum"@en .
-
-
 ###  http://purl.obolibrary.org/obo/IAO_0000100
 obo:IAO_0000100 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000027 ;
@@ -3770,64 +3377,15 @@ obo:IAO_0000100 rdf:type owl:Class ;
                 rdfs:label "data set"@en .
 
 
-###  http://purl.obolibrary.org/obo/IAO_0000101
-obo:IAO_0000101 rdf:type owl:Class ;
-                rdfs:subClassOf obo:IAO_0000308 ;
-                obo:IAO_0000111 "image"@en ;
-                obo:IAO_0000114 obo:IAO_0000122 ;
-                obo:IAO_0000115 "An image is an affine projection to a two dimensional surface, of measurements of some quality of an entity or entities repeated at regular intervals across a spatial range, where the measurements are represented as color and luminosity on the projected on surface."@en ;
-                obo:IAO_0000117 "person:Alan Ruttenberg"@en ,
-                                "person:Allyson"@en ,
-                                "person:Chris Stoeckert"@en ;
-                obo:IAO_0000119 "OBI_0000030"@en ,
-                                "group:OBI"@en ;
-                rdfs:label "image"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000109
-obo:IAO_0000109 rdf:type owl:Class ;
-                rdfs:subClassOf obo:IAO_0000027 ;
-                obo:IAO_0000111 "measurement datum"@en ;
-                obo:IAO_0000112 "Examples of measurement data are the recoding of the weight of a mouse as {40,mass,\"grams\"}, the recording of an observation of the behavior of the mouse {,process,\"agitated\"}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}."@en ;
-                obo:IAO_0000114 obo:IAO_0000125 ;
-                obo:IAO_0000115 "A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device."@en ;
-                obo:IAO_0000116 "2/2/2009 is_specified_output of some assay?"@en ;
-                obo:IAO_0000117 "person:Chris Stoeckert"@en ;
-                obo:IAO_0000119 "OBI_0000305"@en ,
-                                "group:OBI"@en ;
-                rdfs:label "measurement datum"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000308
-obo:IAO_0000308 rdf:type owl:Class ;
+###  http://purl.obolibrary.org/obo/IAO_0000310
+obo:IAO_0000310 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000030 ;
-                obo:IAO_0000111 "figure"@en ;
-                obo:IAO_0000112 "Any picture, diagram or table"@en ;
+                obo:IAO_0000111 "document"@en ;
+                obo:IAO_0000112 "A journal article, patent application, laboratory notebook, or a book"@en ;
                 obo:IAO_0000114 obo:IAO_0000120 ;
-                obo:IAO_0000115 "An information content entity consisting of a two dimensional arrangement of information content entities such that the arrangement itself is about something."@en ;
+                obo:IAO_0000115 "A collection of information content entities intended to be understood together as a whole"@en ;
                 obo:IAO_0000117 "PERSON: Lawrence Hunter"@en ;
-                rdfs:label "figure"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000416
-obo:IAO_0000416 rdf:type owl:Class ;
-                rdfs:subClassOf obo:IAO_0000032 ,
-                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                         owl:onProperty obo:IAO_0000039 ;
-                                                         owl:allValuesFrom obo:UO_0000003
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty obo:IAO_0000413 ;
-                                                         owl:allValuesFrom obo:BFO_0000015
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ;
-                obo:IAO_0000114 obo:IAO_0000123 ;
-                obo:IAO_0000115 "A scalar measurement datum that is the result of measuring a temporal interval"@en ;
-                obo:IAO_0000116 "2009/09/28 Alan Ruttenberg. Fucoidan-use-case"@en ;
-                obo:IAO_0000117 "Person:Alan Ruttenberg"@en ;
-                rdfs:label "time measurement datum"@en .
+                rdfs:label "document"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000577
@@ -3851,7 +3409,7 @@ obo:IAO_0000577 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/IAO_0000578
 obo:IAO_0000578 rdf:type owl:Class ;
-                rdfs:subClassOf obo:IAO_0000030 ,
+                rdfs:subClassOf obo:IAO_0020000 ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty obo:BFO_0000051 ;
                                   owl:someValuesFrom obo:IAO_0000577
@@ -3896,31 +3454,36 @@ obo:IAO_0000579 rdf:type owl:Class ;
                 rdfs:label "centrally registered identifier registry"@en .
 
 
-###  http://purl.obolibrary.org/obo/IAO_0000582
-obo:IAO_0000582 rdf:type owl:Class ;
-                rdfs:subClassOf obo:IAO_0000109 ,
-                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                         owl:onProperty obo:IAO_0000581 ;
-                                                         owl:someValuesFrom obo:IAO_0000416
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty obo:IAO_0000583 ;
-                                                         owl:someValuesFrom obo:IAO_0000109
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ;
-                obo:IAO_0000114 obo:IAO_0000123 ;
-                rdfs:label "time stamped measurement datum"@en .
-
-
 ###  http://purl.obolibrary.org/obo/IAO_0020000
 obo:IAO_0020000 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000030 ;
                 obo:IAO_0000111 "identifier"@en ;
                 obo:IAO_0000115 "An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity."@en ;
+                obo:IAO_0000117 "Mathias Brochhausen" ;
+                obo:IAO_0000118 "proper name"@en ;
                 obo:IAO_0000412 <http://purl.obolibrary.org/obo/iao/pno.owl> ;
+                <http://purl.org/dc/elements/1.1/creator> "Mathias Brochhausen" ;
+                rdfs:comment "Sep 29, 2016: The current definition has been amended from the previous version: \"A proper name is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.\" to more accuratly reflect the necessary and sufficient condition on the class. (MB)"@en ;
                 rdfs:label "identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0020015
+obo:IAO_0020015 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( obo:IAO_0020000
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty obo:IAO_0000219 ;
+                                                             owl:allValuesFrom obo:NCBITaxon_9606
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf obo:IAO_0020000 ;
+                obo:IAO_0000115 "A personal name is a proper name identifying an individual person."@en ;
+                obo:IAO_0000117 "Mathias Brochhausen" ;
+                obo:IAO_0000119 "http://en.wikipedia.org/wiki/Personal_name" ;
+                rdfs:comment "Personal names \"today usually comprises a given name bestowed at birth or at a young age plus a surname. It is nearly universal for a human to have a name; except in rare cases, for example feral children growing up in isolation, or infants orphaned by natural disaster for whom no written record survives.[citation needed] The Convention on the Rights of the Child specifies that a child has the right from birth to a name. Certain isolated tribes, such as the Machiguenga of the Amazon, also lack personal names.\" (http://en.wikipedia.org/wiki/Personal_name)"@en ,
+                             "Sep 29, 2016: The comment that including the wikipedia definition of personal name is not to be interpreted in a way that restricts this class to only contain strings of letters. A numerical or alphanumerical identifier that denotes a human is being is a personal name, too. (MB)"@en ;
+                rdfs:label "personal name"@en .
 
 
 ###  http://purl.obolibrary.org/obo/ICO_0000048
@@ -3956,6 +3519,7 @@ obo:OBI_0000011 rdf:type owl:Class ;
                 obo:IAO_0000111 "planned process"@en ;
                 obo:IAO_0000115 "A process that realizes a plan which is the concretization of a plan specification."@en ;
                 obo:IAO_0000412 obo:obi.owl ;
+                rdfs:comment "PS, 11-2020: I'm unsure yet if, this class will be needed in AEON, but it seems that this class is more accurate as parent for an academic event or event seires, as both are always unfolding according to a plan."@en ;
                 rdfs:label "planned process"@en .
 
 
@@ -3986,15 +3550,6 @@ obo:OBI_0100026 rdf:type owl:Class ;
                 rdfs:label "organism"@en .
 
 
-###  http://purl.obolibrary.org/obo/UO_0000003
-obo:UO_0000003 rdf:type owl:Class ;
-               rdfs:subClassOf obo:IAO_0000003 ;
-               obo:IAO_0000111 "time unit"^^xsd:string ;
-               obo:IAO_0000115 "A unit which is a standard measure of the dimension in which events occur in sequence."^^xsd:string ;
-               obo:IAO_0000412 obo:uo.owl ;
-               rdfs:label "time unit"^^xsd:string .
-
-
 ###  http://www.w3.org/2004/02/skos/core#Concept
 skos:Concept rdf:type owl:Class ;
              obo:IAO_0000115 """The class skos:Concept is the class of SKOS concepts.
@@ -4019,6 +3574,9 @@ aeon:AEON_0000001 rdf:type owl:Class ;
                   owl:disjointWith aeon:AEON_0000002 ;
                   obo:IAO_0000112 "The 19th International Semantic Web Conference (ISWC2020) is an academic  event."@en ;
                   obo:IAO_0000115 "An academic event is an organized gathering for researchers (not necessarily academics) to present and discuss their work."@en ;
+                  rdfs:comment """TODO: 1. It needs to be discussed, if events and event series should rather be subsumed under planned processes instead of just processes.
+2. It needs to be discussed, if we need the \"process boundary\" class to describe the start and end of an academic event or event series.
+3. It needs to be discussed, if we need the \"temporal region\" and \"spatiotemporal region\"  classes to describe the duration and manifestation in spacetime of an academic event or event series."""@en ;
                   rdfs:label "academic event"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Q1656682\", \"label\": \"eventLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Category:Event\", \"label\": \"Event\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#ConferenceOrEvent\", \"label\": \"Conference or Event\"}}"^^xsd:string ;
                   aeon:SMW_datatype "Category" ;
@@ -4030,6 +3588,7 @@ aeon:AEON_0000001 rdf:type owl:Class ;
 aeon:AEON_0000002 rdf:type owl:Class ;
                   rdfs:subClassOf obo:BFO_0000015 ;
                   obo:IAO_0000112 "International Semantic Web Conference (ISWC) series" ;
+                  rdfs:comment "TODO: It needs to be discussed, if events and event series should rather be subsumed under planned processes instead of just processes."@en ;
                   rdfs:label "academic event series" ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Q15900647\", \"label\": \"conference_seriesLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Category:Event_series\", \"label\": \"Event_series\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#SeriesOfConferenceOrEvent\", \"label\": \"Series of conference or event\"}}"^^xsd:string ;
                   aeon:SMW_datatype "Category" ;
@@ -4058,7 +3617,7 @@ aeon:AEON_0000005 rdf:type owl:Class ;
                   rdfs:subClassOf obo:BFO_0000023 ;
                   obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
                   <http://purl.org/dc/elements/1.1/date> "2020-09-28T12:51:02Z"^^xsd:dateTime ;
-                  rdfs:label "contributor role"@de ;
+                  rdfs:label "contributor role"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -4252,8 +3811,8 @@ aeon:AEON_0000025 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000027
 aeon:AEON_0000027 rdf:type owl:Class ;
                   rdfs:subClassOf skos:Concept ;
-                  obo:IAO_0000115 "The subject of an academic event or event series is a skos:Concept from a controlled vocabulary, which is used to denote the academic field of the event or event series." ;
-                  rdfs:label "subject" ;
+                  obo:IAO_0000115 "Subject is a skos:Concept, which most likely comes from a controlled vocabulary (e.g. DDC), and which is used to describe the research field of an academic event or event series."@en ;
+                  rdfs:label "academic field"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -4261,10 +3820,9 @@ aeon:AEON_0000027 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000028
 aeon:AEON_0000028 rdf:type owl:Class ;
                   rdfs:subClassOf skos:Concept ;
-                  obo:IAO_0000115 "The topic of an academic event or event series is a skos:Concept that denotes what the event or series is about." ;
+                  obo:IAO_0000115 "Topic is a skos:Concept that describes the central theme of an academic event or event series." ;
                   obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
-                  <http://purl.org/dc/elements/1.1/date> "2020-09-25T12:52:39Z"^^xsd:dateTime ;
-                  rdfs:label "topic" .
+                  rdfs:label "topic"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000029
@@ -4272,7 +3830,7 @@ aeon:AEON_0000029 rdf:type owl:Class ;
                   rdfs:subClassOf obo:BFO_0000029 ;
                   obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
                   <http://purl.org/dc/elements/1.1/date> "2020-10-14T15:31:27Z"^^xsd:dateTime ;
-                  rdfs:label "virtual location"@de ;
+                  rdfs:label "virtual location"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -4292,9 +3850,43 @@ aeon:AEON_0000030 rdf:type owl:Class ;
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
+###  https://github.com/tibonto/aeon#AEON_0000034
+aeon:AEON_0000034 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:IAO_0020000 ;
+                  obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                  <http://purl.org/dc/elements/1.1/date> "2020-11-20T17:31:33Z"^^xsd:dateTime ;
+                  rdfs:label "distributed identifier"@en .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000037
+aeon:AEON_0000037 rdf:type owl:Class ;
+                  rdfs:subClassOf aeon:AEON_0000015 ;
+                  obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                  <http://purl.org/dc/elements/1.1/date> "2020-11-23T11:34:27Z"^^xsd:dateTime ;
+                  rdfs:label "gold sponsor role"@en .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000038
+aeon:AEON_0000038 rdf:type owl:Class ;
+                  rdfs:subClassOf aeon:AEON_0000015 ;
+                  obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                  <http://purl.org/dc/elements/1.1/date> "2020-11-23T11:34:27Z"^^xsd:dateTime ;
+                  rdfs:label "silver sponsor role"@en .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000039
+aeon:AEON_0000039 rdf:type owl:Class ;
+                  rdfs:subClassOf aeon:AEON_0000015 ;
+                  obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                  <http://purl.org/dc/elements/1.1/date> "2020-11-23T11:34:27Z"^^xsd:dateTime ;
+                  rdfs:label "bronze sponsor role"@en .
+
+
 ###  https://github.com/tibonto/aeon#committee
 aeon:committee rdf:type owl:Class ;
-               rdfs:subClassOf obo:BFO_0000027 ;
+               rdfs:subClassOf obo:OBI_0000245 ;
+               obo:IAO_0000117 "TODO: It needs to be discussed if this class ir really needed. One could argue, that the various committee roles and committee memeber properties totally suffice."@en ;
+               ns:term_status "pending"@en ;
                aeon:SMW_datatype "Category" ;
                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -4302,11 +3894,6 @@ aeon:committee rdf:type owl:Class ;
 #################################################################
 #    Individuals
 #################################################################
-
-###  https://github.com/tibonto/aeon#Bronze_Sponsor
-aeon:Bronze_Sponsor rdf:type owl:NamedIndividual ,
-                             aeon:AEON_0000015 .
-
 
 ###  https://github.com/tibonto/aeon#Colloquium
 aeon:Colloquium rdf:type owl:NamedIndividual ,
@@ -4321,11 +3908,6 @@ aeon:Conference rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#Forum
 aeon:Forum rdf:type owl:NamedIndividual ,
                     aeon:AEON_0000004 .
-
-
-###  https://github.com/tibonto/aeon#Gold_Sponsor
-aeon:Gold_Sponsor rdf:type owl:NamedIndividual ,
-                           aeon:AEON_0000015 .
 
 
 ###  https://github.com/tibonto/aeon#Hackathon
@@ -4347,9 +3929,9 @@ aeon:PIDapalooza rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#PIDapalooza2020
 aeon:PIDapalooza2020 rdf:type owl:NamedIndividual ,
                               aeon:AEON_0000001 ;
+                     aeon:AEON_0000032 aeon:Conference ;
                      aeon:has_WDQID <https://www.wikidata.org/wiki/Q65929359> ;
-                     aeon:has_event_type aeon:Conference ;
-                     aeon:has_internal_identifier aeon:_ConfIDentID_1 ;
+                     aeon:has_identifier aeon:_ConfIDentID_1 ;
                      aeon:has_speaker aeon:_Person_1 ;
                      aeon:occurs_in_city aeon:Lisbon ;
                      aeon:occurs_in_country aeon:Portugal ;
@@ -4358,6 +3940,7 @@ aeon:PIDapalooza2020 rdf:type owl:NamedIndividual ,
                      aeon:number_of_attendees 117 ;
                      aeon:number_of_tracks 13 ;
                      aeon:start_date "2020-01-29T09:00:00"^^xsd:dateTime ;
+                     obo:IAO_0000117 "This individual serves as an example of usage for describing academic events with AEON."@en ;
                      rdfs:comment obo:IAO_0000002 ;
                      rdfs:label "PIDapalooza2020"@en .
 
@@ -4374,11 +3957,6 @@ aeon:Seminar rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#Session
 aeon:Session rdf:type owl:NamedIndividual ,
                       aeon:AEON_0000004 .
-
-
-###  https://github.com/tibonto/aeon#Silver_Sponsor
-aeon:Silver_Sponsor rdf:type owl:NamedIndividual ,
-                             aeon:AEON_0000015 .
 
 
 ###  https://github.com/tibonto/aeon#Symposium
@@ -4414,9 +3992,13 @@ aeon:_ConfIDentID_1 rdf:type owl:NamedIndividual ;
                     rdfs:comment obo:IAO_0000002 .
 
 
+###  https://github.com/tibonto/aeon#_PIDapalooza_Speaker_1
+aeon:_PIDapalooza_Speaker_1 rdf:type owl:NamedIndividual .
+
+
 ###  https://github.com/tibonto/aeon#_Person_1
-aeon:_Person_1 rdf:type owl:NamedIndividual ,
-                        obo:NCBITaxon_9606 ;
+aeon:_Person_1 rdf:type owl:NamedIndividual ;
+               aeon:has_ORCID <https://orcid.org/0000-0002-1595-3213> ;
                aeon:first_name "Philip"^^xsd:string ;
                aeon:last_name "Strömert"^^xsd:string ;
                rdfs:comment obo:IAO_0000002 .
@@ -4430,9 +4012,12 @@ aeon:other_EventType rdf:type owl:NamedIndividual ,
                      rdfs:label "other EventType"@de .
 
 
+###  https://orcid.org/0000-0002-1595-3213
+<https://orcid.org/0000-0002-1595-3213> rdf:type owl:NamedIndividual .
+
+
 ###  https://www.wikidata.org/wiki/Q65929359
-<https://www.wikidata.org/wiki/Q65929359> rdf:type owl:NamedIndividual ,
-                                                   aeon:AEON_0000021 ;
+<https://www.wikidata.org/wiki/Q65929359> rdf:type owl:NamedIndividual ;
                                           rdfs:comment obo:IAO_0000002 .
 
 
@@ -4457,11 +4042,11 @@ aeon:other_EventType rdf:type owl:NamedIndividual ,
 ] .
 
 
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( aeon:Bronze_Sponsor
-                        aeon:Gold_Sponsor
-                        aeon:Silver_Sponsor
-                      )
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( aeon:AEON_0000037
+                aeon:AEON_0000038
+                aeon:AEON_0000039
+              )
 ] .
 
 
