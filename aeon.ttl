@@ -845,8 +845,8 @@ It mainly serves as an ordering parent property for known centrally registered i
 ###  https://github.com/tibonto/aeon#AEON_0000032
 aeon:AEON_0000032 rdf:type owl:ObjectProperty ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:label "has event type"@en ;
                   rdfs:range aeon:AEON_0000004 ;
+                  rdfs:label "has event type"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"event_type\"}, \"openresearch\": {\"uri\": null, \"label\": \"Type\"}}"^^xsd:string ;
                   aeon:SMW_datatype "Text" ;
                   aeon:SMW_import_info """The allowed value list for this property is defined in [[MediaWiki:Smw_allows_list_has_event_type]].
@@ -2274,21 +2274,6 @@ obo:BFO_0000003 rdf:type owl:Class ;
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource obo:BFO_0000003 ;
-   owl:annotatedProperty obo:IAO_0000116 ;
-   owl:annotatedTarget "Occurrent doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. An example would be the sum of a process and the process boundary of another process."@en ;
-   obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/0000006> ;
-   rdfs:comment "per discussion with Barry Smith"
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource obo:BFO_0000003 ;
-   owl:annotatedProperty obo:IAO_0000116 ;
-   owl:annotatedTarget "Simons uses different terminology for relations of occurrents to regions: Denote the spatio-temporal location of a given occurrent e by 'spn[e]' and call this region its span. We may say an occurrent is at its span, in any larger region, and covers any smaller region. Now suppose we have fixed a frame of reference so that we can speak not merely of spatio-temporal but also of spatial regions (places) and temporal regions (times). The spread of an occurrent, (relative to a frame of reference) is the space it exactly occupies, and its spell is likewise the time it exactly occupies. We write 'spr[e]' and `spl[e]' respectively for the spread and spell of e, omitting mention of the frame." ;
-   obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/0000012>
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource obo:BFO_0000003 ;
    owl:annotatedProperty obo:IAO_0000600 ;
    owl:annotatedTarget "An occurrent is an entity that unfolds itself in time or it is the instantaneous boundary of such an entity (for example a beginning or an ending) or it is a temporal or spatiotemporal region which such an entity occupies_temporal_region or occupies_spatiotemporal_region. (axiom label in BFO2 Reference: [077-002])"@en ;
    obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/077-002>
@@ -2320,6 +2305,21 @@ obo:BFO_0000003 rdf:type owl:Class ;
    owl:annotatedProperty obo:IAO_0000602 ;
    owl:annotatedTarget "(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] " ;
    obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/079-001>
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:BFO_0000003 ;
+   owl:annotatedProperty obo:IAO_0000116 ;
+   owl:annotatedTarget "Occurrent doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. An example would be the sum of a process and the process boundary of another process."@en ;
+   obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/0000006> ;
+   rdfs:comment "per discussion with Barry Smith"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:BFO_0000003 ;
+   owl:annotatedProperty obo:IAO_0000116 ;
+   owl:annotatedTarget "Simons uses different terminology for relations of occurrents to regions: Denote the spatio-temporal location of a given occurrent e by 'spn[e]' and call this region its span. We may say an occurrent is at its span, in any larger region, and covers any smaller region. Now suppose we have fixed a frame of reference so that we can speak not merely of spatio-temporal but also of spatial regions (places) and temporal regions (times). The spread of an occurrent, (relative to a frame of reference) is the space it exactly occupies, and its spell is likewise the time it exactly occupies. We write 'spr[e]' and `spl[e]' respectively for the spread and spell of e, omitting mention of the frame." ;
+   obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/0000012>
  ] .
 
 
