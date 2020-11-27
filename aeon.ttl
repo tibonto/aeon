@@ -3854,7 +3854,7 @@ aeon:AEON_0000039 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#committee
 aeon:committee rdf:type owl:Class ;
-               rdfs:subClassOf obo:BFO_0000027 ;
+               rdfs:subClassOf obo:OBI_0000245 ;
                obo:IAO_0000117 "TODO: It needs to be discussed if this class ir really needed. One could argue, that the various committee roles and committee memeber properties totally suffice."@en ;
                ns:term_status "pending"@en ;
                aeon:SMW_datatype "Category" ;
