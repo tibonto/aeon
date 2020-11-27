@@ -967,7 +967,11 @@ aeon:has_ROR rdf:type owl:ObjectProperty ;
 aeon:has_WDQID rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf aeon:AEON_0000031 ;
                rdfs:domain obo:BFO_0000001 ;
-               rdfs:range aeon:AEON_0000021 ;
+               rdfs:range aeon:AEON_0000021 ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty aeon:ID_base_URL ;
+                            owl:hasValue "https://www.wikidata.org/wiki/"^^xsd:anyURI
+                          ] ;
                aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"itemID\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Wikidataid\", \"label\": \"Wikidataid\"}}"^^xsd:string ;
                aeon:SMW_datatype "External identifier" ;
                aeon:SMW_import_info """External formatter uri [[External formatter uri::https://www.wikidata.org/wiki/$1]]
