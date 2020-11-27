@@ -855,7 +855,7 @@ aeon:AEON_0000028 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000031
 aeon:AEON_0000031 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf obo:IAO_0000235 ;
+                  rdfs:subPropertyOf aeon:has_identifier ;
                   rdfs:domain obo:BFO_0000001 ;
                   rdfs:range obo:IAO_0000578 ;
                   obo:IAO_0000116 """PS: This is an abstract property that should not be used, as it seems better to add new CRID subclasses, for not yet existing CRIDs.
@@ -877,13 +877,9 @@ aeon:AEON_0000032 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000033
 aeon:AEON_0000033 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf obo:IAO_0000235 ;
+                  rdfs:subPropertyOf aeon:has_identifier ;
                   rdfs:domain obo:BFO_0000001 ;
-                  rdfs:range aeon:AEON_0000034 ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty aeon:ID_URL ;
-                               owl:someValuesFrom xsd:anyURI
-                             ] ;
+                  rdfs:range aeon:AEON_0000034 ;
                   obo:IAO_0000117 "Philip Stroemert"^^xsd:string ;
                   rdfs:label "has distributed identifier"@en .
 
@@ -3408,7 +3404,7 @@ obo:IAO_0000577 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/IAO_0000578
 obo:IAO_0000578 rdf:type owl:Class ;
-                rdfs:subClassOf obo:IAO_0000030 ,
+                rdfs:subClassOf obo:IAO_0020000 ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty obo:BFO_0000051 ;
                                   owl:someValuesFrom obo:IAO_0000577
