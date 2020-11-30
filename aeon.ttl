@@ -4103,9 +4103,9 @@ aeon:PIDapalooza2020 rdf:type owl:NamedIndividual ,
                      aeon:AEON_0000050 aeon:_Person_1 ;
                      aeon:AEON_0000061 <https://www.wikidata.org/wiki/Q65929359> ;
                      aeon:AEON_0000074 aeon:_ConfIDentID_1 ;
-                     aeon:occurs_in_city aeon:Lisbon ;
-                     aeon:occurs_in_country aeon:Portugal ;
                      aeon:AEON_0000084 aeon:PIDapalooza ;
+                     aeon:AEON_0000086 aeon:Portugal ;
+                     aeon:AEON_0000087 aeon:Lisbon ;
                      aeon:end_date "2020-01-30T17:00:00"^^xsd:dateTime ;
                      aeon:number_of_attendees 117 ;
                      aeon:number_of_tracks 13 ;
@@ -4137,14 +4137,6 @@ aeon:_Person_1 rdf:type owl:NamedIndividual ;
                aeon:first_name "Philip"^^xsd:string ;
                aeon:last_name "Strömert"^^xsd:string ;
                rdfs:comment obo:IAO_0000002 .
-
-
-###  https://github.com/tibonto/aeon#other_EventType
-aeon:other_EventType rdf:type owl:NamedIndividual ,
-                              aeon:AEON_0000004 ;
-                     obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
-                     <http://purl.org/dc/elements/1.1/date> "2020-09-28T11:57:10Z"^^xsd:dateTime ;
-                     rdfs:label "other EventType"@de .
 
 
 ###  https://orcid.org/0000-0002-1595-3213
