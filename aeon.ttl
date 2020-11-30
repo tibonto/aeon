@@ -885,14 +885,6 @@ aeon:AEON_0000041 rdf:type owl:ObjectProperty ;
                   rdfs:label "has topic"@en .
 
 
-###  https://github.com/tibonto/aeon#collocated_event_of
-aeon:collocated_event_of rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf obo:BFO_0000138 ;
-                         rdfs:domain aeon:AEON_0000001 ;
-                         rdfs:range aeon:AEON_0000001 ;
-                         aeon:SMW_datatype "Page" ;
-                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
 ###  https://github.com/tibonto/aeon#AEON_0000043
 aeon:AEON_0000043 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf owl:topObjectProperty ;
@@ -1030,14 +1022,6 @@ aeon:AEON_0000051 rdf:type owl:ObjectProperty ;
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#has_event
-aeon:has_event rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf obo:BFO_0000118 ;
-               owl:inverseOf aeon:part_of_series ;
-               rdfs:domain aeon:AEON_0000002 ;
-               rdfs:range aeon:AEON_0000001 ;
-               aeon:SMW_datatype "Page" ;
-               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 ###  https://github.com/tibonto/aeon#AEON_0000052
 aeon:AEON_0000052 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000048 ;
@@ -1382,15 +1366,33 @@ aeon:AEON_0000080 rdf:type owl:ObjectProperty ;
                   aeon:WikidataLabel "itemID" .
 
 
+###  https://github.com/tibonto/aeon#AEON_0000082
+aeon:AEON_0000082 rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf obo:BFO_0000138 ;
+                         rdfs:domain aeon:AEON_0000001 ;
+                         rdfs:range aeon:AEON_0000001 ;
+                         rdfs:label "collocated event of"@en ;
+                         aeon:SMW_datatype "Page" ;
+                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
+###  https://github.com/tibonto/aeon#AEON_0000081
+aeon:AEON_0000081 rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf obo:BFO_0000118 ;
+               owl:inverseOf aeon:AEON_0000084 ;
+               rdfs:domain aeon:AEON_0000002 ;
+               rdfs:range aeon:AEON_0000001 ;
+               rdfs:label "has event"@en ;
+               aeon:SMW_datatype "Page" ;
+               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#joint_event_of
-aeon:joint_event_of rdf:type owl:ObjectProperty ;
+###  https://github.com/tibonto/aeon#AEON_0000083
+aeon:AEON_0000083 rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf obo:BFO_0000138 ;
                     rdfs:domain aeon:AEON_0000001 ;
                     rdfs:range aeon:AEON_0000001 ;
+                    rdfs:label "joint event of"@en ;
                     aeon:SMW_datatype "Page" ;
                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1445,21 +1447,23 @@ aeon:occurs_in_virtual_place rdf:type owl:ObjectProperty ;
                              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#part_of_series
-aeon:part_of_series rdf:type owl:ObjectProperty ;
+###  https://github.com/tibonto/aeon#AEON_0000084
+aeon:AEON_0000084 rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf obo:BFO_0000138 ;
                     rdfs:domain aeon:AEON_0000001 ;
                     rdfs:range aeon:AEON_0000002 ;
+                    rdfs:label "part of series"@en ;
                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P179\", \"label\": \"part_of_the_seriesLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Event_in_series\", \"label\": \"Event_in_series\"}}"^^xsd:string ;
                     aeon:SMW_datatype "Page" ;
                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#umbrella_event_of
-aeon:umbrella_event_of rdf:type owl:ObjectProperty ;
+###  https://github.com/tibonto/aeon#AEON_0000085
+aeon:AEON_0000085 rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf obo:BFO_0000138 ;
                        rdfs:domain aeon:AEON_0000001 ;
                        rdfs:range aeon:AEON_0000001 ;
+                       rdfs:label "umbrella event of"@en ;
                        aeon:SMW_datatype "Page" ;
                        aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
