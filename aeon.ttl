@@ -833,7 +833,7 @@ obo:RO_0000087 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000031
 aeon:AEON_0000031 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf aeon:has_identifier ;
+                  rdfs:subPropertyOf aeon:AEON_0000074 ;
                   rdfs:domain obo:BFO_0000001 ;
                   rdfs:range obo:IAO_0000578 ;
                   obo:IAO_0000116 """PS: This is an abstract property that should not be used, as it seems better to add new CRID subclasses, for not yet existing CRIDs.
@@ -856,7 +856,7 @@ aeon:AEON_0000032 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000033
 aeon:AEON_0000033 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf aeon:has_identifier ;
+                  rdfs:subPropertyOf aeon:AEON_0000074 ;
                   rdfs:domain obo:BFO_0000001 ;
                   rdfs:range aeon:AEON_0000034 ;
                   obo:IAO_0000117 "Philip Stroemert"^^xsd:string ;
@@ -894,94 +894,28 @@ aeon:collocated_event_of rdf:type owl:ObjectProperty ;
                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#has_DOI
-aeon:has_DOI rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf aeon:AEON_0000031 ;
-             rdfs:domain obo:BFO_0000001 ;
-             rdfs:range aeon:AEON_0000016 ;
-             aeon:SMW_datatype "External identifier" ;
-             aeon:SMW_import_info """External formatter uri [[External formatter uri::https://doi.org/$1]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#has_GND
-aeon:has_GND rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf aeon:AEON_0000031 ;
-             rdfs:domain obo:BFO_0000001 ;
-             rdfs:range aeon:AEON_0000017 ;
-             aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P227\", \"label\": \"GND_ID\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#gndIdentifier\", \"label\": \"GND-Identifier\"}}"^^xsd:string ;
-             aeon:SMW_datatype "External identifier" ;
-             aeon:SMW_import_info """External formatter uri [[External formatter uri::http://d-nb.info/gnd/$1]]
-
-[[partOfSubobject::Template:Subobject External_Process_ID]]
-[[partOfSubobject::Template:Subobject Person_ID]]
-[[partOfSubobject::Template:Subobject Organization_ID]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
-             aeon:WikidataLabel "GND_ID" ;
-             aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P227" .
 
 
-###  https://github.com/tibonto/aeon#has_ISNI
-aeon:has_ISNI rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf aeon:AEON_0000031 ;
-              rdfs:domain obo:OBI_0000245 ;
-              rdfs:range aeon:AEON_0000018 ;
-              aeon:SMW_datatype "External identifier" ;
-              aeon:SMW_import_info """External formatter uri [[External formatter uri::https://isni.org/isni/$1]]
-
-[[partOfSubobject::Template:Subobject Person_ID]]
-[[partOfSubobject::Template:Subobject Organization_ID]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#has_ORCID
-aeon:has_ORCID rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf aeon:AEON_0000031 ;
-               rdfs:domain obo:NCBITaxon_9606 ;
-               rdfs:range aeon:AEON_0000019 ;
-               aeon:SMW_datatype "External identifier" ;
-               aeon:SMW_import_info """External formatter uri [[External formatter uri::https://orcid.org/$1]]
-
-[[partOfSubobject::Template:Subobject Person_ID]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#has_ROR
-aeon:has_ROR rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf aeon:AEON_0000031 ;
-             rdfs:domain obo:OBI_0000245 ;
-             rdfs:range aeon:AEON_0000020 ;
-             aeon:SMW_datatype "External identifier" ;
-             aeon:SMW_import_info """External formatter uri [[External formatter uri::https://ror.org/$1]]
-
-[[partOfSubobject::Template:Subobject Organization_ID]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#has_WDQID
-aeon:has_WDQID rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf aeon:AEON_0000031 ;
-               rdfs:domain obo:BFO_0000001 ;
-               rdfs:range aeon:AEON_0000021 ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty aeon:ID_base_URL ;
-                            owl:hasValue "https://www.wikidata.org/wiki/"^^xsd:anyURI
-                          ] ;
-               aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"itemID\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Wikidataid\", \"label\": \"Wikidataid\"}}"^^xsd:string ;
-               aeon:SMW_datatype "External identifier" ;
-               aeon:SMW_import_info """External formatter uri [[External formatter uri::https://www.wikidata.org/wiki/$1]]
 
-[[partOfSubobject::Template:Subobject Process_External_ID]]
-[[partOfSubobject::Template:Subobject Person_ID]]
-[[partOfSubobject::Template:Subobject Organization_ID]]
 
-[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
-               aeon:WikidataLabel "itemID" .
+
+
+
+
+
+
+
+
 
 
 ###  https://github.com/tibonto/aeon#has_attendee
@@ -1103,23 +1037,7 @@ aeon:has_general_committee_member rdf:type owl:ObjectProperty ;
                                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#has_identifier
-aeon:has_identifier rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf obo:IAO_0000235 ;
-                    rdfs:domain obo:BFO_0000001 ;
-                    rdfs:range obo:IAO_0020000 ;
-                    rdfs:label "has identifier"@en ;
-                    aeon:AEON_0000026 "{\"wikidata\": [{\"uri\": \"https://www.wikidata.org/wiki/Property:P646\", \"label\": \"Freebase_ID\"}, {\"uri\": \"https://www.wikidata.org/wiki/Property:P5127\", \"label\": \"WikiCFP_conference_series_ID\"}]}"^^xsd:string ;
-                    aeon:SMW_datatype "Text" ;
-                    aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
-[[partOfSubobject::Template:Subobject Person_ID]]
-[[partOfSubobject::Template:Subobject Organization_ID]]
 
-[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
-                    aeon:WikidataLabel "Freebase_ID" ,
-                                       "WikiCFP_conference_series_ID" ;
-                    aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P5127" ,
-                                     "https://www.wikidata.org/wiki/Property:P646" .
 
 
 ###  https://github.com/tibonto/aeon#has_keynote_speaker
@@ -1254,6 +1172,35 @@ aeon:has_reviewer rdf:type owl:ObjectProperty ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
 
+
+###  https://github.com/tibonto/aeon#AEON_0000074
+aeon:AEON_0000074 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf obo:IAO_0000235 ;
+                  rdfs:domain obo:BFO_0000001 ;
+                  rdfs:range obo:IAO_0020000 ;
+                  rdfs:label "has identifier"@en ;
+                  aeon:AEON_0000026 "{\"wikidata\": [{\"uri\": \"https://www.wikidata.org/wiki/Property:P646\", \"label\": \"Freebase_ID\"}, {\"uri\": \"https://www.wikidata.org/wiki/Property:P5127\", \"label\": \"WikiCFP_conference_series_ID\"}]}"^^xsd:string ;
+                  aeon:SMW_datatype "Text" ;
+                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
+                  aeon:WikidataLabel "Freebase_ID" ,
+                                     "WikiCFP_conference_series_ID" ;
+                  aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P5127" ,
+                                   "https://www.wikidata.org/wiki/Property:P646" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000075
+aeon:AEON_0000075 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000031 ;
+                  rdfs:domain obo:BFO_0000001 ;
+                  rdfs:range aeon:AEON_0000016 ;
+                  rdfs:label "has DOI"@en ;
+                  aeon:SMW_datatype "External identifier" ;
+                  aeon:SMW_import_info """External formatter uri [[External formatter uri::https://doi.org/$1]]
+
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
@@ -1265,10 +1212,25 @@ aeon:has_speaker rdf:type owl:ObjectProperty ;
                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P823\", \"label\": \"speaker\"}}"^^xsd:string ;
                  aeon:SMW_datatype "Page" ;
                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
+###  https://github.com/tibonto/aeon#AEON_0000076
+aeon:AEON_0000076 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000031 ;
+                  rdfs:domain obo:BFO_0000001 ;
+                  rdfs:range aeon:AEON_0000017 ;
+                  rdfs:label "has GND"@en ;
+                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P227\", \"label\": \"GND_ID\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#gndIdentifier\", \"label\": \"GND-Identifier\"}}"^^xsd:string ;
+                  aeon:SMW_datatype "External identifier" ;
+                  aeon:SMW_import_info """External formatter uri [[External formatter uri::http://d-nb.info/gnd/$1]]
+
+[[partOfSubobject::Template:Subobject External_Process_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" ;
                  aeon:WikidataLabel "speaker" ;
                  aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P823" .
+                  aeon:WikidataLabel "GND_ID" ;
+                  aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P227" .
 
 
 ###  https://github.com/tibonto/aeon#has_sponsor
@@ -1287,6 +1249,31 @@ aeon:has_sponsor rdf:type owl:ObjectProperty ;
                  rdfs:comment "PS 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...). As the possible sponsor types can have various schemes, it seems best to have named individuals of the aeon:Sponsor class at the moment, which will make up the range of the data property aeon_sponsor_type."@en ;
                  aeon:SMW_datatype "Page" ;
                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Sponsor]]
+###  https://github.com/tibonto/aeon#AEON_0000077
+aeon:AEON_0000077 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000031 ;
+                  rdfs:domain obo:OBI_0000245 ;
+                  rdfs:range aeon:AEON_0000018 ;
+                  rdfs:label "has ISNI"@en ;
+                  aeon:SMW_datatype "External identifier" ;
+                  aeon:SMW_import_info """External formatter uri [[External formatter uri::https://isni.org/isni/$1]]
+
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000078
+aeon:AEON_0000078 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000031 ;
+                  rdfs:domain obo:NCBITaxon_9606 ;
+                  rdfs:range aeon:AEON_0000019 ;
+                  rdfs:label "has ORCID"@en ;
+                  aeon:SMW_datatype "External identifier" ;
+                  aeon:SMW_import_info """External formatter uri [[External formatter uri::https://orcid.org/$1]]
+
+[[partOfSubobject::Template:Subobject Person_ID]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
@@ -1298,7 +1285,16 @@ aeon:has_sponsorship_committee_chair rdf:type owl:ObjectProperty ;
                                      rdfs:range obo:NCBITaxon_9606 ;
                                      aeon:SMW_datatype "Page" ;
                                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+###  https://github.com/tibonto/aeon#AEON_0000079
+aeon:AEON_0000079 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000031 ;
+                  rdfs:domain obo:OBI_0000245 ;
+                  rdfs:range aeon:AEON_0000020 ;
+                  rdfs:label "has ROR"@en ;
+                  aeon:SMW_datatype "External identifier" ;
+                  aeon:SMW_import_info """External formatter uri [[External formatter uri::https://ror.org/$1]]
 
+[[partOfSubobject::Template:Subobject Organization_ID]]
 
 ###  https://github.com/tibonto/aeon#has_sponsorship_committee_member
 aeon:has_sponsorship_committee_member rdf:type owl:ObjectProperty ;
@@ -1307,6 +1303,7 @@ aeon:has_sponsorship_committee_member rdf:type owl:ObjectProperty ;
                                       rdfs:range obo:NCBITaxon_9606 ;
                                       aeon:SMW_datatype "Page" ;
                                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#has_steering_committee_chair
@@ -1316,7 +1313,23 @@ aeon:has_steering_committee_chair rdf:type owl:ObjectProperty ;
                                   rdfs:range obo:NCBITaxon_9606 ;
                                   aeon:SMW_datatype "Page" ;
                                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+###  https://github.com/tibonto/aeon#AEON_0000080
+aeon:AEON_0000080 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000031 ;
+                  rdfs:domain obo:BFO_0000001 ;
+                  rdfs:range aeon:AEON_0000021 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty aeon:ID_base_URL ;
+                               owl:hasValue "https://www.wikidata.org/wiki/"^^xsd:anyURI
+                             ] ;
+                  rdfs:label "has WDQID"@en ;
+                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"itemID\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Wikidataid\", \"label\": \"Wikidataid\"}}"^^xsd:string ;
+                  aeon:SMW_datatype "External identifier" ;
+                  aeon:SMW_import_info """External formatter uri [[External formatter uri::https://www.wikidata.org/wiki/$1]]
 
+[[partOfSubobject::Template:Subobject Process_External_ID]]
+[[partOfSubobject::Template:Subobject Person_ID]]
+[[partOfSubobject::Template:Subobject Organization_ID]]
 
 ###  https://github.com/tibonto/aeon#has_steering_committee_member
 aeon:has_steering_committee_member rdf:type owl:ObjectProperty ;
@@ -1325,6 +1338,8 @@ aeon:has_steering_committee_member rdf:type owl:ObjectProperty ;
                                    rdfs:range obo:NCBITaxon_9606 ;
                                    aeon:SMW_datatype "Page" ;
                                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
+                  aeon:WikidataLabel "itemID" .
 
 
 ###  https://github.com/tibonto/aeon#has_technical_committee_chair
@@ -3983,9 +3998,9 @@ aeon:PIDapalooza rdf:type owl:NamedIndividual ,
 aeon:PIDapalooza2020 rdf:type owl:NamedIndividual ,
                               aeon:AEON_0000001 ;
                      aeon:AEON_0000032 aeon:AEON_0010001 ;
-                     aeon:has_WDQID <https://www.wikidata.org/wiki/Q65929359> ;
-                     aeon:has_identifier aeon:_ConfIDentID_1 ;
                      aeon:has_speaker aeon:_Person_1 ;
+                     aeon:AEON_0000061 <https://www.wikidata.org/wiki/Q65929359> ;
+                     aeon:AEON_0000074 aeon:_ConfIDentID_1 ;
                      aeon:occurs_in_city aeon:Lisbon ;
                      aeon:occurs_in_country aeon:Portugal ;
                      aeon:part_of_series aeon:PIDapalooza ;
@@ -4016,7 +4031,7 @@ aeon:_PIDapalooza_Speaker_1 rdf:type owl:NamedIndividual .
 
 ###  https://github.com/tibonto/aeon#_Person_1
 aeon:_Person_1 rdf:type owl:NamedIndividual ;
-               aeon:has_ORCID <https://orcid.org/0000-0002-1595-3213> ;
+               aeon:AEON_0000059 <https://orcid.org/0000-0002-1595-3213> ;
                aeon:first_name "Philip"^^xsd:string ;
                aeon:last_name "Strömert"^^xsd:string ;
                rdfs:comment obo:IAO_0000002 .
