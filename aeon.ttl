@@ -3946,7 +3946,6 @@ aeon:AEON_0000042 rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-
 ###  https://github.com/tibonto/aeon#AEON_0010000
 aeon:AEON_0010000 rdf:type owl:NamedIndividual ,
                            aeon:AEON_0000004 ;
@@ -4034,12 +4033,12 @@ aeon:PIDapalooza rdf:type owl:NamedIndividual ,
 aeon:PIDapalooza2020 rdf:type owl:NamedIndividual ,
                               aeon:AEON_0000001 ;
                      aeon:AEON_0000032 aeon:AEON_0010001 ;
-                     aeon:has_speaker aeon:_Person_1 ;
+                     aeon:AEON_0000050 aeon:_Person_1 ;
                      aeon:AEON_0000061 <https://www.wikidata.org/wiki/Q65929359> ;
                      aeon:AEON_0000074 aeon:_ConfIDentID_1 ;
                      aeon:occurs_in_city aeon:Lisbon ;
                      aeon:occurs_in_country aeon:Portugal ;
-                     aeon:part_of_series aeon:PIDapalooza ;
+                     aeon:AEON_0000084 aeon:PIDapalooza ;
                      aeon:end_date "2020-01-30T17:00:00"^^xsd:dateTime ;
                      aeon:number_of_attendees 117 ;
                      aeon:number_of_tracks 13 ;
