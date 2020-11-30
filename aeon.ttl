@@ -1485,6 +1485,7 @@ owl:topDataProperty rdfs:range rdfs:Literal .
 aeon:CORE_ranking rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf aeon:metric ;
                   rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:label "CORE ranking"@en ;
                   aeon:SMW_datatype "Text" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1494,6 +1495,7 @@ aeon:ID rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf owl:topDataProperty ;
         rdfs:domain obo:IAO_0020000 ;
         obo:IAO_0000115 "The literal value of an identifier."@en ;
+        rdfs:label "identifier"@en ;
         aeon:SMW_datatype "Text" ;
         aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
 [[partOfSubobject::Template:Subobject Person_ID]]
@@ -1508,6 +1510,7 @@ aeon:ID_URL rdf:type owl:DatatypeProperty ;
             rdfs:domain obo:IAO_0020000 ;
             rdfs:range xsd:anyURI ;
             rdfs:comment "The literal value of the full URL used by the identifier scheme, based on the concatination of base URL and ID (ID_URL:value = ID_base_URL:value + ID:value)."@en ;
+            rdfs:label "identifier URI"@en ;
             aeon:SMW_datatype "URL" ;
             aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
 [[partOfSubobject::Template:Subobject Person_ID]]
@@ -1522,6 +1525,7 @@ aeon:ID_base_URL rdf:type owl:DatatypeProperty ;
                  rdfs:domain obo:IAO_0020000 ;
                  rdfs:range xsd:anyURI ;
                  rdfs:comment "The literal value of the base URL used by the identifier scheme."@en ;
+                 rdfs:label "identifier base URI"@en ;
                  aeon:SMW_datatype "URL" ;
                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
 [[partOfSubobject::Template:Subobject Person_ID]]
@@ -1535,6 +1539,7 @@ aeon:abstract_deadline rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf aeon:deadline ;
                        rdfs:domain aeon:AEON_0000001 ;
                        rdfs:range xsd:dateTimeStamp ;
+                       rdfs:label "abstract deadline"@en ;
                        aeon:SMW_datatype "Date" ;
                        aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1543,6 +1548,7 @@ aeon:abstract_deadline rdf:type owl:DatatypeProperty ;
 aeon:acceptance_rate rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf aeon:metric ;
                      rdfs:domain aeon:AEON_0000001 ;
+                     rdfs:label "acceptance rate"@en ;
                      aeon:SMW_datatype "Number" ;
                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1551,6 +1557,7 @@ aeon:acceptance_rate rdf:type owl:DatatypeProperty ;
 aeon:accepted_papers rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf aeon:metric ;
                      rdfs:domain aeon:AEON_0000001 ;
+                     rdfs:label "accepted papers"@en ;
                      aeon:SMW_datatype "Number" ;
                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1559,6 +1566,7 @@ aeon:accepted_papers rdf:type owl:DatatypeProperty ;
 aeon:accepted_short_papers rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf aeon:metric ;
                            rdfs:domain aeon:AEON_0000001 ;
+                           rdfs:label "accepted short papers"@en ;
                            aeon:SMW_datatype "Number" ;
                            aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1568,6 +1576,7 @@ aeon:camera-ready_deadline rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf aeon:deadline ;
                            rdfs:domain aeon:AEON_0000001 ;
                            rdfs:range xsd:dateTimeStamp ;
+                           rdfs:label "camera-ready deadline"@en ;
                            aeon:SMW_datatype "Date" ;
                            aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1576,6 +1585,7 @@ aeon:camera-ready_deadline rdf:type owl:DatatypeProperty ;
 aeon:city rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf aeon:location ;
           rdfs:domain aeon:AEON_0000022 ;
+          rdfs:label "city"@en ;
           aeon:SMW_datatype "Text" ;
           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1584,6 +1594,7 @@ aeon:city rdf:type owl:DatatypeProperty ;
 aeon:contact rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
              rdfs:domain aeon:AEON_0000009 ;
+             rdfs:label "contact"@en ;
              aeon:SMW_datatype "Text" ;
              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1592,6 +1603,7 @@ aeon:contact rdf:type owl:DatatypeProperty ;
 aeon:contact_email rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf aeon:contact ;
                    rdfs:domain aeon:AEON_0000009 ;
+                   rdfs:label "contact email"@en ;
                    aeon:SMW_datatype "Email" ;
                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1600,6 +1612,7 @@ aeon:contact_email rdf:type owl:DatatypeProperty ;
 aeon:contact_person_name rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:contact ;
                          rdfs:domain aeon:AEON_0000009 ;
+                         rdfs:label "contact person"@en ;
                          aeon:SMW_datatype "Text" ;
                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1608,6 +1621,7 @@ aeon:contact_person_name rdf:type owl:DatatypeProperty ;
 aeon:contact_phone rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf aeon:contact ;
                    rdfs:domain aeon:AEON_0000009 ;
+                   rdfs:label "contact phone"@en ;
                    aeon:SMW_datatype "Telephone number" ;
                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1616,6 +1630,7 @@ aeon:contact_phone rdf:type owl:DatatypeProperty ;
 aeon:coordinates rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf aeon:location ;
                  rdfs:domain obo:GAZ_00000448 ;
+                 rdfs:label "coordinates"@en ;
                  aeon:SMW_datatype "Geographic coordinates" ;
                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1624,6 +1639,7 @@ aeon:coordinates rdf:type owl:DatatypeProperty ;
 aeon:country rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf aeon:location ;
              rdfs:domain aeon:AEON_0000023 ;
+             rdfs:label "country"@en ;
              aeon:SMW_datatype "Text" ;
              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1633,6 +1649,7 @@ aeon:deadline rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain aeon:AEON_0000001 ;
               rdfs:range xsd:dateTime ;
+              rdfs:label "deadline"@en ;
               aeon:SMW_datatype "Date" ;
               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1642,6 +1659,7 @@ aeon:demo_deadline rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf aeon:deadline ;
                    rdfs:domain aeon:AEON_0000001 ;
                    rdfs:range xsd:dateTimeStamp ;
+                   rdfs:label "demo deadline"@en ;
                    aeon:SMW_datatype "Date" ;
                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1650,6 +1668,7 @@ aeon:demo_deadline rdf:type owl:DatatypeProperty ;
 aeon:duration rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain aeon:AEON_0000001 ;
+              rdfs:label "duration"@en ;
               aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2047\", \"label\": \"duration\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#dateOfConferenceOrEvent\", \"label\": \"Date of conference or event\"}}"^^xsd:string ;
               aeon:SMW_datatype "Quantity" ;
               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
@@ -1662,6 +1681,7 @@ aeon:end_date rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf aeon:duration ;
               rdfs:domain aeon:AEON_0000001 ;
               rdfs:range xsd:dateTimeStamp ;
+              rdfs:label "end date"@en ;
               aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P582\", \"label\": \"end_time\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:End_date\", \"label\": \"End_date\"},\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"end\"}}}"^^xsd:string ;
               aeon:SMW_datatype "Date" ;
               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
@@ -1674,6 +1694,7 @@ aeon:event_frequency rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf aeon:metric ;
                      rdfs:domain aeon:AEON_0000002 ;
                      obo:IAO_0000115 "The event frequency is the literal value of the number of month until the next event in a certain takes place." ;
+                     rdfs:label "event frequency"@en ;
                      aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2257\", \"label\": \"event_interval_inmonths\"}}"^^xsd:string ;
                      aeon:SMW_datatype "Quantity" ;
                      aeon:SMW_import_info """[[Corresponds to::1 month]] [[Corresponds to::1 months]] [[display units::months]]
@@ -1688,6 +1709,7 @@ aeon:event_number rdf:type owl:DatatypeProperty ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range xsd:string ;
                   obo:IAO_0000115 "The ordinal number of an academic event, if it is a part of an event series." ;
+                  rdfs:label "event number"@en ;
                   aeon:AEON_0000026 "{\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"number\"}}}"^^xsd:string ;
                   aeon:SMW_datatype "Text" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1723,6 +1745,7 @@ ConfIDent → DataCite
 scheduled → valid
 postponed → updated
 cancled → withdrawn"""@en ;
+                  rdfs:label "event status"@en ;
                   aeon:SMW_datatype "Text" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1732,6 +1755,7 @@ aeon:event_type_other rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf owl:topDataProperty ;
                       rdfs:domain aeon:AEON_0000004 ;
                       rdfs:range xsd:string ;
+                      rdfs:label "event type other"@en ;
                       aeon:SMW_datatype "Text" ;
                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1741,6 +1765,7 @@ aeon:event_year rdf:type owl:DatatypeProperty ;
                 rdfs:domain aeon:AEON_0000001 ;
                 rdfs:range xsd:integer ;
                 obo:IAO_0000115 "The year in which an event takes place."@en ;
+                rdfs:label "event year"@en ;
                 aeon:SMW_datatype "Date" ;
                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1751,6 +1776,7 @@ aeon:fee rdf:type owl:DatatypeProperty ;
          rdfs:domain aeon:AEON_0000030 ;
          obo:IAO_0000115 "The literal value of the type of fee an aeon:event can have."@en ;
          obo:IAO_0000600 "There are various type of fees for an event, such as the regular fee, a reduced fee, a member fee and so forth." ;
+         rdfs:label "fee"@en ;
          aeon:SMW_datatype "Text" ;
          aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Fee]]
 
@@ -1762,6 +1788,7 @@ aeon:fee_currency rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf aeon:fee ;
                   rdfs:domain aeon:AEON_0000030 ;
                   rdfs:comment "This property should have a value from the controlled list defined by the ISO_4217 standard (https://en.wikipedia.org/wiki/ISO_4217)." ;
+                  rdfs:label "fee currency"@en ;
                   aeon:SMW_datatype "Text" ;
                   aeon:SMW_import_info """Controlled vocabulary in [[MediaWiki:Smw_allows_list_Fee_currency]]
 
@@ -1774,6 +1801,7 @@ aeon:fee_currency rdf:type owl:DatatypeProperty ;
 aeon:fee_value rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf aeon:fee ;
                rdfs:domain aeon:AEON_0000030 ;
+               rdfs:label "fee value"@en ;
                aeon:SMW_datatype "Number" ;
                aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Fee]]
 
@@ -1786,6 +1814,7 @@ aeon:first_name rdf:type owl:DatatypeProperty ;
                 rdfs:domain obo:NCBITaxon_9606 ;
                 rdfs:range xsd:string ;
                 obo:IAO_0000115 "The literal value of the first name of a person."@en ;
+                rdfs:label "first name"@en ;
                 aeon:SMW_datatype "Text" ;
                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1796,6 +1825,7 @@ aeon:landing_page rdf:type owl:DatatypeProperty ;
                   rdfs:domain obo:IAO_0020000 ;
                   rdfs:range xsd:anyURI ;
                   rdfs:comment "The literal value of the landing page (URL) an ID resolves to when following the ID_URL."@en ;
+                  rdfs:label "identifier landing page"@en ;
                   aeon:SMW_datatype "URL" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
 [[partOfSubobject::Template:Subobject Person_ID]]
@@ -1812,6 +1842,7 @@ aeon:language rdf:type owl:DatatypeProperty ;
                                           aeon:AEON_0000002
                                         )
                           ] ;
+              rdfs:label "language"@en ;
               aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2936\", \"label\": \"language_usedLabel\"}}"^^xsd:string ;
               aeon:SMW_datatype "Text" ;
               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
@@ -1825,6 +1856,7 @@ aeon:last_name rdf:type owl:DatatypeProperty ;
                rdfs:domain obo:NCBITaxon_9606 ;
                rdfs:range xsd:string ;
                obo:IAO_0000115 "The literal value of the last name, or family name, of a person."@en ;
+               rdfs:label "last name"@en ;
                aeon:SMW_datatype "Text" ;
                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1833,6 +1865,7 @@ aeon:last_name rdf:type owl:DatatypeProperty ;
 aeon:location rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain obo:BFO_0000029 ;
+              rdfs:label "location"@en ;
               aeon:SMW_datatype "Text" ;
               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1845,6 +1878,7 @@ aeon:logo rdf:type owl:DatatypeProperty ;
                                       aeon:AEON_0000002
                                     )
                       ] ;
+          rdfs:label "logo"@en ;
           aeon:SMW_datatype "Page" ;
           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1854,6 +1888,7 @@ aeon:meeting_URL rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf aeon:location ;
                  rdfs:domain aeon:AEON_0000029 ;
                  rdfs:range xsd:anyURI ;
+                 rdfs:label "meeting URL"@en ;
                  aeon:SMW_datatype "URL" ;
                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1862,6 +1897,7 @@ aeon:meeting_URL rdf:type owl:DatatypeProperty ;
 aeon:metric rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf owl:topDataProperty ;
             rdfs:domain obo:BFO_0000015 ;
+            rdfs:label "metric"@en ;
             aeon:SMW_datatype "Text" ;
             aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Metric]]
 
@@ -1872,6 +1908,7 @@ aeon:metric rdf:type owl:DatatypeProperty ;
 aeon:metric_value rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf aeon:metric ;
                   rdfs:domain obo:BFO_0000015 ;
+                  rdfs:label "metric value"@en ;
                   aeon:SMW_datatype "Text" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Metric]]
 
@@ -1882,6 +1919,7 @@ aeon:metric_value rdf:type owl:DatatypeProperty ;
 aeon:name rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf owl:topDataProperty ;
           obo:IAO_0000115 "The literal value of the name of a thing."@en ;
+          rdfs:label "name"@en ;
           aeon:SMW_datatype "Text" ;
           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1891,6 +1929,7 @@ aeon:notification_deadline rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf aeon:deadline ;
                            rdfs:domain aeon:AEON_0000001 ;
                            rdfs:range xsd:dateTimeStamp ;
+                           rdfs:label "notification deadline"@en ;
                            aeon:SMW_datatype "Date" ;
                            aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1899,6 +1938,7 @@ aeon:notification_deadline rdf:type owl:DatatypeProperty ;
 aeon:number_of_attendees rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:metric ;
                          rdfs:domain aeon:AEON_0000001 ;
+                         rdfs:label "number of attendess"@en ;
                          aeon:AEON_0000026 "{\"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Attendees\", \"label\": \"Attendees\"}}"^^xsd:string ;
                          aeon:SMW_datatype "Number" ;
                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1908,6 +1948,7 @@ aeon:number_of_attendees rdf:type owl:DatatypeProperty ;
 aeon:number_of_tracks rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf aeon:metric ;
                       rdfs:domain aeon:AEON_0000001 ;
+                      rdfs:label "number of tracks"@en ;
                       aeon:SMW_datatype "Number" ;
                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1918,6 +1959,7 @@ aeon:organizational_name rdf:type owl:DatatypeProperty ;
                          rdfs:domain obo:OBI_0000245 ;
                          rdfs:range xsd:string ;
                          obo:IAO_0000115 "The literal value of the name to denote an organization."@en ;
+                         rdfs:label "organizational name"@en ;
                          aeon:SMW_datatype "Text" ;
                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1927,6 +1969,7 @@ aeon:paper_deadline rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf aeon:deadline ;
                     rdfs:domain aeon:AEON_0000001 ;
                     rdfs:range xsd:dateTimeStamp ;
+                    rdfs:label "paper deadline"@en ;
                     aeon:SMW_datatype "Date" ;
                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1937,6 +1980,7 @@ aeon:personal_name rdf:type owl:DatatypeProperty ;
                    rdfs:domain obo:NCBITaxon_9606 ;
                    rdfs:range xsd:string ;
                    obo:IAO_0000115 "The literal value of the name to denote a person."@en ;
+                   rdfs:label "personal name"@en ;
                    aeon:SMW_datatype "Text" ;
                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1946,6 +1990,7 @@ aeon:poster_deadline rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf aeon:deadline ;
                      rdfs:domain aeon:AEON_0000001 ;
                      rdfs:range xsd:dateTimeStamp ;
+                     rdfs:label "poster deadline"@en ;
                      aeon:SMW_datatype "Date" ;
                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1955,6 +2000,7 @@ aeon:previous_end_date rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf aeon:end_date ;
                        rdfs:domain aeon:AEON_0000001 ;
                        rdfs:range xsd:dateTime ;
+                       rdfs:label "previous end date"@en ;
                        aeon:SMW_datatype "Date" ;
                        aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1964,6 +2010,7 @@ aeon:previous_start_date rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:start_date ;
                          rdfs:domain aeon:AEON_0000001 ;
                          rdfs:range xsd:dateTimeStamp ;
+                         rdfs:label "previous start date"@en ;
                          aeon:SMW_datatype "Date" ;
                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1972,6 +2019,7 @@ aeon:previous_start_date rdf:type owl:DatatypeProperty ;
 aeon:proceedings_site_count rdf:type owl:DatatypeProperty ;
                             rdfs:subPropertyOf aeon:metric ;
                             rdfs:domain aeon:AEON_0000001 ;
+                            rdfs:label "proceeding cite count"@en ;
                             aeon:SMW_datatype "Number" ;
                             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -1983,6 +2031,7 @@ aeon:process_acronym rdf:type owl:DatatypeProperty ;
                      rdfs:range xsd:string ;
                      obo:IAO_0000112 "\"DILS 2019\" is the official acronym of the academic event \"13th International Conference on Data Integration in Life Science\""@en ;
                      obo:IAO_0000115 "The literal value of the official acronym of an aeon:process, that is either an academic event or event series."@en ;
+                     rdfs:label "acronym"@en ;
                      aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P1813\", \"label\": \"short_nameLabel\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#abbreviatedNameForTheConferenceOrEvent\", \"label\": \"Abbreviated name for the conference or event\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Acronym\", \"label\": \"Acronym\"}, \"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"acronym\"}}}"^^xsd:string ;
                      aeon:SMW_datatype "Text" ;
                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
@@ -1996,6 +2045,7 @@ aeon:process_alternative_name rdf:type owl:DatatypeProperty ;
                               rdfs:domain obo:BFO_0000015 ;
                               rdfs:range xsd:string ;
                               rdfs:comment "The Literal value of an alternative name of an aeon:process, that is either an academic event or event series."@en ;
+                              rdfs:label "alternative name"@en ;
                               aeon:AEON_0000026 "{\"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#variantNameForTheConferenceOrEvent\", \"label\": \"Variant name for the conference or event\"}, \"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=title\", \"json_api_key\": \"title\"}}"^^xsd:string ;
                               aeon:SMW_datatype "Text" ;
                               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -2007,6 +2057,7 @@ aeon:process_former_name rdf:type owl:DatatypeProperty ;
                          rdfs:domain obo:BFO_0000015 ;
                          rdfs:range xsd:string ;
                          rdfs:comment "The Literal value of the former official name of an aeon:process, that is either an academic event or event series."@en ;
+                         rdfs:label "former name"@en ;
                          aeon:SMW_datatype "Text" ;
                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -2017,6 +2068,7 @@ aeon:process_name rdf:type owl:DatatypeProperty ;
                   rdfs:domain obo:BFO_0000015 ;
                   rdfs:range xsd:string ;
                   obo:IAO_0000115 "The literal value of the official name (title) of an aeon:process, that is either an academic event or event series."@en ;
+                  rdfs:label "process name"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"itemLabel\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#preferredNameForTheConferenceOrEvent\", \"label\": \"Preferred name for the conference or event\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Title\", \"label\": \"Title\"}, \"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"name\"}}}"^^xsd:string ;
                   aeon:SMW_datatype "Text" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
@@ -2029,6 +2081,7 @@ aeon:process_translated_name rdf:type owl:DatatypeProperty ;
                              rdfs:domain obo:BFO_0000015 ;
                              rdfs:range xsd:string ;
                              obo:IAO_0000115 "The literal value of the translation of the official name (title) of an aeon:process, that is either an academic event or event series."@en ;
+                             rdfs:label "translated name"@en ;
                              aeon:SMW_datatype "Text" ;
                              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -2038,6 +2091,7 @@ aeon:process_website rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf owl:topDataProperty ;
                      rdfs:domain obo:BFO_0000015 ;
                      rdfs:range xsd:anyURI ;
+                     rdfs:label "process website"@en ;
                      aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P856\", \"label\": \"official_website\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Homepage\", \"label\": \"Homepage\"}}"^^xsd:string ;
                      aeon:SMW_datatype "URL" ;
                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
@@ -2049,6 +2103,7 @@ aeon:process_website rdf:type owl:DatatypeProperty ;
 aeon:series_cite_count rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf aeon:metric ;
                        rdfs:domain aeon:AEON_0000002 ;
+                       rdfs:label "series cite count"@en ;
                        aeon:SMW_datatype "Number" ;
                        aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -2058,6 +2113,7 @@ aeon:sponsor_type rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf owl:topDataProperty ;
                   rdfs:domain aeon:AEON_0000015 ;
                   rdfs:range xsd:string ;
+                  rdfs:label "sponsor type"@en ;
                   aeon:SMW_datatype "Text" ;
                   aeon:SMW_import_info """Controlled vocabulary in [[MediaWiki:Smw _allows_list_Sponsor_type]] 
 
@@ -2069,6 +2125,7 @@ aeon:start_date rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf aeon:duration ;
                 rdfs:domain aeon:AEON_0000001 ;
                 rdfs:range xsd:dateTime ;
+                rdfs:label "start date"@en ;
                 aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P580\", \"label\": \"start_time\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Start_date\", \"label\": \"Start_date\"},\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"start\"}}}"^^xsd:string ;
                 aeon:SMW_datatype "Date" ;
                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
@@ -2080,6 +2137,7 @@ aeon:start_date rdf:type owl:DatatypeProperty ;
 aeon:state rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf aeon:location ;
            rdfs:domain aeon:AEON_0000024 ;
+           rdfs:label "state"@en ;
            aeon:SMW_datatype "Text" ;
            aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -2088,6 +2146,7 @@ aeon:state rdf:type owl:DatatypeProperty ;
 aeon:subject rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
              rdfs:domain aeon:AEON_0000027 ;
+             rdfs:label "subject"@en ;
              aeon:SMW_datatype "Text" ;
              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -2097,6 +2156,7 @@ aeon:submission_deadline rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:deadline ;
                          rdfs:domain aeon:AEON_0000001 ;
                          rdfs:range xsd:dateTimeStamp ;
+                         rdfs:label "submission deadline"@en ;
                          aeon:SMW_datatype "Date" ;
                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -2105,6 +2165,7 @@ aeon:submission_deadline rdf:type owl:DatatypeProperty ;
 aeon:submitted_papers rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf aeon:metric ;
                       rdfs:domain aeon:AEON_0000001 ;
+                      rdfs:label "submitted papers"@en ;
                       aeon:SMW_datatype "Number" ;
                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -2117,6 +2178,7 @@ aeon:summary rdf:type owl:DatatypeProperty ;
                                          aeon:AEON_0000002
                                        )
                          ] ;
+             rdfs:label "summary"@en ;
              aeon:SMW_datatype "Text" ;
              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -2129,6 +2191,7 @@ aeon:summary_licence rdf:type owl:DatatypeProperty ;
                                                  aeon:AEON_0000002
                                                )
                                  ] ;
+                     rdfs:label "summary licence"@en ;
                      aeon:SMW_datatype "Text" ;
                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -2138,6 +2201,7 @@ aeon:tutorial_deadline rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf aeon:deadline ;
                        rdfs:domain aeon:AEON_0000001 ;
                        rdfs:range xsd:dateTimeStamp ;
+                       rdfs:label "tutorial deadline"@en ;
                        aeon:SMW_datatype "Date" ;
                        aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -2146,6 +2210,7 @@ aeon:tutorial_deadline rdf:type owl:DatatypeProperty ;
 aeon:venue rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf aeon:location ;
            rdfs:domain aeon:AEON_0000025 ;
+           rdfs:label "venue"@en ;
            aeon:SMW_datatype "Text" ;
            aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -2155,6 +2220,7 @@ aeon:venue_URL rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf aeon:venue ;
                rdfs:domain aeon:AEON_0000025 ;
                rdfs:range xsd:anyURI ;
+               rdfs:label "venue website"@en ;
                aeon:SMW_datatype "URL" ;
                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -2164,6 +2230,7 @@ aeon:workshop_deadline rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf aeon:deadline ;
                        rdfs:domain aeon:AEON_0000001 ;
                        rdfs:range xsd:dateTimeStamp ;
+                       rdfs:label "workshop deadline"@en ;
                        aeon:SMW_datatype "Date" ;
                        aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -4015,7 +4082,7 @@ aeon:AEON_0010010 rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#AEON_0010011
 aeon:AEON_0010011 rdf:type owl:NamedIndividual ,
                            aeon:AEON_0000004 ;
-                  rdfs:label "other Type of Event" .
+                  rdfs:label "Other event type"@en .
 
 
 ###  https://github.com/tibonto/aeon#Lisbon
