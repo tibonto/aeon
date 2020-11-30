@@ -920,28 +920,30 @@ aeon:AEON_0000044 rdf:type owl:ObjectProperty ;
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
+###  https://github.com/tibonto/aeon#AEON_0000045
+aeon:AEON_0000045 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf obo:BFO_0000057 ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( aeon:AEON_0000001
+                                              aeon:AEON_0000002
+                                            )
+                              ] ;
+                  rdfs:range [ rdf:type owl:Class ;
+                               owl:unionOf ( obo:NCBITaxon_9606
+                                             obo:OBI_0000245
+                                           )
+                             ] ;
+                  rdfs:label "has contributor"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-###  https://github.com/tibonto/aeon#has_attendee
-aeon:has_attendee rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf aeon:has_contributor ;
+###  https://github.com/tibonto/aeon#AEON_0000046
+aeon:AEON_0000046 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000045 ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has attendee"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P710\", \"label\": \"participantLabel\"}}"^^xsd:string ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
@@ -949,52 +951,83 @@ aeon:has_attendee rdf:type owl:ObjectProperty ;
                   aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P710" .
 
 
-###  https://github.com/tibonto/aeon#has_committee_chair
-aeon:has_committee_chair rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf aeon:has_committee_member ;
-                         rdfs:domain aeon:AEON_0000001 ;
-                         rdfs:range obo:NCBITaxon_9606 ;
-                         aeon:SMW_datatype "Page" ;
-                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+###  https://github.com/tibonto/aeon#AEON_0000047
+aeon:AEON_0000047 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000045 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has moderator"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#has_committee_member
-aeon:has_committee_member rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf aeon:has_organizer ;
-                          rdfs:domain aeon:AEON_0000001 ;
-                          rdfs:range obo:NCBITaxon_9606 ;
-                          aeon:SMW_datatype "Page" ;
-                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+###  https://github.com/tibonto/aeon#AEON_0000048
+aeon:AEON_0000048 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000045 ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( aeon:AEON_0000001
+                                              aeon:AEON_0000002
+                                            )
+                              ] ;
+                  rdfs:range [ rdf:type owl:Class ;
+                               owl:unionOf ( obo:NCBITaxon_9606
+                                             obo:OBI_0000245
+                                           )
+                             ] ;
+                  rdfs:label "has organizer"@en ;
+                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P664\", \"label\": \"organizerLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_organizer\", \"label\": \"Has_organizer\"},\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"sponsor\"}}}"^^xsd:string ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
+                  aeon:WikidataLabel "organizerLabel" ;
+                  aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P664" .
 
 
-###  https://github.com/tibonto/aeon#has_contact_person
-aeon:has_contact_person rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf aeon:has_organizer ;
-                        rdfs:domain [ rdf:type owl:Class ;
-                                      owl:unionOf ( aeon:AEON_0000001
-                                                    aeon:AEON_0000002
-                                                  )
-                                    ] ;
-                        rdfs:range obo:NCBITaxon_9606 ;
-                        aeon:SMW_datatype "Page" ;
-                        aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+###  https://github.com/tibonto/aeon#AEON_0000049
+aeon:AEON_0000049 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000045 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has reviewer"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#has_contributor
-aeon:has_contributor rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf obo:BFO_0000057 ;
-                     rdfs:domain [ rdf:type owl:Class ;
-                                   owl:unionOf ( aeon:AEON_0000001
-                                                 aeon:AEON_0000002
-                                               )
-                                 ] ;
-                     rdfs:range [ rdf:type owl:Class ;
-                                  owl:unionOf ( obo:NCBITaxon_9606
-                                                obo:OBI_0000245
-                                              )
-                                ] ;
-                     aeon:SMW_datatype "Page" ;
-                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+###  https://github.com/tibonto/aeon#AEON_0000050
+aeon:AEON_0000050 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000045 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has speaker"@en ;
+                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P823\", \"label\": \"speaker\"}}"^^xsd:string ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
+                  aeon:WikidataLabel "speaker" ;
+                  aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P823" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000051
+aeon:AEON_0000051 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000045 ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( aeon:AEON_0000001
+                                              aeon:AEON_0000002
+                                            )
+                              ] ;
+                  rdfs:range [ rdf:type owl:Class ;
+                               owl:unionOf ( obo:NCBITaxon_9606
+                                             obo:OBI_0000245
+                                           )
+                             ] ;
+                  rdfs:comment "PS 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...). As the possible sponsor types can have various schemes, it seems best to have named individuals of the aeon:Sponsor class at the moment, which will make up the range of the data property aeon_sponsor_type."@en ;
+                  rdfs:label "has sponsor"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Sponsor]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
 ###  https://github.com/tibonto/aeon#has_event
@@ -1005,174 +1038,233 @@ aeon:has_event rdf:type owl:ObjectProperty ;
                rdfs:range aeon:AEON_0000001 ;
                aeon:SMW_datatype "Page" ;
                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
-
-
-###  https://github.com/tibonto/aeon#has_finance_committee_chair
-aeon:has_finance_committee_chair rdf:type owl:ObjectProperty ;
-                                 rdfs:subPropertyOf aeon:has_committee_chair ;
-                                 rdfs:domain aeon:AEON_0000001 ;
-                                 rdfs:range obo:NCBITaxon_9606 ;
-                                 aeon:SMW_datatype "Page" ;
-                                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#has_finance_committee_member
-aeon:has_finance_committee_member rdf:type owl:ObjectProperty ;
-                                  rdfs:subPropertyOf aeon:has_committee_member ;
-                                  rdfs:domain aeon:AEON_0000001 ;
-                                  rdfs:range obo:NCBITaxon_9606 ;
-                                  aeon:SMW_datatype "Page" ;
-                                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#has_general_committee_chair
-aeon:has_general_committee_chair rdf:type owl:ObjectProperty ;
-                                 rdfs:subPropertyOf aeon:has_committee_chair ;
-                                 rdfs:domain aeon:AEON_0000001 ;
-                                 rdfs:range obo:NCBITaxon_9606 ;
-                                 aeon:SMW_datatype "Page" ;
-                                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#has_general_committee_member
-aeon:has_general_committee_member rdf:type owl:ObjectProperty ;
-                                  rdfs:subPropertyOf aeon:has_committee_member ;
-                                  rdfs:domain aeon:AEON_0000001 ;
-                                  rdfs:range obo:NCBITaxon_9606 ;
-                                  aeon:SMW_datatype "Page" ;
-                                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-
-
-
-###  https://github.com/tibonto/aeon#has_keynote_speaker
-aeon:has_keynote_speaker rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf aeon:has_speaker ;
-                         rdfs:domain aeon:AEON_0000001 ;
-                         rdfs:range obo:NCBITaxon_9606 ;
-                         aeon:SMW_datatype "Page" ;
-                         aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
-
-
-###  https://github.com/tibonto/aeon#has_local_committee_chair
-aeon:has_local_committee_chair rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf aeon:has_committee_chair ;
-                               rdfs:domain aeon:AEON_0000001 ;
-                               rdfs:range obo:NCBITaxon_9606 ;
-                               aeon:SMW_datatype "Page" ;
-                               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#has_local_committee_member
-aeon:has_local_committee_member rdf:type owl:ObjectProperty ;
-                                rdfs:subPropertyOf aeon:has_committee_member ;
-                                rdfs:domain aeon:AEON_0000001 ;
-                                rdfs:range obo:NCBITaxon_9606 ;
-                                aeon:SMW_datatype "Page" ;
-                                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#has_moderator
-aeon:has_moderator rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf aeon:has_contributor ;
-                   rdfs:domain aeon:AEON_0000001 ;
-                   rdfs:range obo:NCBITaxon_9606 ;
-                   aeon:SMW_datatype "Page" ;
-                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#has_organizer
-aeon:has_organizer rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf aeon:has_contributor ;
-                   rdfs:domain [ rdf:type owl:Class ;
-                                 owl:unionOf ( aeon:AEON_0000001
-                                               aeon:AEON_0000002
-                                             )
-                               ] ;
-                   rdfs:range [ rdf:type owl:Class ;
-                                owl:unionOf ( obo:NCBITaxon_9606
-                                              obo:OBI_0000245
-                                            )
-                              ] ;
-                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P664\", \"label\": \"organizerLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_organizer\", \"label\": \"Has_organizer\"},\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"sponsor\"}}}"^^xsd:string ;
-                   aeon:SMW_datatype "Page" ;
-                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
-                   aeon:WikidataLabel "organizerLabel" ;
-                   aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P664" .
-
-
-
-
-
-###  https://github.com/tibonto/aeon#has_program_committee_chair
-aeon:has_program_committee_chair rdf:type owl:ObjectProperty ;
-                                 rdfs:subPropertyOf aeon:has_committee_chair ;
-                                 rdfs:domain aeon:AEON_0000001 ;
-                                 rdfs:range obo:NCBITaxon_9606 ;
-                                 aeon:SMW_datatype "Page" ;
-                                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#has_program_committee_member
-aeon:has_program_committee_member rdf:type owl:ObjectProperty ;
-                                  rdfs:subPropertyOf aeon:has_committee_member ;
-                                  rdfs:domain aeon:AEON_0000001 ;
-                                  rdfs:range obo:NCBITaxon_9606 ;
-                                  aeon:SMW_datatype "Page" ;
-                                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#has_publication_committee_chair
-aeon:has_publication_committee_chair rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf aeon:has_committee_chair ;
-                                     rdfs:domain aeon:AEON_0000001 ;
-                                     rdfs:range obo:NCBITaxon_9606 ;
-                                     aeon:SMW_datatype "Page" ;
-                                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#has_publication_committee_member
-aeon:has_publication_committee_member rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf aeon:has_committee_member ;
-                                      rdfs:domain aeon:AEON_0000001 ;
-                                      rdfs:range obo:NCBITaxon_9606 ;
-                                      aeon:SMW_datatype "Page" ;
-                                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#has_publicity_committee_chair
-aeon:has_publicity_committee_chair rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf aeon:has_committee_chair ;
-                                   rdfs:domain aeon:AEON_0000001 ;
-                                   rdfs:range obo:NCBITaxon_9606 ;
-                                   aeon:SMW_datatype "Page" ;
-                                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#has_publicity_committee_member
-aeon:has_publicity_committee_member rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf aeon:has_committee_member ;
-                                    rdfs:domain aeon:AEON_0000001 ;
-                                    rdfs:range obo:NCBITaxon_9606 ;
-                                    aeon:SMW_datatype "Page" ;
-                                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#has_reviewer
-aeon:has_reviewer rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf aeon:has_contributor ;
+###  https://github.com/tibonto/aeon#AEON_0000052
+aeon:AEON_0000052 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000048 ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has committee member"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000053
+aeon:AEON_0000053 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000048 ;
+                  rdfs:domain aeon:AEON_0000001 ,
+                              [ rdf:type owl:Class ;
+                                owl:unionOf ( aeon:AEON_0000001
+                                              aeon:AEON_0000002
+                                            )
+                              ] ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has contact person"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000054
+aeon:AEON_0000054 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000050 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has keynote speaker"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
+                         
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000055
+aeon:AEON_0000055 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000052 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has committee chair"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
+
+[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000056
+aeon:AEON_0000056 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000052 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has finance committee member"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000057
+aeon:AEON_0000057 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000052 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has general committee member"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000058
+aeon:AEON_0000058 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000052 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has local committee member"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000059
+aeon:AEON_0000059 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000052 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has program committee member"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000060
+aeon:AEON_0000060 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000052 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has publication committee member"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000061
+aeon:AEON_0000061 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000052 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has publicity committee member"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000062
+aeon:AEON_0000062 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000052 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has sponsorship committee member"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000063
+aeon:AEON_0000063 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000052 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has steering committee member"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000064
+aeon:AEON_0000064 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000052 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has technical committee member"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000065
+aeon:AEON_0000065 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000055 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has finance committee chair"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000066
+aeon:AEON_0000066 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000055 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has general committee chair"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000067
+aeon:AEON_0000067 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000055 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has local committee chair"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000068
+aeon:AEON_0000068 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000055 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has program committee chair"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000069
+aeon:AEON_0000069 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000055 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has publication committee chair"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000070
+aeon:AEON_0000070 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000055 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has publicity committee chair"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000071
+aeon:AEON_0000071 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000055 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has sponsorship committee chair"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000072
+aeon:AEON_0000072 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000055 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has steering committee chair"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000073
+aeon:AEON_0000073 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:AEON_0000055 ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:label "has technical committee chair"@en ;
+                  aeon:SMW_datatype "Page" ;
+                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000074
@@ -1206,14 +1298,6 @@ aeon:AEON_0000075 rdf:type owl:ObjectProperty ;
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#has_speaker
-aeon:has_speaker rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf aeon:has_contributor ;
-                 rdfs:domain aeon:AEON_0000001 ;
-                 rdfs:range obo:NCBITaxon_9606 ;
-                 aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P823\", \"label\": \"speaker\"}}"^^xsd:string ;
-                 aeon:SMW_datatype "Page" ;
-                 aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
 ###  https://github.com/tibonto/aeon#AEON_0000076
 aeon:AEON_0000076 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000031 ;
@@ -1229,28 +1313,10 @@ aeon:AEON_0000076 rdf:type owl:ObjectProperty ;
 [[partOfSubobject::Template:Subobject Organization_ID]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" ;
-                 aeon:WikidataLabel "speaker" ;
-                 aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P823" .
                   aeon:WikidataLabel "GND_ID" ;
                   aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P227" .
 
 
-###  https://github.com/tibonto/aeon#has_sponsor
-aeon:has_sponsor rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf aeon:has_contributor ;
-                 rdfs:domain [ rdf:type owl:Class ;
-                               owl:unionOf ( aeon:AEON_0000001
-                                             aeon:AEON_0000002
-                                           )
-                             ] ;
-                 rdfs:range [ rdf:type owl:Class ;
-                              owl:unionOf ( obo:NCBITaxon_9606
-                                            obo:OBI_0000245
-                                          )
-                            ] ;
-                 rdfs:comment "PS 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...). As the possible sponsor types can have various schemes, it seems best to have named individuals of the aeon:Sponsor class at the moment, which will make up the range of the data property aeon_sponsor_type."@en ;
-                 aeon:SMW_datatype "Page" ;
-                 aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Sponsor]]
 ###  https://github.com/tibonto/aeon#AEON_0000077
 aeon:AEON_0000077 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000031 ;
@@ -1280,13 +1346,6 @@ aeon:AEON_0000078 rdf:type owl:ObjectProperty ;
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#has_sponsorship_committee_chair
-aeon:has_sponsorship_committee_chair rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf aeon:has_committee_chair ;
-                                     rdfs:domain aeon:AEON_0000001 ;
-                                     rdfs:range obo:NCBITaxon_9606 ;
-                                     aeon:SMW_datatype "Page" ;
-                                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 ###  https://github.com/tibonto/aeon#AEON_0000079
 aeon:AEON_0000079 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000031 ;
@@ -1298,23 +1357,9 @@ aeon:AEON_0000079 rdf:type owl:ObjectProperty ;
 
 [[partOfSubobject::Template:Subobject Organization_ID]]
 
-###  https://github.com/tibonto/aeon#has_sponsorship_committee_member
-aeon:has_sponsorship_committee_member rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf aeon:has_committee_member ;
-                                      rdfs:domain aeon:AEON_0000001 ;
-                                      rdfs:range obo:NCBITaxon_9606 ;
-                                      aeon:SMW_datatype "Page" ;
-                                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#has_steering_committee_chair
-aeon:has_steering_committee_chair rdf:type owl:ObjectProperty ;
-                                  rdfs:subPropertyOf aeon:has_committee_chair ;
-                                  rdfs:domain aeon:AEON_0000001 ;
-                                  rdfs:range obo:NCBITaxon_9606 ;
-                                  aeon:SMW_datatype "Page" ;
-                                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 ###  https://github.com/tibonto/aeon#AEON_0000080
 aeon:AEON_0000080 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000031 ;
@@ -1333,33 +1378,12 @@ aeon:AEON_0000080 rdf:type owl:ObjectProperty ;
 [[partOfSubobject::Template:Subobject Person_ID]]
 [[partOfSubobject::Template:Subobject Organization_ID]]
 
-###  https://github.com/tibonto/aeon#has_steering_committee_member
-aeon:has_steering_committee_member rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf aeon:has_committee_member ;
-                                   rdfs:domain aeon:AEON_0000001 ;
-                                   rdfs:range obo:NCBITaxon_9606 ;
-                                   aeon:SMW_datatype "Page" ;
-                                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 [[Category:AEON]] [[Category:Imported vocabulary]]""" ;
                   aeon:WikidataLabel "itemID" .
 
 
-###  https://github.com/tibonto/aeon#has_technical_committee_chair
-aeon:has_technical_committee_chair rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf aeon:has_committee_chair ;
-                                   rdfs:domain aeon:AEON_0000001 ;
-                                   rdfs:range obo:NCBITaxon_9606 ;
-                                   aeon:SMW_datatype "Page" ;
-                                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#has_technical_committee_member
-aeon:has_technical_committee_member rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf aeon:has_committee_member ;
-                                    rdfs:domain aeon:AEON_0000001 ;
-                                    rdfs:range obo:NCBITaxon_9606 ;
-                                    aeon:SMW_datatype "Page" ;
-                                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#joint_event_of
