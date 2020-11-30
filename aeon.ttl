@@ -893,7 +893,16 @@ aeon:collocated_event_of rdf:type owl:ObjectProperty ;
                          aeon:SMW_datatype "Page" ;
                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
+###  https://github.com/tibonto/aeon#AEON_0000043
+aeon:AEON_0000043 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:range aeon:AEON_0000030 ;
+                  rdfs:label "has fee"@en ;
+                  aeon:SMW_datatype "Text" ;
+                  aeon:SMW_import_info """The allowed value list for this property is defined in [[MediaWiki:Smw_allows_list_Has_fee]].
 
+[[partOfSubobject::Template:Subobject Fee]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
@@ -988,15 +997,7 @@ aeon:has_event rdf:type owl:ObjectProperty ;
                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#has_fee
-aeon:has_fee rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
-             rdfs:domain aeon:AEON_0000001 ;
-             rdfs:range aeon:AEON_0000030 ;
-             aeon:SMW_datatype "Text" ;
-             aeon:SMW_import_info """The allowed value list for this property is defined in [[MediaWiki:Smw_allows_list_Has_fee]].
 
-[[partOfSubobject::Template:Subobject Fee]]
 
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
