@@ -5,6 +5,7 @@
 @prefix iao: <http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#> .
 @prefix ro: <http://purl.obolibrary.org/obo/ro.owl#> .
 @prefix obi: <http://purl.obolibrary.org/obo/obi.owl#> .
+@prefix ico: <http://purl.obolibrary.org/obo/ico.owl#> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -3606,7 +3607,7 @@ iao:IAO_0020015 rdf:type owl:Class ;
 
 
 ###  http://purl.obolibrary.org/obo/ICO_0000048
-obo:ICO_0000048 rdf:type owl:Class ;
+ico:ICO_0000048 rdf:type owl:Class ;
                 rdfs:subClassOf obi:OBI_0000245 ;
                 iao:IAO_0000115 "An organization that is operated without the principal goal of making a financial profit."@en ;
                 rdfs:label "nonprofit organization"@en ;
@@ -3615,7 +3616,7 @@ obo:ICO_0000048 rdf:type owl:Class ;
 
 
 ###  http://purl.obolibrary.org/obo/ICO_0000049
-obo:ICO_0000049 rdf:type owl:Class ;
+ico:ICO_0000049 rdf:type owl:Class ;
                 rdfs:subClassOf obi:OBI_0000245 ;
                 iao:IAO_0000115 "An organization which has the principle goal of earning financial profit."@en ;
                 rdfs:label "profit organization"@en ;

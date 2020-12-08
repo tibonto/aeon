@@ -2952,30 +2952,6 @@ cancled → withdrawn</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ICO_0000048 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICO_0000048">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/obi.owl#OBI_0000245"/>
-        <iao:IAO_0000115 xml:lang="en">An organization that is operated without the principal goal of making a financial profit.</iao:IAO_0000115>
-        <rdfs:label xml:lang="en">nonprofit organization</rdfs:label>
-        <SMW_datatype>Category</SMW_datatype>
-        <SMW_import_info>[[Category:ICO]] [[Category:Imported vocabulary]]</SMW_import_info>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICO_0000049 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICO_0000049">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/obi.owl#OBI_0000245"/>
-        <iao:IAO_0000115 xml:lang="en">An organization which has the principle goal of earning financial profit.</iao:IAO_0000115>
-        <rdfs:label xml:lang="en">profit organization</rdfs:label>
-        <SMW_datatype>Category</SMW_datatype>
-        <SMW_import_info>[[Category:ICO]] [[Category:Imported vocabulary]]</SMW_import_info>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
@@ -4368,6 +4344,30 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:comment xml:lang="en">Personal names &quot;today usually comprises a given name bestowed at birth or at a young age plus a surname. It is nearly universal for a human to have a name; except in rare cases, for example feral children growing up in isolation, or infants orphaned by natural disaster for whom no written record survives.[citation needed] The Convention on the Rights of the Child specifies that a child has the right from birth to a name. Certain isolated tribes, such as the Machiguenga of the Amazon, also lack personal names.&quot; (http://en.wikipedia.org/wiki/Personal_name)</rdfs:comment>
         <rdfs:comment xml:lang="en">Sep 29, 2016: The comment that including the wikipedia definition of personal name is not to be interpreted in a way that restricts this class to only contain strings of letters. A numerical or alphanumerical identifier that denotes a human is being is a personal name, too. (MB)</rdfs:comment>
         <rdfs:label xml:lang="en">personal name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ico.owl#ICO_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ico.owl#ICO_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/obi.owl#OBI_0000245"/>
+        <iao:IAO_0000115 xml:lang="en">An organization that is operated without the principal goal of making a financial profit.</iao:IAO_0000115>
+        <rdfs:label xml:lang="en">nonprofit organization</rdfs:label>
+        <SMW_datatype>Category</SMW_datatype>
+        <SMW_import_info>[[Category:ICO]] [[Category:Imported vocabulary]]</SMW_import_info>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ico.owl#ICO_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ico.owl#ICO_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/obi.owl#OBI_0000245"/>
+        <iao:IAO_0000115 xml:lang="en">An organization which has the principle goal of earning financial profit.</iao:IAO_0000115>
+        <rdfs:label xml:lang="en">profit organization</rdfs:label>
+        <SMW_datatype>Category</SMW_datatype>
+        <SMW_import_info>[[Category:ICO]] [[Category:Imported vocabulary]]</SMW_import_info>
     </owl:Class>
     
 
