@@ -7,6 +7,8 @@
 @prefix obi: <http://purl.obolibrary.org/obo/obi.owl#> .
 @prefix ico: <http://purl.obolibrary.org/obo/ico.owl#> .
 @prefix ncbitaxon: <http://purl.obolibrary.org/obo/ncbitaxon.owl#> .
+@prefix gaz: <http://purl.obolibrary.org/obo/gaz.owl#> .
+@prefix cro: <http://purl.obolibrary.org/obo/cro.owl#> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -1633,7 +1635,7 @@ aeon:contact_phone rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#coordinates
 aeon:coordinates rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf aeon:location ;
-                 rdfs:domain obo:GAZ_00000448 ;
+                 rdfs:domain gaz:GAZ_00000448 ;
                  rdfs:label "coordinates"@en ;
                  aeon:SMW_datatype "Geographic coordinates" ;
                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -3393,7 +3395,7 @@ bfo:BFO_0000145 rdf:type owl:Class ;
 
 
 ###  http://purl.obolibrary.org/obo/CRO_0000000
-obo:CRO_0000000 rdf:type owl:Class ;
+cro:CRO_0000000 rdf:type owl:Class ;
                 owl:equivalentClass aeon:AEON_0000005 ;
                 rdfs:subClassOf bfo:BFO_0000023 ;
                 iao:IAO_0000114 iao:IAO_0000120 ;
@@ -3403,16 +3405,16 @@ obo:CRO_0000000 rdf:type owl:Class ;
 
 
 ###  http://purl.obolibrary.org/obo/CRO_0000097
-obo:CRO_0000097 rdf:type owl:Class ;
+cro:CRO_0000097 rdf:type owl:Class ;
                 owl:equivalentClass aeon:AEON_0000015 ;
-                rdfs:subClassOf obo:CRO_0000000 ;
+                rdfs:subClassOf cro:CRO_0000000 ;
                 iao:IAO_0000115 "The person or organization that provides money for a particular purpose, such as a grant to perform research. [definition source: https://www.lexico.com/en/definition/funder][definition source: https://www.lexico.com/en/definition/funder]"@en ;
                 iao:IAO_0000118 "funder role"@en ;
                 rdfs:label "funding source role"@en .
 
 
 ###  http://purl.obolibrary.org/obo/GAZ_00000448
-obo:GAZ_00000448 rdf:type owl:Class ;
+gaz:GAZ_00000448 rdf:type owl:Class ;
                  rdfs:subClassOf bfo:BFO_0000029 ;
                  iao:IAO_0000115 "A reference to a place on the Earth, by its name or by its geographical location."@en ;
                  rdfs:label "geographic location"@en ;
@@ -3898,7 +3900,7 @@ aeon:AEON_0000021 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000022
 aeon:AEON_0000022 rdf:type owl:Class ;
-                  rdfs:subClassOf obo:GAZ_00000448 ;
+                  rdfs:subClassOf gaz:GAZ_00000448 ;
                   rdfs:label "city"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -3906,7 +3908,7 @@ aeon:AEON_0000022 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000023
 aeon:AEON_0000023 rdf:type owl:Class ;
-                  rdfs:subClassOf obo:GAZ_00000448 ;
+                  rdfs:subClassOf gaz:GAZ_00000448 ;
                   rdfs:label "country"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -3914,7 +3916,7 @@ aeon:AEON_0000023 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000024
 aeon:AEON_0000024 rdf:type owl:Class ;
-                  rdfs:subClassOf obo:GAZ_00000448 ;
+                  rdfs:subClassOf gaz:GAZ_00000448 ;
                   iao:IAO_0000118 "province"@en ;
                   rdfs:label "state"@en ;
                   aeon:SMW_datatype "Category" ;
@@ -3923,7 +3925,7 @@ aeon:AEON_0000024 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000025
 aeon:AEON_0000025 rdf:type owl:Class ;
-                  rdfs:subClassOf obo:GAZ_00000448 ;
+                  rdfs:subClassOf gaz:GAZ_00000448 ;
                   rdfs:label "event venue"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .

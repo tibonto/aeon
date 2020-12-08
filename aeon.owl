@@ -2111,7 +2111,7 @@ It mainly serves as an ordering parent property for known centrally registered i
 
     <owl:DatatypeProperty rdf:about="https://github.com/tibonto/aeon#coordinates">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#location"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/gaz.owl#GAZ_00000448"/>
         <rdfs:label xml:lang="en">coordinates</rdfs:label>
         <SMW_datatype>Geographic coordinates</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -2912,43 +2912,6 @@ cancled → withdrawn</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CRO_0000000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRO_0000000">
-        <owl:equivalentClass rdf:resource="https://github.com/tibonto/aeon#AEON_0000005"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000023"/>
-        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000120"/>
-        <iao:IAO_0000115 xml:lang="en">A high-level classification of the diverse roles performed in the work leading to a published research output in the sciences. Its purpose to provide transparency in contributions to scholarly published work, to enable improved systems of attribution, credit, and accountability.</iao:IAO_0000115>
-        <iao:IAO_0000119>http://dictionary.casrai.org/Contributor_Roles</iao:IAO_0000119>
-        <rdfs:label xml:lang="en">contributor role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CRO_0000097 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRO_0000097">
-        <owl:equivalentClass rdf:resource="https://github.com/tibonto/aeon#AEON_0000015"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRO_0000000"/>
-        <iao:IAO_0000115 xml:lang="en">The person or organization that provides money for a particular purpose, such as a grant to perform research. [definition source: https://www.lexico.com/en/definition/funder][definition source: https://www.lexico.com/en/definition/funder]</iao:IAO_0000115>
-        <iao:IAO_0000118 xml:lang="en">funder role</iao:IAO_0000118>
-        <rdfs:label xml:lang="en">funding source role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GAZ_00000448 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00000448">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000029"/>
-        <iao:IAO_0000115 xml:lang="en">A reference to a place on the Earth, by its name or by its geographical location.</iao:IAO_0000115>
-        <rdfs:label xml:lang="en">geographic location</rdfs:label>
-        <SMW_datatype>Category</SMW_datatype>
-        <SMW_import_info>[[Category:GAZ]] [[Category:Imported vocabulary]]</SMW_import_info>
-    </owl:Class>
     
 
 
@@ -4106,6 +4069,43 @@ cancled → withdrawn</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/cro.owl#CRO_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cro.owl#CRO_0000000">
+        <owl:equivalentClass rdf:resource="https://github.com/tibonto/aeon#AEON_0000005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000023"/>
+        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000120"/>
+        <iao:IAO_0000115 xml:lang="en">A high-level classification of the diverse roles performed in the work leading to a published research output in the sciences. Its purpose to provide transparency in contributions to scholarly published work, to enable improved systems of attribution, credit, and accountability.</iao:IAO_0000115>
+        <iao:IAO_0000119>http://dictionary.casrai.org/Contributor_Roles</iao:IAO_0000119>
+        <rdfs:label xml:lang="en">contributor role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/cro.owl#CRO_0000097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/cro.owl#CRO_0000097">
+        <owl:equivalentClass rdf:resource="https://github.com/tibonto/aeon#AEON_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/cro.owl#CRO_0000000"/>
+        <iao:IAO_0000115 xml:lang="en">The person or organization that provides money for a particular purpose, such as a grant to perform research. [definition source: https://www.lexico.com/en/definition/funder][definition source: https://www.lexico.com/en/definition/funder]</iao:IAO_0000115>
+        <iao:IAO_0000118 xml:lang="en">funder role</iao:IAO_0000118>
+        <rdfs:label xml:lang="en">funding source role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/gaz.owl#GAZ_00000448 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/gaz.owl#GAZ_00000448">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000029"/>
+        <iao:IAO_0000115 xml:lang="en">A reference to a place on the Earth, by its name or by its geographical location.</iao:IAO_0000115>
+        <rdfs:label xml:lang="en">geographic location</rdfs:label>
+        <SMW_datatype>Category</SMW_datatype>
+        <SMW_import_info>[[Category:GAZ]] [[Category:Imported vocabulary]]</SMW_import_info>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000027">
@@ -4714,7 +4714,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
     <!-- https://github.com/tibonto/aeon#AEON_0000022 -->
 
     <owl:Class rdf:about="https://github.com/tibonto/aeon#AEON_0000022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/gaz.owl#GAZ_00000448"/>
         <rdfs:label xml:lang="en">city</rdfs:label>
         <SMW_datatype>Category</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -4725,7 +4725,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
     <!-- https://github.com/tibonto/aeon#AEON_0000023 -->
 
     <owl:Class rdf:about="https://github.com/tibonto/aeon#AEON_0000023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/gaz.owl#GAZ_00000448"/>
         <rdfs:label xml:lang="en">country</rdfs:label>
         <SMW_datatype>Category</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -4736,7 +4736,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
     <!-- https://github.com/tibonto/aeon#AEON_0000024 -->
 
     <owl:Class rdf:about="https://github.com/tibonto/aeon#AEON_0000024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/gaz.owl#GAZ_00000448"/>
         <iao:IAO_0000118 xml:lang="en">province</iao:IAO_0000118>
         <rdfs:label xml:lang="en">state</rdfs:label>
         <SMW_datatype>Category</SMW_datatype>
@@ -4748,7 +4748,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
     <!-- https://github.com/tibonto/aeon#AEON_0000025 -->
 
     <owl:Class rdf:about="https://github.com/tibonto/aeon#AEON_0000025">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/gaz.owl#GAZ_00000448"/>
         <rdfs:label xml:lang="en">event venue</rdfs:label>
         <SMW_datatype>Category</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
