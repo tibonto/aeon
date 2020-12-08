@@ -6,6 +6,7 @@
 @prefix ro: <http://purl.obolibrary.org/obo/ro.owl#> .
 @prefix obi: <http://purl.obolibrary.org/obo/obi.owl#> .
 @prefix ico: <http://purl.obolibrary.org/obo/ico.owl#> .
+@prefix ncbitaxon: <http://purl.obolibrary.org/obo/ncbitaxon.owl#> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -924,7 +925,7 @@ aeon:AEON_0000045 rdf:type owl:ObjectProperty ;
                                             )
                               ] ;
                   rdfs:range [ rdf:type owl:Class ;
-                               owl:unionOf ( obo:NCBITaxon_9606
+                               owl:unionOf ( ncbitaxon:NCBITaxon_9606
                                              obi:OBI_0000245
                                            )
                              ] ;
@@ -937,7 +938,7 @@ aeon:AEON_0000045 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000046 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000045 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has attendee"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P710\", \"label\": \"participantLabel\"}}"^^xsd:string ;
                   aeon:SMW_datatype "Page" ;
@@ -950,7 +951,7 @@ aeon:AEON_0000046 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000047 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000045 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has moderator"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -965,7 +966,7 @@ aeon:AEON_0000048 rdf:type owl:ObjectProperty ;
                                             )
                               ] ;
                   rdfs:range [ rdf:type owl:Class ;
-                               owl:unionOf ( obo:NCBITaxon_9606
+                               owl:unionOf ( ncbitaxon:NCBITaxon_9606
                                              obi:OBI_0000245
                                            )
                              ] ;
@@ -981,7 +982,7 @@ aeon:AEON_0000048 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000049 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000045 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has reviewer"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
@@ -993,7 +994,7 @@ aeon:AEON_0000049 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000050 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000045 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has speaker"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P823\", \"label\": \"speaker\"}}"^^xsd:string ;
                   aeon:SMW_datatype "Page" ;
@@ -1013,7 +1014,7 @@ aeon:AEON_0000051 rdf:type owl:ObjectProperty ;
                                             )
                               ] ;
                   rdfs:range [ rdf:type owl:Class ;
-                               owl:unionOf ( obo:NCBITaxon_9606
+                               owl:unionOf ( ncbitaxon:NCBITaxon_9606
                                              obi:OBI_0000245
                                            )
                              ] ;
@@ -1029,7 +1030,7 @@ aeon:AEON_0000051 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000052 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000048 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has committee member"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1044,7 +1045,7 @@ aeon:AEON_0000053 rdf:type owl:ObjectProperty ;
                                               aeon:AEON_0000002
                                             )
                               ] ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has contact person"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1054,7 +1055,7 @@ aeon:AEON_0000053 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000054 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000050 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has keynote speaker"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
@@ -1066,7 +1067,7 @@ aeon:AEON_0000054 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000055 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000052 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has committee chair"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
@@ -1078,7 +1079,7 @@ aeon:AEON_0000055 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000056 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000052 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has finance committee member"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1088,7 +1089,7 @@ aeon:AEON_0000056 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000057 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000052 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has general committee member"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1098,7 +1099,7 @@ aeon:AEON_0000057 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000058 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000052 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has local committee member"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1108,7 +1109,7 @@ aeon:AEON_0000058 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000059 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000052 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has program committee member"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1118,7 +1119,7 @@ aeon:AEON_0000059 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000060 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000052 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has publication committee member"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1128,7 +1129,7 @@ aeon:AEON_0000060 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000061 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000052 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has publicity committee member"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1138,7 +1139,7 @@ aeon:AEON_0000061 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000062 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000052 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has sponsorship committee member"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1148,7 +1149,7 @@ aeon:AEON_0000062 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000063 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000052 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has steering committee member"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1158,7 +1159,7 @@ aeon:AEON_0000063 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000064 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000052 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has technical committee member"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1168,7 +1169,7 @@ aeon:AEON_0000064 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000065 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000055 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has finance committee chair"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1178,7 +1179,7 @@ aeon:AEON_0000065 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000066 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000055 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has general committee chair"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1188,7 +1189,7 @@ aeon:AEON_0000066 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000067 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000055 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has local committee chair"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1198,7 +1199,7 @@ aeon:AEON_0000067 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000068 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000055 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has program committee chair"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1208,7 +1209,7 @@ aeon:AEON_0000068 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000069 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000055 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has publication committee chair"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1218,7 +1219,7 @@ aeon:AEON_0000069 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000070 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000055 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has publicity committee chair"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1228,7 +1229,7 @@ aeon:AEON_0000070 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000071 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000055 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has sponsorship committee chair"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1238,7 +1239,7 @@ aeon:AEON_0000071 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000072 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000055 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has steering committee chair"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1248,7 +1249,7 @@ aeon:AEON_0000072 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000073 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000055 ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range obo:NCBITaxon_9606 ;
+                  rdfs:range ncbitaxon:NCBITaxon_9606 ;
                   rdfs:label "has technical committee chair"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1322,7 +1323,7 @@ aeon:AEON_0000077 rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#AEON_0000078
 aeon:AEON_0000078 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000031 ;
-                  rdfs:domain obo:NCBITaxon_9606 ;
+                  rdfs:domain ncbitaxon:NCBITaxon_9606 ;
                   rdfs:range aeon:AEON_0000019 ;
                   rdfs:label "has ORCID"@en ;
                   aeon:SMW_datatype "External identifier" ;
@@ -1814,7 +1815,7 @@ aeon:fee_value rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#first_name
 aeon:first_name rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf aeon:personal_name ;
-                rdfs:domain obo:NCBITaxon_9606 ;
+                rdfs:domain ncbitaxon:NCBITaxon_9606 ;
                 rdfs:range xsd:string ;
                 iao:IAO_0000115 "The literal value of the first name of a person."@en ;
                 rdfs:label "first name"@en ;
@@ -1856,7 +1857,7 @@ aeon:language rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#last_name
 aeon:last_name rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf aeon:personal_name ;
-               rdfs:domain obo:NCBITaxon_9606 ;
+               rdfs:domain ncbitaxon:NCBITaxon_9606 ;
                rdfs:range xsd:string ;
                iao:IAO_0000115 "The literal value of the last name, or family name, of a person."@en ;
                rdfs:label "last name"@en ;
@@ -1980,7 +1981,7 @@ aeon:paper_deadline rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#personal_name
 aeon:personal_name rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf aeon:name ;
-                   rdfs:domain obo:NCBITaxon_9606 ;
+                   rdfs:domain ncbitaxon:NCBITaxon_9606 ;
                    rdfs:range xsd:string ;
                    iao:IAO_0000115 "The literal value of the name to denote a person."@en ;
                    rdfs:label "personal name"@en ;
@@ -3592,7 +3593,7 @@ iao:IAO_0020015 rdf:type owl:Class ;
                 owl:equivalentClass [ owl:intersectionOf ( iao:IAO_0020000
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty iao:IAO_0000219 ;
-                                                             owl:allValuesFrom obo:NCBITaxon_9606
+                                                             owl:allValuesFrom ncbitaxon:NCBITaxon_9606
                                                            ]
                                                          ) ;
                                       rdf:type owl:Class
@@ -3625,7 +3626,7 @@ ico:ICO_0000049 rdf:type owl:Class ;
 
 
 ###  http://purl.obolibrary.org/obo/NCBITaxon_9606
-obo:NCBITaxon_9606 rdf:type owl:Class ;
+ncbitaxon:NCBITaxon_9606 rdf:type owl:Class ;
                    rdfs:subClassOf obi:OBI_0100026 ;
                    iao:IAO_0000116 "The class 'Homo sapiens' is used in order to refer to a person, as this is the proper definition of what a person in AEON should represent. In other words to refer to a person in the context of AEON means to refer to a human being which is always a 'Homo sapiens'." ;
                    rdfs:label "Homo sapiens" ;

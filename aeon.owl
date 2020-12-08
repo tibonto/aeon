@@ -1194,7 +1194,7 @@ It mainly serves as an ordering parent property for known centrally registered i
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/obi.owl#OBI_0000245"/>
                 </owl:unionOf>
             </owl:Class>
@@ -1211,7 +1211,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000046">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000045"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has attendee</rdfs:label>
         <AEON_0000026 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P710&quot;, &quot;label&quot;: &quot;participantLabel&quot;}}</AEON_0000026>
         <SMW_datatype>Page</SMW_datatype>
@@ -1227,7 +1227,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000047">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000045"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has moderator</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1250,7 +1250,7 @@ It mainly serves as an ordering parent property for known centrally registered i
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/obi.owl#OBI_0000245"/>
                 </owl:unionOf>
             </owl:Class>
@@ -1270,7 +1270,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000049">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000045"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has reviewer</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[partOfSubobject::Template:Subobject Contributor]]
@@ -1285,7 +1285,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000050">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000045"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has speaker</rdfs:label>
         <AEON_0000026 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P823&quot;, &quot;label&quot;: &quot;speaker&quot;}}</AEON_0000026>
         <SMW_datatype>Page</SMW_datatype>
@@ -1313,7 +1313,7 @@ It mainly serves as an ordering parent property for known centrally registered i
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/obi.owl#OBI_0000245"/>
                 </owl:unionOf>
             </owl:Class>
@@ -1333,7 +1333,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000052">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000048"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has committee member</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1354,7 +1354,7 @@ It mainly serves as an ordering parent property for known centrally registered i
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has contact person</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1367,7 +1367,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000054">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000050"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has keynote speaker</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[partOfSubobject::Template:Subobject Contributor]]
@@ -1382,7 +1382,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000055">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000052"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has committee chair</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[partOfSubobject::Template:Subobject Contributor]]
@@ -1397,7 +1397,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000056">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000052"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has finance committee member</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1410,7 +1410,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000057">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000052"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has general committee member</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1423,7 +1423,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000058">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000052"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has local committee member</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1436,7 +1436,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000059">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000052"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has program committee member</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1449,7 +1449,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000060">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000052"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has publication committee member</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1462,7 +1462,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000061">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000052"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has publicity committee member</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1475,7 +1475,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000062">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000052"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has sponsorship committee member</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1488,7 +1488,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000063">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000052"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has steering committee member</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1501,7 +1501,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000064">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000052"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has technical committee member</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1514,7 +1514,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000065">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000055"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has finance committee chair</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1527,7 +1527,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000066">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000055"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has general committee chair</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1540,7 +1540,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000067">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000055"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has local committee chair</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1553,7 +1553,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000068">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000055"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has program committee chair</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1566,7 +1566,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000069">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000055"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has publication committee chair</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1579,7 +1579,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000070">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000055"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has publicity committee chair</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1592,7 +1592,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000071">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000055"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has sponsorship committee chair</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1605,7 +1605,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000072">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000055"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has steering committee chair</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1618,7 +1618,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000073">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000055"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:label xml:lang="en">has technical committee chair</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1707,7 +1707,7 @@ It mainly serves as an ordering parent property for known centrally registered i
 
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000078">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000031"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:range rdf:resource="https://github.com/tibonto/aeon#AEON_0000019"/>
         <rdfs:label xml:lang="en">has ORCID</rdfs:label>
         <SMW_datatype>External identifier</SMW_datatype>
@@ -2352,7 +2352,7 @@ cancled → withdrawn</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="https://github.com/tibonto/aeon#first_name">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#personal_name"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <iao:IAO_0000115 xml:lang="en">The literal value of the first name of a person.</iao:IAO_0000115>
         <rdfs:label xml:lang="en">first name</rdfs:label>
@@ -2406,7 +2406,7 @@ cancled → withdrawn</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="https://github.com/tibonto/aeon#last_name">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#personal_name"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <iao:IAO_0000115 xml:lang="en">The literal value of the last name, or family name, of a person.</iao:IAO_0000115>
         <rdfs:label xml:lang="en">last name</rdfs:label>
@@ -2569,7 +2569,7 @@ cancled → withdrawn</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="https://github.com/tibonto/aeon#personal_name">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#name"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <iao:IAO_0000115 xml:lang="en">The literal value of the name to denote a person.</iao:IAO_0000115>
         <rdfs:label xml:lang="en">personal name</rdfs:label>
@@ -2948,18 +2948,6 @@ cancled → withdrawn</rdfs:comment>
         <rdfs:label xml:lang="en">geographic location</rdfs:label>
         <SMW_datatype>Category</SMW_datatype>
         <SMW_import_info>[[Category:GAZ]] [[Category:Imported vocabulary]]</SMW_import_info>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/obi.owl#OBI_0100026"/>
-        <iao:IAO_0000116>The class &apos;Homo sapiens&apos; is used in order to refer to a person, as this is the proper definition of what a person in AEON should represent. In other words to refer to a person in the context of AEON means to refer to a human being which is always a &apos;Homo sapiens&apos;.</iao:IAO_0000116>
-        <rdfs:label>Homo sapiens</rdfs:label>
-        <SMW_datatype>Category</SMW_datatype>
-        <SMW_import_info>[[Category:NCBITaxon]] [[Category:Imported vocabulary]]</SMW_import_info>
     </owl:Class>
     
 
@@ -4332,7 +4320,7 @@ Previous. An information content entity is a non-realizable information entity t
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0020000"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000219"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -4368,6 +4356,18 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:label xml:lang="en">profit organization</rdfs:label>
         <SMW_datatype>Category</SMW_datatype>
         <SMW_import_info>[[Category:ICO]] [[Category:Imported vocabulary]]</SMW_import_info>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/obi.owl#OBI_0100026"/>
+        <iao:IAO_0000116>The class &apos;Homo sapiens&apos; is used in order to refer to a person, as this is the proper definition of what a person in AEON should represent. In other words to refer to a person in the context of AEON means to refer to a human being which is always a &apos;Homo sapiens&apos;.</iao:IAO_0000116>
+        <rdfs:label>Homo sapiens</rdfs:label>
+        <SMW_datatype>Category</SMW_datatype>
+        <SMW_import_info>[[Category:NCBITaxon]] [[Category:Imported vocabulary]]</SMW_import_info>
     </owl:Class>
     
 
