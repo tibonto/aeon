@@ -3,9 +3,9 @@
      xml:base="https://github.com/tibonto/aeon"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:ro="http://purl.obolibrary.org/obo/ro.owl#"
      xmlns:bfo="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#"
      xmlns:iao="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -42,12 +42,6 @@
     <!-- http://dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/creator -->
 
     <owl:AnnotationProperty rdf:about="http://dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/creator"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
     
 
 
@@ -406,6 +400,12 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ro.owl#RO_0001900 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ro.owl#RO_0001900"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
@@ -533,104 +533,11 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052">
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <iao:IAO_0000111 xml:lang="en">inheres in</iao:IAO_0000111>
-        <iao:IAO_0000112 xml:lang="en">this fragility inheres in this vase</iao:IAO_0000112>
-        <iao:IAO_0000112 xml:lang="en">this red color inheres in this apple</iao:IAO_0000112>
-        <iao:IAO_0000115 xml:lang="en">a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence</iao:IAO_0000115>
-        <iao:IAO_0000116 xml:lang="en">A dependent inheres in its bearer at all times for which the dependent exists.</iao:IAO_0000116>
-        <iao:IAO_0000118 xml:lang="en">inheres_in</iao:IAO_0000118>
-        <rdfs:label xml:lang="en">inheres in</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053">
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000020"/>
-        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <iao:IAO_0000111 xml:lang="en">bearer of</iao:IAO_0000111>
-        <iao:IAO_0000112 xml:lang="en">this apple is bearer of this red color</iao:IAO_0000112>
-        <iao:IAO_0000112 xml:lang="en">this vase is bearer of this fragility</iao:IAO_0000112>
-        <iao:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence</iao:IAO_0000115>
-        <iao:IAO_0000116 xml:lang="en">A bearer can have many dependents, and its dependents can exist for different periods of time, but none of its dependents can exist when the bearer does not exist.</iao:IAO_0000116>
-        <iao:IAO_0000118 xml:lang="en">bearer_of</iao:IAO_0000118>
-        <iao:IAO_0000118 xml:lang="en">is bearer of</iao:IAO_0000118>
-        <rdfs:label xml:lang="en">bearer of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000080 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000080">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-        <iao:IAO_0000112 xml:lang="en">this red color is a quality of this apple</iao:IAO_0000112>
-        <iao:IAO_0000115 xml:lang="en">a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence</iao:IAO_0000115>
-        <iao:IAO_0000116 xml:lang="en">A quality inheres in its bearer at all times for which the quality exists.</iao:IAO_0000116>
-        <iao:IAO_0000118 xml:lang="en">is quality of</iao:IAO_0000118>
-        <iao:IAO_0000118 xml:lang="en">quality_of</iao:IAO_0000118>
-        <rdfs:label xml:lang="en">quality of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000081 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000081">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-        <iao:IAO_0000112 xml:lang="en">this investigator role is a role of this person</iao:IAO_0000112>
-        <iao:IAO_0000115 xml:lang="en">a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence</iao:IAO_0000115>
-        <iao:IAO_0000116 xml:lang="en">A role inheres in its bearer at all times for which the role exists, however the role need not be realized at all the times that the role exists.</iao:IAO_0000116>
-        <iao:IAO_0000118 xml:lang="en">is role of</iao:IAO_0000118>
-        <iao:IAO_0000118 xml:lang="en">role_of</iao:IAO_0000118>
-        <rdfs:label xml:lang="en">role of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000019"/>
-        <iao:IAO_0000112 xml:lang="en">this apple has quality this red color</iao:IAO_0000112>
-        <iao:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence</iao:IAO_0000115>
-        <iao:IAO_0000116 xml:lang="en">A bearer can have many qualities, and its qualities can exist for different periods of time, but none of its qualities can exist when the bearer does not exist.</iao:IAO_0000116>
-        <iao:IAO_0000118 xml:lang="en">has_quality</iao:IAO_0000118>
-        <rdfs:label xml:lang="en">has quality</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000004"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000023"/>
-        <iao:IAO_0000112 xml:lang="en">this person has role this investigator role (more colloquially: this person has this role of investigator)</iao:IAO_0000112>
-        <iao:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence</iao:IAO_0000115>
-        <iao:IAO_0000116 xml:lang="en">A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists.</iao:IAO_0000116>
-        <iao:IAO_0000118 xml:lang="en">has_role</iao:IAO_0000118>
-        <rdfs:label xml:lang="en">has role</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000050 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000050">
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000051"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <iao:IAO_0000111 xml:lang="en">is part of</iao:IAO_0000111>
         <iao:IAO_0000112 xml:lang="en">my brain is part of my body (continuant parthood, two material entities)</iao:IAO_0000112>
         <iao:IAO_0000112 xml:lang="en">my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)</iao:IAO_0000112>
@@ -642,6 +549,7 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
 
 A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An occurrent cannot be part of a continuant: use &apos;has participant&apos;. A material entity cannot be part of an immaterial entity: use &apos;has location&apos;. A specifically dependent continuant cannot be part of an independent continuant: use &apos;inheres in&apos;. An independent continuant cannot be part of a specifically dependent continuant: use &apos;bearer of&apos;.</iao:IAO_0000116>
         <iao:IAO_0000118 xml:lang="en">part_of</iao:IAO_0000118>
+        <ro:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/ro.owl#RO_0001901"/>
         <rdfs:label xml:lang="en">part of</rdfs:label>
         <rdfs:seeAlso>http://www.obofoundry.org/ro/#OBO_REL:part_of</rdfs:seeAlso>
         <SMW_datatype>Page</SMW_datatype>
@@ -654,7 +562,6 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000051">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <iao:IAO_0000111 xml:lang="en">has part</iao:IAO_0000111>
         <iao:IAO_0000112 xml:lang="en">my body has part my brain (continuant parthood, two material entities)</iao:IAO_0000112>
         <iao:IAO_0000112 xml:lang="en">my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)</iao:IAO_0000112>
@@ -666,6 +573,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
 
 A continuant cannot have an occurrent as part: use &apos;participates in&apos;. An occurrent cannot have a continuant as part: use &apos;has participant&apos;. An immaterial entity cannot have a material entity as part: use &apos;location of&apos;. An independent continuant cannot have a specifically dependent continuant as part: use &apos;bearer of&apos;. A specifically dependent continuant cannot have an independent continuant as part: use &apos;inheres in&apos;.</iao:IAO_0000116>
         <iao:IAO_0000118 xml:lang="en">has_part</iao:IAO_0000118>
+        <ro:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/ro.owl#RO_0001901"/>
         <rdfs:label xml:lang="en">has part</rdfs:label>
         <SMW_datatype>Page</SMW_datatype>
         <SMW_import_info>[[Category:BFO]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -1071,6 +979,98 @@ every c that is a concretization of g specifically denotes r</iao:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ro.owl#RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ro.owl#RO_0000052">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/ro.owl#RO_0000053"/>
+        <iao:IAO_0000111 xml:lang="en">inheres in</iao:IAO_0000111>
+        <iao:IAO_0000112 xml:lang="en">this fragility inheres in this vase</iao:IAO_0000112>
+        <iao:IAO_0000112 xml:lang="en">this red color inheres in this apple</iao:IAO_0000112>
+        <iao:IAO_0000115 xml:lang="en">a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence</iao:IAO_0000115>
+        <iao:IAO_0000116 xml:lang="en">A dependent inheres in its bearer at all times for which the dependent exists.</iao:IAO_0000116>
+        <iao:IAO_0000118 xml:lang="en">inheres_in</iao:IAO_0000118>
+        <ro:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/ro.owl#RO_0001901"/>
+        <rdfs:label xml:lang="en">inheres in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ro.owl#RO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ro.owl#RO_0000053">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000020"/>
+        <iao:IAO_0000111 xml:lang="en">bearer of</iao:IAO_0000111>
+        <iao:IAO_0000112 xml:lang="en">this apple is bearer of this red color</iao:IAO_0000112>
+        <iao:IAO_0000112 xml:lang="en">this vase is bearer of this fragility</iao:IAO_0000112>
+        <iao:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence</iao:IAO_0000115>
+        <iao:IAO_0000116 xml:lang="en">A bearer can have many dependents, and its dependents can exist for different periods of time, but none of its dependents can exist when the bearer does not exist.</iao:IAO_0000116>
+        <iao:IAO_0000118 xml:lang="en">bearer_of</iao:IAO_0000118>
+        <iao:IAO_0000118 xml:lang="en">is bearer of</iao:IAO_0000118>
+        <ro:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/ro.owl#RO_0001901"/>
+        <rdfs:label xml:lang="en">bearer of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ro.owl#RO_0000080 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ro.owl#RO_0000080">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/ro.owl#RO_0000052"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/ro.owl#RO_0000086"/>
+        <iao:IAO_0000112 xml:lang="en">this red color is a quality of this apple</iao:IAO_0000112>
+        <iao:IAO_0000115 xml:lang="en">a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence</iao:IAO_0000115>
+        <iao:IAO_0000116 xml:lang="en">A quality inheres in its bearer at all times for which the quality exists.</iao:IAO_0000116>
+        <iao:IAO_0000118 xml:lang="en">is quality of</iao:IAO_0000118>
+        <iao:IAO_0000118 xml:lang="en">quality_of</iao:IAO_0000118>
+        <rdfs:label xml:lang="en">quality of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ro.owl#RO_0000081 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ro.owl#RO_0000081">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/ro.owl#RO_0000052"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/ro.owl#RO_0000087"/>
+        <iao:IAO_0000112 xml:lang="en">this investigator role is a role of this person</iao:IAO_0000112>
+        <iao:IAO_0000115 xml:lang="en">a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence</iao:IAO_0000115>
+        <iao:IAO_0000116 xml:lang="en">A role inheres in its bearer at all times for which the role exists, however the role need not be realized at all the times that the role exists.</iao:IAO_0000116>
+        <iao:IAO_0000118 xml:lang="en">is role of</iao:IAO_0000118>
+        <iao:IAO_0000118 xml:lang="en">role_of</iao:IAO_0000118>
+        <rdfs:label xml:lang="en">role of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ro.owl#RO_0000086 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ro.owl#RO_0000086">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/ro.owl#RO_0000053"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000019"/>
+        <iao:IAO_0000112 xml:lang="en">this apple has quality this red color</iao:IAO_0000112>
+        <iao:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence</iao:IAO_0000115>
+        <iao:IAO_0000116 xml:lang="en">A bearer can have many qualities, and its qualities can exist for different periods of time, but none of its qualities can exist when the bearer does not exist.</iao:IAO_0000116>
+        <iao:IAO_0000118 xml:lang="en">has_quality</iao:IAO_0000118>
+        <rdfs:label xml:lang="en">has quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ro.owl#RO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ro.owl#RO_0000087">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/ro.owl#RO_0000053"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000023"/>
+        <iao:IAO_0000112 xml:lang="en">this person has role this investigator role (more colloquially: this person has this role of investigator)</iao:IAO_0000112>
+        <iao:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence</iao:IAO_0000115>
+        <iao:IAO_0000116 xml:lang="en">A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists.</iao:IAO_0000116>
+        <iao:IAO_0000118 xml:lang="en">has_role</iao:IAO_0000118>
+        <rdfs:label xml:lang="en">has role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://github.com/tibonto/aeon#AEON_0000031 -->
 
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000031">
@@ -1195,7 +1195,7 @@ It mainly serves as an ordering parent property for known centrally registered i
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/obi.owl#OBI_0000245"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -1251,7 +1251,7 @@ It mainly serves as an ordering parent property for known centrally registered i
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/obi.owl#OBI_0000245"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -1314,7 +1314,7 @@ It mainly serves as an ordering parent property for known centrally registered i
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/obi.owl#OBI_0000245"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -1689,7 +1689,7 @@ It mainly serves as an ordering parent property for known centrally registered i
 
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000077">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000031"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/obi.owl#OBI_0000245"/>
         <rdfs:range rdf:resource="https://github.com/tibonto/aeon#AEON_0000018"/>
         <rdfs:label xml:lang="en">has ISNI</rdfs:label>
         <SMW_datatype>External identifier</SMW_datatype>
@@ -1724,7 +1724,7 @@ It mainly serves as an ordering parent property for known centrally registered i
 
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000079">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000031"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/obi.owl#OBI_0000245"/>
         <rdfs:range rdf:resource="https://github.com/tibonto/aeon#AEON_0000020"/>
         <rdfs:label xml:lang="en">has ROR</rdfs:label>
         <SMW_datatype>External identifier</SMW_datatype>
@@ -2542,7 +2542,7 @@ cancled → withdrawn</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="https://github.com/tibonto/aeon#organizational_name">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#name"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/obi.owl#OBI_0000245"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <iao:IAO_0000115 xml:lang="en">The literal value of the name to denote an organization.</iao:IAO_0000115>
         <rdfs:label xml:lang="en">organizational name</rdfs:label>
@@ -2955,7 +2955,7 @@ cancled → withdrawn</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/ICO_0000048 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICO_0000048">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/obi.owl#OBI_0000245"/>
         <iao:IAO_0000115 xml:lang="en">An organization that is operated without the principal goal of making a financial profit.</iao:IAO_0000115>
         <rdfs:label xml:lang="en">nonprofit organization</rdfs:label>
         <SMW_datatype>Category</SMW_datatype>
@@ -2967,7 +2967,7 @@ cancled → withdrawn</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/ICO_0000049 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICO_0000049">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/obi.owl#OBI_0000245"/>
         <iao:IAO_0000115 xml:lang="en">An organization which has the principle goal of earning financial profit.</iao:IAO_0000115>
         <rdfs:label xml:lang="en">profit organization</rdfs:label>
         <SMW_datatype>Category</SMW_datatype>
@@ -2979,57 +2979,11 @@ cancled → withdrawn</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/obi.owl#OBI_0100026"/>
         <iao:IAO_0000116>The class &apos;Homo sapiens&apos; is used in order to refer to a person, as this is the proper definition of what a person in AEON should represent. In other words to refer to a person in the context of AEON means to refer to a human being which is always a &apos;Homo sapiens&apos;.</iao:IAO_0000116>
         <rdfs:label>Homo sapiens</rdfs:label>
         <SMW_datatype>Category</SMW_datatype>
         <SMW_import_info>[[Category:NCBITaxon]] [[Category:Imported vocabulary]]</SMW_import_info>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000015"/>
-        <iao:IAO_0000111 xml:lang="en">planned process</iao:IAO_0000111>
-        <iao:IAO_0000115 xml:lang="en">A process that realizes a plan which is the concretization of a plan specification.</iao:IAO_0000115>
-        <iao:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:comment xml:lang="en">PS, 11-2020: I&apos;m unsure yet if, this class will be needed in AEON, but it seems that this class is more accurate as parent for an academic event or event seires, as both are always unfolding according to a plan.</rdfs:comment>
-        <rdfs:label xml:lang="en">planned process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000027"/>
-        <iao:IAO_0000112 xml:lang="en">PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods.</iao:IAO_0000112>
-        <iao:IAO_0000114 xml:lang="en">ready for release</iao:IAO_0000114>
-        <iao:IAO_0000115 xml:lang="en">An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members.</iao:IAO_0000115>
-        <iao:IAO_0000116 xml:lang="en">BP: The definition summarizes long email discussions on the OBI developer, roles, biomaterial and denrie branches. It leaves open if an organization is a material entity or a dependent continuant, as no consensus was reached on that. The current placement as material is therefore temporary, in order to move forward with development. Here is the entire email summary, on which the definition is based: 1) there are organization_member_roles (president, treasurer, branch editor), with individual persons as bearers 2) there are organization_roles (employer, owner, vendor, patent holder) 3) an organization has a charter / rules / bylaws, which specify what roles there are, how they should be realized, and how to modify the charter/rules/bylaws themselves. It is debatable what the organization itself is (some kind of dependent continuant or an aggregate of people). This also determines who/what the bearer of organization_roles&apos; are. My personal favorite is still to define organization as a kind of &apos;legal entity&apos;, but thinking it through leads to all kinds of questions that are clearly outside the scope of OBI. Interestingly enough, it does not seem to matter much where we place organization itself, as long as we can subclass it (University, Corporation, Government Agency, Hospital), instantiate it (Affymetrix, NCBI, NIH, ISO, W3C, University of Oklahoma), and have it play roles. This leads to my proposal: We define organization through the statements 1 - 3 above, but without an &apos;is a&apos; statement for now. We can leave it in its current place in the is_a hierarchy (material entity) or move it up to &apos;continuant&apos;. We leave further clarifications to BFO, and close this issue for now.</iao:IAO_0000116>
-        <iao:IAO_0000119 xml:lang="en">GROUP: OBI</iao:IAO_0000119>
-        <iao:IAO_0000412 xml:lang="en">http://purl.obolibrary.org/obo/obi.owl</iao:IAO_0000412>
-        <iao:IAO_0000600 xml:lang="en">institutional body (research organization, society, association etc.)</iao:IAO_0000600>
-        <rdfs:label xml:lang="en">organization</rdfs:label>
-        <SMW_datatype>Category</SMW_datatype>
-        <SMW_import_info>[[Category:OBI]] [[Category:Imported vocabulary]]</SMW_import_info>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000030"/>
-        <iao:IAO_0000112 xml:lang="en">fungus; plant; virus; animal</iao:IAO_0000112>
-        <iao:IAO_0000114 xml:lang="en">organizational term</iao:IAO_0000114>
-        <iao:IAO_0000115>A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.</iao:IAO_0000115>
-        <iao:IAO_0000116 xml:lang="en">10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and &apos;other organisms&apos;)</iao:IAO_0000116>
-        <iao:IAO_0000116 xml:lang="en">13-02-2009: OBI doesn&apos;t take position as to when an organism starts or ends being an organism - e.g. sperm, foetus. This issue is outside the scope of OBI.</iao:IAO_0000116>
-        <iao:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</iao:IAO_0000119>
-        <rdfs:label xml:lang="en">organism</rdfs:label>
     </owl:Class>
     
 
@@ -4418,6 +4372,52 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
+    <!-- http://purl.obolibrary.org/obo/obi.owl#OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/obi.owl#OBI_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000015"/>
+        <iao:IAO_0000111 xml:lang="en">planned process</iao:IAO_0000111>
+        <iao:IAO_0000115 xml:lang="en">A process that realizes a plan which is the concretization of a plan specification.</iao:IAO_0000115>
+        <iao:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:comment xml:lang="en">PS, 11-2020: I&apos;m unsure yet if, this class will be needed in AEON, but it seems that this class is more accurate as parent for an academic event or event seires, as both are always unfolding according to a plan.</rdfs:comment>
+        <rdfs:label xml:lang="en">planned process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obi.owl#OBI_0000245 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/obi.owl#OBI_0000245">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000027"/>
+        <iao:IAO_0000112 xml:lang="en">PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods.</iao:IAO_0000112>
+        <iao:IAO_0000114 xml:lang="en">ready for release</iao:IAO_0000114>
+        <iao:IAO_0000115 xml:lang="en">An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members.</iao:IAO_0000115>
+        <iao:IAO_0000116 xml:lang="en">BP: The definition summarizes long email discussions on the OBI developer, roles, biomaterial and denrie branches. It leaves open if an organization is a material entity or a dependent continuant, as no consensus was reached on that. The current placement as material is therefore temporary, in order to move forward with development. Here is the entire email summary, on which the definition is based: 1) there are organization_member_roles (president, treasurer, branch editor), with individual persons as bearers 2) there are organization_roles (employer, owner, vendor, patent holder) 3) an organization has a charter / rules / bylaws, which specify what roles there are, how they should be realized, and how to modify the charter/rules/bylaws themselves. It is debatable what the organization itself is (some kind of dependent continuant or an aggregate of people). This also determines who/what the bearer of organization_roles&apos; are. My personal favorite is still to define organization as a kind of &apos;legal entity&apos;, but thinking it through leads to all kinds of questions that are clearly outside the scope of OBI. Interestingly enough, it does not seem to matter much where we place organization itself, as long as we can subclass it (University, Corporation, Government Agency, Hospital), instantiate it (Affymetrix, NCBI, NIH, ISO, W3C, University of Oklahoma), and have it play roles. This leads to my proposal: We define organization through the statements 1 - 3 above, but without an &apos;is a&apos; statement for now. We can leave it in its current place in the is_a hierarchy (material entity) or move it up to &apos;continuant&apos;. We leave further clarifications to BFO, and close this issue for now.</iao:IAO_0000116>
+        <iao:IAO_0000119 xml:lang="en">GROUP: OBI</iao:IAO_0000119>
+        <iao:IAO_0000412 xml:lang="en">http://purl.obolibrary.org/obo/obi.owl</iao:IAO_0000412>
+        <iao:IAO_0000600 xml:lang="en">institutional body (research organization, society, association etc.)</iao:IAO_0000600>
+        <rdfs:label xml:lang="en">organization</rdfs:label>
+        <SMW_datatype>Category</SMW_datatype>
+        <SMW_import_info>[[Category:OBI]] [[Category:Imported vocabulary]]</SMW_import_info>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obi.owl#OBI_0100026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/obi.owl#OBI_0100026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#BFO_0000030"/>
+        <iao:IAO_0000112 xml:lang="en">fungus; plant; virus; animal</iao:IAO_0000112>
+        <iao:IAO_0000114 xml:lang="en">organizational term</iao:IAO_0000114>
+        <iao:IAO_0000115>A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.</iao:IAO_0000115>
+        <iao:IAO_0000116 xml:lang="en">10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and &apos;other organisms&apos;)</iao:IAO_0000116>
+        <iao:IAO_0000116 xml:lang="en">13-02-2009: OBI doesn&apos;t take position as to when an organism starts or ends being an organism - e.g. sperm, foetus. This issue is outside the scope of OBI.</iao:IAO_0000116>
+        <iao:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</iao:IAO_0000119>
+        <rdfs:label xml:lang="en">organism</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
@@ -4857,7 +4857,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
     <!-- https://github.com/tibonto/aeon#AEON_0000042 -->
 
     <owl:Class rdf:about="https://github.com/tibonto/aeon#AEON_0000042">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/obi.owl#OBI_0000245"/>
         <iao:IAO_0000117 xml:lang="en">TODO: It needs to be discussed if this class ir really needed. One could argue, that the various committee roles and committee memeber properties totally suffice.</iao:IAO_0000117>
         <rdfs:label xml:lang="en">committee</rdfs:label>
         <ns:term_status xml:lang="en">pending</ns:term_status>

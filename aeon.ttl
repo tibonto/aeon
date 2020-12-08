@@ -3,7 +3,8 @@
 @prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix bfo: <http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#> .
 @prefix iao: <http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#> .
-@prefix ro: <http://purl.obolibrary.org/obo/ro.owl#>
+@prefix ro: <http://purl.obolibrary.org/obo/ro.owl#> .
+@prefix obi: <http://purl.obolibrary.org/obo/obi.owl#> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -923,7 +924,7 @@ aeon:AEON_0000045 rdf:type owl:ObjectProperty ;
                               ] ;
                   rdfs:range [ rdf:type owl:Class ;
                                owl:unionOf ( obo:NCBITaxon_9606
-                                             obo:OBI_0000245
+                                             obi:OBI_0000245
                                            )
                              ] ;
                   rdfs:label "has contributor"@en ;
@@ -964,7 +965,7 @@ aeon:AEON_0000048 rdf:type owl:ObjectProperty ;
                               ] ;
                   rdfs:range [ rdf:type owl:Class ;
                                owl:unionOf ( obo:NCBITaxon_9606
-                                             obo:OBI_0000245
+                                             obi:OBI_0000245
                                            )
                              ] ;
                   rdfs:label "has organizer"@en ;
@@ -1012,7 +1013,7 @@ aeon:AEON_0000051 rdf:type owl:ObjectProperty ;
                               ] ;
                   rdfs:range [ rdf:type owl:Class ;
                                owl:unionOf ( obo:NCBITaxon_9606
-                                             obo:OBI_0000245
+                                             obi:OBI_0000245
                                            )
                              ] ;
                   rdfs:comment "PS 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...). As the possible sponsor types can have various schemes, it seems best to have named individuals of the aeon:Sponsor class at the moment, which will make up the range of the data property aeon_sponsor_type."@en ;
@@ -1305,7 +1306,7 @@ aeon:AEON_0000076 rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#AEON_0000077
 aeon:AEON_0000077 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000031 ;
-                  rdfs:domain obo:OBI_0000245 ;
+                  rdfs:domain obi:OBI_0000245 ;
                   rdfs:range aeon:AEON_0000018 ;
                   rdfs:label "has ISNI"@en ;
                   aeon:SMW_datatype "External identifier" ;
@@ -1334,7 +1335,7 @@ aeon:AEON_0000078 rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#AEON_0000079
 aeon:AEON_0000079 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000031 ;
-                  rdfs:domain obo:OBI_0000245 ;
+                  rdfs:domain obi:OBI_0000245 ;
                   rdfs:range aeon:AEON_0000020 ;
                   rdfs:label "has ROR"@en ;
                   aeon:SMW_datatype "External identifier" ;
@@ -1957,7 +1958,7 @@ aeon:number_of_tracks rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#organizational_name
 aeon:organizational_name rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:name ;
-                         rdfs:domain obo:OBI_0000245 ;
+                         rdfs:domain obi:OBI_0000245 ;
                          rdfs:range xsd:string ;
                          iao:IAO_0000115 "The literal value of the name to denote an organization."@en ;
                          rdfs:label "organizational name"@en ;
@@ -3606,7 +3607,7 @@ iao:IAO_0020015 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/ICO_0000048
 obo:ICO_0000048 rdf:type owl:Class ;
-                rdfs:subClassOf obo:OBI_0000245 ;
+                rdfs:subClassOf obi:OBI_0000245 ;
                 iao:IAO_0000115 "An organization that is operated without the principal goal of making a financial profit."@en ;
                 rdfs:label "nonprofit organization"@en ;
                 aeon:SMW_datatype "Category" ;
@@ -3615,7 +3616,7 @@ obo:ICO_0000048 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/ICO_0000049
 obo:ICO_0000049 rdf:type owl:Class ;
-                rdfs:subClassOf obo:OBI_0000245 ;
+                rdfs:subClassOf obi:OBI_0000245 ;
                 iao:IAO_0000115 "An organization which has the principle goal of earning financial profit."@en ;
                 rdfs:label "profit organization"@en ;
                 aeon:SMW_datatype "Category" ;
@@ -3624,7 +3625,7 @@ obo:ICO_0000049 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/NCBITaxon_9606
 obo:NCBITaxon_9606 rdf:type owl:Class ;
-                   rdfs:subClassOf obo:OBI_0100026 ;
+                   rdfs:subClassOf obi:OBI_0100026 ;
                    iao:IAO_0000116 "The class 'Homo sapiens' is used in order to refer to a person, as this is the proper definition of what a person in AEON should represent. In other words to refer to a person in the context of AEON means to refer to a human being which is always a 'Homo sapiens'." ;
                    rdfs:label "Homo sapiens" ;
                    aeon:SMW_datatype "Category" ;
@@ -3632,7 +3633,7 @@ obo:NCBITaxon_9606 rdf:type owl:Class ;
 
 
 ###  http://purl.obolibrary.org/obo/OBI_0000011
-obo:OBI_0000011 rdf:type owl:Class ;
+obi:OBI_0000011 rdf:type owl:Class ;
                 rdfs:subClassOf bfo:BFO_0000015 ;
                 iao:IAO_0000111 "planned process"@en ;
                 iao:IAO_0000115 "A process that realizes a plan which is the concretization of a plan specification."@en ;
@@ -3642,7 +3643,7 @@ obo:OBI_0000011 rdf:type owl:Class ;
 
 
 ###  http://purl.obolibrary.org/obo/OBI_0000245
-obo:OBI_0000245 rdf:type owl:Class ;
+obi:OBI_0000245 rdf:type owl:Class ;
                 rdfs:subClassOf bfo:BFO_0000027 ;
                 iao:IAO_0000112 "PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods."@en ;
                 iao:IAO_0000114 "ready for release"@en ;
@@ -3657,7 +3658,7 @@ obo:OBI_0000245 rdf:type owl:Class ;
 
 
 ###  http://purl.obolibrary.org/obo/OBI_0100026
-obo:OBI_0100026 rdf:type owl:Class ;
+obi:OBI_0100026 rdf:type owl:Class ;
                 rdfs:subClassOf bfo:BFO_0000030 ;
                 iao:IAO_0000112 "fungus; plant; virus; animal"@en ;
                 iao:IAO_0000114 "organizational term"@en ;
@@ -4002,7 +4003,7 @@ aeon:AEON_0000039 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000042
 aeon:AEON_0000042 rdf:type owl:Class ;
-                  rdfs:subClassOf obo:OBI_0000245 ;
+                  rdfs:subClassOf obi:OBI_0000245 ;
                   iao:IAO_0000117 "TODO: It needs to be discussed if this class ir really needed. One could argue, that the various committee roles and committee memeber properties totally suffice."@en ;
                   rdfs:label "committee"@en ;
                   ns:term_status "pending"@en ;
