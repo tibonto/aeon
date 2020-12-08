@@ -3,6 +3,7 @@
 @prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix bfo: <http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#> .
 @prefix iao: <http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#> .
+@prefix ro: <http://purl.obolibrary.org/obo/ro.owl#>
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -312,7 +313,7 @@ iao:IAO_0100001 rdf:type owl:AnnotationProperty ;
 
 
 ###  http://purl.obolibrary.org/obo/RO_0001900
-obo:RO_0001900 rdf:type owl:AnnotationProperty .
+ro:RO_0001900 rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/contributor
@@ -411,7 +412,7 @@ bfo:BFO_0000050 rdf:type owl:ObjectProperty ;
 
 A continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'."""@en ;
                 iao:IAO_0000118 "part_of"@en ;
-                obo:RO_0001900 obo:RO_0001901 ;
+                ro:RO_0001900 ro:RO_0001901 ;
                 rdfs:label "part of"@en ;
                 rdfs:seeAlso "http://www.obofoundry.org/ro/#OBO_REL:part_of" ;
                 aeon:SMW_datatype "Page" ;
@@ -432,7 +433,7 @@ bfo:BFO_0000051 rdf:type owl:ObjectProperty ,
 
 A continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'."""@en ;
                 iao:IAO_0000118 "has_part"@en ;
-                obo:RO_0001900 obo:RO_0001901 ;
+                ro:RO_0001900 ro:RO_0001901 ;
                 rdfs:label "has part"@en ;
                 aeon:SMW_datatype "Page" ;
                 aeon:SMW_import_info "[[Category:BFO]] [[Category:Imported vocabulary]]" .
@@ -758,20 +759,20 @@ iao:IAO_0000235 rdf:type owl:ObjectProperty ;
 
 
 ###  http://purl.obolibrary.org/obo/RO_0000052
-obo:RO_0000052 rdf:type owl:ObjectProperty ;
-               owl:inverseOf obo:RO_0000053 ;
+ro:RO_0000052 rdf:type owl:ObjectProperty ;
+               owl:inverseOf ro:RO_0000053 ;
                iao:IAO_0000111 "inheres in"@en ;
                iao:IAO_0000112 "this fragility inheres in this vase"@en ,
                                "this red color inheres in this apple"@en ;
                iao:IAO_0000115 "a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence"@en ;
                iao:IAO_0000116 "A dependent inheres in its bearer at all times for which the dependent exists."@en ;
                iao:IAO_0000118 "inheres_in"@en ;
-               obo:RO_0001900 obo:RO_0001901 ;
+               ro:RO_0001900 ro:RO_0001901 ;
                rdfs:label "inheres in"@en .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0000053
-obo:RO_0000053 rdf:type owl:ObjectProperty ;
+ro:RO_0000053 rdf:type owl:ObjectProperty ;
                rdfs:range bfo:BFO_0000020 ;
                iao:IAO_0000111 "bearer of"@en ;
                iao:IAO_0000112 "this apple is bearer of this red color"@en ,
@@ -780,14 +781,14 @@ obo:RO_0000053 rdf:type owl:ObjectProperty ;
                iao:IAO_0000116 "A bearer can have many dependents, and its dependents can exist for different periods of time, but none of its dependents can exist when the bearer does not exist."@en ;
                iao:IAO_0000118 "bearer_of"@en ,
                                "is bearer of"@en ;
-               obo:RO_0001900 obo:RO_0001901 ;
+               ro:RO_0001900 ro:RO_0001901 ;
                rdfs:label "bearer of"@en .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0000080
-obo:RO_0000080 rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf obo:RO_0000052 ;
-               owl:inverseOf obo:RO_0000086 ;
+ro:RO_0000080 rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf ro:RO_0000052 ;
+               owl:inverseOf ro:RO_0000086 ;
                iao:IAO_0000112 "this red color is a quality of this apple"@en ;
                iao:IAO_0000115 "a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence"@en ;
                iao:IAO_0000116 "A quality inheres in its bearer at all times for which the quality exists."@en ;
@@ -797,9 +798,9 @@ obo:RO_0000080 rdf:type owl:ObjectProperty ;
 
 
 ###  http://purl.obolibrary.org/obo/RO_0000081
-obo:RO_0000081 rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf obo:RO_0000052 ;
-               owl:inverseOf obo:RO_0000087 ;
+ro:RO_0000081 rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf ro:RO_0000052 ;
+               owl:inverseOf ro:RO_0000087 ;
                iao:IAO_0000112 "this investigator role is a role of this person"@en ;
                iao:IAO_0000115 "a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence"@en ;
                iao:IAO_0000116 "A role inheres in its bearer at all times for which the role exists, however the role need not be realized at all the times that the role exists."@en ;
@@ -809,8 +810,8 @@ obo:RO_0000081 rdf:type owl:ObjectProperty ;
 
 
 ###  http://purl.obolibrary.org/obo/RO_0000086
-obo:RO_0000086 rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf obo:RO_0000053 ;
+ro:RO_0000086 rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf ro:RO_0000053 ;
                rdfs:range bfo:BFO_0000019 ;
                iao:IAO_0000112 "this apple has quality this red color"@en ;
                iao:IAO_0000115 "a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence"@en ;
@@ -820,8 +821,8 @@ obo:RO_0000086 rdf:type owl:ObjectProperty ;
 
 
 ###  http://purl.obolibrary.org/obo/RO_0000087
-obo:RO_0000087 rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf obo:RO_0000053 ;
+ro:RO_0000087 rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf ro:RO_0000053 ;
                rdfs:domain bfo:BFO_0000004 ;
                rdfs:range bfo:BFO_0000023 ;
                iao:IAO_0000112 "this person has role this investigator role (more colloquially: this person has this role of investigator)"@en ;
