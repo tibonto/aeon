@@ -1,6 +1,8 @@
 import json
 import pytest
 import rdflib
+from urllib.parse import urlsplit
+
 
 @pytest.mark.dumb
 def test_test():
@@ -42,3 +44,48 @@ def test_maps_to_property():
         # print mapping dictionary
         assert isinstance(maps_to, dict), 'Error: maps_to value did not ' \
                                           'convert correctly to Dict.'
+
+@pytest.mark.ontology
+def test_obo_ontos_resolution():
+    # open a graph
+    graph = rdflib.Graph()
+    # load some data
+    graph.parse('aeon.ttl', format="ttl")
+    assert graph, 'Error: aeon.ttl graph failed to parse'
+    qres = graph.query("""
+    PREFIX bfo: <https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#>
+    PREFIX iao: <http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#>
+    PREFIX ro: <http://purl.obolibrary.org/obo/ro.owl#>
+    PREFIX ico: <http://purl.obolibrary.org/obo/ico.owl#>
+    PREFIX obi: <http://purl.obolibrary.org/obo/obi.owl#>
+    PREFIX ncbitaxon: <http://purl.obolibrary.org/obo/ncbitaxon.owl#>
+    PREFIX gaz: <http://purl.obolibrary.org/obo/gaz.owl#>
+    PREFIX cro: <http://purl.obolibrary.org/obo/cro.owl#>
+    SELECT DISTINCT ?term
+    WHERE{ 
+        ?term ?p ?v .
+        FILTER (STRSTARTS(str(?term), "http://purl.obolibrary.org/obo/"))
+    }
+    ORDER BY ?term
+    """)
+    assert len(qres) > 0, 'Error: No triples returned.'
+    uris_cache = []
+    too_large_ontos = ['gaz.owl', 'ncbitaxon.owl']
+    for printout in qres:
+        uri = str(printout.get('term'))
+        split_uri = urlsplit(uri)
+        uri_base = uri.replace(f'#{split_uri.fragment}', '')  # before hash
+
+        in_too_large_ontos = any(onto in uri for onto in too_large_ontos)
+        if uri_base not in uris_cache and in_too_large_ontos is False:
+            print(uri_base)
+            uris_cache.append(uri_base)
+            graph_external_onto = rdflib.Graph()
+            graph_external_onto.parse(uri_base, format="application/rdf+xml")
+            external_onto_query = graph_external_onto.query("""
+            SELECT DISTINCT ?term
+            WHERE{ ?term ?p ?v .}
+            """)
+            print(f'{len(external_onto_query)} triples found in {uri_base}')
+            assert len(external_onto_query) > 10,  'Error: less than 10 ' \
+                                                   'triples returned...Fishy!'
