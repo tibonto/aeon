@@ -5,7 +5,7 @@
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:ro="http://purl.obolibrary.org/obo/ro.owl#"
      xmlns:bfo="http://purl.obolibrary.org/obo/bfo.owl#"
-     xmlns:iao="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#"
+     xmlns:iao="http://purl.obolibrary.org/obo/iao.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -57,11 +57,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000111 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000111 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000111">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000111">
         <iao:IAO_0000111 xml:lang="en">editor preferred term</iao:IAO_0000111>
-        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000122"/>
+        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000122"/>
         <iao:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</iao:IAO_0000115>
         <iao:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</iao:IAO_0000117>
         <iao:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</iao:IAO_0000119>
@@ -71,11 +71,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000112 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000112 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000112">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000112">
         <iao:IAO_0000111 xml:lang="en">example of usage</iao:IAO_0000111>
-        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000122"/>
+        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000122"/>
         <iao:IAO_0000115 xml:lang="en">A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.</iao:IAO_0000115>
         <iao:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</iao:IAO_0000117>
         <iao:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</iao:IAO_0000119>
@@ -85,9 +85,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000113 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000113 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000113">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000113">
         <iao:IAO_0000111 xml:lang="en">in branch</iao:IAO_0000111>
         <iao:IAO_0000115 xml:lang="en">An annotation property indicating which module the terms belong to. This is currently experimental and not implemented yet.</iao:IAO_0000115>
         <iao:IAO_0000117 xml:lang="en">GROUP:OBI</iao:IAO_0000117>
@@ -97,9 +97,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000114 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000114 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000114">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000114">
         <iao:IAO_0000111 xml:lang="en">has curation status</iao:IAO_0000111>
         <iao:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</iao:IAO_0000117>
         <iao:IAO_0000117 xml:lang="en">PERSON:Bill Bug</iao:IAO_0000117>
@@ -109,11 +109,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000115 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000115 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000115">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000115">
         <iao:IAO_0000111 xml:lang="en">definition</iao:IAO_0000111>
-        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000122"/>
+        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000122"/>
         <iao:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</iao:IAO_0000115>
         <iao:IAO_0000116 xml:lang="en">2012-04-05: 
 Barry Smith
@@ -143,11 +143,11 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000116 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000116 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000116">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000116">
         <iao:IAO_0000111 xml:lang="en">editor note</iao:IAO_0000111>
-        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000122"/>
+        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000122"/>
         <iao:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</iao:IAO_0000115>
         <iao:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</iao:IAO_0000117>
         <iao:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obofoundry.org/obo/obi&gt;</iao:IAO_0000119>
@@ -157,11 +157,11 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000117 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000117 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000117">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000117">
         <iao:IAO_0000111 xml:lang="en">term editor</iao:IAO_0000111>
-        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000122"/>
+        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000122"/>
         <iao:IAO_0000115 xml:lang="en">Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people</iao:IAO_0000115>
         <iao:IAO_0000116 xml:lang="en">20110707, MC: label update to term editor and definition modified accordingly. See https://github.com/information-artifact-ontology/IAO/issues/115.</iao:IAO_0000116>
         <iao:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</iao:IAO_0000117>
@@ -172,11 +172,11 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000118 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000118 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000118">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000118">
         <iao:IAO_0000111 xml:lang="en">alternative term</iao:IAO_0000111>
-        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000125"/>
+        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000125"/>
         <iao:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</iao:IAO_0000115>
         <iao:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</iao:IAO_0000117>
         <iao:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</iao:IAO_0000119>
@@ -186,11 +186,11 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000119 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000119 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000119">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000119">
         <iao:IAO_0000111 xml:lang="en">definition source</iao:IAO_0000111>
-        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000122"/>
+        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000122"/>
         <iao:IAO_0000115 xml:lang="en">Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</iao:IAO_0000115>
         <iao:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</iao:IAO_0000117>
         <iao:IAO_0000119 xml:lang="en">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</iao:IAO_0000119>
@@ -201,9 +201,9 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000231 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000231 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000231">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000231">
         <iao:IAO_0000111 xml:lang="en">has obsolescence reason</iao:IAO_0000111>
         <iao:IAO_0000115 xml:lang="en">Relates an annotation property to an obsolescence reason. The values of obsolescence reasons come from a list of predefined terms, instances of the class obsolescence reason specification.</iao:IAO_0000115>
         <iao:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</iao:IAO_0000117>
@@ -213,11 +213,11 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000232 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000232 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000232">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000232">
         <iao:IAO_0000111 xml:lang="en">curator note</iao:IAO_0000111>
-        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000122"/>
+        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000122"/>
         <iao:IAO_0000115 xml:lang="en">An administrative note of use for a curator but of no use for a user</iao:IAO_0000115>
         <iao:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</iao:IAO_0000117>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -226,23 +226,23 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000233 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000233 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000233"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000233"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000234 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000234 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000234"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000234"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000412 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000412 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000412">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000412">
         <iao:IAO_0000111 xml:lang="en">imported from</iao:IAO_0000111>
-        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000125"/>
+        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000125"/>
         <iao:IAO_0000115 xml:lang="en">For external terms/classes, the ontology from which the term was imported</iao:IAO_0000115>
         <iao:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</iao:IAO_0000117>
         <iao:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</iao:IAO_0000117>
@@ -253,9 +253,9 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000424 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000424 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000424">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000424">
         <iao:IAO_0000111 xml:lang="en">expand expression to</iao:IAO_0000111>
         <iao:IAO_0000112 xml:lang="en">ObjectProperty: RO_0002104
 Label: has plasma membrane part
@@ -268,9 +268,9 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000425 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000425 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000425">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000425">
         <iao:IAO_0000111 xml:lang="en">expand assertion to</iao:IAO_0000111>
         <iao:IAO_0000112 xml:lang="en">ObjectProperty: RO???
 Label: spatially disjoint from
@@ -283,9 +283,9 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000426 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000426 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000426">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000426">
         <iao:IAO_0000111 xml:lang="en">first order logic expression</iao:IAO_0000111>
         <iao:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</iao:IAO_0000117>
         <rdfs:label xml:lang="en">first order logic expression</rdfs:label>
@@ -293,9 +293,9 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000427 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000427 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000427">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000427">
         <iao:IAO_0000111 xml:lang="en">antisymmetric property</iao:IAO_0000111>
         <iao:IAO_0000112 xml:lang="en">part_of antisymmetric property xsd:true</iao:IAO_0000112>
         <iao:IAO_0000115 xml:lang="en">Use boolean value xsd:true to indicate that the property is an antisymmetric property</iao:IAO_0000115>
@@ -305,9 +305,9 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000600 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000600 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000600">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000600">
         <iao:IAO_0000111 xml:lang="en">elucidation</iao:IAO_0000111>
         <iao:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</iao:IAO_0000117>
         <iao:IAO_0000119 xml:lang="en">Person:Barry Smith</iao:IAO_0000119>
@@ -318,9 +318,9 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000601 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000601 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000601">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000601">
         <iao:IAO_0000111 xml:lang="en">has associated axiom(nl)</iao:IAO_0000111>
         <iao:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</iao:IAO_0000117>
         <iao:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</iao:IAO_0000119>
@@ -331,9 +331,9 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000602 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602">
         <iao:IAO_0000111 xml:lang="en">has associated axiom(fol)</iao:IAO_0000111>
         <iao:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</iao:IAO_0000117>
         <iao:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</iao:IAO_0000119>
@@ -344,9 +344,9 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0006011 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0006011 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0006011">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0006011">
         <iao:IAO_0000111 xml:lang="en">may be identical to</iao:IAO_0000111>
         <iao:IAO_0000115 xml:lang="en">A annotation relationship between two terms in an ontology that may refer to the same (natural) type but where more evidence is required before terms are merged.</iao:IAO_0000115>
         <iao:IAO_0000117 xml:lang="en">David Osumi-Sutherland</iao:IAO_0000117>
@@ -358,9 +358,9 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0006012 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0006012 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0006012">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0006012">
         <iao:IAO_0000111 xml:lang="en">scheduled for obsoletion on or after</iao:IAO_0000111>
         <iao:IAO_0000115 xml:lang="en">Used when the class or object is scheduled for obsoletion/deprecation on or after a particular date.</iao:IAO_0000115>
         <iao:IAO_0000117 xml:lang="en">Chris Mungall, Jie Zheng</iao:IAO_0000117>
@@ -373,9 +373,9 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0010000 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0010000 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0010000">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0010000">
         <iao:IAO_0000111 xml:lang="en">has axiom id</iao:IAO_0000111>
         <iao:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</iao:IAO_0000117>
         <iao:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</iao:IAO_0000119>
@@ -386,11 +386,11 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0100001 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0100001 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0100001">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0100001">
         <iao:IAO_0000111 xml:lang="en">term replaced by</iao:IAO_0000111>
-        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000125"/>
+        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000125"/>
         <iao:IAO_0000115 xml:lang="en">Use on obsolete terms, relating the term to another term that can be used as a substitute</iao:IAO_0000115>
         <iao:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</iao:IAO_0000117>
         <iao:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</iao:IAO_0000119>
@@ -921,12 +921,12 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000136 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000136 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000136">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000030"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000136">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000030"/>
         <iao:IAO_0000112 xml:lang="en">This document is about information artifacts and their representations</iao:IAO_0000112>
-        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000125"/>
+        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000125"/>
         <iao:IAO_0000115 xml:lang="en">A (currently) primitive relation that relates an information artifact to an entity.</iao:IAO_0000115>
         <iao:IAO_0000116 xml:lang="en">7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of &quot;mentions&quot; relation. Weaken the is_about relationship to be primitive. 
 
@@ -943,12 +943,12 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000219 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000219 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000219">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000136"/>
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000235"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000030"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000219">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000136"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000235"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000030"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000001"/>
         <iao:IAO_0000112 xml:lang="en">A person&apos;s name denotes the person. A variable name in a computer program denotes some piece of memory. Lexically equivalent strings can denote different things, for instance &quot;Alan&quot; can denote different people. In each case of use, there is a case of the denotation relation obtaining, between &quot;Alan&quot; and the person that is being named.</iao:IAO_0000112>
         <iao:IAO_0000115 xml:lang="en">A primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to &apos;pick out&apos; the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically</iao:IAO_0000115>
@@ -965,11 +965,11 @@ every c that is a concretization of g specifically denotes r</iao:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000235 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000235 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000235">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000235">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000030"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000030"/>
         <iao:IAO_0000115 xml:lang="en">inverse of the relation &apos;denotes&apos;</iao:IAO_0000115>
         <iao:IAO_0000117 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Mike Conlon</iao:IAO_0000117>
         <iao:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/206"/>
@@ -1076,7 +1076,7 @@ every c that is a concretization of g specifically denotes r</iao:IAO_0000116>
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000031">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#AEON_0000074"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000578"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000578"/>
         <iao:IAO_0000116 xml:lang="en">PS: This is an abstract property that should not be used, as it seems better to add new CRID subclasses, for not yet existing CRIDs.
 It mainly serves as an ordering parent property for known centrally registered identifiers.</iao:IAO_0000116>
         <iao:IAO_0000117>Philip Strömert</iao:IAO_0000117>
@@ -1168,7 +1168,7 @@ It mainly serves as an ordering parent property for known centrally registered i
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000044">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000310"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000310"/>
         <iao:IAO_0000115>To say that an academic event A has an output means that there exists some form of publication B that is caused by A.</iao:IAO_0000115>
         <rdfs:label xml:lang="en">has output</rdfs:label>
         <SMW_datatype>Text</SMW_datatype>
@@ -1629,9 +1629,9 @@ It mainly serves as an ordering parent property for known centrally registered i
     <!-- https://github.com/tibonto/aeon#AEON_0000074 -->
 
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000074">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000235"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000235"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0020000"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0020000"/>
         <rdfs:label xml:lang="en">has identifier</rdfs:label>
         <AEON_0000026 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;wikidata&quot;: [{&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P646&quot;, &quot;label&quot;: &quot;Freebase_ID&quot;}, {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P5127&quot;, &quot;label&quot;: &quot;WikiCFP_conference_series_ID&quot;}]}</AEON_0000026>
         <SMW_datatype>Text</SMW_datatype>
@@ -1936,7 +1936,7 @@ It mainly serves as an ordering parent property for known centrally registered i
 
     <owl:DatatypeProperty rdf:about="https://github.com/tibonto/aeon#ID">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0020000"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0020000"/>
         <iao:IAO_0000115 xml:lang="en">The literal value of an identifier.</iao:IAO_0000115>
         <rdfs:label xml:lang="en">identifier</rdfs:label>
         <SMW_datatype>Text</SMW_datatype>
@@ -1953,7 +1953,7 @@ It mainly serves as an ordering parent property for known centrally registered i
 
     <owl:DatatypeProperty rdf:about="https://github.com/tibonto/aeon#ID_URL">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#ID"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0020000"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0020000"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:comment xml:lang="en">The literal value of the full URL used by the identifier scheme, based on the concatination of base URL and ID (ID_URL:value = ID_base_URL:value + ID:value).</rdfs:comment>
         <rdfs:label xml:lang="en">identifier URI</rdfs:label>
@@ -1971,7 +1971,7 @@ It mainly serves as an ordering parent property for known centrally registered i
 
     <owl:DatatypeProperty rdf:about="https://github.com/tibonto/aeon#ID_base_URL">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#ID"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0020000"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0020000"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:comment xml:lang="en">The literal value of the base URL used by the identifier scheme.</rdfs:comment>
         <rdfs:label xml:lang="en">identifier base URI</rdfs:label>
@@ -2366,7 +2366,7 @@ cancled → withdrawn</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="https://github.com/tibonto/aeon#landing_page">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#ID"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0020000"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0020000"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:comment xml:lang="en">The literal value of the landing page (URL) an ID resolves to when following the ID_URL.</rdfs:comment>
         <rdfs:label xml:lang="en">identifier landing page</rdfs:label>
@@ -2937,7 +2937,7 @@ cancled → withdrawn</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000001"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000116"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">Entity doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example Werner Ceusters &apos;portions of reality&apos; include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, &apos;How to track absolutely everything&apos; at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000004"/>
         <rdfs:comment>per discussion with Barry Smith</rdfs:comment>
@@ -2945,7 +2945,7 @@ cancled → withdrawn</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000001"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000600"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000600"/>
         <owl:annotatedTarget xml:lang="en">An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/001-001"/>
     </owl:Axiom>
@@ -2985,55 +2985,55 @@ cancled → withdrawn</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000002"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000116"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">Continuant doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster&apos;s other portions of reality, questions are raised as to whether universals are continuants</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000007"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000002"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000600"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000600"/>
         <owl:annotatedTarget xml:lang="en">A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/008-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000002"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000601"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">if b is a continuant and if, for some t, c has_continuant_part b at t, then c is a continuant. (axiom label in BFO2 Reference: [126-001])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/126-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000002"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000601"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">if b is a continuant and if, for some t, cis continuant_part of b at t, then c is a continuant. (axiom label in BFO2 Reference: [009-002])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/009-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000002"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000601"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">if b is a material entity, then there is some temporal interval (referred to below as a one-dimensional temporal region) during which b exists. (axiom label in BFO2 Reference: [011-002])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/011-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000002"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/009-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000002"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/126-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000002"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/008-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000002"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/011-002"/>
     </owl:Axiom>
@@ -3071,44 +3071,44 @@ cancled → withdrawn</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000003"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000600"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000600"/>
         <owl:annotatedTarget xml:lang="en">An occurrent is an entity that unfolds itself in time or it is the instantaneous boundary of such an entity (for example a beginning or an ending) or it is a temporal or spatiotemporal region which such an entity occupies_temporal_region or occupies_spatiotemporal_region. (axiom label in BFO2 Reference: [077-002])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/077-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000003"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000601"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">Every occurrent occupies_spatiotemporal_region some spatiotemporal region. (axiom label in BFO2 Reference: [108-001])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/108-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000003"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000601"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">b is an occurrent entity iff b is an entity that has temporal parts. (axiom label in BFO2 Reference: [079-001])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/079-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000003"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/108-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000003"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/079-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000003"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000116"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">Occurrent doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. An example would be the sum of a process and the process boundary of another process.</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000006"/>
         <rdfs:comment>per discussion with Barry Smith</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000003"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000116"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000116"/>
         <owl:annotatedTarget>Simons uses different terminology for relations of occurrents to regions: Denote the spatio-temporal location of a given occurrent e by &apos;spn[e]&apos; and call this region its span. We may say an occurrent is at its span, in any larger region, and covers any smaller region. Now suppose we have fixed a frame of reference so that we can speak not merely of spatio-temporal but also of spatial regions (places) and temporal regions (times). The spread of an occurrent, (relative to a frame of reference) is the space it exactly occupies, and its spell is likewise the time it exactly occupies. We write &apos;spr[e]&apos; and `spl[e]&apos; respectively for the spread and spell of e, omitting mention of the frame.</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000012"/>
     </owl:Axiom>
@@ -3149,37 +3149,37 @@ cancled → withdrawn</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000004"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000115"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/017-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000004"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000601"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/134-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000004"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000601"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/018-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000004"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/134-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000004"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/018-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000004"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/017-002"/>
     </owl:Axiom>
@@ -3208,32 +3208,32 @@ cancled → withdrawn</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000006"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000116"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">Spatial region doesn&apos;t have a closure axiom because the subclasses don&apos;t exhaust all possibilites. An example would be the union of a spatial point and a spatial line that doesn&apos;t overlap the point, or two spatial lines that intersect at a single point. In both cases the resultant spatial region is neither 0-dimensional, 1-dimensional, 2-dimensional, or 3-dimensional.</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000002"/>
         <rdfs:comment>per discussion with Barry Smith</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000006"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000600"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000600"/>
         <owl:annotatedTarget xml:lang="en">A spatial region is a continuant entity that is a continuant_part_of spaceR as defined relative to some frame R. (axiom label in BFO2 Reference: [035-001])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/035-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000006"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000601"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">All continuant parts of spatial regions are spatial regions. (axiom label in BFO2 Reference: [036-001])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/036-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000006"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x y t) (if (and (SpatialRegion x) (continuantPartOfAt y x t)) (SpatialRegion y))) // axiom label in BFO2 CLIF: [036-001] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/036-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000006"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (SpatialRegion x) (Continuant x))) // axiom label in BFO2 CLIF: [035-001] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/035-001"/>
     </owl:Axiom>
@@ -3278,44 +3278,44 @@ cancled → withdrawn</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000008"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000116"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">Temporal region doesn&apos;t have a closure axiom because the subclasses don&apos;t exhaust all possibilites. An example would be the mereological sum of a temporal instant and a temporal interval that doesn&apos;t overlap the instant. In this case the resultant temporal region is neither 0-dimensional nor 1-dimensional</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000003"/>
         <rdfs:comment>per discussion with Barry Smith</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000008"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000600"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000600"/>
         <owl:annotatedTarget xml:lang="en">A temporal region is an occurrent entity that is part of time as defined relative to some reference frame. (axiom label in BFO2 Reference: [100-001])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/100-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000008"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000601"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">All parts of temporal regions are temporal regions. (axiom label in BFO2 Reference: [101-001])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/101-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000008"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000601"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">Every temporal region t is such that t occupies_temporal_region t. (axiom label in BFO2 Reference: [119-002])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/119-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000008"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (r) (if (TemporalRegion r) (occupiesTemporalRegion r r))) // axiom label in BFO2 CLIF: [119-002] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/119-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000008"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x y) (if (and (TemporalRegion x) (occurrentPartOf y x)) (TemporalRegion y))) // axiom label in BFO2 CLIF: [101-001] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/101-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000008"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (TemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [100-001] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/100-001"/>
     </owl:Axiom>
@@ -3365,61 +3365,61 @@ cancled → withdrawn</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000600"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000600"/>
         <owl:annotatedTarget xml:lang="en">A spatiotemporal region is an occurrent entity that is part of spacetime. (axiom label in BFO2 Reference: [095-001])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/095-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000601"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">All parts of spatiotemporal regions are spatiotemporal regions. (axiom label in BFO2 Reference: [096-001])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/096-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000601"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">Each spatiotemporal region at any time t projects_onto some spatial region at t. (axiom label in BFO2 Reference: [099-001])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/099-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000601"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">Each spatiotemporal region projects_onto some temporal region. (axiom label in BFO2 Reference: [098-001])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/098-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000601"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">Every spatiotemporal region s is such that s occupies_spatiotemporal_region s. (axiom label in BFO2 Reference: [107-002])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/107-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (r) (if (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion r r))) // axiom label in BFO2 CLIF: [107-002] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/107-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x t) (if (SpatioTemporalRegion x) (exists (y) (and (SpatialRegion y) (spatiallyProjectsOntoAt x y t))))) // axiom label in BFO2 CLIF: [099-001] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/099-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x y) (if (and (SpatioTemporalRegion x) (occurrentPartOf y x)) (SpatioTemporalRegion y))) // axiom label in BFO2 CLIF: [096-001] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/096-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (SpatioTemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [095-001] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/095-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (SpatioTemporalRegion x) (exists (y) (and (TemporalRegion y) (temporallyProjectsOnto x y))))) // axiom label in BFO2 CLIF: [098-001] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/098-001"/>
     </owl:Axiom>
@@ -3474,13 +3474,13 @@ cancled → withdrawn</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000015"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000115"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/083-003"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000015"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/083-003"/>
     </owl:Axiom>
@@ -3513,25 +3513,25 @@ cancled → withdrawn</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000017"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000600"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000600"/>
         <owl:annotatedTarget xml:lang="en">To say that b is a realizable entity is to say that b is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region and is of a type instances of which are realized in processes of a correlated type. (axiom label in BFO2 Reference: [058-002])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/058-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000017"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000601"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">All realizable dependent continuants have independent continuants that are not spatial regions as their bearers. (axiom label in BFO2 Reference: [060-002])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/060-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000017"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/060-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000017"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/058-002"/>
     </owl:Axiom>
@@ -3563,25 +3563,25 @@ cancled → withdrawn</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000019"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000600"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000600"/>
         <owl:annotatedTarget xml:lang="en">a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/055-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000019"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000601"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/105-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000019"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/055-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000019"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/105-001"/>
     </owl:Axiom>
@@ -3620,20 +3620,20 @@ cancled → withdrawn</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000020"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000115"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">b is a specifically dependent continuant = Def. b is a continuant &amp; there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/050-003"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000020"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000116"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">Specifically dependent continuant doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. We&apos;re not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc.</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000005"/>
         <rdfs:comment>per discussion with Barry Smith</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000020"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/050-003"/>
     </owl:Axiom>
@@ -3671,13 +3671,13 @@ cancled → withdrawn</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000023"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000600"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000600"/>
         <owl:annotatedTarget xml:lang="en">b is a role means: b is a realizable entity &amp; b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be&amp; b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/061-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000023"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/061-001"/>
     </owl:Axiom>
@@ -3719,31 +3719,31 @@ cancled → withdrawn</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000027"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000116"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000116"/>
         <owl:annotatedTarget>An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000011"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000027"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000116"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000116"/>
         <owl:annotatedTarget>An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000301"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000027"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000119"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000119"/>
         <owl:annotatedTarget>ISBN:978-3-938793-98-5pp124-158#Thomas Bittner and Barry Smith, &apos;A Theory of Granular Partitions&apos;, in K. Munn and B. Smith (eds.), Applied Ontology: An Introduction, Frankfurt/Lancaster: ontos, 2008, 125-158.</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000300"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000027"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000600"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000600"/>
         <owl:annotatedTarget xml:lang="en">b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists. (axiom label in BFO2 Reference: [025-004])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/025-004"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000027"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/025-004"/>
     </owl:Axiom>
@@ -3784,13 +3784,13 @@ cancled → withdrawn</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000029"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000600"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000600"/>
         <owl:annotatedTarget xml:lang="en">b is a site means: b is a three-dimensional immaterial entity that is (partially or wholly) bounded by a material entity or it is a three-dimensional immaterial part thereof. (axiom label in BFO2 Reference: [034-002])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/034-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000029"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (Site x) (ImmaterialEntity x))) // axiom label in BFO2 CLIF: [034-002] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/034-002"/>
     </owl:Axiom>
@@ -3832,7 +3832,7 @@ cancled → withdrawn</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000030"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000600"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000600"/>
         <owl:annotatedTarget xml:lang="en">b is an object means: b is a material entity which manifests causal unity of one or other of the types CUn listed above &amp; is of a type (a material universal) instances of which are maximal relative to this criterion of causal unity. (axiom label in BFO2 Reference: [024-001])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/024-001"/>
     </owl:Axiom>
@@ -3861,13 +3861,13 @@ cancled → withdrawn</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000031"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000115"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/074-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000031"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/074-001"/>
     </owl:Axiom>
@@ -3920,25 +3920,25 @@ cancled → withdrawn</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000035"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000115"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">p is a process boundary =Def. p is a temporal part of a process &amp; p has no proper temporal parts. (axiom label in BFO2 Reference: [084-001])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/084-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000035"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000601"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">Every process boundary occupies_temporal_region a zero-dimensional temporal region. (axiom label in BFO2 Reference: [085-002])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/085-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000035"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (ProcessBoundary x) (exists (y) (and (ZeroDimensionalTemporalRegion y) (occupiesTemporalRegion x y))))) // axiom label in BFO2 CLIF: [085-002] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/085-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000035"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(iff (ProcessBoundary a) (exists (p) (and (Process p) (temporalPartOf a p) (not (exists (b) (properTemporalPartOf b a)))))) // axiom label in BFO2 CLIF: [084-001] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/084-001"/>
     </owl:Axiom>
@@ -3983,37 +3983,37 @@ cancled → withdrawn</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000040"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000600"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000600"/>
         <owl:annotatedTarget xml:lang="en">A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/019-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000040"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000601"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/020-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000040"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000601"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">every entity of which a material entity is continuant part is also a material entity. (axiom label in BFO2 Reference: [021-002])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/021-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000040"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/019-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000040"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/021-002"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000040"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/020-002"/>
     </owl:Axiom>
@@ -4056,13 +4056,13 @@ cancled → withdrawn</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000145"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000115"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000115"/>
         <owl:annotatedTarget xml:lang="en">b is a relational quality = Def. for some independent continuants c, d and for some time t: b quality_of c at t &amp; b quality_of d at t. (axiom label in BFO2 Reference: [057-001])</owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/057-001"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000145"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000602"/>
         <owl:annotatedTarget>(iff (RelationalQuality a) (exists (b c t) (and (IndependentContinuant b) (IndependentContinuant c) (qualityOfAt a b t) (qualityOfAt a c t)))) // axiom label in BFO2 CLIF: [057-001] </owl:annotatedTarget>
         <iao:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/057-001"/>
     </owl:Axiom>
@@ -4074,7 +4074,7 @@ cancled → withdrawn</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/cro.owl#CRO_0000000">
         <owl:equivalentClass rdf:resource="https://github.com/tibonto/aeon#AEON_0000005"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000023"/>
-        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000120"/>
+        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000120"/>
         <iao:IAO_0000115 xml:lang="en">A high-level classification of the diverse roles performed in the work leading to a published research output in the sciences. Its purpose to provide transparency in contributions to scholarly published work, to enable improved systems of attribution, credit, and accountability.</iao:IAO_0000115>
         <iao:IAO_0000119>http://dictionary.casrai.org/Contributor_Roles</iao:IAO_0000119>
         <rdfs:label xml:lang="en">contributor role</rdfs:label>
@@ -4106,13 +4106,13 @@ cancled → withdrawn</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000027 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000027 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000030"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000030"/>
         <iao:IAO_0000111 xml:lang="en">data item</iao:IAO_0000111>
         <iao:IAO_0000112 xml:lang="en">Data items include counts of things, analyte concentrations, and statistical summaries.</iao:IAO_0000112>
-        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000125"/>
+        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000125"/>
         <iao:IAO_0000115 xml:lang="en">An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</iao:IAO_0000115>
         <iao:IAO_0000116 xml:lang="en">2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers.</iao:IAO_0000116>
         <iao:IAO_0000116 xml:lang="en">2009-03-16: data item deliberatly ambiguous: we merged data set and datum to be one entity, not knowing how to define singular versus plural. So data item is more general than datum.</iao:IAO_0000116>
@@ -4134,15 +4134,15 @@ JAR: A data item is an approximately justified approximately true approximate be
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000028 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000028 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000030"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000030"/>
         <iao:IAO_0000111 xml:lang="en">symbol</iao:IAO_0000111>
         <iao:IAO_0000112 xml:lang="en">a serial number such as &quot;12324X&quot;</iao:IAO_0000112>
         <iao:IAO_0000112 xml:lang="en">a stop sign</iao:IAO_0000112>
         <iao:IAO_0000112 xml:lang="en">a written proper name such as &quot;OBI&quot;</iao:IAO_0000112>
-        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000125"/>
+        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000125"/>
         <iao:IAO_0000115 xml:lang="en">An information content entity that is a mark(s) or character(s) used as a conventional representation of another entity.</iao:IAO_0000115>
         <iao:IAO_0000116 xml:lang="en">20091104, MC: this needs work and will most probably change</iao:IAO_0000116>
         <iao:IAO_0000116 xml:lang="en">2014-03-31: We would like to have a deeper analysis of &apos;mark&apos; and &apos;sign&apos; in the future (see https://github.com/information-artifact-ontology/IAO/issues/154).</iao:IAO_0000116>
@@ -4154,19 +4154,19 @@ JAR: A data item is an approximately justified approximately true approximate be
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000030 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000030 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000030">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000031"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000136"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <iao:IAO_0000111 xml:lang="en">information content entity</iao:IAO_0000111>
         <iao:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</iao:IAO_0000112>
-        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000122"/>
+        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000122"/>
         <iao:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</iao:IAO_0000115>
         <iao:IAO_0000116 xml:lang="en">2014-03-10: The use of &quot;thing&quot; is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ).</iao:IAO_0000116>
         <iao:IAO_0000116 xml:lang="en">information_content_entity &apos;is_encoded_in&apos; some digital_entity in obi before split (040907). information_content_entity &apos;is_encoded_in&apos; some physical_document in obi before split (040907).
@@ -4179,13 +4179,13 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000100 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000100 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000100">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000027"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000027"/>
         <iao:IAO_0000111 xml:lang="en">data set</iao:IAO_0000111>
         <iao:IAO_0000112 xml:lang="en">Intensity values in a CEL file or from multiple CEL files comprise a data set (as opposed to the CEL files themselves).</iao:IAO_0000112>
-        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000125"/>
+        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000125"/>
         <iao:IAO_0000115 xml:lang="en">A data item that is an aggregate of other data items of the same type that have something in common. Averages and distributions can be determined for data sets.</iao:IAO_0000115>
         <iao:IAO_0000116 xml:lang="en">2009/10/23 Alan Ruttenberg. The intention is that this term represent collections of like data. So this isn&apos;t for, e.g. the whole contents of a cel file, which includes parameters, metadata etc. This is more like java arrays of a certain rather specific type</iao:IAO_0000116>
         <iao:IAO_0000116>2014-05-05: Data sets are aggregates and thus must include two or more data items. We have chosen not to add logical axioms to make this restriction.</iao:IAO_0000116>
@@ -4198,13 +4198,13 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000310 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000310 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000310">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000030"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000310">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000030"/>
         <iao:IAO_0000111 xml:lang="en">document</iao:IAO_0000111>
         <iao:IAO_0000112 xml:lang="en">A journal article, patent application, laboratory notebook, or a book</iao:IAO_0000112>
-        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000120"/>
+        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000120"/>
         <iao:IAO_0000115 xml:lang="en">A collection of information content entities intended to be understood together as a whole</iao:IAO_0000115>
         <iao:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</iao:IAO_0000117>
         <rdfs:label xml:lang="en">document</rdfs:label>
@@ -4212,18 +4212,18 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000577 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000577 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000577">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000028"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000577">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000028"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000578"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000578"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <iao:IAO_0000112 xml:lang="en">The sentence &quot;The article has Pubmed ID 12345.&quot; contains a CRID that has two parts: one part is the CRID symbol, which is &apos;12345&apos;; the other part denotes the CRID registry, which is Pubmed.</iao:IAO_0000112>
-        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000120"/>
+        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000120"/>
         <iao:IAO_0000115 xml:lang="en">A symbol that is part of a CRID and that is sufficient to look up a record from the CRID&apos;s registry.</iao:IAO_0000115>
         <iao:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</iao:IAO_0000117>
         <iao:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</iao:IAO_0000117>
@@ -4236,14 +4236,14 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000578 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000578 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000578">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0020000"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000578">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0020000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000577"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000577"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -4251,14 +4251,14 @@ Previous. An information content entity is a non-realizable information entity t
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/bfo.owl#BFO_0000051"/>
                 <owl:someValuesFrom>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000219"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000579"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000219"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000579"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <iao:IAO_0000112 xml:lang="en">The sentence &quot;The article has Pubmed ID 12345.&quot; contains a CRID that has two parts: one part is the CRID symbol, which is &apos;12345&apos;; the other part denotes the CRID registry, which is Pubmed.</iao:IAO_0000112>
-        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000120"/>
+        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000120"/>
         <iao:IAO_0000115 xml:lang="en">An information content entity that consists of a CRID symbol and additional information about the CRID registry to which it belongs.</iao:IAO_0000115>
         <iao:IAO_0000116 xml:lang="en">2014-05-05: In defining this term we take no position on what the CRID denotes. In particular do not assume it denotes a *record* in the CRID registry (since the registry might not have &apos;records&apos;).</iao:IAO_0000116>
         <iao:IAO_0000116 xml:lang="en">Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation. 
@@ -4277,12 +4277,12 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000579 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0000579 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000579">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000100"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0000579">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000100"/>
         <iao:IAO_0000112 xml:lang="en">PubMed is a CRID registry. It has a dataset of PubMed identifiers associated with journal articles. </iao:IAO_0000112>
-        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000120"/>
+        <iao:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000120"/>
         <iao:IAO_0000115 xml:lang="en">A CRID registry is a dataset of CRID records, each consisting of a CRID symbol and additional information which was recorded in the dataset through a assigning a centrally registered identifier process.</iao:IAO_0000115>
         <iao:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</iao:IAO_0000117>
         <iao:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</iao:IAO_0000117>
@@ -4295,10 +4295,10 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0020000 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0020000 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0020000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000030"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0020000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000030"/>
         <iao:IAO_0000111 xml:lang="en">identifier</iao:IAO_0000111>
         <iao:IAO_0000115 xml:lang="en">An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.</iao:IAO_0000115>
         <iao:IAO_0000117>Mathias Brochhausen</iao:IAO_0000117>
@@ -4311,21 +4311,21 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0020015 -->
+    <!-- http://purl.obolibrary.org/obo/iao.owl#IAO_0020015 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0020015">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0020015">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0020000"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/iao.owl#IAO_0020000"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000219"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000219"/>
                         <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0020000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0020000"/>
         <iao:IAO_0000115 xml:lang="en">A personal name is a proper name identifying an individual person.</iao:IAO_0000115>
         <iao:IAO_0000117>Mathias Brochhausen</iao:IAO_0000117>
         <iao:IAO_0000119>http://en.wikipedia.org/wiki/Personal_name</iao:IAO_0000119>
@@ -4477,7 +4477,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
     <!-- https://github.com/tibonto/aeon#AEON_0000003 -->
 
     <owl:Class rdf:about="https://github.com/tibonto/aeon#AEON_0000003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000578"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000578"/>
         <rdfs:comment xml:lang="en">The &quot;rdfs:label ConfIDent_ID&quot; is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident/) to be used in its service. Thus the internal identifier is called ConfIDent_ID. You will probably want to change that in your implementation.</rdfs:comment>
         <rdfs:label xml:lang="en">ConfIDent ID</rdfs:label>
         <SMW_datatype>Category</SMW_datatype>
@@ -4633,7 +4633,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
     <!-- https://github.com/tibonto/aeon#AEON_0000016 -->
 
     <owl:Class rdf:about="https://github.com/tibonto/aeon#AEON_0000016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000578"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000578"/>
         <rdfs:label>DOI</rdfs:label>
         <SMW_datatype>Category</SMW_datatype>
         <SMW_import_info>[[Category:AEON]] [[Category:Imported vocabulary]]</SMW_import_info>
@@ -4644,7 +4644,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
     <!-- https://github.com/tibonto/aeon#AEON_0000017 -->
 
     <owl:Class rdf:about="https://github.com/tibonto/aeon#AEON_0000017">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000578"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000578"/>
         <rdfs:label>GND ID</rdfs:label>
         <SMW_datatype>Category</SMW_datatype>
         <SMW_import_info>[[partOfSubobject::Template:Subobject External_Process_ID]]
@@ -4659,7 +4659,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
     <!-- https://github.com/tibonto/aeon#AEON_0000018 -->
 
     <owl:Class rdf:about="https://github.com/tibonto/aeon#AEON_0000018">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000578"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000578"/>
         <rdfs:label>ISNI</rdfs:label>
         <SMW_datatype>Category</SMW_datatype>
         <SMW_import_info>[[partOfSubobject::Template:Subobject Person_ID]]
@@ -4673,7 +4673,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
     <!-- https://github.com/tibonto/aeon#AEON_0000019 -->
 
     <owl:Class rdf:about="https://github.com/tibonto/aeon#AEON_0000019">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000578"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000578"/>
         <rdfs:label>ORCID</rdfs:label>
         <SMW_datatype>Category</SMW_datatype>
         <SMW_import_info>[[partOfSubobject::Template:Subobject Person_ID]]
@@ -4686,7 +4686,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
     <!-- https://github.com/tibonto/aeon#AEON_0000020 -->
 
     <owl:Class rdf:about="https://github.com/tibonto/aeon#AEON_0000020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000578"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000578"/>
         <rdfs:label>ROR ID</rdfs:label>
         <SMW_datatype>Category</SMW_datatype>
         <SMW_import_info>[[partOfSubobject::Template:Subobject Organization_ID]]
@@ -4699,7 +4699,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
     <!-- https://github.com/tibonto/aeon#AEON_0000021 -->
 
     <owl:Class rdf:about="https://github.com/tibonto/aeon#AEON_0000021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000578"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000578"/>
         <rdfs:label>WDQID</rdfs:label>
         <SMW_datatype>Category</SMW_datatype>
         <SMW_import_info>[[partOfSubobject::Template:Subobject Process_External_ID]]
@@ -4795,7 +4795,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
     <!-- https://github.com/tibonto/aeon#AEON_0000030 -->
 
     <owl:Class rdf:about="https://github.com/tibonto/aeon#AEON_0000030">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000030"/>
         <iao:IAO_0000115>The financial cost of attendance at a scientific event.</iao:IAO_0000115>
         <iao:IAO_0000116 xml:lang="en">PS: It needs to be discussed, if having fee as ICE is sufficient/correct.</iao:IAO_0000116>
         <iao:IAO_0000117>Philip Strömert</iao:IAO_0000117>
@@ -4813,7 +4813,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
     <!-- https://github.com/tibonto/aeon#AEON_0000034 -->
 
     <owl:Class rdf:about="https://github.com/tibonto/aeon#AEON_0000034">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0020000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0020000"/>
         <iao:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StroemertP</iao:IAO_0000117>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-11-20T17:31:33Z</dc:date>
         <rdfs:label xml:lang="en">distributed identifier</rdfs:label>
@@ -4996,7 +4996,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
 
     <owl:NamedIndividual rdf:about="https://github.com/tibonto/aeon#PIDapalooza">
         <rdf:type rdf:resource="https://github.com/tibonto/aeon#AEON_0000002"/>
-        <rdfs:comment rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000002"/>
+        <rdfs:comment rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000002"/>
         <rdfs:label xml:lang="en">PIDapalooza</rdfs:label>
     </owl:NamedIndividual>
     
@@ -5018,7 +5018,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
         <number_of_tracks rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</number_of_tracks>
         <start_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-29T09:00:00</start_date>
         <iao:IAO_0000117 xml:lang="en">This individual serves as an example of usage for describing academic events with AEON.</iao:IAO_0000117>
-        <rdfs:comment rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000002"/>
+        <rdfs:comment rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000002"/>
         <rdfs:label xml:lang="en">PIDapalooza2020</rdfs:label>
     </owl:NamedIndividual>
     
@@ -5036,7 +5036,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
         <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PIDapalooza_2020</ID>
         <ID_URL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.confident-conference.org/r/vanilla/index.php/PIDapalooza_2020</ID_URL>
         <ID_base_URL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.confident-conference.org/r/vanilla/index.php/</ID_base_URL>
-        <rdfs:comment rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000002"/>
+        <rdfs:comment rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000002"/>
     </owl:NamedIndividual>
     
 
@@ -5053,7 +5053,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
         <AEON_0000059 rdf:resource="https://orcid.org/0000-0002-1595-3213"/>
         <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Philip</first_name>
         <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strömert</last_name>
-        <rdfs:comment rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000002"/>
+        <rdfs:comment rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000002"/>
     </owl:NamedIndividual>
     
 
@@ -5067,7 +5067,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
     <!-- https://www.wikidata.org/wiki/Q65929359 -->
 
     <owl:NamedIndividual rdf:about="https://www.wikidata.org/wiki/Q65929359">
-        <rdfs:comment rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#IAO_0000002"/>
+        <rdfs:comment rdf:resource="http://purl.obolibrary.org/obo/iao.owl#IAO_0000002"/>
     </owl:NamedIndividual>
     
 
