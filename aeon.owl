@@ -15,7 +15,7 @@
      xmlns:bfo-2020="https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#"
      xmlns:dcmi-terms="http://dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/">
     <owl:Ontology rdf:about="https://github.com/tibonto/aeon">
-        <owl:versionIRI rdf:resource="https://github.com/tibonto/aeon/releases/tag/v0.2.13"/>
+        <owl:versionIRI rdf:resource="https://github.com/tibonto/aeon/releases/tag/v0.2.14"/>
         <dc:contributor>Christian Hauschke</dc:contributor>
         <dc:contributor>Christoph Lange</dc:contributor>
         <dc:contributor>Michael Conlon</dc:contributor>
@@ -23,7 +23,7 @@
         <dc:creator>ConfIDent project</dc:creator>
         <dc:description>The Academic Event Ontology (AEON) is used to represent information regarding academic events. The ontology supports the identification, development, management, evaluation, and impact assessment of events, components of events and event series, as well as identification and reuse of works presented or developed at events. The ontology is independent of knowledge, creative domain, or topics related to events. AEON is focused on events and assumes the representation of many entities associated with events such as attendees, locations, academic works, datetimes, and processes are defined in compatible ontologies.</dc:description>
         <dc:title xml:lang="en">Academic Event Ontology</dc:title>
-        <owl:versionInfo>v0.2.13</owl:versionInfo>
+        <owl:versionInfo>v0.2.14</owl:versionInfo>
     </owl:Ontology>
     
 
