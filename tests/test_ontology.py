@@ -53,7 +53,7 @@ def test_obo_ontos_resolution():
     graph.parse('aeon.ttl', format="ttl")
     assert graph, 'Error: aeon.ttl graph failed to parse'
     qres = graph.query("""
-    PREFIX bfo: <http://purl.obolibrary.org/obo/bfo/2020/bfo.owl#>
+    PREFIX bfo: <https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#>
     PREFIX iao: <http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl#>
     PREFIX ro: <http://purl.obolibrary.org/obo/ro.owl#>
     PREFIX ico: <http://purl.obolibrary.org/obo/ico.owl#>
