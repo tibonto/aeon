@@ -1,0 +1,22 @@
+# This workflow will install ROBOT (http://robot.obolibrary.org/)
+# to convert the aeon.ttl into aeon.owl
+# using Action: Upload a Build Artifact (https://github.com/marketplace/actions/upload-a-build-artifact)
+
+name: Create aeon.owl with ROBOT
+
+on:
+  push:
+    branches: [ master, 48_report_printout ]
+  pull_request:
+    branches: [ master, 48_report_printout ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: echo hello > world.txt
+    - uses: actions/upload-artifact@v2
+      with:
+        name: my-artifact
+        path: world.txt
