@@ -38,14 +38,6 @@
 dc:creator rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.obolibrary.org/obo/BFO_0000179
-bfo:BFO_0000179 rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.obolibrary.org/obo/BFO_0000180
-bfo:BFO_0000180 rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.obolibrary.org/obo/IAO_0000111
 iao:IAO_0000111 rdf:type owl:AnnotationProperty ;
                 iao:IAO_0000111 "editor preferred term"@en ;
@@ -66,15 +58,6 @@ iao:IAO_0000112 rdf:type owl:AnnotationProperty ;
                 iao:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
                 rdfs:isDefinedBy obo:iao.owl ;
                 rdfs:label "example of usage"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000113
-iao:IAO_0000113 rdf:type owl:AnnotationProperty ;
-                iao:IAO_0000111 "in branch"@en ;
-                iao:IAO_0000115 "An annotation property indicating which module the terms belong to. This is currently experimental and not implemented yet."@en ;
-                iao:IAO_0000117 "GROUP:OBI"@en ;
-                iao:IAO_0000119 "OBI_0000277"@en ;
-                rdfs:label "in branch"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000114
@@ -202,46 +185,6 @@ iao:IAO_0000412 rdf:type owl:AnnotationProperty ;
                 rdfs:label "imported from"@en .
 
 
-###  http://purl.obolibrary.org/obo/IAO_0000424
-iao:IAO_0000424 rdf:type owl:AnnotationProperty ;
-                iao:IAO_0000111 "expand expression to"@en ;
-                iao:IAO_0000112 """ObjectProperty: RO_0002104
-Label: has plasma membrane part
-Annotations: IAO_0000424 \"http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.org/obo/owl/GO#GO_0005886 and http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)\"
-"""@en ;
-                iao:IAO_0000115 "A macro expansion tag applied to an object property (or possibly a data property)  which can be used by a macro-expansion engine to generate more complex expressions from simpler ones"@en ;
-                iao:IAO_0000117 "Chris Mungall"@en ;
-                rdfs:label "expand expression to"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000425
-iao:IAO_0000425 rdf:type owl:AnnotationProperty ;
-                iao:IAO_0000111 "expand assertion to"@en ;
-                iao:IAO_0000112 """ObjectProperty: RO???
-Label: spatially disjoint from
-Annotations: expand_assertion_to \"DisjointClasses: (http://purl.obolibrary.org/obo/BFO_0000051 some ?X)  (http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)\"
-"""@en ;
-                iao:IAO_0000115 "A macro expansion tag applied to an annotation property which can be expanded into a more detailed axiom."@en ;
-                iao:IAO_0000117 "Chris Mungall"@en ;
-                rdfs:label "expand assertion to"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000426
-iao:IAO_0000426 rdf:type owl:AnnotationProperty ;
-                iao:IAO_0000111 "first order logic expression"@en ;
-                iao:IAO_0000117 "PERSON:Alan Ruttenberg"@en ;
-                rdfs:label "first order logic expression"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000427
-iao:IAO_0000427 rdf:type owl:AnnotationProperty ;
-                iao:IAO_0000111 "antisymmetric property"@en ;
-                iao:IAO_0000112 "part_of antisymmetric property xsd:true"@en ;
-                iao:IAO_0000115 "Use boolean value xsd:true to indicate that the property is an antisymmetric property"@en ;
-                iao:IAO_0000117 "Alan Ruttenberg"@en ;
-                rdfs:label "antisymmetric property"@en .
-
-
 ###  http://purl.obolibrary.org/obo/IAO_0000600
 iao:IAO_0000600 rdf:type owl:AnnotationProperty ;
                 iao:IAO_0000111 "elucidation"@en ;
@@ -250,26 +193,6 @@ iao:IAO_0000600 rdf:type owl:AnnotationProperty ;
                 iao:IAO_0000600 "Primitive terms in a highest-level ontology such as BFO are terms which are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms"@en ;
                 rdfs:isDefinedBy obo:iao.owl ;
                 rdfs:label "elucidation"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000601
-iao:IAO_0000601 rdf:type owl:AnnotationProperty ;
-                iao:IAO_0000111 "has associated axiom(nl)"@en ;
-                iao:IAO_0000117 "Person:Alan Ruttenberg"@en ;
-                iao:IAO_0000119 "Person:Alan Ruttenberg"@en ;
-                iao:IAO_0000600 "An axiom associated with a term expressed using natural language"@en ;
-                rdfs:isDefinedBy obo:iao.owl ;
-                rdfs:label "has associated axiom(nl)"@en .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0000602
-iao:IAO_0000602 rdf:type owl:AnnotationProperty ;
-                iao:IAO_0000111 "has associated axiom(fol)"@en ;
-                iao:IAO_0000117 "Person:Alan Ruttenberg"@en ;
-                iao:IAO_0000119 "Person:Alan Ruttenberg"@en ;
-                iao:IAO_0000600 "An axiom expressed in first order logic using CLIF syntax"@en ;
-                rdfs:isDefinedBy obo:iao.owl ;
-                rdfs:label "has associated axiom(fol)"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0006011
@@ -283,28 +206,6 @@ iao:IAO_0006011 rdf:type owl:AnnotationProperty ;
                 rdfs:label "may be identical to"@en .
 
 
-###  http://purl.obolibrary.org/obo/IAO_0006012
-iao:IAO_0006012 rdf:type owl:AnnotationProperty ;
-                iao:IAO_0000111 "scheduled for obsoletion on or after"@en ;
-                iao:IAO_0000115 "Used when the class or object is scheduled for obsoletion/deprecation on or after a particular date."@en ;
-                iao:IAO_0000117 "Chris Mungall, Jie Zheng"@en ;
-                iao:IAO_0000233 "https://github.com/geneontology/go-ontology/issues/15532"@en ,
-                                "https://github.com/information-artifact-ontology/ontology-metadata/issues/32"@en ;
-                iao:IAO_0000234 "GO ontology"@en ;
-                rdfs:label "scheduled for obsoletion on or after"@en ;
-                rdfs:range xsd:dateTime .
-
-
-###  http://purl.obolibrary.org/obo/IAO_0010000
-iao:IAO_0010000 rdf:type owl:AnnotationProperty ;
-                iao:IAO_0000111 "has axiom id"@en ;
-                iao:IAO_0000117 "Person:Alan Ruttenberg"@en ;
-                iao:IAO_0000119 "Person:Alan Ruttenberg"@en ;
-                iao:IAO_0000600 "A URI that is intended to be unique label for an axiom used for tracking change to the ontology. For an axiom expressed in different languages, each expression is given the same URI"@en ;
-                rdfs:isDefinedBy obo:iao.owl ;
-                rdfs:label "has axiom label"@en .
-
-
 ###  http://purl.obolibrary.org/obo/IAO_0100001
 iao:IAO_0100001 rdf:type owl:AnnotationProperty ;
                 iao:IAO_0000111 "term replaced by"@en ;
@@ -314,10 +215,6 @@ iao:IAO_0100001 rdf:type owl:AnnotationProperty ;
                 iao:IAO_0000119 "Person:Alan Ruttenberg"@en ;
                 rdfs:comment "Add as annotation triples in the granting ontology"@en ;
                 rdfs:label "term replaced by"@en .
-
-
-###  http://purl.obolibrary.org/obo/RO_0001900
-ro:RO_0001900 rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/contributor
