@@ -2,4 +2,6 @@
 *.ipynb
 .idea
 tests/__pycache__
+tests/prototype_obo.py
+tests/query_term.rq
 venv

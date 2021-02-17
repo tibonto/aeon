@@ -1,0 +1,75 @@
+class,class_label
+http://purl.obolibrary.org/obo/cro.owl#CRO_0000000,contributor role
+http://purl.obolibrary.org/obo/cro.owl#CRO_0000097,funding source role
+http://purl.obolibrary.org/obo/gaz.owl#GAZ_00000448,geographic location
+http://purl.obolibrary.org/obo/iao.owl#IAO_0000027,data item
+http://purl.obolibrary.org/obo/iao.owl#IAO_0000028,symbol
+http://purl.obolibrary.org/obo/iao.owl#IAO_0000030,information content entity
+http://purl.obolibrary.org/obo/iao.owl#IAO_0000100,data set
+http://purl.obolibrary.org/obo/iao.owl#IAO_0000310,document
+http://purl.obolibrary.org/obo/iao.owl#IAO_0000577,centrally registered identifier symbol
+http://purl.obolibrary.org/obo/iao.owl#IAO_0000578,centrally registered identifier
+http://purl.obolibrary.org/obo/iao.owl#IAO_0000579,centrally registered identifier registry
+http://purl.obolibrary.org/obo/iao.owl#IAO_0020000,identifier
+http://purl.obolibrary.org/obo/iao.owl#IAO_0020015,personal name
+http://purl.obolibrary.org/obo/ico.owl#ICO_0000048,nonprofit organization
+http://purl.obolibrary.org/obo/ico.owl#ICO_0000049,profit organization
+http://purl.obolibrary.org/obo/ncbitaxon.owl#NCBITaxon_9606,Homo sapiens
+http://purl.obolibrary.org/obo/obi.owl#OBI_0000011,planned process
+http://purl.obolibrary.org/obo/obi.owl#OBI_0000245,organization
+http://purl.obolibrary.org/obo/obi.owl#OBI_0100026,organism
+http://www.w3.org/2004/02/skos/core#Concept,Concept
+https://github.com/tibonto/aeon#AEON_0000001,academic event
+https://github.com/tibonto/aeon#AEON_0000002,academic event series
+https://github.com/tibonto/aeon#AEON_0000003,ConfIDent ID
+https://github.com/tibonto/aeon#AEON_0000004,event type
+https://github.com/tibonto/aeon#AEON_0000005,contributor role
+https://github.com/tibonto/aeon#AEON_0000006,organizer role
+https://github.com/tibonto/aeon#AEON_0000007,committee member role
+https://github.com/tibonto/aeon#AEON_0000008,committee chair role
+https://github.com/tibonto/aeon#AEON_0000009,contact person role
+https://github.com/tibonto/aeon#AEON_0000010,attendee role
+https://github.com/tibonto/aeon#AEON_0000011,moderator role
+https://github.com/tibonto/aeon#AEON_0000012,reviewer role
+https://github.com/tibonto/aeon#AEON_0000013,speaker role
+https://github.com/tibonto/aeon#AEON_0000014,keynote speaker role
+https://github.com/tibonto/aeon#AEON_0000015,sponsor role
+https://github.com/tibonto/aeon#AEON_0000016,DOI
+https://github.com/tibonto/aeon#AEON_0000017,GND ID
+https://github.com/tibonto/aeon#AEON_0000018,ISNI
+https://github.com/tibonto/aeon#AEON_0000019,ORCID
+https://github.com/tibonto/aeon#AEON_0000020,ROR ID
+https://github.com/tibonto/aeon#AEON_0000021,WDQID
+https://github.com/tibonto/aeon#AEON_0000022,city
+https://github.com/tibonto/aeon#AEON_0000023,country
+https://github.com/tibonto/aeon#AEON_0000024,state
+https://github.com/tibonto/aeon#AEON_0000025,event venue
+https://github.com/tibonto/aeon#AEON_0000027,academic field
+https://github.com/tibonto/aeon#AEON_0000028,topic
+https://github.com/tibonto/aeon#AEON_0000029,virtual location
+https://github.com/tibonto/aeon#AEON_0000030,fee
+https://github.com/tibonto/aeon#AEON_0000034,distributed identifier
+https://github.com/tibonto/aeon#AEON_0000037,gold sponsor role
+https://github.com/tibonto/aeon#AEON_0000038,silver sponsor role
+https://github.com/tibonto/aeon#AEON_0000039,bronze sponsor role
+https://github.com/tibonto/aeon#AEON_0000042,committee
+https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#BFO_0000001,entity
+https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#BFO_0000002,continuant
+https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#BFO_0000003,occurrent
+https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#BFO_0000004,independent continuant
+https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#BFO_0000006,spatial region
+https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#BFO_0000008,temporal region
+https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#BFO_0000011,spatiotemporal region
+https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#BFO_0000015,process
+https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#BFO_0000017,realizable entity
+https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#BFO_0000019,quality
+https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#BFO_0000020,specifically dependent continuant
+https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#BFO_0000023,role
+https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#BFO_0000027,object aggregate
+https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#BFO_0000029,site
+https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#BFO_0000030,object
+https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#BFO_0000031,generically dependent continuant
+https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#BFO_0000035,process boundary
+https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#BFO_0000040,material entity
+https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#BFO_0000141,immaterial entity
+https://standards.iso.org/iso-iec/21838/-2/ed-1/en/owl/bfo-2020.owl#BFO_0000145,relational quality
