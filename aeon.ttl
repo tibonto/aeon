@@ -1,13 +1,7 @@
 @prefix : <https://github.com/tibonto/aeon#> .
 @prefix dc: <http://dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/> .
 @prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
-@prefix ro: <http://purl.obolibrary.org/obo/ro.owl#> .
-@prefix bfo: <http://purl.obolibrary.org/obo/bfo.owl#> .
-@prefix cro: <http://purl.obolibrary.org/obo/cro.owl#> .
-@prefix gaz: <http://purl.obolibrary.org/obo/gaz.owl#> .
-@prefix iao: <http://purl.obolibrary.org/obo/iao.owl#> .
-@prefix ico: <http://purl.obolibrary.org/obo/ico.owl#> .
-@prefix obi: <http://purl.obolibrary.org/obo/obi.owl#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -16,7 +10,6 @@
 @prefix obda: <https://w3id.org/obda/vocabulary#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix ncbitaxon: <http://purl.obolibrary.org/obo/ncbitaxon.owl#> .
 @base <https://github.com/tibonto/aeon> .
 
 <https://github.com/tibonto/aeon> rdf:type owl:Ontology ;
