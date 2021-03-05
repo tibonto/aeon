@@ -3045,6 +3045,97 @@ aeon:AEON_0000042 rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
+###  http://purl.obolibrary.org/obo/IAO_0000002
+obo:IAO_0000002 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000078 ;
+                obo:IAO_0000111 "example to be eventually removed"@en ;
+                rdfs:label "example to be eventually removed"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000120
+obo:IAO_0000120 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000078 ;
+                obo:IAO_0000111 "metadata complete"@en ;
+                obo:IAO_0000115 "Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete."@en ;
+                rdfs:label "metadata complete"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000122
+obo:IAO_0000122 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000078 ;
+                obo:IAO_0000111 "ready for release"@en ;
+                obo:IAO_0000115 "Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking \"ready_for_release\" should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed \"ready_for_release\" will also derived from a chain of ancestor classes that are also \"ready_for_release.\""@en ;
+                rdfs:label "ready for release"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000123
+obo:IAO_0000123 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000078 ;
+                obo:IAO_0000111 "metadata incomplete"@en ;
+                obo:IAO_0000115 "Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors."@en ;
+                rdfs:label "metadata incomplete"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000125
+obo:IAO_0000125 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000078 ;
+                obo:IAO_0000111 "pending final vetting"@en ;
+                obo:IAO_0000115 "All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor."@en ;
+                rdfs:label "pending final vetting"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000226
+obo:IAO_0000226 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000225 ,
+                         owl:Thing ;
+                obo:IAO_0000111 "placeholder removed"@en ;
+                rdfs:label "placeholder removed"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000227
+obo:IAO_0000227 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000225 ;
+                obo:IAO_0000111 "terms merged"@en ;
+                obo:IAO_0000116 "An editor note should explain what were the merged terms and the reason for the merge."@en ;
+                rdfs:label "terms merged"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000228
+obo:IAO_0000228 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000225 ;
+                obo:IAO_0000111 "term imported"@en ;
+                obo:IAO_0000116 "This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use."@en ;
+                rdfs:label "term imported"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000229
+obo:IAO_0000229 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000225 ;
+                obo:IAO_0000111 "term split"@en ;
+                obo:IAO_0000116 "This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created."@en ;
+                rdfs:label "term split"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000423
+obo:IAO_0000423 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000078 ;
+                obo:IAO_0000111 "to be replaced with external ontology term"@en ;
+                obo:IAO_0000115 "Terms with this status should eventually replaced with a term from another ontology."@en ;
+                obo:IAO_0000117 "Alan Ruttenberg"@en ;
+                obo:IAO_0000119 "group:OBI"@en ;
+                rdfs:label "to be replaced with external ontology term"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000428
+obo:IAO_0000428 rdf:type owl:NamedIndividual ,
+                         obo:IAO_0000078 ;
+                obo:IAO_0000111 "requires discussion"@en ;
+                obo:IAO_0000115 "A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues."@en ;
+                obo:IAO_0000117 "Alan Ruttenberg"@en ;
+                obo:IAO_0000119 "group:OBI"@en ;
+                rdfs:label "requires discussion"@en .
+
+
 ###  https://github.com/tibonto/aeon#AEON_0010000
 aeon:AEON_0010000 rdf:type owl:NamedIndividual ,
                            aeon:AEON_0000004 ;
