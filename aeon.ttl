@@ -691,19 +691,6 @@ aeon:AEON_0000043 rdf:type owl:ObjectProperty ;
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#AEON_0000044
-aeon:AEON_0000044 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf owl:topObjectProperty ;
-                  rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range iao:IAO_0000310 ;
-                  iao:IAO_0000115 "To say that an academic event A has an output means that there exists some form of publication B that is caused by A." ;
-                  rdfs:label "has output"@en ;
-                  aeon:SMW_datatype "Text" ;
-                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Output]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
-
-
 ###  https://github.com/tibonto/aeon#AEON_0000045
 aeon:AEON_0000045 rdf:type owl:ObjectProperty ;
                   rdfs:range [ rdf:type owl:Class ;
