@@ -91,7 +91,8 @@ We also have the outstanding issue of how to aim different definitions to differ
                 obo:IAO_0000117 "PERSON:Daniel Schober"@en ;
                 obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
                 rdfs:isDefinedBy obo:iao.owl ;
-                rdfs:label "definition"@en .
+                rdfs:label "definition" ,
+                           "definition"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000116
@@ -229,6 +230,11 @@ obo:IAO_0100001 rdf:type owl:AnnotationProperty ;
                 rdfs:label "term replaced by"@en .
 
 
+###  http://purl.obolibrary.org/obo/RO_0001900
+obo:RO_0001900 rdf:type owl:AnnotationProperty ;
+               rdfs:label "temporal interpretation"@en .
+
+
 ###  http://purl.org/dc/elements/1.1/contributor
 <http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
 
@@ -255,6 +261,10 @@ obo:IAO_0100001 rdf:type owl:AnnotationProperty ;
 
 ###  http://purl.org/dc/elements/1.1/title
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
