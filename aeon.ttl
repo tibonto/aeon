@@ -2756,7 +2756,7 @@ aeon:AEON_0000002 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000003
 aeon:AEON_0000003 rdf:type owl:Class ;
-                  rdfs:subClassOf iao:IAO_0000578 ;
+                  rdfs:subClassOf obo:IAO_0000578 ;
                   rdfs:comment "The \"rdfs:label ConfIDent_ID\" is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident/) to be used in its service. Thus the internal identifier is called ConfIDent_ID. You will probably want to change that in your implementation."@en ;
                   rdfs:label "ConfIDent ID"@en ;
                   aeon:SMW_datatype "Category" ;
