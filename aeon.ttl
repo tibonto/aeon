@@ -2475,6 +2475,29 @@ obo:IAO_0000100 rdf:type owl:Class ;
                 rdfs:label "data set"@en .
 
 
+###  http://purl.obolibrary.org/obo/IAO_0000102
+obo:IAO_0000102 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0000027 ;
+                obo:IAO_0000111 "data about an ontology part"@en ;
+                obo:IAO_0000115 "Data about an ontology part is a data item about a part of an ontology, for example a term"@en ;
+                obo:IAO_0000117 "Person:Alan Ruttenberg"@en ;
+                obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"^^xsd:string ;
+                rdfs:label "data about an ontology part"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000225
+obo:IAO_0000225 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0000102 ;
+                obo:IAO_0000111 "obsolescence reason specification"@en ;
+                obo:IAO_0000114 obo:IAO_0000125 ;
+                obo:IAO_0000115 "The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value."@en ;
+                obo:IAO_0000116 "The creation of this class has been inspired in part by Werner Ceusters' paper, Applying evolutionary terminology auditing to the Gene Ontology."@en ;
+                obo:IAO_0000117 "PERSON: Alan Ruttenberg"@en ,
+                                "PERSON: Melanie Courtot"@en ;
+                obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"^^xsd:string ;
+                rdfs:label "obsolescence reason specification"@en .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0000310
 obo:IAO_0000310 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000030 ;
