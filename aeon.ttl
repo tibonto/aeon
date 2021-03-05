@@ -706,12 +706,12 @@ aeon:AEON_0000044 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000045
 aeon:AEON_0000045 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf bfo:BFO_0000057 ;
                   rdfs:range [ rdf:type owl:Class ;
                                owl:unionOf ( ncbitaxon:NCBITaxon_9606
                                              obi:OBI_0000245
                                            )
                              ] ;
+                  rdfs:subPropertyOf obo:RO_0000057 ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:label "has contributor"@en ;
                   aeon:SMW_datatype "Page" ;
@@ -1151,7 +1151,7 @@ aeon:AEON_0000080 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000081
 aeon:AEON_0000081 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf bfo:BFO_0000118 ;
+                  rdfs:subPropertyOf obo:TXPO_0002523 ;
                   owl:inverseOf aeon:AEON_0000084 ;
                   rdfs:domain aeon:AEON_0000002 ;
                   rdfs:range aeon:AEON_0000001 ;
