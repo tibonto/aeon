@@ -580,7 +580,7 @@ obo:RO_0002012 rdf:type owl:ObjectProperty ;
                rdfs:domain obo:BFO_0000003 ;
                rdfs:range obo:BFO_0000003 ;
                obo:IAO_0000115 "A part of relation that applies only between occurents." ;
-               obo:IAO_0000412 "http://purl.obolibrary.org/obo/ro/releases/2020-12-18/ro.owl"^^xsd:string ;
+               obo:IAO_0000412 "http://purl.obolibrary.org/obo/ro/releases/2021-03-08/ro.owl"^^xsd:string ;
                rdfs:label "occurent part of" .
 
 
@@ -623,6 +623,8 @@ obo:RO_0002351 rdf:type owl:ObjectProperty ;
 ###  http://purl.obolibrary.org/obo/RO_0002353
 obo:RO_0002353 rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf obo:RO_0000056 ;
+               rdfs:domain obo:BFO_0000002 ;
+               rdfs:range obo:BFO_0000003 ;
                obo:IAO_0000115 "inverse of has output" ;
                obo:IAO_0000117 "Chris Mungall" ;
                obo:IAO_0000412 "http://purl.obolibrary.org/obo/ro/releases/2020-12-18/ro.owl"^^xsd:string ;
