@@ -1051,6 +1051,115 @@ aeon:AEON_0000090 rdf:type owl:ObjectProperty ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
+###  https://github.com/tibonto/aeon#attends_at
+aeon:attends_at rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf aeon:contibutes_to ;
+                rdfs:domain aeon:attendee ;
+                rdfs:range obo:OBI_0000011 ;
+                obo:IAO_0000115 "see inverse relation"@en ;
+                obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                rdfs:label "attentds at"@en .
+
+
+###  https://github.com/tibonto/aeon#committee_chair_in
+aeon:committee_chair_in rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf aeon:committee_member_in ;
+                        rdfs:domain aeon:committee_chair ;
+                        rdfs:range obo:OBI_0000011 ;
+                        obo:IAO_0000115 "see inverse relation"@en ;
+                        obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                        rdfs:label "committee chair in"@en .
+
+
+###  https://github.com/tibonto/aeon#committee_member_in
+aeon:committee_member_in rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf aeon:organizes ;
+                         rdfs:domain aeon:committee_member ;
+                         rdfs:range obo:OBI_0000011 ;
+                         obo:IAO_0000115 "see inverse relation"@en ;
+                         obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                         rdfs:label "committee member in"@en .
+
+
+###  https://github.com/tibonto/aeon#contact_person_of
+aeon:contact_person_of rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf aeon:organizes ;
+                       rdfs:domain aeon:contact_person ;
+                       rdfs:range obo:OBI_0000011 ;
+                       obo:IAO_0000115 "see inverse relation"@en ;
+                       obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                       rdfs:label "contact person of"@en .
+
+
+###  https://github.com/tibonto/aeon#contibutes_to
+aeon:contibutes_to rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf obo:RO_0000056 ;
+                   rdfs:domain aeon:contributor ;
+                   rdfs:range obo:OBI_0000011 ;
+                   obo:IAO_0000115 "see inverse relation"@en ;
+                   obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                   rdfs:label "contributes to"@en .
+
+
+###  https://github.com/tibonto/aeon#holds_keynote_at
+aeon:holds_keynote_at rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf aeon:speaks_at ;
+                      rdfs:domain aeon:keynote_speaker ;
+                      rdfs:range obo:OBI_0000011 ;
+                      obo:IAO_0000115 "see inverse relation"@en ;
+                      obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                      rdfs:label "holds keynote speech at"@en .
+
+
+###  https://github.com/tibonto/aeon#moderates_at
+aeon:moderates_at rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf aeon:contibutes_to ;
+                  rdfs:domain aeon:moderator ;
+                  rdfs:range obo:OBI_0000011 ;
+                  obo:IAO_0000115 "see inverse relation"@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                  rdfs:label "moderates at"@en .
+
+
+###  https://github.com/tibonto/aeon#organizes
+aeon:organizes rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf aeon:contibutes_to ;
+               rdfs:domain aeon:organizer ;
+               rdfs:range obo:OBI_0000011 ;
+               obo:IAO_0000115 "see inverse relation"@en ;
+               obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+               rdfs:label "organizes"@en .
+
+
+###  https://github.com/tibonto/aeon#reviews_at
+aeon:reviews_at rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf aeon:contibutes_to ;
+                rdfs:domain aeon:reviewer ;
+                rdfs:range obo:OBI_0000011 ;
+                obo:IAO_0000115 "see inverse relation"@en ;
+                obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                rdfs:label "reviews at"@en .
+
+
+###  https://github.com/tibonto/aeon#speaks_at
+aeon:speaks_at rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf aeon:contibutes_to ;
+               rdfs:domain aeon:speaker ;
+               rdfs:range obo:OBI_0000011 ;
+               obo:IAO_0000115 "see inverse relation"@en ;
+               obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+               rdfs:label "presents at"@en .
+
+
+###  https://github.com/tibonto/aeon#sponsors
+aeon:sponsors rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf aeon:contibutes_to ;
+              rdfs:domain aeon:sponsor ;
+              rdfs:range obo:OBI_0000011 ;
+              obo:IAO_0000115 "see inverse relation"@en ;
+              obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string .
+
+
 #################################################################
 #    Data properties
 #################################################################
