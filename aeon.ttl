@@ -673,11 +673,7 @@ aeon:AEON_0000033 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000040
 aeon:AEON_0000040 rdf:type owl:ObjectProperty ;
-                  rdfs:domain [ rdf:type owl:Class ;
-                                owl:unionOf ( aeon:AEON_0000001
-                                              aeon:AEON_0000002
-                                            )
-                              ] ;
+                  rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:AEON_0000027 ;
                   obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a planned  process and a skos:Concept that is used to descibe the scientific subject of the planned process according to some controlled vocabulary or thesaurus."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
