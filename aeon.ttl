@@ -2750,7 +2750,7 @@ aeon:AEON_0000007 rdf:type owl:Class ;
                                       ] ;
                   rdfs:subClassOf aeon:AEON_0000006 ;
                   owl:disjointWith aeon:AEON_0000009 ;
-                  rdfs:label "committee role"@en ;
+                  rdfs:label "event committee member role"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
 
@@ -2767,7 +2767,7 @@ aeon:AEON_0000008 rdf:type owl:Class ;
                                                            ]
                                       ] ;
                   rdfs:subClassOf aeon:AEON_0000007 ;
-                  rdfs:label "committee chair role"@en ;
+                  rdfs:label "event committee chair role"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -3073,6 +3073,24 @@ Defining 'attendee' is not trivial, as the expectations of what an attendee must
 
 ###  https://github.com/tibonto/aeon#committee_chair
 aeon:committee_chair rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty obo:RO_0000087 ;
+                                                                  owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000008
+                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                              owl:onProperty obo:BFO_0000054 ;
+                                                                                                              owl:someValuesFrom obo:OBI_0000011
+                                                                                                            ]
+                                                                                                          ) ;
+                                                                                       rdf:type owl:Class
+                                                                                     ]
+                                                                ]
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty obo:RO_0002350 ;
+                                                                  owl:someValuesFrom aeon:AEON_0000042
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
                      rdfs:subClassOf aeon:committee_member ;
                      obo:IAO_0000114 obo:IAO_0000423 ;
                      obo:IAO_0000115 "A committee chair is a committee member that holds a committee chair role which is being realized in a planned process."@en ;
@@ -3174,7 +3192,7 @@ aeon:finance_committee rdf:type owl:Class ;
                        rdfs:subClassOf aeon:AEON_0000042 ;
                        obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                        obo:IAO_0000600 "The finance committee has the task of monitoring the budget of an academic event."@en ;
-                       rdfs:label "academic finance committee"@en .
+                       rdfs:label "event finance committee"@en .
 
 
 ###  https://github.com/tibonto/aeon#general_committee
