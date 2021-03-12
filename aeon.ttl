@@ -636,7 +636,7 @@ obo:TXPO_0002523 rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf obo:BFO_0000051 ;
                  obo:IAO_0000115 "\"has ocurrent part\" is a relation that holds between a whole occurrent (process) and its part." ;
                  obo:IAO_0000232 "There is no RO relation 'has occurent part' which can serve as the inverse of http://purl.obolibrary.org/obo/RO_0002012 (occurent part of). One might use the BFO2020 (BFO_0000132), or more precicesly BFO_0000138 (proper occurent part of). But this will generate problems due to the incompatibility as of now (Feb 2021) between BFO2020 and RO."@en ;
-                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/txpo.owl" ;
+                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/txpo/releases/2020-03-03/txpo.owl"^^xsd:string ;
                  rdfs:label "has occurrent part" .
 
 
