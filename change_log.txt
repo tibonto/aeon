@@ -1,9 +1,34 @@
 Change history:
 
-v0.2.13 - date: 20.11.2020
-	* add change_log.txt
-	* add IAO_0000310 as range
-	* delete aeon:has_internal_identifer
+v0.3.0	- date: 03.2021
+	* UPDATED --> namespaces of external ontologies back to obo prefix (IRI resolving must be handled using OBO tools this way, but we want to be strictly obo compliant for now)
+	* UPDATED --> BFO2020 relations to "BFO classes only" & RO relations, as BFO2020's relations collide with RO (see: https://obo-communitygroup.slack.com/archives/C01BDKWDS91/p1612453401048600)
+	* UPDATED --> contributor entity, role & relation pattern
+	* UPDATED --> academic event and event series parrent class to obi:planned process7
+	* ADDED -->	missing inverse relations
+	* ADDED -->	needed IDO identifiers and made them equivalant with AEON identifiers, as this external IDO part should be used once it is finished
+	* DELETED --> aeon:has output, as obo:has output is better
+	* DELETED --> AEON_0000031 (has centrally registered identifier), as this placeholder class is not needed
+	* DELETED --> AEON_0000037, AEON_0000038, AEON_0000039 (sponsor role subclasses), as the sponsor type pattern has to be worked out later and one role is enough for now
+	* DELETED --> file artefacts related to imported ontologies, as they are not needed after the switch to import via MIREOT plugin
+
+
+v0.2.13 - date: 30.11.2020
+	* UPDATED --> hierarchy to subPropertyOf owl:topObjectProperty on: aeon:has_event_type, aeon:has_fee, aeon:has_output
+	* UPDATED --> domain & range on some DataProperties --> commit: 461f643e253b2b0b3351b2a49cc8e68a2251a095
+	* UPDATED --> according to BFO/OBO ID scheme all event type instances, remaining ObjectProperties & classes 
+	* UPDATED --> example individuals
+	* MERGED --> aeon:has_external_identifier with  aeon:has_identifier, to resolve unnescessary destinction
+	* ADDED -->	change_log.txt
+	* ADDED -->	IAO_0000310 (document) as range for aeon:has_output
+	* ADDED	-->	AEON_0000031 (has centrally registered identifier) as parent for all other centrally registered identifiers
+	* ADDED	-->	IAO_0020015 (personal name)
+	* ADDED	-->	AEON_0000033 (has distributed identifier)
+	* ADDED	-->	AEON_0000037, AEON_0000038, AEON_0000039 (sponsor role subclasses)
+	* DELETED --> aeon:agent_name
+	* DELETED --> aeon:has_internal_identifer --> as the destincion between internal and external identifier is not needed
+	* DELETED --> unneeded external classes & properties --> commit:a3ba83d463e37bf6abe40f7ca9baffefcb213ab7
+
 
 
 v0.2.12 - date: 20.11.2020
@@ -90,6 +115,6 @@ Version 0.2.1 AEON ConfIDent Edition September 2020 - date: 16.09.2020
 
 
 Version 0.2.0 AEON ConfIDent Edition September 2020 - date: 16.09.2020
-	* this version was based on v0.0.1 from the master branch and developted in its own branch (https://github.com/tibonto/aeon/tree/confIDent)
+	* this version was based on v0.0.1 from the master branch and developed in its own branch (https://github.com/tibonto/aeon/tree/confIDent)
 	* a lot of changes were made in order to get the protoype working in the Semantic Media Wiki instance
 	  * a detailed list of changes will be added here later
