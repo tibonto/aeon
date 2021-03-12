@@ -1633,11 +1633,6 @@ aeon:landing_page rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#language
 aeon:language rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
-              rdfs:domain [ rdf:type owl:Class ;
-                            owl:unionOf ( aeon:AEON_0000001
-                                          aeon:AEON_0000002
-                                        )
-                          ] ;
               rdfs:label "language"@en ;
               aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2936\", \"label\": \"language_usedLabel\"}}"^^xsd:string ;
               aeon:SMW_datatype "Text" ;
@@ -1669,11 +1664,6 @@ aeon:location rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#logo
 aeon:logo rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf owl:topDataProperty ;
-          rdfs:domain [ rdf:type owl:Class ;
-                        owl:unionOf ( aeon:AEON_0000001
-                                      aeon:AEON_0000002
-                                    )
-                      ] ;
           rdfs:label "logo"@en ;
           aeon:SMW_datatype "Page" ;
           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1811,8 +1801,7 @@ aeon:proceedings_site_count rdf:type owl:DatatypeProperty ;
 
 ###  https://github.com/tibonto/aeon#process_acronym
 aeon:process_acronym rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf aeon:process_name ;
-                     rdfs:domain obo:BFO_0000015 ;
+                     rdfs:subPropertyOf aeon:name ;
                      rdfs:range xsd:string ;
                      obo:IAO_0000112 "\"DILS 2019\" is the official acronym of the academic event \"13th International Conference on Data Integration in Life Science\""@en ;
                      obo:IAO_0000115 "The literal value of the official acronym of an aeon:process, that is either an academic event or event series."@en ;
@@ -1838,8 +1827,7 @@ aeon:process_alternative_name rdf:type owl:DatatypeProperty ;
 
 ###  https://github.com/tibonto/aeon#process_former_name
 aeon:process_former_name rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf aeon:process_name ;
-                         rdfs:domain obo:OBI_0000011 ;
+                         rdfs:subPropertyOf aeon:name ;
                          rdfs:range xsd:string ;
                          rdfs:comment "The Literal value of the former official name of an aeon:process, that is either an academic event or event series."@en ;
                          rdfs:label "former name"@en ;
@@ -1847,23 +1835,9 @@ aeon:process_former_name rdf:type owl:DatatypeProperty ;
                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#process_name
-aeon:process_name rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf aeon:name ;
-                  rdfs:domain obo:OBI_0000011 ;
-                  rdfs:range xsd:string ;
-                  obo:IAO_0000115 "The literal value of the official name (title) of an aeon:process, that is either an academic event or event series."@en ;
-                  rdfs:label "process name"@en ;
-                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"itemLabel\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#preferredNameForTheConferenceOrEvent\", \"label\": \"Preferred name for the conference or event\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Title\", \"label\": \"Title\"}, \"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"name\"}}}"^^xsd:string ;
-                  aeon:SMW_datatype "Text" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
-                  aeon:WikidataLabel "itemLabel" .
-
-
 ###  https://github.com/tibonto/aeon#process_translated_name
 aeon:process_translated_name rdf:type owl:DatatypeProperty ;
-                             rdfs:subPropertyOf aeon:process_name ;
-                             rdfs:domain obo:OBI_0000011 ;
+                             rdfs:subPropertyOf aeon:name ;
                              rdfs:range xsd:string ;
                              obo:IAO_0000115 "The literal value of the translation of the official name (title) of an aeon:process, that is either an academic event or event series."@en ;
                              rdfs:label "translated name"@en ;
@@ -1927,15 +1901,6 @@ aeon:state rdf:type owl:DatatypeProperty ;
            aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#subject
-aeon:subject rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf owl:topDataProperty ;
-             rdfs:domain aeon:AEON_0000027 ;
-             rdfs:label "subject"@en ;
-             aeon:SMW_datatype "Text" ;
-             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
 ###  https://github.com/tibonto/aeon#submission_deadline
 aeon:submission_deadline rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:deadline ;
@@ -1958,11 +1923,6 @@ aeon:submitted_papers rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#summary
 aeon:summary rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
-             rdfs:domain [ rdf:type owl:Class ;
-                           owl:unionOf ( aeon:AEON_0000001
-                                         aeon:AEON_0000002
-                                       )
-                         ] ;
              rdfs:label "summary"@en ;
              aeon:SMW_datatype "Text" ;
              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1971,11 +1931,6 @@ aeon:summary rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#summary_licence
 aeon:summary_licence rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf aeon:summary ;
-                     rdfs:domain [ rdf:type owl:Class ;
-                                   owl:unionOf ( aeon:AEON_0000001
-                                                 aeon:AEON_0000002
-                                               )
-                                 ] ;
                      rdfs:label "summary licence"@en ;
                      aeon:SMW_datatype "Text" ;
                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -2604,7 +2559,6 @@ obo:IAO_0020015 rdf:type owl:Class ;
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf aeon:name ;
                 obo:IAO_0000115 "A personal name is a proper name identifying an individual person."@en ;
                 obo:IAO_0000117 "Mathias Brochhausen" ;
                 obo:IAO_0000119 "http://en.wikipedia.org/wiki/Personal_name" ;
