@@ -1815,8 +1815,7 @@ aeon:process_acronym rdf:type owl:DatatypeProperty ;
 
 ###  https://github.com/tibonto/aeon#process_alternative_name
 aeon:process_alternative_name rdf:type owl:DatatypeProperty ;
-                              rdfs:subPropertyOf aeon:process_name ;
-                              rdfs:domain obo:OBI_0000011 ;
+                              rdfs:subPropertyOf aeon:name ;
                               rdfs:range xsd:string ;
                               rdfs:comment "The Literal value of an alternative name of an aeon:process, that is either an academic event or event series."@en ;
                               rdfs:label "alternative name"@en ;
