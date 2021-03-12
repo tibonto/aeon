@@ -640,10 +640,16 @@ obo:TXPO_0002523 rdf:type owl:ObjectProperty ;
                  rdfs:label "has occurrent part" .
 
 
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty obo:IAO_0000115 """'has academic field' is a primitive, instance-level relation obtaining between a planned process and the skos:Concept subclass 'academic field'. 
+To say p has academic field x =def. p is a planned process, there is some x that is an academic field of p."""@en .
+
+
 ###  https://github.com/tibonto/aeon#AEON_0000032
 aeon:AEON_0000032 rdf:type owl:ObjectProperty ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000004 ;
+                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a planned  process and a skos:Concept that is used to descibe the social format of an 'academic event'."@en ;
                   rdfs:label "has event type"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"event_type\"}, \"openresearch\": {\"uri\": null, \"label\": \"Type\"}}"^^xsd:string ;
                   aeon:SMW_datatype "Text" ;
@@ -657,8 +663,11 @@ aeon:AEON_0000033 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000074 ;
                   rdfs:domain obo:BFO_0000001 ;
                   rdfs:range aeon:AEON_0000034 ;
-                  obo:IAO_0000117 "Philip Stroemert"^^xsd:string ;
-                  rdfs:label "has distributed identifier"@en .
+                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between an entity and a distributed identifier that is used to denote the entity."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ,
+                                  "Philip Stroemert"^^xsd:string ;
+                  rdfs:label "has distributed identifier"@en ;
+                  ns:term_status obo:IAO_0000423 .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000040
@@ -669,6 +678,8 @@ aeon:AEON_0000040 rdf:type owl:ObjectProperty ;
                                             )
                               ] ;
                   rdfs:range aeon:AEON_0000027 ;
+                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a planned  process and a skos:Concept that is used to descibe the scientific subject of the planned process according to some controlled vocabulary or thesaurus."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has academic field"@en .
 
 
@@ -676,6 +687,8 @@ aeon:AEON_0000040 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000041 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:AEON_0000028 ;
+                  obo:IAO_0000117 "A primitive, instance-level, relation obtaining between a planned  process and a skos:Concept that is used to descibe the theme of the planned process."@en ,
+                                  "PERSON: Philip Strömert"@en ;
                   rdfs:label "has topic"@en .
 
 
@@ -684,6 +697,8 @@ aeon:AEON_0000043 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf owl:topObjectProperty ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000030 ;
+                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a planned  process and an 'information content entity' that is about the amount of money one has to pay in order to be an allowed participant of the planned process."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has fee"@en ;
                   aeon:SMW_datatype "Text" ;
                   aeon:SMW_import_info """The allowed value list for this property is defined in [[MediaWiki:Smw_allows_list_Has_fee]].
@@ -699,7 +714,9 @@ aeon:AEON_0000045 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:contibutes_to ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:contributor ;
-                  obo:IAO_0000115 "'has contributor' is a primitive, instance-level, relation obtaining between a planned  process and a person or organization that holds a contributor role which is being realized by the planned process. A contribution to a planned process takes place when someone works on the planning or realization of a planned process."@en ;
+                  obo:IAO_0000115 "'has contributor' is a primitive, instance-level, relation obtaining between a planned  process and a person or organization that holds a contributor role which is being realized by the planned process. A contribution to a planned process takes place when someone works on the planning or realization of a planned process."@en ,
+                                  "A primitive, instance-level, relation obtaining between an entity and its corresponding Wikidata entity identifier."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has contributor"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -712,6 +729,7 @@ aeon:AEON_0000046 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:attendee ;
                   obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a planned  process and a person that holds an attendee role which is being realized by the planned process."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has attendee"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P710\", \"label\": \"participantLabel\"}}"^^xsd:string ;
                   aeon:SMW_datatype "Page" ;
@@ -727,6 +745,7 @@ aeon:AEON_0000047 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:moderator ;
                   obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a planned  process and a person that holds a moderator role which is being realized by the planned process."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has moderator"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -739,6 +758,7 @@ aeon:AEON_0000048 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:organizer ;
                   obo:IAO_0000115 "A primitive, instance-level, relation obtaining  between a planned  process and a person or organization that holds an organizer role which is being realized by the planned process."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has organizer"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P664\", \"label\": \"organizerLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_organizer\", \"label\": \"Has_organizer\"},\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"sponsor\"}}}"^^xsd:string ;
                   aeon:SMW_datatype "Page" ;
@@ -754,6 +774,7 @@ aeon:AEON_0000049 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:reviewer ;
                   obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a planned  process and a person that holds a reviewer role which is being realized by the planned process."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has reviewer"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
@@ -768,6 +789,7 @@ aeon:AEON_0000050 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:speaker ;
                   obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a planned  process and a person that holds a presenter role which is being realized by the planned process."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has presenter"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P823\", \"label\": \"speaker\"}}"^^xsd:string ;
                   aeon:SMW_datatype "Page" ;
@@ -785,6 +807,7 @@ aeon:AEON_0000051 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:sponsor ;
                   obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a planned process and a person or organization that holds a sponsor role which is being realized by the planned process."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has sponsor"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Sponsor]]
@@ -799,6 +822,7 @@ aeon:AEON_0000052 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:committee_member ;
                   obo:IAO_0000115 "A primitive, instance-level, relation obtaining  between a planned  process and a person that holds a committee member role which is being realized by the planned process."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has committee member"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -811,6 +835,7 @@ aeon:AEON_0000053 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:contact_person ;
                   obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a planned  process and a person that holds a contact person role which is being realized by the planned process."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has contact person"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -823,6 +848,7 @@ aeon:AEON_0000054 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:keynote_speaker ;
                   obo:IAO_0000115 "A relation between a planned  process and a person that holds a keynote speaker role which is being realized by the planned process."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has keynote speaker"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
@@ -837,6 +863,7 @@ aeon:AEON_0000055 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:committee_chair ;
                   obo:IAO_0000115 "A primitive, instance-level, relation obtaining  between a planned  process and a person that holds a committee chair role which is being realized by the planned process."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has committee chair"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
@@ -849,7 +876,10 @@ aeon:AEON_0000075 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000031 ;
                   rdfs:domain obo:IAO_0000030 ;
                   rdfs:range aeon:AEON_0000016 ;
+                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a data item and its corresponding digital object identifier."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has DOI"@en ;
+                  ns:term_status obo:IAO_0000423 ;
                   aeon:SMW_datatype "External identifier" ;
                   aeon:SMW_import_info """External formatter uri [[External formatter uri::https://doi.org/$1]]
 
@@ -861,7 +891,10 @@ aeon:AEON_0000076 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000031 ;
                   rdfs:domain obo:BFO_0000001 ;
                   rdfs:range aeon:AEON_0000017 ;
+                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between an entity and the identifier used by the German national library to denote the entity."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has GND"@en ;
+                  ns:term_status obo:IAO_0000423 ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P227\", \"label\": \"GND_ID\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#gndIdentifier\", \"label\": \"GND-Identifier\"}}"^^xsd:string ;
                   aeon:SMW_datatype "External identifier" ;
                   aeon:SMW_import_info """External formatter uri [[External formatter uri::http://d-nb.info/gnd/$1]]
@@ -884,7 +917,10 @@ aeon:AEON_0000077 rdf:type owl:ObjectProperty ;
                                             )
                               ] ;
                   rdfs:range aeon:AEON_0000018 ;
+                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a person or organization  and the 'international standard name identifier' used to denote the entity."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has ISNI"@en ;
+                  ns:term_status obo:IAO_0000423 ;
                   aeon:SMW_datatype "External identifier" ;
                   aeon:SMW_import_info """External formatter uri [[External formatter uri::https://isni.org/isni/$1]]
 
@@ -899,7 +935,10 @@ aeon:AEON_0000078 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000031 ;
                   rdfs:domain obo:NCBITaxon_9606 ;
                   rdfs:range aeon:AEON_0000019 ;
+                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a person and the 'open researcher and contributor identifier' used to denote the entity."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has ORCID"@en ;
+                  ns:term_status obo:IAO_0000423 ;
                   aeon:SMW_datatype "External identifier" ;
                   aeon:SMW_import_info """External formatter uri [[External formatter uri::https://orcid.org/$1]]
 
@@ -913,7 +952,10 @@ aeon:AEON_0000079 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:AEON_0000031 ;
                   rdfs:domain obo:OBI_0000245 ;
                   rdfs:range aeon:AEON_0000020 ;
+                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a person and the 'research organization registry identifier' used to denote the entity."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has ROR"@en ;
+                  ns:term_status obo:IAO_0000423 ;
                   aeon:SMW_datatype "External identifier" ;
                   aeon:SMW_import_info """External formatter uri [[External formatter uri::https://ror.org/$1]]
 
@@ -932,6 +974,10 @@ aeon:AEON_0000080 rdf:type owl:ObjectProperty ;
                              ] ;
                   rdfs:label "has WDQID"@en ;
                   rdfs:domain obo:BFO_0000001 ;
+                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between an entity and its corresponding Wikidata entity identifier."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  rdfs:label "has Wikidata QID"@en ;
+                  ns:term_status obo:IAO_0000423 ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"itemID\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Wikidataid\", \"label\": \"Wikidataid\"}}"^^xsd:string ;
                   aeon:SMW_datatype "External identifier" ;
                   aeon:SMW_import_info """External formatter uri [[External formatter uri::https://www.wikidata.org/wiki/$1]]
@@ -950,7 +996,8 @@ aeon:AEON_0000081 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:AEON_0000084 ;
                   rdfs:domain aeon:AEON_0000002 ;
                   rdfs:range aeon:AEON_0000001 ;
-                  rdfs:label "has event"@en ;
+                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between an academic event series and an academic event. It is used to express that the academic event is part of a specific event series."@en ;
+                  rdfs:label "has academic event"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -960,6 +1007,7 @@ aeon:AEON_0000082 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:RO_0002012 ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000001 ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "collocated event of"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -970,6 +1018,7 @@ aeon:AEON_0000083 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:RO_0002012 ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000001 ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "joint event of"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -980,6 +1029,7 @@ aeon:AEON_0000084 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:RO_0002012 ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000002 ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "part of series"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P179\", \"label\": \"part_of_the_seriesLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Event_in_series\", \"label\": \"Event_in_series\"}}"^^xsd:string ;
                   aeon:SMW_datatype "Page" ;
@@ -991,6 +1041,7 @@ aeon:AEON_0000085 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:RO_0002012 ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000001 ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "umbrella event of"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -2730,9 +2781,9 @@ aeon:AEON_0000001 rdf:type owl:Class ;
                   owl:disjointWith aeon:AEON_0000002 ;
                   obo:IAO_0000112 "The 19th International Semantic Web Conference (ISWC2020) is an academic  event."@en ;
                   obo:IAO_0000115 "An academic event is an organized gathering for researchers (not necessarily academics) to present and discuss their work."@en ;
-                  rdfs:comment """TODO: 1. It needs to be discussed, if events and event series should rather be subsumed under planned processes instead of just processes.
-2. It needs to be discussed, if we need the \"process boundary\" class to describe the start and end of an academic event or event series.
-3. It needs to be discussed, if we need the \"temporal region\" and \"spatiotemporal region\"  classes to describe the duration and manifestation in spacetime of an academic event or event series."""@en ;
+                  rdfs:comment """TODO:
+* It needs to be discussed, if we need the \"process boundary\" class to describe the start and end of an academic event or event series.
+* It needs to be discussed, if we need the \"temporal region\" and \"spatiotemporal region\"  classes to describe the duration and manifestation in spacetime of an academic event or event series."""@en ;
                   rdfs:label "academic event"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Q1656682\", \"label\": \"eventLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Category:Event\", \"label\": \"Event\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#ConferenceOrEvent\", \"label\": \"Conference or Event\"}}"^^xsd:string ;
                   aeon:SMW_datatype "Category" ;
@@ -2758,8 +2809,11 @@ aeon:AEON_0000002 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000003
 aeon:AEON_0000003 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000578 ;
-                  rdfs:comment "The \"rdfs:label ConfIDent_ID\" is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident/) to be used in its service. Thus the internal identifier is called ConfIDent_ID. You will probably want to change that in your implementation."@en ;
-                  rdfs:label "ConfIDent ID"@en ;
+                  obo:IAO_0000116 "The alternative term \"ConfIDent_ID\" is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident/) to be used in its service. Thus the internal identifier is called \"ConfIDent ID\". You will probably want to change that in your implementation."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000118 "ConfIDent ID"@en ;
+                  rdfs:label "internal identifier"@en ;
+                  ns:term_status obo:IAO_0000423 ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -2767,6 +2821,9 @@ aeon:AEON_0000003 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000004
 aeon:AEON_0000004 rdf:type owl:Class ;
                   rdfs:subClassOf skos:Concept ;
+                  obo:IAO_0000115 "An event type is a skos:Concept that is being used to distinguish between the different academic event formats."@en ;
+                  obo:IAO_0000116 "As the used definitions of the various academic event types can vary strongly between different communities and societies, we chose to model the type of an event as a SKOS concept instead of adding subclasses to the \"academic event\" class. The most commonly used event types are provided in AEON as named instances of this class."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert" ;
                   rdfs:label "event type"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_has_event_type]]. [[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -2799,7 +2856,7 @@ aeon:AEON_0000005 rdf:type owl:Class ;
                                     owl:someValuesFrom aeon:contributor
                                   ] ;
                   obo:IAO_0000115 "The contributor role inheres in a person or organization that participates in a planned process by somehow contributing to it."@en ;
-                  obo:IAO_0000117 "Philip Strömert" ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert" ;
                   <http://purl.org/dc/elements/1.1/date> "2020-09-28T12:51:02Z"^^xsd:dateTime ;
                   rdfs:label "contributor role"@en ;
                   aeon:SMW_datatype "Category" ;
@@ -2817,6 +2874,7 @@ aeon:AEON_0000006 rdf:type owl:Class ;
                                       ] ;
                   rdfs:subClassOf aeon:AEON_0000005 ;
                   obo:IAO_0000115 "The organizer role inheres in a person or organization that contributes to a planned process by planning and managing its realization."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "organizer role"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Organizer]]
@@ -2835,6 +2893,8 @@ aeon:AEON_0000007 rdf:type owl:Class ;
                                       ] ;
                   rdfs:subClassOf aeon:AEON_0000006 ;
                   owl:disjointWith aeon:AEON_0000009 ;
+                  obo:IAO_0000115 "The 'committee member role' inheres in a person who contributes to a planned process by somehow realizing the function of the committe he is a member of."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "event committee member role"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
@@ -2852,6 +2912,8 @@ aeon:AEON_0000008 rdf:type owl:Class ;
                                                            ]
                                       ] ;
                   rdfs:subClassOf aeon:AEON_0000007 ;
+                  obo:IAO_0000115 "The 'committee chair role' inheres in a person who contributes to a planned process by somehow realizing the function of the committee he is a chair of."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "event committee chair role"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -2867,6 +2929,8 @@ aeon:AEON_0000009 rdf:type owl:Class ;
                                                            ]
                                       ] ;
                   rdfs:subClassOf aeon:AEON_0000006 ;
+                  obo:IAO_0000115 "The contact person role inheres in a person that contributes to a planned process by functioning as the addressee of the planned process who answers general inquiries and redirects more complex inqueries to a more appropriate addressee."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "contact person role"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -2883,6 +2947,7 @@ aeon:AEON_0000010 rdf:type owl:Class ;
                                       ] ;
                   rdfs:subClassOf aeon:AEON_0000005 ;
                   obo:IAO_0000115 "The attendee role inheres in a person that contributes to a planned process by attending it."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "attendee role"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -2899,6 +2964,7 @@ aeon:AEON_0000011 rdf:type owl:Class ;
                                       ] ;
                   rdfs:subClassOf aeon:AEON_0000005 ;
                   obo:IAO_0000115 "The moderating role inheres in a person that contributes to a planned process by facilitating the communication."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "moderator role"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -2917,6 +2983,7 @@ aeon:AEON_0000012 rdf:type owl:Class ;
                   obo:IAO_0000115 "Evaluation of scientific, academic, or professional work, such as manuscripts or grants by others working in the same field."@en ,
                                   "The reviewer role inheres in a person that contributes to a planned process by reviewing something of interest in a planned process."@en ;
                   obo:IAO_0000116 "ToDo: use CRO IRI http://purl.obolibrary.org/obo/CRO_0000101"@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   obo:IAO_0000118 "manuscript review role"@en ;
                   rdfs:label "reviewer role"@en ;
                   aeon:SMW_datatype "Category" ;
@@ -2933,7 +3000,8 @@ aeon:AEON_0000013 rdf:type owl:Class ;
                                                            ]
                                       ] ;
                   rdfs:subClassOf aeon:AEON_0000005 ;
-                  obo:IAO_0000115 "The presenter role inheres in a person that contributes to a planned process by presenting something of interest in a planned process."@en ;
+                  obo:IAO_0000115 "The presenter role inheres in a person that contributes to a planned process by presenting something of interest at a planned process."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   obo:IAO_0000118 "invited speaker role"@en ;
                   obo:IAO_0006011 "http://purl.obolibrary.org/obo/CRO_0000100"^^xsd:anyURI ;
                   rdfs:label "presenter role"@en ;
@@ -2952,6 +3020,7 @@ aeon:AEON_0000014 rdf:type owl:Class ;
                                       ] ;
                   rdfs:subClassOf aeon:AEON_0000013 ;
                   obo:IAO_0000115 "The keynote speaker role inheres in a person that contributes to a planned process by holding a keynote speech at a planned process."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "keynote speaker role"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -2968,7 +3037,8 @@ aeon:AEON_0000015 rdf:type owl:Class ;
                                       ] ;
                   rdfs:subClassOf aeon:AEON_0000005 ;
                   obo:IAO_0000115 "The sponsor role inheres in a person or organization that contributes to a planned process by providing the financial or material ressources needed to realize a planned process."@en ;
-                  rdfs:comment "PS 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...). As the possible sponsor types can have various schemes, it seems best to have named individuals of the aeon:Sponsor class at the moment." ;
+                  obo:IAO_0000116 "PS 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...). As the possible sponsor types can have various schemes, it seems best to have named individuals of the aeon:Sponsor class at the moment." ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "sponsor role"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -2976,8 +3046,10 @@ aeon:AEON_0000015 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000016
 aeon:AEON_0000016 rdf:type owl:Class ;
-                  rdfs:label "DOI" ;
                   rdfs:subClassOf obo:IAO_0020000 ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  rdfs:label "digital object identifier"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -2985,6 +3057,8 @@ aeon:AEON_0000016 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000017
 aeon:AEON_0000017 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000578 ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert" ;
                   rdfs:label "GND ID" ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
@@ -2997,6 +3071,8 @@ aeon:AEON_0000017 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000018
 aeon:AEON_0000018 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000578 ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert" ;
                   rdfs:label "ISNI" ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Person_ID]]
@@ -3008,6 +3084,8 @@ aeon:AEON_0000018 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000019
 aeon:AEON_0000019 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000578 ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert" ;
                   rdfs:label "ORCID" ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Person_ID]]
@@ -3018,6 +3096,8 @@ aeon:AEON_0000019 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000020
 aeon:AEON_0000020 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000578 ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert" ;
                   rdfs:label "ROR ID" ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Organization_ID]]
@@ -3027,8 +3107,11 @@ aeon:AEON_0000020 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000021
 aeon:AEON_0000021 rdf:type owl:Class ;
-                  rdfs:label "WDQID" ;
                   rdfs:subClassOf obo:IAO_0000578 ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert" ;
+                  obo:IAO_0006011 "\"https://www.wikidata.org/wiki/\"^^ xsd:anyURI"@en ;
+                  rdfs:label "Wikidata QID"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Process_External_ID]]
 [[partOfSubobject::Template:Subobject Person_ID]]
@@ -3073,7 +3156,9 @@ aeon:AEON_0000025 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000027
 aeon:AEON_0000027 rdf:type owl:Class ;
                   rdfs:subClassOf skos:Concept ;
-                  obo:IAO_0000115 "Subject is a skos:Concept, which most likely comes from a controlled vocabulary (e.g. DDC), and which is used to describe the research field of an academic event or event series."@en ;
+                  obo:IAO_0000112 "DDC 410 Linguistics, OECD 6.02 Languages and literature"@en ;
+                  obo:IAO_0000115 "'academic field' is a skos:Concept that describes the research field of an academic event or event series. As opposed to the class 'topic', the instances of this class must be terms from a controlled vocabulary or thesaurus."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert" ;
                   rdfs:label "academic field"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -3082,7 +3167,8 @@ aeon:AEON_0000027 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000028
 aeon:AEON_0000028 rdf:type owl:Class ;
                   rdfs:subClassOf skos:Concept ;
-                  obo:IAO_0000115 "Topic is a skos:Concept that describes the central theme of an academic event or event series."@en ;
+                  obo:IAO_0000112 "\"The future of knowlegde graphs in the humanities\" could be a topic of an interdisciplinary oriented computer sciences conference."@en ;
+                  obo:IAO_0000115 "Topic is a skos:Concept that describes the central theme of an academic event or event series. In contrast to 'academic field' the instances of the class topic should not be terms of a controlled vocabulary or thesaurus."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert" ;
                   rdfs:label "topic"@en .
 
@@ -3115,7 +3201,8 @@ aeon:AEON_0000030 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000034
 aeon:AEON_0000034 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0020000 ;
-                  obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert" ;
                   <http://purl.org/dc/elements/1.1/date> "2020-11-20T17:31:33Z"^^xsd:dateTime ;
                   rdfs:label "distributed identifier"@en .
 
@@ -3468,7 +3555,8 @@ aeon:technical_committee rdf:type owl:Class ;
 aeon:wikiCFP_ID rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000578 ;
                 obo:IAO_0000117 "PERSON: Philip Strömert" ;
-                rdfs:label "wikiCFP ID" .
+                rdfs:label "wikiCFP ID" ;
+                ns:term_status obo:IAO_0000423 .
 
 
 #################################################################
