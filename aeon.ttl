@@ -660,7 +660,7 @@ aeon:AEON_0000032 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000033
 aeon:AEON_0000033 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf aeon:AEON_0000074 ;
+                  rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:BFO_0000001 ;
                   rdfs:range aeon:AEON_0000034 ;
                   obo:IAO_0000115 "A primitive, instance-level, relation obtaining between an entity and a distributed identifier that is used to denote the entity."@en ;
@@ -873,8 +873,8 @@ aeon:AEON_0000055 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000075
 aeon:AEON_0000075 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf aeon:AEON_0000031 ;
-                  rdfs:domain obo:IAO_0000030 ;
+                  rdfs:subPropertyOf obo:IAO_0000235 ;
+                  rdfs:domain obo:IAO_0000027 ;
                   rdfs:range aeon:AEON_0000016 ;
                   obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a data item and its corresponding digital object identifier."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
@@ -888,7 +888,7 @@ aeon:AEON_0000075 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000076
 aeon:AEON_0000076 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf aeon:AEON_0000031 ;
+                  rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:BFO_0000001 ;
                   rdfs:range aeon:AEON_0000017 ;
                   obo:IAO_0000115 "A primitive, instance-level, relation obtaining between an entity and the identifier used by the German national library to denote the entity."@en ;
@@ -910,7 +910,7 @@ aeon:AEON_0000076 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000077
 aeon:AEON_0000077 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf aeon:AEON_0000031 ;
+                  rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain [ rdf:type owl:Class ;
                                 owl:unionOf ( obo:NCBITaxon_9606
                                               obo:OBI_0000245
@@ -932,7 +932,7 @@ aeon:AEON_0000077 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000078
 aeon:AEON_0000078 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf aeon:AEON_0000031 ;
+                  rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:NCBITaxon_9606 ;
                   rdfs:range aeon:AEON_0000019 ;
                   obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a person and the 'open researcher and contributor identifier' used to denote the entity."@en ;
@@ -949,7 +949,7 @@ aeon:AEON_0000078 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000079
 aeon:AEON_0000079 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf aeon:AEON_0000031 ;
+                  rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:OBI_0000245 ;
                   rdfs:range aeon:AEON_0000020 ;
                   obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a person and the 'research organization registry identifier' used to denote the entity."@en ;
@@ -966,14 +966,9 @@ aeon:AEON_0000079 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000080
 aeon:AEON_0000080 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf aeon:AEON_0000031 ;
-                  rdfs:range aeon:AEON_0000021 ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty aeon:ID_base_URL ;
-                               owl:hasValue "https://www.wikidata.org/wiki/"^^xsd:anyURI
-                             ] ;
-                  rdfs:label "has WDQID"@en ;
+                  rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:BFO_0000001 ;
+                  rdfs:range aeon:AEON_0000021 ;
                   obo:IAO_0000115 "A primitive, instance-level, relation obtaining between an entity and its corresponding Wikidata entity identifier."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has Wikidata QID"@en ;
@@ -2808,7 +2803,7 @@ aeon:AEON_0000002 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000003
 aeon:AEON_0000003 rdf:type owl:Class ;
-                  rdfs:subClassOf obo:IAO_0000578 ;
+                  rdfs:subClassOf obo:IAO_0020000 ;
                   obo:IAO_0000116 "The alternative term \"ConfIDent_ID\" is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident/) to be used in its service. Thus the internal identifier is called \"ConfIDent ID\". You will probably want to change that in your implementation."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   obo:IAO_0000118 "ConfIDent ID"@en ;
