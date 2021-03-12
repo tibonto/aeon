@@ -3645,7 +3645,6 @@ aeon:Lisbon rdf:type owl:NamedIndividual .
 ###  https://github.com/tibonto/aeon#PIDapalooza
 aeon:PIDapalooza rdf:type owl:NamedIndividual ,
                           aeon:AEON_0000002 ;
-                 rdfs:comment iao:IAO_0000002 ;
                  rdfs:label "PIDapalooza"@en .
 
 
@@ -3663,8 +3662,6 @@ aeon:PIDapalooza2020 rdf:type owl:NamedIndividual ,
                      aeon:number_of_attendees 117 ;
                      aeon:number_of_tracks 13 ;
                      aeon:start_date "2020-01-29T09:00:00"^^xsd:dateTime ;
-                     iao:IAO_0000117 "This individual serves as an example of usage for describing academic events with AEON."@en ;
-                     rdfs:comment iao:IAO_0000002 ;
                      rdfs:label "PIDapalooza2020"@en .
 
 
@@ -3689,7 +3686,6 @@ aeon:_Person_1 rdf:type owl:NamedIndividual ;
                aeon:AEON_0000059 <https://orcid.org/0000-0002-1595-3213> ;
                aeon:first_name "Philip"^^xsd:string ;
                aeon:last_name "Strömert"^^xsd:string ;
-               rdfs:comment iao:IAO_0000002 .
 
 
 ###  https://orcid.org/0000-0002-1595-3213
