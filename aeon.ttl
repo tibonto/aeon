@@ -2718,10 +2718,6 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
 
 ###  https://github.com/tibonto/aeon#AEON_0000001
 aeon:AEON_0000001 rdf:type owl:Class ;
-                  owl:equivalentClass [ rdf:type owl:Restriction ;
-                                        owl:onProperty bfo:BFO_0000132 ;
-                                        owl:someValuesFrom aeon:AEON_0000002
-                                      ] ;
                   rdfs:subClassOf obo:OBI_0000011 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000055 ;
