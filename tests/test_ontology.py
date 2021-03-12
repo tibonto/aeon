@@ -45,6 +45,11 @@ def test_maps_to_property():
         assert isinstance(maps_to, dict), 'Error: maps_to value did not ' \
                                           'convert correctly to Dict.'
 
+'''
+the following block was used, before switching back to the OBO namespace/prefix standard to test the availability 
+of the obo ontologies
+
+
 @pytest.mark.ontology
 def test_obo_ontos_resolution():
     # open a graph
@@ -89,3 +94,4 @@ def test_obo_ontos_resolution():
             print(f'{len(external_onto_query)} triples found in {uri_base}')
             assert len(external_onto_query) > 10,  'Error: less than 10 ' \
                                                    'triples returned...Fishy!'
+'''
