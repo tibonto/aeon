@@ -674,6 +674,7 @@ aeon:AEON_0000033 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000040
 aeon:AEON_0000040 rdf:type owl:ObjectProperty ;
+                  owl:inverseOf aeon:academic_field_of ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:AEON_0000027 ;
                   obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a planned  process and a skos:Concept that is used to descibe the scientific subject of the planned process according to some controlled vocabulary or thesaurus."@en ;
@@ -683,6 +684,7 @@ aeon:AEON_0000040 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000041
 aeon:AEON_0000041 rdf:type owl:ObjectProperty ;
+                  owl:inverseOf aeon:topic_of ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:AEON_0000028 ;
                   obo:IAO_0000117 "A primitive, instance-level, relation obtaining between a planned  process and a skos:Concept that is used to descibe the theme of the planned process."@en ,
@@ -1102,6 +1104,15 @@ aeon:AEON_0000090 rdf:type owl:ObjectProperty ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
+###  https://github.com/tibonto/aeon#academic_field_of
+aeon:academic_field_of rdf:type owl:ObjectProperty ;
+                       rdfs:domain aeon:AEON_0000027 ;
+                       rdfs:range obo:OBI_0000011 ;
+                       obo:IAO_0000115 "see inverse property"@en ;
+                       obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                       rdfs:label "academicfield of"@en .
+
+
 ###  https://github.com/tibonto/aeon#attends_at
 aeon:attends_at rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf aeon:contibutes_to ;
@@ -1268,6 +1279,15 @@ aeon:sponsors rdf:type owl:ObjectProperty ;
               rdfs:range obo:OBI_0000011 ;
               obo:IAO_0000115 "see inverse relation"@en ;
               obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string .
+
+
+###  https://github.com/tibonto/aeon#topic_of
+aeon:topic_of rdf:type owl:ObjectProperty ;
+              rdfs:domain aeon:AEON_0000028 ;
+              rdfs:range obo:OBI_0000011 ;
+              obo:IAO_0000115 "see inverse property"@en ;
+              obo:IAO_0000117 "StroemertP"^^xsd:string ;
+              rdfs:label "topic of"@en .
 
 
 #################################################################
