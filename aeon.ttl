@@ -3803,10 +3803,21 @@ aeon:_Person_1 rdf:type owl:NamedIndividual ;
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( aeon:AEON_0000037
-                aeon:AEON_0000038
-                aeon:AEON_0000039
+  owl:members ( aeon:AEON_0000006
+                aeon:AEON_0000010
+                aeon:AEON_0000011
+                aeon:AEON_0000012
+                aeon:AEON_0000013
               )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( obo:IAO_0000226
+                        obo:IAO_0000227
+                        obo:IAO_0000228
+                        obo:IAO_0000229
+                      )
 ] .
 
 
