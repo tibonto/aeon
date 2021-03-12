@@ -3725,59 +3725,71 @@ aeon:AEON_0010011 rdf:type owl:NamedIndividual ,
 aeon:Lisbon rdf:type owl:NamedIndividual .
 
 
-###  https://github.com/tibonto/aeon#PIDapalooza
-aeon:PIDapalooza rdf:type owl:NamedIndividual ,
-                          aeon:AEON_0000002 ;
-                 rdfs:label "PIDapalooza"@en .
-
-
-###  https://github.com/tibonto/aeon#PIDapalooza2020
-aeon:PIDapalooza2020 rdf:type owl:NamedIndividual ,
-                              aeon:AEON_0000001 ;
-                     aeon:AEON_0000032 aeon:AEON_0010001 ;
-                     aeon:AEON_0000050 aeon:_Person_1 ;
-                     aeon:AEON_0000061 <https://www.wikidata.org/wiki/Q65929359> ;
-                     aeon:AEON_0000074 aeon:_ConfIDentID_1 ;
-                     aeon:AEON_0000084 aeon:PIDapalooza ;
-                     aeon:AEON_0000086 aeon:Portugal ;
-                     aeon:AEON_0000087 aeon:Lisbon ;
-                     aeon:end_date "2020-01-30T17:00:00"^^xsd:dateTime ;
-                     aeon:number_of_attendees 117 ;
-                     aeon:number_of_tracks 13 ;
-                     aeon:start_date "2020-01-29T09:00:00"^^xsd:dateTime ;
-                     rdfs:label "PIDapalooza2020"@en .
-
-
 ###  https://github.com/tibonto/aeon#Portugal
 aeon:Portugal rdf:type owl:NamedIndividual .
 
 
-###  https://github.com/tibonto/aeon#_ConfIDentID_1
-aeon:_ConfIDentID_1 rdf:type owl:NamedIndividual ;
-                    aeon:ID "PIDapalooza_2020"^^xsd:string ;
-                    aeon:ID_URL "https://www.confident-conference.org/r/vanilla/index.php/PIDapalooza_2020"^^xsd:anyURI ;
-                    aeon:ID_base_URL "https://www.confident-conference.org/r/vanilla/index.php/"^^xsd:anyURI ;
-                    rdfs:comment obo:IAO_0000002 .
+###  https://github.com/tibonto/aeon#_PIDapalooza
+aeon:_PIDapalooza rdf:type owl:NamedIndividual ;
+                  rdfs:comment obo:IAO_0000002 ;
+                  rdfs:label "_PIDapalooza"@en .
 
 
-###  https://github.com/tibonto/aeon#_PIDapalooza_Speaker_1
-aeon:_PIDapalooza_Speaker_1 rdf:type owl:NamedIndividual .
+###  https://github.com/tibonto/aeon#_PIDapalooza2020
+aeon:_PIDapalooza2020 rdf:type owl:NamedIndividual ;
+                      obo:BFO_0000055 aeon:__PIDapalooza_Role_1 ,
+                                      aeon:__PIDapalooza_Role_2 ;
+                      aeon:AEON_0000050 aeon:_Person_1 ;
+                      aeon:AEON_0000055 aeon:_Person_2 ;
+                      aeon:end_date "2020-01-30T17:00:00"^^xsd:dateTime ;
+                      aeon:number_of_attendees 117 ;
+                      aeon:number_of_tracks 13 ;
+                      aeon:start_date "2020-01-29T09:00:00"^^xsd:dateTime ;
+                      rdfs:comment obo:IAO_0000002 ;
+                      rdfs:label "_PIDapalooza2020"@en .
+
+
+###  https://github.com/tibonto/aeon#_PIDapalooza_general_committee
+aeon:_PIDapalooza_general_committee rdf:type owl:NamedIndividual ,
+                                             aeon:general_committee ;
+                                    obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#_Person_1
 aeon:_Person_1 rdf:type owl:NamedIndividual ;
-               aeon:AEON_0000059 <https://orcid.org/0000-0002-1595-3213> ;
+               obo:IAO_0000235 <https://orcid.org/0000-0002-1595-3213> ;
+               obo:RO_0000087 aeon:__PIDapalooza_Role_1 ;
                aeon:first_name "Philip"^^xsd:string ;
                aeon:last_name "Strömert"^^xsd:string ;
                ns:term_status obo:IAO_0000002 .
 
 
+###  https://github.com/tibonto/aeon#_Person_2
+aeon:_Person_2 rdf:type owl:NamedIndividual ;
+               obo:RO_0000087 aeon:__PIDapalooza_Role_2 ;
+               obo:RO_0002350 aeon:_PIDapalooza_general_committee ;
+               aeon:personal_name "Sam general committee Chair" ;
+               obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string .
+
+
+###  https://github.com/tibonto/aeon#__PIDapalooza_Role_1
+aeon:__PIDapalooza_Role_1 rdf:type owl:NamedIndividual ;
+                          obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string .
+
+
+###  https://github.com/tibonto/aeon#__PIDapalooza_Role_2
+aeon:__PIDapalooza_Role_2 rdf:type owl:NamedIndividual ;
+                          obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string .
+
+
 ###  https://orcid.org/0000-0002-1595-3213
-<https://orcid.org/0000-0002-1595-3213> rdf:type owl:NamedIndividual .
+<https://orcid.org/0000-0002-1595-3213> rdf:type owl:NamedIndividual ;
+                                        aeon:ID_base_URL "https://orcid.org/"^^xsd:anyURI .
 
 
 ###  https://www.wikidata.org/wiki/Q65929359
 <https://www.wikidata.org/wiki/Q65929359> rdf:type owl:NamedIndividual ;
+                                          aeon:ID_base_URL "https://www.wikidata.org/wiki/"^^xsd:anyURI ;
                                           rdfs:comment obo:IAO_0000002 .
 
 
