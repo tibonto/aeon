@@ -2505,6 +2505,95 @@ obo:IAO_0020015 rdf:type owl:Class ;
                 rdfs:label "personal name"@en .
 
 
+###  http://purl.obolibrary.org/obo/IAO_0022000
+obo:IAO_0022000 rdf:type owl:Class ;
+                owl:equivalentClass aeon:AEON_0000034 ;
+                rdfs:subClassOf obo:IAO_0020000 ;
+                obo:IAO_0000111 "http://purl.obolibrary.org/obo/IAO_0000122"@en ;
+                obo:IAO_0000112 "postal codes are assigned by each country"@en ;
+                obo:IAO_0000115 "An identifier issued by more than one authority"@en ;
+                obo:IAO_0000117 "PERSON: Michael Conlon"@en ;
+                obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/ido/release/2021-02-19/ido.owl"^^xsd:string ;
+                rdfs:label "distributed identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022014
+obo:IAO_0022014 rdf:type owl:Class ;
+                owl:equivalentClass aeon:AEON_0000018 ;
+                rdfs:subClassOf obo:IAO_0000578 ;
+                obo:IAO_0000111 "ISNI"@en ,
+                                "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                obo:IAO_0000115 "An identifier for persons and organizations which may be assigned by matching algorithms based on records provided by publishers"@en ;
+                obo:IAO_0000116 "spell out"@en ;
+                obo:IAO_0000117 "PERSON: Michael Conlon"@en ;
+                obo:IAO_0000119 "https://isni.org/page/what-is-isni/"@en ;
+                obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/ido/release/2021-02-19/ido.owl"^^xsd:string ;
+                rdfs:label "international standard name identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022019
+obo:IAO_0022019 rdf:type owl:Class ;
+                owl:equivalentClass aeon:AEON_0000019 ;
+                rdfs:subClassOf obo:IAO_0000578 ;
+                obo:IAO_0000111 "ORCID ID"@en ,
+                                "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                obo:IAO_0000115 "Open Researcher and Contributor ID is an alphanumeric code (ORCID iD) to uniquely identify authors and contributors of scholarly communication"@en ;
+                obo:IAO_0000117 "PERSON: Michael Conlon"@en ;
+                obo:IAO_0000119 "https://en.wikipedia.org/wiki/ORCID"@en ;
+                obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/ido/release/2021-02-19/ido.owl"^^xsd:string ;
+                rdfs:label "open researcher and contributor identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022022
+obo:IAO_0022022 rdf:type owl:Class ;
+                owl:equivalentClass aeon:AEON_0000020 ;
+                rdfs:subClassOf obo:IAO_0000578 ;
+                obo:IAO_0000111 "ROR ID"@en ,
+                                "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                obo:IAO_0000115 "An identifier assigned by ROR to research organizations in the world"@en ;
+                obo:IAO_0000117 "PERSON: Michael Conlon"@en ;
+                obo:IAO_0000119 "http://ror.org"@en ;
+                obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/ido/release/2021-02-19/ido.owl"^^xsd:string ;
+                rdfs:label "research organization registry identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022027
+obo:IAO_0022027 rdf:type owl:Class ;
+                owl:equivalentClass aeon:AEON_0000021 ;
+                rdfs:subClassOf obo:IAO_0000578 ;
+                obo:IAO_0000111 "QID"@en ,
+                                "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                obo:IAO_0000115 "QID (or Q number) is the unique identifier of a data item on Wikidata, comprising the letter \"Q\" followed by one or more digits."@en ;
+                obo:IAO_0000117 "PERSON: Michael Conlon"@en ;
+                obo:IAO_0000119 "https://www.wikidata.org/wiki/Q43649390"@en ;
+                obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/ido/release/2021-02-19/ido.owl"^^xsd:string ;
+                rdfs:label "wikidata q number"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022034
+obo:IAO_0022034 rdf:type owl:Class ;
+                owl:equivalentClass aeon:AEON_0000003 ;
+                rdfs:subClassOf obo:IAO_0020000 ;
+                obo:IAO_0000111 "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                obo:IAO_0000115 "An identifier assigned to an ice by a repository in which it is held"@en ;
+                obo:IAO_0000117 "PERSON: Michael Conlon"@en ;
+                obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/ido/release/2021-02-19/ido.owl"^^xsd:string ;
+                rdfs:label "local information content entity identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0022041
+obo:IAO_0022041 rdf:type owl:Class ;
+                owl:equivalentClass aeon:AEON_0000016 ;
+                rdfs:subClassOf obo:IAO_0020000 ;
+                obo:IAO_0000111 "DOI"@en ,
+                                "http://purl.obolibrary.org/obo/IAO_0000123"@en ;
+                obo:IAO_0000115 "A digital object identifier (DOI) is a persistent identifier or handle used to identify objects uniquely, standardized by the International Organization for Standardization (ISO)."@en ;
+                obo:IAO_0000117 "PERSON: Michael Conlon"@en ;
+                obo:IAO_0000119 "https://en.wikipedia.org/wiki/Digital_object_identifier"@en ;
+                obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/ido/release/2021-02-19/ido.owl"^^xsd:string ;
+                rdfs:label "digital object identifier"@en .
+
+
 ###  http://purl.obolibrary.org/obo/ICO_0000048
 obo:ICO_0000048 rdf:type owl:Class ;
                 rdfs:subClassOf obo:OBI_0000245 ;
