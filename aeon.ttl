@@ -3686,6 +3686,7 @@ aeon:_Person_1 rdf:type owl:NamedIndividual ;
                aeon:AEON_0000059 <https://orcid.org/0000-0002-1595-3213> ;
                aeon:first_name "Philip"^^xsd:string ;
                aeon:last_name "Strömert"^^xsd:string ;
+               ns:term_status obo:IAO_0000002 .
 
 
 ###  https://orcid.org/0000-0002-1595-3213
