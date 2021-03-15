@@ -2367,6 +2367,19 @@ obo:GAZ_00000448 rdf:type owl:Class ;
                  aeon:SMW_import_info "[[Category:GAZ]] [[Category:Imported vocabulary]]" .
 
 
+###  http://purl.obolibrary.org/obo/IAO_0000001
+obo:IAO_0000001 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0000033 ;
+                obo:IAO_0000111 "conditional specification"@en ;
+                obo:IAO_0000114 obo:IAO_0000120 ;
+                obo:IAO_0000115 "A directive information entity that specifies what should happen if the trigger condition is fulfilled."@en ;
+                obo:IAO_0000117 "PlanAndPlannedProcess Branch"@en ;
+                obo:IAO_0000119 "OBI branch derived"@en ,
+                                "OBI_0000349"@en ;
+                obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"^^xsd:string ;
+                rdfs:label "conditional specification"@en .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0000027
 obo:IAO_0000027 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000030 ;
@@ -2411,6 +2424,17 @@ obo:IAO_0000028 rdf:type owl:Class ;
                 rdfs:label "symbol"@en .
 
 
+###  http://purl.obolibrary.org/obo/IAO_0000029
+obo:IAO_0000029 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0000028 ;
+                obo:IAO_0000111 "numeral"@en ;
+                obo:IAO_0000114 obo:IAO_0000123 ;
+                obo:IAO_0000115 "A symbol that denotes a number."@en ;
+                obo:IAO_0000117 "PERSON: Jonathan Rees"@en ;
+                obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"^^xsd:string ;
+                rdfs:label "numeral"@en .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0000030
 obo:IAO_0000030 rdf:type owl:Class ;
                 rdfs:subClassOf obo:BFO_0000031 ,
@@ -2430,6 +2454,21 @@ Previous. An information content entity is a non-realizable information entity t
                 obo:IAO_0000119 "OBI_0000142"@en ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"^^xsd:string ;
                 rdfs:label "information content entity"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000033
+obo:IAO_0000033 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0000030 ;
+                obo:IAO_0000114 obo:IAO_0000122 ;
+                obo:IAO_0000115 "An information content entity whose concretizations indicate to their bearer how to realize them in a process."@en ;
+                obo:IAO_0000116 "2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  \"is the specification of a process that can be concretized and realized by an actor\" with alternative term  \"instruction\".It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term."@en ,
+                                "2013-05-30 Alan Ruttenberg: What differentiates a directive information entity from an information concretization is that it can have concretizations that are either qualities or realizable entities. The concretizations that are realizable entities are created when an individual chooses to take up the direction, i.e. has the intention to (try to) realize it."@en ,
+                                "8/6/2009 Alan Ruttenberg: Changed label from \"information entity about a realizable\" after discussions at ICBO"@en ,
+                                "Werner pushed back on calling it realizable information entity as it isn't realizable. However this name isn't right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn't about the plan, it, once concretized, *is* the plan. -Alan"@en ;
+                obo:IAO_0000117 "PERSON: Alan Ruttenberg"@en ,
+                                "PERSON: Bjoern Peters"@en ;
+                obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"^^xsd:string ;
+                rdfs:label "directive information entity"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000078
