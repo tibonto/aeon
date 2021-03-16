@@ -1414,37 +1414,24 @@ aeon:city rdf:type owl:DatatypeProperty ;
           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#contact
-aeon:contact rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf owl:topDataProperty ;
-             rdfs:domain aeon:AEON_0000009 ;
-             rdfs:label "contact"@en ;
-             aeon:SMW_datatype "Text" ;
-             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
 ###  https://github.com/tibonto/aeon#contact_email
 aeon:contact_email rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf aeon:contact ;
-                   rdfs:domain aeon:AEON_0000009 ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain aeon:contact_person ;
+                   rdfs:range xsd:normalizedString ;
+                   obo:IAO_0000115 "The email adress of the 'contact person' of a planned process."@en ;
+                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                    rdfs:label "contact email"@en ;
                    aeon:SMW_datatype "Email" ;
                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#contact_person_name
-aeon:contact_person_name rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf aeon:contact ;
-                         rdfs:domain aeon:AEON_0000009 ;
-                         rdfs:label "contact person"@en ;
-                         aeon:SMW_datatype "Text" ;
-                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
 ###  https://github.com/tibonto/aeon#contact_phone
 aeon:contact_phone rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf aeon:contact ;
-                   rdfs:domain aeon:AEON_0000009 ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain aeon:contact_person ;
+                   rdfs:range xsd:normalizedString ;
+                   obo:IAO_0000115 "The telefone number of the 'contact person' of a planned process."@en ;
                    rdfs:label "contact phone"@en ;
                    aeon:SMW_datatype "Telephone number" ;
                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
