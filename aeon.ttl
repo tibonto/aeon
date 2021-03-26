@@ -454,7 +454,7 @@ obo:IAO_0000219 rdf:type owl:ObjectProperty ;
                 rdfs:domain obo:IAO_0000030 ;
                 rdfs:range obo:BFO_0000001 ;
                 obo:IAO_0000112 "A person's name denotes the person. A variable name in a computer program denotes some piece of memory. Lexically equivalent strings can denote different things, for instance \"Alan\" can denote different people. In each case of use, there is a case of the denotation relation obtaining, between \"Alan\" and the person that is being named."@en ;
-                obo:IAO_0000115 "A primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to 'pick out' the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically"@en ;
+                obo:IAO_0000115 "A relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to 'pick out' the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically"@en ;
                 obo:IAO_0000116 """2009-11-10 Alan Ruttenberg. Old definition said the following to emphasize the generic nature of this relation. We no longer have 'specifically denotes', which would have been primitive, so make this relation primitive.
 g denotes r =def 
 r is a portion of reality
@@ -650,7 +650,7 @@ aeon:AEON_0000032 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:event_type_of ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000004 ;
-                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a planned  process and a skos:Concept that is used to descibe the social format of an 'academic event'."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a planned process and a skos:Concept that is used to descibe the social format of an 'academic event'."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has event type"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"event_type\"}, \"openresearch\": {\"uri\": null, \"label\": \"Type\"}}"^^xsd:string ;
@@ -665,7 +665,7 @@ aeon:AEON_0000033 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:BFO_0000001 ;
                   rdfs:range aeon:AEON_0000034 ;
-                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between an entity and a distributed identifier that is used to denote the entity."@en ;
+                  obo:IAO_0000115 "A relation obtaining between an entity and a distributed identifier that is used to denote the entity."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ,
                                   "Philip Stroemert"^^xsd:string ;
                   rdfs:label "has distributed identifier"@en ;
@@ -677,7 +677,7 @@ aeon:AEON_0000040 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:academic_field_of ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:AEON_0000027 ;
-                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a planned  process and a skos:Concept that is used to descibe the scientific subject of the planned process according to some controlled vocabulary or thesaurus."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a planned process and a skos:Concept that is used to descibe the scientific subject of the planned process according to some controlled vocabulary or thesaurus."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has academic field"@en .
 
@@ -687,7 +687,7 @@ aeon:AEON_0000041 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:topic_of ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:AEON_0000028 ;
-                  obo:IAO_0000117 "A primitive, instance-level, relation obtaining between a planned  process and a skos:Concept that is used to descibe the theme of the planned process."@en ,
+                  obo:IAO_0000117 "A relation obtaining between a planned process and a skos:Concept that is used to descibe the theme of the planned process."@en ,
                                   "PERSON: Philip Strömert"@en ;
                   rdfs:label "has topic"@en .
 
@@ -697,7 +697,7 @@ aeon:AEON_0000043 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf owl:topObjectProperty ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000030 ;
-                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a planned  process and an 'information content entity' that is about the amount of money one has to pay in order to be an allowed participant of the planned process."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a planned process and an 'information content entity' that is about the amount of money one has to pay in order to be an allowed participant of the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has fee"@en ;
                   aeon:SMW_datatype "Text" ;
@@ -714,8 +714,8 @@ aeon:AEON_0000045 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:contibutes_to ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:contributor ;
-                  obo:IAO_0000115 "'has contributor' is a primitive, instance-level, relation obtaining between a planned  process and a person or organization that holds a contributor role which is being realized by the planned process. A contribution to a planned process takes place when someone works on the planning or realization of a planned process."@en ,
-                                  "A primitive, instance-level, relation obtaining between an entity and its corresponding Wikidata entity identifier."@en ;
+                  obo:IAO_0000115 "'has contributor' is a relation obtaining between a planned process and a person or organization that holds a contributor role which is being realized by the planned process. A contribution to a planned process takes place when someone works on the planning or realization of a planned process."@en ,
+                                  "A relation obtaining between an entity and its corresponding Wikidata entity identifier."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has contributor"@en ;
                   aeon:SMW_datatype "Page" ;
@@ -728,7 +728,7 @@ aeon:AEON_0000046 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:attends_at ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:attendee ;
-                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a planned  process and a person that holds an attendee role which is being realized by the planned process."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a planned process and a person that holds an attendee role which is being realized by the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has attendee"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P710\", \"label\": \"participantLabel\"}}"^^xsd:string ;
@@ -744,7 +744,7 @@ aeon:AEON_0000047 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:moderates_at ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:moderator ;
-                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a planned  process and a person that holds a moderator role which is being realized by the planned process."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a planned process and a person that holds a moderator role which is being realized by the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has moderator"@en ;
                   aeon:SMW_datatype "Page" ;
@@ -757,7 +757,7 @@ aeon:AEON_0000048 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:organizes ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:organizer ;
-                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining  between a planned  process and a person or organization that holds an organizer role which is being realized by the planned process."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a planned process and a person or organization that holds an organizer role which is being realized by the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has organizer"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P664\", \"label\": \"organizerLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_organizer\", \"label\": \"Has_organizer\"},\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"sponsor\"}}}"^^xsd:string ;
@@ -773,7 +773,7 @@ aeon:AEON_0000049 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:reviews_at ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:reviewer ;
-                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a planned  process and a person that holds a reviewer role which is being realized by the planned process."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a planned process and a person that holds a reviewer role which is being realized by the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has reviewer"@en ;
                   aeon:SMW_datatype "Page" ;
@@ -788,7 +788,7 @@ aeon:AEON_0000050 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:speaks_at ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:speaker ;
-                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a planned  process and a person that holds a presenter role which is being realized by the planned process."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a planned process and a person that holds a presenter role which is being realized by the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has presenter"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P823\", \"label\": \"speaker\"}}"^^xsd:string ;
@@ -806,7 +806,7 @@ aeon:AEON_0000051 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:sponsors ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:sponsor ;
-                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a planned process and a person or organization that holds a sponsor role which is being realized by the planned process."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a planned process and a person or organization that holds a sponsor role which is being realized by the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has sponsor"@en ;
                   aeon:SMW_datatype "Page" ;
@@ -821,7 +821,7 @@ aeon:AEON_0000052 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:committee_member_in ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:committee_member ;
-                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining  between a planned  process and a person that holds a committee member role which is being realized by the planned process."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a planned process and a person that holds a committee member role which is being realized by the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has committee member"@en ;
                   aeon:SMW_datatype "Page" ;
@@ -834,7 +834,7 @@ aeon:AEON_0000053 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:contact_person_of ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:contact_person ;
-                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a planned  process and a person that holds a contact person role which is being realized by the planned process."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a planned process and a person that holds a contact person role which is being realized by the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has contact person"@en ;
                   aeon:SMW_datatype "Page" ;
@@ -847,7 +847,7 @@ aeon:AEON_0000054 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:holds_keynote_at ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:keynote_speaker ;
-                  obo:IAO_0000115 "A relation between a planned  process and a person that holds a keynote speaker role which is being realized by the planned process."@en ;
+                  obo:IAO_0000115 "A relation between a planned process and a person that holds a keynote speaker role which is being realized by the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has keynote speaker"@en ;
                   aeon:SMW_datatype "Page" ;
@@ -862,7 +862,7 @@ aeon:AEON_0000055 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:committee_chair_in ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:committee_chair ;
-                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining  between a planned  process and a person that holds a committee chair role which is being realized by the planned process."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a planned process and a person that holds a committee chair role which is being realized by the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has committee chair"@en ;
                   aeon:SMW_datatype "Page" ;
@@ -876,7 +876,7 @@ aeon:AEON_0000075 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:IAO_0000027 ;
                   rdfs:range aeon:AEON_0000016 ;
-                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a data item and its corresponding digital object identifier."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a data item and its corresponding digital object identifier."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has DOI"@en ;
                   ns:term_status obo:IAO_0000423 ;
@@ -891,7 +891,7 @@ aeon:AEON_0000076 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:BFO_0000001 ;
                   rdfs:range aeon:AEON_0000017 ;
-                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between an entity and the identifier used by the German national library to denote the entity."@en ;
+                  obo:IAO_0000115 "A relation obtaining between an entity and the identifier used by the German national library to denote the entity."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has GND"@en ;
                   ns:term_status obo:IAO_0000423 ;
@@ -917,7 +917,7 @@ aeon:AEON_0000077 rdf:type owl:ObjectProperty ;
                                             )
                               ] ;
                   rdfs:range aeon:AEON_0000018 ;
-                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a person or organization  and the 'international standard name identifier' used to denote the entity."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a person or organization and the 'international standard name identifier' used to denote the entity."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has ISNI"@en ;
                   ns:term_status obo:IAO_0000423 ;
@@ -935,7 +935,7 @@ aeon:AEON_0000078 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:NCBITaxon_9606 ;
                   rdfs:range aeon:AEON_0000019 ;
-                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a person and the 'open researcher and contributor identifier' used to denote the entity."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a person and the 'open researcher and contributor identifier' used to denote the entity."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has ORCID"@en ;
                   ns:term_status obo:IAO_0000423 ;
@@ -952,7 +952,7 @@ aeon:AEON_0000079 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:OBI_0000245 ;
                   rdfs:range aeon:AEON_0000020 ;
-                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between a person and the 'research organization registry identifier' used to denote the entity."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a person and the 'research organization registry identifier' used to denote the entity."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has ROR"@en ;
                   ns:term_status obo:IAO_0000423 ;
@@ -969,7 +969,7 @@ aeon:AEON_0000080 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:BFO_0000001 ;
                   rdfs:range aeon:AEON_0000021 ;
-                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between an entity and its corresponding Wikidata entity identifier."@en ;
+                  obo:IAO_0000115 "A relation obtaining between an entity and its corresponding Wikidata entity identifier."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has Wikidata QID"@en ;
                   ns:term_status obo:IAO_0000423 ;
@@ -991,7 +991,7 @@ aeon:AEON_0000081 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:AEON_0000084 ;
                   rdfs:domain aeon:AEON_0000002 ;
                   rdfs:range aeon:AEON_0000001 ;
-                  obo:IAO_0000115 "A primitive, instance-level, relation obtaining between an academic event series and an academic event. It is used to express that the academic event is part of a specific event series."@en ;
+                  obo:IAO_0000115 "A relation obtaining between an academic event series and an academic event. It is used to express that the academic event is part of a specific event series."@en ;
                   rdfs:label "has academic event"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1180,7 +1180,7 @@ aeon:has_WikiCFP_ID rdf:type owl:ObjectProperty ;
                                               )
                                 ] ;
                     rdfs:range aeon:wikiCFP_ID ;
-                    obo:IAO_0000115 "A primitive, instance-level, relation obtaining between an academic event or event series and its corresponding WikiCFP identifier."@en ;
+                    obo:IAO_0000115 "A relation obtaining between an academic event or event series and its corresponding WikiCFP identifier."@en ;
                     obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                     rdfs:label "has WikiCFP ID"@en ;
                     ns:term_status obo:IAO_0000423 ;
@@ -1192,7 +1192,7 @@ aeon:has_collocated_event rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf obo:TXPO_0002523 ;
                           rdfs:domain aeon:AEON_0000001 ;
                           rdfs:range aeon:AEON_0000001 ;
-                          obo:IAO_0000115 """A primitive, instance-level, relation obtaining between an academic event and another academic event. 
+                          obo:IAO_0000115 """A relation obtaining between an academic event and another academic event. 
 A collocated event is an event that takes place at the same location and time as another academic event."""@en ;
                           obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                           rdfs:label "has collocated event"@en .
@@ -1203,7 +1203,7 @@ aeon:has_joint_event rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf obo:TXPO_0002523 ;
                      rdfs:domain aeon:AEON_0000001 ;
                      rdfs:range aeon:AEON_0000001 ;
-                     obo:IAO_0000115 """A primitive, instance-level, relation obtaining between an academic event and another academic event. 
+                     obo:IAO_0000115 """A relation obtaining between an academic event and another academic event. 
 A joint event is an event that shares some of the planning and organizing logistics with another academic event, but is otherwise independent from it."""@en ;
                      obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                      rdfs:label "has joint event"@en .
@@ -1214,7 +1214,7 @@ aeon:has_umbrella_event rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf obo:TXPO_0002523 ;
                         rdfs:domain aeon:AEON_0000001 ;
                         rdfs:range aeon:AEON_0000001 ;
-                        obo:IAO_0000115 """A primitive, instance-level, relation obtaining between an academic event and another academic event or eent series. 
+                        obo:IAO_0000115 """A relation obtaining between an academic event and another academic event or eent series. 
 An umbrelle event is a superordinate event that combines several smaller academic events at the same time
 To say p 'has umbrella event' d =def. there exists an academic event d that is a 
 superordinate event of p and that there must be other academic events that have the same relation.."""@en ;
