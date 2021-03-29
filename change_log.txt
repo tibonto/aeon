@@ -1,7 +1,11 @@
 Change history:
 
-v0.3.0	- date: 03.2021
+v0.3.1	- date: 03.2021
 	* UPDATED --> README.md to include more documentation 
+	* UPDATED --> definitions on some object properties
+
+
+v0.3.0	- date: 03.2021
 	* UPDATED --> namespaces of external ontologies back to obo prefix (IRI resolving must be handled using OBO tools this way, but we want to be strictly obo compliant for now)
 	* UPDATED --> BFO2020 relations to "BFO classes only" & RO relations, as BFO2020's relations collide with RO (see: https://obo-communitygroup.slack.com/archives/C01BDKWDS91/p1612453401048600)
 	* UPDATED --> contributor entity, role & relation pattern
