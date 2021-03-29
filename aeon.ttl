@@ -3399,14 +3399,17 @@ aeon:currency_symbol rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#deadline_specification
 aeon:deadline_specification rdf:type owl:Class ;
-                            owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                  owl:onProperty aeon:deadline ;
-                                                  owl:someValuesFrom xsd:dateTimeStamp
-                                                ] ;
                             rdfs:subClassOf obo:IAO_0000001 ,
-                                            [ rdf:type owl:Restriction ;
-                                              owl:onProperty aeon:is_deadline_specification_of ;
-                                              owl:someValuesFrom obo:OBI_0000011
+                                            [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty aeon:is_deadline_specification_of ;
+                                                                     owl:someValuesFrom obo:OBI_0000011
+                                                                   ]
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty aeon:deadline ;
+                                                                     owl:someValuesFrom xsd:dateTimeStamp
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
                                             ] ;
                             obo:IAO_0000112 "The deadline to submit a paper to the editors of some journal."@en ,
                                             "The deadline to submit the abstract of a paper to a organizing committee of a conference."@en ;
