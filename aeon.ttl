@@ -3226,15 +3226,19 @@ aeon:AEON_0000029 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000030
 aeon:AEON_0000030 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000001 ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty obo:IAO_0000039 ;
-                                    owl:someValuesFrom aeon:currency_symbol
+                                  [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                           owl:onProperty obo:IAO_0000039 ;
+                                                           owl:someValuesFrom aeon:currency_symbol
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty aeon:fee_value ;
+                                                           owl:someValuesFrom xsd:decimal
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
                                   ] ;
-                  obo:IAO_0000112 "reduced fee"@en ,
-                                  "student fee"@en ;
                   obo:IAO_0000114 obo:IAO_0000125 ;
                   obo:IAO_0000115 "A 'conditional specification' that specifies the amount of money one has to pay to attend an event."@en ;
-                  obo:IAO_0000116 "The various kinds of fees that may exist (e.g. student fee, reduced fee ...) are  instances of an event fee specification."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                   rdfs:label "event fee specification"@en ;
                   aeon:SMW_datatype "Category" ;
@@ -3288,6 +3292,15 @@ Defining 'attendee' is not trivial, as the expectations of what an attendee must
               obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
               obo:IAO_0000600 "A person who participates actively or passively in an event."@en ;
               rdfs:label "attendee"@en .
+
+
+###  https://github.com/tibonto/aeon#box_office_fee
+aeon:box_office_fee rdf:type owl:Class ;
+                    rdfs:subClassOf aeon:AEON_0000030 ;
+                    obo:IAO_0000114 obo:IAO_0000125 ;
+                    obo:IAO_0000115 "The registration fee one must pay at the site of the academic event, if it differs from the regular fee."@en ;
+                    obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                    rdfs:label "box office fee"@en .
 
 
 ###  https://github.com/tibonto/aeon#committee_chair
@@ -3417,12 +3430,30 @@ aeon:currency_symbol rdf:type owl:Class ;
                      ns:term_status obo:IAO_0000423 .
 
 
+###  https://github.com/tibonto/aeon#early_bird_fee
+aeon:early_bird_fee rdf:type owl:Class ;
+                    rdfs:subClassOf aeon:AEON_0000030 ;
+                    obo:IAO_0000114 obo:IAO_0000125 ;
+                    obo:IAO_0000115 "The discounted registration fee which is only offered for a specific period long in advance before the academic event takes place."@en ;
+                    obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                    rdfs:label "early bird fee"@en .
+
+
 ###  https://github.com/tibonto/aeon#finance_committee
 aeon:finance_committee rdf:type owl:Class ;
                        rdfs:subClassOf aeon:AEON_0000042 ;
                        obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                        obo:IAO_0000600 "The finance committee has the task of monitoring the budget of an academic event."@en ;
                        rdfs:label "event finance committee"@en .
+
+
+###  https://github.com/tibonto/aeon#free_event_fee
+aeon:free_event_fee rdf:type owl:Class ;
+                    rdfs:subClassOf aeon:AEON_0000030 ;
+                    obo:IAO_0000114 obo:IAO_0000125 ;
+                    obo:IAO_0000115 "A fee specification that specifys that no fee has to be paid fo participate in some planned process."@en ;
+                    obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                    rdfs:label "free event fee"@en .
 
 
 ###  https://github.com/tibonto/aeon#general_committee
@@ -3461,6 +3492,15 @@ aeon:local_committee rdf:type owl:Class ;
                      obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                      obo:IAO_0000600 "The local committee takes care of planning, organizing and carrying out an academic event on site (venue, registration, supply, accommodations etc.)"@en ;
                      rdfs:label "local committee"@en .
+
+
+###  https://github.com/tibonto/aeon#member_fee
+aeon:member_fee rdf:type owl:Class ;
+                rdfs:subClassOf aeon:AEON_0000030 ;
+                obo:IAO_0000114 obo:IAO_0000125 ;
+                obo:IAO_0000115 "The discounted registration fee for members of the organization that hosts/organizes the event."@en ;
+                obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                rdfs:label "member fee"@en .
 
 
 ###  https://github.com/tibonto/aeon#moderator
@@ -3528,6 +3568,24 @@ aeon:publicity_committee rdf:type owl:Class ;
                          obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                          obo:IAO_0000600 "The publicity committee is responsible for the external communication of an academic event: promotion, (social) media relations, web presence, further releases, etc."@en ;
                          rdfs:label "publicity committee"@en .
+
+
+###  https://github.com/tibonto/aeon#reduced_fee
+aeon:reduced_fee rdf:type owl:Class ;
+                 rdfs:subClassOf aeon:AEON_0000030 ;
+                 obo:IAO_0000114 obo:IAO_0000125 ;
+                 obo:IAO_0000115 "The discounted registration fee for a certain group of registrants."@en ;
+                 obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                 rdfs:label "reduced fee"@en .
+
+
+###  https://github.com/tibonto/aeon#regular_fee
+aeon:regular_fee rdf:type owl:Class ;
+                 rdfs:subClassOf aeon:AEON_0000030 ;
+                 obo:IAO_0000114 obo:IAO_0000125 ;
+                 obo:IAO_0000115 "The regular registration fee of the academic event without any discount."@en ;
+                 obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                 rdfs:label "regular fee"@en .
 
 
 ###  https://github.com/tibonto/aeon#reviewer
@@ -3600,6 +3658,15 @@ aeon:sponsorship_committee rdf:type owl:Class ;
                            rdfs:subClassOf aeon:AEON_0000042 ;
                            obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                            rdfs:label "sponsorship committee"@en .
+
+
+###  https://github.com/tibonto/aeon#student_fee
+aeon:student_fee rdf:type owl:Class ;
+                 rdfs:subClassOf aeon:AEON_0000030 ;
+                 obo:IAO_0000114 obo:IAO_0000125 ;
+                 obo:IAO_0000115 "The discounted registration fee for students or PhDs."@en ;
+                 obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                 rdfs:label "student fee"@en .
 
 
 ###  https://github.com/tibonto/aeon#technical_committee
@@ -3852,24 +3919,6 @@ aeon:__PIDapalooza_Role_2 rdf:type owl:NamedIndividual ;
                           obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string .
 
 
-###  https://github.com/tibonto/aeon#box_office_fee
-aeon:box_office_fee rdf:type owl:NamedIndividual ,
-                             aeon:AEON_0000030 ;
-                    obo:IAO_0000114 obo:IAO_0000125 ;
-                    obo:IAO_0000115 "The registration fee one must pay at the site of the academic event, if it differs from the regular fee."@en ;
-                    obo:IAO_0000117 "StroemertP"^^xsd:string ;
-                    rdfs:label "box office fee"@en .
-
-
-###  https://github.com/tibonto/aeon#early_bird_fee
-aeon:early_bird_fee rdf:type owl:NamedIndividual ,
-                             aeon:AEON_0000030 ;
-                    obo:IAO_0000114 obo:IAO_0000125 ;
-                    obo:IAO_0000115 "The discounted registration fee which is only offered for a specific period long in advance before the academic event takes place."@en ;
-                    obo:IAO_0000117 "StroemertP"^^xsd:string ;
-                    rdfs:label "early bird fee"@en .
-
-
 ###  https://github.com/tibonto/aeon#euro
 aeon:euro rdf:type owl:NamedIndividual ,
                    aeon:currency_symbol ;
@@ -3879,49 +3928,6 @@ aeon:euro rdf:type owl:NamedIndividual ,
           rdfs:label "EUR"^^xsd:string .
 
 
-###  https://github.com/tibonto/aeon#member_fee
-aeon:member_fee rdf:type owl:NamedIndividual ,
-                         aeon:AEON_0000030 ;
-                obo:IAO_0000114 obo:IAO_0000125 ;
-                obo:IAO_0000115 "The discounted registration fee for members of the organization that hosts/organizes the event."@en ;
-                obo:IAO_0000117 "StroemertP"^^xsd:string ;
-                rdfs:label "member fee"@en .
-
-
-###  https://github.com/tibonto/aeon#no_fee
-aeon:no_fee rdf:type owl:NamedIndividual ,
-                     aeon:AEON_0000030 ;
-            obo:IAO_0000114 obo:IAO_0000125 ;
-            obo:IAO_0000115 "This instance is to be used for the case that the academic event is free of charge."@en ;
-            obo:IAO_0000117 "StroemertP"^^xsd:string ;
-            rdfs:label "no fee"@en .
-
-
-###  https://github.com/tibonto/aeon#reduced_fee
-aeon:reduced_fee rdf:type owl:NamedIndividual ,
-                          aeon:AEON_0000030 ;
-                 obo:IAO_0000114 obo:IAO_0000125 ;
-                 obo:IAO_0000115 "The discounted registration fee for a certain group of registrants, such as students or PhDs."@en ;
-                 obo:IAO_0000117 "StroemertP"^^xsd:string ;
-                 rdfs:label "reduced fee"@en .
-
-
-###  https://github.com/tibonto/aeon#regular_fee
-aeon:regular_fee rdf:type owl:NamedIndividual ,
-                          aeon:AEON_0000030 ;
-                 obo:IAO_0000114 obo:IAO_0000125 ;
-                 obo:IAO_0000115 "The regular registration fee of the academic event without any discount."@en ;
-                 obo:IAO_0000117 "StroemertP"^^xsd:string ;
-                 rdfs:label "regular fee"@en .
-
-
-###  https://github.com/tibonto/aeon#student_fee
-aeon:student_fee rdf:type owl:NamedIndividual ,
-                          aeon:AEON_0000030 ;
-                 obo:IAO_0000114 obo:IAO_0000125 ;
-                 obo:IAO_0000115 "The discounted registration fee for students or PhDs."@en ;
-                 obo:IAO_0000117 "StroemertP"^^xsd:string ;
-                 rdfs:label "student fee"@en .
 ###  https://orcid.org/0000-0002-1595-3213
 <https://orcid.org/0000-0002-1595-3213> rdf:type owl:NamedIndividual ;
                                         aeon:ID_base_URL "https://orcid.org/"^^xsd:anyURI .
@@ -3964,6 +3970,18 @@ aeon:student_fee rdf:type owl:NamedIndividual ,
 ] .
 
 
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( aeon:box_office_fee
+                aeon:early_bird_fee
+                aeon:free_event_fee
+                aeon:member_fee
+                aeon:reduced_fee
+                aeon:regular_fee
+                aeon:student_fee
+              )
+] .
+
+
 [ rdf:type owl:AllDifferent ;
   owl:distinctMembers ( obo:IAO_0000226
                         obo:IAO_0000227
@@ -3986,18 +4004,6 @@ aeon:student_fee rdf:type owl:NamedIndividual ,
                         aeon:AEON_0010009
                         aeon:AEON_0010010
                         aeon:AEON_0010011
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( aeon:box_office_fee
-                        aeon:early_bird_fee
-                        aeon:member_fee
-                        aeon:no_fee
-                        aeon:reduced_fee
-                        aeon:regular_fee
-                        aeon:student_fee
                       )
 ] .
 
