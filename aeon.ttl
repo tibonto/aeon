@@ -1206,6 +1206,17 @@ A collocated event is an event that takes place at the same location and time as
                           rdfs:label "has collocated event"@en .
 
 
+###  https://github.com/tibonto/aeon#has_deadline
+aeon:has_deadline rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  owl:inverseOf aeon:is_deadline_specification_of ;
+                  rdfs:domain obo:OBI_0000011 ;
+                  rdfs:range aeon:deadline_specification ;
+                  obo:IAO_0000115 "A relation obtaining between a planned process and a deadline specification that defines the date until which a submission will be accepted in some review process."@en ;
+                  obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                  rdfs:label "has deadline specification"@en .
+
+
 ###  https://github.com/tibonto/aeon#has_joint_event
 aeon:has_joint_event rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf obo:TXPO_0002523 ;
@@ -1238,6 +1249,16 @@ aeon:holds_keynote_at rdf:type owl:ObjectProperty ;
                       obo:IAO_0000115 "see inverse relation"@en ;
                       obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                       rdfs:label "holds keynote speech at"@en .
+
+
+###  https://github.com/tibonto/aeon#is_deadline_specification_of
+aeon:is_deadline_specification_of rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf obo:IAO_0000136 ;
+                                  rdfs:domain aeon:deadline_specification ;
+                                  rdfs:range obo:OBI_0000011 ;
+                                  obo:IAO_0000115 "see inverse relation"@en ;
+                                  obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                                  rdfs:label "is deadline specification of"@en .
 
 
 ###  https://github.com/tibonto/aeon#is_event_fee_specification_of
@@ -1369,16 +1390,6 @@ aeon:ID_base_URL rdf:type owl:DatatypeProperty ;
 [[Category:AEON]] [[Category:Imported vocabulary]]""" .
 
 
-###  https://github.com/tibonto/aeon#abstract_deadline
-aeon:abstract_deadline rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf aeon:deadline ;
-                       rdfs:domain aeon:AEON_0000001 ;
-                       rdfs:range xsd:dateTimeStamp ;
-                       rdfs:label "abstract deadline"@en ;
-                       aeon:SMW_datatype "Date" ;
-                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
 ###  https://github.com/tibonto/aeon#acceptance_rate
 aeon:acceptance_rate rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf aeon:metric ;
@@ -1403,16 +1414,6 @@ aeon:accepted_short_papers rdf:type owl:DatatypeProperty ;
                            rdfs:domain aeon:AEON_0000001 ;
                            rdfs:label "accepted short papers"@en ;
                            aeon:SMW_datatype "Number" ;
-                           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#camera-ready_deadline
-aeon:camera-ready_deadline rdf:type owl:DatatypeProperty ;
-                           rdfs:subPropertyOf aeon:deadline ;
-                           rdfs:domain aeon:AEON_0000001 ;
-                           rdfs:range xsd:dateTimeStamp ;
-                           rdfs:label "camera-ready deadline"@en ;
-                           aeon:SMW_datatype "Date" ;
                            aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
@@ -1469,21 +1470,12 @@ aeon:country rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#deadline
 aeon:deadline rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
-              rdfs:domain aeon:AEON_0000001 ;
-              rdfs:range xsd:dateTime ;
-              rdfs:label "deadline"@en ;
+              rdfs:domain aeon:deadline_specification ;
+              rdfs:range xsd:dateTimeStamp ;
+              obo:IAO_0000115 "The literal value of the date that is specified in some deadline specification."@en ;
+              rdfs:label "deadline date"@en ;
               aeon:SMW_datatype "Date" ;
               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#demo_deadline
-aeon:demo_deadline rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf aeon:deadline ;
-                   rdfs:domain aeon:AEON_0000001 ;
-                   rdfs:range xsd:dateTimeStamp ;
-                   rdfs:label "demo deadline"@en ;
-                   aeon:SMW_datatype "Date" ;
-                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#duration
@@ -1701,16 +1693,6 @@ aeon:name rdf:type owl:DatatypeProperty ;
           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#notification_deadline
-aeon:notification_deadline rdf:type owl:DatatypeProperty ;
-                           rdfs:subPropertyOf aeon:deadline ;
-                           rdfs:domain aeon:AEON_0000001 ;
-                           rdfs:range xsd:dateTimeStamp ;
-                           rdfs:label "notification deadline"@en ;
-                           aeon:SMW_datatype "Date" ;
-                           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
 ###  https://github.com/tibonto/aeon#number_of_attendees
 aeon:number_of_attendees rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:metric ;
@@ -1741,16 +1723,6 @@ aeon:organizational_name rdf:type owl:DatatypeProperty ;
                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#paper_deadline
-aeon:paper_deadline rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf aeon:deadline ;
-                    rdfs:domain aeon:AEON_0000001 ;
-                    rdfs:range xsd:dateTimeStamp ;
-                    rdfs:label "paper deadline"@en ;
-                    aeon:SMW_datatype "Date" ;
-                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
 ###  https://github.com/tibonto/aeon#personal_name
 aeon:personal_name rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf aeon:name ;
@@ -1760,16 +1732,6 @@ aeon:personal_name rdf:type owl:DatatypeProperty ;
                    rdfs:label "personal name"@en ;
                    aeon:SMW_datatype "Text" ;
                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#poster_deadline
-aeon:poster_deadline rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf aeon:deadline ;
-                     rdfs:domain aeon:AEON_0000001 ;
-                     rdfs:range xsd:dateTimeStamp ;
-                     rdfs:label "poster deadline"@en ;
-                     aeon:SMW_datatype "Date" ;
-                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 ###  https://github.com/tibonto/aeon#previous_end_date
@@ -1902,16 +1864,6 @@ aeon:state rdf:type owl:DatatypeProperty ;
            aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#submission_deadline
-aeon:submission_deadline rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf aeon:deadline ;
-                         rdfs:domain aeon:AEON_0000001 ;
-                         rdfs:range xsd:dateTimeStamp ;
-                         rdfs:label "submission deadline"@en ;
-                         aeon:SMW_datatype "Date" ;
-                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
 ###  https://github.com/tibonto/aeon#submitted_papers
 aeon:submitted_papers rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf aeon:metric ;
@@ -1937,16 +1889,6 @@ aeon:summary_licence rdf:type owl:DatatypeProperty ;
                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
-###  https://github.com/tibonto/aeon#tutorial_deadline
-aeon:tutorial_deadline rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf aeon:deadline ;
-                       rdfs:domain aeon:AEON_0000001 ;
-                       rdfs:range xsd:dateTimeStamp ;
-                       rdfs:label "tutorial deadline"@en ;
-                       aeon:SMW_datatype "Date" ;
-                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
 ###  https://github.com/tibonto/aeon#venue
 aeon:venue rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf aeon:location ;
@@ -1964,16 +1906,6 @@ aeon:venue_URL rdf:type owl:DatatypeProperty ;
                rdfs:label "venue website"@en ;
                aeon:SMW_datatype "URL" ;
                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
-
-
-###  https://github.com/tibonto/aeon#workshop_deadline
-aeon:workshop_deadline rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf aeon:deadline ;
-                       rdfs:domain aeon:AEON_0000001 ;
-                       rdfs:range xsd:dateTimeStamp ;
-                       rdfs:label "workshop deadline"@en ;
-                       aeon:SMW_datatype "Date" ;
-                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
 #################################################################
@@ -3279,6 +3211,18 @@ aeon:AEON_0000042 rdf:type owl:Class ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
+###  https://github.com/tibonto/aeon#abstract_deadline
+aeon:abstract_deadline rdf:type owl:Class ;
+                       rdfs:subClassOf aeon:deadline_specification ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty aeon:is_deadline_specification_of ;
+                                         owl:someValuesFrom aeon:AEON_0000001
+                                       ] ;
+                       obo:IAO_0000115 "A deadline specification that specifies the date until which an abstract has to be submitted to the participants in charge of a review process."@en ;
+                       obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                       rdfs:label "abstract deadline"@en .
+
+
 ###  https://github.com/tibonto/aeon#attendee
 aeon:attendee rdf:type owl:Class ;
               owl:equivalentClass [ rdf:type owl:Restriction ;
@@ -3312,6 +3256,18 @@ aeon:box_office_fee rdf:type owl:Class ;
                     obo:IAO_0000115 "An event fee specification that specifies the fee one must pay at the site of the event, if it differs from the regular fee."@en ;
                     obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                     rdfs:label "box office fee"@en .
+
+
+###  https://github.com/tibonto/aeon#camera-ready_deadline
+aeon:camera-ready_deadline rdf:type owl:Class ;
+                           rdfs:subClassOf aeon:deadline_specification ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty aeon:is_deadline_specification_of ;
+                                             owl:someValuesFrom aeon:AEON_0000001
+                                           ] ;
+                           obo:IAO_0000115 "A deadline specification that specifies the date until which a submission that is ready for the public release has to be submitted to the participants in charge of a review process."@en ;
+                           obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                           rdfs:label "camera-ready deadline"@en .
 
 
 ###  https://github.com/tibonto/aeon#committee_chair
@@ -3441,6 +3397,36 @@ aeon:currency_symbol rdf:type owl:Class ;
                      ns:term_status obo:IAO_0000423 .
 
 
+###  https://github.com/tibonto/aeon#deadline_specification
+aeon:deadline_specification rdf:type owl:Class ;
+                            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                  owl:onProperty aeon:deadline ;
+                                                  owl:someValuesFrom xsd:dateTimeStamp
+                                                ] ;
+                            rdfs:subClassOf obo:IAO_0000001 ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty aeon:is_deadline_specification_of ;
+                                              owl:someValuesFrom obo:OBI_0000011
+                                            ] ;
+                            obo:IAO_0000112 "The deadline to submit a paper to the editors of some journal."@en ,
+                                            "The deadline to submit the abstract of a paper to a organizing committee of a conference."@en ;
+                            obo:IAO_0000115 "A deadline specification is a conditional specification that specifies the date until which a submission of some information content entity to the participants of some review process  will be accepted."@en ;
+                            obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                            rdfs:label "deadline specification"@en .
+
+
+###  https://github.com/tibonto/aeon#demo_deadline
+aeon:demo_deadline rdf:type owl:Class ;
+                   rdfs:subClassOf aeon:deadline_specification ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty aeon:is_deadline_specification_of ;
+                                     owl:someValuesFrom aeon:AEON_0000001
+                                   ] ;
+                   obo:IAO_0000115 "A deadline specification that specifies the date until which a demonstration of a piece of work has to be submitted to the participants in charge of a review process."@en ;
+                   obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                   rdfs:label "demo deadline"@en .
+
+
 ###  https://github.com/tibonto/aeon#early_bird_fee
 aeon:early_bird_fee rdf:type owl:Class ;
                     rdfs:subClassOf aeon:AEON_0000030 ;
@@ -3535,6 +3521,18 @@ aeon:moderator rdf:type owl:Class ;
                rdfs:label "moderator"@en .
 
 
+###  https://github.com/tibonto/aeon#notification_deadline
+aeon:notification_deadline rdf:type owl:Class ;
+                           rdfs:subClassOf aeon:deadline_specification ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty aeon:is_deadline_specification_of ;
+                                             owl:someValuesFrom aeon:AEON_0000001
+                                           ] ;
+                           obo:IAO_0000115 "A deadline specification that specifies the date until which the participants in charge of a review process will notify the involved parties about the outcome of the review process."@en ;
+                           obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                           rdfs:label "notification deadline"@en .
+
+
 ###  https://github.com/tibonto/aeon#organizer
 aeon:organizer rdf:type owl:Class ;
                owl:equivalentClass [ rdf:type owl:Restriction ;
@@ -3555,6 +3553,30 @@ aeon:organizer rdf:type owl:Class ;
                obo:IAO_0000115 "An organizer is a contributer that holds an organizing role which is being realized in a planned process."@en ;
                obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                obo:IAO_0000600 "A person or organization that is responsible for the planning and realization of a planned process." .
+
+
+###  https://github.com/tibonto/aeon#paper_deadline
+aeon:paper_deadline rdf:type owl:Class ;
+                    rdfs:subClassOf aeon:deadline_specification ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty aeon:is_deadline_specification_of ;
+                                      owl:someValuesFrom aeon:AEON_0000001
+                                    ] ;
+                    obo:IAO_0000115 "A deadline specification that specifies the date until which a paper has to be submitted to the participants in charge of a review process."@en ;
+                    obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                    rdfs:label "paper deadline"@en .
+
+
+###  https://github.com/tibonto/aeon#poster_deadline
+aeon:poster_deadline rdf:type owl:Class ;
+                     rdfs:subClassOf aeon:deadline_specification ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty aeon:is_deadline_specification_of ;
+                                       owl:someValuesFrom aeon:AEON_0000001
+                                     ] ;
+                     obo:IAO_0000115 "A deadline specification that specifies the date until which a poster has to be submitted to the participants in charge of a review process."@en ;
+                     obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                     rdfs:label "poster deadline"@en .
 
 
 ###  https://github.com/tibonto/aeon#program_committee
@@ -3680,11 +3702,35 @@ aeon:student_fee rdf:type owl:Class ;
                  rdfs:label "student fee"@en .
 
 
+###  https://github.com/tibonto/aeon#submission_deadline
+aeon:submission_deadline rdf:type owl:Class ;
+                         rdfs:subClassOf aeon:deadline_specification ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty aeon:is_deadline_specification_of ;
+                                           owl:someValuesFrom aeon:AEON_0000001
+                                         ] ;
+                         obo:IAO_0000115 "A deadline specification that specifies the date until which a piece of work in general, regardles of the format, has to be submitted to the participants in charge of a review process."@en ;
+                         obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                         rdfs:label "submission deadline"@en .
+
+
 ###  https://github.com/tibonto/aeon#technical_committee
 aeon:technical_committee rdf:type owl:Class ;
                          rdfs:subClassOf aeon:AEON_0000042 ;
                          obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                          rdfs:label "technical committee"@en .
+
+
+###  https://github.com/tibonto/aeon#tutorial_deadline
+aeon:tutorial_deadline rdf:type owl:Class ;
+                       rdfs:subClassOf aeon:deadline_specification ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty aeon:is_deadline_specification_of ;
+                                         owl:someValuesFrom aeon:AEON_0000001
+                                       ] ;
+                       obo:IAO_0000115 "A deadline specification that specifies the date until which a tutorial plan has to be submitted to the participants in charge of a review process."@en ;
+                       obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                       rdfs:label "tutorial deadline"@en .
 
 
 ###  https://github.com/tibonto/aeon#wikiCFP_ID
@@ -3693,6 +3739,18 @@ aeon:wikiCFP_ID rdf:type owl:Class ;
                 obo:IAO_0000117 "PERSON: Philip Strömert" ;
                 rdfs:label "wikiCFP ID" ;
                 ns:term_status obo:IAO_0000423 .
+
+
+###  https://github.com/tibonto/aeon#workshop_deadline
+aeon:workshop_deadline rdf:type owl:Class ;
+                       rdfs:subClassOf aeon:deadline_specification ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty aeon:is_deadline_specification_of ;
+                                         owl:someValuesFrom aeon:AEON_0000001
+                                       ] ;
+                       obo:IAO_0000115 "A deadline specification that specifies the date until which a workshop plan has to be submitted to the participants in charge of a review process."@en ;
+                       obo:IAO_0000117 "StroemertP"^^xsd:string ;
+                       rdfs:label "workshop deadline"@en .
 
 
 #################################################################
@@ -3868,6 +3926,8 @@ aeon:Lisbon rdf:type owl:NamedIndividual .
 
 ###  https://github.com/tibonto/aeon#Portugal
 aeon:Portugal rdf:type owl:NamedIndividual .
+
+
 ###  https://github.com/tibonto/aeon#US_dollar
 aeon:US_dollar rdf:type owl:NamedIndividual ,
                         aeon:currency_symbol ;
@@ -3977,6 +4037,20 @@ aeon:euro rdf:type owl:NamedIndividual ,
                 aeon:AEON_0000011
                 aeon:AEON_0000012
                 aeon:AEON_0000013
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( aeon:abstract_deadline
+                aeon:camera-ready_deadline
+                aeon:demo_deadline
+                aeon:notification_deadline
+                aeon:paper_deadline
+                aeon:poster_deadline
+                aeon:submission_deadline
+                aeon:tutorial_deadline
+                aeon:workshop_deadline
               )
 ] .
 
