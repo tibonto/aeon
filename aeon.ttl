@@ -3298,7 +3298,7 @@ Defining 'attendee' is not trivial, as the expectations of what an attendee must
 aeon:box_office_fee rdf:type owl:Class ;
                     rdfs:subClassOf aeon:AEON_0000030 ;
                     obo:IAO_0000114 obo:IAO_0000125 ;
-                    obo:IAO_0000115 "The registration fee one must pay at the site of the academic event, if it differs from the regular fee."@en ;
+                    obo:IAO_0000115 "An event fee specification that specifies the fee one must pay at the site of the event, if it differs from the regular fee."@en ;
                     obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                     rdfs:label "box office fee"@en .
 
@@ -3434,7 +3434,7 @@ aeon:currency_symbol rdf:type owl:Class ;
 aeon:early_bird_fee rdf:type owl:Class ;
                     rdfs:subClassOf aeon:AEON_0000030 ;
                     obo:IAO_0000114 obo:IAO_0000125 ;
-                    obo:IAO_0000115 "The discounted registration fee which is only offered for a specific period long in advance before the academic event takes place."@en ;
+                    obo:IAO_0000115 "An event fee specification that specifies the discounted fee which is only offered for a specific period long in advance before the event takes place."@en ;
                     obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                     rdfs:label "early bird fee"@en .
 
@@ -3451,7 +3451,7 @@ aeon:finance_committee rdf:type owl:Class ;
 aeon:free_event_fee rdf:type owl:Class ;
                     rdfs:subClassOf aeon:AEON_0000030 ;
                     obo:IAO_0000114 obo:IAO_0000125 ;
-                    obo:IAO_0000115 "A fee specification that specifys that no fee has to be paid fo participate in some planned process."@en ;
+                    obo:IAO_0000115 "An event fee specification that specifies that no fee has to be paid fo participate in some event."@en ;
                     obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                     rdfs:label "free event fee"@en .
 
@@ -3498,7 +3498,7 @@ aeon:local_committee rdf:type owl:Class ;
 aeon:member_fee rdf:type owl:Class ;
                 rdfs:subClassOf aeon:AEON_0000030 ;
                 obo:IAO_0000114 obo:IAO_0000125 ;
-                obo:IAO_0000115 "The discounted registration fee for members of the organization that hosts/organizes the event."@en ;
+                obo:IAO_0000115 "An event fee specification that specifies the discounted fee for members of the organization that hosts/organizes the event."@en ;
                 obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                 rdfs:label "member fee"@en .
 
@@ -3574,7 +3574,7 @@ aeon:publicity_committee rdf:type owl:Class ;
 aeon:reduced_fee rdf:type owl:Class ;
                  rdfs:subClassOf aeon:AEON_0000030 ;
                  obo:IAO_0000114 obo:IAO_0000125 ;
-                 obo:IAO_0000115 "The discounted registration fee for a certain group of registrants."@en ;
+                 obo:IAO_0000115 "An event fee specification that specifies the discounted fee of an event for a certain group of registrants."@en ;
                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                  rdfs:label "reduced fee"@en .
 
@@ -3583,7 +3583,7 @@ aeon:reduced_fee rdf:type owl:Class ;
 aeon:regular_fee rdf:type owl:Class ;
                  rdfs:subClassOf aeon:AEON_0000030 ;
                  obo:IAO_0000114 obo:IAO_0000125 ;
-                 obo:IAO_0000115 "The regular registration fee of the academic event without any discount."@en ;
+                 obo:IAO_0000115 "An event fee specification that specifies the regular registration fee of an event without any discount."@en ;
                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                  rdfs:label "regular fee"@en .
 
@@ -3664,7 +3664,7 @@ aeon:sponsorship_committee rdf:type owl:Class ;
 aeon:student_fee rdf:type owl:Class ;
                  rdfs:subClassOf aeon:AEON_0000030 ;
                  obo:IAO_0000114 obo:IAO_0000125 ;
-                 obo:IAO_0000115 "The discounted registration fee for students or PhDs."@en ;
+                 obo:IAO_0000115 "An event fee specification that specifies the discounted fee for students or PhDs."@en ;
                  obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                  rdfs:label "student fee"@en .
 
