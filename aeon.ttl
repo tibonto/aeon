@@ -3429,7 +3429,7 @@ aeon:demo_deadline rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#early_bird_fee
 aeon:early_bird_fee rdf:type owl:Class ;
-                    rdfs:subClassOf aeon:AEON_0000030 ;
+                    rdfs:subClassOf aeon:reduced_fee ;
                     obo:IAO_0000114 obo:IAO_0000125 ;
                     obo:IAO_0000115 "An event fee specification that specifies the discounted fee which is only offered for a specific period long in advance before the event takes place."@en ;
                     obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
@@ -3493,7 +3493,7 @@ aeon:local_committee rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#member_fee
 aeon:member_fee rdf:type owl:Class ;
-                rdfs:subClassOf aeon:AEON_0000030 ;
+                rdfs:subClassOf aeon:reduced_fee ;
                 obo:IAO_0000114 obo:IAO_0000125 ;
                 obo:IAO_0000115 "An event fee specification that specifies the discounted fee for members of the organization that hosts/organizes the event."@en ;
                 obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
@@ -3695,7 +3695,7 @@ aeon:sponsorship_committee rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#student_fee
 aeon:student_fee rdf:type owl:Class ;
-                 rdfs:subClassOf aeon:AEON_0000030 ;
+                 rdfs:subClassOf aeon:reduced_fee ;
                  obo:IAO_0000114 obo:IAO_0000125 ;
                  obo:IAO_0000115 "An event fee specification that specifies the discounted fee for students or PhDs."@en ;
                  obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
