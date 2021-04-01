@@ -2579,6 +2579,7 @@ obo:IAO_0020015 rdf:type owl:Class ;
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
+                rdfs:subClassOf obo:IAO_0020000 ;
                 obo:IAO_0000115 "A personal name is a proper name identifying an individual person."@en ;
                 obo:IAO_0000117 "Mathias Brochhausen" ;
                 obo:IAO_0000119 "http://en.wikipedia.org/wiki/Personal_name" ;
