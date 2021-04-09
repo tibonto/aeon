@@ -6,7 +6,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://github.com/tibonto/aeon"
-     versionIRI="https://github.com/tibonto/aeon/releases/tag/v0.3.0">
+     versionIRI="https://github.com/tibonto/aeon/releases/tag/v0.3.3">
+    <Prefix name="" IRI="https://github.com/tibonto/aeon#"/>
     <Prefix name="dc" IRI="http://dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/"/>
     <Prefix name="ns" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
     <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
@@ -52,7 +53,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal>v0.3.0</Literal>
+        <Literal>v0.3.3</Literal>
     </Annotation>
     <Declaration>
         <Class abbreviatedIRI="obo:BFO_0000001"/>
@@ -1460,6 +1461,10 @@
     <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0020000"/>
         <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:IAO_0020015"/>
+        <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0022000"/>
@@ -5827,7 +5832,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:IAO_0000219</AbbreviatedIRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to &apos;pick out&apos; the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically</Literal>
+        <Literal xml:lang="en">A relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to &apos;pick out&apos; the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
@@ -8290,7 +8295,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000032</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between a planned  process and a skos:Concept that is used to descibe the social format of an &apos;academic event&apos;.</Literal>
+        <Literal xml:lang="en">A relation obtaining between a planned process and a skos:Concept that is used to descibe the social format of an &apos;academic event&apos;.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -8326,12 +8331,17 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000033</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between an entity and a distributed identifier that is used to denote the entity.</Literal>
+        <Literal xml:lang="en">A relation obtaining between an entity and a distributed identifier that is used to denote the entity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
         <IRI>#AEON_0000033</IRI>
         <Literal xml:lang="en">PERSON: Philip Strömert</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>#AEON_0000033</IRI>
+        <Literal>Philip Stroemert</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8366,7 +8376,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000040</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between a planned  process and a skos:Concept that is used to descibe the scientific subject of the planned process according to some controlled vocabulary or thesaurus.</Literal>
+        <Literal xml:lang="en">A relation obtaining between a planned process and a skos:Concept that is used to descibe the scientific subject of the planned process according to some controlled vocabulary or thesaurus.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -8381,7 +8391,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
         <IRI>#AEON_0000041</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between a planned  process and a skos:Concept that is used to descibe the theme of the planned process.</Literal>
+        <Literal xml:lang="en">A relation obtaining between a planned process and a skos:Concept that is used to descibe the theme of the planned process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -8421,7 +8431,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000043</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between a planned  process and an &apos;information content entity&apos; that is about the amount of money one has to pay in order to be an allowed participant of the planned process.</Literal>
+        <Literal xml:lang="en">A relation obtaining between a planned process and an &apos;information content entity&apos; that is about the amount of money one has to pay in order to be an allowed participant of the planned process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -8450,12 +8460,12 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000045</IRI>
-        <Literal xml:lang="en">&apos;has contributor&apos; is a primitive, instance-level, relation obtaining between a planned  process and a person or organization that holds a contributor role which is being realized by the planned process. A contribution to a planned process takes place when someone works on the planning or realization of a planned process.</Literal>
+        <Literal xml:lang="en">&apos;has contributor&apos; is a relation obtaining between a planned process and a person or organization that holds a contributor role which is being realized by the planned process. A contribution to a planned process takes place when someone works on the planning or realization of a planned process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000045</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between an entity and its corresponding Wikidata entity identifier.</Literal>
+        <Literal xml:lang="en">A relation obtaining between an entity and its corresponding Wikidata entity identifier.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -8480,7 +8490,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000046</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between a planned  process and a person that holds an attendee role which is being realized by the planned process.</Literal>
+        <Literal xml:lang="en">A relation obtaining between a planned process and a person that holds an attendee role which is being realized by the planned process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -8520,7 +8530,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000047</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between a planned  process and a person that holds a moderator role which is being realized by the planned process.</Literal>
+        <Literal xml:lang="en">A relation obtaining between a planned process and a person that holds a moderator role which is being realized by the planned process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -8545,7 +8555,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000048</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining  between a planned  process and a person or organization that holds an organizer role which is being realized by the planned process.</Literal>
+        <Literal xml:lang="en">A relation obtaining between a planned process and a person or organization that holds an organizer role which is being realized by the planned process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -8585,7 +8595,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000049</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between a planned  process and a person that holds a reviewer role which is being realized by the planned process.</Literal>
+        <Literal xml:lang="en">A relation obtaining between a planned process and a person that holds a reviewer role which is being realized by the planned process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -8612,7 +8622,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000050</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between a planned  process and a person that holds a presenter role which is being realized by the planned process.</Literal>
+        <Literal xml:lang="en">A relation obtaining between a planned process and a person that holds a presenter role which is being realized by the planned process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -8654,7 +8664,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000051</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between a planned process and a person or organization that holds a sponsor role which is being realized by the planned process.</Literal>
+        <Literal xml:lang="en">A relation obtaining between a planned process and a person or organization that holds a sponsor role which is being realized by the planned process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -8681,7 +8691,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000052</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining  between a planned  process and a person that holds a committee member role which is being realized by the planned process.</Literal>
+        <Literal xml:lang="en">A relation obtaining between a planned process and a person that holds a committee member role which is being realized by the planned process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -8706,7 +8716,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000053</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between a planned  process and a person that holds a contact person role which is being realized by the planned process.</Literal>
+        <Literal xml:lang="en">A relation obtaining between a planned process and a person that holds a contact person role which is being realized by the planned process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -8731,7 +8741,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000054</IRI>
-        <Literal xml:lang="en">A relation between a planned  process and a person that holds a keynote speaker role which is being realized by the planned process.</Literal>
+        <Literal xml:lang="en">A relation between a planned process and a person that holds a keynote speaker role which is being realized by the planned process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -8758,7 +8768,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000055</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining  between a planned  process and a person that holds a committee chair role which is being realized by the planned process.</Literal>
+        <Literal xml:lang="en">A relation obtaining between a planned process and a person that holds a committee chair role which is being realized by the planned process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -8785,7 +8795,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000075</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between a data item and its corresponding digital object identifier.</Literal>
+        <Literal xml:lang="en">A relation obtaining between a data item and its corresponding digital object identifier.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -8817,7 +8827,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000076</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between an entity and the identifier used by the German national library to denote the entity.</Literal>
+        <Literal xml:lang="en">A relation obtaining between an entity and the identifier used by the German national library to denote the entity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -8868,7 +8878,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000077</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between a person or organization  and the &apos;international standard name identifier&apos; used to denote the entity.</Literal>
+        <Literal xml:lang="en">A relation obtaining between a person or organization and the &apos;international standard name identifier&apos; used to denote the entity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -8903,7 +8913,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000078</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between a person and the &apos;open researcher and contributor identifier&apos; used to denote the entity.</Literal>
+        <Literal xml:lang="en">A relation obtaining between a person and the &apos;open researcher and contributor identifier&apos; used to denote the entity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -8937,7 +8947,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000079</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between a person and the &apos;research organization registry identifier&apos; used to denote the entity.</Literal>
+        <Literal xml:lang="en">A relation obtaining between a person and the &apos;research organization registry identifier&apos; used to denote the entity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -8971,7 +8981,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000080</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between an entity and its corresponding Wikidata entity identifier.</Literal>
+        <Literal xml:lang="en">A relation obtaining between an entity and its corresponding Wikidata entity identifier.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -9017,7 +9027,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#AEON_0000081</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between an academic event series and an academic event. It is used to express that the academic event is part of a specific event series.</Literal>
+        <Literal xml:lang="en">A relation obtaining between an academic event series and an academic event. It is used to express that the academic event is part of a specific event series.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10059,11 +10069,6 @@ cancled → withdrawn</Literal>
         <Literal>[[Category:AEON]] [[Category:Imported vocabulary]]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>#event_type_of</IRI>
-        <Literal xml:lang="en">see inverse property</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
         <IRI>#event_type_of</IRI>
         <Literal>PERSON: Philip Strömert</Literal>
@@ -10234,7 +10239,7 @@ cancled → withdrawn</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#has_WikiCFP_ID</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between an academic event or event series and its corresponding WikiCFP identifier.</Literal>
+        <Literal xml:lang="en">A relation obtaining between an academic event or event series and its corresponding WikiCFP identifier.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -10259,7 +10264,7 @@ cancled → withdrawn</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#has_collocated_event</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between an academic event and another academic event. 
+        <Literal xml:lang="en">A relation obtaining between an academic event and another academic event. 
 A collocated event is an event that takes place at the same location and time as another academic event.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -10275,7 +10280,7 @@ A collocated event is an event that takes place at the same location and time as
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#has_joint_event</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between an academic event and another academic event. 
+        <Literal xml:lang="en">A relation obtaining between an academic event and another academic event. 
 A joint event is an event that shares some of the planning and organizing logistics with another academic event, but is otherwise independent from it.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -10291,7 +10296,7 @@ A joint event is an event that shares some of the planning and organizing logist
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>#has_umbrella_event</IRI>
-        <Literal xml:lang="en">A primitive, instance-level, relation obtaining between an academic event and another academic event or eent series. 
+        <Literal xml:lang="en">A relation obtaining between an academic event and another academic event or eent series. 
 An umbrelle event is a superordinate event that combines several smaller academic events at the same time
 To say p &apos;has umbrella event&apos; d =def. there exists an academic event d that is a 
 superordinate event of p and that there must be other academic events that have the same relation..</Literal>

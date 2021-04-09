@@ -1,5 +1,9 @@
 Change history:
 
+v0.3.3	- date: 04.2021
+	* UPDATED --> aeon.ttl to new version
+	* UPDATED --> aeon.owl via manual export of aeon.ttl (pre-commit git hook using ROBOT is still not working under Windows 8)
+
 v0.3.2	- date: 04.2021
 	* FIXED --> iao:personal name was not subsumed under iao:identifier (possibly a MIREOT import error)
 
