@@ -1205,7 +1205,7 @@ aeon:has_umbrella_event rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf obo:TXPO_0002523 ;
                         rdfs:domain aeon:AEON_0000001 ;
                         rdfs:range aeon:AEON_0000001 ;
-                        obo:IAO_0000115 """A relation obtaining between an academic event and another academic event or eent series. An umbrelle event is a superordinate event that combines several smaller academic events at the same time. To say p 'has umbrella event' d =def. there exists an academic event d that is a superordinate event of p and that there must be other academic events that have the same relation."""@en ;
+                        obo:IAO_0000115 "A relation obtaining between an academic event and another academic event or event series. An umbrelle event is a superordinate event that combines several smaller academic events at the same time. To say p 'has umbrella event' d =def. there exists an academic event d that is a superordinate event of p and that there must be other academic events that have the same relation."@en ;
                         obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                         rdfs:label "has umbrella event"@en .
 
