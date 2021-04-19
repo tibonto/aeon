@@ -2587,7 +2587,7 @@ obo:IAO_0022000 rdf:type owl:Class ;
                 obo:IAO_0000115 "An identifier issued by more than one authority"@en ;
                 obo:IAO_0000117 "PERSON: Michael Conlon"@en ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/ido/release/2021-02-19/ido.owl"^^xsd:string ;
-                rdfs:label "distributed identifier"@en .
+                rdfs:label "distributed identifier  (IAO tbc)"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0022014
@@ -2664,7 +2664,7 @@ obo:IAO_0022041 rdf:type owl:Class ;
                 obo:IAO_0000117 "PERSON: Michael Conlon"@en ;
                 obo:IAO_0000119 "https://en.wikipedia.org/wiki/Digital_object_identifier"@en ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/ido/release/2021-02-19/ido.owl"^^xsd:string ;
-                rdfs:label "digital object identifier"@en .
+                rdfs:label "digital object identifier (IAO tbc)"@en .
 
 
 ###  http://purl.obolibrary.org/obo/ICO_0000048
