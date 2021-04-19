@@ -114,8 +114,7 @@ obo:IAO_0000117 rdf:type owl:AnnotationProperty ;
                 obo:IAO_0000117 "PERSON:Daniel Schober"@en ;
                 obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
                 rdfs:isDefinedBy obo:iao.owl ;
-                rdfs:label "definition editor"@en ,
-                           "term editor"@en .
+                rdfs:label "definition editor"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000118
@@ -1007,8 +1006,7 @@ aeon:AEON_0000083 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:has_joint_event ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000001 ;
-                  obo:IAO_0000115 "see also inverse property: A relation obtaining between an academic event and another academic event. A joint event is an event that shares some of the planning and organizing logistics with another academic event, but is otherwise independent from it."@en ,
-                                  "see inverse property"@en ;
+                  obo:IAO_0000115 "see also inverse property: A relation obtaining between an academic event and another academic event. A joint event is an event that shares some of the planning and organizing logistics with another academic event, but is otherwise independent from it."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "joint event of"@en ;
                   aeon:SMW_datatype "Page" ;
