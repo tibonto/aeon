@@ -91,8 +91,7 @@ We also have the outstanding issue of how to aim different definitions to differ
                 obo:IAO_0000117 "PERSON:Daniel Schober"@en ;
                 obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
                 rdfs:isDefinedBy obo:iao.owl ;
-                rdfs:label "definition" ,
-                           "definition"@en .
+                rdfs:label "definition"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000116
@@ -115,9 +114,7 @@ obo:IAO_0000117 rdf:type owl:AnnotationProperty ;
                 obo:IAO_0000117 "PERSON:Daniel Schober"@en ;
                 obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
                 rdfs:isDefinedBy obo:iao.owl ;
-                rdfs:label "definition editor" ,
-                           "definition editor"@en ,
-                           "term editor" ,
+                rdfs:label "definition editor"@en ,
                            "term editor"@en .
 
 
@@ -308,12 +305,14 @@ aeon:SMW_import_info rdf:type owl:AnnotationProperty .
 
 ###  https://github.com/tibonto/aeon#WikidataLabel
 aeon:WikidataLabel rdf:type owl:AnnotationProperty ;
-                   obo:IAO_0000115 "WikidataLabel is used to map a class or property to a certain label in the Wikidata namespace." .
+                   obo:IAO_0000115 "WikidataLabel is used to map a class or property to a certain label in the Wikidata namespace." ;
+                   rdfs:label "Wikidata label"@en .
 
 
 ###  https://github.com/tibonto/aeon#WikidataURI
 aeon:WikidataURI rdf:type owl:AnnotationProperty ;
-                 obo:IAO_0000115 "WikidataURI is used to map a class or property to the URI in the Wikidata namespace." .
+                 obo:IAO_0000115 "WikidataURI is used to map a class or property to the URI in the Wikidata namespace." ;
+                 rdfs:label "Wikidata URI"@en .
 
 
 #################################################################
@@ -640,17 +639,12 @@ obo:TXPO_0002523 rdf:type owl:ObjectProperty ;
                  rdfs:label "has occurrent part" .
 
 
-###  http://www.w3.org/2002/07/owl#topObjectProperty
-owl:topObjectProperty obo:IAO_0000115 """'has academic field' is a primitive, instance-level relation obtaining between a planned process and the skos:Concept subclass 'academic field'. 
-To say p has academic field x =def. p is a planned process, there is some x that is an academic field of p."""@en .
-
-
 ###  https://github.com/tibonto/aeon#AEON_0000032
 aeon:AEON_0000032 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:event_type_of ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000004 ;
-                  obo:IAO_0000115 "A relation obtaining between a planned process and a skos:Concept that is used to descibe the social format of an 'academic event'."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a planned process and a skos:Concept that is used to descibe the social format of an 'academic event'. A set of possible common event types is provided as named individuals."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has event type"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"event_type\"}, \"openresearch\": {\"uri\": null, \"label\": \"Type\"}}"^^xsd:string ;
@@ -714,8 +708,7 @@ aeon:AEON_0000045 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:contibutes_to ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:contributor ;
-                  obo:IAO_0000115 "'has contributor' is a relation obtaining between a planned process and a person or organization that holds a contributor role which is being realized by the planned process. A contribution to a planned process takes place when someone works on the planning or realization of a planned process."@en ,
-                                  "A relation obtaining between an entity and its corresponding Wikidata entity identifier."@en ;
+                  obo:IAO_0000115 "'has contributor' is a relation obtaining between a planned process and a person or organization that holds a contributor role which is being realized by the planned process. A contribution to a planned process takes place when someone works on the planning or realization of a planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has contributor"@en ;
                   aeon:SMW_datatype "Page" ;
@@ -893,7 +886,7 @@ aeon:AEON_0000076 rdf:type owl:ObjectProperty ;
                   rdfs:range aeon:AEON_0000017 ;
                   obo:IAO_0000115 "A relation obtaining between an entity and the identifier used by the German national library to denote the entity."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "has GND"@en ;
+                  rdfs:label "has GND ID"@en ;
                   ns:term_status obo:IAO_0000423 ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P227\", \"label\": \"GND_ID\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#gndIdentifier\", \"label\": \"GND-Identifier\"}}"^^xsd:string ;
                   aeon:SMW_datatype "External identifier" ;
@@ -954,7 +947,7 @@ aeon:AEON_0000079 rdf:type owl:ObjectProperty ;
                   rdfs:range aeon:AEON_0000020 ;
                   obo:IAO_0000115 "A relation obtaining between a person and the 'research organization registry identifier' used to denote the entity."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "has ROR"@en ;
+                  rdfs:label "has ROR ID"@en ;
                   ns:term_status obo:IAO_0000423 ;
                   aeon:SMW_datatype "External identifier" ;
                   aeon:SMW_import_info """External formatter uri [[External formatter uri::https://ror.org/$1]]
@@ -991,7 +984,7 @@ aeon:AEON_0000081 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:AEON_0000084 ;
                   rdfs:domain aeon:AEON_0000002 ;
                   rdfs:range aeon:AEON_0000001 ;
-                  obo:IAO_0000115 "A relation obtaining between an academic event series and an academic event. It is used to express that the academic event is part of a specific event series."@en ;
+                  obo:IAO_0000115 "A relation obtaining between an academic event series and an academic event. It is used to express that the academic event series has a specific academic event as its part."@en ;
                   rdfs:label "has academic event"@en ;
                   aeon:SMW_datatype "Page" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
@@ -1003,7 +996,7 @@ aeon:AEON_0000082 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:has_collocated_event ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000001 ;
-                  obo:IAO_0000115 "see inverse property"@en ;
+                  obo:IAO_0000115 "see also inverse property: A relation obtaining between an academic event and another academic event. A collocated event is an event that takes place at the same location and time as another academic event."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "collocated event of"@en ;
                   aeon:SMW_datatype "Page" ;
@@ -1016,7 +1009,8 @@ aeon:AEON_0000083 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:has_joint_event ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000001 ;
-                  obo:IAO_0000115 "see inverse property"@en ;
+                  obo:IAO_0000115 "see also inverse property: A relation obtaining between an academic event and another academic event. A joint event is an event that shares some of the planning and organizing logistics with another academic event, but is otherwise independent from it."@en ,
+                                  "see inverse property"@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "joint event of"@en ;
                   aeon:SMW_datatype "Page" ;
@@ -1028,7 +1022,7 @@ aeon:AEON_0000084 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:RO_0002012 ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000002 ;
-                  obo:IAO_0000115 "see inverse property"@en ;
+                  obo:IAO_0000115 "A relation obtaining between an academic event and an academic event series. It is used to express that the academic event is part of a specific event series."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "part of series"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P179\", \"label\": \"part_of_the_seriesLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Event_in_series\", \"label\": \"Event_in_series\"}}"^^xsd:string ;
@@ -1042,7 +1036,7 @@ aeon:AEON_0000085 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:has_umbrella_event ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000001 ;
-                  obo:IAO_0000115 "see inverse property"@en ;
+                  obo:IAO_0000115 "see also inverse property: A relation obtaining between an academic event and another academic event or event series. An umbrelle event/series is a superordinate event/series that combines several smaller academic events/series at the same time."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "umbrella event of"@en ;
                   aeon:SMW_datatype "Page" ;
@@ -1108,9 +1102,9 @@ aeon:AEON_0000090 rdf:type owl:ObjectProperty ;
 aeon:academic_field_of rdf:type owl:ObjectProperty ;
                        rdfs:domain aeon:AEON_0000027 ;
                        rdfs:range obo:OBI_0000011 ;
-                       obo:IAO_0000115 "see inverse property"@en ;
+                       obo:IAO_0000115 "see also inverse property: A relation obtaining between a skos:Concept and a planned process, in which the former is used to descibe the scientific subject of the latter according to some controlled vocabulary or thesaurus."@en ;
                        obo:IAO_0000117 "StroemertP"^^xsd:string ;
-                       rdfs:label "academicfield of"@en .
+                       rdfs:label "academic field of"@en .
 
 
 ###  https://github.com/tibonto/aeon#attends_at
@@ -1118,7 +1112,7 @@ aeon:attends_at rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf aeon:contibutes_to ;
                 rdfs:domain aeon:attendee ;
                 rdfs:range obo:OBI_0000011 ;
-                obo:IAO_0000115 "see inverse relation"@en ;
+                obo:IAO_0000115 "A relation obtaining between a person and a planned process, in which the person holds an attendee role that is being realized by the planned process."@en ;
                 obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                 rdfs:label "attentds at"@en .
 
@@ -1128,7 +1122,7 @@ aeon:committee_chair_in rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf aeon:committee_member_in ;
                         rdfs:domain aeon:committee_chair ;
                         rdfs:range obo:OBI_0000011 ;
-                        obo:IAO_0000115 "see inverse relation"@en ;
+                        obo:IAO_0000115 "A relation obtaining between a person or organization and a planned process, in which the person or organization holds an organizer role that is being realized by the planned process."@en ;
                         obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                         rdfs:label "committee chair in"@en .
 
@@ -1138,7 +1132,7 @@ aeon:committee_member_in rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf aeon:organizes ;
                          rdfs:domain aeon:committee_member ;
                          rdfs:range obo:OBI_0000011 ;
-                         obo:IAO_0000115 "see inverse relation"@en ;
+                         obo:IAO_0000115 "A relation obtaining between a person and a planned process, in which the person holds a committee member role that is being realized by the planned process."@en ;
                          obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                          rdfs:label "committee member in"@en .
 
@@ -1148,7 +1142,7 @@ aeon:contact_person_of rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf aeon:organizes ;
                        rdfs:domain aeon:contact_person ;
                        rdfs:range obo:OBI_0000011 ;
-                       obo:IAO_0000115 "see inverse relation"@en ;
+                       obo:IAO_0000115 "A relation obtaining between a person and a planned process, in which the person holds the role of being the designated contact person and that role is being realized by the planned process."@en ;
                        obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                        rdfs:label "contact person of"@en .
 
@@ -1158,7 +1152,7 @@ aeon:contibutes_to rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf obo:RO_0000056 ;
                    rdfs:domain aeon:contributor ;
                    rdfs:range obo:OBI_0000011 ;
-                   obo:IAO_0000115 "see inverse relation"@en ;
+                   obo:IAO_0000115 "A relation obtaining between a person or organization and a planned process, in which the person or organization holds a contributor role that is being realized by the planned process."@en ;
                    obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                    rdfs:label "contributes to"@en .
 
@@ -1167,6 +1161,7 @@ aeon:contibutes_to rdf:type owl:ObjectProperty ;
 aeon:event_type_of rdf:type owl:ObjectProperty ;
                    rdfs:domain aeon:AEON_0000004 ;
                    rdfs:range aeon:AEON_0000001 ;
+                   obo:IAO_0000115 "see also inverse property: A relation obtaining between a skos:Concept and a planned process, in which the former is used to descibe the format of the latter. A set of possible common event types is provided as named individuals."@en ;
                    obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                    rdfs:label "event type of"@en .
 
@@ -1192,8 +1187,7 @@ aeon:has_collocated_event rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf obo:TXPO_0002523 ;
                           rdfs:domain aeon:AEON_0000001 ;
                           rdfs:range aeon:AEON_0000001 ;
-                          obo:IAO_0000115 """A relation obtaining between an academic event and another academic event. 
-A collocated event is an event that takes place at the same location and time as another academic event."""@en ;
+                          obo:IAO_0000115 "A relation obtaining between an academic event and another academic event. A collocated event is an event that takes place at the same location and time as another academic event."@en ;
                           obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                           rdfs:label "has collocated event"@en .
 
@@ -1203,8 +1197,7 @@ aeon:has_joint_event rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf obo:TXPO_0002523 ;
                      rdfs:domain aeon:AEON_0000001 ;
                      rdfs:range aeon:AEON_0000001 ;
-                     obo:IAO_0000115 """A relation obtaining between an academic event and another academic event. 
-A joint event is an event that shares some of the planning and organizing logistics with another academic event, but is otherwise independent from it."""@en ;
+                     obo:IAO_0000115 "A relation obtaining between an academic event and another academic event. A joint event is an event that shares some of the planning and organizing logistics with another academic event, but is otherwise independent from it."@en ;
                      obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                      rdfs:label "has joint event"@en .
 
@@ -1214,10 +1207,8 @@ aeon:has_umbrella_event rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf obo:TXPO_0002523 ;
                         rdfs:domain aeon:AEON_0000001 ;
                         rdfs:range aeon:AEON_0000001 ;
-                        obo:IAO_0000115 """A relation obtaining between an academic event and another academic event or eent series. 
-An umbrelle event is a superordinate event that combines several smaller academic events at the same time
-To say p 'has umbrella event' d =def. there exists an academic event d that is a 
-superordinate event of p and that there must be other academic events that have the same relation.."""@en ;
+                        obo:IAO_0000115 """A relation obtaining between an academic event and another academic event or eent series. An umbrelle event is a superordinate event that combines several smaller academic events at the same time.
+To say p 'has umbrella event' d =def. there exists an academic event d that is a superordinate event of p and that there must be other academic events that have the same relation."""@en ;
                         obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                         rdfs:label "has umbrella event"@en .
 
@@ -1227,7 +1218,7 @@ aeon:holds_keynote_at rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf aeon:speaks_at ;
                       rdfs:domain aeon:keynote_speaker ;
                       rdfs:range obo:OBI_0000011 ;
-                      obo:IAO_0000115 "see inverse relation"@en ;
+                      obo:IAO_0000115 "A relation between a person and a planned process, in which the person holds a keynote speaker role that is being realized by the planned process."@en ;
                       obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                       rdfs:label "holds keynote speech at"@en .
 
@@ -1237,7 +1228,7 @@ aeon:moderates_at rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:contibutes_to ;
                   rdfs:domain aeon:moderator ;
                   rdfs:range obo:OBI_0000011 ;
-                  obo:IAO_0000115 "see inverse relation"@en ;
+                  obo:IAO_0000115 "A relation obtaining between a person and a planned process, in which the person holds a moderator role that is being realized by the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                   rdfs:label "moderates at"@en .
 
@@ -1247,7 +1238,7 @@ aeon:organizes rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf aeon:contibutes_to ;
                rdfs:domain aeon:organizer ;
                rdfs:range obo:OBI_0000011 ;
-               obo:IAO_0000115 "see inverse relation"@en ;
+               obo:IAO_0000115 "A relation obtaining between a person or organization and a planned process, in which the person or organization holds an organizer role that is being realized by the planned process."@en ;
                obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                rdfs:label "organizes"@en .
 
@@ -1257,7 +1248,7 @@ aeon:reviews_at rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf aeon:contibutes_to ;
                 rdfs:domain aeon:reviewer ;
                 rdfs:range obo:OBI_0000011 ;
-                obo:IAO_0000115 "see inverse relation"@en ;
+                obo:IAO_0000115 "A relation between a person and a planned process, in which the person holds a reviewer role that is being realized by the planned process."@en ;
                 obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                 rdfs:label "reviews at"@en .
 
@@ -1267,7 +1258,7 @@ aeon:speaks_at rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf aeon:contibutes_to ;
                rdfs:domain aeon:speaker ;
                rdfs:range obo:OBI_0000011 ;
-               obo:IAO_0000115 "see inverse relation"@en ;
+               obo:IAO_0000115 "A relation obtaining between a person and a planned process, in which the person holds a presenter role that is being realized by the planned process."@en ;
                obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                rdfs:label "presents at"@en .
 
@@ -1277,15 +1268,16 @@ aeon:sponsors rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf aeon:contibutes_to ;
               rdfs:domain aeon:sponsor ;
               rdfs:range obo:OBI_0000011 ;
-              obo:IAO_0000115 "see inverse relation"@en ;
-              obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string .
+              obo:IAO_0000115 "A relation obtaining between a person or organization and a planned process, in which the person or organization holds a sponsor role that is being realized by the planned process."@en ;
+              obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+              rdfs:label "sponsors"@en .
 
 
 ###  https://github.com/tibonto/aeon#topic_of
 aeon:topic_of rdf:type owl:ObjectProperty ;
               rdfs:domain aeon:AEON_0000028 ;
               rdfs:range obo:OBI_0000011 ;
-              obo:IAO_0000115 "see inverse property"@en ;
+              obo:IAO_0000115 "see also inverse property: A relation obtaining betweenv a skos:Concept and a planned process, in which the former is used to descibe the theme of the latter."@en ;
               obo:IAO_0000117 "StroemertP"^^xsd:string ;
               rdfs:label "topic of"@en .
 
@@ -1429,7 +1421,7 @@ aeon:contact_email rdf:type owl:DatatypeProperty ;
 aeon:contact_person_name rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:contact ;
                          rdfs:domain aeon:AEON_0000009 ;
-                         rdfs:label "contact person"@en ;
+                         rdfs:label "contact person name"@en ;
                          aeon:SMW_datatype "Text" ;
                          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -3012,8 +3004,7 @@ aeon:AEON_0000012 rdf:type owl:Class ;
                                                            ]
                                       ] ;
                   rdfs:subClassOf aeon:AEON_0000005 ;
-                  obo:IAO_0000115 "Evaluation of scientific, academic, or professional work, such as manuscripts or grants by others working in the same field."@en ,
-                                  "The reviewer role inheres in a person that contributes to a planned process by reviewing something of interest in a planned process."@en ;
+                  obo:IAO_0000115 "Evaluation of scientific, academic, or professional work, such as manuscripts or grants by others working in the same field. The reviewer role inheres in a person that contributes to a planned process by reviewing something of interest in a planned process."@en ;
                   obo:IAO_0000116 "ToDo: use CRO IRI http://purl.obolibrary.org/obo/CRO_0000101"@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   obo:IAO_0000118 "manuscript review role"@en ;
@@ -3172,7 +3163,7 @@ aeon:AEON_0000023 rdf:type owl:Class ;
 aeon:AEON_0000024 rdf:type owl:Class ;
                   rdfs:subClassOf obo:GAZ_00000448 ;
                   obo:IAO_0000118 "province"@en ;
-                  rdfs:label "state"@en ;
+                  rdfs:label "region"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
@@ -3299,8 +3290,7 @@ aeon:committee_chair rdf:type owl:Class ;
                      obo:IAO_0000114 obo:IAO_0000423 ;
                      obo:IAO_0000115 "A committee chair is a committee member that holds a committee chair role which is being realized in a planned process."@en ;
                      obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
-                     obo:IAO_0000600 "A committee chair is a committe member that is expected to speak on behalf of and to be responsible for the committee."@en ,
-                                     "The person who is in charge of a committee with primary responsibility for carrying out the committee's duties."@en ;
+                     obo:IAO_0000600 "A committee chair is a committe member that is expected to speak on behalf of and to be responsible for the committee. The person who is in charge of a committee with primary responsibility for carrying out the committee's duties."@en ;
                      rdfs:label "event committee chair"@en .
 
 
@@ -3477,7 +3467,8 @@ aeon:organizer rdf:type owl:Class ;
                obo:IAO_0000114 obo:IAO_0000423 ;
                obo:IAO_0000115 "An organizer is a contributer that holds an organizing role which is being realized in a planned process."@en ;
                obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
-               obo:IAO_0000600 "A person or organization that is responsible for the planning and realization of a planned process." .
+               obo:IAO_0000600 "A person or organization that is responsible for the planning and realization of a planned process." ;
+               rdfs:label "organizer"@en .
 
 
 ###  https://github.com/tibonto/aeon#program_committee
@@ -3566,7 +3557,8 @@ aeon:sponsor rdf:type owl:Class ;
              obo:IAO_0000114 obo:IAO_0000423 ;
              obo:IAO_0000115 "A sponsor is a contributer that holds a sponsor role which is being realized in a planned process."@en ;
              obo:IAO_0000116 "Philip Strömert 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...), as there are various schemes. At the moment any sponsor type other than gold, silver or bronze can be further specified by using the data property \"sponsor_type\". We could also reuse the \"event type a SKOS:concept\" pattern here. But it seems best to have a clear definition of each sponsor type, in order to be able to subclass them here and add the corresponding roles and properties."@en ;
-             obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string .
+             obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+             rdfs:label "sponsor"@en .
 
 
 ###  https://github.com/tibonto/aeon#sponsorship_committee
@@ -3778,6 +3770,8 @@ aeon:_PIDapalooza2020 rdf:type owl:NamedIndividual ;
                                       aeon:__PIDapalooza_Role_2 ;
                       aeon:AEON_0000050 aeon:_Person_1 ;
                       aeon:AEON_0000055 aeon:_Person_2 ;
+                      aeon:AEON_0000080 <https://www.wikidata.org/wiki/Q65929359> ;
+                      aeon:AEON_0000084 aeon:_PIDapalooza ;
                       aeon:end_date "2020-01-30T17:00:00"^^xsd:dateTime ;
                       aeon:number_of_attendees 117 ;
                       aeon:number_of_tracks 13 ;
@@ -3786,48 +3780,52 @@ aeon:_PIDapalooza2020 rdf:type owl:NamedIndividual ;
                       rdfs:label "_PIDapalooza2020"@en .
 
 
-###  https://github.com/tibonto/aeon#_PIDapalooza_general_committee
-aeon:_PIDapalooza_general_committee rdf:type owl:NamedIndividual ,
-                                             aeon:general_committee ;
-                                    obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string .
-
-
 ###  https://github.com/tibonto/aeon#_Person_1
 aeon:_Person_1 rdf:type owl:NamedIndividual ;
                obo:IAO_0000235 <https://orcid.org/0000-0002-1595-3213> ;
                obo:RO_0000087 aeon:__PIDapalooza_Role_1 ;
+               aeon:AEON_0000078 <https://orcid.org/0000-0002-1595-3213> ;
                aeon:first_name "Philip"^^xsd:string ;
                aeon:last_name "Strömert"^^xsd:string ;
+               rdfs:label "_Person_1" ;
                ns:term_status obo:IAO_0000002 .
 
 
 ###  https://github.com/tibonto/aeon#_Person_2
 aeon:_Person_2 rdf:type owl:NamedIndividual ;
                obo:RO_0000087 aeon:__PIDapalooza_Role_2 ;
-               obo:RO_0002350 aeon:_PIDapalooza_general_committee ;
                aeon:personal_name "Sam general committee Chair" ;
-               obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string .
+               obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+               rdfs:label "_Person_2" ;
+               ns:term_status obo:IAO_0000002 .
 
 
 ###  https://github.com/tibonto/aeon#__PIDapalooza_Role_1
 aeon:__PIDapalooza_Role_1 rdf:type owl:NamedIndividual ;
-                          obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string .
+                          obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                          rdfs:label "_PIDapalooza_Role_1" ;
+                          ns:term_status obo:IAO_0000002 .
 
 
 ###  https://github.com/tibonto/aeon#__PIDapalooza_Role_2
 aeon:__PIDapalooza_Role_2 rdf:type owl:NamedIndividual ;
-                          obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string .
+                          obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                          rdfs:label "_PIDapalooza_Role_2" ;
+                          ns:term_status obo:IAO_0000002 .
 
 
 ###  https://orcid.org/0000-0002-1595-3213
 <https://orcid.org/0000-0002-1595-3213> rdf:type owl:NamedIndividual ;
-                                        aeon:ID_base_URL "https://orcid.org/"^^xsd:anyURI .
+                                        aeon:ID_base_URL "https://orcid.org/"^^xsd:anyURI ;
+                                        rdfs:label <https://github.com/tibonto/_0000-0002-1595-3213> ;
+                                        ns:term_status obo:IAO_0000002 .
 
 
 ###  https://www.wikidata.org/wiki/Q65929359
 <https://www.wikidata.org/wiki/Q65929359> rdf:type owl:NamedIndividual ;
                                           aeon:ID_base_URL "https://www.wikidata.org/wiki/"^^xsd:anyURI ;
-                                          rdfs:comment obo:IAO_0000002 .
+                                          rdfs:comment obo:IAO_0000002 ;
+                                          rdfs:label "_Q65929359" .
 
 
 #################################################################
