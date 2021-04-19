@@ -2803,7 +2803,7 @@ aeon:AEON_0000001 rdf:type owl:Class ;
                                   ] ;
                   owl:disjointWith aeon:AEON_0000002 ;
                   obo:IAO_0000112 "The 19th International Semantic Web Conference (ISWC2020) is an academic  event."@en ;
-                  obo:IAO_0000115 "An academic event is an organized gathering for researchers (not necessarily academics) to present and discuss their work."@en ;
+                  obo:IAO_0000115 "An academic event is a planned process that refers to a gathering of researchers (not necessarily academics), in which these researches have the chance to present and discuss their work and possible future collaborations."@en ;
                   rdfs:comment """TODO:
 * It needs to be discussed, if we need the \"process boundary\" class to describe the start and end of an academic event or event series.
 * It needs to be discussed, if we need the \"temporal region\" and \"spatiotemporal region\"  classes to describe the duration and manifestation in spacetime of an academic event or event series."""@en ;
@@ -2822,6 +2822,7 @@ aeon:AEON_0000002 rdf:type owl:Class ;
                                     owl:someValuesFrom aeon:AEON_0000005
                                   ] ;
                   obo:IAO_0000112 "International Semantic Web Conference (ISWC) series" ;
+                  obo:IAO_0000115 "An academic event series is a planned process that is the set of all recurring academic events of a destinct identity. This destinct identity is usually demarked by a shared name that only differs with regard to some ordnial symbol, such as 1st or the year of the academic event."@en ;
                   rdfs:label "academic event series" ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Q15900647\", \"label\": \"conference_seriesLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Category:Event_series\", \"label\": \"Event_series\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#SeriesOfConferenceOrEvent\", \"label\": \"Series of conference or event\"}}"^^xsd:string ;
                   aeon:SMW_datatype "Category" ;
