@@ -3144,6 +3144,8 @@ aeon:AEON_0000021 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000022
 aeon:AEON_0000022 rdf:type owl:Class ;
                   rdfs:subClassOf obo:GAZ_00000448 ;
+                  obo:IAO_0000115 "A city is geographic region that represents a large human settlement."@en ;
+                  obo:IAO_0000119 "https://en.wikipedia.org/wiki/City"@en ;
                   rdfs:label "city"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
