@@ -1120,7 +1120,7 @@ aeon:committee_chair_in rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf aeon:committee_member_in ;
                         rdfs:domain aeon:committee_chair ;
                         rdfs:range obo:OBI_0000011 ;
-                        obo:IAO_0000115 "A relation obtaining between a person or organization and a planned process, in which the person or organization holds an organizer role that is being realized by the planned process."@en ;
+                        obo:IAO_0000115 "A relation obtaining between a person and a planned process, in which the person holds a committee chair role that is being realized by the planned process."@en ;
                         obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                         rdfs:label "committee chair in"@en .
 
