@@ -944,9 +944,10 @@ aeon:AEON_0000079 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:OBI_0000245 ;
                   rdfs:range aeon:AEON_0000020 ;
-                  obo:IAO_0000115 "A relation obtaining between a person and the 'research organization registry identifier' used to denote the entity."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a person and the 'ROR identifier' used to denote the entity in the ROR database."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "has ROR ID"@en ;
+                  obo:IAO_0000119 "https://ror.org/"^^xsd:anyURI ;
+                  rdfs:label "has ROR identifier"@en ;
                   ns:term_status obo:IAO_0000423 ;
                   aeon:SMW_datatype "External identifier" ;
                   aeon:SMW_import_info """External formatter uri [[External formatter uri::https://ror.org/$1]]
@@ -3137,8 +3138,12 @@ aeon:AEON_0000019 rdf:type owl:Class ;
 aeon:AEON_0000020 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000578 ;
                   obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "A 'ROR identifier' is a iao:'centrally registered identifier' that denotes an organization in the ROR database."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert" ;
-                  rdfs:label "ROR ID" ;
+                  obo:IAO_0000118 "ROR ID" ,
+                                  "research organization registry identifier"@en ;
+                  obo:IAO_0000119 "https://ror.org/"^^xsd:anyURI ;
+                  rdfs:label "ROR identifier"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Organization_ID]]
 
