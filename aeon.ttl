@@ -909,7 +909,7 @@ aeon:AEON_0000077 rdf:type owl:ObjectProperty ;
                                             )
                               ] ;
                   rdfs:range aeon:AEON_0000018 ;
-                  obo:IAO_0000115 "A relation obtaining between a person or organization and the 'international standard name identifier' used to denote the entity."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a person or organization and the 'international standard name identifier' used to denote the person or organization in the ISNI database."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has ISNI"@en ;
                   ns:term_status obo:IAO_0000423 ;
@@ -3106,7 +3106,10 @@ aeon:AEON_0000017 rdf:type owl:Class ;
 aeon:AEON_0000018 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000578 ;
                   obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "An 'ISNI' (International Standard Name Identifier) is a iao:'centrally registered identifier' that uniquely identifies persons and organizations in the ISNI database."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert" ;
+                  obo:IAO_0000118 "International Standard Name Identifier"@en ;
+                  obo:IAO_0000119 "https://isni.org/page/what-is-isni/"^^xsd:anyURI ;
                   rdfs:label "ISNI" ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Person_ID]]
