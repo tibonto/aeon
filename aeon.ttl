@@ -680,8 +680,8 @@ aeon:AEON_0000041 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:topic_of ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:AEON_0000028 ;
-                  obo:IAO_0000117 "A relation obtaining between a planned process and a skos:Concept that is used to descibe the theme of the planned process."@en ,
-                                  "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000115 "A relation obtaining between a obi:'planned process' and a skos:Concept that is used to descibe the theme of the planned process."@en ;
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has topic"@en .
 
 
@@ -1272,7 +1272,7 @@ aeon:sponsors rdf:type owl:ObjectProperty ;
 aeon:topic_of rdf:type owl:ObjectProperty ;
               rdfs:domain aeon:AEON_0000028 ;
               rdfs:range obo:OBI_0000011 ;
-              obo:IAO_0000115 "see also inverse property: A relation obtaining betweenv a skos:Concept and a planned process, in which the former is used to descibe the theme of the latter."@en ;
+              obo:IAO_0000115 "see also inverse property: A relation obtaining between a skos:Concept and a obi:'planned process', in which the former is used to descibe the theme of the latter."@en ;
               obo:IAO_0000117 "StroemertP"^^xsd:string ;
               rdfs:label "topic of"@en .
 
@@ -3214,10 +3214,20 @@ aeon:AEON_0000027 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000028
 aeon:AEON_0000028 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( skos:Concept
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:topic_of ;
+                                                               owl:someValuesFrom obo:OBI_0000011
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf skos:Concept ;
-                  obo:IAO_0000112 "\"The future of knowlegde graphs in the humanities\" could be a topic of an interdisciplinary oriented computer sciences conference."@en ;
-                  obo:IAO_0000115 "Topic is a skos:Concept that describes the central theme of an academic event or event series. In contrast to 'academic field' the instances of the class topic should not be terms of a controlled vocabulary or thesaurus."@en ;
+                  obo:IAO_0000112 "\"AI, knowledge graphs, cloud computing\" could be a set of keywords that denote the main topics covered by a specific conference."@en ,
+                                  "\"The future of knowlegde graphs in the humanities\" could be a 'topic' of an interdisciplinary oriented computer sciences conference."@en ;
+                  obo:IAO_0000115 "A 'topic' is a skos:Concept that describes a central theme of a obi:'planned process'. The instances of this class can be terms from a controlled vocabulary or thesaurus, phrases or just keywords."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert" ;
+                  obo:IAO_0000118 "theme"@en ;
                   rdfs:label "topic"@en .
 
 
