@@ -640,12 +640,12 @@ obo:TXPO_0002523 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000032
 aeon:AEON_0000032 rdf:type owl:ObjectProperty ;
-                  owl:inverseOf aeon:event_type_of ;
+                  owl:inverseOf aeon:academic_event_type_of ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000004 ;
-                  obo:IAO_0000115 "A relation obtaining between a planned process and a skos:Concept that is used to descibe the social format of an 'academic event'. A set of possible common event types is provided as named individuals."@en ;
+                  obo:IAO_0000115 "A relation obtaining between an 'academic event' and a skos:Concept that is used to descibe the format of an 'academic event'. A set of possible common academic event types is provided as named individuals."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "has event type"@en ;
+                  rdfs:label "has academic event type"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"event_type\"}, \"openresearch\": {\"uri\": null, \"label\": \"Type\"}}"^^xsd:string ;
                   aeon:SMW_datatype "Text" ;
                   aeon:SMW_import_info """The allowed value list for this property is defined in [[MediaWiki:Smw_allows_list_has_event_type]].
@@ -1094,6 +1094,15 @@ aeon:AEON_0000090 rdf:type owl:ObjectProperty ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
 
+###  https://github.com/tibonto/aeon#academic_event_type_of
+aeon:academic_event_type_of rdf:type owl:ObjectProperty ;
+                            rdfs:domain aeon:AEON_0000004 ;
+                            rdfs:range aeon:AEON_0000001 ;
+                            obo:IAO_0000115 "see also inverse property: A relation obtaining between a skos:Concept and an 'academic event', in which the former is used to descibe the format of the latter. A set of possible common academic event types is provided as named individuals."@en ;
+                            obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                            rdfs:label "academic event type of"@en .
+
+
 ###  https://github.com/tibonto/aeon#academic_field_of
 aeon:academic_field_of rdf:type owl:ObjectProperty ;
                        rdfs:domain aeon:AEON_0000027 ;
@@ -1151,15 +1160,6 @@ aeon:contibutes_to rdf:type owl:ObjectProperty ;
                    obo:IAO_0000115 "A relation obtaining between a person or organization and a planned process, in which the person or organization holds a contributor role that is being realized by the planned process."@en ;
                    obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
                    rdfs:label "contributes to"@en .
-
-
-###  https://github.com/tibonto/aeon#event_type_of
-aeon:event_type_of rdf:type owl:ObjectProperty ;
-                   rdfs:domain aeon:AEON_0000004 ;
-                   rdfs:range aeon:AEON_0000001 ;
-                   obo:IAO_0000115 "see also inverse property: A relation obtaining between a skos:Concept and a planned process, in which the former is used to descibe the format of the latter. A set of possible common event types is provided as named individuals."@en ;
-                   obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
-                   rdfs:label "event type of"@en .
 
 
 ###  https://github.com/tibonto/aeon#has_WikiCFP_ID
@@ -2842,11 +2842,22 @@ aeon:AEON_0000003 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000004
 aeon:AEON_0000004 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( skos:Concept
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:academic_event_type_of ;
+                                                               owl:someValuesFrom aeon:AEON_0000001
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf skos:Concept ;
-                  obo:IAO_0000115 "An event type is a skos:Concept that is being used to distinguish between the different academic event formats."@en ;
-                  obo:IAO_0000116 "As the used definitions of the various academic event types can vary strongly between different communities and societies, we chose to model the type of an event as a SKOS concept instead of adding subclasses to the \"academic event\" class. The most commonly used event types are provided in AEON as named instances of this class."@en ;
+                  obo:IAO_0000115 "An 'academic event type' is a skos:Concept that is being used to distinguish between the different formats of an 'academic event'."@en ;
+                  obo:IAO_0000116 "As the actually used definitions of various academic event types varies between different communities and societies, we chose to model the type of an event as a skos:Concept instead of adding subclasses to the \"academic event\" class. The most commonly used academic event types are provided in AEON as named instances of this class. This design decision might be changed once there is an emperically proven common ground on which a subclassing of academic event is possible. It might also be possible in future version, to subsume this class under an appropriate class in the iao:'infomation content entity' branch instead of defining it as a skos:Concept."@en ,
+                                  "It needs to be discussed whether this class should be expanded to also describe the format of an 'academic event series', e.g. conference series. At the moment it is assumed that an 'academic event series', understood as a obi:'planned process', has no destinct format itself. Since this process is defined as the set of all recurring academic events of a destinct identity, the event series type would also only be the set of the event types of the academic events in this series."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert" ;
-                  rdfs:label "event type"@en ;
+                  obo:IAO_0000118 "type of the academic event"@en ;
+                  obo:IAO_0000119 "https://github.com/tibonto/aeon/"^^xsd:anyURI ;
+                  rdfs:label "academic event type"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_has_event_type]]. [[Category:AEON]] [[Category:Imported vocabulary]]" .
 
