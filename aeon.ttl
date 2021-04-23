@@ -1172,9 +1172,10 @@ aeon:has_WikiCFP_ID rdf:type owl:ObjectProperty ;
                                               )
                                 ] ;
                     rdfs:range aeon:wikiCFP_ID ;
-                    obo:IAO_0000115 "A relation obtaining between an academic event or event series and its corresponding WikiCFP identifier."@en ;
+                    obo:IAO_0000115 "A relation obtaining between an 'academic event' or 'academic event series' and the WikiCFP identifier used to denote this 'academic event' or 'academic event series' in the wikiCFP database."@en ;
                     obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
-                    rdfs:label "has WikiCFP ID"@en ;
+                    obo:IAO_0000119 "http://www.wikicfp.com/cfp/"^^xsd:anyURI ;
+                    rdfs:label "has WikiCFP identifier"@en ;
                     ns:term_status obo:IAO_0000423 ;
                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P5127\", \"label\": \"WikiCFP_conference_series_ID\"}}" .
 
@@ -3626,8 +3627,11 @@ aeon:technical_committee rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#wikiCFP_ID
 aeon:wikiCFP_ID rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000578 ;
+                obo:IAO_0000115 "A 'wikiCFP identifier' is a iao:'centrally registered identifier' that denotes an 'academic event' or 'academic event series' in the wikiCFP database."@en ;
                 obo:IAO_0000117 "PERSON: Philip Strömert" ;
-                rdfs:label "wikiCFP ID" ;
+                obo:IAO_0000118 "wikiCFP ID"@en ;
+                obo:IAO_0000119 "http://www.wikicfp.com/cfp/"^^xsd:anyURI ;
+                rdfs:label "wikiCFP identifier"@en ;
                 ns:term_status obo:IAO_0000423 .
 
 
