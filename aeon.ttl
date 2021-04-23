@@ -670,7 +670,7 @@ aeon:AEON_0000040 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:academic_field_of ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:AEON_0000027 ;
-                  obo:IAO_0000115 "A relation obtaining between a planned process and a skos:Concept that is used to descibe the scientific subject of the planned process according to some controlled vocabulary or thesaurus."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a obi:'planned process' and a skos:Concept that is used to describe the scientific subject of the planned process according to some controlled vocabulary or thesaurus."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has academic field"@en .
 
@@ -1107,7 +1107,7 @@ aeon:academic_event_type_of rdf:type owl:ObjectProperty ;
 aeon:academic_field_of rdf:type owl:ObjectProperty ;
                        rdfs:domain aeon:AEON_0000027 ;
                        rdfs:range obo:OBI_0000011 ;
-                       obo:IAO_0000115 "see also inverse property: A relation obtaining between a skos:Concept and a planned process, in which the former is used to descibe the scientific subject of the latter according to some controlled vocabulary or thesaurus."@en ;
+                       obo:IAO_0000115 "see also inverse property: A relation obtaining between a skos:Concept and a obi:'planned process', in which the former is used to descibe the scientific subject of the latter according to some controlled vocabulary or thesaurus."@en ;
                        obo:IAO_0000117 "StroemertP"^^xsd:string ;
                        rdfs:label "academic field of"@en .
 
@@ -3189,10 +3189,24 @@ aeon:AEON_0000025 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000027
 aeon:AEON_0000027 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( skos:Concept
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:academic_field_of ;
+                                                               owl:someValuesFrom obo:OBI_0000011
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf skos:Concept ;
-                  obo:IAO_0000112 "DDC 410 Linguistics, OECD 6.02 Languages and literature"@en ;
-                  obo:IAO_0000115 "'academic field' is a skos:Concept that describes the research field of an academic event or event series. As opposed to the class 'topic', the instances of this class must be terms from a controlled vocabulary or thesaurus."@en ;
+                  obo:IAO_0000112 "DDC 410 Linguistics, OECD 6.02 Languages and literature, ..."@en ;
+                  obo:IAO_0000115 "An 'academic field' is a skos:Concept that contextualizes a obi:'planned process'  with regard to the subdevision of knowledge that is taught and researched at the college or university level. Instances of this class must be terms from a controlled vocabulary or thesaurus."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert" ;
+                  obo:IAO_0000118 "academic discipline"@en ,
+                                  "branch of knowledge"@en ,
+                                  "field of inquiry"@en ,
+                                  "field of study"@en ,
+                                  "research field"@en ;
+                  obo:IAO_0000119 "https://en.wikipedia.org/wiki/Academic_discipline"^^xsd:anyURI ;
                   rdfs:label "academic field"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
