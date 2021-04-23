@@ -3090,8 +3090,10 @@ aeon:AEON_0000016 rdf:type owl:Class ;
 aeon:AEON_0000017 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000578 ;
                   obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "A 'GND identifier' is a iao:'centrally registered identifier' that refers to an entity in \"The Integrated Authority File (GND)\" of the German national library."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert" ;
-                  rdfs:label "GND ID" ;
+                  obo:IAO_0000119 "https://d-nb.info/standards/elementset/gnd#gndIdentifier"^^xsd:anyURI ;
+                  rdfs:label "GND identifier"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
 [[partOfSubobject::Template:Subobject Person_ID]]
