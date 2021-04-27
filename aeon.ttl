@@ -962,9 +962,10 @@ aeon:AEON_0000080 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:BFO_0000001 ;
                   rdfs:range aeon:AEON_0000021 ;
-                  obo:IAO_0000115 "A relation obtaining between an entity and its corresponding Wikidata entity identifier."@en ;
+                  obo:IAO_0000115 "A relation obtaining between an entity and the Wikidata identifier used to denote this entity in the Wikidata database."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "has Wikidata QID"@en ;
+                  obo:IAO_0000118 "has Wikidata QID"@en ;
+                  rdfs:label "has QID"@en ;
                   ns:term_status obo:IAO_0000423 ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"itemID\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Wikidataid\", \"label\": \"Wikidataid\"}}"^^xsd:string ;
                   aeon:SMW_datatype "External identifier" ;
@@ -3154,8 +3155,13 @@ aeon:AEON_0000020 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000021
 aeon:AEON_0000021 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000578 ;
+                  obo:IAO_0000111 "QID"@en ;
                   obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "A 'Wikidata QID identifier' is a iao:'centrally registered identifier' that denotes an entity in the Wikidata database."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert" ;
+                  obo:IAO_0000118 "q number"@en ,
+                                  "wikidata q number"@en ;
+                  obo:IAO_0000119 "https://www.wikidata.org/wiki/Q43649390" ;
                   obo:IAO_0006011 "\"https://www.wikidata.org/wiki/\"^^ xsd:anyURI"@en ;
                   rdfs:label "Wikidata QID"@en ;
                   aeon:SMW_datatype "Category" ;
