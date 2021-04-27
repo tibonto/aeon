@@ -866,9 +866,9 @@ aeon:AEON_0000055 rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#AEON_0000075
 aeon:AEON_0000075 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
-                  rdfs:domain obo:IAO_0000027 ;
+                  rdfs:domain obo:IAO_0000030 ;
                   rdfs:range aeon:AEON_0000016 ;
-                  obo:IAO_0000115 "A relation obtaining between a data item and its corresponding digital object identifier."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a digital iao:information content entity and its corresponding ISO 26324 conform digital object identifier."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has DOI"@en ;
                   ns:term_status obo:IAO_0000423 ;
@@ -3082,9 +3082,13 @@ aeon:AEON_0000015 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000016
 aeon:AEON_0000016 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0020000 ;
+                  obo:IAO_0000111 "DOI"@en ;
                   obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "A digital object identifier (DOI) is an iao:identifier that persitently denotes a digital object acording to the ISO standard 26324."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "digital object identifier"@en ;
+                  obo:IAO_0000118 "digital object identifier"@en ;
+                  obo:IAO_0000119 "https://www.doi.org/" ;
+                  rdfs:label "DOI" ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
 
