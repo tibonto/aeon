@@ -2835,8 +2835,8 @@ aeon:AEON_0000002 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000003
 aeon:AEON_0000003 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0020000 ;
-                  obo:IAO_0000115 "An internal identifier is an identifier that is only meant to be used inside the reference system, such as an application, in which it is declared."@en ;
-                  obo:IAO_0000116 "The alternative term \"ConfIDent_ID\" is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident/) to be used in its service. Thus the internal identifier is called \"ConfIDent ID\". You will probably want to change that in your implementation."@en ;
+                  obo:IAO_0000115 "An internal identifier is an iao:identifier that is only meant to be used inside the reference system, such as an application, in which it is declared."@en ;
+                  obo:IAO_0000116 "The alternative term \"ConfIDent ID\" is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident) to be used in its service. Thus the internal identifier is called \"ConfIDent ID\". You will probably want to change that in your implementation."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   obo:IAO_0000118 "ConfIDent ID"@en ;
                   rdfs:label "internal identifier"@en ;
