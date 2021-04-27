@@ -658,10 +658,12 @@ aeon:AEON_0000033 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:BFO_0000001 ;
                   rdfs:range aeon:AEON_0000034 ;
-                  obo:IAO_0000115 "A relation obtaining between an entity and a distributed identifier that is used to denote the entity."@en ;
+                  obo:IAO_0000111 "has DID"@en ;
+                  obo:IAO_0000115 "A relation obtaining between an entity and a distributed identifier document (DID) that is used to denote the verifiable, decentralized digital identity of an entity."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ,
                                   "Philip Stroemert"^^xsd:string ;
-                  rdfs:label "has distributed identifier"@en ;
+                  obo:IAO_0000118 "has distributed identifier"@en ;
+                  rdfs:label "has DID"@en ;
                   ns:term_status obo:IAO_0000423 .
 
 
@@ -3283,10 +3285,14 @@ aeon:AEON_0000030 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000034
 aeon:AEON_0000034 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0020000 ;
+                  obo:IAO_0000111 "DID" ;
                   obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "A  'decentralized identifier document' (DID) is a iao:identifier that denotes a verifiable, decentralized digital identity of an entity."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert" ;
+                  obo:IAO_0000118 "DID" ;
+                  obo:IAO_0000119 "https://www.w3.org/TR/did-core/Overview.html" ;
                   <http://purl.org/dc/elements/1.1/date> "2020-11-20T17:31:33Z"^^xsd:dateTime ;
-                  rdfs:label "distributed identifier"@en .
+                  rdfs:label "decentralized identifier document"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000042
