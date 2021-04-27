@@ -3287,7 +3287,7 @@ aeon:AEON_0000034 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0020000 ;
                   obo:IAO_0000111 "DID" ;
                   obo:IAO_0000114 obo:IAO_0000423 ;
-                  obo:IAO_0000115 "A  'decentralized identifier document' (DID) is a iao:identifier that denotes a verifiable, decentralized digital identity of an entity."@en ;
+                  obo:IAO_0000115 "A  'decentralized identifier document' (DID) is an iao:identifier that denotes a verifiable, decentralized digital identity of an entity."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert" ;
                   obo:IAO_0000118 "DID" ;
                   obo:IAO_0000119 "https://www.w3.org/TR/did-core/Overview.html" ;
