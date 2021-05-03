@@ -2817,6 +2817,7 @@ aeon:AEON_0000022 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000023
 aeon:AEON_0000023 rdf:type owl:Class ;
                   rdfs:subClassOf obo:GAZ_00000448 ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
                   obo:IAO_0000115 "A country is a gaz:geographic location that may be an independent sovereign state or part of a larger state, as a non-sovereign or formerly sovereign political division, a physical territory with a government, or a geographic region associated with sets of previously independent or differently associated people with distinct political characteristics."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   obo:IAO_0000119 "https://en.wikipedia.org/wiki/Country"^^xsd:anyURI ;
