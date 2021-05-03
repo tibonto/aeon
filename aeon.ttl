@@ -958,9 +958,11 @@ aeon:AEON_0000088 rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#AEON_0000089
 aeon:AEON_0000089 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:BFO_0000066 ;
-                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:domain obo:BFO_0000003 ;
                   rdfs:range aeon:AEON_0000025 ;
-                  rdfs:label "occurs in venue"@en .
+                  obo:IAO_0000115 "A relation obtaining between a bfo:occurent and the event venue in which it occurs."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:label "occurs in event venue"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000090
@@ -2844,6 +2846,9 @@ aeon:AEON_0000024 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000025
 aeon:AEON_0000025 rdf:type owl:Class ;
                   rdfs:subClassOf obo:GAZ_00000448 ;
+                  obo:IAO_0000114 obo:IAO_0000125 ;
+                  obo:IAO_0000115 "An event venue is a gaz:geographical location that is a building or a collection of buildings and grounds where an event takes place."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "event venue"@en .
 
 
