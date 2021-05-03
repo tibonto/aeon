@@ -294,26 +294,6 @@ aeon:AEON_0000026 rdf:type owl:AnnotationProperty ;
                   rdfs:label "maps to"@de .
 
 
-###  https://github.com/tibonto/aeon#SMW_datatype
-aeon:SMW_datatype rdf:type owl:AnnotationProperty .
-
-
-###  https://github.com/tibonto/aeon#SMW_import_info
-aeon:SMW_import_info rdf:type owl:AnnotationProperty .
-
-
-###  https://github.com/tibonto/aeon#WikidataLabel
-aeon:WikidataLabel rdf:type owl:AnnotationProperty ;
-                   obo:IAO_0000115 "WikidataLabel is used to map a class or property to a certain label in the Wikidata namespace." ;
-                   rdfs:label "Wikidata label"@en .
-
-
-###  https://github.com/tibonto/aeon#WikidataURI
-aeon:WikidataURI rdf:type owl:AnnotationProperty ;
-                 obo:IAO_0000115 "WikidataURI is used to map a class or property to the URI in the Wikidata namespace." ;
-                 rdfs:label "Wikidata URI"@en .
-
-
 #################################################################
 #    Object Properties
 #################################################################
@@ -440,9 +420,7 @@ Some currently missing phenomena that should be considered \"about\" are predica
                 obo:IAO_0000119 "Smith, Ceusters, Ruttenberg, 2000 years of philosophy"@en ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"^^xsd:string ;
                 rdfs:label "is about"@en ;
-                aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P921\", \"label\": \"main_subjectLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Field\", \"label\": \"Field\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#topic\", \"label\": \"Topic that is related to a corporate body, conference, person, family, subject heading or work.\"}}"^^xsd:string ;
-                aeon:SMW_datatype "Text" ;
-                aeon:SMW_import_info "Controlled vocabulary in [[MediaWiki:Smw_allows_list_Subject]] [[Category:IAO]] [[Category:Imported vocabulary]]" .
+                aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P921\", \"label\": \"main_subjectLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Field\", \"label\": \"Field\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#topic\", \"label\": \"Topic that is related to a corporate body, conference, person, family, subject heading or work.\"}}"^^xsd:string .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000219
@@ -646,11 +624,7 @@ aeon:AEON_0000032 rdf:type owl:ObjectProperty ;
                   obo:IAO_0000115 "A relation obtaining between an 'academic event' and a skos:Concept that is used to descibe the format of an 'academic event'. A set of possible common academic event types is provided as named individuals."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has academic event type"@en ;
-                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"event_type\"}, \"openresearch\": {\"uri\": null, \"label\": \"Type\"}}"^^xsd:string ;
-                  aeon:SMW_datatype "Text" ;
-                  aeon:SMW_import_info """The allowed value list for this property is defined in [[MediaWiki:Smw_allows_list_has_event_type]].
-[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
-                  aeon:WikidataLabel "event_type" .
+                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"event_type\"}, \"openresearch\": {\"uri\": null, \"label\": \"Type\"}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000033
@@ -694,13 +668,7 @@ aeon:AEON_0000043 rdf:type owl:ObjectProperty ;
                   rdfs:range aeon:AEON_0000030 ;
                   obo:IAO_0000115 "A relation obtaining between a planned process and an 'information content entity' that is about the amount of money one has to pay in order to be an allowed participant of the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "has fee"@en ;
-                  aeon:SMW_datatype "Text" ;
-                  aeon:SMW_import_info """The allowed value list for this property is defined in [[MediaWiki:Smw_allows_list_Has_fee]].
-
-[[partOfSubobject::Template:Subobject Fee]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  rdfs:label "has fee"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000045
@@ -711,9 +679,7 @@ aeon:AEON_0000045 rdf:type owl:ObjectProperty ;
                   rdfs:range aeon:contributor ;
                   obo:IAO_0000115 "'has contributor' is a relation obtaining between a planned process and a person or organization that holds a contributor role which is being realized by the planned process. A contribution to a planned process takes place when someone works on the planning or realization of a planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "has contributor"@en ;
-                  aeon:SMW_datatype "Page" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "has contributor"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000046
@@ -725,11 +691,7 @@ aeon:AEON_0000046 rdf:type owl:ObjectProperty ;
                   obo:IAO_0000115 "A relation obtaining between a planned process and a person that holds an attendee role which is being realized by the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has attendee"@en ;
-                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P710\", \"label\": \"participantLabel\"}}"^^xsd:string ;
-                  aeon:SMW_datatype "Page" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
-                  aeon:WikidataLabel "participantLabel" ;
-                  aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P710" .
+                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P710\", \"label\": \"participantLabel\"}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000047
@@ -740,9 +702,7 @@ aeon:AEON_0000047 rdf:type owl:ObjectProperty ;
                   rdfs:range aeon:moderator ;
                   obo:IAO_0000115 "A relation obtaining between a planned process and a person that holds a moderator role which is being realized by the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "has moderator"@en ;
-                  aeon:SMW_datatype "Page" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "has moderator"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000048
@@ -754,11 +714,7 @@ aeon:AEON_0000048 rdf:type owl:ObjectProperty ;
                   obo:IAO_0000115 "A relation obtaining between a planned process and a person or organization that holds an organizer role which is being realized by the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has organizer"@en ;
-                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P664\", \"label\": \"organizerLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_organizer\", \"label\": \"Has_organizer\"},\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"sponsor\"}}}"^^xsd:string ;
-                  aeon:SMW_datatype "Page" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
-                  aeon:WikidataLabel "organizerLabel" ;
-                  aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P664" .
+                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P664\", \"label\": \"organizerLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_organizer\", \"label\": \"Has_organizer\"},\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"sponsor\"}}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000049
@@ -769,11 +725,7 @@ aeon:AEON_0000049 rdf:type owl:ObjectProperty ;
                   rdfs:range aeon:reviewer ;
                   obo:IAO_0000115 "A relation obtaining between a planned process and a person that holds a reviewer role which is being realized by the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "has reviewer"@en ;
-                  aeon:SMW_datatype "Page" ;
-                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  rdfs:label "has reviewer"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000050
@@ -785,13 +737,7 @@ aeon:AEON_0000050 rdf:type owl:ObjectProperty ;
                   obo:IAO_0000115 "A relation obtaining between a planned process and a person that holds a presenter role which is being realized by the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has presenter"@en ;
-                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P823\", \"label\": \"speaker\"}}"^^xsd:string ;
-                  aeon:SMW_datatype "Page" ;
-                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
-                  aeon:WikidataLabel "speaker" ;
-                  aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P823" .
+                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P823\", \"label\": \"speaker\"}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000051
@@ -802,11 +748,7 @@ aeon:AEON_0000051 rdf:type owl:ObjectProperty ;
                   rdfs:range aeon:sponsor ;
                   obo:IAO_0000115 "A relation obtaining between a planned process and a person or organization that holds a sponsor role which is being realized by the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "has sponsor"@en ;
-                  aeon:SMW_datatype "Page" ;
-                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Sponsor]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  rdfs:label "has sponsor"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000052
@@ -817,9 +759,7 @@ aeon:AEON_0000052 rdf:type owl:ObjectProperty ;
                   rdfs:range aeon:committee_member ;
                   obo:IAO_0000115 "A relation obtaining between a planned process and a person that holds a committee member role which is being realized by the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "has committee member"@en ;
-                  aeon:SMW_datatype "Page" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "has committee member"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000053
@@ -830,9 +770,7 @@ aeon:AEON_0000053 rdf:type owl:ObjectProperty ;
                   rdfs:range aeon:contact_person ;
                   obo:IAO_0000115 "A relation obtaining between a planned process and a person that holds a contact person role which is being realized by the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "has contact person"@en ;
-                  aeon:SMW_datatype "Page" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "has contact person"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000054
@@ -843,11 +781,7 @@ aeon:AEON_0000054 rdf:type owl:ObjectProperty ;
                   rdfs:range aeon:keynote_speaker ;
                   obo:IAO_0000115 "A relation between a planned process and a person that holds a keynote speaker role which is being realized by the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "has keynote speaker"@en ;
-                  aeon:SMW_datatype "Page" ;
-                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
-                         
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  rdfs:label "has keynote speaker"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000055
@@ -858,11 +792,7 @@ aeon:AEON_0000055 rdf:type owl:ObjectProperty ;
                   rdfs:range aeon:committee_chair ;
                   obo:IAO_0000115 "A relation obtaining between a planned process and a person that holds a committee chair role which is being realized by the planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "has committee chair"@en ;
-                  aeon:SMW_datatype "Page" ;
-                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Contributor]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  rdfs:label "has committee chair"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000075
@@ -873,11 +803,7 @@ aeon:AEON_0000075 rdf:type owl:ObjectProperty ;
                   obo:IAO_0000115 "A relation obtaining between a digital iao:information content entity and its corresponding ISO 26324 conform digital object identifier."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has DOI"@en ;
-                  ns:term_status obo:IAO_0000423 ;
-                  aeon:SMW_datatype "External identifier" ;
-                  aeon:SMW_import_info """External formatter uri [[External formatter uri::https://doi.org/$1]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  ns:term_status obo:IAO_0000423 .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000076
@@ -889,17 +815,7 @@ aeon:AEON_0000076 rdf:type owl:ObjectProperty ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has GND identifier"@en ;
                   ns:term_status obo:IAO_0000423 ;
-                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P227\", \"label\": \"GND_ID\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#gndIdentifier\", \"label\": \"GND-Identifier\"}}"^^xsd:string ;
-                  aeon:SMW_datatype "External identifier" ;
-                  aeon:SMW_import_info """External formatter uri [[External formatter uri::http://d-nb.info/gnd/$1]]
-
-[[partOfSubobject::Template:Subobject External_Process_ID]]
-[[partOfSubobject::Template:Subobject Person_ID]]
-[[partOfSubobject::Template:Subobject Organization_ID]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
-                  aeon:WikidataLabel "GND_ID" ;
-                  aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P227" .
+                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P227\", \"label\": \"GND_ID\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#gndIdentifier\", \"label\": \"GND-Identifier\"}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000077
@@ -914,14 +830,7 @@ aeon:AEON_0000077 rdf:type owl:ObjectProperty ;
                   obo:IAO_0000115 "A relation obtaining between a person or organization and the 'international standard name identifier' used to denote the person or organization in the ISNI database."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has ISNI"@en ;
-                  ns:term_status obo:IAO_0000423 ;
-                  aeon:SMW_datatype "External identifier" ;
-                  aeon:SMW_import_info """External formatter uri [[External formatter uri::https://isni.org/isni/$1]]
-
-[[partOfSubobject::Template:Subobject Person_ID]]
-[[partOfSubobject::Template:Subobject Organization_ID]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  ns:term_status obo:IAO_0000423 .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000078
@@ -932,13 +841,7 @@ aeon:AEON_0000078 rdf:type owl:ObjectProperty ;
                   obo:IAO_0000115 "A relation obtaining between a person and the 'ORCID' used to denote the person in the ORCID database."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "has ORCID"@en ;
-                  ns:term_status obo:IAO_0000423 ;
-                  aeon:SMW_datatype "External identifier" ;
-                  aeon:SMW_import_info """External formatter uri [[External formatter uri::https://orcid.org/$1]]
-
-[[partOfSubobject::Template:Subobject Person_ID]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  ns:term_status obo:IAO_0000423 .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000079
@@ -949,14 +852,8 @@ aeon:AEON_0000079 rdf:type owl:ObjectProperty ;
                   obo:IAO_0000115 "A relation obtaining between a person and the 'ROR identifier' used to denote the entity in the ROR database."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   obo:IAO_0000119 "https://ror.org/"^^xsd:anyURI ;
-                  rdfs:label "has ROR identifier"@en ;
-                  ns:term_status obo:IAO_0000423 ;
-                  aeon:SMW_datatype "External identifier" ;
-                  aeon:SMW_import_info """External formatter uri [[External formatter uri::https://ror.org/$1]]
-
-[[partOfSubobject::Template:Subobject Organization_ID]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  rdfs:label "has ROR"@en ;
+                  ns:term_status obo:IAO_0000423 .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000080
@@ -969,16 +866,7 @@ aeon:AEON_0000080 rdf:type owl:ObjectProperty ;
                   obo:IAO_0000118 "has Wikidata QID"@en ;
                   rdfs:label "has QID"@en ;
                   ns:term_status obo:IAO_0000423 ;
-                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"itemID\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Wikidataid\", \"label\": \"Wikidataid\"}}"^^xsd:string ;
-                  aeon:SMW_datatype "External identifier" ;
-                  aeon:SMW_import_info """External formatter uri [[External formatter uri::https://www.wikidata.org/wiki/$1]]
-
-[[partOfSubobject::Template:Subobject Process_External_ID]]
-[[partOfSubobject::Template:Subobject Person_ID]]
-[[partOfSubobject::Template:Subobject Organization_ID]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
-                  aeon:WikidataLabel "itemID" .
+                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"itemID\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Wikidataid\", \"label\": \"Wikidataid\"}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000081
@@ -988,9 +876,7 @@ aeon:AEON_0000081 rdf:type owl:ObjectProperty ;
                   rdfs:domain aeon:AEON_0000002 ;
                   rdfs:range aeon:AEON_0000001 ;
                   obo:IAO_0000115 "A relation obtaining between an academic event series and an academic event. It is used to express that the academic event series has a specific academic event as its part."@en ;
-                  rdfs:label "has academic event"@en ;
-                  aeon:SMW_datatype "Page" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "has academic event"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000082
@@ -999,9 +885,8 @@ aeon:AEON_0000082 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:has_collocated_event ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000001 ;
-                  rdfs:label "collocated event of"@en ;
-                  aeon:SMW_datatype "Page" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  rdfs:label "collocated event of"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000083
@@ -1012,9 +897,7 @@ aeon:AEON_0000083 rdf:type owl:ObjectProperty ;
                   rdfs:range aeon:AEON_0000001 ;
                   obo:IAO_0000115 "see also inverse property: A relation obtaining between an academic event and another academic event. A joint event is an event that shares some of the planning and organizing logistics with another academic event, but is otherwise independent from it."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "joint event of"@en ;
-                  aeon:SMW_datatype "Page" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "joint event of"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000084
@@ -1025,9 +908,7 @@ aeon:AEON_0000084 rdf:type owl:ObjectProperty ;
                   obo:IAO_0000115 "A relation obtaining between an academic event and an academic event series. It is used to express that the academic event is part of a specific event series."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   rdfs:label "part of series"@en ;
-                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P179\", \"label\": \"part_of_the_seriesLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Event_in_series\", \"label\": \"Event_in_series\"}}"^^xsd:string ;
-                  aeon:SMW_datatype "Page" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P179\", \"label\": \"part_of_the_seriesLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Event_in_series\", \"label\": \"Event_in_series\"}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000085
@@ -1038,9 +919,7 @@ aeon:AEON_0000085 rdf:type owl:ObjectProperty ;
                   rdfs:range aeon:AEON_0000001 ;
                   obo:IAO_0000115 "see also inverse property: A relation obtaining between an academic event and another academic event or event series. An umbrelle event/series is a superordinate event/series that combines several smaller academic events/series at the same time."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "umbrella event of"@en ;
-                  aeon:SMW_datatype "Page" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "umbrella event of"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000086
@@ -1051,11 +930,7 @@ aeon:AEON_0000086 rdf:type owl:ObjectProperty ;
                   obo:IAO_0000115 "A relation obtaining between a bfo:occurent and the country in which it occurs."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "occurs in country"@en ;
-                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P17\", \"label\": \"countryLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_country\", \"label\": \"Has_location_country\"}}"^^xsd:string ;
-                  aeon:SMW_datatype "Text" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
-                  aeon:WikidataLabel "countryLabel" ;
-                  aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P17" .
+                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P17\", \"label\": \"countryLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_country\", \"label\": \"Has_location_country\"}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000087
@@ -1066,9 +941,7 @@ aeon:AEON_0000087 rdf:type owl:ObjectProperty ;
                   obo:IAO_0000115 "A relation obtaining between a bfo:occurent and the city in which it occurs."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "occurs in city"@en ;
-                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P276\", \"label\": \"locationLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_city\", \"label\": \"Has_location_city\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#placeOfConferenceOrEvent\", \"label\": \"Place of conference or event\"}}"^^xsd:string ;
-                  aeon:SMW_datatype "Text" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P276\", \"label\": \"locationLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_city\", \"label\": \"Has_location_city\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#placeOfConferenceOrEvent\", \"label\": \"Place of conference or event\"}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000088
@@ -1077,9 +950,7 @@ aeon:AEON_0000088 rdf:type owl:ObjectProperty ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000024 ;
                   rdfs:label "occurs in state"@en ;
-                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P131\", \"label\": \"located_in_the_administrative_territorial_entityLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_state\", \"label\": \"Has_location_state\"}}"^^xsd:string ;
-                  aeon:SMW_datatype "Text" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P131\", \"label\": \"located_in_the_administrative_territorial_entityLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_state\", \"label\": \"Has_location_state\"}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000089
@@ -1087,9 +958,7 @@ aeon:AEON_0000089 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:BFO_0000066 ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000025 ;
-                  rdfs:label "occurs in venue"@en ;
-                  aeon:SMW_datatype "Text" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "occurs in venue"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000090
@@ -1097,9 +966,7 @@ aeon:AEON_0000090 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:BFO_0000066 ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000029 ;
-                  rdfs:label "occurs in virtual place"@en ;
-                  aeon:SMW_datatype "URL" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "occurs in virtual place"@en .
 
 
 ###  https://github.com/tibonto/aeon#academic_event_type_of
@@ -1298,9 +1165,7 @@ owl:topDataProperty rdfs:range rdfs:Literal .
 aeon:CORE_ranking rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf aeon:metric ;
                   rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:label "CORE ranking"@en ;
-                  aeon:SMW_datatype "Text" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "CORE ranking"@en .
 
 
 ###  https://github.com/tibonto/aeon#ID
@@ -1308,13 +1173,7 @@ aeon:ID rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf owl:topDataProperty ;
         rdfs:domain obo:IAO_0020000 ;
         obo:IAO_0000115 "The literal value of an identifier."@en ;
-        rdfs:label "identifier"@en ;
-        aeon:SMW_datatype "Text" ;
-        aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
-[[partOfSubobject::Template:Subobject Person_ID]]
-[[partOfSubobject::Template:Subobject Organization_ID]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+        rdfs:label "identifier"@en .
 
 
 ###  https://github.com/tibonto/aeon#ID_URL
@@ -1323,13 +1182,7 @@ aeon:ID_URL rdf:type owl:DatatypeProperty ;
             rdfs:domain obo:IAO_0020000 ;
             rdfs:range xsd:anyURI ;
             rdfs:comment "The literal value of the full URL used by the identifier scheme, based on the concatination of base URL and ID (ID_URL:value = ID_base_URL:value + ID:value)."@en ;
-            rdfs:label "identifier URI"@en ;
-            aeon:SMW_datatype "URL" ;
-            aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
-[[partOfSubobject::Template:Subobject Person_ID]]
-[[partOfSubobject::Template:Subobject Organization_ID]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+            rdfs:label "identifier URI"@en .
 
 
 ###  https://github.com/tibonto/aeon#ID_base_URL
@@ -1338,13 +1191,7 @@ aeon:ID_base_URL rdf:type owl:DatatypeProperty ;
                  rdfs:domain obo:IAO_0020000 ;
                  rdfs:range xsd:anyURI ;
                  rdfs:comment "The literal value of the base URL used by the identifier scheme."@en ;
-                 rdfs:label "identifier base URI"@en ;
-                 aeon:SMW_datatype "URL" ;
-                 aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
-[[partOfSubobject::Template:Subobject Person_ID]]
-[[partOfSubobject::Template:Subobject Organization_ID]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                 rdfs:label "identifier base URI"@en .
 
 
 ###  https://github.com/tibonto/aeon#abstract_deadline
@@ -1352,36 +1199,28 @@ aeon:abstract_deadline rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf aeon:deadline ;
                        rdfs:domain aeon:AEON_0000001 ;
                        rdfs:range xsd:dateTimeStamp ;
-                       rdfs:label "abstract deadline"@en ;
-                       aeon:SMW_datatype "Date" ;
-                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                       rdfs:label "abstract deadline"@en .
 
 
 ###  https://github.com/tibonto/aeon#acceptance_rate
 aeon:acceptance_rate rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf aeon:metric ;
                      rdfs:domain aeon:AEON_0000001 ;
-                     rdfs:label "acceptance rate"@en ;
-                     aeon:SMW_datatype "Number" ;
-                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                     rdfs:label "acceptance rate"@en .
 
 
 ###  https://github.com/tibonto/aeon#accepted_papers
 aeon:accepted_papers rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf aeon:metric ;
                      rdfs:domain aeon:AEON_0000001 ;
-                     rdfs:label "accepted papers"@en ;
-                     aeon:SMW_datatype "Number" ;
-                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                     rdfs:label "accepted papers"@en .
 
 
 ###  https://github.com/tibonto/aeon#accepted_short_papers
 aeon:accepted_short_papers rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf aeon:metric ;
                            rdfs:domain aeon:AEON_0000001 ;
-                           rdfs:label "accepted short papers"@en ;
-                           aeon:SMW_datatype "Number" ;
-                           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                           rdfs:label "accepted short papers"@en .
 
 
 ###  https://github.com/tibonto/aeon#camera-ready_deadline
@@ -1389,72 +1228,56 @@ aeon:camera-ready_deadline rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf aeon:deadline ;
                            rdfs:domain aeon:AEON_0000001 ;
                            rdfs:range xsd:dateTimeStamp ;
-                           rdfs:label "camera-ready deadline"@en ;
-                           aeon:SMW_datatype "Date" ;
-                           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                           rdfs:label "camera-ready deadline"@en .
 
 
 ###  https://github.com/tibonto/aeon#city
 aeon:city rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf aeon:location ;
           rdfs:domain aeon:AEON_0000022 ;
-          rdfs:label "city"@en ;
-          aeon:SMW_datatype "Text" ;
-          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+          rdfs:label "city"@en .
 
 
 ###  https://github.com/tibonto/aeon#contact
 aeon:contact rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
              rdfs:domain aeon:AEON_0000009 ;
-             rdfs:label "contact"@en ;
-             aeon:SMW_datatype "Text" ;
-             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+             rdfs:label "contact"@en .
 
 
 ###  https://github.com/tibonto/aeon#contact_email
 aeon:contact_email rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf aeon:contact ;
                    rdfs:domain aeon:AEON_0000009 ;
-                   rdfs:label "contact email"@en ;
-                   aeon:SMW_datatype "Email" ;
-                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                   rdfs:label "contact email"@en .
 
 
 ###  https://github.com/tibonto/aeon#contact_person_name
 aeon:contact_person_name rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:contact ;
                          rdfs:domain aeon:AEON_0000009 ;
-                         rdfs:label "contact person name"@en ;
-                         aeon:SMW_datatype "Text" ;
-                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                         rdfs:label "contact person"@en .
 
 
 ###  https://github.com/tibonto/aeon#contact_phone
 aeon:contact_phone rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf aeon:contact ;
                    rdfs:domain aeon:AEON_0000009 ;
-                   rdfs:label "contact phone"@en ;
-                   aeon:SMW_datatype "Telephone number" ;
-                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                   rdfs:label "contact phone"@en .
 
 
 ###  https://github.com/tibonto/aeon#coordinates
 aeon:coordinates rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf aeon:location ;
                  rdfs:domain obo:GAZ_00000448 ;
-                 rdfs:label "coordinates"@en ;
-                 aeon:SMW_datatype "Geographic coordinates" ;
-                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                 rdfs:label "coordinates"@en .
 
 
 ###  https://github.com/tibonto/aeon#country
 aeon:country rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf aeon:location ;
              rdfs:domain aeon:AEON_0000023 ;
-             rdfs:label "country"@en ;
-             aeon:SMW_datatype "Text" ;
-             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+             rdfs:label "country"@en .
 
 
 ###  https://github.com/tibonto/aeon#deadline
@@ -1462,9 +1285,7 @@ aeon:deadline rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain aeon:AEON_0000001 ;
               rdfs:range xsd:dateTime ;
-              rdfs:label "deadline"@en ;
-              aeon:SMW_datatype "Date" ;
-              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+              rdfs:label "deadline"@en .
 
 
 ###  https://github.com/tibonto/aeon#demo_deadline
@@ -1472,9 +1293,7 @@ aeon:demo_deadline rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf aeon:deadline ;
                    rdfs:domain aeon:AEON_0000001 ;
                    rdfs:range xsd:dateTimeStamp ;
-                   rdfs:label "demo deadline"@en ;
-                   aeon:SMW_datatype "Date" ;
-                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                   rdfs:label "demo deadline"@en .
 
 
 ###  https://github.com/tibonto/aeon#duration
@@ -1482,11 +1301,7 @@ aeon:duration rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain aeon:AEON_0000001 ;
               rdfs:label "duration"@en ;
-              aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2047\", \"label\": \"duration\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#dateOfConferenceOrEvent\", \"label\": \"Date of conference or event\"}}"^^xsd:string ;
-              aeon:SMW_datatype "Quantity" ;
-              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
-              aeon:WikidataLabel "duration" ;
-              aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P2047" .
+              aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2047\", \"label\": \"duration\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#dateOfConferenceOrEvent\", \"label\": \"Date of conference or event\"}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#end_date
@@ -1495,11 +1310,7 @@ aeon:end_date rdf:type owl:DatatypeProperty ;
               rdfs:domain aeon:AEON_0000001 ;
               rdfs:range xsd:dateTimeStamp ;
               rdfs:label "end date"@en ;
-              aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P582\", \"label\": \"end_time\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:End_date\", \"label\": \"End_date\"},\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"end\"}}}"^^xsd:string ;
-              aeon:SMW_datatype "Date" ;
-              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
-              aeon:WikidataLabel "end_time" ;
-              aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P582" .
+              aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P582\", \"label\": \"end_time\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:End_date\", \"label\": \"End_date\"},\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"end\"}}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#event_frequency
@@ -1508,13 +1319,7 @@ aeon:event_frequency rdf:type owl:DatatypeProperty ;
                      rdfs:domain aeon:AEON_0000002 ;
                      obo:IAO_0000115 "The event frequency is the literal value of the number of month until the next event in a certain takes place." ;
                      rdfs:label "event frequency"@en ;
-                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2257\", \"label\": \"event_interval_inmonths\"}}"^^xsd:string ;
-                     aeon:SMW_datatype "Quantity" ;
-                     aeon:SMW_import_info """[[Corresponds to::1 month]] [[Corresponds to::1 months]] [[display units::months]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" ;
-                     aeon:WikidataLabel "event_interval_inmonths" ;
-                     aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P2257" .
+                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2257\", \"label\": \"event_interval_inmonths\"}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#event_number
@@ -1523,9 +1328,7 @@ aeon:event_number rdf:type owl:DatatypeProperty ;
                   rdfs:range xsd:string ;
                   obo:IAO_0000115 "The ordinal number of an academic event, if it is a part of an event series." ;
                   rdfs:label "event number"@en ;
-                  aeon:AEON_0000026 "{\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"number\"}}}"^^xsd:string ;
-                  aeon:SMW_datatype "Text" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  aeon:AEON_0000026 "{\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"number\"}}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#event_status
@@ -1558,9 +1361,7 @@ ConfIDent → DataCite
 scheduled → valid
 postponed → updated
 cancled → withdrawn"""@en ;
-                  rdfs:label "event status"@en ;
-                  aeon:SMW_datatype "Text" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "event status"@en .
 
 
 ###  https://github.com/tibonto/aeon#event_type_other
@@ -1568,9 +1369,7 @@ aeon:event_type_other rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf owl:topDataProperty ;
                       rdfs:domain aeon:AEON_0000004 ;
                       rdfs:range xsd:string ;
-                      rdfs:label "event type other"@en ;
-                      aeon:SMW_datatype "Text" ;
-                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                      rdfs:label "event type other"@en .
 
 
 ###  https://github.com/tibonto/aeon#event_year
@@ -1578,9 +1377,7 @@ aeon:event_year rdf:type owl:DatatypeProperty ;
                 rdfs:domain aeon:AEON_0000001 ;
                 rdfs:range xsd:integer ;
                 obo:IAO_0000115 "The year in which an event takes place."@en ;
-                rdfs:label "event year"@en ;
-                aeon:SMW_datatype "Date" ;
-                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                rdfs:label "event year"@en .
 
 
 ###  https://github.com/tibonto/aeon#fee
@@ -1589,11 +1386,7 @@ aeon:fee rdf:type owl:DatatypeProperty ;
          rdfs:domain aeon:AEON_0000030 ;
          obo:IAO_0000115 "The literal value of the type of fee an aeon:event can have."@en ;
          obo:IAO_0000600 "There are various type of fees for an event, such as the regular fee, a reduced fee, a member fee and so forth." ;
-         rdfs:label "fee"@en ;
-         aeon:SMW_datatype "Text" ;
-         aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Fee]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+         rdfs:label "fee"@en .
 
 
 ###  https://github.com/tibonto/aeon#fee_currency
@@ -1601,24 +1394,14 @@ aeon:fee_currency rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf aeon:fee ;
                   rdfs:domain aeon:AEON_0000030 ;
                   rdfs:comment "This property should have a value from the controlled list defined by the ISO_4217 standard (https://en.wikipedia.org/wiki/ISO_4217)." ;
-                  rdfs:label "fee currency"@en ;
-                  aeon:SMW_datatype "Text" ;
-                  aeon:SMW_import_info """Controlled vocabulary in [[MediaWiki:Smw_allows_list_Fee_currency]]
-
-[[partOfSubobject::Template:Subobject Fee]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  rdfs:label "fee currency"@en .
 
 
 ###  https://github.com/tibonto/aeon#fee_value
 aeon:fee_value rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf aeon:fee ;
                rdfs:domain aeon:AEON_0000030 ;
-               rdfs:label "fee value"@en ;
-               aeon:SMW_datatype "Number" ;
-               aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Fee]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+               rdfs:label "fee value"@en .
 
 
 ###  https://github.com/tibonto/aeon#first_name
@@ -1627,9 +1410,7 @@ aeon:first_name rdf:type owl:DatatypeProperty ;
                 rdfs:domain obo:NCBITaxon_9606 ;
                 rdfs:range xsd:string ;
                 obo:IAO_0000115 "The literal value of the first name of a person."@en ;
-                rdfs:label "first name"@en ;
-                aeon:SMW_datatype "Text" ;
-                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                rdfs:label "first name"@en .
 
 
 ###  https://github.com/tibonto/aeon#landing_page
@@ -1638,24 +1419,14 @@ aeon:landing_page rdf:type owl:DatatypeProperty ;
                   rdfs:domain obo:IAO_0020000 ;
                   rdfs:range xsd:anyURI ;
                   rdfs:comment "The literal value of the landing page (URL) an ID resolves to when following the ID_URL."@en ;
-                  rdfs:label "identifier landing page"@en ;
-                  aeon:SMW_datatype "URL" ;
-                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
-[[partOfSubobject::Template:Subobject Person_ID]]
-[[partOfSubobject::Template:Subobject Organization_ID]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  rdfs:label "identifier landing page"@en .
 
 
 ###  https://github.com/tibonto/aeon#language
 aeon:language rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:label "language"@en ;
-              aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2936\", \"label\": \"language_usedLabel\"}}"^^xsd:string ;
-              aeon:SMW_datatype "Text" ;
-              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
-              aeon:WikidataLabel "language_usedLabel" ;
-              aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P2936" .
+              aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2936\", \"label\": \"language_usedLabel\"}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#last_name
@@ -1664,26 +1435,20 @@ aeon:last_name rdf:type owl:DatatypeProperty ;
                rdfs:domain obo:NCBITaxon_9606 ;
                rdfs:range xsd:string ;
                obo:IAO_0000115 "The literal value of the last name, or family name, of a person."@en ;
-               rdfs:label "last name"@en ;
-               aeon:SMW_datatype "Text" ;
-               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+               rdfs:label "last name"@en .
 
 
 ###  https://github.com/tibonto/aeon#location
 aeon:location rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain obo:BFO_0000029 ;
-              rdfs:label "location"@en ;
-              aeon:SMW_datatype "Text" ;
-              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+              rdfs:label "location"@en .
 
 
 ###  https://github.com/tibonto/aeon#logo
 aeon:logo rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf owl:topDataProperty ;
-          rdfs:label "logo"@en ;
-          aeon:SMW_datatype "Page" ;
-          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+          rdfs:label "logo"@en .
 
 
 ###  https://github.com/tibonto/aeon#meeting_URL
@@ -1691,29 +1456,21 @@ aeon:meeting_URL rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf aeon:location ;
                  rdfs:domain aeon:AEON_0000029 ;
                  rdfs:range xsd:anyURI ;
-                 rdfs:label "meeting URL"@en ;
-                 aeon:SMW_datatype "URL" ;
-                 aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                 rdfs:label "meeting URL"@en .
 
 
 ###  https://github.com/tibonto/aeon#metric
 aeon:metric rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf owl:topDataProperty ;
             rdfs:domain obo:OBI_0000011 ;
-            rdfs:label "metric"@en ;
-            aeon:SMW_datatype "Text" ;
-            aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Metric]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+            rdfs:label "metric"@en .
 
 
 ###  https://github.com/tibonto/aeon#name
 aeon:name rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf owl:topDataProperty ;
           obo:IAO_0000115 "The literal value of the name of a thing."@en ;
-          rdfs:label "name"@en ;
-          aeon:SMW_datatype "Text" ;
-          aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+          rdfs:label "name"@en .
 
 
 ###  https://github.com/tibonto/aeon#notification_deadline
@@ -1721,9 +1478,7 @@ aeon:notification_deadline rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf aeon:deadline ;
                            rdfs:domain aeon:AEON_0000001 ;
                            rdfs:range xsd:dateTimeStamp ;
-                           rdfs:label "notification deadline"@en ;
-                           aeon:SMW_datatype "Date" ;
-                           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                           rdfs:label "notification deadline"@en .
 
 
 ###  https://github.com/tibonto/aeon#number_of_attendees
@@ -1731,18 +1486,14 @@ aeon:number_of_attendees rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:metric ;
                          rdfs:domain aeon:AEON_0000001 ;
                          rdfs:label "number of attendess"@en ;
-                         aeon:AEON_0000026 "{\"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Attendees\", \"label\": \"Attendees\"}}"^^xsd:string ;
-                         aeon:SMW_datatype "Number" ;
-                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                         aeon:AEON_0000026 "{\"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Attendees\", \"label\": \"Attendees\"}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#number_of_tracks
 aeon:number_of_tracks rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf aeon:metric ;
                       rdfs:domain aeon:AEON_0000001 ;
-                      rdfs:label "number of tracks"@en ;
-                      aeon:SMW_datatype "Number" ;
-                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                      rdfs:label "number of tracks"@en .
 
 
 ###  https://github.com/tibonto/aeon#organizational_name
@@ -1751,9 +1502,7 @@ aeon:organizational_name rdf:type owl:DatatypeProperty ;
                          rdfs:domain obo:OBI_0000245 ;
                          rdfs:range xsd:string ;
                          obo:IAO_0000115 "The literal value of the name to denote an organization."@en ;
-                         rdfs:label "organizational name"@en ;
-                         aeon:SMW_datatype "Text" ;
-                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                         rdfs:label "organizational name"@en .
 
 
 ###  https://github.com/tibonto/aeon#paper_deadline
@@ -1761,9 +1510,7 @@ aeon:paper_deadline rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf aeon:deadline ;
                     rdfs:domain aeon:AEON_0000001 ;
                     rdfs:range xsd:dateTimeStamp ;
-                    rdfs:label "paper deadline"@en ;
-                    aeon:SMW_datatype "Date" ;
-                    aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                    rdfs:label "paper deadline"@en .
 
 
 ###  https://github.com/tibonto/aeon#personal_name
@@ -1772,9 +1519,7 @@ aeon:personal_name rdf:type owl:DatatypeProperty ;
                    rdfs:domain obo:NCBITaxon_9606 ;
                    rdfs:range xsd:string ;
                    obo:IAO_0000115 "The literal value of the name to denote a person."@en ;
-                   rdfs:label "personal name"@en ;
-                   aeon:SMW_datatype "Text" ;
-                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                   rdfs:label "personal name"@en .
 
 
 ###  https://github.com/tibonto/aeon#poster_deadline
@@ -1782,9 +1527,7 @@ aeon:poster_deadline rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf aeon:deadline ;
                      rdfs:domain aeon:AEON_0000001 ;
                      rdfs:range xsd:dateTimeStamp ;
-                     rdfs:label "poster deadline"@en ;
-                     aeon:SMW_datatype "Date" ;
-                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                     rdfs:label "poster deadline"@en .
 
 
 ###  https://github.com/tibonto/aeon#previous_end_date
@@ -1792,9 +1535,7 @@ aeon:previous_end_date rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf aeon:end_date ;
                        rdfs:domain aeon:AEON_0000001 ;
                        rdfs:range xsd:dateTime ;
-                       rdfs:label "previous end date"@en ;
-                       aeon:SMW_datatype "Date" ;
-                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                       rdfs:label "previous end date"@en .
 
 
 ###  https://github.com/tibonto/aeon#previous_start_date
@@ -1802,18 +1543,14 @@ aeon:previous_start_date rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:start_date ;
                          rdfs:domain aeon:AEON_0000001 ;
                          rdfs:range xsd:dateTimeStamp ;
-                         rdfs:label "previous start date"@en ;
-                         aeon:SMW_datatype "Date" ;
-                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                         rdfs:label "previous start date"@en .
 
 
 ###  https://github.com/tibonto/aeon#proceedings_site_count
 aeon:proceedings_site_count rdf:type owl:DatatypeProperty ;
                             rdfs:subPropertyOf aeon:metric ;
                             rdfs:domain aeon:AEON_0000001 ;
-                            rdfs:label "proceeding cite count"@en ;
-                            aeon:SMW_datatype "Number" ;
-                            aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                            rdfs:label "proceeding cite count"@en .
 
 
 ###  https://github.com/tibonto/aeon#process_acronym
@@ -1823,11 +1560,7 @@ aeon:process_acronym rdf:type owl:DatatypeProperty ;
                      obo:IAO_0000112 "\"DILS 2019\" is the official acronym of the academic event \"13th International Conference on Data Integration in Life Science\""@en ;
                      obo:IAO_0000115 "The literal value of the official acronym of an aeon:process, that is either an academic event or event series."@en ;
                      rdfs:label "acronym"@en ;
-                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P1813\", \"label\": \"short_nameLabel\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#abbreviatedNameForTheConferenceOrEvent\", \"label\": \"Abbreviated name for the conference or event\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Acronym\", \"label\": \"Acronym\"}, \"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"acronym\"}}}"^^xsd:string ;
-                     aeon:SMW_datatype "Text" ;
-                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
-                     aeon:WikidataLabel "short_nameLabel" ;
-                     aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P1813" .
+                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P1813\", \"label\": \"short_nameLabel\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#abbreviatedNameForTheConferenceOrEvent\", \"label\": \"Abbreviated name for the conference or event\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Acronym\", \"label\": \"Acronym\"}, \"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"acronym\"}}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#process_alternative_name
@@ -1836,9 +1569,7 @@ aeon:process_alternative_name rdf:type owl:DatatypeProperty ;
                               rdfs:range xsd:string ;
                               rdfs:comment "The Literal value of an alternative name of an aeon:process, that is either an academic event or event series."@en ;
                               rdfs:label "alternative name"@en ;
-                              aeon:AEON_0000026 "{\"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#variantNameForTheConferenceOrEvent\", \"label\": \"Variant name for the conference or event\"}, \"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=title\", \"json_api_key\": \"title\"}}"^^xsd:string ;
-                              aeon:SMW_datatype "Text" ;
-                              aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                              aeon:AEON_0000026 "{\"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#variantNameForTheConferenceOrEvent\", \"label\": \"Variant name for the conference or event\"}, \"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=title\", \"json_api_key\": \"title\"}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#process_former_name
@@ -1846,9 +1577,7 @@ aeon:process_former_name rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:name ;
                          rdfs:range xsd:string ;
                          rdfs:comment "The Literal value of the former official name of an aeon:process, that is either an academic event or event series."@en ;
-                         rdfs:label "former name"@en ;
-                         aeon:SMW_datatype "Text" ;
-                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                         rdfs:label "former name"@en .
 
 
 ###  https://github.com/tibonto/aeon#process_translated_name
@@ -1856,9 +1585,7 @@ aeon:process_translated_name rdf:type owl:DatatypeProperty ;
                              rdfs:subPropertyOf aeon:name ;
                              rdfs:range xsd:string ;
                              obo:IAO_0000115 "The literal value of the translation of the official name (title) of an aeon:process, that is either an academic event or event series."@en ;
-                             rdfs:label "translated name"@en ;
-                             aeon:SMW_datatype "Text" ;
-                             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                             rdfs:label "translated name"@en .
 
 
 ###  https://github.com/tibonto/aeon#process_website
@@ -1867,20 +1594,14 @@ aeon:process_website rdf:type owl:DatatypeProperty ;
                      rdfs:domain obo:OBI_0000011 ;
                      rdfs:range xsd:anyURI ;
                      rdfs:label "process website"@en ;
-                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P856\", \"label\": \"official_website\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Homepage\", \"label\": \"Homepage\"}}"^^xsd:string ;
-                     aeon:SMW_datatype "URL" ;
-                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
-                     aeon:WikidataLabel "official_website" ;
-                     aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P856" .
+                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P856\", \"label\": \"official_website\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Homepage\", \"label\": \"Homepage\"}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#series_cite_count
 aeon:series_cite_count rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf aeon:metric ;
                        rdfs:domain aeon:AEON_0000002 ;
-                       rdfs:label "series cite count"@en ;
-                       aeon:SMW_datatype "Number" ;
-                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                       rdfs:label "series cite count"@en .
 
 
 ###  https://github.com/tibonto/aeon#sponsor_type
@@ -1888,11 +1609,7 @@ aeon:sponsor_type rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf owl:topDataProperty ;
                   rdfs:domain aeon:AEON_0000015 ;
                   rdfs:range xsd:string ;
-                  rdfs:label "sponsor type"@en ;
-                  aeon:SMW_datatype "Text" ;
-                  aeon:SMW_import_info """Controlled vocabulary in [[MediaWiki:Smw _allows_list_Sponsor_type]] 
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  rdfs:label "sponsor type"@en .
 
 
 ###  https://github.com/tibonto/aeon#start_date
@@ -1901,20 +1618,14 @@ aeon:start_date rdf:type owl:DatatypeProperty ;
                 rdfs:domain aeon:AEON_0000001 ;
                 rdfs:range xsd:dateTime ;
                 rdfs:label "start date"@en ;
-                aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P580\", \"label\": \"start_time\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Start_date\", \"label\": \"Start_date\"},\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"start\"}}}"^^xsd:string ;
-                aeon:SMW_datatype "Date" ;
-                aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" ;
-                aeon:WikidataLabel "start_time" ;
-                aeon:WikidataURI "https://www.wikidata.org/wiki/Property:P580" .
+                aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P580\", \"label\": \"start_time\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Start_date\", \"label\": \"Start_date\"},\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"start\"}}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#state
 aeon:state rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf aeon:location ;
            rdfs:domain aeon:AEON_0000024 ;
-           rdfs:label "state"@en ;
-           aeon:SMW_datatype "Text" ;
-           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+           rdfs:label "state"@en .
 
 
 ###  https://github.com/tibonto/aeon#submission_deadline
@@ -1922,34 +1633,26 @@ aeon:submission_deadline rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:deadline ;
                          rdfs:domain aeon:AEON_0000001 ;
                          rdfs:range xsd:dateTimeStamp ;
-                         rdfs:label "submission deadline"@en ;
-                         aeon:SMW_datatype "Date" ;
-                         aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                         rdfs:label "submission deadline"@en .
 
 
 ###  https://github.com/tibonto/aeon#submitted_papers
 aeon:submitted_papers rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf aeon:metric ;
                       rdfs:domain aeon:AEON_0000001 ;
-                      rdfs:label "submitted papers"@en ;
-                      aeon:SMW_datatype "Number" ;
-                      aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                      rdfs:label "submitted papers"@en .
 
 
 ###  https://github.com/tibonto/aeon#summary
 aeon:summary rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
-             rdfs:label "summary"@en ;
-             aeon:SMW_datatype "Text" ;
-             aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+             rdfs:label "summary"@en .
 
 
 ###  https://github.com/tibonto/aeon#summary_licence
 aeon:summary_licence rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf aeon:summary ;
-                     rdfs:label "summary licence"@en ;
-                     aeon:SMW_datatype "Text" ;
-                     aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                     rdfs:label "summary licence"@en .
 
 
 ###  https://github.com/tibonto/aeon#tutorial_deadline
@@ -1957,18 +1660,14 @@ aeon:tutorial_deadline rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf aeon:deadline ;
                        rdfs:domain aeon:AEON_0000001 ;
                        rdfs:range xsd:dateTimeStamp ;
-                       rdfs:label "tutorial deadline"@en ;
-                       aeon:SMW_datatype "Date" ;
-                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                       rdfs:label "tutorial deadline"@en .
 
 
 ###  https://github.com/tibonto/aeon#venue
 aeon:venue rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf aeon:location ;
            rdfs:domain aeon:AEON_0000025 ;
-           rdfs:label "venue"@en ;
-           aeon:SMW_datatype "Text" ;
-           aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+           rdfs:label "venue"@en .
 
 
 ###  https://github.com/tibonto/aeon#venue_URL
@@ -1976,9 +1675,7 @@ aeon:venue_URL rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf aeon:venue ;
                rdfs:domain aeon:AEON_0000025 ;
                rdfs:range xsd:anyURI ;
-               rdfs:label "venue website"@en ;
-               aeon:SMW_datatype "URL" ;
-               aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+               rdfs:label "venue website"@en .
 
 
 ###  https://github.com/tibonto/aeon#workshop_deadline
@@ -1986,9 +1683,7 @@ aeon:workshop_deadline rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf aeon:deadline ;
                        rdfs:domain aeon:AEON_0000001 ;
                        rdfs:range xsd:dateTimeStamp ;
-                       rdfs:label "workshop deadline"@en ;
-                       aeon:SMW_datatype "Date" ;
-                       aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                       rdfs:label "workshop deadline"@en .
 
 
 #################################################################
@@ -2359,9 +2054,7 @@ obo:BFO_0000148 rdf:type owl:Class ;
 ###  http://purl.obolibrary.org/obo/GAZ_00000448
 obo:GAZ_00000448 rdf:type owl:Class ;
                  rdfs:subClassOf obo:BFO_0000029 ;
-                 rdfs:label "geographic location"@en ;
-                 aeon:SMW_datatype "Category" ;
-                 aeon:SMW_import_info "[[Category:GAZ]] [[Category:Imported vocabulary]]" .
+                 rdfs:label "geographic location"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000027
@@ -2682,9 +2375,7 @@ obo:ICO_0000048 rdf:type owl:Class ;
                 obo:IAO_0000115 "An organization that is operated without the principal goal of making a financial profit."@en ;
                 obo:IAO_0000117 "Yongqun He"@en ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/2020-08-27/ico.owl"^^xsd:string ;
-                rdfs:label "nonprofit organization"@en ;
-                aeon:SMW_datatype "Category" ;
-                aeon:SMW_import_info "[[Category:ICO]] [[Category:Imported vocabulary]]" .
+                rdfs:label "nonprofit organization"@en .
 
 
 ###  http://purl.obolibrary.org/obo/ICO_0000049
@@ -2693,9 +2384,7 @@ obo:ICO_0000049 rdf:type owl:Class ;
                 obo:IAO_0000115 "An organization which has the principle goal of earning financial profit."@en ;
                 obo:IAO_0000117 "Yongqun He"@en ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/2020-08-27/ico.owl"^^xsd:string ;
-                rdfs:label "profit organization"@en ;
-                aeon:SMW_datatype "Category" ;
-                aeon:SMW_import_info "[[Category:ICO]] [[Category:Imported vocabulary]]" .
+                rdfs:label "profit organization"@en .
 
 
 ###  http://purl.obolibrary.org/obo/NCBITaxon_9606
@@ -2714,9 +2403,7 @@ obo:NCBITaxon_9606 rdf:type owl:Class ;
                                    "human being"^^xsd:string ,
                                    "man"^^xsd:string ;
                    obo:IAO_0000412 "http://purl.obolibrary.org/obo/obi/2020-12-16/obi.owl"^^xsd:string ;
-                   rdfs:label "Homo sapiens"^^xsd:string ;
-                   aeon:SMW_datatype "Category" ;
-                   aeon:SMW_import_info "[[Category:NCBITaxon]] [[Category:Imported vocabulary]]" .
+                   rdfs:label "Homo sapiens"^^xsd:string .
 
 
 ###  http://purl.obolibrary.org/obo/OBI_0000011
@@ -2765,9 +2452,7 @@ for now."""@en ;
                                 "PERSON: Susanna Sansone"^^xsd:string ;
                 obo:IAO_0000119 "GROUP: OBI"^^xsd:string ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/obi/2020-12-16/obi.owl"^^xsd:string ;
-                rdfs:label "organization"@en ;
-                aeon:SMW_datatype "Category" ;
-                aeon:SMW_import_info "[[Category:OBI]] [[Category:Imported vocabulary]]" .
+                rdfs:label "organization"@en .
 
 
 ###  http://purl.obolibrary.org/obo/OBI_0100026
@@ -2792,9 +2477,7 @@ Note that, because SKOS is designed to be a vehicle for representing semi-formal
 
 See the [SKOS-PRIMER] for more examples of identifying and describing SKOS concepts."""@en ;
              obo:IAO_0000412 "https://www.w3.org/2009/08/skos-reference/skos.html#Concept" ;
-             rdfs:label "Concept" ;
-             aeon:SMW_datatype "Category" ;
-             aeon:SMW_import_info "[[Category:SKOS]] [[Category:Imported vocabulary]]" .
+             rdfs:label "Concept" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000001
@@ -2815,10 +2498,7 @@ aeon:AEON_0000001 rdf:type owl:Class ;
 * It needs to be discussed, if we need the \"process boundary\" class to describe the start and end of an academic event or event series.
 * It needs to be discussed, if we need the \"temporal region\" and \"spatiotemporal region\"  classes to describe the duration and manifestation in spacetime of an academic event or event series."""@en ;
                   rdfs:label "academic event"@en ;
-                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Q1656682\", \"label\": \"eventLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Category:Event\", \"label\": \"Event\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#ConferenceOrEvent\", \"label\": \"Conference or Event\"}}"^^xsd:string ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info """
-           [[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Q1656682\", \"label\": \"eventLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Category:Event\", \"label\": \"Event\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#ConferenceOrEvent\", \"label\": \"Conference or Event\"}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000002
@@ -2831,9 +2511,7 @@ aeon:AEON_0000002 rdf:type owl:Class ;
                   obo:IAO_0000112 "International Semantic Web Conference (ISWC) series" ;
                   obo:IAO_0000115 "An academic event series is a planned process that is the set of all recurring academic events of a destinct identity. This destinct identity is usually demarked by a shared name that only differs with regard to some ordnial symbol, such as 1st or the year of the academic event."@en ;
                   rdfs:label "academic event series" ;
-                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Q15900647\", \"label\": \"conference_seriesLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Category:Event_series\", \"label\": \"Event_series\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#SeriesOfConferenceOrEvent\", \"label\": \"Series of conference or event\"}}"^^xsd:string ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Q15900647\", \"label\": \"conference_seriesLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Category:Event_series\", \"label\": \"Event_series\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#SeriesOfConferenceOrEvent\", \"label\": \"Series of conference or event\"}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000003
@@ -2844,9 +2522,7 @@ aeon:AEON_0000003 rdf:type owl:Class ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   obo:IAO_0000118 "ConfIDent ID"@en ;
                   rdfs:label "internal identifier"@en ;
-                  ns:term_status obo:IAO_0000423 ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  ns:term_status obo:IAO_0000423 .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000004
@@ -2866,9 +2542,7 @@ aeon:AEON_0000004 rdf:type owl:Class ;
                   obo:IAO_0000117 "PERSON: Philip Strömert" ;
                   obo:IAO_0000118 "type of the academic event"@en ;
                   obo:IAO_0000119 "https://github.com/tibonto/aeon/"^^xsd:anyURI ;
-                  rdfs:label "academic event type"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_has_event_type]]. [[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "academic event type"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000005
@@ -2900,9 +2574,7 @@ aeon:AEON_0000005 rdf:type owl:Class ;
                   obo:IAO_0000115 "The contributor role inheres in a person or organization that participates in a planned process by somehow contributing to it."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert" ;
                   <http://purl.org/dc/elements/1.1/date> "2020-09-28T12:51:02Z"^^xsd:dateTime ;
-                  rdfs:label "contributor role"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "contributor role"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000006
@@ -2917,11 +2589,7 @@ aeon:AEON_0000006 rdf:type owl:Class ;
                   rdfs:subClassOf aeon:AEON_0000005 ;
                   obo:IAO_0000115 "The organizer role inheres in a person or organization that contributes to a planned process by planning and managing its realization."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "organizer role"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Organizer]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  rdfs:label "organizer role"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000007
@@ -2937,11 +2605,7 @@ aeon:AEON_0000007 rdf:type owl:Class ;
                   owl:disjointWith aeon:AEON_0000009 ;
                   obo:IAO_0000115 "The 'committee member role' inheres in a person who contributes to a planned process by somehow realizing the function of the committe he is a member of."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "event committee member role"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Committee]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  rdfs:label "event committee member role"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000008
@@ -2956,9 +2620,7 @@ aeon:AEON_0000008 rdf:type owl:Class ;
                   rdfs:subClassOf aeon:AEON_0000007 ;
                   obo:IAO_0000115 "The 'committee chair role' inheres in a person who contributes to a planned process by somehow realizing the function of the committee he is a chair of."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "event committee chair role"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "event committee chair role"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000009
@@ -2973,9 +2635,7 @@ aeon:AEON_0000009 rdf:type owl:Class ;
                   rdfs:subClassOf aeon:AEON_0000006 ;
                   obo:IAO_0000115 "The contact person role inheres in a person that contributes to a planned process by functioning as the addressee of the planned process who answers general inquiries and redirects more complex inqueries to a more appropriate addressee."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "contact person role"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "contact person role"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000010
@@ -2990,9 +2650,7 @@ aeon:AEON_0000010 rdf:type owl:Class ;
                   rdfs:subClassOf aeon:AEON_0000005 ;
                   obo:IAO_0000115 "The attendee role inheres in a person that contributes to a planned process by attending it."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "attendee role"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "attendee role"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000011
@@ -3007,9 +2665,7 @@ aeon:AEON_0000011 rdf:type owl:Class ;
                   rdfs:subClassOf aeon:AEON_0000005 ;
                   obo:IAO_0000115 "The moderating role inheres in a person that contributes to a planned process by facilitating the communication."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "moderator role"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "moderator role"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000012
@@ -3026,9 +2682,7 @@ aeon:AEON_0000012 rdf:type owl:Class ;
                   obo:IAO_0000116 "ToDo: use CRO IRI http://purl.obolibrary.org/obo/CRO_0000101"@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   obo:IAO_0000118 "manuscript review role"@en ;
-                  rdfs:label "reviewer role"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "reviewer role"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000013
@@ -3045,9 +2699,7 @@ aeon:AEON_0000013 rdf:type owl:Class ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   obo:IAO_0000118 "invited speaker role"@en ;
                   obo:IAO_0006011 "http://purl.obolibrary.org/obo/CRO_0000100"^^xsd:anyURI ;
-                  rdfs:label "presenter role"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "presenter role"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000014
@@ -3062,9 +2714,7 @@ aeon:AEON_0000014 rdf:type owl:Class ;
                   rdfs:subClassOf aeon:AEON_0000013 ;
                   obo:IAO_0000115 "The keynote speaker role inheres in a person that contributes to a planned process by holding a keynote speech at a planned process."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "keynote speaker role"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "keynote speaker role"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000015
@@ -3080,9 +2730,7 @@ aeon:AEON_0000015 rdf:type owl:Class ;
                   obo:IAO_0000115 "The sponsor role inheres in a person or organization that contributes to a planned process by providing the financial or material ressources needed to realize a planned process."@en ;
                   obo:IAO_0000116 "PS 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...). As the possible sponsor types can have various schemes, it seems best to have named individuals of the aeon:Sponsor class at the moment." ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "sponsor role"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "sponsor role"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000016
@@ -3094,9 +2742,7 @@ aeon:AEON_0000016 rdf:type owl:Class ;
                   obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
                   obo:IAO_0000118 "digital object identifier"@en ;
                   obo:IAO_0000119 "https://www.doi.org/" ;
-                  rdfs:label "DOI" ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "DOI" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000017
@@ -3106,13 +2752,7 @@ aeon:AEON_0000017 rdf:type owl:Class ;
                   obo:IAO_0000115 "A 'GND identifier' is a iao:'centrally registered identifier' that denotes an entity in \"The Integrated Authority File (GND)\" of the German national library."@en ;
                   obo:IAO_0000117 "PERSON: Philip Strömert" ;
                   obo:IAO_0000119 "https://d-nb.info/standards/elementset/gnd#gndIdentifier"^^xsd:anyURI ;
-                  rdfs:label "GND identifier"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject External_Process_ID]]
-[[partOfSubobject::Template:Subobject Person_ID]]
-[[partOfSubobject::Template:Subobject Organization_ID]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  rdfs:label "GND ID" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000018
@@ -3123,12 +2763,7 @@ aeon:AEON_0000018 rdf:type owl:Class ;
                   obo:IAO_0000117 "PERSON: Philip Strömert" ;
                   obo:IAO_0000118 "International Standard Name Identifier"@en ;
                   obo:IAO_0000119 "https://isni.org/page/what-is-isni/"^^xsd:anyURI ;
-                  rdfs:label "ISNI" ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Person_ID]]
-[[partOfSubobject::Template:Subobject Organization_ID]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  rdfs:label "ISNI" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000019
@@ -3139,11 +2774,7 @@ aeon:AEON_0000019 rdf:type owl:Class ;
                   obo:IAO_0000117 "PERSON: Philip Strömert" ;
                   obo:IAO_0000118 "Open Researcher and Contributor ID"@en ;
                   obo:IAO_0000119 "https://en.wikipedia.org/wiki/ORCID"^^xsd:anyURI ;
-                  rdfs:label "ORCID" ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Person_ID]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  rdfs:label "ORCID" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000020
@@ -3155,11 +2786,7 @@ aeon:AEON_0000020 rdf:type owl:Class ;
                   obo:IAO_0000118 "ROR ID" ,
                                   "research organization registry identifier"@en ;
                   obo:IAO_0000119 "https://ror.org/"^^xsd:anyURI ;
-                  rdfs:label "ROR identifier"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Organization_ID]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  rdfs:label "ROR ID" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000021
@@ -3173,13 +2800,7 @@ aeon:AEON_0000021 rdf:type owl:Class ;
                                   "wikidata q number"@en ;
                   obo:IAO_0000119 "https://www.wikidata.org/wiki/Q43649390" ;
                   obo:IAO_0006011 "\"https://www.wikidata.org/wiki/\"^^ xsd:anyURI"@en ;
-                  rdfs:label "Wikidata QID"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info """[[partOfSubobject::Template:Subobject Process_External_ID]]
-[[partOfSubobject::Template:Subobject Person_ID]]
-[[partOfSubobject::Template:Subobject Organization_ID]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  rdfs:label "Wikidata QID"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000022
@@ -3190,9 +2811,7 @@ aeon:AEON_0000022 rdf:type owl:Class ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   obo:IAO_0000119 "https://en.wikipedia.org/wiki/City" ;
                   obo:IAO_0006011 "http://purl.obolibrary.org/obo/ENVO_00000856"^^xsd:anyURI ;
-                  rdfs:label "city"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "city"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000023
@@ -3201,26 +2820,20 @@ aeon:AEON_0000023 rdf:type owl:Class ;
                   obo:IAO_0000115 "A country is a gaz:geographic location that may be an independent sovereign state or part of a larger state, as a non-sovereign or formerly sovereign political division, a physical territory with a government, or a geographic region associated with sets of previously independent or differently associated people with distinct political characteristics."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   obo:IAO_0000119 "https://en.wikipedia.org/wiki/Country"^^xsd:anyURI ;
-                  rdfs:label "country"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "country"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000024
 aeon:AEON_0000024 rdf:type owl:Class ;
                   rdfs:subClassOf obo:GAZ_00000448 ;
                   obo:IAO_0000118 "province"@en ;
-                  rdfs:label "region"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "province"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000025
 aeon:AEON_0000025 rdf:type owl:Class ;
                   rdfs:subClassOf obo:GAZ_00000448 ;
-                  rdfs:label "event venue"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "event venue"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000027
@@ -3243,9 +2856,7 @@ aeon:AEON_0000027 rdf:type owl:Class ;
                                   "field of study"@en ,
                                   "research field"@en ;
                   obo:IAO_0000119 "https://en.wikipedia.org/wiki/Academic_discipline"^^xsd:anyURI ;
-                  rdfs:label "academic field"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "academic field"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000028
@@ -3272,9 +2883,7 @@ aeon:AEON_0000029 rdf:type owl:Class ;
                   rdfs:subClassOf obo:BFO_0000029 ;
                   obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
                   <http://purl.org/dc/elements/1.1/date> "2020-10-14T15:31:27Z"^^xsd:dateTime ;
-                  rdfs:label "virtual location"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  rdfs:label "virtual location"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000030
@@ -3283,13 +2892,7 @@ aeon:AEON_0000030 rdf:type owl:Class ;
                   obo:IAO_0000115 "The financial cost of attendance at a scientific event."@en ;
                   obo:IAO_0000116 "PS: It needs to be discussed, if having fee as ICE is sufficient/correct."@en ;
                   obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
-                  rdfs:label "fee"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info """The individuals/instances of this class make up the allowed value list in [[MediaWiki:Smw_allows_list_Has_fee]].
-
-[[partOfSubobject::Template:Subobject Fee]]
-
-[[Category:AEON]] [[Category:Imported vocabulary]]""" .
+                  rdfs:label "fee"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000034
@@ -3310,9 +2913,7 @@ aeon:AEON_0000042 rdf:type owl:Class ;
                   rdfs:subClassOf obo:BFO_0000027 ;
                   obo:IAO_0000600 "An academic event committee or commission is a body of one or more persons that is responsible for the realization of a certain task or aspect in an academic event."@en ;
                   rdfs:label "event committee"@en ;
-                  ns:term_status "pending"@en ;
-                  aeon:SMW_datatype "Category" ;
-                  aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
+                  ns:term_status "pending"@en .
 
 
 ###  https://github.com/tibonto/aeon#attendee
@@ -3963,4 +3564,4 @@ aeon:__PIDapalooza_Role_2 rdf:type owl:NamedIndividual ;
 ] .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi
