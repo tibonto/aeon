@@ -1046,8 +1046,10 @@ aeon:AEON_0000085 rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#AEON_0000086
 aeon:AEON_0000086 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:BFO_0000066 ;
-                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:domain obo:BFO_0000003 ;
                   rdfs:range aeon:AEON_0000023 ;
+                  obo:IAO_0000115 "A relation obtaining between a bfo:occurent and the country in which it occurs."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "occurs in country"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P17\", \"label\": \"countryLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_country\", \"label\": \"Has_location_country\"}}"^^xsd:string ;
                   aeon:SMW_datatype "Text" ;
@@ -3196,7 +3198,9 @@ aeon:AEON_0000022 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000023
 aeon:AEON_0000023 rdf:type owl:Class ;
                   rdfs:subClassOf obo:GAZ_00000448 ;
-                                  "https://en.wikipedia.org/wiki/Country"^^xsd:anyURI ;
+                  obo:IAO_0000115 "A country is a gaz:geographic location that may be an independent sovereign state or part of a larger state, as a non-sovereign or formerly sovereign political division, a physical territory with a government, or a geographic region associated with sets of previously independent or differently associated people with distinct political characteristics."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000119 "https://en.wikipedia.org/wiki/Country"^^xsd:anyURI ;
                   rdfs:label "country"@en ;
                   aeon:SMW_datatype "Category" ;
                   aeon:SMW_import_info "[[Category:AEON]] [[Category:Imported vocabulary]]" .
