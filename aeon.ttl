@@ -947,9 +947,11 @@ aeon:AEON_0000087 rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#AEON_0000088
 aeon:AEON_0000088 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:BFO_0000066 ;
-                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:domain obo:BFO_0000003 ;
                   rdfs:range aeon:AEON_0000024 ;
-                  rdfs:label "occurs in state"@en ;
+                  obo:IAO_0000115 "A relation obtaining between a bfo:occurent and the province in which it occurs."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:label "occurs in province"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P131\", \"label\": \"located_in_the_administrative_territorial_entityLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_state\", \"label\": \"Has_location_state\"}}"^^xsd:string .
 
 
@@ -2829,7 +2831,13 @@ aeon:AEON_0000023 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000024
 aeon:AEON_0000024 rdf:type owl:Class ;
                   rdfs:subClassOf obo:GAZ_00000448 ;
-                  obo:IAO_0000118 "province"@en ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "A province is a gaz:geographic location that is an administrative division within a country."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000118 "administrative division"@en ,
+                                  "administrative region"@en ,
+                                  "administrative unit"@en ;
+                  obo:IAO_0000119 "https://en.wikipedia.org/wiki/Province"^^xsd:anyURI ;
                   rdfs:label "province"@en .
 
 
