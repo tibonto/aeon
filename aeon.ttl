@@ -3186,8 +3186,9 @@ aeon:organizer rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#program_committee
 aeon:program_committee rdf:type owl:Class ;
                        rdfs:subClassOf aeon:AEON_0000042 ;
-                       obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
-                       obo:IAO_0000600 "The programme committee is responsible for the selection of submissions (peer review process) and content of an academic event."@en ;
+                       obo:IAO_0000114 obo:IAO_0000125 ;
+                       obo:IAO_0000115 "The programme committee is an academic event committee that is responsible for planning what body of work is to be presented at an academic event. This entails making a call to the scientifiy community to submit their work, to review these submissions and to invite presenters that will fit to the academic event according to its planned scope."@en ;
+                       obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
                        rdfs:label "program committee"@en .
 
 
