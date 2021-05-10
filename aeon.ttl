@@ -3127,8 +3127,9 @@ aeon:keynote_speaker rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#local_committee
 aeon:local_committee rdf:type owl:Class ;
                      rdfs:subClassOf aeon:AEON_0000042 ;
-                     obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
-                     obo:IAO_0000600 "The local committee takes care of planning, organizing and carrying out an academic event on site (venue, registration, supply, accommodations etc.)"@en ;
+                     obo:IAO_0000114 obo:IAO_0000125 ;
+                     obo:IAO_0000115 "The local committee is an academic event committee that is in charge of planning, organizing and carrying out an academic event on site. This entails being in charge of managing the venue, registration, supply, accommodations etc."@en ;
+                     obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
                      rdfs:label "local committee"@en .
 
 
