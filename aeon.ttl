@@ -2991,7 +2991,8 @@ aeon:committee_chair rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#committee_member
 aeon:committee_member rdf:type owl:Class ;
-                      owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                      owl:equivalentClass [ owl:intersectionOf ( aeon:organizer
+                                                                 [ rdf:type owl:Restriction ;
                                                                    owl:onProperty obo:RO_0000087 ;
                                                                    owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000007
                                                                                                              [ rdf:type owl:Restriction ;
