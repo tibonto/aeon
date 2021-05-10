@@ -3092,9 +3092,10 @@ aeon:finance_committee rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#general_committee
 aeon:general_committee rdf:type owl:Class ;
                        rdfs:subClassOf aeon:AEON_0000042 ;
-                       obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                       obo:IAO_0000114 obo:IAO_0000125 ;
+                       obo:IAO_0000115 "The general or steering committee is an academic event committee that is responsible for the entire conceptual design of an academic event. This entails decisions on the content focus, budget, size, choice of venue and time, selection of other responsible persons, etc."@en ;
+                       obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
                        obo:IAO_0000118 "steering committee"@en ;
-                       obo:IAO_0000600 "The general or steering committee is responsible for the entire conceptual design of an academic event, from decisions on the content focus, budget, size, choice of venue and time, selection of other responsible persons, etc."@en ;
                        rdfs:label "general committee"@en .
 
 
