@@ -3096,16 +3096,20 @@ aeon:general_committee rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#keynote_speaker
 aeon:keynote_speaker rdf:type owl:Class ;
-                     owl:equivalentClass [ rdf:type owl:Restriction ;
-                                           owl:onProperty obo:RO_0000087 ;
-                                           owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000014
-                                                                                     [ rdf:type owl:Restriction ;
-                                                                                       owl:onProperty obo:BFO_0000054 ;
-                                                                                       owl:someValuesFrom obo:OBI_0000011
+                     owl:equivalentClass [ owl:intersectionOf ( aeon:speaker
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty obo:RO_0000087 ;
+                                                                  owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000014
+                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                              owl:onProperty obo:BFO_0000054 ;
+                                                                                                              owl:someValuesFrom obo:OBI_0000011
+                                                                                                            ]
+                                                                                                          ) ;
+                                                                                       rdf:type owl:Class
                                                                                      ]
-                                                                                   ) ;
-                                                                rdf:type owl:Class
-                                                              ]
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
                                          ] ;
                      rdfs:subClassOf aeon:speaker ;
                      obo:IAO_0000114 obo:IAO_0000423 ;
