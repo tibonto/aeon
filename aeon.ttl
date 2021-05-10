@@ -3153,18 +3153,21 @@ aeon:moderator rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#organizer
 aeon:organizer rdf:type owl:Class ;
-               owl:equivalentClass [ rdf:type owl:Restriction ;
-                                     owl:onProperty obo:RO_0000087 ;
-                                     owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000006
-                                                                               [ rdf:type owl:Restriction ;
-                                                                                 owl:onProperty obo:BFO_0000054 ;
-                                                                                 owl:someValuesFrom obo:OBI_0000011
+               owl:equivalentClass [ owl:intersectionOf ( aeon:contributor
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty obo:RO_0000087 ;
+                                                            owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000006
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty obo:BFO_0000054 ;
+                                                                                                        owl:someValuesFrom obo:OBI_0000011
+                                                                                                      ]
+                                                                                                    ) ;
+                                                                                 rdf:type owl:Class
                                                                                ]
-                                                                             ) ;
-                                                          rdf:type owl:Class
-                                                        ]
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
                                    ] ;
-               rdfs:subClassOf aeon:contributor ;
                obo:IAO_0000112 "DataCite is an organizer of PIDapalooza 2020."@en ,
                                "Organizers of academic events or event series are often organizations that form special taks forces, or event committees, in order to plan and manage all aspects related to the realization of the event or event series." ;
                obo:IAO_0000114 obo:IAO_0000423 ;
