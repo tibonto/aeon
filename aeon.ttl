@@ -2967,7 +2967,8 @@ Defining 'attendee' is not trivial, as the expectations of what an attendee must
 
 ###  https://github.com/tibonto/aeon#committee_chair
 aeon:committee_chair rdf:type owl:Class ;
-                     owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                     owl:equivalentClass [ owl:intersectionOf ( aeon:committee_member
+                                                                [ rdf:type owl:Restriction ;
                                                                   owl:onProperty obo:RO_0000087 ;
                                                                   owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000008
                                                                                                             [ rdf:type owl:Restriction ;
@@ -2978,14 +2979,9 @@ aeon:committee_chair rdf:type owl:Class ;
                                                                                        rdf:type owl:Class
                                                                                      ]
                                                                 ]
-                                                                [ rdf:type owl:Restriction ;
-                                                                  owl:onProperty obo:RO_0002350 ;
-                                                                  owl:someValuesFrom aeon:AEON_0000042
-                                                                ]
                                                               ) ;
                                            rdf:type owl:Class
                                          ] ;
-                     rdfs:subClassOf aeon:committee_member ;
                      obo:IAO_0000114 obo:IAO_0000423 ;
                      obo:IAO_0000115 "A committee chair is a committee member that holds a committee chair role which is being realized in a planned process."@en ;
                      obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
