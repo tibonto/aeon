@@ -1,5 +1,5 @@
 @prefix : <https://github.com/tibonto/aeon#> .
-@prefix dc: <http://dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -7,29 +7,30 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix aeon: <https://github.com/tibonto/aeon#> .
-@prefix obda: <https://w3id.org/obda/vocabulary#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix dcmi-terms: <http://dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/> .
 @base <https://github.com/tibonto/aeon> .
 
 <https://github.com/tibonto/aeon> rdf:type owl:Ontology ;
-                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.3.3> ;
-                                   <http://purl.org/dc/elements/1.1/contributor> "Christian Hauschke" ,
-                                                                                 "Christoph Lange" ,
-                                                                                 "Michael Conlon" ,
-                                                                                 "Philip Strömert" ;
-                                   <http://purl.org/dc/elements/1.1/creator> "ConfIDent project" ;
-                                   <http://purl.org/dc/elements/1.1/description> "The Academic Event Ontology (AEON) is used to represent information regarding academic events. The ontology supports the identification, development, management, evaluation, and impact assessment of events, components of events and event series, as well as identification and reuse of works presented or developed at events. The ontology is independent of knowledge, creative domain, or topics related to events. AEON is focused on events and assumes the representation of many entities associated with events such as attendees, locations, academic works, datetimes, and processes are defined in compatible ontologies." ;
-                                   <http://purl.org/dc/elements/1.1/title> "Academic Event Ontology"@en ;
-                                   <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
-                                   owl:versionInfo "v0.3.3" .
+                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.4.0> ;
+                                   dc:contributor "Christian Hauschke" ,
+                                                  "Christoph Lange" ,
+                                                  "Michael Conlon" ,
+                                                  "Philip Strömert" ;
+                                   dc:creator "ConfIDent project" ;
+                                   dc:description "The Academic Event Ontology (AEON) is used to represent information regarding academic events. The ontology supports the identification, development, management, evaluation, and impact assessment of events, components of events and event series, as well as identification and reuse of works presented or developed at events. The ontology is independent of knowledge, creative domain, or topics related to events. AEON is focused on events and assumes the representation of many entities associated with events such as attendees, locations, academic works, datetimes, and processes are defined in compatible ontologies." ;
+                                   dc:title "Academic Event Ontology"@en ;
+                                   terms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                   owl:versionInfo "v0.4.0" .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
 ###  http://dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/creator
-dc:creator rdf:type owl:AnnotationProperty .
+dcmi-terms:creator rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000111
@@ -91,8 +92,7 @@ We also have the outstanding issue of how to aim different definitions to differ
                 obo:IAO_0000117 "PERSON:Daniel Schober"@en ;
                 obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
                 rdfs:isDefinedBy obo:iao.owl ;
-                rdfs:label "definition" ,
-                           "definition"@en .
+                rdfs:label "definition"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000116
@@ -115,10 +115,7 @@ obo:IAO_0000117 rdf:type owl:AnnotationProperty ;
                 obo:IAO_0000117 "PERSON:Daniel Schober"@en ;
                 obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
                 rdfs:isDefinedBy obo:iao.owl ;
-                rdfs:label "definition editor" ,
-                           "definition editor"@en ,
-                           "term editor" ,
-                           "term editor"@en .
+                rdfs:label "definition editor"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000118
@@ -236,35 +233,35 @@ obo:RO_0001900 rdf:type owl:AnnotationProperty ;
 
 
 ###  http://purl.org/dc/elements/1.1/contributor
-<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+dc:contributor rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/creator
-<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+dc:creator rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/date
-<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+dc:date rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/description
-<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+dc:description rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/identifier
-<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+dc:identifier rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/source
-<http://purl.org/dc/elements/1.1/source> rdf:type owl:AnnotationProperty .
+dc:source rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+dc:title rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/license
-<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+terms:license rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
@@ -294,7 +291,7 @@ skos:scopeNote rdf:type owl:AnnotationProperty .
 ###  https://github.com/tibonto/aeon#AEON_0000026
 aeon:AEON_0000026 rdf:type owl:AnnotationProperty ;
                   obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
-                  <http://purl.org/dc/elements/1.1/date> "2020-10-14T15:31:27Z"^^xsd:dateTime ;
+                  dc:date "2020-10-14T15:31:27Z"^^xsd:dateTime ;
                   rdfs:label "maps to"@de .
 
 
@@ -514,6 +511,9 @@ obo:RO_0000057 rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf owl:topObjectProperty ;
                rdfs:domain obo:BFO_0000003 ;
                rdfs:range obo:BFO_0000002 ;
+               owl:propertyChainAxiom ( obo:RO_0000087
+                                        obo:BFO_0000054
+                                      ) ;
                obo:IAO_0000111 "has participant"@en ;
                obo:IAO_0000112 "this blood coagulation has participant this blood clot"@en ,
                                "this investigation has participant this investigator"@en ,
@@ -522,7 +522,7 @@ obo:RO_0000057 rdf:type owl:ObjectProperty ;
                obo:IAO_0000116 "Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time."@en ;
                obo:IAO_0000118 "has_participant"@en ;
                obo:IAO_0000412 "http://purl.obolibrary.org/obo/ro/releases/2020-12-18/ro.owl"^^xsd:string ;
-               <http://purl.org/dc/elements/1.1/source> "http://www.obofoundry.org/ro/#OBO_REL:has_participant" ;
+               dc:source "http://www.obofoundry.org/ro/#OBO_REL:has_participant" ;
                rdfs:label "has participant"@en .
 
 
@@ -620,19 +620,14 @@ obo:TXPO_0002523 rdf:type owl:ObjectProperty ;
                  rdfs:label "has occurrent part" .
 
 
-###  http://www.w3.org/2002/07/owl#topObjectProperty
-owl:topObjectProperty obo:IAO_0000115 """'has academic field' is a primitive, instance-level relation obtaining between a planned process and the skos:Concept subclass 'academic field'. 
-To say p has academic field x =def. p is a planned process, there is some x that is an academic field of p."""@en .
-
-
 ###  https://github.com/tibonto/aeon#AEON_0000032
 aeon:AEON_0000032 rdf:type owl:ObjectProperty ;
-                  owl:inverseOf aeon:event_type_of ;
+                  owl:inverseOf aeon:academic_event_type_of ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000004 ;
-                  obo:IAO_0000115 "A relation obtaining between a planned process and a skos:Concept that is used to descibe the social format of an 'academic event'."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "has event type"@en ;
+                  obo:IAO_0000115 "A relation obtaining between an 'academic event' and a skos:Concept that is used to descibe the format of an 'academic event'. A set of possible common academic event types is provided as named individuals."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:label "has academic event type"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"event_type\"}, \"openresearch\": {\"uri\": null, \"label\": \"Type\"}}"^^xsd:string .
 
 
@@ -641,11 +636,12 @@ aeon:AEON_0000033 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:BFO_0000001 ;
                   rdfs:range aeon:AEON_0000034 ;
-                  obo:IAO_0000115 "A relation obtaining between an entity and a distributed identifier that is used to denote the entity."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ,
-                                  "Philip Stroemert"^^xsd:string ;
-                  rdfs:label "has distributed identifier"@en ;
-                  ns:term_status obo:IAO_0000423 .
+                  obo:IAO_0000111 "has DID"@en ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "A relation obtaining between an entity and a distributed identifier document (DID) that is used to denote the verifiable, decentralized digital identity of an entity."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000118 "has distributed identifier"@en ;
+                  rdfs:label "has DID"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000040
@@ -653,8 +649,8 @@ aeon:AEON_0000040 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:academic_field_of ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:AEON_0000027 ;
-                  obo:IAO_0000115 "A relation obtaining between a planned process and a skos:Concept that is used to descibe the scientific subject of the planned process according to some controlled vocabulary or thesaurus."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000115 "A relation obtaining between a obi:'planned process' and a skos:Concept that is used to describe the scientific subject of the planned process according to some controlled vocabulary or thesaurus."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "has academic field"@en .
 
 
@@ -663,8 +659,8 @@ aeon:AEON_0000041 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:topic_of ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:AEON_0000028 ;
-                  obo:IAO_0000117 "A relation obtaining between a planned process and a skos:Concept that is used to descibe the theme of the planned process."@en ,
-                                  "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000115 "A relation obtaining between a obi:'planned process' and a skos:Concept that is used to descibe the theme of the planned process."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "has topic"@en .
 
 
@@ -674,7 +670,7 @@ aeon:AEON_0000043 rdf:type owl:ObjectProperty ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000030 ;
                   obo:IAO_0000115 "A relation obtaining between a planned process and an 'information content entity' that is about the amount of money one has to pay in order to be an allowed participant of the planned process."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "has fee"@en .
 
 
@@ -684,9 +680,8 @@ aeon:AEON_0000045 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:contibutes_to ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:contributor ;
-                  obo:IAO_0000115 "'has contributor' is a relation obtaining between a planned process and a person or organization that holds a contributor role which is being realized by the planned process. A contribution to a planned process takes place when someone works on the planning or realization of a planned process."@en ,
-                                  "A relation obtaining between an entity and its corresponding Wikidata entity identifier."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000115 "'has contributor' is a relation obtaining between a planned process and a person or organization that holds a contributor role which is being realized by the planned process. A contribution to a planned process takes place when someone works on the planning or realization of a planned process."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "has contributor"@en .
 
 
@@ -697,7 +692,7 @@ aeon:AEON_0000046 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:attendee ;
                   obo:IAO_0000115 "A relation obtaining between a planned process and a person that holds an attendee role which is being realized by the planned process."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "has attendee"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P710\", \"label\": \"participantLabel\"}}"^^xsd:string .
 
@@ -709,7 +704,7 @@ aeon:AEON_0000047 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:moderator ;
                   obo:IAO_0000115 "A relation obtaining between a planned process and a person that holds a moderator role which is being realized by the planned process."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "has moderator"@en .
 
 
@@ -720,7 +715,7 @@ aeon:AEON_0000048 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:organizer ;
                   obo:IAO_0000115 "A relation obtaining between a planned process and a person or organization that holds an organizer role which is being realized by the planned process."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "has organizer"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P664\", \"label\": \"organizerLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_organizer\", \"label\": \"Has_organizer\"},\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"sponsor\"}}}"^^xsd:string .
 
@@ -732,7 +727,7 @@ aeon:AEON_0000049 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:reviewer ;
                   obo:IAO_0000115 "A relation obtaining between a planned process and a person that holds a reviewer role which is being realized by the planned process."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "has reviewer"@en .
 
 
@@ -743,7 +738,7 @@ aeon:AEON_0000050 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:speaker ;
                   obo:IAO_0000115 "A relation obtaining between a planned process and a person that holds a presenter role which is being realized by the planned process."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "has presenter"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P823\", \"label\": \"speaker\"}}"^^xsd:string .
 
@@ -755,7 +750,7 @@ aeon:AEON_0000051 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:sponsor ;
                   obo:IAO_0000115 "A relation obtaining between a planned process and a person or organization that holds a sponsor role which is being realized by the planned process."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "has sponsor"@en .
 
 
@@ -766,7 +761,7 @@ aeon:AEON_0000052 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:committee_member ;
                   obo:IAO_0000115 "A relation obtaining between a planned process and a person that holds a committee member role which is being realized by the planned process."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "has committee member"@en .
 
 
@@ -777,7 +772,7 @@ aeon:AEON_0000053 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:contact_person ;
                   obo:IAO_0000115 "A relation obtaining between a planned process and a person that holds a contact person role which is being realized by the planned process."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "has contact person"@en .
 
 
@@ -788,7 +783,7 @@ aeon:AEON_0000054 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:keynote_speaker ;
                   obo:IAO_0000115 "A relation between a planned process and a person that holds a keynote speaker role which is being realized by the planned process."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "has keynote speaker"@en .
 
 
@@ -799,19 +794,19 @@ aeon:AEON_0000055 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:committee_chair ;
                   obo:IAO_0000115 "A relation obtaining between a planned process and a person that holds a committee chair role which is being realized by the planned process."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "has committee chair"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000075
 aeon:AEON_0000075 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
-                  rdfs:domain obo:IAO_0000027 ;
+                  rdfs:domain obo:IAO_0000030 ;
                   rdfs:range aeon:AEON_0000016 ;
-                  obo:IAO_0000115 "A relation obtaining between a data item and its corresponding digital object identifier."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "has DOI"@en ;
-                  ns:term_status obo:IAO_0000423 .
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "A relation obtaining between a digital iao:information content entity and its corresponding ISO 26324 conform digital object identifier."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:label "has DOI"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000076
@@ -819,10 +814,10 @@ aeon:AEON_0000076 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:BFO_0000001 ;
                   rdfs:range aeon:AEON_0000017 ;
-                  obo:IAO_0000115 "A relation obtaining between an entity and the identifier used by the German national library to denote the entity."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "has GND"@en ;
-                  ns:term_status obo:IAO_0000423 ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "A relation obtaining between an entity and the 'GND identifier' used by the German national library to denote this entity."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:label "has GND identifier"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P227\", \"label\": \"GND_ID\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#gndIdentifier\", \"label\": \"GND-Identifier\"}}"^^xsd:string .
 
 
@@ -835,10 +830,10 @@ aeon:AEON_0000077 rdf:type owl:ObjectProperty ;
                                             )
                               ] ;
                   rdfs:range aeon:AEON_0000018 ;
-                  obo:IAO_0000115 "A relation obtaining between a person or organization and the 'international standard name identifier' used to denote the entity."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "has ISNI"@en ;
-                  ns:term_status obo:IAO_0000423 .
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "A relation obtaining between a person or organization and the 'international standard name identifier' used to denote the person or organization in the ISNI database."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:label "has ISNI"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000078
@@ -846,10 +841,10 @@ aeon:AEON_0000078 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:NCBITaxon_9606 ;
                   rdfs:range aeon:AEON_0000019 ;
-                  obo:IAO_0000115 "A relation obtaining between a person and the 'open researcher and contributor identifier' used to denote the entity."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "has ORCID"@en ;
-                  ns:term_status obo:IAO_0000423 .
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "A relation obtaining between a person and the 'ORCID' used to denote the person in the ORCID database."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:label "has ORCID"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000079
@@ -857,10 +852,11 @@ aeon:AEON_0000079 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:OBI_0000245 ;
                   rdfs:range aeon:AEON_0000020 ;
-                  obo:IAO_0000115 "A relation obtaining between a person and the 'research organization registry identifier' used to denote the entity."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "has ROR"@en ;
-                  ns:term_status obo:IAO_0000423 .
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "A relation obtaining between a person and the 'ROR identifier' used to denote the entity in the ROR database."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000119 "https://ror.org/"^^xsd:anyURI ;
+                  rdfs:label "has ROR"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000080
@@ -868,10 +864,11 @@ aeon:AEON_0000080 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:BFO_0000001 ;
                   rdfs:range aeon:AEON_0000021 ;
-                  obo:IAO_0000115 "A relation obtaining between an entity and its corresponding Wikidata entity identifier."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "has Wikidata QID"@en ;
-                  ns:term_status obo:IAO_0000423 ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "A relation obtaining between an entity and the Wikidata identifier used to denote this entity in the Wikidata database."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000118 "has Wikidata QID"@en ;
+                  rdfs:label "has QID"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"itemID\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Wikidataid\", \"label\": \"Wikidataid\"}}"^^xsd:string .
 
 
@@ -881,7 +878,7 @@ aeon:AEON_0000081 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:AEON_0000084 ;
                   rdfs:domain aeon:AEON_0000002 ;
                   rdfs:range aeon:AEON_0000001 ;
-                  obo:IAO_0000115 "A relation obtaining between an academic event series and an academic event. It is used to express that the academic event is part of a specific event series."@en ;
+                  obo:IAO_0000115 "A relation obtaining between an academic event series and an academic event. It is used to express that the academic event series has a specific academic event as its part."@en ;
                   rdfs:label "has academic event"@en .
 
 
@@ -891,8 +888,7 @@ aeon:AEON_0000082 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:has_collocated_event ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000001 ;
-                  obo:IAO_0000115 "see inverse property"@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "collocated event of"@en .
 
 
@@ -902,8 +898,8 @@ aeon:AEON_0000083 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:has_joint_event ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000001 ;
-                  obo:IAO_0000115 "see inverse property"@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000115 "see also inverse property: A relation obtaining between an academic event and another academic event. A joint event is an event that shares some of the planning and organizing logistics with another academic event, but is otherwise independent from it."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "joint event of"@en .
 
 
@@ -912,8 +908,8 @@ aeon:AEON_0000084 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:RO_0002012 ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000002 ;
-                  obo:IAO_0000115 "see inverse property"@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000115 "A relation obtaining between an academic event and an academic event series. It is used to express that the academic event is part of a specific event series."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "part of series"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P179\", \"label\": \"part_of_the_seriesLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Event_in_series\", \"label\": \"Event_in_series\"}}"^^xsd:string .
 
@@ -924,16 +920,18 @@ aeon:AEON_0000085 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:has_umbrella_event ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000001 ;
-                  obo:IAO_0000115 "see inverse property"@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000115 "see also inverse property: A relation obtaining between an academic event and another academic event or event series. An umbrelle event/series is a superordinate event/series that combines several smaller academic events/series at the same time."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "umbrella event of"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000086
 aeon:AEON_0000086 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:BFO_0000066 ;
-                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:domain obo:BFO_0000003 ;
                   rdfs:range aeon:AEON_0000023 ;
+                  obo:IAO_0000115 "A relation obtaining between a bfo:occurent and the country in which it occurs."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "occurs in country"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P17\", \"label\": \"countryLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_country\", \"label\": \"Has_location_country\"}}"^^xsd:string .
 
@@ -941,8 +939,10 @@ aeon:AEON_0000086 rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#AEON_0000087
 aeon:AEON_0000087 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:BFO_0000066 ;
-                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:domain obo:BFO_0000003 ;
                   rdfs:range aeon:AEON_0000022 ;
+                  obo:IAO_0000115 "A relation obtaining between a bfo:occurent and the city in which it occurs."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "occurs in city"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P276\", \"label\": \"locationLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_city\", \"label\": \"Has_location_city\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#placeOfConferenceOrEvent\", \"label\": \"Place of conference or event\"}}"^^xsd:string .
 
@@ -950,35 +950,40 @@ aeon:AEON_0000087 rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#AEON_0000088
 aeon:AEON_0000088 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:BFO_0000066 ;
-                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:domain obo:BFO_0000003 ;
                   rdfs:range aeon:AEON_0000024 ;
-                  rdfs:label "occurs in state"@en ;
+                  obo:IAO_0000115 "A relation obtaining between a bfo:occurent and the province in which it occurs."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:label "occurs in province"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P131\", \"label\": \"located_in_the_administrative_territorial_entityLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_state\", \"label\": \"Has_location_state\"}}"^^xsd:string .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000089
 aeon:AEON_0000089 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:BFO_0000066 ;
-                  rdfs:domain aeon:AEON_0000001 ;
+                  rdfs:domain obo:BFO_0000003 ;
                   rdfs:range aeon:AEON_0000025 ;
-                  rdfs:label "occurs in venue"@en .
+                  obo:IAO_0000115 "A relation obtaining between a bfo:occurent and the event venue in which it occurs."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:label "occurs in event venue"@en .
 
 
-###  https://github.com/tibonto/aeon#AEON_0000090
-aeon:AEON_0000090 rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf obo:BFO_0000066 ;
-                  rdfs:domain aeon:AEON_0000001 ;
-                  rdfs:range aeon:AEON_0000029 ;
-                  rdfs:label "occurs in virtual place"@en .
+###  https://github.com/tibonto/aeon#academic_event_type_of
+aeon:academic_event_type_of rdf:type owl:ObjectProperty ;
+                            rdfs:domain aeon:AEON_0000004 ;
+                            rdfs:range aeon:AEON_0000001 ;
+                            obo:IAO_0000115 "see also inverse property: A relation obtaining between a skos:Concept and an 'academic event', in which the former is used to descibe the format of the latter. A set of possible common academic event types is provided as named individuals."@en ;
+                            obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                            rdfs:label "academic event type of"@en .
 
 
 ###  https://github.com/tibonto/aeon#academic_field_of
 aeon:academic_field_of rdf:type owl:ObjectProperty ;
                        rdfs:domain aeon:AEON_0000027 ;
                        rdfs:range obo:OBI_0000011 ;
-                       obo:IAO_0000115 "see inverse property"@en ;
-                       obo:IAO_0000117 "StroemertP"^^xsd:string ;
-                       rdfs:label "academicfield of"@en .
+                       obo:IAO_0000115 "see also inverse property: A relation obtaining between a skos:Concept and a obi:'planned process', in which the former is used to descibe the scientific subject of the latter according to some controlled vocabulary or thesaurus."@en ;
+                       obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                       rdfs:label "academic field of"@en .
 
 
 ###  https://github.com/tibonto/aeon#attends_at
@@ -986,8 +991,8 @@ aeon:attends_at rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf aeon:contibutes_to ;
                 rdfs:domain aeon:attendee ;
                 rdfs:range obo:OBI_0000011 ;
-                obo:IAO_0000115 "see inverse relation"@en ;
-                obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                obo:IAO_0000115 "A relation obtaining between a person and a planned process, in which the person holds an attendee role that is being realized by the planned process."@en ;
+                obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                 rdfs:label "attentds at"@en .
 
 
@@ -996,9 +1001,9 @@ aeon:committee_chair_in rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf aeon:committee_member_in ;
                         rdfs:domain aeon:committee_chair ;
                         rdfs:range obo:OBI_0000011 ;
-                        obo:IAO_0000115 "see inverse relation"@en ;
-                        obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
-                        rdfs:label "committee chair in"@en .
+                        obo:IAO_0000115 "A relation obtaining between a person and a planned process, in which the person holds a committee chair role that is being realized by the planned process."@en ;
+                        obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                        rdfs:label "is committee chair in"@en .
 
 
 ###  https://github.com/tibonto/aeon#committee_member_in
@@ -1006,9 +1011,9 @@ aeon:committee_member_in rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf aeon:organizes ;
                          rdfs:domain aeon:committee_member ;
                          rdfs:range obo:OBI_0000011 ;
-                         obo:IAO_0000115 "see inverse relation"@en ;
-                         obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
-                         rdfs:label "committee member in"@en .
+                         obo:IAO_0000115 "A relation obtaining between a person and a planned process, in which the person holds a committee member role that is being realized by the planned process."@en ;
+                         obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                         rdfs:label "is committee member in"@en .
 
 
 ###  https://github.com/tibonto/aeon#contact_person_of
@@ -1016,9 +1021,9 @@ aeon:contact_person_of rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf aeon:organizes ;
                        rdfs:domain aeon:contact_person ;
                        rdfs:range obo:OBI_0000011 ;
-                       obo:IAO_0000115 "see inverse relation"@en ;
-                       obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
-                       rdfs:label "contact person of"@en .
+                       obo:IAO_0000115 "A relation obtaining between a person and a planned process, in which the person holds the role of being the designated contact person and that role is being realized by the planned process."@en ;
+                       obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                       rdfs:label "is contact person of"@en .
 
 
 ###  https://github.com/tibonto/aeon#contibutes_to
@@ -1026,17 +1031,9 @@ aeon:contibutes_to rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf obo:RO_0000056 ;
                    rdfs:domain aeon:contributor ;
                    rdfs:range obo:OBI_0000011 ;
-                   obo:IAO_0000115 "see inverse relation"@en ;
-                   obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                   obo:IAO_0000115 "A relation obtaining between a person or organization and a planned process, in which the person or organization holds a contributor role that is being realized by the planned process."@en ;
+                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                    rdfs:label "contributes to"@en .
-
-
-###  https://github.com/tibonto/aeon#event_type_of
-aeon:event_type_of rdf:type owl:ObjectProperty ;
-                   rdfs:domain aeon:AEON_0000004 ;
-                   rdfs:range aeon:AEON_0000001 ;
-                   obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
-                   rdfs:label "event type of"@en .
 
 
 ###  https://github.com/tibonto/aeon#has_WikiCFP_ID
@@ -1048,10 +1045,11 @@ aeon:has_WikiCFP_ID rdf:type owl:ObjectProperty ;
                                               )
                                 ] ;
                     rdfs:range aeon:wikiCFP_ID ;
-                    obo:IAO_0000115 "A relation obtaining between an academic event or event series and its corresponding WikiCFP identifier."@en ;
-                    obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
-                    rdfs:label "has WikiCFP ID"@en ;
-                    ns:term_status obo:IAO_0000423 ;
+                    obo:IAO_0000114 obo:IAO_0000423 ;
+                    obo:IAO_0000115 "A relation obtaining between an 'academic event' or 'academic event series' and the WikiCFP identifier used to denote this 'academic event' or 'academic event series' in the wikiCFP database."@en ;
+                    obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                    obo:IAO_0000119 "http://www.wikicfp.com/cfp/"^^xsd:anyURI ;
+                    rdfs:label "has WikiCFP identifier"@en ;
                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P5127\", \"label\": \"WikiCFP_conference_series_ID\"}}" .
 
 
@@ -1060,9 +1058,8 @@ aeon:has_collocated_event rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf obo:TXPO_0002523 ;
                           rdfs:domain aeon:AEON_0000001 ;
                           rdfs:range aeon:AEON_0000001 ;
-                          obo:IAO_0000115 """A relation obtaining between an academic event and another academic event. 
-A collocated event is an event that takes place at the same location and time as another academic event."""@en ;
-                          obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                          obo:IAO_0000115 "A relation obtaining between an academic event and another academic event. A collocated event is an event that takes place at the same location and time as another academic event."@en ;
+                          obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                           rdfs:label "has collocated event"@en .
 
 
@@ -1071,9 +1068,8 @@ aeon:has_joint_event rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf obo:TXPO_0002523 ;
                      rdfs:domain aeon:AEON_0000001 ;
                      rdfs:range aeon:AEON_0000001 ;
-                     obo:IAO_0000115 """A relation obtaining between an academic event and another academic event. 
-A joint event is an event that shares some of the planning and organizing logistics with another academic event, but is otherwise independent from it."""@en ;
-                     obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                     obo:IAO_0000115 "A relation obtaining between an academic event and another academic event. A joint event is an event that shares some of the planning and organizing logistics with another academic event, but is otherwise independent from it."@en ;
+                     obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                      rdfs:label "has joint event"@en .
 
 
@@ -1082,11 +1078,8 @@ aeon:has_umbrella_event rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf obo:TXPO_0002523 ;
                         rdfs:domain aeon:AEON_0000001 ;
                         rdfs:range aeon:AEON_0000001 ;
-                        obo:IAO_0000115 """A relation obtaining between an academic event and another academic event or eent series. 
-An umbrelle event is a superordinate event that combines several smaller academic events at the same time
-To say p 'has umbrella event' d =def. there exists an academic event d that is a 
-superordinate event of p and that there must be other academic events that have the same relation.."""@en ;
-                        obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                        obo:IAO_0000115 "A relation obtaining between an academic event and another academic event or event series. An umbrelle event is a superordinate event that combines several smaller academic events at the same time. To say p 'has umbrella event' d =def. there exists an academic event d that is a superordinate event of p and that there must be other academic events that have the same relation."@en ;
+                        obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                         rdfs:label "has umbrella event"@en .
 
 
@@ -1095,8 +1088,8 @@ aeon:holds_keynote_at rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf aeon:speaks_at ;
                       rdfs:domain aeon:keynote_speaker ;
                       rdfs:range obo:OBI_0000011 ;
-                      obo:IAO_0000115 "see inverse relation"@en ;
-                      obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                      obo:IAO_0000115 "A relation between a person and a planned process, in which the person holds a keynote speaker role that is being realized by the planned process."@en ;
+                      obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                       rdfs:label "holds keynote speech at"@en .
 
 
@@ -1105,8 +1098,8 @@ aeon:moderates_at rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf aeon:contibutes_to ;
                   rdfs:domain aeon:moderator ;
                   rdfs:range obo:OBI_0000011 ;
-                  obo:IAO_0000115 "see inverse relation"@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                  obo:IAO_0000115 "A relation obtaining between a person and a planned process, in which the person holds a moderator role that is being realized by the planned process."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "moderates at"@en .
 
 
@@ -1115,8 +1108,8 @@ aeon:organizes rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf aeon:contibutes_to ;
                rdfs:domain aeon:organizer ;
                rdfs:range obo:OBI_0000011 ;
-               obo:IAO_0000115 "see inverse relation"@en ;
-               obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+               obo:IAO_0000115 "A relation obtaining between a person or organization and a planned process, in which the person or organization holds an organizer role that is being realized by the planned process."@en ;
+               obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                rdfs:label "organizes"@en .
 
 
@@ -1125,8 +1118,8 @@ aeon:reviews_at rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf aeon:contibutes_to ;
                 rdfs:domain aeon:reviewer ;
                 rdfs:range obo:OBI_0000011 ;
-                obo:IAO_0000115 "see inverse relation"@en ;
-                obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                obo:IAO_0000115 "A relation between a person and a planned process, in which the person holds a reviewer role that is being realized by the planned process."@en ;
+                obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                 rdfs:label "reviews at"@en .
 
 
@@ -1135,8 +1128,8 @@ aeon:speaks_at rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf aeon:contibutes_to ;
                rdfs:domain aeon:speaker ;
                rdfs:range obo:OBI_0000011 ;
-               obo:IAO_0000115 "see inverse relation"@en ;
-               obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+               obo:IAO_0000115 "A relation obtaining between a person and a planned process, in which the person holds a presenter role that is being realized by the planned process."@en ;
+               obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                rdfs:label "presents at"@en .
 
 
@@ -1145,16 +1138,17 @@ aeon:sponsors rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf aeon:contibutes_to ;
               rdfs:domain aeon:sponsor ;
               rdfs:range obo:OBI_0000011 ;
-              obo:IAO_0000115 "see inverse relation"@en ;
-              obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string .
+              obo:IAO_0000115 "A relation obtaining between a person or organization and a planned process, in which the person or organization holds a sponsor role that is being realized by the planned process."@en ;
+              obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+              rdfs:label "sponsors"@en .
 
 
 ###  https://github.com/tibonto/aeon#topic_of
 aeon:topic_of rdf:type owl:ObjectProperty ;
               rdfs:domain aeon:AEON_0000028 ;
               rdfs:range obo:OBI_0000011 ;
-              obo:IAO_0000115 "see inverse property"@en ;
-              obo:IAO_0000117 "StroemertP"^^xsd:string ;
+              obo:IAO_0000115 "see also inverse property: A relation obtaining between a skos:Concept and a obi:'planned process', in which the former is used to descibe the theme of the latter."@en ;
+              obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
               rdfs:label "topic of"@en .
 
 
@@ -2010,6 +2004,7 @@ obo:BFO_0000038 rdf:type owl:Class ;
 ###  http://purl.obolibrary.org/obo/BFO_0000040
 obo:BFO_0000040 rdf:type owl:Class ;
                 rdfs:subClassOf obo:BFO_0000004 ;
+                owl:disjointWith obo:BFO_0000141 ;
                 obo:IAO_0000112 "a flame"@en ,
                                 "a forest fire"@en ,
                                 "a human being"@en ,
@@ -2058,6 +2053,8 @@ obo:BFO_0000148 rdf:type owl:Class ;
 ###  http://purl.obolibrary.org/obo/GAZ_00000448
 obo:GAZ_00000448 rdf:type owl:Class ;
                  rdfs:subClassOf obo:BFO_0000029 ;
+                 obo:IAO_0000115 "A reference to a place on the Earth, by its name or by its geographical location."@en ;
+                 obo:IAO_0000118 "geographic region"@en ;
                  rdfs:label "geographic location"@en .
 
 
@@ -2292,7 +2289,7 @@ obo:IAO_0022000 rdf:type owl:Class ;
                 obo:IAO_0000115 "An identifier issued by more than one authority"@en ;
                 obo:IAO_0000117 "PERSON: Michael Conlon"@en ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/ido/release/2021-02-19/ido.owl"^^xsd:string ;
-                rdfs:label "distributed identifier"@en .
+                rdfs:label "distributed identifier  (IAO tbc)"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0022014
@@ -2369,7 +2366,7 @@ obo:IAO_0022041 rdf:type owl:Class ;
                 obo:IAO_0000117 "PERSON: Michael Conlon"@en ;
                 obo:IAO_0000119 "https://en.wikipedia.org/wiki/Digital_object_identifier"@en ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/ido/release/2021-02-19/ido.owl"^^xsd:string ;
-                rdfs:label "digital object identifier"@en .
+                rdfs:label "digital object identifier (IAO tbc)"@en .
 
 
 ###  http://purl.obolibrary.org/obo/ICO_0000048
@@ -2497,7 +2494,7 @@ aeon:AEON_0000001 rdf:type owl:Class ;
                                   ] ;
                   owl:disjointWith aeon:AEON_0000002 ;
                   obo:IAO_0000112 "The 19th International Semantic Web Conference (ISWC2020) is an academic  event."@en ;
-                  obo:IAO_0000115 "An academic event is an organized gathering for researchers (not necessarily academics) to present and discuss their work."@en ;
+                  obo:IAO_0000115 "An academic event is a planned process that refers to a gathering of researchers (not necessarily academics), in which these researches have the chance to present and discuss their work and possible future collaborations."@en ;
                   rdfs:comment """TODO:
 * It needs to be discussed, if we need the \"process boundary\" class to describe the start and end of an academic event or event series.
 * It needs to be discussed, if we need the \"temporal region\" and \"spatiotemporal region\"  classes to describe the duration and manifestation in spacetime of an academic event or event series."""@en ;
@@ -2513,6 +2510,7 @@ aeon:AEON_0000002 rdf:type owl:Class ;
                                     owl:someValuesFrom aeon:AEON_0000005
                                   ] ;
                   obo:IAO_0000112 "International Semantic Web Conference (ISWC) series" ;
+                  obo:IAO_0000115 "An academic event series is a planned process that is the set of all recurring academic events of a destinct identity. This destinct identity is usually demarked by a shared name that only differs with regard to some ordnial symbol, such as 1st or the year of the academic event."@en ;
                   rdfs:label "academic event series" ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Q15900647\", \"label\": \"conference_seriesLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Category:Event_series\", \"label\": \"Event_series\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#SeriesOfConferenceOrEvent\", \"label\": \"Series of conference or event\"}}"^^xsd:string .
 
@@ -2520,175 +2518,207 @@ aeon:AEON_0000002 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000003
 aeon:AEON_0000003 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0020000 ;
-                  obo:IAO_0000116 "The alternative term \"ConfIDent_ID\" is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident/) to be used in its service. Thus the internal identifier is called \"ConfIDent ID\". You will probably want to change that in your implementation."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "An internal identifier is an iao:identifier that is only meant to be used inside the reference system, such as an application, in which it is declared."@en ;
+                  obo:IAO_0000116 "The alternative term \"ConfIDent ID\" is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident) to be used in its service. Thus the internal identifier is called \"ConfIDent ID\". You will probably want to change that in your implementation."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   obo:IAO_0000118 "ConfIDent ID"@en ;
-                  rdfs:label "internal identifier"@en ;
-                  ns:term_status obo:IAO_0000423 .
+                  rdfs:label "internal identifier"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000004
 aeon:AEON_0000004 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( skos:Concept
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:academic_event_type_of ;
+                                                               owl:someValuesFrom aeon:AEON_0000001
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf skos:Concept ;
-                  obo:IAO_0000115 "An event type is a skos:Concept that is being used to distinguish between the different academic event formats."@en ;
-                  obo:IAO_0000116 "As the used definitions of the various academic event types can vary strongly between different communities and societies, we chose to model the type of an event as a SKOS concept instead of adding subclasses to the \"academic event\" class. The most commonly used event types are provided in AEON as named instances of this class."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert" ;
-                  rdfs:label "event type"@en .
+                  obo:IAO_0000115 "An 'academic event type' is a skos:Concept that is being used to distinguish between the different formats of an 'academic event'."@en ;
+                  obo:IAO_0000116 "As the actually used definitions of various academic event types varies between different communities and societies, we chose to model the type of an event as a skos:Concept instead of adding subclasses to the \"academic event\" class. The most commonly used academic event types are provided in AEON as named instances of this class. This design decision might be changed once there is an emperically proven common ground on which a subclassing of academic event is possible. It might also be possible in future version, to subsume this class under an appropriate class in the iao:'infomation content entity' branch instead of defining it as a skos:Concept."@en ,
+                                  "It needs to be discussed whether this class should be expanded to also describe the format of an 'academic event series', e.g. conference series. At the moment it is assumed that an 'academic event series', understood as a obi:'planned process', has no destinct format itself. Since this process is defined as the set of all recurring academic events of a destinct identity, the event series type would also only be the set of the event types of the academic events in this series."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000118 "type of the academic event"@en ;
+                  obo:IAO_0000119 "https://github.com/tibonto/aeon/"^^xsd:anyURI ;
+                  rdfs:label "academic event type"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000005
 aeon:AEON_0000005 rdf:type owl:Class ;
-                  owl:equivalentClass [ rdf:type owl:Restriction ;
-                                        owl:onProperty obo:RO_0000081 ;
-                                        owl:someValuesFrom [ rdf:type owl:Restriction ;
-                                                             owl:onProperty aeon:contibutes_to ;
-                                                             owl:someValuesFrom obo:OBI_0000011
-                                                           ]
+                  owl:equivalentClass [ owl:intersectionOf ( obo:BFO_0000023
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0000081 ;
+                                                               owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty aeon:contibutes_to ;
+                                                                                    owl:someValuesFrom obo:OBI_0000011
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf obo:BFO_0000023 ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty obo:BFO_0000054 ;
-                                    owl:someValuesFrom obo:OBI_0000011
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000054 ;
                                     owl:someValuesFrom aeon:AEON_0000001
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000054 ;
                                     owl:someValuesFrom aeon:AEON_0000002
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty obo:RO_0000081 ;
-                                    owl:someValuesFrom aeon:contributor
                                   ] ;
                   obo:IAO_0000115 "The contributor role inheres in a person or organization that participates in a planned process by somehow contributing to it."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert" ;
-                  <http://purl.org/dc/elements/1.1/date> "2020-09-28T12:51:02Z"^^xsd:dateTime ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  dc:date "2020-09-28T12:51:02Z"^^xsd:dateTime ;
                   rdfs:label "contributor role"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000006
 aeon:AEON_0000006 rdf:type owl:Class ;
-                  owl:equivalentClass [ rdf:type owl:Restriction ;
-                                        owl:onProperty obo:RO_0000081 ;
-                                        owl:someValuesFrom [ rdf:type owl:Restriction ;
-                                                             owl:onProperty aeon:organizes ;
-                                                             owl:someValuesFrom obo:OBI_0000011
-                                                           ]
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000005
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0000081 ;
+                                                               owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty aeon:organizes ;
+                                                                                    owl:someValuesFrom obo:OBI_0000011
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf aeon:AEON_0000005 ;
                   obo:IAO_0000115 "The organizer role inheres in a person or organization that contributes to a planned process by planning and managing its realization."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "organizer role"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000007
 aeon:AEON_0000007 rdf:type owl:Class ;
-                  owl:equivalentClass [ rdf:type owl:Restriction ;
-                                        owl:onProperty obo:RO_0000081 ;
-                                        owl:someValuesFrom [ rdf:type owl:Restriction ;
-                                                             owl:onProperty aeon:committee_member_in ;
-                                                             owl:someValuesFrom obo:OBI_0000011
-                                                           ]
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000006
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0000081 ;
+                                                               owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty aeon:committee_member_in ;
+                                                                                    owl:someValuesFrom obo:OBI_0000011
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf aeon:AEON_0000006 ;
                   owl:disjointWith aeon:AEON_0000009 ;
                   obo:IAO_0000115 "The 'committee member role' inheres in a person who contributes to a planned process by somehow realizing the function of the committe he is a member of."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "event committee member role"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000008
 aeon:AEON_0000008 rdf:type owl:Class ;
-                  owl:equivalentClass [ rdf:type owl:Restriction ;
-                                        owl:onProperty obo:RO_0000081 ;
-                                        owl:someValuesFrom [ rdf:type owl:Restriction ;
-                                                             owl:onProperty aeon:committee_chair_in ;
-                                                             owl:someValuesFrom obo:OBI_0000011
-                                                           ]
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000007
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0000081 ;
+                                                               owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty aeon:committee_chair_in ;
+                                                                                    owl:someValuesFrom obo:OBI_0000011
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf aeon:AEON_0000007 ;
                   obo:IAO_0000115 "The 'committee chair role' inheres in a person who contributes to a planned process by somehow realizing the function of the committee he is a chair of."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "event committee chair role"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000009
 aeon:AEON_0000009 rdf:type owl:Class ;
-                  owl:equivalentClass [ rdf:type owl:Restriction ;
-                                        owl:onProperty obo:RO_0000081 ;
-                                        owl:someValuesFrom [ rdf:type owl:Restriction ;
-                                                             owl:onProperty aeon:contact_person_of ;
-                                                             owl:someValuesFrom obo:OBI_0000011
-                                                           ]
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000006
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0000081 ;
+                                                               owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty aeon:contact_person_of ;
+                                                                                    owl:someValuesFrom obo:OBI_0000011
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf aeon:AEON_0000006 ;
                   obo:IAO_0000115 "The contact person role inheres in a person that contributes to a planned process by functioning as the addressee of the planned process who answers general inquiries and redirects more complex inqueries to a more appropriate addressee."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "contact person role"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000010
 aeon:AEON_0000010 rdf:type owl:Class ;
-                  owl:equivalentClass [ rdf:type owl:Restriction ;
-                                        owl:onProperty obo:RO_0000081 ;
-                                        owl:someValuesFrom [ rdf:type owl:Restriction ;
-                                                             owl:onProperty aeon:attends_at ;
-                                                             owl:someValuesFrom obo:OBI_0000011
-                                                           ]
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000005
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0000081 ;
+                                                               owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty aeon:attends_at ;
+                                                                                    owl:someValuesFrom obo:OBI_0000011
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
                                       ] ;
                   rdfs:subClassOf aeon:AEON_0000005 ;
                   obo:IAO_0000115 "The attendee role inheres in a person that contributes to a planned process by attending it."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "attendee role"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000011
 aeon:AEON_0000011 rdf:type owl:Class ;
-                  owl:equivalentClass [ rdf:type owl:Restriction ;
-                                        owl:onProperty obo:RO_0000081 ;
-                                        owl:someValuesFrom [ rdf:type owl:Restriction ;
-                                                             owl:onProperty aeon:moderates_at ;
-                                                             owl:someValuesFrom obo:OBI_0000011
-                                                           ]
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000005
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0000081 ;
+                                                               owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty aeon:moderates_at ;
+                                                                                    owl:someValuesFrom obo:OBI_0000011
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
                                       ] ;
                   rdfs:subClassOf aeon:AEON_0000005 ;
                   obo:IAO_0000115 "The moderating role inheres in a person that contributes to a planned process by facilitating the communication."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "moderator role"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000012
 aeon:AEON_0000012 rdf:type owl:Class ;
-                  owl:equivalentClass [ rdf:type owl:Restriction ;
-                                        owl:onProperty obo:RO_0000081 ;
-                                        owl:someValuesFrom [ rdf:type owl:Restriction ;
-                                                             owl:onProperty aeon:reviews_at ;
-                                                             owl:someValuesFrom obo:OBI_0000011
-                                                           ]
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000005
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0000081 ;
+                                                               owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty aeon:reviews_at ;
+                                                                                    owl:someValuesFrom obo:OBI_0000011
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf aeon:AEON_0000005 ;
-                  obo:IAO_0000115 "Evaluation of scientific, academic, or professional work, such as manuscripts or grants by others working in the same field."@en ,
-                                  "The reviewer role inheres in a person that contributes to a planned process by reviewing something of interest in a planned process."@en ;
+                  obo:IAO_0000115 "Evaluation of scientific, academic, or professional work, such as manuscripts or grants by others working in the same field. The reviewer role inheres in a person that contributes to a planned process by reviewing something of interest in a planned process."@en ;
                   obo:IAO_0000116 "ToDo: use CRO IRI http://purl.obolibrary.org/obo/CRO_0000101"@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   obo:IAO_0000118 "manuscript review role"@en ;
                   rdfs:label "reviewer role"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000013
 aeon:AEON_0000013 rdf:type owl:Class ;
-                  owl:equivalentClass [ rdf:type owl:Restriction ;
-                                        owl:onProperty obo:RO_0000081 ;
-                                        owl:someValuesFrom [ rdf:type owl:Restriction ;
-                                                             owl:onProperty aeon:speaks_at ;
-                                                             owl:someValuesFrom obo:OBI_0000011
-                                                           ]
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000005
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0000081 ;
+                                                               owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty aeon:speaks_at ;
+                                                                                    owl:someValuesFrom obo:OBI_0000011
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf aeon:AEON_0000005 ;
                   obo:IAO_0000115 "The presenter role inheres in a person that contributes to a planned process by presenting something of interest at a planned process."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   obo:IAO_0000118 "invited speaker role"@en ;
                   obo:IAO_0006011 "http://purl.obolibrary.org/obo/CRO_0000100"^^xsd:anyURI ;
                   rdfs:label "presenter role"@en .
@@ -2696,48 +2726,60 @@ aeon:AEON_0000013 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000014
 aeon:AEON_0000014 rdf:type owl:Class ;
-                  owl:equivalentClass [ rdf:type owl:Restriction ;
-                                        owl:onProperty obo:RO_0000081 ;
-                                        owl:someValuesFrom [ rdf:type owl:Restriction ;
-                                                             owl:onProperty aeon:holds_keynote_at ;
-                                                             owl:someValuesFrom obo:OBI_0000011
-                                                           ]
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000013
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0000081 ;
+                                                               owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty aeon:holds_keynote_at ;
+                                                                                    owl:someValuesFrom obo:OBI_0000011
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf aeon:AEON_0000013 ;
                   obo:IAO_0000115 "The keynote speaker role inheres in a person that contributes to a planned process by holding a keynote speech at a planned process."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "keynote speaker role"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000015
 aeon:AEON_0000015 rdf:type owl:Class ;
-                  owl:equivalentClass [ rdf:type owl:Restriction ;
-                                        owl:onProperty obo:RO_0000081 ;
-                                        owl:someValuesFrom [ rdf:type owl:Restriction ;
-                                                             owl:onProperty aeon:sponsors ;
-                                                             owl:someValuesFrom obo:OBI_0000011
-                                                           ]
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000005
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:RO_0000081 ;
+                                                               owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty aeon:sponsors ;
+                                                                                    owl:someValuesFrom obo:OBI_0000011
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf aeon:AEON_0000005 ;
                   obo:IAO_0000115 "The sponsor role inheres in a person or organization that contributes to a planned process by providing the financial or material ressources needed to realize a planned process."@en ;
                   obo:IAO_0000116 "PS 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...). As the possible sponsor types can have various schemes, it seems best to have named individuals of the aeon:Sponsor class at the moment." ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "sponsor role"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000016
 aeon:AEON_0000016 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0020000 ;
+                  obo:IAO_0000111 "DOI"@en ;
                   obo:IAO_0000114 obo:IAO_0000423 ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert"@en ;
-                  rdfs:label "digital object identifier"@en .
+                  obo:IAO_0000115 "A digital object identifier (DOI) is an iao:identifier that persitently denotes a digital object acording to the ISO standard 26324."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000118 "digital object identifier"@en ;
+                  obo:IAO_0000119 "https://www.doi.org/" ;
+                  rdfs:label "DOI" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000017
 aeon:AEON_0000017 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000578 ;
                   obo:IAO_0000114 obo:IAO_0000423 ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert" ;
+                  obo:IAO_0000115 "A 'GND identifier' is a iao:'centrally registered identifier' that denotes an entity in \"The Integrated Authority File (GND)\" of the German national library."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000119 "https://d-nb.info/standards/elementset/gnd#gndIdentifier"^^xsd:anyURI ;
                   rdfs:label "GND ID" .
 
 
@@ -2745,7 +2787,10 @@ aeon:AEON_0000017 rdf:type owl:Class ;
 aeon:AEON_0000018 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000578 ;
                   obo:IAO_0000114 obo:IAO_0000423 ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert" ;
+                  obo:IAO_0000115 "An 'ISNI' (International Standard Name Identifier) is a iao:'centrally registered identifier' that denotes persons and organizations in the ISNI database."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000118 "International Standard Name Identifier"@en ;
+                  obo:IAO_0000119 "https://isni.org/page/what-is-isni/"^^xsd:anyURI ;
                   rdfs:label "ISNI" .
 
 
@@ -2753,7 +2798,10 @@ aeon:AEON_0000018 rdf:type owl:Class ;
 aeon:AEON_0000019 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000578 ;
                   obo:IAO_0000114 obo:IAO_0000423 ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert" ;
+                  obo:IAO_0000115 "An 'ORCID' is a iao:'centrally registered identifier' that denotes authors and contributors of scholarly communication in the ORCID database."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000118 "Open Researcher and Contributor ID"@en ;
+                  obo:IAO_0000119 "https://en.wikipedia.org/wiki/ORCID"^^xsd:anyURI ;
                   rdfs:label "ORCID" .
 
 
@@ -2761,15 +2809,24 @@ aeon:AEON_0000019 rdf:type owl:Class ;
 aeon:AEON_0000020 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000578 ;
                   obo:IAO_0000114 obo:IAO_0000423 ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert" ;
+                  obo:IAO_0000115 "A 'ROR identifier' is a iao:'centrally registered identifier' that denotes an organization in the ROR database."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000118 "ROR ID" ,
+                                  "research organization registry identifier"@en ;
+                  obo:IAO_0000119 "https://ror.org/"^^xsd:anyURI ;
                   rdfs:label "ROR ID" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000021
 aeon:AEON_0000021 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0000578 ;
+                  obo:IAO_0000111 "QID"@en ;
                   obo:IAO_0000114 obo:IAO_0000423 ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert" ;
+                  obo:IAO_0000115 "A 'Wikidata QID identifier' is a iao:'centrally registered identifier' that denotes an entity in the Wikidata database."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000118 "q number"@en ,
+                                  "wikidata q number"@en ;
+                  obo:IAO_0000119 "https://www.wikidata.org/wiki/Q43649390" ;
                   obo:IAO_0006011 "\"https://www.wikidata.org/wiki/\"^^ xsd:anyURI"@en ;
                   rdfs:label "Wikidata QID"@en .
 
@@ -2777,51 +2834,105 @@ aeon:AEON_0000021 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000022
 aeon:AEON_0000022 rdf:type owl:Class ;
                   rdfs:subClassOf obo:GAZ_00000448 ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "A city is gaz:geographic location that represents a large human settlement."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000119 "https://en.wikipedia.org/wiki/City" ;
+                  obo:IAO_0006011 "http://purl.obolibrary.org/obo/ENVO_00000856"^^xsd:anyURI ;
                   rdfs:label "city"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000023
 aeon:AEON_0000023 rdf:type owl:Class ;
                   rdfs:subClassOf obo:GAZ_00000448 ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "A country is a gaz:geographic location that may be an independent sovereign state or part of a larger state, as a non-sovereign or formerly sovereign political division, a physical territory with a government, or a geographic region associated with sets of previously independent or differently associated people with distinct political characteristics."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000119 "https://en.wikipedia.org/wiki/Country"^^xsd:anyURI ;
                   rdfs:label "country"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000024
 aeon:AEON_0000024 rdf:type owl:Class ;
                   rdfs:subClassOf obo:GAZ_00000448 ;
-                  obo:IAO_0000118 "province"@en ;
-                  rdfs:label "state"@en .
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "A province is a gaz:geographic location that is an administrative division within a country."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000118 "administrative division"@en ,
+                                  "administrative region"@en ,
+                                  "administrative unit"@en ;
+                  obo:IAO_0000119 "https://en.wikipedia.org/wiki/Province"^^xsd:anyURI ;
+                  rdfs:label "province"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000025
 aeon:AEON_0000025 rdf:type owl:Class ;
                   rdfs:subClassOf obo:GAZ_00000448 ;
+                  obo:IAO_0000114 obo:IAO_0000125 ;
+                  obo:IAO_0000115 "An event venue is a gaz:geographical location that is a building or a collection of buildings and grounds where an event takes place."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "event venue"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000027
 aeon:AEON_0000027 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( skos:Concept
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:academic_field_of ;
+                                                               owl:someValuesFrom obo:OBI_0000011
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf skos:Concept ;
-                  obo:IAO_0000112 "DDC 410 Linguistics, OECD 6.02 Languages and literature"@en ;
-                  obo:IAO_0000115 "'academic field' is a skos:Concept that describes the research field of an academic event or event series. As opposed to the class 'topic', the instances of this class must be terms from a controlled vocabulary or thesaurus."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert" ;
+                  obo:IAO_0000112 "DDC 410 Linguistics, OECD 6.02 Languages and literature, ..."@en ;
+                  obo:IAO_0000115 "An 'academic field' is a skos:Concept that contextualizes a obi:'planned process'  with regard to the subdevision of knowledge that is taught and researched at the college or university level. Instances of this class must be terms from a controlled vocabulary or thesaurus."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000118 "academic discipline"@en ,
+                                  "branch of knowledge"@en ,
+                                  "field of inquiry"@en ,
+                                  "field of study"@en ,
+                                  "research field"@en ;
+                  obo:IAO_0000119 "https://en.wikipedia.org/wiki/Academic_discipline"^^xsd:anyURI ;
                   rdfs:label "academic field"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000028
 aeon:AEON_0000028 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( skos:Concept
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:topic_of ;
+                                                               owl:someValuesFrom obo:OBI_0000011
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf skos:Concept ;
-                  obo:IAO_0000112 "\"The future of knowlegde graphs in the humanities\" could be a topic of an interdisciplinary oriented computer sciences conference."@en ;
-                  obo:IAO_0000115 "Topic is a skos:Concept that describes the central theme of an academic event or event series. In contrast to 'academic field' the instances of the class topic should not be terms of a controlled vocabulary or thesaurus."@en ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert" ;
+                  obo:IAO_0000112 "\"AI, knowledge graphs, cloud computing\" could be a set of keywords that denote the main topics covered by a specific conference."@en ,
+                                  "\"The future of knowlegde graphs in the humanities\" could be a 'topic' of an interdisciplinary oriented computer sciences conference."@en ;
+                  obo:IAO_0000115 "A 'topic' is a skos:Concept that describes a central theme of a obi:'planned process'. The instances of this class can be terms from a controlled vocabulary or thesaurus, phrases or just keywords."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000118 "theme"@en ;
                   rdfs:label "topic"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000029
 aeon:AEON_0000029 rdf:type owl:Class ;
-                  rdfs:subClassOf obo:BFO_0000029 ;
-                  obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
-                  <http://purl.org/dc/elements/1.1/date> "2020-10-14T15:31:27Z"^^xsd:dateTime ;
+                  rdfs:subClassOf [ owl:intersectionOf ( obo:BFO_0000017
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty obo:BFO_0000054 ;
+                                                           owl:someValuesFrom obo:OBI_0000011
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+                  obo:IAO_0000112 "The Zoom room in which an online conference is being held is a virtual location, that exists as long as the IT infrastructure on which it runs (is being realized) is not failing or turned off by an agent with the capability to do so."@en ,
+                                  "The service Twitter provides is a virtual location, in which the Twitter users can communicate with each other in a mostly text-based mode."@en ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "A virtual location is a realizable entity that provides a digital space for humans and computers to interact with one another in various digital modes (e.g. text, audio, video, tactile). It specifically depends on the IT infrastructure that is used to realize the virtual location in the planned process of running certain code on certain computers."@en ;
+                  obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
+                  obo:IAO_0000118 "virtual site"@en ;
+                  dc:date "2020-10-14T15:31:27Z"^^xsd:dateTime ;
                   rdfs:label "virtual location"@en .
 
 
@@ -2837,34 +2948,43 @@ aeon:AEON_0000030 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000034
 aeon:AEON_0000034 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0020000 ;
+                  obo:IAO_0000111 "DID" ;
                   obo:IAO_0000114 obo:IAO_0000423 ;
-                  obo:IAO_0000117 "PERSON: Philip Strömert" ;
-                  <http://purl.org/dc/elements/1.1/date> "2020-11-20T17:31:33Z"^^xsd:dateTime ;
-                  rdfs:label "distributed identifier"@en .
+                  obo:IAO_0000115 "A  'decentralized identifier document' (DID) is an iao:identifier that denotes a verifiable, decentralized digital identity of an entity."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000118 "DID" ;
+                  obo:IAO_0000119 "https://www.w3.org/TR/did-core/Overview.html" ;
+                  dc:date "2020-11-20T17:31:33Z"^^xsd:dateTime ;
+                  rdfs:label "decentralized identifier document"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000042
 aeon:AEON_0000042 rdf:type owl:Class ;
                   rdfs:subClassOf obo:BFO_0000027 ;
-                  obo:IAO_0000600 "An academic event committee or commission is a body of one or more persons that is responsible for the realization of a certain task or aspect in an academic event."@en ;
-                  rdfs:label "event committee"@en ;
-                  ns:term_status "pending"@en .
+                  obo:IAO_0000114 obo:IAO_0000125 ;
+                  obo:IAO_0000115 """An academic event committee is a body of one or more persons (object aggregate) that is responsible for the realization of a certain task or aspect in an academic event. 
+Academic event committees are usually formed in the planning process of those academic events that need to subdevide and delegate the tasks that need to be carried out for the realization of the academic event.."""@en ;
+                  obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
+                  rdfs:label "academic event committee"@en .
 
 
 ###  https://github.com/tibonto/aeon#attendee
 aeon:attendee rdf:type owl:Class ;
-              owl:equivalentClass [ rdf:type owl:Restriction ;
-                                    owl:onProperty obo:RO_0000087 ;
-                                    owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000010
-                                                                              [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty obo:BFO_0000054 ;
-                                                                                owl:someValuesFrom obo:OBI_0000011
+              owl:equivalentClass [ owl:intersectionOf ( aeon:contributor
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty obo:RO_0000087 ;
+                                                           owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000010
+                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                       owl:onProperty obo:BFO_0000054 ;
+                                                                                                       owl:someValuesFrom obo:OBI_0000011
+                                                                                                     ]
+                                                                                                   ) ;
+                                                                                rdf:type owl:Class
                                                                               ]
-                                                                            ) ;
-                                                         rdf:type owl:Class
-                                                       ]
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
                                   ] ;
-              rdfs:subClassOf aeon:contributor ;
               obo:IAO_0000112 "Philip Strömert is an attendee of PIDapalooza 2021."@en ;
               obo:IAO_0000114 obo:IAO_0000423 ;
               obo:IAO_0000115 "An attendee is a contributer that holds an attendee role which is being realized in a planned process."@en ;
@@ -2872,14 +2992,15 @@ aeon:attendee rdf:type owl:Class ;
 
 Defining 'attendee' is not trivial, as the expectations of what an attendee must do, can differ from community to community and from event type to event type. For some an attendee must have been accredited by some official organizer and might only get a certificate of attendence at the end of it, when a certain amount of participation (e.g. visited sessions, completed workshops) has been achieved. For others it might suffice to simple be present."""@en ,
                               "We need this concept of an attendee in order to be able to properly quantify the participation in a planned process. For this we would also need to have an action specification that is the conretizaion of the attendee role."@en ;
-              obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+              obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
               obo:IAO_0000600 "A person who participates actively or passively in an event."@en ;
               rdfs:label "attendee"@en .
 
 
 ###  https://github.com/tibonto/aeon#committee_chair
 aeon:committee_chair rdf:type owl:Class ;
-                     owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                     owl:equivalentClass [ owl:intersectionOf ( aeon:committee_member
+                                                                [ rdf:type owl:Restriction ;
                                                                   owl:onProperty obo:RO_0000087 ;
                                                                   owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000008
                                                                                                             [ rdf:type owl:Restriction ;
@@ -2890,25 +3011,20 @@ aeon:committee_chair rdf:type owl:Class ;
                                                                                        rdf:type owl:Class
                                                                                      ]
                                                                 ]
-                                                                [ rdf:type owl:Restriction ;
-                                                                  owl:onProperty obo:RO_0002350 ;
-                                                                  owl:someValuesFrom aeon:AEON_0000042
-                                                                ]
                                                               ) ;
                                            rdf:type owl:Class
                                          ] ;
-                     rdfs:subClassOf aeon:committee_member ;
                      obo:IAO_0000114 obo:IAO_0000423 ;
                      obo:IAO_0000115 "A committee chair is a committee member that holds a committee chair role which is being realized in a planned process."@en ;
-                     obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
-                     obo:IAO_0000600 "A committee chair is a committe member that is expected to speak on behalf of and to be responsible for the committee."@en ,
-                                     "The person who is in charge of a committee with primary responsibility for carrying out the committee's duties."@en ;
+                     obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                     obo:IAO_0000600 "A committee chair is a committe member that is expected to speak on behalf of and to be responsible for the committee. The person who is in charge of a committee with primary responsibility for carrying out the committee's duties."@en ;
                      rdfs:label "event committee chair"@en .
 
 
 ###  https://github.com/tibonto/aeon#committee_member
 aeon:committee_member rdf:type owl:Class ;
-                      owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                      owl:equivalentClass [ owl:intersectionOf ( aeon:organizer
+                                                                 [ rdf:type owl:Restriction ;
                                                                    owl:onProperty obo:RO_0000087 ;
                                                                    owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000007
                                                                                                              [ rdf:type owl:Restriction ;
@@ -2933,7 +3049,7 @@ aeon:committee_member rdf:type owl:Class ;
                                       ] ;
                       obo:IAO_0000114 obo:IAO_0000423 ;
                       obo:IAO_0000115 "A committee member is an organizer that holds a committee member role which is being realized in a planned process."@en ;
-                      obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                      obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                       rdfs:label "event committee member"@en .
 
 
@@ -2953,7 +3069,7 @@ aeon:contact_person rdf:type owl:Class ;
                     rdfs:subClassOf aeon:organizer ;
                     obo:IAO_0000114 obo:IAO_0000423 ;
                     obo:IAO_0000115 "A contact person is an organizer that holds a contact person role which is being realized in a planned process."@en ;
-                    obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                    obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                     obo:IAO_0000600 "A contact peron is defined by its role to be the person who answers general questions about a planned process and who forwards any further inquiries to the appropriate recipiant."@en ;
                     rdfs:label "contact person"@en .
 
@@ -2981,52 +3097,59 @@ aeon:contributor rdf:type owl:Class ;
                                      ] ;
                  rdfs:subClassOf obo:BFO_0000040 ;
                  obo:IAO_0000112 "All organizers and participants of the academic event called PIDapalooza 2020 are contributors of that particular event.."@en ;
-                 obo:IAO_0000114 obo:IAO_0000423 ;
+                 obo:IAO_0000114 obo:IAO_0000423 ,
+                                 "TODO: There needs to be an ICE branch in AEON covering the action and objective specifications which the various contributors have to concretize when realizing their roles. The concretization of these specification calsses needs to be axiomized here and in the various contributor roles."@en ;
                  obo:IAO_0000115 "A contributor is a person or organization that holds a contributor role which is being realized in a planned process."@en ;
                  obo:IAO_0000116 ""@en ,
                                  "An academic conference is being realized by the contributions of different kinds of people and organizations. The organizers plan the program and manage the needed logistics. The sponsors provide the resources and funds needed for the realization. The speakers contribute by presenting their academic work. The reviewers make sure the submitted work is worth to be presented. The moderators make sure that the mode of communication is caried out as planned by the organizer. The attendees contribute by being there as the audience, providing feedback and by making up the pool of possible future collaborators."@en ,
                                  """This class and its children should be defined in an ontology that covers the domain of contributorship in the sciences. 
 The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to be the best place. However at the moment CRO only covers \"the diverse roles performed in the work leading to a published research output in the sciences.\" An academic event or event series should ot be understood as a published research output, as they are procceses (occurents) and not ICEs."""@en ;
-                 obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                 obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                  obo:IAO_0000600 "A person or organization can only be considered a contributor of some planned process, if and only if the act of contributing has been fulfilled. The contributor role is being realized, when the task (objective specification) attached to this role has been achieved somehow. It can thus be possible for a person or organization to hold multiple roles either in the same or in different planned processes."@en ;
-                 rdfs:label "contributor"@en ;
-                 ns:term_status "TODO: There needs to be an ICE branch in AEON covering the action and objective specifications which the various contributors have to concretize when realizing their roles. The concretization of these specification calsses needs to be axiomized here and in the various contributor roles."@en .
+                 rdfs:label "contributor"@en .
 
 
 ###  https://github.com/tibonto/aeon#finance_committee
 aeon:finance_committee rdf:type owl:Class ;
                        rdfs:subClassOf aeon:AEON_0000042 ;
-                       obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
-                       obo:IAO_0000600 "The finance committee has the task of monitoring the budget of an academic event."@en ;
+                       obo:IAO_0000114 obo:IAO_0000125 ;
+                       obo:IAO_0000115 "The finance committee is an academic event committee that has the task of monitoring and managing the budget of an academic event."@en ;
+                       obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ,
+                                       "PERSON: Philip Strömert"^^xsd:string ;
                        rdfs:label "event finance committee"@en .
 
 
 ###  https://github.com/tibonto/aeon#general_committee
 aeon:general_committee rdf:type owl:Class ;
                        rdfs:subClassOf aeon:AEON_0000042 ;
-                       obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                       obo:IAO_0000114 obo:IAO_0000125 ;
+                       obo:IAO_0000115 "The general or steering committee is an academic event committee that is responsible for the entire conceptual design of an academic event. This entails decisions on the content focus, budget, size, choice of venue and time, selection of other responsible persons, etc."@en ;
+                       obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
                        obo:IAO_0000118 "steering committee"@en ;
-                       obo:IAO_0000600 "The general or steering committee is responsible for the entire conceptual design of an academic event, from decisions on the content focus, budget, size, choice of venue and time, selection of other responsible persons, etc."@en ;
                        rdfs:label "general committee"@en .
 
 
 ###  https://github.com/tibonto/aeon#keynote_speaker
 aeon:keynote_speaker rdf:type owl:Class ;
-                     owl:equivalentClass [ rdf:type owl:Restriction ;
-                                           owl:onProperty obo:RO_0000087 ;
-                                           owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000014
-                                                                                     [ rdf:type owl:Restriction ;
-                                                                                       owl:onProperty obo:BFO_0000054 ;
-                                                                                       owl:someValuesFrom obo:OBI_0000011
+                     owl:equivalentClass [ owl:intersectionOf ( aeon:speaker
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty obo:RO_0000087 ;
+                                                                  owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000014
+                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                              owl:onProperty obo:BFO_0000054 ;
+                                                                                                              owl:someValuesFrom obo:OBI_0000011
+                                                                                                            ]
+                                                                                                          ) ;
+                                                                                       rdf:type owl:Class
                                                                                      ]
-                                                                                   ) ;
-                                                                rdf:type owl:Class
-                                                              ]
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
                                          ] ;
                      rdfs:subClassOf aeon:speaker ;
                      obo:IAO_0000114 obo:IAO_0000423 ;
                      obo:IAO_0000115 "A 'keynote speaker' is a presenter that holds a keynote speaker role which is being realized in a planned process."@en ;
-                     obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                     obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                      obo:IAO_0000600 "An invited person - often a multiplier in his or her (research) field - responsible for delivering a keynote speech."@en ;
                      rdfs:label "keynote speaker"@en .
 
@@ -3034,163 +3157,191 @@ aeon:keynote_speaker rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#local_committee
 aeon:local_committee rdf:type owl:Class ;
                      rdfs:subClassOf aeon:AEON_0000042 ;
-                     obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
-                     obo:IAO_0000600 "The local committee takes care of planning, organizing and carrying out an academic event on site (venue, registration, supply, accommodations etc.)"@en ;
+                     obo:IAO_0000114 obo:IAO_0000125 ;
+                     obo:IAO_0000115 "The local committee is an academic event committee that is in charge of planning, organizing and carrying out an academic event on site. This entails being in charge of managing the venue, registration, supply, accommodations etc."@en ;
+                     obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
                      rdfs:label "local committee"@en .
 
 
 ###  https://github.com/tibonto/aeon#moderator
 aeon:moderator rdf:type owl:Class ;
-               owl:equivalentClass [ rdf:type owl:Restriction ;
-                                     owl:onProperty obo:RO_0000087 ;
-                                     owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000011
-                                                                               [ rdf:type owl:Restriction ;
-                                                                                 owl:onProperty obo:BFO_0000054 ;
-                                                                                 owl:someValuesFrom obo:OBI_0000011
+               owl:equivalentClass [ owl:intersectionOf ( aeon:contributor
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty obo:RO_0000087 ;
+                                                            owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000011
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty obo:BFO_0000054 ;
+                                                                                                        owl:someValuesFrom obo:OBI_0000011
+                                                                                                      ]
+                                                                                                    ) ;
+                                                                                 rdf:type owl:Class
                                                                                ]
-                                                                             ) ;
-                                                          rdf:type owl:Class
-                                                        ]
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
                                    ] ;
-               rdfs:subClassOf aeon:contributor ;
                obo:IAO_0000114 obo:IAO_0000423 ;
                obo:IAO_0000115 "A moderator is a contributer that holds a moderating role which is being realized in a planned process."@en ;
-               obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+               obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                obo:IAO_0000600 "A person responsible for facilitating a session at an academic event."@en ;
                rdfs:label "moderator"@en .
 
 
 ###  https://github.com/tibonto/aeon#organizer
 aeon:organizer rdf:type owl:Class ;
-               owl:equivalentClass [ rdf:type owl:Restriction ;
-                                     owl:onProperty obo:RO_0000087 ;
-                                     owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000006
-                                                                               [ rdf:type owl:Restriction ;
-                                                                                 owl:onProperty obo:BFO_0000054 ;
-                                                                                 owl:someValuesFrom obo:OBI_0000011
+               owl:equivalentClass [ owl:intersectionOf ( aeon:contributor
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty obo:RO_0000087 ;
+                                                            owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000006
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty obo:BFO_0000054 ;
+                                                                                                        owl:someValuesFrom obo:OBI_0000011
+                                                                                                      ]
+                                                                                                    ) ;
+                                                                                 rdf:type owl:Class
                                                                                ]
-                                                                             ) ;
-                                                          rdf:type owl:Class
-                                                        ]
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
                                    ] ;
-               rdfs:subClassOf aeon:contributor ;
                obo:IAO_0000112 "DataCite is an organizer of PIDapalooza 2020."@en ,
                                "Organizers of academic events or event series are often organizations that form special taks forces, or event committees, in order to plan and manage all aspects related to the realization of the event or event series." ;
                obo:IAO_0000114 obo:IAO_0000423 ;
                obo:IAO_0000115 "An organizer is a contributer that holds an organizing role which is being realized in a planned process."@en ;
-               obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
-               obo:IAO_0000600 "A person or organization that is responsible for the planning and realization of a planned process." .
+               obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+               obo:IAO_0000600 "A person or organization that is responsible for the planning and realization of a planned process." ;
+               rdfs:label "organizer"@en .
 
 
 ###  https://github.com/tibonto/aeon#program_committee
 aeon:program_committee rdf:type owl:Class ;
                        rdfs:subClassOf aeon:AEON_0000042 ;
-                       obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
-                       obo:IAO_0000600 "The programme committee is responsible for the selection of submissions (peer review process) and content of an academic event."@en ;
+                       obo:IAO_0000114 obo:IAO_0000125 ;
+                       obo:IAO_0000115 "The programme committee is an academic event committee that is responsible for planning what body of work is to be presented at an academic event. This entails making a call to the scientifiy community to submit their work, to review these submissions and to invite presenters that will fit to the academic event according to its planned scope."@en ;
+                       obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
                        rdfs:label "program committee"@en .
 
 
 ###  https://github.com/tibonto/aeon#publication_committee
 aeon:publication_committee rdf:type owl:Class ;
                            rdfs:subClassOf aeon:AEON_0000042 ;
-                           obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
-                           obo:IAO_0000600 "The publication committee deals with the publication of the proceedings of an academic event(editorial and peer review process)."@en ;
+                           obo:IAO_0000114 obo:IAO_0000125 ;
+                           obo:IAO_0000115 "The publication committee is an academic event committee that is responsible for the publication of the proceedings of an academic event."@en ;
+                           obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
                            rdfs:label "publication committee"@en .
 
 
 ###  https://github.com/tibonto/aeon#publicity_committee
 aeon:publicity_committee rdf:type owl:Class ;
                          rdfs:subClassOf aeon:AEON_0000042 ;
-                         obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
-                         obo:IAO_0000600 "The publicity committee is responsible for the external communication of an academic event: promotion, (social) media relations, web presence, further releases, etc."@en ;
+                         obo:IAO_0000114 obo:IAO_0000125 ;
+                         obo:IAO_0000115 "The publicity committee is an academic event committee that is responsible for the external communication of an academic event. This entails the promotion, (social) media relations, web presence, further releases, etc."@en ;
+                         obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
                          rdfs:label "publicity committee"@en .
 
 
 ###  https://github.com/tibonto/aeon#reviewer
 aeon:reviewer rdf:type owl:Class ;
-              owl:equivalentClass [ rdf:type owl:Restriction ;
-                                    owl:onProperty obo:RO_0000087 ;
-                                    owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000012
-                                                                              [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty obo:BFO_0000054 ;
-                                                                                owl:someValuesFrom obo:OBI_0000011
+              owl:equivalentClass [ owl:intersectionOf ( aeon:contributor
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty obo:RO_0000087 ;
+                                                           owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000012
+                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                       owl:onProperty obo:BFO_0000054 ;
+                                                                                                       owl:someValuesFrom obo:OBI_0000011
+                                                                                                     ]
+                                                                                                   ) ;
+                                                                                rdf:type owl:Class
                                                                               ]
-                                                                            ) ;
-                                                         rdf:type owl:Class
-                                                       ]
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
                                   ] ;
-              rdfs:subClassOf aeon:contributor ;
               obo:IAO_0000112 "The reviewer of a conference who reviews the submitted papers."@en ;
               obo:IAO_0000114 obo:IAO_0000423 ;
               obo:IAO_0000115 "A reviewer is a contributer that holds a reviewer role which is being realized in a planned process."@en ;
-              obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+              obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
               rdfs:label "reviewer"@en .
 
 
 ###  https://github.com/tibonto/aeon#speaker
 aeon:speaker rdf:type owl:Class ;
-             owl:equivalentClass [ rdf:type owl:Restriction ;
-                                   owl:onProperty obo:RO_0000087 ;
-                                   owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000013
-                                                                             [ rdf:type owl:Restriction ;
-                                                                               owl:onProperty obo:BFO_0000054 ;
-                                                                               owl:someValuesFrom obo:OBI_0000011
+             owl:equivalentClass [ owl:intersectionOf ( aeon:contributor
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty obo:RO_0000087 ;
+                                                          owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000013
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty obo:BFO_0000054 ;
+                                                                                                      owl:someValuesFrom obo:OBI_0000011
+                                                                                                    ]
+                                                                                                  ) ;
+                                                                               rdf:type owl:Class
                                                                              ]
-                                                                           ) ;
-                                                        rdf:type owl:Class
-                                                      ]
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
                                  ] ;
-             rdfs:subClassOf aeon:contributor ;
              obo:IAO_0000112 "A presenter is a person who's role it is to present some body of work to an audience."@en ,
                              "Philip Strömert is a presenter at PIDapalooza 2021."@en ;
              obo:IAO_0000114 obo:IAO_0000423 ;
              obo:IAO_0000115 "A presenter is a contributer that holds a presenter role which is being realized in a planned process."@en ;
-             obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+             obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
              obo:IAO_0000118 "speaker"@en ;
              rdfs:label "presenter"@en .
 
 
 ###  https://github.com/tibonto/aeon#sponsor
 aeon:sponsor rdf:type owl:Class ;
-             owl:equivalentClass [ rdf:type owl:Restriction ;
-                                   owl:onProperty obo:RO_0000087 ;
-                                   owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000015
-                                                                             [ rdf:type owl:Restriction ;
-                                                                               owl:onProperty obo:BFO_0000054 ;
-                                                                               owl:someValuesFrom obo:OBI_0000011
+             owl:equivalentClass [ owl:intersectionOf ( aeon:contributor
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty obo:RO_0000087 ;
+                                                          owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000015
+                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                      owl:onProperty obo:BFO_0000054 ;
+                                                                                                      owl:someValuesFrom obo:OBI_0000011
+                                                                                                    ]
+                                                                                                  ) ;
+                                                                               rdf:type owl:Class
                                                                              ]
-                                                                           ) ;
-                                                        rdf:type owl:Class
-                                                      ]
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
                                  ] ;
-             rdfs:subClassOf aeon:contributor ;
              obo:IAO_0000112 "An organization or person that promises to fund an academic event is a sponsor of that event the moment the promised funds have been recieved by the organizers of the event."@en ;
              obo:IAO_0000114 obo:IAO_0000423 ;
              obo:IAO_0000115 "A sponsor is a contributer that holds a sponsor role which is being realized in a planned process."@en ;
              obo:IAO_0000116 "Philip Strömert 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...), as there are various schemes. At the moment any sponsor type other than gold, silver or bronze can be further specified by using the data property \"sponsor_type\". We could also reuse the \"event type a SKOS:concept\" pattern here. But it seems best to have a clear definition of each sponsor type, in order to be able to subclass them here and add the corresponding roles and properties."@en ;
-             obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string .
+             obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+             rdfs:label "sponsor"@en .
 
 
 ###  https://github.com/tibonto/aeon#sponsorship_committee
 aeon:sponsorship_committee rdf:type owl:Class ;
                            rdfs:subClassOf aeon:AEON_0000042 ;
-                           obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                           obo:IAO_0000114 obo:IAO_0000123 ;
+                           obo:IAO_0000115 "The sponsorship committee ia an academic event committee that is responsible for aquireing and managing the sponsorships of an academic event."@en ;
+                           obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
                            rdfs:label "sponsorship committee"@en .
 
 
 ###  https://github.com/tibonto/aeon#technical_committee
 aeon:technical_committee rdf:type owl:Class ;
                          rdfs:subClassOf aeon:AEON_0000042 ;
-                         obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                         obo:IAO_0000114 obo:IAO_0000125 ;
+                         obo:IAO_0000115 "The technical committee ia an academic event committee that is responsible for the technical needs associated with the realization of an academic event."@en ;
+                         obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
                          rdfs:label "technical committee"@en .
 
 
 ###  https://github.com/tibonto/aeon#wikiCFP_ID
 aeon:wikiCFP_ID rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000578 ;
-                obo:IAO_0000117 "PERSON: Philip Strömert" ;
-                rdfs:label "wikiCFP ID" ;
-                ns:term_status obo:IAO_0000423 .
+                obo:IAO_0000114 obo:IAO_0000423 ;
+                obo:IAO_0000115 "A 'wikiCFP identifier' is a iao:'centrally registered identifier' that denotes an 'academic event' or 'academic event series' in the wikiCFP database."@en ;
+                obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                obo:IAO_0000118 "wikiCFP ID"@en ;
+                obo:IAO_0000119 "http://www.wikicfp.com/cfp/"^^xsd:anyURI ;
+                rdfs:label "wikiCFP identifier"@en .
 
 
 #################################################################
@@ -3380,6 +3531,8 @@ aeon:_PIDapalooza2020 rdf:type owl:NamedIndividual ;
                                       aeon:__PIDapalooza_Role_2 ;
                       aeon:AEON_0000050 aeon:_Person_1 ;
                       aeon:AEON_0000055 aeon:_Person_2 ;
+                      aeon:AEON_0000080 <https://www.wikidata.org/wiki/Q65929359> ;
+                      aeon:AEON_0000084 aeon:_PIDapalooza ;
                       aeon:end_date "2020-01-30T17:00:00"^^xsd:dateTime ;
                       aeon:number_of_attendees 117 ;
                       aeon:number_of_tracks 13 ;
@@ -3388,48 +3541,52 @@ aeon:_PIDapalooza2020 rdf:type owl:NamedIndividual ;
                       rdfs:label "_PIDapalooza2020"@en .
 
 
-###  https://github.com/tibonto/aeon#_PIDapalooza_general_committee
-aeon:_PIDapalooza_general_committee rdf:type owl:NamedIndividual ,
-                                             aeon:general_committee ;
-                                    obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string .
-
-
 ###  https://github.com/tibonto/aeon#_Person_1
 aeon:_Person_1 rdf:type owl:NamedIndividual ;
                obo:IAO_0000235 <https://orcid.org/0000-0002-1595-3213> ;
                obo:RO_0000087 aeon:__PIDapalooza_Role_1 ;
+               aeon:AEON_0000078 <https://orcid.org/0000-0002-1595-3213> ;
                aeon:first_name "Philip"^^xsd:string ;
                aeon:last_name "Strömert"^^xsd:string ;
-               ns:term_status obo:IAO_0000002 .
+               obo:IAO_0000114 obo:IAO_0000002 ;
+               rdfs:label "_Person_1" .
 
 
 ###  https://github.com/tibonto/aeon#_Person_2
 aeon:_Person_2 rdf:type owl:NamedIndividual ;
                obo:RO_0000087 aeon:__PIDapalooza_Role_2 ;
-               obo:RO_0002350 aeon:_PIDapalooza_general_committee ;
                aeon:personal_name "Sam general committee Chair" ;
-               obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string .
+               obo:IAO_0000114 obo:IAO_0000002 ;
+               obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+               rdfs:label "_Person_2" .
 
 
 ###  https://github.com/tibonto/aeon#__PIDapalooza_Role_1
 aeon:__PIDapalooza_Role_1 rdf:type owl:NamedIndividual ;
-                          obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string .
+                          obo:IAO_0000114 obo:IAO_0000002 ;
+                          obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                          rdfs:label "_PIDapalooza_Role_1" .
 
 
 ###  https://github.com/tibonto/aeon#__PIDapalooza_Role_2
 aeon:__PIDapalooza_Role_2 rdf:type owl:NamedIndividual ;
-                          obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string .
+                          obo:IAO_0000114 obo:IAO_0000002 ;
+                          obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                          rdfs:label "_PIDapalooza_Role_2" .
 
 
 ###  https://orcid.org/0000-0002-1595-3213
 <https://orcid.org/0000-0002-1595-3213> rdf:type owl:NamedIndividual ;
-                                        aeon:ID_base_URL "https://orcid.org/"^^xsd:anyURI .
+                                        aeon:ID_base_URL "https://orcid.org/"^^xsd:anyURI ;
+                                        obo:IAO_0000114 obo:IAO_0000002 ;
+                                        rdfs:label <https://github.com/tibonto/_0000-0002-1595-3213> .
 
 
 ###  https://www.wikidata.org/wiki/Q65929359
 <https://www.wikidata.org/wiki/Q65929359> rdf:type owl:NamedIndividual ;
                                           aeon:ID_base_URL "https://www.wikidata.org/wiki/"^^xsd:anyURI ;
-                                          rdfs:comment obo:IAO_0000002 .
+                                          rdfs:comment obo:IAO_0000002 ;
+                                          rdfs:label "_Q65929359" .
 
 
 #################################################################
@@ -3489,4 +3646,4 @@ aeon:__PIDapalooza_Role_2 rdf:type owl:NamedIndividual ;
 ] .
 
 
-###  Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
