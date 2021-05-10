@@ -1,5 +1,10 @@
 Change history:
 
+v0.4.0 	- date: 05.2021
+	* ADDED --> ROBOT report in GitHub actions
+	* UPDATED --> textual definitions on many classes
+	* UPDATED --> logical definitions on contributor branch
+
 v0.3.3	- date: 04.2021
 	* UPDATED --> aeon.ttl to new version
 	* UPDATED --> aeon.owl via manual export of aeon.ttl (pre-commit git hook using ROBOT is still not working under Windows 8)
