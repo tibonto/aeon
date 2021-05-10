@@ -3288,7 +3288,9 @@ aeon:sponsor rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#sponsorship_committee
 aeon:sponsorship_committee rdf:type owl:Class ;
                            rdfs:subClassOf aeon:AEON_0000042 ;
-                           obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                           obo:IAO_0000114 obo:IAO_0000123 ;
+                           obo:IAO_0000115 "The sponsorship committee ia an academic event committee that is responsible for aquireing and managing the sponsorships of an academic event."@en ;
+                           obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
                            rdfs:label "sponsorship committee"@en .
 
 
