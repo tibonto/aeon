@@ -3082,8 +3082,10 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
 ###  https://github.com/tibonto/aeon#finance_committee
 aeon:finance_committee rdf:type owl:Class ;
                        rdfs:subClassOf aeon:AEON_0000042 ;
-                       obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
-                       obo:IAO_0000600 "The finance committee has the task of monitoring the budget of an academic event."@en ;
+                       obo:IAO_0000114 obo:IAO_0000125 ;
+                       obo:IAO_0000115 "The finance committee is an academic event committee that has the task of monitoring and managing the budget of an academic event."@en ;
+                       obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ,
+                                       "PERSON: Philip Strömert"^^xsd:string ;
                        rdfs:label "event finance committee"@en .
 
 
