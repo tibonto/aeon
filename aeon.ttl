@@ -511,6 +511,9 @@ obo:RO_0000057 rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf owl:topObjectProperty ;
                rdfs:domain obo:BFO_0000003 ;
                rdfs:range obo:BFO_0000002 ;
+               owl:propertyChainAxiom ( obo:RO_0000087
+                                        obo:BFO_0000054
+                                      ) ;
                obo:IAO_0000111 "has participant"@en ;
                obo:IAO_0000112 "this blood coagulation has participant this blood clot"@en ,
                                "this investigation has participant this investigator"@en ,
@@ -634,11 +637,11 @@ aeon:AEON_0000033 rdf:type owl:ObjectProperty ;
                   rdfs:domain obo:BFO_0000001 ;
                   rdfs:range aeon:AEON_0000034 ;
                   obo:IAO_0000111 "has DID"@en ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
                   obo:IAO_0000115 "A relation obtaining between an entity and a distributed identifier document (DID) that is used to denote the verifiable, decentralized digital identity of an entity."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   obo:IAO_0000118 "has distributed identifier"@en ;
-                  rdfs:label "has DID"@en ;
-                  obo:IAO_0000114 obo:IAO_0000423 .
+                  rdfs:label "has DID"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000040
@@ -800,10 +803,10 @@ aeon:AEON_0000075 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:IAO_0000030 ;
                   rdfs:range aeon:AEON_0000016 ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
                   obo:IAO_0000115 "A relation obtaining between a digital iao:information content entity and its corresponding ISO 26324 conform digital object identifier."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:label "has DOI"@en ;
-                  obo:IAO_0000114 obo:IAO_0000423 .
+                  rdfs:label "has DOI"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000076
@@ -811,10 +814,10 @@ aeon:AEON_0000076 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:BFO_0000001 ;
                   rdfs:range aeon:AEON_0000017 ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
                   obo:IAO_0000115 "A relation obtaining between an entity and the 'GND identifier' used by the German national library to denote this entity."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "has GND identifier"@en ;
-                  obo:IAO_0000114 obo:IAO_0000423 ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P227\", \"label\": \"GND_ID\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#gndIdentifier\", \"label\": \"GND-Identifier\"}}"^^xsd:string .
 
 
@@ -827,10 +830,10 @@ aeon:AEON_0000077 rdf:type owl:ObjectProperty ;
                                             )
                               ] ;
                   rdfs:range aeon:AEON_0000018 ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
                   obo:IAO_0000115 "A relation obtaining between a person or organization and the 'international standard name identifier' used to denote the person or organization in the ISNI database."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:label "has ISNI"@en ;
-                  obo:IAO_0000114 obo:IAO_0000423 .
+                  rdfs:label "has ISNI"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000078
@@ -838,10 +841,10 @@ aeon:AEON_0000078 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:NCBITaxon_9606 ;
                   rdfs:range aeon:AEON_0000019 ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
                   obo:IAO_0000115 "A relation obtaining between a person and the 'ORCID' used to denote the person in the ORCID database."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:label "has ORCID"@en ;
-                  obo:IAO_0000114 obo:IAO_0000423 .
+                  rdfs:label "has ORCID"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000079
@@ -849,11 +852,11 @@ aeon:AEON_0000079 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:OBI_0000245 ;
                   rdfs:range aeon:AEON_0000020 ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
                   obo:IAO_0000115 "A relation obtaining between a person and the 'ROR identifier' used to denote the entity in the ROR database."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   obo:IAO_0000119 "https://ror.org/"^^xsd:anyURI ;
-                  rdfs:label "has ROR"@en ;
-                  obo:IAO_0000114 obo:IAO_0000423 .
+                  rdfs:label "has ROR"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000080
@@ -861,11 +864,11 @@ aeon:AEON_0000080 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
                   rdfs:domain obo:BFO_0000001 ;
                   rdfs:range aeon:AEON_0000021 ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
                   obo:IAO_0000115 "A relation obtaining between an entity and the Wikidata identifier used to denote this entity in the Wikidata database."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   obo:IAO_0000118 "has Wikidata QID"@en ;
                   rdfs:label "has QID"@en ;
-                  obo:IAO_0000114 obo:IAO_0000423 ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"itemID\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Wikidataid\", \"label\": \"Wikidataid\"}}"^^xsd:string .
 
 
@@ -1042,11 +1045,11 @@ aeon:has_WikiCFP_ID rdf:type owl:ObjectProperty ;
                                               )
                                 ] ;
                     rdfs:range aeon:wikiCFP_ID ;
+                    obo:IAO_0000114 obo:IAO_0000423 ;
                     obo:IAO_0000115 "A relation obtaining between an 'academic event' or 'academic event series' and the WikiCFP identifier used to denote this 'academic event' or 'academic event series' in the wikiCFP database."@en ;
                     obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                     obo:IAO_0000119 "http://www.wikicfp.com/cfp/"^^xsd:anyURI ;
                     rdfs:label "has WikiCFP identifier"@en ;
-                    obo:IAO_0000114 obo:IAO_0000423 ;
                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P5127\", \"label\": \"WikiCFP_conference_series_ID\"}}" .
 
 
@@ -2515,12 +2518,12 @@ aeon:AEON_0000002 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000003
 aeon:AEON_0000003 rdf:type owl:Class ;
                   rdfs:subClassOf obo:IAO_0020000 ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
                   obo:IAO_0000115 "An internal identifier is an iao:identifier that is only meant to be used inside the reference system, such as an application, in which it is declared."@en ;
                   obo:IAO_0000116 "The alternative term \"ConfIDent ID\" is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident) to be used in its service. Thus the internal identifier is called \"ConfIDent ID\". You will probably want to change that in your implementation."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   obo:IAO_0000118 "ConfIDent ID"@en ;
-                  rdfs:label "internal identifier"@en ;
-                  obo:IAO_0000114 obo:IAO_0000423 .
+                  rdfs:label "internal identifier"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000004
@@ -2931,11 +2934,11 @@ aeon:AEON_0000034 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000042
 aeon:AEON_0000042 rdf:type owl:Class ;
                   rdfs:subClassOf obo:BFO_0000027 ;
+                  obo:IAO_0000114 obo:IAO_0000125 ;
                   obo:IAO_0000115 """An academic event committee is a body of one or more persons (object aggregate) that is responsible for the realization of a certain task or aspect in an academic event. 
 Academic event committees are usually formed in the planning process of those academic events that need to subdevide and delegate the tasks that need to be carried out for the realization of the academic event.."""@en ;
                   obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
-                  rdfs:label "academic event committee"@en ;
-                  obo:IAO_0000114 obo:IAO_0000125 .
+                  rdfs:label "academic event committee"@en .
 
 
 ###  https://github.com/tibonto/aeon#attendee
@@ -3067,7 +3070,8 @@ aeon:contributor rdf:type owl:Class ;
                                      ] ;
                  rdfs:subClassOf obo:BFO_0000040 ;
                  obo:IAO_0000112 "All organizers and participants of the academic event called PIDapalooza 2020 are contributors of that particular event.."@en ;
-                 obo:IAO_0000114 obo:IAO_0000423 ;
+                 obo:IAO_0000114 obo:IAO_0000423 ,
+                                 "TODO: There needs to be an ICE branch in AEON covering the action and objective specifications which the various contributors have to concretize when realizing their roles. The concretization of these specification calsses needs to be axiomized here and in the various contributor roles."@en ;
                  obo:IAO_0000115 "A contributor is a person or organization that holds a contributor role which is being realized in a planned process."@en ;
                  obo:IAO_0000116 ""@en ,
                                  "An academic conference is being realized by the contributions of different kinds of people and organizations. The organizers plan the program and manage the needed logistics. The sponsors provide the resources and funds needed for the realization. The speakers contribute by presenting their academic work. The reviewers make sure the submitted work is worth to be presented. The moderators make sure that the mode of communication is caried out as planned by the organizer. The attendees contribute by being there as the audience, providing feedback and by making up the pool of possible future collaborators."@en ,
@@ -3075,8 +3079,7 @@ aeon:contributor rdf:type owl:Class ;
 The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to be the best place. However at the moment CRO only covers \"the diverse roles performed in the work leading to a published research output in the sciences.\" An academic event or event series should ot be understood as a published research output, as they are procceses (occurents) and not ICEs."""@en ;
                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                  obo:IAO_0000600 "A person or organization can only be considered a contributor of some planned process, if and only if the act of contributing has been fulfilled. The contributor role is being realized, when the task (objective specification) attached to this role has been achieved somehow. It can thus be possible for a person or organization to hold multiple roles either in the same or in different planned processes."@en ;
-                 rdfs:label "contributor"@en ;
-                 obo:IAO_0000114 "TODO: There needs to be an ICE branch in AEON covering the action and objective specifications which the various contributors have to concretize when realizing their roles. The concretization of these specification calsses needs to be axiomized here and in the various contributor roles."@en .
+                 rdfs:label "contributor"@en .
 
 
 ###  https://github.com/tibonto/aeon#finance_committee
@@ -3306,12 +3309,12 @@ aeon:technical_committee rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#wikiCFP_ID
 aeon:wikiCFP_ID rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000578 ;
+                obo:IAO_0000114 obo:IAO_0000423 ;
                 obo:IAO_0000115 "A 'wikiCFP identifier' is a iao:'centrally registered identifier' that denotes an 'academic event' or 'academic event series' in the wikiCFP database."@en ;
                 obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                 obo:IAO_0000118 "wikiCFP ID"@en ;
                 obo:IAO_0000119 "http://www.wikicfp.com/cfp/"^^xsd:anyURI ;
-                rdfs:label "wikiCFP identifier"@en ;
-                obo:IAO_0000114 obo:IAO_0000423 .
+                rdfs:label "wikiCFP identifier"@en .
 
 
 #################################################################
@@ -3518,38 +3521,38 @@ aeon:_Person_1 rdf:type owl:NamedIndividual ;
                aeon:AEON_0000078 <https://orcid.org/0000-0002-1595-3213> ;
                aeon:first_name "Philip"^^xsd:string ;
                aeon:last_name "Strömert"^^xsd:string ;
-               rdfs:label "_Person_1" ;
-               obo:IAO_0000114 obo:IAO_0000002 .
+               obo:IAO_0000114 obo:IAO_0000002 ;
+               rdfs:label "_Person_1" .
 
 
 ###  https://github.com/tibonto/aeon#_Person_2
 aeon:_Person_2 rdf:type owl:NamedIndividual ;
                obo:RO_0000087 aeon:__PIDapalooza_Role_2 ;
                aeon:personal_name "Sam general committee Chair" ;
+               obo:IAO_0000114 obo:IAO_0000002 ;
                obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-               rdfs:label "_Person_2" ;
-               obo:IAO_0000114 obo:IAO_0000002 .
+               rdfs:label "_Person_2" .
 
 
 ###  https://github.com/tibonto/aeon#__PIDapalooza_Role_1
 aeon:__PIDapalooza_Role_1 rdf:type owl:NamedIndividual ;
+                          obo:IAO_0000114 obo:IAO_0000002 ;
                           obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                          rdfs:label "_PIDapalooza_Role_1" ;
-                          obo:IAO_0000114 obo:IAO_0000002 .
+                          rdfs:label "_PIDapalooza_Role_1" .
 
 
 ###  https://github.com/tibonto/aeon#__PIDapalooza_Role_2
 aeon:__PIDapalooza_Role_2 rdf:type owl:NamedIndividual ;
+                          obo:IAO_0000114 obo:IAO_0000002 ;
                           obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                          rdfs:label "_PIDapalooza_Role_2" ;
-                          obo:IAO_0000114 obo:IAO_0000002 .
+                          rdfs:label "_PIDapalooza_Role_2" .
 
 
 ###  https://orcid.org/0000-0002-1595-3213
 <https://orcid.org/0000-0002-1595-3213> rdf:type owl:NamedIndividual ;
                                         aeon:ID_base_URL "https://orcid.org/"^^xsd:anyURI ;
-                                        rdfs:label <https://github.com/tibonto/_0000-0002-1595-3213> ;
-                                        obo:IAO_0000114 obo:IAO_0000002 .
+                                        obo:IAO_0000114 obo:IAO_0000002 ;
+                                        rdfs:label <https://github.com/tibonto/_0000-0002-1595-3213> .
 
 
 ###  https://www.wikidata.org/wiki/Q65929359
