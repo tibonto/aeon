@@ -3195,8 +3195,9 @@ aeon:program_committee rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#publication_committee
 aeon:publication_committee rdf:type owl:Class ;
                            rdfs:subClassOf aeon:AEON_0000042 ;
-                           obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
-                           obo:IAO_0000600 "The publication committee deals with the publication of the proceedings of an academic event(editorial and peer review process)."@en ;
+                           obo:IAO_0000114 obo:IAO_0000125 ;
+                           obo:IAO_0000115 "The publication committee is an academic event committee that is responsible for the publication of the proceedings of an academic event."@en ;
+                           obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
                            rdfs:label "publication committee"@en .
 
 
