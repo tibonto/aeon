@@ -3297,7 +3297,9 @@ aeon:sponsorship_committee rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#technical_committee
 aeon:technical_committee rdf:type owl:Class ;
                          rdfs:subClassOf aeon:AEON_0000042 ;
-                         obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
+                         obo:IAO_0000114 obo:IAO_0000125 ;
+                         obo:IAO_0000115 "The technical committee ia an academic event committee that is responsible for the technical needs associated with the realization of an academic event."@en ;
+                         obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
                          rdfs:label "technical committee"@en .
 
 
