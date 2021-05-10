@@ -2938,18 +2938,21 @@ aeon:AEON_0000042 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#attendee
 aeon:attendee rdf:type owl:Class ;
-              owl:equivalentClass [ rdf:type owl:Restriction ;
-                                    owl:onProperty obo:RO_0000087 ;
-                                    owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000010
-                                                                              [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty obo:BFO_0000054 ;
-                                                                                owl:someValuesFrom obo:OBI_0000011
+              owl:equivalentClass [ owl:intersectionOf ( aeon:contributor
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty obo:RO_0000087 ;
+                                                           owl:someValuesFrom [ owl:intersectionOf ( aeon:AEON_0000010
+                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                       owl:onProperty obo:BFO_0000054 ;
+                                                                                                       owl:someValuesFrom obo:OBI_0000011
+                                                                                                     ]
+                                                                                                   ) ;
+                                                                                rdf:type owl:Class
                                                                               ]
-                                                                            ) ;
-                                                         rdf:type owl:Class
-                                                       ]
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
                                   ] ;
-              rdfs:subClassOf aeon:contributor ;
               obo:IAO_0000112 "Philip Strömert is an attendee of PIDapalooza 2021."@en ;
               obo:IAO_0000114 obo:IAO_0000423 ;
               obo:IAO_0000115 "An attendee is a contributer that holds an attendee role which is being realized in a planned process."@en ;
