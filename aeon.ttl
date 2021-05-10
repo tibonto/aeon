@@ -3204,8 +3204,9 @@ aeon:publication_committee rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#publicity_committee
 aeon:publicity_committee rdf:type owl:Class ;
                          rdfs:subClassOf aeon:AEON_0000042 ;
-                         obo:IAO_0000117 "PERSON: Philip Strömert"^^xsd:string ;
-                         obo:IAO_0000600 "The publicity committee is responsible for the external communication of an academic event: promotion, (social) media relations, web presence, further releases, etc."@en ;
+                         obo:IAO_0000114 obo:IAO_0000125 ;
+                         obo:IAO_0000115 "The publicity committee is an academic event committee that is responsible for the external communication of an academic event. This entails the promotion, (social) media relations, web presence, further releases, etc."@en ;
+                         obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
                          rdfs:label "publicity committee"@en .
 
 
