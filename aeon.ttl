@@ -2931,9 +2931,11 @@ aeon:AEON_0000034 rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#AEON_0000042
 aeon:AEON_0000042 rdf:type owl:Class ;
                   rdfs:subClassOf obo:BFO_0000027 ;
-                  obo:IAO_0000600 "An academic event committee or commission is a body of one or more persons that is responsible for the realization of a certain task or aspect in an academic event."@en ;
-                  rdfs:label "event committee"@en ;
-                  ns:term_status "pending"@en .
+                  obo:IAO_0000115 """An academic event committee is a body of one or more persons (object aggregate) that is responsible for the realization of a certain task or aspect in an academic event. 
+Academic event committees are usually formed in the planning process of those academic events that need to subdevide and delegate the tasks that need to be carried out for the realization of the academic event.."""@en ;
+                  obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
+                  rdfs:label "academic event committee"@en ;
+                  ns:term_status obo:IAO_0000125 .
 
 
 ###  https://github.com/tibonto/aeon#attendee
