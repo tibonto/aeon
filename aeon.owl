@@ -14,7 +14,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:dcmi-terms="http://dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/">
     <owl:Ontology rdf:about="https://github.com/tibonto/aeon">
-        <owl:versionIRI rdf:resource="https://github.com/tibonto/aeon/releases/tag/v0.4.0"/>
+        <owl:versionIRI rdf:resource="https://github.com/tibonto/aeon/releases/tag/v0.4.1"/>
         <dc:contributor>Christian Hauschke</dc:contributor>
         <dc:contributor>Christoph Lange</dc:contributor>
         <dc:contributor>Michael Conlon</dc:contributor>
@@ -23,7 +23,7 @@
         <dc:description>The Academic Event Ontology (AEON) is used to represent information regarding academic events. The ontology supports the identification, development, management, evaluation, and impact assessment of events, components of events and event series, as well as identification and reuse of works presented or developed at events. The ontology is independent of knowledge, creative domain, or topics related to events. AEON is focused on events and assumes the representation of many entities associated with events such as attendees, locations, academic works, datetimes, and processes are defined in compatible ontologies.</dc:description>
         <dc:title xml:lang="en">Academic Event Ontology</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo>v0.4.0</owl:versionInfo>
+        <owl:versionInfo>v0.4.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -650,8 +650,13 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000087"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000054"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000055"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000052"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000057"/>
         </owl:propertyChainAxiom>
         <obo:IAO_0000111 xml:lang="en">has participant</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">this blood coagulation has participant this blood clot</obo:IAO_0000112>
@@ -1478,14 +1483,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </rdf:Description>
     
 
 
@@ -4632,10 +4629,10 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
         <AEON_0000055 rdf:resource="https://github.com/tibonto/aeon#_Person_2"/>
         <AEON_0000080 rdf:resource="https://www.wikidata.org/wiki/Q65929359"/>
         <AEON_0000084 rdf:resource="https://github.com/tibonto/aeon#_PIDapalooza"/>
-        <end_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-30T17:00:00</end_date>
+        <end_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2020-01-30T17:00:00Z</end_date>
         <number_of_attendees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">117</number_of_attendees>
         <number_of_tracks rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</number_of_tracks>
-        <start_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-29T09:00:00</start_date>
+        <start_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2020-01-29T09:00:00Z</start_date>
         <rdfs:comment rdf:resource="http://purl.obolibrary.org/obo/IAO_0000002"/>
         <rdfs:label xml:lang="en">_PIDapalooza2020</rdfs:label>
     </owl:NamedIndividual>
