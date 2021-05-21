@@ -511,8 +511,12 @@ obo:RO_0000057 rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf owl:topObjectProperty ;
                rdfs:domain obo:BFO_0000003 ;
                rdfs:range obo:BFO_0000002 ;
-               owl:propertyChainAxiom ( obo:RO_0000087
-                                        obo:BFO_0000054
+               owl:propertyChainAxiom ( obo:BFO_0000051
+                                        obo:BFO_0000055
+                                        obo:RO_0000052
+                                      ) ,
+                                      ( obo:BFO_0000051
+                                        obo:RO_0000057
                                       ) ;
                obo:IAO_0000111 "has participant"@en ;
                obo:IAO_0000112 "this blood coagulation has participant this blood clot"@en ,
@@ -1155,10 +1159,6 @@ aeon:topic_of rdf:type owl:ObjectProperty ;
 #################################################################
 #    Data properties
 #################################################################
-
-###  http://www.w3.org/2002/07/owl#topDataProperty
-owl:topDataProperty rdfs:range rdfs:Literal .
-
 
 ###  https://github.com/tibonto/aeon#CORE_ranking
 aeon:CORE_ranking rdf:type owl:DatatypeProperty ;
@@ -3533,10 +3533,10 @@ aeon:_PIDapalooza2020 rdf:type owl:NamedIndividual ;
                       aeon:AEON_0000055 aeon:_Person_2 ;
                       aeon:AEON_0000080 <https://www.wikidata.org/wiki/Q65929359> ;
                       aeon:AEON_0000084 aeon:_PIDapalooza ;
-                      aeon:end_date "2020-01-30T17:00:00"^^xsd:dateTime ;
+                      aeon:end_date "2020-01-30T17:00:00Z"^^xsd:dateTimeStamp ;
                       aeon:number_of_attendees 117 ;
                       aeon:number_of_tracks 13 ;
-                      aeon:start_date "2020-01-29T09:00:00"^^xsd:dateTime ;
+                      aeon:start_date "2020-01-29T09:00:00Z"^^xsd:dateTimeStamp ;
                       rdfs:comment obo:IAO_0000002 ;
                       rdfs:label "_PIDapalooza2020"@en .
 
