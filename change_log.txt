@@ -1,5 +1,8 @@
 Change history:
 
+v0.4.1 	- date: 05.2021
+	* FIXED inconsistencies reported with ELK
+
 v0.4.0 	- date: 05.2021
 	* ADDED --> ROBOT report in GitHub actions
 	* UPDATED --> textual definitions on many classes & object relations
