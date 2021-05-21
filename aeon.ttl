@@ -3533,10 +3533,10 @@ aeon:_PIDapalooza2020 rdf:type owl:NamedIndividual ;
                       aeon:AEON_0000055 aeon:_Person_2 ;
                       aeon:AEON_0000080 <https://www.wikidata.org/wiki/Q65929359> ;
                       aeon:AEON_0000084 aeon:_PIDapalooza ;
-                      aeon:end_date "2020-01-30T17:00:00"^^xsd:dateTime ;
+                      aeon:end_date "2020-01-30T17:00:00Z"^^xsd:dateTimeStamp ;
                       aeon:number_of_attendees 117 ;
                       aeon:number_of_tracks 13 ;
-                      aeon:start_date "2020-01-29T09:00:00"^^xsd:dateTime ;
+                      aeon:start_date "2020-01-29T09:00:00Z"^^xsd:dateTimeStamp ;
                       rdfs:comment obo:IAO_0000002 ;
                       rdfs:label "_PIDapalooza2020"@en .
 
