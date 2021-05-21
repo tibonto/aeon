@@ -1156,10 +1156,6 @@ aeon:topic_of rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  http://www.w3.org/2002/07/owl#topDataProperty
-owl:topDataProperty rdfs:range rdfs:Literal .
-
-
 ###  https://github.com/tibonto/aeon#CORE_ranking
 aeon:CORE_ranking rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf aeon:metric ;
