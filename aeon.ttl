@@ -2123,6 +2123,21 @@ Previous. An information content entity is a non-realizable information entity t
                 rdfs:label "information content entity"@en .
 
 
+###  http://purl.obolibrary.org/obo/IAO_0000033
+obo:IAO_0000033 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0000030 ;
+                obo:IAO_0000114 obo:IAO_0000122 ;
+                obo:IAO_0000115 "An information content entity whose concretizations indicate to their bearer how to realize them in a process."@en ;
+                obo:IAO_0000116 "2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  \"is the specification of a process that can be concretized and realized by an actor\" with alternative term  \"instruction\".It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term."@en ,
+                                "2013-05-30 Alan Ruttenberg: What differentiates a directive information entity from an information concretization is that it can have concretizations that are either qualities or realizable entities. The concretizations that are realizable entities are created when an individual chooses to take up the direction, i.e. has the intention to (try to) realize it."@en ,
+                                "8/6/2009 Alan Ruttenberg: Changed label from \"information entity about a realizable\" after discussions at ICBO"@en ,
+                                "Werner pushed back on calling it realizable information entity as it isn't realizable. However this name isn't right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn't about the plan, it, once concretized, *is* the plan. -Alan"@en ;
+                obo:IAO_0000117 "PERSON: Alan Ruttenberg"@en ,
+                                "PERSON: Bjoern Peters"@en ;
+                obo:IAO_0000412 "http://purl.obolibrary.org/obo/obi/2021-04-06/obi.owl"^^xsd:string ;
+                rdfs:label "directive information entity"@en .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0000078
 obo:IAO_0000078 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000102 ;
@@ -2162,6 +2177,30 @@ obo:IAO_0000102 rdf:type owl:Class ;
                 obo:IAO_0000117 "Person:Alan Ruttenberg"@en ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"^^xsd:string ;
                 rdfs:label "data about an ontology part"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000104
+obo:IAO_0000104 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0000033 ;
+                obo:IAO_0000111 "plan specification"@en ;
+                obo:IAO_0000112 "PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice."@en ;
+                obo:IAO_0000114 obo:IAO_0000122 ;
+                obo:IAO_0000115 "A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified."@en ;
+                obo:IAO_0000116 "2009-03-16: provenance: a term a plan was proposed for OBI (OBI_0000344) , edited by the PlanAndPlannedProcess branch. Original definition was \" a plan is a specification of a process that is realized by an actor to achieve the objective specified as part of the plan\". It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term."@en ,
+                                "2014-03-31: A plan specification can have other parts, such as conditional specifications."@en ,
+                                "Alternative previous definition: a plan is a set of instructions that specify how an objective should be achieved"@en ;
+                obo:IAO_0000117 "Alan Ruttenberg"@en ;
+                obo:IAO_0000119 "OBI Plan and Planned Process branch"@en ,
+                                "OBI_0000344"@en ;
+                obo:IAO_0000412 "http://purl.obolibrary.org/obo/obi/2021-04-06/obi.owl"^^xsd:string ;
+                rdfs:comment """2/3/2009 Comment from OBI review.
+
+Action specification not well enough specified.
+Conditional specification not well enough specified.
+Question whether all plan specifications have objective specifications.
+
+Request that IAO either clarify these or change definitions not to use them"""@en ;
+                rdfs:label "plan specification"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000225
