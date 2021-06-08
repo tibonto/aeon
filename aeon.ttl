@@ -2058,6 +2058,52 @@ obo:GAZ_00000448 rdf:type owl:Class ;
                  rdfs:label "geographic location"@en .
 
 
+###  http://purl.obolibrary.org/obo/IAO_0000001
+obo:IAO_0000001 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0000033 ;
+                obo:IAO_0000111 "conditional specification"@en ;
+                obo:IAO_0000114 obo:IAO_0000120 ;
+                obo:IAO_0000115 "A directive information entity that specifies what should happen if the trigger condition is fulfilled."@en ;
+                obo:IAO_0000117 "PlanAndPlannedProcess Branch"@en ;
+                obo:IAO_0000119 "OBI branch derived"@en ,
+                                "OBI_0000349"@en ;
+                obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"^^xsd:string ;
+                rdfs:label "conditional specification"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000005
+obo:IAO_0000005 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0000033 ;
+                obo:IAO_0000111 "objective specification"@en ;
+                obo:IAO_0000112 "In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction."@en ;
+                obo:IAO_0000114 obo:IAO_0000122 ;
+                obo:IAO_0000115 "A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved."@en ;
+                obo:IAO_0000116 "2009-03-16: original definition when imported from OBI read: \"objective is an non realizable information entity which can serve as that  proper part of a plan towards which the realization of the plan is directed.\""@en ,
+                                "2014-03-31: In the example of usage (\"In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction\") there is a protocol which is the ChIP assay protocol. In addition to being concretized on paper, the protocol can be concretized as a realizable entity, such as a plan that inheres in a person. The objective specification is the part that says that some protein and DNA interactions are identified. This is a specification of a process endpoint: the boundary in the process before which they are not identified and after which they are. During the realization of the plan, the goal is to get to the point of having the interactions, and participants in the realization of the plan try to do that."@en ,
+                                "Answers the question, why did you do this experiment?"@en ;
+                obo:IAO_0000117 "PERSON: Alan Ruttenberg"@en ,
+                                "PERSON: Barry Smith"@en ,
+                                "PERSON: Bjoern Peters"@en ,
+                                "PERSON: Jennifer Fostel"@en ;
+                obo:IAO_0000118 "goal specification"@en ;
+                obo:IAO_0000119 "OBI Plan and Planned Process/Roles Branch"@en ,
+                                "OBI_0000217"@en ;
+                obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"^^xsd:string ;
+                rdfs:label "objective specification"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000007
+obo:IAO_0000007 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0000033 ;
+                obo:IAO_0000112 "Pour the contents of flask 1 into flask 2"@en ;
+                obo:IAO_0000114 obo:IAO_0000122 ;
+                obo:IAO_0000115 "A directive information entity that describes an action the bearer will take."@en ;
+                obo:IAO_0000117 "Alan Ruttenberg"@en ;
+                obo:IAO_0000119 "OBI Plan and Planned Process branch"@en ;
+                obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"^^xsd:string ;
+                rdfs:label "action specification"@en .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0000027
 obo:IAO_0000027 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000030 ;
@@ -2136,6 +2182,21 @@ obo:IAO_0000033 rdf:type owl:Class ;
                                 "PERSON: Bjoern Peters"@en ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/obi/2021-04-06/obi.owl"^^xsd:string ;
                 rdfs:label "directive information entity"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000055
+obo:IAO_0000055 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0000001 ;
+                obo:IAO_0000111 "rule"@en ;
+                obo:IAO_0000112 "example to be added"@en ;
+                obo:IAO_0000114 obo:IAO_0000123 ;
+                obo:IAO_0000115 "A rule is an executable which guides, defines, restricts actions."@en ;
+                obo:IAO_0000116 "MSI"@en ;
+                obo:IAO_0000117 "PRS"@en ;
+                obo:IAO_0000119 "OBI_0500021"@en ,
+                                "PRS"@en ;
+                obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"^^xsd:string ;
+                rdfs:label "rule"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000078
