@@ -75,10 +75,12 @@ You can see a visualization of the master branch aeon.ttl using [WebVOWL](http:/
 
 ### TBoxes
 This is a reduced general overview of the classes and relation AEON uses.
+CAVE/TODO: I've wrongly labeled the edges for the subclasses wrong, so it must be rdfs:subclassOf not rdf:type! see also [issue#105] (https://github.com/tibonto/aeon/issues/105) (PS)
 ![](docs/AEON_overwiew.PNG)
 
 #### What makes up an academic event or event series?
 ![](docs/AEON_what.PNG)
+CAVE/TODO: I've used SKOS wrong! The academic event type, academic field & topic need to be subsumed under iao:information content entity somehow. See also WIP [issue#51] (https://github.com/tibonto/aeon/issues/51) (PS)
 
 When looking at the international use of terms like e.g. conference, symposiom or forum, we must acknowledge that there are sociocultural diffences in the meaning, that prevent us from simply defining them as subclasses of 'aeon:academic event' or 'aeon:academic event series'. Hence, we chose to model the type of an academic event as an instance of skos:Concept for now.
 The instances of 'aeon:academic field' are intended to be owl:NamedIndividuals derived from an established controlled vocabulary that classifies the various subject areas (e.g. [DFG subject areas](https://www.dfg.de/en/dfg_profile/statutory_bodies/review_boards/subject_areas/index.jsp))
@@ -104,6 +106,7 @@ This is still a very early draft and it needs to be discussed if and how the var
 
 
 ## Development
+It is intended to have a CI/CD pipeline for the development. Unfortunately the use of the ODK is not possible at the moment due to too old IT. The plan is to migrate to using it when this changes. Until then, we try to make as much as possible with ROBOT and GitHub actions/workflows. Using TSV-templates and a better repo folder structure is planned, but we need to learn this first in the little time we have for this project ;)
 ### Tests
 **Tests `tests/` are run at every merge request and push into the master branch, by github actions.**
 
@@ -120,3 +123,4 @@ But if test are to be run locally, follow the instructions in next sections
 #### Run tests
 * **all tests**: `pytest`  
 * **some tests**, using the marker to specify which tests, ie: `pytest -m ontology`
+
