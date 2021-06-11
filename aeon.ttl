@@ -3138,6 +3138,31 @@ Defining 'attendee' is not trivial, as the expectations of what an attendee must
               rdfs:label "attendee"@en .
 
 
+###  https://github.com/tibonto/aeon#colloquium
+aeon:colloquium rdf:type owl:Class ;
+                rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty aeon:AEON_0000032 ;
+                                                         owl:hasValue aeon:AEON_0010000
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                obo:IAO_0000114 obo:IAO_0000125 ;
+                obo:IAO_0000115 "A colloquium is an academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a colloquium."@en ;
+                obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                obo:IAO_0000600 """A possible definition could be the following, where one can also see how the definition depends on certain planned objectives, conditions and actions:
+A colloquium is an academic event that usually lasts only a few hours and serves to discuss a specific topic. Colloquia are usually part of the academic exchange in everyday university life with only one speaker, but can also take place on special occasions (anniversaries, start or end of the lecture phase, etc.) and can have more than one speaker."""@en ;
+                rdfs:label "colloquium"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource aeon:colloquium ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A colloquium is an academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a colloquium."@en ;
+   obo:IAO_0000116 aeon:AEON_0010000
+ ] .
+
+
 ###  https://github.com/tibonto/aeon#committee_chair
 aeon:committee_chair rdf:type owl:Class ;
                      owl:equivalentClass [ owl:intersectionOf ( aeon:committee_member
@@ -3641,7 +3666,10 @@ obo:IAO_0000428 rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#AEON_0010000
 aeon:AEON_0010000 rdf:type owl:NamedIndividual ,
                            aeon:AEON_0000004 ;
-                  rdfs:label "Colloquium" .
+                  obo:OBI_0002815 "This academic event is planned to be a colloquium."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a colloquium, when all that is known about the academic event type specification is the label colloquium (e.g. the event type colloquium is only specified in the name of the event). Hence, its representation can only be a statement asserting that the sociocultural format of the academic event is planned to be a colloquium format without further specifications on what objectives, conditions or actions are entailed."@en ;
+                  rdfs:label "colloquium plan specification"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0010001
