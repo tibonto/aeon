@@ -3195,6 +3195,37 @@ aeon:committee_member rdf:type owl:Class ;
 
 
 ###  https://github.com/tibonto/aeon#conference
+aeon:conference rdf:type owl:Class ;
+                rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty aeon:AEON_0000032 ;
+                                                         owl:hasValue aeon:AEON_0010001
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                obo:IAO_0000114 obo:IAO_0000125 ;
+                obo:IAO_0000115 "A conference is an academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a conference."@en ;
+                obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                obo:IAO_0000600 """A possible literature based definition could be the following, where one can also see how the definition depends on certain planned objectives, conditions and actions:
+A conference is an academic event that lasts up to several days and serves as a forum for presentations on a specific topic or subject area. In addition to subject-specific conferences, there are also interdisciplinary conferences which allow both a broader focus and more specific questions on a particular (academic) problem. Conferences often have a highly formalized structure of parallel, clearly defined sessions with several short presentations and plenary sessions with invited (keynote) speakers who are considered multipliers in their (research) field. Ideally, the selection of the speakers and their contributions is subject to a review process."""@en ;
+                rdfs:label "conference"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource aeon:conference ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A conference is an academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a conference."@en ;
+   obo:IAO_0000116 aeon:AEON_0010001
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource aeon:conference ;
+   owl:annotatedProperty obo:IAO_0000600 ;
+   owl:annotatedTarget """A possible literature based definition could be the following, where one can also see how the definition depends on certain planned objectives, conditions and actions:
+A conference is an academic event that lasts up to several days and serves as a forum for presentations on a specific topic or subject area. In addition to subject-specific conferences, there are also interdisciplinary conferences which allow both a broader focus and more specific questions on a particular (academic) problem. Conferences often have a highly formalized structure of parallel, clearly defined sessions with several short presentations and plenary sessions with invited (keynote) speakers who are considered multipliers in their (research) field. Ideally, the selection of the speakers and their contributions is subject to a review process."""@en ;
+   obo:IAO_0000119 "Casserly, P. (2019). Symposium vs. conference, what’s the difference? A symposium versus a conference. What’s the actual difference? And how does it affect organising or submitting to one? Ex Ordo. https://www.exordo.com/blog/symposium-vs-conference/" ,
+                   "Hansen, Thomas Trøst; Pedersen, David Budtz; Foley, Carmel (PRE-PRINT). Academic Event: an empirically-grounded typology and their academic impact. DOI: https://doi.org/10.3727/152599519X15506259856598."
+ ] .
 ###  https://github.com/tibonto/aeon#contact_person
 aeon:contact_person rdf:type owl:Class ;
                     owl:equivalentClass [ rdf:type owl:Restriction ;
@@ -3590,7 +3621,10 @@ aeon:AEON_0010000 rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#AEON_0010001
 aeon:AEON_0010001 rdf:type owl:NamedIndividual ,
                            aeon:AEON_0000004 ;
-                  rdfs:label "Conference" .
+                  obo:OBI_0002815 "This academic event is planned to be a conference."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a conference, when all that is known about the academic event type specification is the label conference (e.g. the event type conference is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a conference format without further specifications on what objectives, conditions or actions are entailed."@en ;
+                  rdfs:label "conference plan specification"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0010002
