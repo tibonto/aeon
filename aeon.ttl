@@ -3343,6 +3343,37 @@ aeon:finance_committee rdf:type owl:Class ;
                        rdfs:label "event finance committee"@en .
 
 
+###  https://github.com/tibonto/aeon#forum
+aeon:forum rdf:type owl:Class ;
+           rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty aeon:AEON_0000032 ;
+                                                    owl:hasValue aeon:AEON_0010002
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+           obo:IAO_0000114 obo:IAO_0000125 ;
+           obo:IAO_0000115 "A forum is an academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a forum."@en ;
+           obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+           obo:IAO_0000600 "A forum is an academic event that usually is public and involves audience discussion."@en ;
+           rdfs:label "forum"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource aeon:forum ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A forum is an academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a forum."@en ;
+   obo:IAO_0000116 aeon:AEON_0010002
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource aeon:forum ;
+   owl:annotatedProperty obo:IAO_0000600 ;
+   owl:annotatedTarget "A forum is an academic event that usually is public and involves audience discussion."@en ;
+   obo:IAO_0000119 "https://www.merriam-webster.com/dictionary/forum"
+ ] .
+
+
 ###  https://github.com/tibonto/aeon#general_committee
 aeon:general_committee rdf:type owl:Class ;
                        rdfs:subClassOf aeon:AEON_0000042 ;
@@ -3684,7 +3715,10 @@ aeon:AEON_0010001 rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#AEON_0010002
 aeon:AEON_0010002 rdf:type owl:NamedIndividual ,
                            aeon:AEON_0000004 ;
-                  rdfs:label "Forum" .
+                  obo:OBI_0002815 "This academic event is planned to be a forum."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a forum, when all that is known about the academic event type specification is the label forum (e.g. the event type forum is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a forum format without further specifications on what objectives, conditions or actions this entails."@en ;
+                  rdfs:label "forum plan specification"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0010003
