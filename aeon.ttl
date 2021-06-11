@@ -2636,7 +2636,7 @@ aeon:AEON_0000003 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000004
 aeon:AEON_0000004 rdf:type owl:Class ;
-                  owl:equivalentClass [ owl:intersectionOf ( skos:Concept
+                  owl:equivalentClass [ owl:intersectionOf ( obo:IAO_0000104
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty aeon:academic_event_type_of ;
                                                                owl:someValuesFrom aeon:AEON_0000001
@@ -2644,14 +2644,17 @@ aeon:AEON_0000004 rdf:type owl:Class ;
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf skos:Concept ;
-                  obo:IAO_0000115 "An 'academic event type' is a skos:Concept that is being used to distinguish between the different formats of an 'academic event'."@en ;
-                  obo:IAO_0000116 "As the actually used definitions of various academic event types varies between different communities and societies, we chose to model the type of an event as a skos:Concept instead of adding subclasses to the \"academic event\" class. The most commonly used academic event types are provided in AEON as named instances of this class. This design decision might be changed once there is an emperically proven common ground on which a subclassing of academic event is possible. It might also be possible in future version, to subsume this class under an appropriate class in the iao:'infomation content entity' branch instead of defining it as a skos:Concept."@en ,
-                                  "It needs to be discussed whether this class should be expanded to also describe the format of an 'academic event series', e.g. conference series. At the moment it is assumed that an 'academic event series', understood as a obi:'planned process', has no destinct format itself. Since this process is defined as the set of all recurring academic events of a destinct identity, the event series type would also only be the set of the event types of the academic events in this series."@en ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000051 ;
+                                    owl:someValuesFrom obo:IAO_0000001
+                                  ] ;
+                  obo:IAO_0000111 "event type"@en ;
+                  obo:IAO_0000115 "An academic event plan specification is a plan specification that specifies the sociocultural format or type of an academic event by providing specifications of the objectives, conditions and actions needed in the realization of the academic event."@en ;
+                  obo:IAO_0000116 "It needs to be discussed whether this class should be expanded to also describe the format of an 'academic event series', e.g. conference series. At the moment it is assumed that an 'academic event series', understood as a obi:'planned process', has no destinct format itself. Since this process is defined as the set of all recurring academic events of a destinct identity, the event series type would also only be the set of the academic event types of the academic events in this series."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  obo:IAO_0000118 "type of the academic event"@en ;
+                  obo:IAO_0000118 "academic event type"@en ;
                   obo:IAO_0000119 "https://github.com/tibonto/aeon/"^^xsd:anyURI ;
-                  rdfs:label "academic event type"@en .
+                  rdfs:label "academic event type specification"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000005
