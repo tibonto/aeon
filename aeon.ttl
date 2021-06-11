@@ -3384,6 +3384,24 @@ aeon:general_committee rdf:type owl:Class ;
                        rdfs:label "general committee"@en .
 
 
+###  https://github.com/tibonto/aeon#hackathon
+aeon:hackathon rdf:type owl:Class ;
+               rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty aeon:AEON_0000032 ;
+                                                        owl:hasValue aeon:AEON_0010003
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+               obo:IAO_0000114 obo:IAO_0000125 ;
+               obo:IAO_0000115 "A hackathon is an academic event in which computer programmers and others involved in software development, including graphic designers, interface designers, project managers, domain experts, and others collaborate intensively in a design sprint-like manner on software projects."@en ;
+               obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+               obo:IAO_0000119 "Briscoe, G., & Mulligan, C. (2014). Digital innovation: the hackathon phenomenon (Creativeworks London). https://qmro.qmul.ac.uk/xmlui/handle/123456789/11418"@en ,
+                               "https://en.wikipedia.org/wiki/Hackathon"@en ;
+               rdfs:label "hackathon"@en .
+
+
 ###  https://github.com/tibonto/aeon#keynote_speaker
 aeon:keynote_speaker rdf:type owl:Class ;
                      owl:equivalentClass [ owl:intersectionOf ( aeon:speaker
@@ -3724,7 +3742,10 @@ aeon:AEON_0010002 rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#AEON_0010003
 aeon:AEON_0010003 rdf:type owl:NamedIndividual ,
                            aeon:AEON_0000004 ;
-                  rdfs:label "Hackathon" .
+                  obo:OBI_0002815 "This academic event is planned to be a hackathon."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a hackathon, when all that is known about the academic event type specification is the label hackathon (e.g. the event type hackathon is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a hackathon format without further specifications on what objectives, conditions or actions this entails."@en ;
+                  rdfs:label "hackathon plan specification"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0010004
