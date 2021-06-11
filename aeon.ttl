@@ -2592,6 +2592,14 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
 
 ###  https://github.com/tibonto/aeon#AEON_0000001
 aeon:AEON_0000001 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( obo:OBI_0000011
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000032 ;
+                                                               owl:someValuesFrom aeon:AEON_0000004
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf obo:OBI_0000011 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000055 ;
@@ -2603,10 +2611,14 @@ aeon:AEON_0000001 rdf:type owl:Class ;
                                   ] ;
                   owl:disjointWith aeon:AEON_0000002 ;
                   obo:IAO_0000112 "The 19th International Semantic Web Conference (ISWC2020) is an academic  event."@en ;
-                  obo:IAO_0000115 "An academic event is a planned process that refers to a gathering of researchers (not necessarily academics), in which these researches have the chance to present and discuss their work and possible future collaborations."@en ;
-                  rdfs:comment """TODO:
+                  obo:IAO_0000115 "An academic event is a planned process that refers to a gathering of researchers (not necessarily academics), in which these researches have the chance to present and discuss their work and possible future collaborations according to a certain sociocultural format."@en ;
+                  obo:IAO_0000116 """At the moment a general differentiation between some academic events, such as conference, colloquium, forum and symposium, is not as clear as it should be from an ontologist perspektive, as the use of these terms varies significantly throughout different sociocultural contexts. 
+However, as ConfIDent tries to shed light on the culture of academic events, understanding them simply as synonyms would be too broad at the moment. Hence they are defined here rather adhoc with the reference to a specific academic event type specification that specifies its sociocultural format. These specific plan specifications are provided in AEON as named individuals for the purpose of automatically classifying academic events within the application of the ConfIDent project.
+It is the intention of the ConfIDent project to collect and analyse a large body of empirical data on academic events and series, especially with regard to the inherent academic event plan specifications, so that an evidence based diffirentiation might be possible. This means that the subclasses of academic event in question are prone to be edited in the future."""@en ,
+                                  """TODO:
 * It needs to be discussed, if we need the \"process boundary\" class to describe the start and end of an academic event or event series.
 * It needs to be discussed, if we need the \"temporal region\" and \"spatiotemporal region\"  classes to describe the duration and manifestation in spacetime of an academic event or event series."""@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "academic event"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Q1656682\", \"label\": \"eventLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Category:Event\", \"label\": \"Event\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#ConferenceOrEvent\", \"label\": \"Conference or Event\"}}"^^xsd:string .
 
