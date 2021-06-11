@@ -629,7 +629,7 @@ aeon:AEON_0000032 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:academic_event_type_of ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000004 ;
-                  obo:IAO_0000115 "A relation obtaining between an 'academic event' and a skos:Concept that is used to descibe the format of an 'academic event'. A set of possible common academic event types is provided as named individuals."@en ;
+                  obo:IAO_0000115 "A relation obtaining between an 'academic event' and a academic event type specification that specifies the sociocultrural format of the 'academic event'."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "has academic event type"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"event_type\"}, \"openresearch\": {\"uri\": null, \"label\": \"Type\"}}"^^xsd:string .
@@ -974,9 +974,10 @@ aeon:AEON_0000089 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#academic_event_type_of
 aeon:academic_event_type_of rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf obo:IAO_0000136 ;
                             rdfs:domain aeon:AEON_0000004 ;
                             rdfs:range aeon:AEON_0000001 ;
-                            obo:IAO_0000115 "see also inverse property: A relation obtaining between a skos:Concept and an 'academic event', in which the former is used to descibe the format of the latter. A set of possible common academic event types is provided as named individuals."@en ;
+                            obo:IAO_0000115 "A relation obtaining between an academic event type specification and an 'academic event', in which the former is used to descibe the sociocultural format of the latter. A set of possible common academic event type specification is provided in AEON as named individuals."@en ;
                             obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                             rdfs:label "academic event type of"@en .
 
