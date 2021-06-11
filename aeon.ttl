@@ -3226,6 +3226,32 @@ A conference is an academic event that lasts up to several days and serves as a 
    obo:IAO_0000119 "Casserly, P. (2019). Symposium vs. conference, what’s the difference? A symposium versus a conference. What’s the actual difference? And how does it affect organising or submitting to one? Ex Ordo. https://www.exordo.com/blog/symposium-vs-conference/" ,
                    "Hansen, Thomas Trøst; Pedersen, David Budtz; Foley, Carmel (PRE-PRINT). Academic Event: an empirically-grounded typology and their academic impact. DOI: https://doi.org/10.3727/152599519X15506259856598."
  ] .
+
+
+###  https://github.com/tibonto/aeon#congress
+aeon:congress rdf:type owl:Class ;
+              rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty aeon:AEON_0000032 ;
+                                                       owl:hasValue aeon:AEON_0010011
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+              obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+              obo:IAO_0000600 """A possible literature based definition could be the following:
+A congress is a conference that is characterised by a larger number of participants (often several hundred) and is oftentimes organised jointly by large, established (e.g. specialised societies) and/or several institutions. Congresses have a broader thematic focus than simple conferences, take place in certain cycles, but can still target an exclusive group of participants (e.g. representatives of a single discipline)."""@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource aeon:congress ;
+   owl:annotatedProperty obo:IAO_0000600 ;
+   owl:annotatedTarget """A possible literature based definition could be the following:
+A congress is a conference that is characterised by a larger number of participants (often several hundred) and is oftentimes organised jointly by large, established (e.g. specialised societies) and/or several institutions. Congresses have a broader thematic focus than simple conferences, take place in certain cycles, but can still target an exclusive group of participants (e.g. representatives of a single discipline)."""@en ;
+   obo:IAO_0000119 "Canadian Institute for Knowledge Development (CIKD). (2019). Difference between scientific events. NCM Conferences blog. https://ncmconferences.com/difference-between-scientific-events/" ,
+                   "Hansen, Thomas Trøst; Pedersen, David Budtz; Foley, Carmel (PRE-PRINT). Academic Event: an empirically-grounded typology and their academic impact. DOI: https://doi.org/10.3727/152599519X15506259856598."
+ ] .
+
+
 ###  https://github.com/tibonto/aeon#contact_person
 aeon:contact_person rdf:type owl:Class ;
                     owl:equivalentClass [ rdf:type owl:Restriction ;
@@ -3684,7 +3710,11 @@ aeon:AEON_0010010 rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#AEON_0010011
 aeon:AEON_0010011 rdf:type owl:NamedIndividual ,
                            aeon:AEON_0000004 ;
-                  rdfs:label "Other event type"@en .
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"@en ;
+                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a congress, when all that is known about the academic event type specification is the label congress (e.g. the event type congress is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a congress format without further specifications on what objectives, conditions or actions are entailed."@en ;
+                  rdfs:label "congress plan specification"@en .
+
+
 
 
 ###  https://github.com/tibonto/aeon#Lisbon
