@@ -3428,6 +3428,7 @@ aeon:keynote_speaker rdf:type owl:Class ;
                      rdfs:label "keynote speaker"@en .
 
 
+###  https://github.com/tibonto/aeon#keynote_speech
 ###  https://github.com/tibonto/aeon#local_committee
 aeon:local_committee rdf:type owl:Class ;
                      rdfs:subClassOf aeon:AEON_0000042 ;
@@ -3536,6 +3537,23 @@ aeon:reviewer rdf:type owl:Class ;
               obo:IAO_0000115 "A reviewer is a contributer that holds a reviewer role which is being realized in a planned process."@en ;
               obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
               rdfs:label "reviewer"@en .
+
+
+###  https://github.com/tibonto/aeon#seminar
+aeon:seminar rdf:type owl:Class ;
+             rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty aeon:AEON_0000032 ;
+                                                      owl:hasValue aeon:AEON_0010004
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
+             obo:IAO_0000114 obo:IAO_0000125 ;
+             obo:IAO_0000115 "A seminar is an academic event that has the function to instruct a small group or small groups, often for recurring meetings, on some particular subject, in which everyone present is usually encouraged to participate."@en ;
+             obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+             obo:IAO_0000119 "https://en.wikipedia.org/wiki/Seminar"^^xsd:anyURI ;
+             rdfs:label "seminar"@en .
 
 
 ###  https://github.com/tibonto/aeon#speaker
@@ -3752,7 +3770,10 @@ aeon:AEON_0010003 rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#AEON_0010004
 aeon:AEON_0010004 rdf:type owl:NamedIndividual ,
                            aeon:AEON_0000004 ;
-                  rdfs:label "Seminar" .
+                  obo:OBI_0002815 "This academic event is planned to be a seminar."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a seminar, when all that is known about the academic event type specification is the label seminar (e.g. the event type seminar is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a seminar format without further specifications on what objectives, conditions or actions this entails."@en ;
+                  rdfs:label "seminar plan specification"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0010005
