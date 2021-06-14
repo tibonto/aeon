@@ -3670,6 +3670,41 @@ aeon:sponsorship_committee rdf:type owl:Class ;
                            rdfs:label "sponsorship committee"@en .
 
 
+###  https://github.com/tibonto/aeon#symposium
+aeon:symposium rdf:type owl:Class ;
+               rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty aeon:AEON_0000032 ;
+                                                        owl:hasValue aeon:AEON_0010006
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+               obo:IAO_0000114 obo:IAO_0000125 ;
+               obo:IAO_0000115 "A symposium is an academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a symposium."@en ;
+               obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+               obo:IAO_0000600 """A possible literature based definition could be the following:
+A symposium is a specific type of conference with a narrower thematic focus, with fewer participants and of shorter duration. The degree of structuring lies between a classic conference and a workshop, allows more discussion than the larger conference, but is usually more formalized than the workshop."""@en ;
+               rdfs:label "symposium"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource aeon:symposium ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A symposium is an academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a symposium."@en ;
+   obo:IAO_0000116 aeon:AEON_0010006
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource aeon:symposium ;
+   owl:annotatedProperty obo:IAO_0000600 ;
+   owl:annotatedTarget """A possible literature based definition could be the following:
+A symposium is a specific type of conference with a narrower thematic focus, with fewer participants and of shorter duration. The degree of structuring lies between a classic conference and a workshop, allows more discussion than the larger conference, but is usually more formalized than the workshop."""@en ;
+   obo:IAO_0000119 "Canadian Institute for Knowledge Development (CIKD). (2019). Difference between scientific events. NCM Conferences blog. https://ncmconferences.com/difference-between-scientific-events/" ,
+                   "Casserly, P. (2019). Symposium vs. conference, what’s the difference? A symposium versus a conference. What’s the actual difference? And how does it affect organising or submitting to one? Ex Ordo. https://www.exordo.com/blog/symposium-vs-conference/" ,
+                   "Hansen, Thomas Trøst; Pedersen, David Budtz; Foley, Carmel (PRE-PRINT). Academic Event: an empirically-grounded typology and their academic impact. DOI: https://doi.org/10.3727/152599519X15506259856598."
+ ] .
+
+
 ###  https://github.com/tibonto/aeon#talk
 aeon:talk rdf:type owl:Class ;
           rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
@@ -3863,7 +3898,10 @@ aeon:AEON_0010005 rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#AEON_0010006
 aeon:AEON_0010006 rdf:type owl:NamedIndividual ,
                            aeon:AEON_0000004 ;
-                  rdfs:label "Symposium" .
+                  obo:OBI_0002815 "This academic event is planned to be a symposium."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a symposium, when all that is known about the academic event type specification is the label symposium (e.g. the event type symposium is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a symposium format without further specifications on what objectives, conditions or actions are entailed."@en ;
+                  rdfs:label "symposium plan specification"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0010007
