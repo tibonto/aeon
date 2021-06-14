@@ -3785,6 +3785,24 @@ aeon:wikiCFP_ID rdf:type owl:Class ;
                 rdfs:label "wikiCFP identifier"@en .
 
 
+###  https://github.com/tibonto/aeon#workshop
+aeon:workshop rdf:type owl:Class ;
+              rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty aeon:AEON_0000032 ;
+                                                       owl:hasValue aeon:AEON_0010010
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+              obo:IAO_0000114 obo:IAO_0000125 ;
+              obo:IAO_0000115 "A workshop is a smaller academic event that serves to exchange information on a specific topic or problem. It usually last one or two days and offers space for discussion and the development of content and solutions. Group work is often part of the event concept."@en ;
+              obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+              obo:IAO_0000119 "Alston, J. M. (2019). What's the difference between a conference, a seminar, a workshop and a symposium? Conference Monkey Insights. https://conferencemonkey.org/insight/whats-the-difference-between-a-conference-a-seminar-a-workshop-and-a-symposium-1075915"@en ,
+                              "Canadian Institute for Knowledge Development (CIKD). (2019). Difference between scientific events. NCM Conferences blog. https://ncmconferences.com/difference-between-scientific-events/"@en ;
+              rdfs:label "workshop"@en .
+
+
 #################################################################
 #    Individuals
 #################################################################
@@ -3973,7 +3991,10 @@ aeon:AEON_0010009 rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#AEON_0010010
 aeon:AEON_0010010 rdf:type owl:NamedIndividual ,
                            aeon:AEON_0000004 ;
-                  rdfs:label "Workshop" .
+                  obo:OBI_0002815 "This academic event is planned to be a workshop."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a workshop, when all that is known about the academic event type specification is the label workshop (e.g. the event type workshop is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a workshop format without further specifications on what objectives, conditions or actions are entailed."@en ;
+                  rdfs:label "workshop plan specification"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0010011
