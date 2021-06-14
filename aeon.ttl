@@ -3263,6 +3263,7 @@ aeon:congress rdf:type owl:Class ;
                                                    ) ;
                                 rdf:type owl:Class
                               ] ;
+              obo:IAO_0000115 "A congress is an academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a congress. It usually is a larger type of conference with regard to the number of participants and organizers."@en ;
               obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
               obo:IAO_0000600 """A possible literature based definition could be the following:
 A congress is a conference that is characterised by a larger number of participants (often several hundred) and is oftentimes organised jointly by large, established (e.g. specialised societies) and/or several institutions. Congresses have a broader thematic focus than simple conferences, take place in certain cycles, but can still target an exclusive group of participants (e.g. representatives of a single discipline)."""@en .
