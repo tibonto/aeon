@@ -1400,13 +1400,6 @@ aeon:fee_currency rdf:type owl:DatatypeProperty ;
                   rdfs:label "fee currency"@en .
 
 
-###  https://github.com/tibonto/aeon#fee_value
-aeon:fee_value rdf:type owl:DatatypeProperty ;
-               rdfs:subPropertyOf aeon:fee ;
-               rdfs:domain aeon:AEON_0000030 ;
-               rdfs:label "fee value"@en .
-
-
 ###  https://github.com/tibonto/aeon#first_name
 aeon:first_name rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf aeon:personal_name ;
