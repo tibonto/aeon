@@ -3429,6 +3429,24 @@ aeon:keynote_speaker rdf:type owl:Class ;
 
 
 ###  https://github.com/tibonto/aeon#keynote_speech
+aeon:keynote_speech rdf:type owl:Class ;
+                    rdfs:subClassOf [ owl:intersectionOf ( aeon:talk
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty aeon:AEON_0000032 ;
+                                                             owl:hasValue aeon:AEON_0010007
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                    obo:IAO_0000114 obo:IAO_0000125 ;
+                    obo:IAO_0000115 "A keynote speech is a special talk that has the function to set the underlying tone and summarize the core message or most important revelation off the academic at which it is given."@en ;
+                    obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                    obo:IAO_0000118 "keynote"@en ,
+                                    "keynote lecture"@en ;
+                    obo:IAO_0000119 "https://en.wikipedia.org/wiki/Keynote"^^xsd:anyURI ;
+                    rdfs:label "keynote speech"@en .
+
+
 ###  https://github.com/tibonto/aeon#local_committee
 aeon:local_committee rdf:type owl:Class ;
                      rdfs:subClassOf aeon:AEON_0000042 ;
@@ -3616,6 +3634,27 @@ aeon:sponsorship_committee rdf:type owl:Class ;
                            rdfs:label "sponsorship committee"@en .
 
 
+###  https://github.com/tibonto/aeon#talk
+aeon:talk rdf:type owl:Class ;
+          rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty aeon:AEON_0000032 ;
+                                                   owl:hasValue aeon:AEON_0010012
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty obo:RO_0002012 ;
+                            owl:someValuesFrom aeon:AEON_0000001
+                          ] ;
+          obo:IAO_0000111 "presentation"@en ;
+          obo:IAO_0000115 "A talk is an academic event at which a specific topic is being presented in a rather short way often as a part of a larger academic event such as a session, conference or workshop."@en ;
+          obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+          obo:IAO_0000118 "presentation"@en ,
+                          "speech"@en .
+
+
 ###  https://github.com/tibonto/aeon#technical_committee
 aeon:technical_committee rdf:type owl:Class ;
                          rdfs:subClassOf aeon:AEON_0000042 ;
@@ -3791,7 +3830,10 @@ aeon:AEON_0010006 rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#AEON_0010007
 aeon:AEON_0010007 rdf:type owl:NamedIndividual ,
                            aeon:AEON_0000004 ;
-                  rdfs:label "Talk" .
+                  obo:OBI_0002815 "This academic event is planned to be a keynote speech."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a keynote speech, when all that is known about the academic event type specification is that it's labeled as a keynote speech (e.g. the event type keynote speech is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a keynote speech format without further specifications on what objectives, conditions or actions this entails."@en ;
+                  rdfs:label "keynote plan specification"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0010008
@@ -3820,6 +3862,13 @@ aeon:AEON_0010011 rdf:type owl:NamedIndividual ,
                   rdfs:label "congress plan specification"@en .
 
 
+###  https://github.com/tibonto/aeon#AEON_0010012
+aeon:AEON_0010012 rdf:type owl:NamedIndividual ,
+                           aeon:AEON_0000004 ;
+                  obo:OBI_0002815 "This academic event is planned to be a talk."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a talk, when all that is known about the academic event type specification is the label talk (e.g. the event type talk is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a talk format without further specifications on what objectives, conditions or actions are entailed."@en ;
+                  rdfs:label "talk plan specification"@en .
 
 
 ###  https://github.com/tibonto/aeon#Lisbon
@@ -3953,6 +4002,7 @@ aeon:__PIDapalooza_Role_2 rdf:type owl:NamedIndividual ;
                         aeon:AEON_0010009
                         aeon:AEON_0010010
                         aeon:AEON_0010011
+                        aeon:AEON_0010012
                       )
 ] .
 
