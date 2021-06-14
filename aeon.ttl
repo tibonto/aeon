@@ -3757,6 +3757,23 @@ aeon:track rdf:type owl:Class ;
            rdfs:label "track"@en .
 
 
+###  https://github.com/tibonto/aeon#tutorial
+aeon:tutorial rdf:type owl:Class ;
+              rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty aeon:AEON_0000032 ;
+                                                       owl:hasValue aeon:AEON_0010009
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+              obo:IAO_0000114 obo:IAO_0000125 ;
+              obo:IAO_0000115 "A tutorial is an academic event that has the function to educate the audience on a certain topic. A tutorial is often realized as a talk or session."@en ;
+              obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+              obo:IAO_0000119 "https://en.wikipedia.org/wiki/Tutorial"^^xsd:anyURI ;
+              rdfs:label "tutorial"@en .
+
+
 ###  https://github.com/tibonto/aeon#wikiCFP_ID
 aeon:wikiCFP_ID rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000578 ;
@@ -3947,7 +3964,10 @@ aeon:AEON_0010008 rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#AEON_0010009
 aeon:AEON_0010009 rdf:type owl:NamedIndividual ,
                            aeon:AEON_0000004 ;
-                  rdfs:label "Tutorial" .
+                  obo:OBI_0002815 "This academic event is planned to be a tutotial."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a tutorial, when all that is known about the academic event type specification is the label tutorial (e.g. the event type tutorial is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a tutorial format without further specifications on what objectives, conditions or actions are entailed."@en ;
+                  rdfs:label "tutorial plan specification"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0010010
