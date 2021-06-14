@@ -3506,6 +3506,22 @@ aeon:organizer rdf:type owl:Class ;
                rdfs:label "organizer"@en .
 
 
+###  https://github.com/tibonto/aeon#poster_session
+aeon:poster_session rdf:type owl:Class ;
+                    rdfs:subClassOf [ owl:intersectionOf ( aeon:session
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty aeon:AEON_0000032 ;
+                                                             owl:hasValue aeon:AEON_0010013
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                    obo:IAO_0000115 "A poster session is a session at which poster papers are presented."@en ;
+                    obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                    obo:IAO_0000119 "https://en.wikipedia.org/wiki/Poster_session"^^xsd:anyURI ;
+                    rdfs:label "poster session"@en .
+
+
 ###  https://github.com/tibonto/aeon#program_committee
 aeon:program_committee rdf:type owl:Class ;
                        rdfs:subClassOf aeon:AEON_0000042 ;
@@ -3572,6 +3588,26 @@ aeon:seminar rdf:type owl:Class ;
              obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
              obo:IAO_0000119 "https://en.wikipedia.org/wiki/Seminar"^^xsd:anyURI ;
              rdfs:label "seminar"@en .
+
+
+###  https://github.com/tibonto/aeon#session
+aeon:session rdf:type owl:Class ;
+             rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty aeon:AEON_0000032 ;
+                                                      owl:hasValue aeon:AEON_0010005
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:RO_0002012 ;
+                               owl:someValuesFrom aeon:AEON_0000001
+                             ] ;
+             obo:IAO_0000114 obo:IAO_0000125 ;
+             obo:IAO_0000115 "A session is an academic event that is a clearly defined part of a larger academic event, such as a conference or track, in which a small number of presenters (usually 2-5) focus on a specific topic. A session is usually formally accompanied by a session chair, who assumes the function of a moderator."@en ;
+             obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+             rdfs:label "session"@en .
 
 
 ###  https://github.com/tibonto/aeon#speaker
@@ -3818,7 +3854,10 @@ aeon:AEON_0010004 rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#AEON_0010005
 aeon:AEON_0010005 rdf:type owl:NamedIndividual ,
                            aeon:AEON_0000004 ;
-                  rdfs:label "Session" .
+                  obo:OBI_0002815 "This academic event is planned to be a session."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a session, when all that is known about the academic event type specification is the label session (e.g. the event type session is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a session format without further specifications on what objectives, conditions or actions this entails."@en ;
+                  rdfs:label "session plan specification"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0010006
@@ -3869,6 +3908,15 @@ aeon:AEON_0010012 rdf:type owl:NamedIndividual ,
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a talk, when all that is known about the academic event type specification is the label talk (e.g. the event type talk is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a talk format without further specifications on what objectives, conditions or actions are entailed."@en ;
                   rdfs:label "talk plan specification"@en .
+
+
+###  https://github.com/tibonto/aeon#AEON_0010013
+aeon:AEON_0010013 rdf:type owl:NamedIndividual ,
+                           aeon:AEON_0000004 ;
+                  obo:OBI_0002815 "This academic event is planned to be a poster session."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a poster session, when all that is known about the academic event type specification is the label poster session (e.g. the event type poster session is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a poster session format without further specifications on what objectives, conditions or actions are entailed."@en ;
+                  rdfs:label "poster session plan specification"@en .
 
 
 ###  https://github.com/tibonto/aeon#Lisbon
@@ -4003,6 +4051,7 @@ aeon:__PIDapalooza_Role_2 rdf:type owl:NamedIndividual ;
                         aeon:AEON_0010010
                         aeon:AEON_0010011
                         aeon:AEON_0010012
+                        aeon:AEON_0010013
                       )
 ] .
 
