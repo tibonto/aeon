@@ -1190,7 +1190,7 @@ aeon:ID rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf owl:topDataProperty ;
         rdfs:domain obo:IAO_0020000 ;
         obo:IAO_0000115 "The literal value of an identifier."@en ;
-        rdfs:label "identifier"@en .
+        rdfs:label "identifier value"@en .
 
 
 ###  https://github.com/tibonto/aeon#ID_URL
@@ -1248,13 +1248,6 @@ aeon:camera-ready_deadline rdf:type owl:DatatypeProperty ;
                            rdfs:label "camera-ready deadline"@en .
 
 
-###  https://github.com/tibonto/aeon#city
-aeon:city rdf:type owl:DatatypeProperty ;
-          rdfs:subPropertyOf aeon:location ;
-          rdfs:domain aeon:AEON_0000022 ;
-          rdfs:label "city"@en .
-
-
 ###  https://github.com/tibonto/aeon#contact
 aeon:contact rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf owl:topDataProperty ;
@@ -1266,21 +1259,21 @@ aeon:contact rdf:type owl:DatatypeProperty ;
 aeon:contact_email rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf aeon:contact ;
                    rdfs:domain aeon:AEON_0000009 ;
-                   rdfs:label "contact email"@en .
+                   rdfs:label "contact email value"@en .
 
 
 ###  https://github.com/tibonto/aeon#contact_person_name
 aeon:contact_person_name rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:contact ;
                          rdfs:domain aeon:AEON_0000009 ;
-                         rdfs:label "contact person"@en .
+                         rdfs:label "contact person value"@en .
 
 
 ###  https://github.com/tibonto/aeon#contact_phone
 aeon:contact_phone rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf aeon:contact ;
                    rdfs:domain aeon:AEON_0000009 ;
-                   rdfs:label "contact phone"@en .
+                   rdfs:label "contact phone value"@en .
 
 
 ###  https://github.com/tibonto/aeon#coordinates
@@ -1288,13 +1281,6 @@ aeon:coordinates rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf aeon:location ;
                  rdfs:domain obo:GAZ_00000448 ;
                  rdfs:label "coordinates"@en .
-
-
-###  https://github.com/tibonto/aeon#country
-aeon:country rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf aeon:location ;
-             rdfs:domain aeon:AEON_0000023 ;
-             rdfs:label "country"@en .
 
 
 ###  https://github.com/tibonto/aeon#deadline
@@ -1403,7 +1389,7 @@ aeon:fee rdf:type owl:DatatypeProperty ;
          rdfs:domain aeon:AEON_0000030 ;
          obo:IAO_0000115 "The literal value of the type of fee an aeon:event can have."@en ;
          obo:IAO_0000600 "There are various type of fees for an event, such as the regular fee, a reduced fee, a member fee and so forth." ;
-         rdfs:label "fee"@en .
+         rdfs:label "fee value"@en .
 
 
 ###  https://github.com/tibonto/aeon#fee_currency
@@ -1536,7 +1522,7 @@ aeon:personal_name rdf:type owl:DatatypeProperty ;
                    rdfs:domain obo:NCBITaxon_9606 ;
                    rdfs:range xsd:string ;
                    obo:IAO_0000115 "The literal value of the name to denote a person."@en ;
-                   rdfs:label "personal name"@en .
+                   rdfs:label "personal name value"@en .
 
 
 ###  https://github.com/tibonto/aeon#poster_deadline
