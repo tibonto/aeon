@@ -3735,6 +3735,28 @@ aeon:technical_committee rdf:type owl:Class ;
                          rdfs:label "technical committee"@en .
 
 
+###  https://github.com/tibonto/aeon#track
+aeon:track rdf:type owl:Class ;
+           rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty aeon:AEON_0000032 ;
+                                                    owl:hasValue aeon:AEON_0010008
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty obo:RO_0002012 ;
+                             owl:someValuesFrom aeon:AEON_0000001
+                           ] ;
+           obo:IAO_0000114 obo:IAO_0000125 ;
+           obo:IAO_0000115 "A track is an academic event that, as a part of a larger academic event, has the function to group even smaller parts of the academic event, like sessions and talks, according to a shared theme or topic. It usually has dedicated chairs and program committees."@en ;
+           obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+           obo:IAO_0000118 "stream"@en ;
+           obo:IAO_0000119 "https://www.conftool.net/ctforum/index.php/topic,99.0.html"^^xsd:anyURI ;
+           rdfs:label "track"@en .
+
+
 ###  https://github.com/tibonto/aeon#wikiCFP_ID
 aeon:wikiCFP_ID rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000578 ;
@@ -3916,7 +3938,10 @@ aeon:AEON_0010007 rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#AEON_0010008
 aeon:AEON_0010008 rdf:type owl:NamedIndividual ,
                            aeon:AEON_0000004 ;
-                  rdfs:label "Track" .
+                  obo:OBI_0002815 "This academic event is planned to be a track."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a track, when all that is known about the academic event type specification is the label track (e.g. the event type track is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a track format without further specifications on what objectives, conditions or actions are entailed."@en ;
+                  rdfs:label "track plan specification"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0010009
