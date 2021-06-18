@@ -23,7 +23,7 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-  robot_report:
+  robot_tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -36,6 +36,9 @@ jobs:
           sudo mv ./robot.jar /usr/local/bin
           echo "ROBOT version:"
           robot -V
+      - name: validate ontology against OWL DL profile 
+        run: |
+          robot validate-profile --profile DL --input aeon.ttl 
       - name: test for ERRORs with ROBOT report
         run: |
           robot report --input aeon.ttl
