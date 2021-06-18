@@ -71,56 +71,26 @@ AEON seeks to represent information about events to answer the questions below a
 
 
 ## Visualization
-You can see a visualization of the master branch aeon.ttl using [WebVOWL](http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/tibonto/aeon/master/aeon.ttl)
+You can see a visualization of the master branch aeon.ttl using [WebVOWL](http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/tibonto/aeon/main/aeon.ttl)
 
-### TBoxes
+### TBox
 This is a reduced general overview of the classes and relation AEON uses.
-CAVE/TODO: I've wrongly labeled the edges for the subclasses wrong, so it must be rdfs:subclassOf not rdf:type! see also [issue#105] (https://github.com/tibonto/aeon/issues/105) (PS)
 ![](docs/AEON_overwiew.PNG)
 
-#### What makes up an academic event or event series?
-![](docs/AEON_what.PNG)
-CAVE/TODO: I've used SKOS wrong! The academic event type, academic field & topic need to be subsumed under iao:information content entity somehow. See also WIP [issue#51] (https://github.com/tibonto/aeon/issues/51) (PS)
-
-When looking at the international use of terms like e.g. conference, symposiom or forum, we must acknowledge that there are sociocultural diffences in the meaning, that prevent us from simply defining them as subclasses of 'aeon:academic event' or 'aeon:academic event series'. Hence, we chose to model the type of an academic event as an instance of skos:Concept for now.
-The instances of 'aeon:academic field' are intended to be owl:NamedIndividuals derived from an established controlled vocabulary that classifies the various subject areas (e.g. [DFG subject areas](https://www.dfg.de/en/dfg_profile/statutory_bodies/review_boards/subject_areas/index.jsp))
-The instances of 'aeon:topic' on the other hand are intended to be owl:NamedIndividuals that can be used to describe the research area of an academic event or event series without having to adhere to a controlled vocabulary. Thus making it easier to further specifiy the research area when the used controlled vocabulary is not specific enough.
-It needs to be discussed if it is better to subsume these three classes under 'iao:information content entiy'. 
-
-#### Where and when did it take place?
-![](docs/AEON_where_and_when.PNG)
-
-We've added subproperties of 'ro:occurs in' in order to be able to map the data from external databases such as Wikidata more precisely. 
-
-
-#### Who is involved?
-![](docs/AEON_who.PNG)
-
-The contributors are defined classes, that are equivalent to ('Homo sapiens' or organization) and ('has role' some ('contributor role' and ('realized in' some 'planned process'))). For the sake of reducing the information overload the discrete roles for each type of contributor (e.g. 'aeon:organizer role', 'aeon:presenter role', ...) are thus left out here. What is also not shown in this figure are additional subproperties of 'ro:has participant' (e.g. 'aeon:has contributor', 'aeon:has organizer', ...) with which we can specify the type of participation more concretely, by adhering to the pattern that a contributor role is equivalent to 'role of' some ('contributes to' some 'planned process'). At the moment these axioms have been asserted manually, but it is intended to do this automatically via macro expansion. 
-
-Similarly to AEONs subproperties of 'ro:occurs in', havin additional subproperties of 'ro:has participant' is needed for the mapping to external databases and in general for those applications that do not define the participation in an academic event or event series via a destinct role.
-
-#### How is the event or series organized?
-![](docs/AEON_how.PNG)
-This is still a very early draft and it needs to be discussed if and how the various metrics and deadlines can be modeled better using classes and object properties instead of just data properties.
-
-
-## Development
-It is intended to have a CI/CD pipeline for the development. Unfortunately the use of the ODK is not possible at the moment due to too old IT. The plan is to migrate to using it when this changes. Until then, we try to make as much as possible with ROBOT and GitHub actions/workflows. Using TSV-templates and a better repo folder structure is planned, but we need to learn this first in the little time we have for this project ;)
-### Tests
+## Tests
 **Tests `tests/` are run at every merge request and push into the master branch, by github actions.**
 
 github actions are define in `.github/workflows/`
 
 But if test are to be run locally, follow the instructions in next sections
 
-#### Create test enviroment
+### Create test enviroment
 * create python virtual environment
 * install python libaries `pip install -r requirements.txt`
 * test files are located in `tests/` dir and start with test*.py
 * test definitions, such as markers are set in `pytest.ini`
 
-#### Run tests
+### Run tests
 * **all tests**: `pytest`  
 * **some tests**, using the marker to specify which tests, ie: `pytest -m ontology`
 
