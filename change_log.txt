@@ -1,5 +1,15 @@
 Change history:
 
+v0.4.3 	- date: 06.2021
+	* FIX issue #108
+
+v0.4.2 	- date: 06.2021
+	* FIX issue #51
+	* ADD pre-release automization via actions #112
+	* ADD ROBOT validation to Ontology tests workflow #111
+	* FIX ROBOT report errors (some are just temp fixes as data properties still need to be reworked)
+	* UPDATE documentation #
+
 v0.4.1 	- date: 05.2021
 	* FIXED inconsistencies reported with ELK
 
