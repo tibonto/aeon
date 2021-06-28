@@ -14,7 +14,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:dcmi-terms="http://dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/">
     <owl:Ontology rdf:about="https://github.com/tibonto/aeon">
-        <owl:versionIRI rdf:resource="https://github.com/tibonto/aeon/releases/tag/v0.4.1"/>
+        <owl:versionIRI rdf:resource="https://github.com/tibonto/aeon/releases/tag/v0.4.3"/>
         <dc:contributor>Christian Hauschke</dc:contributor>
         <dc:contributor>Christoph Lange</dc:contributor>
         <dc:contributor>Michael Conlon</dc:contributor>
@@ -23,7 +23,7 @@
         <dc:description>The Academic Event Ontology (AEON) is used to represent information regarding academic events. The ontology supports the identification, development, management, evaluation, and impact assessment of events, components of events and event series, as well as identification and reuse of works presented or developed at events. The ontology is independent of knowledge, creative domain, or topics related to events. AEON is focused on events and assumes the representation of many entities associated with events such as attendees, locations, academic works, datetimes, and processes are defined in compatible ontologies.</dc:description>
         <dc:title xml:lang="en">Academic Event Ontology</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo>v0.4.1</owl:versionInfo>
+        <owl:versionInfo>v0.4.3</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -143,7 +143,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">definition editor</rdfs:label>
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -796,7 +796,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <owl:inverseOf rdf:resource="https://github.com/tibonto/aeon#academic_event_type_of"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
         <rdfs:range rdf:resource="https://github.com/tibonto/aeon#AEON_0000004"/>
-        <obo:IAO_0000115 xml:lang="en">A relation obtaining between an &apos;academic event&apos; and a skos:Concept that is used to descibe the format of an &apos;academic event&apos;. A set of possible common academic event types is provided as named individuals.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A relation obtaining between an &apos;academic event&apos; and an &apos;academic event type specification&apos; that specifies the sociocultrural format of the &apos;academic event&apos;.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has academic event type</rdfs:label>
         <AEON_0000026 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;wikidata&quot;: {&quot;uri&quot;: null, &quot;label&quot;: &quot;event_type&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: null, &quot;label&quot;: &quot;Type&quot;}}</AEON_0000026>
@@ -823,12 +823,13 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- https://github.com/tibonto/aeon#AEON_0000040 -->
 
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#AEON_0000040">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://github.com/tibonto/aeon#academic_field_of"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:range rdf:resource="https://github.com/tibonto/aeon#AEON_0000027"/>
-        <obo:IAO_0000115 xml:lang="en">A relation obtaining between a obi:&apos;planned process&apos; and a skos:Concept that is used to describe the scientific subject of the planned process according to some controlled vocabulary or thesaurus.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A relation obtaining between a obi:&apos;planned process&apos; and an academic field descriptor that is used to describe the scientific subject of the planned process according to some controlled vocabulary or thesaurus.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">has academic field</rdfs:label>
+        <rdfs:label xml:lang="en">has academic field descriptor</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -839,9 +840,9 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <owl:inverseOf rdf:resource="https://github.com/tibonto/aeon#topic_of"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:range rdf:resource="https://github.com/tibonto/aeon#AEON_0000028"/>
-        <obo:IAO_0000115 xml:lang="en">A relation obtaining between a obi:&apos;planned process&apos; and a skos:Concept that is used to descibe the theme of the planned process.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A relation obtaining between a obi:&apos;planned process&apos; and an &apos;event topic descriptor&apos; that is used to descibe the theme of the planned process.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">has topic</rdfs:label>
+        <rdfs:label xml:lang="en">has event topic decriptor</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1237,11 +1238,12 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- https://github.com/tibonto/aeon#academic_event_type_of -->
 
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#academic_event_type_of">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000004"/>
         <rdfs:range rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
-        <obo:IAO_0000115 xml:lang="en">see also inverse property: A relation obtaining between a skos:Concept and an &apos;academic event&apos;, in which the former is used to descibe the format of the latter. A set of possible common academic event types is provided as named individuals.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A relation obtaining between an &apos;academic event type specification&apos; and an &apos;academic event&apos;, in which the former is used to descibe the sociocultural format of the latter. A set of possible common academic event type specification is provided in AEON as named individuals.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">academic event type of</rdfs:label>
+        <rdfs:label xml:lang="en">specifies academic event type</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1249,11 +1251,12 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- https://github.com/tibonto/aeon#academic_field_of -->
 
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#academic_field_of">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000027"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">see also inverse property: A relation obtaining between a skos:Concept and a obi:&apos;planned process&apos;, in which the former is used to descibe the scientific subject of the latter according to some controlled vocabulary or thesaurus.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">see also inverse property: A relation obtaining between an &apos;academic field descriptor&apos; and a obi:&apos;planned process&apos;, in which the former is used to descibe the scientific subject of the latter according to some controlled vocabulary or thesaurus.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">academic field of</rdfs:label>
+        <rdfs:label xml:lang="en">describes academic field</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1466,11 +1469,12 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- https://github.com/tibonto/aeon#topic_of -->
 
     <owl:ObjectProperty rdf:about="https://github.com/tibonto/aeon#topic_of">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000028"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">see also inverse property: A relation obtaining between a skos:Concept and a obi:&apos;planned process&apos;, in which the former is used to descibe the theme of the latter.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">see also inverse property: A relation obtaining between an &apos;event topic descriptor&apos; and a obi:&apos;planned process&apos;, in which the former is used to descibe the theme of the latter.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">topic of</rdfs:label>
+        <rdfs:label xml:lang="en">describes event topic</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1483,6 +1487,26 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002815 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0002815">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <obo:IAO_0000111 xml:lang="en">has representation</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">12th arrondissement of Paris</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20g</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">I feel sick to my stomach every Tuesday</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">&apos;has representation&apos; is a data property that attaches between an information content entity and a value that contains linguistically or computationally coded text.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Further processing may enable the value to be represented in a component data structure such as an OBI value specification.</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Damion Dooley</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Miller</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/obi/2021-04-06/obi.owl</obo:IAO_0000412>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-07-14T07:05:50Z</dc:date>
+        <rdfs:label xml:lang="en">has representation</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -1502,7 +1526,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
         <obo:IAO_0000115 xml:lang="en">The literal value of an identifier.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">identifier</rdfs:label>
+        <rdfs:label xml:lang="en">identifier value</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1583,16 +1607,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     
 
 
-    <!-- https://github.com/tibonto/aeon#city -->
-
-    <owl:DatatypeProperty rdf:about="https://github.com/tibonto/aeon#city">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#location"/>
-        <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000022"/>
-        <rdfs:label xml:lang="en">city</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://github.com/tibonto/aeon#contact -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/tibonto/aeon#contact">
@@ -1608,7 +1622,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <owl:DatatypeProperty rdf:about="https://github.com/tibonto/aeon#contact_email">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#contact"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000009"/>
-        <rdfs:label xml:lang="en">contact email</rdfs:label>
+        <rdfs:label xml:lang="en">contact email value</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1618,7 +1632,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <owl:DatatypeProperty rdf:about="https://github.com/tibonto/aeon#contact_person_name">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#contact"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000009"/>
-        <rdfs:label xml:lang="en">contact person</rdfs:label>
+        <rdfs:label xml:lang="en">contact person value</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1628,7 +1642,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <owl:DatatypeProperty rdf:about="https://github.com/tibonto/aeon#contact_phone">
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#contact"/>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000009"/>
-        <rdfs:label xml:lang="en">contact phone</rdfs:label>
+        <rdfs:label xml:lang="en">contact phone value</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1639,16 +1653,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#location"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
         <rdfs:label xml:lang="en">coordinates</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://github.com/tibonto/aeon#country -->
-
-    <owl:DatatypeProperty rdf:about="https://github.com/tibonto/aeon#country">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#location"/>
-        <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000023"/>
-        <rdfs:label xml:lang="en">country</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1804,7 +1808,7 @@ cancled → withdrawn</rdfs:comment>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000030"/>
         <obo:IAO_0000115 xml:lang="en">The literal value of the type of fee an aeon:event can have.</obo:IAO_0000115>
         <obo:IAO_0000600>There are various type of fees for an event, such as the regular fee, a reduced fee, a member fee and so forth.</obo:IAO_0000600>
-        <rdfs:label xml:lang="en">fee</rdfs:label>
+        <rdfs:label xml:lang="en">fee value</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1816,16 +1820,6 @@ cancled → withdrawn</rdfs:comment>
         <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000030"/>
         <rdfs:comment>This property should have a value from the controlled list defined by the ISO_4217 standard (https://en.wikipedia.org/wiki/ISO_4217).</rdfs:comment>
         <rdfs:label xml:lang="en">fee currency</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://github.com/tibonto/aeon#fee_value -->
-
-    <owl:DatatypeProperty rdf:about="https://github.com/tibonto/aeon#fee_value">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/tibonto/aeon#fee"/>
-        <rdfs:domain rdf:resource="https://github.com/tibonto/aeon#AEON_0000030"/>
-        <rdfs:label xml:lang="en">fee value</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1988,7 +1982,7 @@ cancled → withdrawn</rdfs:comment>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <obo:IAO_0000115 xml:lang="en">The literal value of the name to denote a person.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">personal name</rdfs:label>
+        <rdfs:label xml:lang="en">personal name value</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -2676,6 +2670,61 @@ cancled → withdrawn</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000111 xml:lang="en">conditional specification</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity that specifies what should happen if the trigger condition is fulfilled.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000349</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">conditional specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000111 xml:lang="en">objective specification</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: original definition when imported from OBI read: &quot;objective is an non realizable information entity which can serve as that  proper part of a plan towards which the realization of the plan is directed.&quot;</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2014-03-31: In the example of usage (&quot;In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction&quot;) there is a protocol which is the ChIP assay protocol. In addition to being concretized on paper, the protocol can be concretized as a realizable entity, such as a plan that inheres in a person. The objective specification is the part that says that some protein and DNA interactions are identified. This is a specification of a process endpoint: the boundary in the process before which they are not identified and after which they are. During the realization of the plan, the goal is to get to the point of having the interactions, and participants in the realization of the plan try to do that.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Answers the question, why did you do this experiment?</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Barry Smith</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Jennifer Fostel</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">goal specification</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process/Roles Branch</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000217</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">objective specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000112 xml:lang="en">Pour the contents of flask 1 into flask 2</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity that describes an action the bearer will take.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process branch</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">action specification</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
@@ -2752,6 +2801,48 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  &quot;is the specification of a process that can be concretized and realized by an actor&quot; with alternative term  &quot;instruction&quot;.It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2013-05-30 Alan Ruttenberg: What differentiates a directive information entity from an information concretization is that it can have concretizations that are either qualities or realizable entities. The concretizations that are realizable entities are created when an individual chooses to take up the direction, i.e. has the intention to (try to) realize it.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">8/6/2009 Alan Ruttenberg: Changed label from &quot;information entity about a realizable&quot; after discussions at ICBO</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Werner pushed back on calling it realizable information entity as it isn&apos;t realizable. However this name isn&apos;t right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn&apos;t about the plan, it, once concretized, *is* the plan. -Alan</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/obi/2021-04-06/obi.owl</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">directive information entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000001"/>
+        <obo:IAO_0000111 xml:lang="en">rule</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">example to be added</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A rule is an executable which guides, defines, restricts actions.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">MSI</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PRS</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI_0500021</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">PRS</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">rule</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000078 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000078">
@@ -2798,6 +2889,45 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl</obo:IAO_0000412>
         <rdfs:label xml:lang="en">data about an ontology part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">plan specification</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term a plan was proposed for OBI (OBI_0000344) , edited by the PlanAndPlannedProcess branch. Original definition was &quot; a plan is a specification of a process that is realized by an actor to achieve the objective specified as part of the plan&quot;. It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2014-03-31: A plan specification can have other parts, such as conditional specifications.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Alternative previous definition: a plan is a set of instructions that specify how an objective should be achieved</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process branch</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000344</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl</obo:IAO_0000412>
+        <rdfs:comment xml:lang="en">2/3/2009 Comment from OBI review.
+
+Action specification not well enough specified.
+Conditional specification not well enough specified.
+Question whether all plan specifications have objective specifications.
+
+Request that IAO either clarify these or change definitions not to use them</rdfs:comment>
+        <rdfs:label xml:lang="en">plan specification</rdfs:label>
     </owl:Class>
     
 
@@ -3179,25 +3309,20 @@ for now.</obo:IAO_0000116>
     
 
 
-    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
-
-    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
-        <obo:IAO_0000115 xml:lang="en">A SKOS concept can be viewed as an idea or notion; a unit of thought. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive.
-
-The notion of a SKOS concept is useful when describing the conceptual or intellectual structure of a knowledge organization system, and when referring to specific ideas or meanings established within a KOS.
-
-Note that, because SKOS is designed to be a vehicle for representing semi-formal KOS, such as thesauri and classification schemes, a certain amount of flexibility has been built in to the formal definition of this class.
-
-See the [SKOS-PRIMER] for more examples of identifying and describing SKOS concepts.</obo:IAO_0000115>
-        <obo:IAO_0000412>https://www.w3.org/2009/08/skos-reference/skos.html#Concept</obo:IAO_0000412>
-        <rdfs:label>Concept</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/tibonto/aeon#AEON_0000001 -->
 
     <owl:Class rdf:about="https://github.com/tibonto/aeon#AEON_0000001">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tibonto/aeon#AEON_0000032"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/tibonto/aeon#AEON_0000004"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3213,10 +3338,14 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://github.com/tibonto/aeon#AEON_0000002"/>
         <obo:IAO_0000112 xml:lang="en">The 19th International Semantic Web Conference (ISWC2020) is an academic  event.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">An academic event is a planned process that refers to a gathering of researchers (not necessarily academics), in which these researches have the chance to present and discuss their work and possible future collaborations.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">TODO:
+        <obo:IAO_0000115 xml:lang="en">An academic event is a planned process that refers to a gathering of researchers (not necessarily academics), in which these researches have the chance to present and discuss their work and possible future collaborations according to a certain sociocultural format.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">At the moment a general differentiation between some academic events, such as conference, colloquium, forum and symposium, is not as clear as it should be from an ontologist perspektive, as the use of these terms varies significantly throughout different sociocultural contexts. 
+However, as ConfIDent tries to shed light on the culture of academic events, understanding them simply as synonyms would be too broad at the moment. Hence they are defined here rather adhoc with the reference to a specific academic event type specification that specifies its sociocultural format. These specific plan specifications are provided in AEON as named individuals for the purpose of automatically classifying academic events within the application of the ConfIDent project.
+It is the intention of the ConfIDent project to collect and analyse a large body of empirical data on academic events and series, especially with regard to the inherent academic event plan specifications, so that an evidence based diffirentiation might be possible. This means that the subclasses of academic event in question are prone to be edited in the future.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">TODO:
 * It needs to be discussed, if we need the &quot;process boundary&quot; class to describe the start and end of an academic event or event series.
-* It needs to be discussed, if we need the &quot;temporal region&quot; and &quot;spatiotemporal region&quot;  classes to describe the duration and manifestation in spacetime of an academic event or event series.</rdfs:comment>
+* It needs to be discussed, if we need the &quot;temporal region&quot; and &quot;spatiotemporal region&quot;  classes to describe the duration and manifestation in spacetime of an academic event or event series.</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">academic event</rdfs:label>
         <AEON_0000026 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Q1656682&quot;, &quot;label&quot;: &quot;eventLabel&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Category:Event&quot;, &quot;label&quot;: &quot;Event&quot;}, &quot;gnd&quot;: {&quot;uri&quot;: &quot;https://d-nb.info/standards/elementset/gnd#ConferenceOrEvent&quot;, &quot;label&quot;: &quot;Conference or Event&quot;}}</AEON_0000026>
     </owl:Class>
@@ -3261,7 +3390,7 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://github.com/tibonto/aeon#academic_event_type_of"/>
                         <owl:someValuesFrom rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
@@ -3269,14 +3398,19 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <obo:IAO_0000115 xml:lang="en">An &apos;academic event type&apos; is a skos:Concept that is being used to distinguish between the different formats of an &apos;academic event&apos;.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">As the actually used definitions of various academic event types varies between different communities and societies, we chose to model the type of an event as a skos:Concept instead of adding subclasses to the &quot;academic event&quot; class. The most commonly used academic event types are provided in AEON as named instances of this class. This design decision might be changed once there is an emperically proven common ground on which a subclassing of academic event is possible. It might also be possible in future version, to subsume this class under an appropriate class in the iao:&apos;infomation content entity&apos; branch instead of defining it as a skos:Concept.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">It needs to be discussed whether this class should be expanded to also describe the format of an &apos;academic event series&apos;, e.g. conference series. At the moment it is assumed that an &apos;academic event series&apos;, understood as a obi:&apos;planned process&apos;, has no destinct format itself. Since this process is defined as the set of all recurring academic events of a destinct identity, the event series type would also only be the set of the event types of the academic events in this series.</obo:IAO_0000116>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">event type</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">An academic event plan specification is a plan specification that specifies the sociocultural format or type of an academic event by providing specifications of the objectives, conditions and actions needed in the realization of the academic event.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">It needs to be discussed whether this class should be expanded to also describe the format of an &apos;academic event series&apos;, e.g. conference series. At the moment it is assumed that an &apos;academic event series&apos;, understood as a obi:&apos;planned process&apos;, has no destinct format itself. Since this process is defined as the set of all recurring academic events of a destinct identity, the event series type would also only be the set of the academic event types of the academic events in this series.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">type of the academic event</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">academic event type</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/tibonto/aeon/</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">academic event type</rdfs:label>
+        <rdfs:label xml:lang="en">academic event type specification</rdfs:label>
     </owl:Class>
     
 
@@ -3734,28 +3868,20 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <!-- https://github.com/tibonto/aeon#AEON_0000027 -->
 
     <owl:Class rdf:about="https://github.com/tibonto/aeon#AEON_0000027">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://github.com/tibonto/aeon#academic_field_of"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/tibonto/aeon#academic_field_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">DDC 410 Linguistics, OECD 6.02 Languages and literature, ...</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">An &apos;academic field&apos; is a skos:Concept that contextualizes a obi:&apos;planned process&apos;  with regard to the subdevision of knowledge that is taught and researched at the college or university level. Instances of this class must be terms from a controlled vocabulary or thesaurus.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000115 xml:lang="en">An &apos;academic field desciptor&apos; is a data item that contextualizes a obi:&apos;planned process&apos; by providing a reference to a controlled vocalulary, which codifies the subdevision of knowledge taught and researched at the college or university level.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">academic discipline</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">branch of knowledge</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">field of inquiry</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">field of study</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">research field</obo:IAO_0000118>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Academic_discipline</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">academic field</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">academic discipline category</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">academic field descriptor</rdfs:label>
     </owl:Class>
     
 
@@ -3763,24 +3889,25 @@ See the [SKOS-PRIMER] for more examples of identifying and describing SKOS conce
     <!-- https://github.com/tibonto/aeon#AEON_0000028 -->
 
     <owl:Class rdf:about="https://github.com/tibonto/aeon#AEON_0000028">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://github.com/tibonto/aeon#topic_of"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">&quot;AI, knowledge graphs, cloud computing&quot; could be a set of keywords that denote the main topics covered by a specific conference.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">&quot;The future of knowlegde graphs in the humanities&quot; could be a &apos;topic&apos; of an interdisciplinary oriented computer sciences conference.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A &apos;topic&apos; is a skos:Concept that describes a central theme of a obi:&apos;planned process&apos;. The instances of this class can be terms from a controlled vocabulary or thesaurus, phrases or just keywords.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000115 xml:lang="en">An &apos;event topic descriptor&apos; is a data item that describes the central theme of a planned process.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">theme</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">topic</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">event theme description</obo:IAO_0000118>
+        <obo:IAO_0000600 xml:lang="en">The instances of this class can be terms from a controlled vocabulary or thesaurus, phrases or just keywords.</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">event topic descriptor</rdfs:label>
     </owl:Class>
     
 
@@ -3890,6 +4017,36 @@ Defining &apos;attendee&apos; is not trivial, as the expectations of what an att
     
 
 
+    <!-- https://github.com/tibonto/aeon#colloquium -->
+
+    <owl:Class rdf:about="https://github.com/tibonto/aeon#colloquium">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tibonto/aeon#AEON_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tibonto/aeon#AEON_0000032"/>
+                        <owl:hasValue rdf:resource="https://github.com/tibonto/aeon#AEON_0010000"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A colloquium is an academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a colloquium.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000600 xml:lang="en">A possible definition could be the following, where one can also see how the definition depends on certain planned objectives, conditions and actions:
+A colloquium is an academic event that usually lasts only a few hours and serves to discuss a specific topic. Colloquia are usually part of the academic exchange in everyday university life with only one speaker, but can also take place on special occasions (anniversaries, start or end of the lecture phase, etc.) and can have more than one speaker.</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">colloquium</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://github.com/tibonto/aeon#colloquium"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A colloquium is an academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a colloquium.</owl:annotatedTarget>
+        <obo:IAO_0000116 rdf:resource="https://github.com/tibonto/aeon#AEON_0010000"/>
+    </owl:Axiom>
+    
+
+
     <!-- https://github.com/tibonto/aeon#committee_chair -->
 
     <owl:Class rdf:about="https://github.com/tibonto/aeon#committee_chair">
@@ -3963,6 +4120,75 @@ Defining &apos;attendee&apos; is not trivial, as the expectations of what an att
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">event committee member</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://github.com/tibonto/aeon#conference -->
+
+    <owl:Class rdf:about="https://github.com/tibonto/aeon#conference">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tibonto/aeon#AEON_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tibonto/aeon#AEON_0000032"/>
+                        <owl:hasValue rdf:resource="https://github.com/tibonto/aeon#AEON_0010001"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A conference is an academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a conference.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000600 xml:lang="en">A possible literature based definition could be the following, where one can also see how the definition depends on certain planned objectives, conditions and actions:
+A conference is an academic event that lasts up to several days and serves as a forum for presentations on a specific topic or subject area. In addition to subject-specific conferences, there are also interdisciplinary conferences which allow both a broader focus and more specific questions on a particular (academic) problem. Conferences often have a highly formalized structure of parallel, clearly defined sessions with several short presentations and plenary sessions with invited (keynote) speakers who are considered multipliers in their (research) field. Ideally, the selection of the speakers and their contributions is subject to a review process.</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">conference</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://github.com/tibonto/aeon#conference"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A conference is an academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a conference.</owl:annotatedTarget>
+        <obo:IAO_0000116 rdf:resource="https://github.com/tibonto/aeon#AEON_0010001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://github.com/tibonto/aeon#conference"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">A possible literature based definition could be the following, where one can also see how the definition depends on certain planned objectives, conditions and actions:
+A conference is an academic event that lasts up to several days and serves as a forum for presentations on a specific topic or subject area. In addition to subject-specific conferences, there are also interdisciplinary conferences which allow both a broader focus and more specific questions on a particular (academic) problem. Conferences often have a highly formalized structure of parallel, clearly defined sessions with several short presentations and plenary sessions with invited (keynote) speakers who are considered multipliers in their (research) field. Ideally, the selection of the speakers and their contributions is subject to a review process.</owl:annotatedTarget>
+        <obo:IAO_0000119>Casserly, P. (2019). Symposium vs. conference, what’s the difference? A symposium versus a conference. What’s the actual difference? And how does it affect organising or submitting to one? Ex Ordo. https://www.exordo.com/blog/symposium-vs-conference/</obo:IAO_0000119>
+        <obo:IAO_0000119>Hansen, Thomas Trøst; Pedersen, David Budtz; Foley, Carmel (PRE-PRINT). Academic Event: an empirically-grounded typology and their academic impact. DOI: https://doi.org/10.3727/152599519X15506259856598.</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- https://github.com/tibonto/aeon#congress -->
+
+    <owl:Class rdf:about="https://github.com/tibonto/aeon#congress">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tibonto/aeon#AEON_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tibonto/aeon#AEON_0000032"/>
+                        <owl:hasValue rdf:resource="https://github.com/tibonto/aeon#AEON_0010011"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A congress is an academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a congress. It usually is a larger type of conference with regard to the number of participants and organizers.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000600 xml:lang="en">A possible literature based definition could be the following:
+A congress is a conference that is characterised by a larger number of participants (often several hundred) and is oftentimes organised jointly by large, established (e.g. specialised societies) and/or several institutions. Congresses have a broader thematic focus than simple conferences, take place in certain cycles, but can still target an exclusive group of participants (e.g. representatives of a single discipline).</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">congress</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://github.com/tibonto/aeon#congress"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">A possible literature based definition could be the following:
+A congress is a conference that is characterised by a larger number of participants (often several hundred) and is oftentimes organised jointly by large, established (e.g. specialised societies) and/or several institutions. Congresses have a broader thematic focus than simple conferences, take place in certain cycles, but can still target an exclusive group of participants (e.g. representatives of a single discipline).</owl:annotatedTarget>
+        <obo:IAO_0000119>Canadian Institute for Knowledge Development (CIKD). (2019). Difference between scientific events. NCM Conferences blog. https://ncmconferences.com/difference-between-scientific-events/</obo:IAO_0000119>
+        <obo:IAO_0000119>Hansen, Thomas Trøst; Pedersen, David Budtz; Foley, Carmel (PRE-PRINT). Academic Event: an empirically-grounded typology and their academic impact. DOI: https://doi.org/10.3727/152599519X15506259856598.</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -4053,6 +4279,41 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
     
 
 
+    <!-- https://github.com/tibonto/aeon#forum -->
+
+    <owl:Class rdf:about="https://github.com/tibonto/aeon#forum">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tibonto/aeon#AEON_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tibonto/aeon#AEON_0000032"/>
+                        <owl:hasValue rdf:resource="https://github.com/tibonto/aeon#AEON_0010002"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A forum is an academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a forum.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000600 xml:lang="en">A forum is an academic event that usually is public and involves audience discussion.</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">forum</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://github.com/tibonto/aeon#forum"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A forum is an academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a forum.</owl:annotatedTarget>
+        <obo:IAO_0000116 rdf:resource="https://github.com/tibonto/aeon#AEON_0010002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://github.com/tibonto/aeon#forum"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">A forum is an academic event that usually is public and involves audience discussion.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://www.merriam-webster.com/dictionary/forum</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
     <!-- https://github.com/tibonto/aeon#general_committee -->
 
     <owl:Class rdf:about="https://github.com/tibonto/aeon#general_committee">
@@ -4062,6 +4323,30 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-1595-3213"/>
         <obo:IAO_0000118 xml:lang="en">steering committee</obo:IAO_0000118>
         <rdfs:label xml:lang="en">general committee</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tibonto/aeon#hackathon -->
+
+    <owl:Class rdf:about="https://github.com/tibonto/aeon#hackathon">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tibonto/aeon#AEON_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tibonto/aeon#AEON_0000032"/>
+                        <owl:hasValue rdf:resource="https://github.com/tibonto/aeon#AEON_0010003"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A hackathon is an academic event in which computer programmers and others involved in software development, including graphic designers, interface designers, project managers, domain experts, and others collaborate intensively in a design sprint-like manner on software projects.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Briscoe, G., &amp; Mulligan, C. (2014). Digital innovation: the hackathon phenomenon (Creativeworks London). https://qmro.qmul.ac.uk/xmlui/handle/123456789/11418</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Hackathon</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">hackathon</rdfs:label>
     </owl:Class>
     
 
@@ -4096,6 +4381,31 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <obo:IAO_0000600 xml:lang="en">An invited person - often a multiplier in his or her (research) field - responsible for delivering a keynote speech.</obo:IAO_0000600>
         <rdfs:label xml:lang="en">keynote speaker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tibonto/aeon#keynote_speech -->
+
+    <owl:Class rdf:about="https://github.com/tibonto/aeon#keynote_speech">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tibonto/aeon#talk"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tibonto/aeon#AEON_0000032"/>
+                        <owl:hasValue rdf:resource="https://github.com/tibonto/aeon#AEON_0010007"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A keynote speech is a special talk that has the function to set the underlying tone and summarize the core message or most important revelation off the academic at which it is given.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">keynote</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">keynote lecture</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Keynote</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">keynote speech</rdfs:label>
     </owl:Class>
     
 
@@ -4180,6 +4490,28 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
     
 
 
+    <!-- https://github.com/tibonto/aeon#poster_session -->
+
+    <owl:Class rdf:about="https://github.com/tibonto/aeon#poster_session">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tibonto/aeon#session"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tibonto/aeon#AEON_0000032"/>
+                        <owl:hasValue rdf:resource="https://github.com/tibonto/aeon#AEON_0010013"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A poster session is a session at which poster papers are presented.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Poster_session</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">poster session</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/tibonto/aeon#program_committee -->
 
     <owl:Class rdf:about="https://github.com/tibonto/aeon#program_committee">
@@ -4245,6 +4577,57 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
         <obo:IAO_0000115 xml:lang="en">A reviewer is a contributer that holds a reviewer role which is being realized in a planned process.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">reviewer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tibonto/aeon#seminar -->
+
+    <owl:Class rdf:about="https://github.com/tibonto/aeon#seminar">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tibonto/aeon#AEON_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tibonto/aeon#AEON_0000032"/>
+                        <owl:hasValue rdf:resource="https://github.com/tibonto/aeon#AEON_0010004"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A seminar is an academic event that has the function to instruct a small group or small groups, often for recurring meetings, on some particular subject, in which everyone present is usually encouraged to participate.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Seminar</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">seminar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tibonto/aeon#session -->
+
+    <owl:Class rdf:about="https://github.com/tibonto/aeon#session">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tibonto/aeon#AEON_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tibonto/aeon#AEON_0000032"/>
+                        <owl:hasValue rdf:resource="https://github.com/tibonto/aeon#AEON_0010005"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002012"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A session is an academic event that is a clearly defined part of a larger academic event, such as a conference or track, in which a small number of presenters (usually 2-5) focus on a specific topic. A session is usually formally accompanied by a session chair, who assumes the function of a moderator.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">session</rdfs:label>
     </owl:Class>
     
 
@@ -4330,6 +4713,75 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
     
 
 
+    <!-- https://github.com/tibonto/aeon#symposium -->
+
+    <owl:Class rdf:about="https://github.com/tibonto/aeon#symposium">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tibonto/aeon#AEON_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tibonto/aeon#AEON_0000032"/>
+                        <owl:hasValue rdf:resource="https://github.com/tibonto/aeon#AEON_0010006"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A symposium is an academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a symposium.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000600 xml:lang="en">A possible literature based definition could be the following:
+A symposium is a specific type of conference with a narrower thematic focus, with fewer participants and of shorter duration. The degree of structuring lies between a classic conference and a workshop, allows more discussion than the larger conference, but is usually more formalized than the workshop.</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">symposium</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://github.com/tibonto/aeon#symposium"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A symposium is an academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a symposium.</owl:annotatedTarget>
+        <obo:IAO_0000116 rdf:resource="https://github.com/tibonto/aeon#AEON_0010006"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://github.com/tibonto/aeon#symposium"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">A possible literature based definition could be the following:
+A symposium is a specific type of conference with a narrower thematic focus, with fewer participants and of shorter duration. The degree of structuring lies between a classic conference and a workshop, allows more discussion than the larger conference, but is usually more formalized than the workshop.</owl:annotatedTarget>
+        <obo:IAO_0000119>Canadian Institute for Knowledge Development (CIKD). (2019). Difference between scientific events. NCM Conferences blog. https://ncmconferences.com/difference-between-scientific-events/</obo:IAO_0000119>
+        <obo:IAO_0000119>Casserly, P. (2019). Symposium vs. conference, what’s the difference? A symposium versus a conference. What’s the actual difference? And how does it affect organising or submitting to one? Ex Ordo. https://www.exordo.com/blog/symposium-vs-conference/</obo:IAO_0000119>
+        <obo:IAO_0000119>Hansen, Thomas Trøst; Pedersen, David Budtz; Foley, Carmel (PRE-PRINT). Academic Event: an empirically-grounded typology and their academic impact. DOI: https://doi.org/10.3727/152599519X15506259856598.</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- https://github.com/tibonto/aeon#talk -->
+
+    <owl:Class rdf:about="https://github.com/tibonto/aeon#talk">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tibonto/aeon#AEON_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tibonto/aeon#AEON_0000032"/>
+                        <owl:hasValue rdf:resource="https://github.com/tibonto/aeon#AEON_0010012"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002012"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">presentation</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A talk is an academic event at which a specific topic is being presented in a rather short way often as a part of a larger academic event such as a session, conference or workshop.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">presentation</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">speech</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">talk</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/tibonto/aeon#technical_committee -->
 
     <owl:Class rdf:about="https://github.com/tibonto/aeon#technical_committee">
@@ -4338,6 +4790,59 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
         <obo:IAO_0000115 xml:lang="en">The technical committee ia an academic event committee that is responsible for the technical needs associated with the realization of an academic event.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">technical committee</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tibonto/aeon#track -->
+
+    <owl:Class rdf:about="https://github.com/tibonto/aeon#track">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tibonto/aeon#AEON_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tibonto/aeon#AEON_0000032"/>
+                        <owl:hasValue rdf:resource="https://github.com/tibonto/aeon#AEON_0010008"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002012"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/tibonto/aeon#AEON_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A track is an academic event that, as a part of a larger academic event, has the function to group even smaller parts of the academic event, like sessions and talks, according to a shared theme or topic. It usually has dedicated chairs and program committees.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">stream</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.conftool.net/ctforum/index.php/topic,99.0.html</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">track</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tibonto/aeon#tutorial -->
+
+    <owl:Class rdf:about="https://github.com/tibonto/aeon#tutorial">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tibonto/aeon#AEON_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tibonto/aeon#AEON_0000032"/>
+                        <owl:hasValue rdf:resource="https://github.com/tibonto/aeon#AEON_0010009"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A tutorial is an academic event that has the function to educate the audience on a certain topic. A tutorial is often realized as a talk or session.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Tutorial</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">tutorial</rdfs:label>
     </owl:Class>
     
 
@@ -4352,6 +4857,30 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
         <obo:IAO_0000118 xml:lang="en">wikiCFP ID</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.wikicfp.com/cfp/</obo:IAO_0000119>
         <rdfs:label xml:lang="en">wikiCFP identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tibonto/aeon#workshop -->
+
+    <owl:Class rdf:about="https://github.com/tibonto/aeon#workshop">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tibonto/aeon#AEON_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tibonto/aeon#AEON_0000032"/>
+                        <owl:hasValue rdf:resource="https://github.com/tibonto/aeon#AEON_0010010"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A workshop is a smaller academic event that serves to exchange information on a specific topic or problem. It usually last one or two days and offers space for discussion and the development of content and solutions. Group work is often part of the event concept.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Alston, J. M. (2019). What&apos;s the difference between a conference, a seminar, a workshop and a symposium? Conference Monkey Insights. https://conferencemonkey.org/insight/whats-the-difference-between-a-conference-a-seminar-a-workshop-and-a-symposium-1075915</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">Canadian Institute for Knowledge Development (CIKD). (2019). Difference between scientific events. NCM Conferences blog. https://ncmconferences.com/difference-between-scientific-events/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">workshop</rdfs:label>
     </owl:Class>
     
 
@@ -4495,7 +5024,10 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
 
     <owl:NamedIndividual rdf:about="https://github.com/tibonto/aeon#AEON_0010000">
         <rdf:type rdf:resource="https://github.com/tibonto/aeon#AEON_0000004"/>
-        <rdfs:label>Colloquium</rdfs:label>
+        <obo:OBI_0002815 xml:lang="en">This academic event is planned to be a colloquium.</obo:OBI_0002815>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a colloquium, when all that is known about the academic event type specification is the label colloquium (e.g. the event type colloquium is only specified in the name of the event). Hence, its representation can only be a statement asserting that the sociocultural format of the academic event is planned to be a colloquium format without further specifications on what objectives, conditions or actions are entailed.</rdfs:comment>
+        <rdfs:label xml:lang="en">colloquium plan specification</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4504,7 +5036,10 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
 
     <owl:NamedIndividual rdf:about="https://github.com/tibonto/aeon#AEON_0010001">
         <rdf:type rdf:resource="https://github.com/tibonto/aeon#AEON_0000004"/>
-        <rdfs:label>Conference</rdfs:label>
+        <obo:OBI_0002815 xml:lang="en">This academic event is planned to be a conference.</obo:OBI_0002815>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a conference, when all that is known about the academic event type specification is the label conference (e.g. the event type conference is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a conference format without further specifications on what objectives, conditions or actions are entailed.</rdfs:comment>
+        <rdfs:label xml:lang="en">conference plan specification</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4513,7 +5048,10 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
 
     <owl:NamedIndividual rdf:about="https://github.com/tibonto/aeon#AEON_0010002">
         <rdf:type rdf:resource="https://github.com/tibonto/aeon#AEON_0000004"/>
-        <rdfs:label>Forum</rdfs:label>
+        <obo:OBI_0002815 xml:lang="en">This academic event is planned to be a forum.</obo:OBI_0002815>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a forum, when all that is known about the academic event type specification is the label forum (e.g. the event type forum is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a forum format without further specifications on what objectives, conditions or actions this entails.</rdfs:comment>
+        <rdfs:label xml:lang="en">forum plan specification</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4522,7 +5060,10 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
 
     <owl:NamedIndividual rdf:about="https://github.com/tibonto/aeon#AEON_0010003">
         <rdf:type rdf:resource="https://github.com/tibonto/aeon#AEON_0000004"/>
-        <rdfs:label>Hackathon</rdfs:label>
+        <obo:OBI_0002815 xml:lang="en">This academic event is planned to be a hackathon.</obo:OBI_0002815>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a hackathon, when all that is known about the academic event type specification is the label hackathon (e.g. the event type hackathon is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a hackathon format without further specifications on what objectives, conditions or actions this entails.</rdfs:comment>
+        <rdfs:label xml:lang="en">hackathon plan specification</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4531,7 +5072,10 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
 
     <owl:NamedIndividual rdf:about="https://github.com/tibonto/aeon#AEON_0010004">
         <rdf:type rdf:resource="https://github.com/tibonto/aeon#AEON_0000004"/>
-        <rdfs:label>Seminar</rdfs:label>
+        <obo:OBI_0002815 xml:lang="en">This academic event is planned to be a seminar.</obo:OBI_0002815>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a seminar, when all that is known about the academic event type specification is the label seminar (e.g. the event type seminar is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a seminar format without further specifications on what objectives, conditions or actions this entails.</rdfs:comment>
+        <rdfs:label xml:lang="en">seminar plan specification</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4540,7 +5084,10 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
 
     <owl:NamedIndividual rdf:about="https://github.com/tibonto/aeon#AEON_0010005">
         <rdf:type rdf:resource="https://github.com/tibonto/aeon#AEON_0000004"/>
-        <rdfs:label>Session</rdfs:label>
+        <obo:OBI_0002815 xml:lang="en">This academic event is planned to be a session.</obo:OBI_0002815>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a session, when all that is known about the academic event type specification is the label session (e.g. the event type session is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a session format without further specifications on what objectives, conditions or actions this entails.</rdfs:comment>
+        <rdfs:label xml:lang="en">session plan specification</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4549,7 +5096,10 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
 
     <owl:NamedIndividual rdf:about="https://github.com/tibonto/aeon#AEON_0010006">
         <rdf:type rdf:resource="https://github.com/tibonto/aeon#AEON_0000004"/>
-        <rdfs:label>Symposium</rdfs:label>
+        <obo:OBI_0002815 xml:lang="en">This academic event is planned to be a symposium.</obo:OBI_0002815>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a symposium, when all that is known about the academic event type specification is the label symposium (e.g. the event type symposium is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a symposium format without further specifications on what objectives, conditions or actions are entailed.</rdfs:comment>
+        <rdfs:label xml:lang="en">symposium plan specification</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4558,7 +5108,10 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
 
     <owl:NamedIndividual rdf:about="https://github.com/tibonto/aeon#AEON_0010007">
         <rdf:type rdf:resource="https://github.com/tibonto/aeon#AEON_0000004"/>
-        <rdfs:label>Talk</rdfs:label>
+        <obo:OBI_0002815 xml:lang="en">This academic event is planned to be a keynote speech.</obo:OBI_0002815>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a keynote speech, when all that is known about the academic event type specification is that it&apos;s labeled as a keynote speech (e.g. the event type keynote speech is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a keynote speech format without further specifications on what objectives, conditions or actions this entails.</rdfs:comment>
+        <rdfs:label xml:lang="en">keynote plan specification</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4567,7 +5120,10 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
 
     <owl:NamedIndividual rdf:about="https://github.com/tibonto/aeon#AEON_0010008">
         <rdf:type rdf:resource="https://github.com/tibonto/aeon#AEON_0000004"/>
-        <rdfs:label>Track</rdfs:label>
+        <obo:OBI_0002815 xml:lang="en">This academic event is planned to be a track.</obo:OBI_0002815>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a track, when all that is known about the academic event type specification is the label track (e.g. the event type track is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a track format without further specifications on what objectives, conditions or actions are entailed.</rdfs:comment>
+        <rdfs:label xml:lang="en">track plan specification</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4576,7 +5132,10 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
 
     <owl:NamedIndividual rdf:about="https://github.com/tibonto/aeon#AEON_0010009">
         <rdf:type rdf:resource="https://github.com/tibonto/aeon#AEON_0000004"/>
-        <rdfs:label>Tutorial</rdfs:label>
+        <obo:OBI_0002815 xml:lang="en">This academic event is planned to be a tutotial.</obo:OBI_0002815>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a tutorial, when all that is known about the academic event type specification is the label tutorial (e.g. the event type tutorial is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a tutorial format without further specifications on what objectives, conditions or actions are entailed.</rdfs:comment>
+        <rdfs:label xml:lang="en">tutorial plan specification</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4585,7 +5144,10 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
 
     <owl:NamedIndividual rdf:about="https://github.com/tibonto/aeon#AEON_0010010">
         <rdf:type rdf:resource="https://github.com/tibonto/aeon#AEON_0000004"/>
-        <rdfs:label>Workshop</rdfs:label>
+        <obo:OBI_0002815 xml:lang="en">This academic event is planned to be a workshop.</obo:OBI_0002815>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a workshop, when all that is known about the academic event type specification is the label workshop (e.g. the event type workshop is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a workshop format without further specifications on what objectives, conditions or actions are entailed.</rdfs:comment>
+        <rdfs:label xml:lang="en">workshop plan specification</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4594,7 +5156,33 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
 
     <owl:NamedIndividual rdf:about="https://github.com/tibonto/aeon#AEON_0010011">
         <rdf:type rdf:resource="https://github.com/tibonto/aeon#AEON_0000004"/>
-        <rdfs:label xml:lang="en">Other event type</rdfs:label>
+        <obo:IAO_0000117 xml:lang="en">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a congress, when all that is known about the academic event type specification is the label congress (e.g. the event type congress is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a congress format without further specifications on what objectives, conditions or actions are entailed.</rdfs:comment>
+        <rdfs:label xml:lang="en">congress plan specification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/tibonto/aeon#AEON_0010012 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/tibonto/aeon#AEON_0010012">
+        <rdf:type rdf:resource="https://github.com/tibonto/aeon#AEON_0000004"/>
+        <obo:OBI_0002815 xml:lang="en">This academic event is planned to be a talk.</obo:OBI_0002815>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a talk, when all that is known about the academic event type specification is the label talk (e.g. the event type talk is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a talk format without further specifications on what objectives, conditions or actions are entailed.</rdfs:comment>
+        <rdfs:label xml:lang="en">talk plan specification</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/tibonto/aeon#AEON_0010013 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/tibonto/aeon#AEON_0010013">
+        <rdf:type rdf:resource="https://github.com/tibonto/aeon#AEON_0000004"/>
+        <obo:OBI_0002815 xml:lang="en">This academic event is planned to be a poster session.</obo:OBI_0002815>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a poster session, when all that is known about the academic event type specification is the label poster session (e.g. the event type poster session is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a poster session format without further specifications on what objectives, conditions or actions are entailed.</rdfs:comment>
+        <rdfs:label xml:lang="en">poster session plan specification</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4764,6 +5352,8 @@ The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to
             <rdf:Description rdf:about="https://github.com/tibonto/aeon#AEON_0010009"/>
             <rdf:Description rdf:about="https://github.com/tibonto/aeon#AEON_0010010"/>
             <rdf:Description rdf:about="https://github.com/tibonto/aeon#AEON_0010011"/>
+            <rdf:Description rdf:about="https://github.com/tibonto/aeon#AEON_0010012"/>
+            <rdf:Description rdf:about="https://github.com/tibonto/aeon#AEON_0010013"/>
         </owl:distinctMembers>
     </rdf:Description>
 </rdf:RDF>
