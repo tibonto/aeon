@@ -664,9 +664,9 @@ aeon:AEON_0000041 rdf:type owl:ObjectProperty ;
                   owl:inverseOf aeon:topic_of ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:AEON_0000028 ;
-                  obo:IAO_0000115 "A relation obtaining between a obi:'planned process' and a skos:Concept that is used to descibe the theme of the planned process."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a obi:'planned process' and an 'event topic descriptor' that is used to descibe the theme of the planned process."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:label "has topic"@en .
+                  rdfs:label "has event topic decriptor"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000043
@@ -1152,11 +1152,12 @@ aeon:sponsors rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#topic_of
 aeon:topic_of rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf obo:IAO_0000136 ;
               rdfs:domain aeon:AEON_0000028 ;
               rdfs:range obo:OBI_0000011 ;
-              obo:IAO_0000115 "see also inverse property: A relation obtaining between a skos:Concept and a obi:'planned process', in which the former is used to descibe the theme of the latter."@en ;
+              obo:IAO_0000115 "see also inverse property: A relation obtaining between an 'event topic descriptor' and a obi:'planned process', in which the former is used to descibe the theme of the latter."@en ;
               obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-              rdfs:label "topic of"@en .
+              rdfs:label "describes event topic"@en .
 
 
 #################################################################
