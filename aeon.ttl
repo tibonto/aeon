@@ -650,12 +650,13 @@ aeon:AEON_0000033 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000040
 aeon:AEON_0000040 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
                   owl:inverseOf aeon:academic_field_of ;
                   rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:AEON_0000027 ;
-                  obo:IAO_0000115 "A relation obtaining between a obi:'planned process' and a skos:Concept that is used to describe the scientific subject of the planned process according to some controlled vocabulary or thesaurus."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a obi:'planned process' and an academic field descriptor that is used to describe the scientific subject of the planned process according to some controlled vocabulary or thesaurus."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:label "has academic field"@en .
+                  rdfs:label "has academic field descriptor"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000041
@@ -984,11 +985,12 @@ aeon:academic_event_type_of rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#academic_field_of
 aeon:academic_field_of rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf obo:IAO_0000136 ;
                        rdfs:domain aeon:AEON_0000027 ;
                        rdfs:range obo:OBI_0000011 ;
-                       obo:IAO_0000115 "see also inverse property: A relation obtaining between a skos:Concept and a obi:'planned process', in which the former is used to descibe the scientific subject of the latter according to some controlled vocabulary or thesaurus."@en ;
+                       obo:IAO_0000115 "see also inverse property: A relation obtaining between an academic field descriptor and a obi:'planned process', in which the former is used to descibe the scientific subject of the latter according to some controlled vocabulary or thesaurus."@en ;
                        obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                       rdfs:label "academic field of"@en .
+                       rdfs:label "describes academic field of"@en .
 
 
 ###  https://github.com/tibonto/aeon#attends_at
@@ -2995,14 +2997,9 @@ aeon:AEON_0000027 rdf:type owl:Class ;
                   obo:IAO_0000112 "DDC 410 Linguistics, OECD 6.02 Languages and literature, ..."@en ;
                   obo:IAO_0000114 obo:IAO_0000423 ,
                                   obo:IAO_0000428 ;
-                  obo:IAO_0000115 "An 'academic field' is a skos:Concept that contextualizes a obi:'planned process'  with regard to the subdevision of knowledge that is taught and researched at the college or university level. Instances of this class must be terms from a controlled vocabulary or thesaurus."@en ;
+                  obo:IAO_0000115 "An 'academic field desciptor' is a data item that contextualizes a obi:'planned process' by providing a reference to a controlled vocalulary, which codifies the subdevision of knowledge taught and researched at the college or university level."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  obo:IAO_0000118 "academic discipline"@en ,
-                                  "branch of knowledge"@en ,
-                                  "field of inquiry"@en ,
-                                  "field of study"@en ,
-                                  "research field"@en ;
-                  obo:IAO_0000119 "https://en.wikipedia.org/wiki/Academic_discipline"^^xsd:anyURI ;
+                  obo:IAO_0000118 "academic discipline category"@en ;
                   rdfs:label "academic field descriptor"@en .
 
 
