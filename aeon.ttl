@@ -3000,16 +3000,14 @@ aeon:AEON_0000025 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000027
 aeon:AEON_0000027 rdf:type owl:Class ;
-                  owl:equivalentClass [ owl:intersectionOf ( skos:Concept
-                                                             [ rdf:type owl:Restriction ;
-                                                               owl:onProperty aeon:academic_field_of ;
-                                                               owl:someValuesFrom obo:OBI_0000011
-                                                             ]
-                                                           ) ;
-                                        rdf:type owl:Class
-                                      ] ;
-                  rdfs:subClassOf skos:Concept ;
+                  rdfs:subClassOf obo:IAO_0000027 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty aeon:academic_field_of ;
+                                    owl:someValuesFrom obo:OBI_0000011
+                                  ] ;
                   obo:IAO_0000112 "DDC 410 Linguistics, OECD 6.02 Languages and literature, ..."@en ;
+                  obo:IAO_0000114 obo:IAO_0000423 ,
+                                  obo:IAO_0000428 ;
                   obo:IAO_0000115 "An 'academic field' is a skos:Concept that contextualizes a obi:'planned process'  with regard to the subdevision of knowledge that is taught and researched at the college or university level. Instances of this class must be terms from a controlled vocabulary or thesaurus."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   obo:IAO_0000118 "academic discipline"@en ,
@@ -3018,7 +3016,7 @@ aeon:AEON_0000027 rdf:type owl:Class ;
                                   "field of study"@en ,
                                   "research field"@en ;
                   obo:IAO_0000119 "https://en.wikipedia.org/wiki/Academic_discipline"^^xsd:anyURI ;
-                  rdfs:label "academic field"@en .
+                  rdfs:label "academic field descriptor"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000028
