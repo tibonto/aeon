@@ -3021,21 +3021,22 @@ aeon:AEON_0000027 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000028
 aeon:AEON_0000028 rdf:type owl:Class ;
-                  owl:equivalentClass [ owl:intersectionOf ( skos:Concept
-                                                             [ rdf:type owl:Restriction ;
-                                                               owl:onProperty aeon:topic_of ;
-                                                               owl:someValuesFrom obo:OBI_0000011
-                                                             ]
-                                                           ) ;
-                                        rdf:type owl:Class
-                                      ] ;
-                  rdfs:subClassOf skos:Concept ;
+                  rdfs:subClassOf [ owl:intersectionOf ( obo:IAO_0000027
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty aeon:topic_of ;
+                                                           owl:someValuesFrom obo:OBI_0000011
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
                   obo:IAO_0000112 "\"AI, knowledge graphs, cloud computing\" could be a set of keywords that denote the main topics covered by a specific conference."@en ,
                                   "\"The future of knowlegde graphs in the humanities\" could be a 'topic' of an interdisciplinary oriented computer sciences conference."@en ;
-                  obo:IAO_0000115 "A 'topic' is a skos:Concept that describes a central theme of a obi:'planned process'. The instances of this class can be terms from a controlled vocabulary or thesaurus, phrases or just keywords."@en ;
+                  obo:IAO_0000114 obo:IAO_0000428 ;
+                  obo:IAO_0000115 "An event topic is a data item that describes the central theme of a planned process."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  obo:IAO_0000118 "theme"@en ;
-                  rdfs:label "topic"@en .
+                  obo:IAO_0000118 "event theme"@en ;
+                  obo:IAO_0000600 "The instances of this class can be terms from a controlled vocabulary or thesaurus, phrases or just keywords."@en ;
+                  rdfs:label "event topic descriptor"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000029
