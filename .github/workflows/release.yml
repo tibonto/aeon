@@ -1,0 +1,49 @@
+
+
+name: Create Release
+
+on: workflow_dispatch
+
+jobs:
+  pre-release:
+    name: "Pre Release"
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - id: install_dependencies # jq, arq, robot
+      run: |
+        sudo apt-get install jq
+        curl https://downloads.apache.org/jena/binaries/apache-jena-4.1.0.tar.gz --output jena.tar.gz
+        tar xfz jena.tar.gz 
+        ./apache-jena-*/bin/arq --help
+        wget --quiet https://github.com/ontodev/robot/releases/download/v1.8.1/robot.jar
+        curl https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > robot 
+        chmod +x robot
+        sudo mv ./robot /usr/local/bin
+        sudo mv ./robot.jar /usr/local/bin
+        echo "ROBOT version:"
+        robot -V
+    - id: ontology_version
+      run: |
+        echo "SELECT ?version WHERE {?s <http://www.w3.org/2002/07/owl#versionInfo> ?version}" > query_version.rq
+        ./apache-jena-*/bin/arq --data aeon.ttl --query query_version.rq --results=JSON  > version.json
+        export VERSION=$(jq -r '.["results"]["bindings"][0]["version"]["value"]' version.json)
+        echo $VERSION
+        echo "GITHUB_AEON_VERSION=$(echo $VERSION)" >> $GITHUB_ENV
+    - id: ontology_owl_obo
+      run:
+        robot convert --input aeon.ttl --format owl --output aeon.owl
+        # robot convert --input aeon.ttl --format obo --output aeon.obo # errors: w ontology: OBO STRUCTURE ERROR Ontology does not conform to OBO structure rules
+    - id: print_version
+      run: echo ${{ env.GITHUB_AEON_VERSION }}
+    - uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: ${{ env.GITHUB_AEON_VERSION }}
+        prerelease: true
+        title:  ${{ env.GITHUB_AEON_VERSION }}  ## $VERSION
+        files: |
+          aeon.ttl
+          aeon.owl
+          README.md
+        # aeon.obo

@@ -71,26 +71,58 @@ AEON seeks to represent information about events to answer the questions below a
 
 
 ## Visualization
-You can see a visualization of the master branch aeon.ttl using [WebVOWL](http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/tibonto/aeon/main/aeon.ttl)
+You can see a visualization of the master branch aeon.ttl using [WebVOWL](http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/tibonto/aeon/master/aeon.ttl)
 
 ### TBox
 This is a reduced general overview of the classes and relation AEON uses.
 ![](docs/AEON_overwiew.PNG)
 
-## Tests
+#### What makes up an academic event or event series?
+TODO
+
+#### Where and when did it take place?
+CAVE/TODO: I've wrongly labeled the edges for the subclasses in this version, as it must be rdfs:subclassOf not rdf:type! 
+    see also [issue#105](https://github.com/tibonto/aeon/issues/105)
+![](docs/AEON_where_and_when.PNG)
+
+We've added subproperties to 'ro:occurs in' in order to be able to map the data from external databases such as Wikidata more precisely. 
+
+
+#### Who is involved?
+CAVE/TODO: I've wrongly labeled the edges for the subclasses in this version, as it must be rdfs:subclassOf not rdf:type! 
+    see also [issue#105](https://github.com/tibonto/aeon/issues/105)
+![](docs/AEON_who.PNG)
+
+The contributors are defined classes, that are equivalent to ('NCBITaxon:'Homo sapiens' or obi:organization) and ('ro:has role' some ('aeon:contributor role' and ('bfo:realized in' some 'obi:planned process'))). For the sake of reducing the information overload the discrete roles for each type of contributor (e.g. 'aeon:organizer role', 'aeon:presenter role', ...) are thus left out here. What is also not shown in this figure are additional subproperties of 'ro:has participant' (e.g. 'aeon:has contributor', 'aeon:has organizer', ...) with which we can specify the type of participation more concretely, by adhering to the pattern that a contributor role is equivalent to 'ro:role of' some ('aeon:contributes to' some 'obi:planned process'). At the moment these axioms have been asserted manually, but it is intended to do this automatically via macro expansion or some similar automatic implementation of this pattern. 
+
+Similarly to AEONs subproperties of 'ro:occurs in', having additional subproperties of 'ro:has participant' is needed for the mapping to external databases and in general for those applications that do not define the participation in an academic event or event series via a destinct role.
+
+It is intended to reuse the contibutor role ontology, once it will include this use case of research contribution.
+    see also [issue#97](https://github.com/tibonto/aeon/issues/97)
+
+#### How is the event or series organized?
+CAVE/TODO: I've wrongly labeled the edges for the subclasses in this version, as it must be rdfs:subclassOf not rdf:type! 
+    see also [issue#105](https://github.com/tibonto/aeon/issues/105
+![](docs/AEON_how.PNG)
+This is still a very early draft and it needs to be discussed if and how the various metrics and deadlines can be modeled better using classes and object properties instead of just data properties.
+
+
+## Development
+It is intended to have a CI/CD pipeline for the development. Unfortunately the use of the ODK is not possible at the moment due to too old IT. The plan is to migrate to using it when this changes. Until then, we try to make as much as possible with ROBOT and GitHub actions/workflows. Using TSV-templates and a better repo folder structure is planned, but we need to learn this first in the little time we have for this project ;)
+### Tests
 **Tests `tests/` are run at every merge request and push into the master branch, by github actions.**
 
 github actions are define in `.github/workflows/`
 
 But if test are to be run locally, follow the instructions in next sections
 
-### Create test enviroment
+#### Create test enviroment
 * create python virtual environment
 * install python libaries `pip install -r requirements.txt`
 * test files are located in `tests/` dir and start with test*.py
 * test definitions, such as markers are set in `pytest.ini`
 
-### Run tests
+#### Run tests
 * **all tests**: `pytest`  
 * **some tests**, using the marker to specify which tests, ie: `pytest -m ontology`
 
