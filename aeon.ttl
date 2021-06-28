@@ -3017,9 +3017,9 @@ aeon:AEON_0000028 rdf:type owl:Class ;
                   obo:IAO_0000112 "\"AI, knowledge graphs, cloud computing\" could be a set of keywords that denote the main topics covered by a specific conference."@en ,
                                   "\"The future of knowlegde graphs in the humanities\" could be a 'topic' of an interdisciplinary oriented computer sciences conference."@en ;
                   obo:IAO_0000114 obo:IAO_0000428 ;
-                  obo:IAO_0000115 "An event topic is a data item that describes the central theme of a planned process."@en ;
+                  obo:IAO_0000115 "An 'event topic descriptor' is a data item that describes the central theme of a planned process."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  obo:IAO_0000118 "event theme"@en ;
+                  obo:IAO_0000118 "event theme description"@en ;
                   obo:IAO_0000600 "The instances of this class can be terms from a controlled vocabulary or thesaurus, phrases or just keywords."@en ;
                   rdfs:label "event topic descriptor"@en .
 
