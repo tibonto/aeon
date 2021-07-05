@@ -3081,10 +3081,20 @@ aeon:AEON_0000030 rdf:type owl:Class ;
                                                                owl:onProperty aeon:specifies_event_fee ;
                                                                owl:someValuesFrom obo:OBI_0000011
                                                              ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:fee ;
+                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                               owl:onDataRange xsd:decimal
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:fee_currency ;
+                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                               owl:onDataRange xsd:normalizedString
+                                                             ]
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
-                  obo:IAO_0000115 "An event fee specification is a conditional specification that, as part of a plan specification, defines the currency and the amount of money that has to be paid by participants of an event depending on their role in that event."@en ;
+                  obo:IAO_0000115 "An event fee specification is a conditional specification that, as part of a plan specification, specifies the currency and the amount of money that has to be paid by participants of an event depending on their role in that event."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/117"^^xsd:anyURI ;
                   rdfs:label "event fee specification"@en .
