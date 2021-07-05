@@ -3127,7 +3127,7 @@ Academic event committees are usually formed in the planning process of those ac
 aeon:attendance_fee_specification rdf:type owl:Class ;
                                   rdfs:subClassOf aeon:AEON_0000030 ;
                                   owl:disjointWith aeon:sponsor_fee_specification ;
-                                  obo:IAO_0000115 "An attendance fee specification is a conditional specification that, as part of a plan specification, defines the currency and amount of money a person has to pay to attend an event."@en ;
+                                  obo:IAO_0000115 "An attendance fee specification is an event fee specification that, as part of a plan specification, defines the currency and amount of money a person has to pay to attend an event."@en ;
                                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
                                   obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/117"^^xsd:anyURI ;
                                   dc:date "2021-07-05T10:14:06Z"^^xsd:dateTime ;
@@ -3690,7 +3690,7 @@ aeon:sponsor rdf:type owl:Class ;
 ###  https://github.com/tibonto/aeon#sponsor_fee_specification
 aeon:sponsor_fee_specification rdf:type owl:Class ;
                                rdfs:subClassOf aeon:AEON_0000030 ;
-                               obo:IAO_0000115 "A sponsor fee specification is a conditional specification that, as part of a plan specification, defines the currency and amount of money a sponsor has to pay to sponsor an event."@en ;
+                               obo:IAO_0000115 "A sponsor fee specification is an event fee specification that, as part of a plan specification, defines the currency and amount of money a sponsor has to pay to sponsor an event."@en ;
                                obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
                                obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/117"^^xsd:anyURI ;
                                dc:date "2021-07-05T10:15:52Z"^^xsd:dateTime ;
