@@ -1,4 +1,6 @@
 Change history:
+v0.4.4 	- date: 06.2021
+	* FIX issue #117
 
 v0.4.3 	- date: 06.2021
 	* FIX issue #108
