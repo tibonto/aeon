@@ -672,11 +672,13 @@ aeon:AEON_0000041 rdf:type owl:ObjectProperty ;
 ###  https://github.com/tibonto/aeon#AEON_0000043
 aeon:AEON_0000043 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf owl:topObjectProperty ;
-                  rdfs:domain aeon:AEON_0000001 ;
+                  owl:inverseOf aeon:specifies_event_fee ;
+                  rdfs:domain obo:OBI_0000011 ;
                   rdfs:range aeon:AEON_0000030 ;
-                  obo:IAO_0000115 "A relation obtaining between a planned process and an 'information content entity' that is about the amount of money one has to pay in order to be an allowed participant of the planned process."@en ;
+                  obo:IAO_0000115 "A relation obtaining between a obi:'planned process' and an 'event fee specification'."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:label "has fee"@en .
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/117"^^xsd:anyURI ;
+                  rdfs:label "has event fee specification"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000045
@@ -1138,6 +1140,18 @@ aeon:speaks_at rdf:type owl:ObjectProperty ;
                obo:IAO_0000115 "A relation obtaining between a person and a planned process, in which the person holds a presenter role that is being realized by the planned process."@en ;
                obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                rdfs:label "presents at"@en .
+
+
+###  https://github.com/tibonto/aeon#specifies_event_fee
+aeon:specifies_event_fee rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf obo:IAO_0000136 ;
+                         rdfs:domain aeon:AEON_0000030 ;
+                         rdfs:range obo:OBI_0000011 ;
+                         obo:IAO_0000115 "A relation obtaining between an 'event fee specification' and a obi:'planned process'."@en ;
+                         obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                         obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/117"^^xsd:anyURI ;
+                         dc:date "2021-06-28T12:48:49Z"^^xsd:dateTime ;
+                         rdfs:label "specifies event fee of"@en .
 
 
 ###  https://github.com/tibonto/aeon#sponsors
