@@ -1402,19 +1402,28 @@ aeon:event_year rdf:type owl:DatatypeProperty ;
 
 ###  https://github.com/tibonto/aeon#fee
 aeon:fee rdf:type owl:DatatypeProperty ;
-         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:subPropertyOf obo:OBI_0002815 ;
          rdfs:domain aeon:AEON_0000030 ;
-         obo:IAO_0000115 "The literal value of the type of fee an aeon:event can have."@en ;
-         obo:IAO_0000600 "There are various type of fees for an event, such as the regular fee, a reduced fee, a member fee and so forth." ;
-         rdfs:label "fee value"@en .
+         rdfs:range xsd:decimal ;
+         obo:IAO_0000112 150.00 ;
+         obo:IAO_0000115 "The literal, numerical (decimal) value of an event fee that is specified in an event fee specification."@en ;
+         obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+         obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/117"^^xsd:anyURI ;
+         rdfs:label "event fee value"@en .
 
 
 ###  https://github.com/tibonto/aeon#fee_currency
 aeon:fee_currency rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf aeon:fee ;
+                  rdfs:subPropertyOf obo:OBI_0002815 ;
                   rdfs:domain aeon:AEON_0000030 ;
-                  rdfs:comment "This property should have a value from the controlled list defined by the ISO_4217 standard (https://en.wikipedia.org/wiki/ISO_4217)." ;
-                  rdfs:label "fee currency"@en .
+                  rdfs:range xsd:normalizedString ;
+                  obo:IAO_0000112 "EUR" ,
+                                  "USD" ;
+                  obo:IAO_0000115 "The literal string value of an event fee currency that is specified in an event fee specification."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/117"^^xsd:anyURI ;
+                  rdfs:comment "This data property should have a value from the controlled list defined by the ISO_4217 standard (https://en.wikipedia.org/wiki/ISO_4217)."@en ;
+                  rdfs:label "event fee currency"@en .
 
 
 ###  https://github.com/tibonto/aeon#first_name
