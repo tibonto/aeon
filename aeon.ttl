@@ -3046,11 +3046,18 @@ aeon:AEON_0000029 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000030
 aeon:AEON_0000030 rdf:type owl:Class ;
-                  rdfs:subClassOf obo:IAO_0000030 ;
-                  obo:IAO_0000115 "The financial cost of attendance at a scientific event."@en ;
-                  obo:IAO_0000116 "PS: It needs to be discussed, if having fee as ICE is sufficient/correct."@en ;
-                  obo:IAO_0000117 "Philip Strömert"^^xsd:string ;
-                  rdfs:label "fee"@en .
+                  owl:equivalentClass [ owl:intersectionOf ( obo:IAO_0000001
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:specifies_event_fee ;
+                                                               owl:someValuesFrom obo:OBI_0000011
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  obo:IAO_0000115 "An event fee specification is a conditional specification that, as part of a plan specification, defines the currency and the amount of money that has to be paid by participants of an event depending on their role in that event."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/117"^^xsd:anyURI ;
+                  rdfs:label "event fee specification"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000034
