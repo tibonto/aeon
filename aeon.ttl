@@ -92,7 +92,8 @@ We also have the outstanding issue of how to aim different definitions to differ
                 obo:IAO_0000117 "PERSON:Daniel Schober"@en ;
                 obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
                 rdfs:isDefinedBy obo:iao.owl ;
-                rdfs:label "definition"@en .
+                rdfs:label "definition" ,
+                           "definition"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000116
@@ -262,6 +263,11 @@ dc:title rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/terms/license
 terms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#inSubset
+<http://www.geneontology.org/formats/oboInOwl#inSubset> rdf:type owl:AnnotationProperty ;
+                                                        rdfs:label "in_subset"^^xsd:string .
 
 
 ###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
@@ -566,6 +572,58 @@ obo:RO_0002012 rdf:type owl:ObjectProperty ;
                obo:IAO_0000115 "A part of relation that applies only between occurents." ;
                obo:IAO_0000412 "http://purl.obolibrary.org/obo/ro/releases/2021-03-08/ro.owl"^^xsd:string ;
                rdfs:label "occurent part of" .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002223
+obo:RO_0002223 rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               owl:inverseOf obo:RO_0002224 ;
+               obo:IAO_0000114 obo:IAO_0000125 ;
+               obo:IAO_0000115 "inverse of starts with" ;
+               obo:IAO_0000117 "Chris Mungall" ;
+               obo:IAO_0000119 "Allen" ;
+               obo:IAO_0000412 "http://purl.obolibrary.org/obo/ro/releases/2021-06-23/ro.owl"^^xsd:string ;
+               <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco> ;
+               rdfs:label "starts"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002224
+obo:RO_0002224 rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdf:type owl:TransitiveProperty ;
+               obo:IAO_0000112 "Every insulin receptor signaling pathway starts with the binding of a ligand to the insulin receptor" ;
+               obo:IAO_0000114 obo:IAO_0000125 ;
+               obo:IAO_0000115 "x starts with y if and only if x has part y and the time point at which x starts is equivalent to the time point at which y starts. Formally: α(y) = α(x) ∧ ω(y) < ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." ;
+               obo:IAO_0000117 "Chris Mungall" ;
+               obo:IAO_0000118 "started by" ;
+               obo:IAO_0000412 "http://purl.obolibrary.org/obo/ro/releases/2021-06-23/ro.owl"^^xsd:string ;
+               <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco> ;
+               rdfs:label "starts with"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002229
+obo:RO_0002229 rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               owl:inverseOf obo:RO_0002230 ;
+               obo:IAO_0000114 obo:IAO_0000125 ;
+               obo:IAO_0000115 "inverse of ends with" ;
+               obo:IAO_0000117 "Chris Mungall" ;
+               obo:IAO_0000412 "http://purl.obolibrary.org/obo/ro/releases/2021-06-23/ro.owl"^^xsd:string ;
+               <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco> ;
+               rdfs:label "ends"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002230
+obo:RO_0002230 rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdf:type owl:TransitiveProperty ;
+               obo:IAO_0000114 obo:IAO_0000125 ;
+               obo:IAO_0000115 "x ends with y if and only if x has part y and the time point at which x ends is equivalent to the time point at which y ends. Formally: α(y) > α(x) ∧ ω(y) = ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." ;
+               obo:IAO_0000117 "Chris Mungall" ;
+               obo:IAO_0000118 "finished by" ;
+               obo:IAO_0000412 "http://purl.obolibrary.org/obo/ro/releases/2021-06-23/ro.owl"^^xsd:string ;
+               <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco> ;
+               rdfs:label "ends with"@en .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0002234
