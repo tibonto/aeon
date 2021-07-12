@@ -92,8 +92,7 @@ We also have the outstanding issue of how to aim different definitions to differ
                 obo:IAO_0000117 "PERSON:Daniel Schober"@en ;
                 obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en ;
                 rdfs:isDefinedBy obo:iao.owl ;
-                rdfs:label "definition" ,
-                           "definition"@en .
+                rdfs:label "definition"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000116
