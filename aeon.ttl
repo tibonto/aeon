@@ -2726,6 +2726,14 @@ aeon:AEON_0000002 rdf:type owl:Class ;
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000055 ;
                                     owl:someValuesFrom aeon:AEON_0000005
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:RO_0002224 ;
+                                    owl:someValuesFrom aeon:AEON_0000001
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:RO_0002230 ;
+                                    owl:someValuesFrom aeon:AEON_0000001
                                   ] ;
                   obo:IAO_0000112 "International Semantic Web Conference (ISWC) series" ;
                   obo:IAO_0000115 "An academic event series is a planned process that is the set of all recurring academic events of a destinct identity. This destinct identity is usually demarked by a shared name that only differs with regard to some ordnial symbol, such as 1st or the year of the academic event."@en ;
