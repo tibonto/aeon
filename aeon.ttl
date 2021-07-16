@@ -1406,10 +1406,14 @@ aeon:duration rdf:type owl:DatatypeProperty ;
 
 ###  https://github.com/tibonto/aeon#end_date
 aeon:end_date rdf:type owl:DatatypeProperty ;
-              rdfs:subPropertyOf aeon:duration ;
-              rdfs:domain aeon:AEON_0000001 ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain obo:OBI_0000011 ;
               rdfs:range xsd:dateTimeStamp ;
-              rdfs:label "end date"@en ;
+              obo:IAO_0000115 "A data property to provide the planned end date of a planned process in the xsd:dateTimeStamp format."@en ;
+              obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"@en ;
+              obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/122"^^xsd:anyURI ;
+              rdfs:label "planned end date"@en ;
+              ns:term_status obo:IAO_0000125 ;
               aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P582\", \"label\": \"end_time\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:End_date\", \"label\": \"End_date\"},\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"end\"}}}"^^xsd:string .
 
 
@@ -1637,7 +1641,11 @@ aeon:previous_end_date rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf aeon:end_date ;
                        rdfs:domain aeon:AEON_0000001 ;
                        rdfs:range xsd:dateTime ;
-                       rdfs:label "previous end date"@en .
+                       obo:IAO_0000115 "A data property to provide the previously planned end date of a planned process in the xsd:dateTimeStamp format, when the planned end date has been rescheduled."@en ;
+                       obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"@en ;
+                       obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/122"^^xsd:anyURI ;
+                       rdfs:label "previously planned end date"@en ;
+                       ns:term_status obo:IAO_0000125 .
 
 
 ###  https://github.com/tibonto/aeon#previous_start_date
@@ -1645,7 +1653,11 @@ aeon:previous_start_date rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:start_date ;
                          rdfs:domain aeon:AEON_0000001 ;
                          rdfs:range xsd:dateTimeStamp ;
-                         rdfs:label "previous start date"@en .
+                         obo:IAO_0000115 "A data property to provide the previously planned start date of a planned process in the xsd:dateTimeStamp format, when the planned start date has been rescheduled."@en ;
+                         obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"@en ;
+                         obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/122"^^xsd:anyURI ;
+                         rdfs:label "previously planned start date"@en ;
+                         ns:term_status obo:IAO_0000125 .
 
 
 ###  https://github.com/tibonto/aeon#proceedings_site_count
@@ -1716,10 +1728,14 @@ aeon:sponsor_type rdf:type owl:DatatypeProperty ;
 
 ###  https://github.com/tibonto/aeon#start_date
 aeon:start_date rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf aeon:duration ;
-                rdfs:domain aeon:AEON_0000001 ;
-                rdfs:range xsd:dateTime ;
-                rdfs:label "start date"@en ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain obo:OBI_0000011 ;
+                rdfs:range xsd:dateTimeStamp ;
+                obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"@en ;
+                obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/122"^^xsd:anyURI ;
+                rdfs:label "planned start date"@en ;
+                ns:term_status obo:IAO_0000125 ,
+                               "A data property to provide the planned end date of a planned process in the xsd:dateTimeStamp format."@en ;
                 aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P580\", \"label\": \"start_time\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Start_date\", \"label\": \"Start_date\"},\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"start\"}}}"^^xsd:string .
 
 
