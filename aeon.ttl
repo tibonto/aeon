@@ -1301,6 +1301,19 @@ obo:OBI_0002815 rdf:type owl:DatatypeProperty ;
                 rdfs:label "has representation"@en .
 
 
+###  https://github.com/tibonto/aeon#AEON_0000074
+aeon:AEON_0000074 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf obo:OBI_0002815 ;
+                  rdfs:domain aeon:AEON_0000060 ;
+                  rdfs:range xsd:dateTimeStamp ;
+                  obo:IAO_0000115 "a data property which is intended to be used for the literal representation of a deadline specification the xsd:dateTimeStamp format"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/125"^^xsd:anyURI ;
+                  dc:date "2021-07-19T13:49:58Z"^^xsd:dateTime ;
+                  rdfs:label "has datetime value"@de ;
+                  ns:term_status obo:IAO_0000123 .
+
+
 ###  https://github.com/tibonto/aeon#CORE_ranking
 aeon:CORE_ranking rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf aeon:metric ;
