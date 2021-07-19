@@ -1282,32 +1282,6 @@ aeon:CORE_ranking rdf:type owl:DatatypeProperty ;
                   rdfs:label "CORE ranking"@en .
 
 
-###  https://github.com/tibonto/aeon#ID
-aeon:ID rdf:type owl:DatatypeProperty ;
-        rdfs:subPropertyOf owl:topDataProperty ;
-        rdfs:domain obo:IAO_0020000 ;
-        obo:IAO_0000115 "The literal value of an identifier."@en ;
-        rdfs:label "identifier value"@en .
-
-
-###  https://github.com/tibonto/aeon#ID_URL
-aeon:ID_URL rdf:type owl:DatatypeProperty ;
-            rdfs:subPropertyOf aeon:ID ;
-            rdfs:domain obo:IAO_0020000 ;
-            rdfs:range xsd:anyURI ;
-            rdfs:comment "The literal value of the full URL used by the identifier scheme, based on the concatination of base URL and ID (ID_URL:value = ID_base_URL:value + ID:value)."@en ;
-            rdfs:label "identifier URI"@en .
-
-
-###  https://github.com/tibonto/aeon#ID_base_URL
-aeon:ID_base_URL rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf aeon:ID ;
-                 rdfs:domain obo:IAO_0020000 ;
-                 rdfs:range xsd:anyURI ;
-                 rdfs:comment "The literal value of the base URL used by the identifier scheme."@en ;
-                 rdfs:label "identifier base URI"@en .
-
-
 ###  https://github.com/tibonto/aeon#abstract_deadline
 aeon:abstract_deadline rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf aeon:deadline ;
@@ -1517,15 +1491,6 @@ aeon:first_name rdf:type owl:DatatypeProperty ;
                 rdfs:range xsd:string ;
                 obo:IAO_0000115 "The literal value of the first name of a person."@en ;
                 rdfs:label "first name"@en .
-
-
-###  https://github.com/tibonto/aeon#landing_page
-aeon:landing_page rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf aeon:ID ;
-                  rdfs:domain obo:IAO_0020000 ;
-                  rdfs:range xsd:anyURI ;
-                  rdfs:comment "The literal value of the landing page (URL) an ID resolves to when following the ID_URL."@en ;
-                  rdfs:label "identifier landing page"@en .
 
 
 ###  https://github.com/tibonto/aeon#language
@@ -4300,14 +4265,12 @@ aeon:__PIDapalooza_Role_2 rdf:type owl:NamedIndividual ;
 
 ###  https://orcid.org/0000-0002-1595-3213
 <https://orcid.org/0000-0002-1595-3213> rdf:type owl:NamedIndividual ;
-                                        aeon:ID_base_URL "https://orcid.org/"^^xsd:anyURI ;
                                         obo:IAO_0000114 obo:IAO_0000002 ;
                                         rdfs:label <https://github.com/tibonto/_0000-0002-1595-3213> .
 
 
 ###  https://www.wikidata.org/wiki/Q65929359
 <https://www.wikidata.org/wiki/Q65929359> rdf:type owl:NamedIndividual ;
-                                          aeon:ID_base_URL "https://www.wikidata.org/wiki/"^^xsd:anyURI ;
                                           rdfs:comment obo:IAO_0000002 ;
                                           rdfs:label "_Q65929359" .
 
