@@ -2525,7 +2525,7 @@ obo:IAO_0022014 rdf:type owl:Class ;
                 obo:IAO_0000117 "PERSON: Michael Conlon"@en ;
                 obo:IAO_0000119 "https://isni.org/page/what-is-isni/"@en ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/ido/release/2021-02-19/ido.owl"^^xsd:string ;
-                rdfs:label "international standard name identifier"@en .
+                rdfs:label "international standard name identifier (IAO tbc)"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0022019
@@ -2538,7 +2538,7 @@ obo:IAO_0022019 rdf:type owl:Class ;
                 obo:IAO_0000117 "PERSON: Michael Conlon"@en ;
                 obo:IAO_0000119 "https://en.wikipedia.org/wiki/ORCID"@en ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/ido/release/2021-02-19/ido.owl"^^xsd:string ;
-                rdfs:label "open researcher and contributor identifier"@en .
+                rdfs:label "open researcher and contributor identifier (IAO tbc)"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0022022
@@ -2551,7 +2551,7 @@ obo:IAO_0022022 rdf:type owl:Class ;
                 obo:IAO_0000117 "PERSON: Michael Conlon"@en ;
                 obo:IAO_0000119 "http://ror.org"@en ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/ido/release/2021-02-19/ido.owl"^^xsd:string ;
-                rdfs:label "research organization registry identifier"@en .
+                rdfs:label "research organization registry identifier (IAO tbc)"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0022027
@@ -2564,7 +2564,7 @@ obo:IAO_0022027 rdf:type owl:Class ;
                 obo:IAO_0000117 "PERSON: Michael Conlon"@en ;
                 obo:IAO_0000119 "https://www.wikidata.org/wiki/Q43649390"@en ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/ido/release/2021-02-19/ido.owl"^^xsd:string ;
-                rdfs:label "wikidata q number"@en .
+                rdfs:label "wikidata q number (IAO tbc)"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0022034
@@ -2575,7 +2575,7 @@ obo:IAO_0022034 rdf:type owl:Class ;
                 obo:IAO_0000115 "An identifier assigned to an ice by a repository in which it is held"@en ;
                 obo:IAO_0000117 "PERSON: Michael Conlon"@en ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/ido/release/2021-02-19/ido.owl"^^xsd:string ;
-                rdfs:label "local information content entity identifier"@en .
+                rdfs:label "local information content entity identifier (IAO tbc)"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0022041
