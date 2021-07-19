@@ -1308,14 +1308,6 @@ aeon:CORE_ranking rdf:type owl:DatatypeProperty ;
                   rdfs:label "CORE ranking"@en .
 
 
-###  https://github.com/tibonto/aeon#abstract_deadline
-aeon:abstract_deadline rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf aeon:deadline ;
-                       rdfs:domain aeon:AEON_0000001 ;
-                       rdfs:range xsd:dateTimeStamp ;
-                       rdfs:label "abstract deadline"@en .
-
-
 ###  https://github.com/tibonto/aeon#acceptance_rate
 aeon:acceptance_rate rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf aeon:metric ;
@@ -1335,14 +1327,6 @@ aeon:accepted_short_papers rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf aeon:metric ;
                            rdfs:domain aeon:AEON_0000001 ;
                            rdfs:label "accepted short papers"@en .
-
-
-###  https://github.com/tibonto/aeon#camera-ready_deadline
-aeon:camera-ready_deadline rdf:type owl:DatatypeProperty ;
-                           rdfs:subPropertyOf aeon:deadline ;
-                           rdfs:domain aeon:AEON_0000001 ;
-                           rdfs:range xsd:dateTimeStamp ;
-                           rdfs:label "camera-ready deadline"@en .
 
 
 ###  https://github.com/tibonto/aeon#contact
@@ -1378,22 +1362,6 @@ aeon:coordinates rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf aeon:location ;
                  rdfs:domain obo:GAZ_00000448 ;
                  rdfs:label "coordinates"@en .
-
-
-###  https://github.com/tibonto/aeon#deadline
-aeon:deadline rdf:type owl:DatatypeProperty ;
-              rdfs:subPropertyOf owl:topDataProperty ;
-              rdfs:domain aeon:AEON_0000001 ;
-              rdfs:range xsd:dateTime ;
-              rdfs:label "deadline"@en .
-
-
-###  https://github.com/tibonto/aeon#demo_deadline
-aeon:demo_deadline rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf aeon:deadline ;
-                   rdfs:domain aeon:AEON_0000001 ;
-                   rdfs:range xsd:dateTimeStamp ;
-                   rdfs:label "demo deadline"@en .
 
 
 ###  https://github.com/tibonto/aeon#duration
@@ -1570,14 +1538,6 @@ aeon:name rdf:type owl:DatatypeProperty ;
           rdfs:label "name"@en .
 
 
-###  https://github.com/tibonto/aeon#notification_deadline
-aeon:notification_deadline rdf:type owl:DatatypeProperty ;
-                           rdfs:subPropertyOf aeon:deadline ;
-                           rdfs:domain aeon:AEON_0000001 ;
-                           rdfs:range xsd:dateTimeStamp ;
-                           rdfs:label "notification deadline"@en .
-
-
 ###  https://github.com/tibonto/aeon#number_of_attendees
 aeon:number_of_attendees rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:metric ;
@@ -1602,14 +1562,6 @@ aeon:organizational_name rdf:type owl:DatatypeProperty ;
                          rdfs:label "organizational name"@en .
 
 
-###  https://github.com/tibonto/aeon#paper_deadline
-aeon:paper_deadline rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf aeon:deadline ;
-                    rdfs:domain aeon:AEON_0000001 ;
-                    rdfs:range xsd:dateTimeStamp ;
-                    rdfs:label "paper deadline"@en .
-
-
 ###  https://github.com/tibonto/aeon#personal_name
 aeon:personal_name rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf aeon:name ;
@@ -1617,14 +1569,6 @@ aeon:personal_name rdf:type owl:DatatypeProperty ;
                    rdfs:range xsd:string ;
                    obo:IAO_0000115 "The literal value of the name to denote a person."@en ;
                    rdfs:label "personal name value"@en .
-
-
-###  https://github.com/tibonto/aeon#poster_deadline
-aeon:poster_deadline rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf aeon:deadline ;
-                     rdfs:domain aeon:AEON_0000001 ;
-                     rdfs:range xsd:dateTimeStamp ;
-                     rdfs:label "poster deadline"@en .
 
 
 ###  https://github.com/tibonto/aeon#previous_end_date
@@ -1737,14 +1681,6 @@ aeon:state rdf:type owl:DatatypeProperty ;
            rdfs:label "state"@en .
 
 
-###  https://github.com/tibonto/aeon#submission_deadline
-aeon:submission_deadline rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf aeon:deadline ;
-                         rdfs:domain aeon:AEON_0000001 ;
-                         rdfs:range xsd:dateTimeStamp ;
-                         rdfs:label "submission deadline"@en .
-
-
 ###  https://github.com/tibonto/aeon#submitted_papers
 aeon:submitted_papers rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf aeon:metric ;
@@ -1764,14 +1700,6 @@ aeon:summary_licence rdf:type owl:DatatypeProperty ;
                      rdfs:label "summary licence"@en .
 
 
-###  https://github.com/tibonto/aeon#tutorial_deadline
-aeon:tutorial_deadline rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf aeon:deadline ;
-                       rdfs:domain aeon:AEON_0000001 ;
-                       rdfs:range xsd:dateTimeStamp ;
-                       rdfs:label "tutorial deadline"@en .
-
-
 ###  https://github.com/tibonto/aeon#venue
 aeon:venue rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf aeon:location ;
@@ -1785,14 +1713,6 @@ aeon:venue_URL rdf:type owl:DatatypeProperty ;
                rdfs:domain aeon:AEON_0000025 ;
                rdfs:range xsd:anyURI ;
                rdfs:label "venue website"@en .
-
-
-###  https://github.com/tibonto/aeon#workshop_deadline
-aeon:workshop_deadline rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf aeon:deadline ;
-                       rdfs:domain aeon:AEON_0000001 ;
-                       rdfs:range xsd:dateTimeStamp ;
-                       rdfs:label "workshop deadline"@en .
 
 
 #################################################################
