@@ -14,7 +14,7 @@
 @base <https://github.com/tibonto/aeon> .
 
 <https://github.com/tibonto/aeon> rdf:type owl:Ontology ;
-                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.4.5> ;
+                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.4.6> ;
                                    dc:contributor "Christian Hauschke" ,
                                                   "Christoph Lange" ,
                                                   "Michael Conlon" ;
@@ -23,7 +23,7 @@
                                    dc:title "Academic Event Ontology"@en ;
                                    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                    rdfs:comment "AEON is being developed as a part of the ConfIDent project (https://projects.tib.eu/confident)." ;
-                                   owl:versionInfo "v0.4.5" .
+                                   owl:versionInfo "v0.4.6" .
 
 #################################################################
 #    Annotation properties
@@ -885,6 +885,32 @@ aeon:AEON_0000055 rdf:type owl:ObjectProperty ;
                   rdfs:label "has committee chair"@en .
 
 
+###  https://github.com/tibonto/aeon#AEON_0000072
+aeon:AEON_0000072 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf obo:IAO_0000136 ;
+                  owl:inverseOf aeon:AEON_0000073 ;
+                  rdfs:domain aeon:AEON_0000060 ;
+                  rdfs:range obo:OBI_0000011 ;
+                  obo:IAO_0000115 "see inverse relation 'has deadline"@en ;
+                  obo:IAO_0000116 "Given the fact that deadlines are specified in various planned processes this term should probably be regarded as a placeholder which ought to be defined in a broader ontology, maybe something like IAO?"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                  dc:date "2021-07-19T11:29:50Z"^^xsd:dateTime ;
+                  rdfs:label "specifies deadline of"@de ;
+                  ns:term_status obo:IAO_0000423 .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000073
+aeon:AEON_0000073 rdf:type owl:ObjectProperty ;
+                  rdfs:domain obo:OBI_0000011 ;
+                  rdfs:range aeon:AEON_0000060 ;
+                  obo:IAO_0000115 "a relation between a planned process and a deadline specification"@en ;
+                  obo:IAO_0000116 "Given the fact that deadlines are specified in various planned processes this term should probably be regarded as a placeholder which ought to be defined in a broader ontology, maybe something like IAO?"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                  dc:date "2021-07-19T11:30:01Z"^^xsd:dateTime ;
+                  rdfs:label "has deadline"@de ;
+                  ns:term_status obo:IAO_0000423 .
+
+
 ###  https://github.com/tibonto/aeon#AEON_0000075
 aeon:AEON_0000075 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:IAO_0000235 ;
@@ -1275,19 +1301,24 @@ obo:OBI_0002815 rdf:type owl:DatatypeProperty ;
                 rdfs:label "has representation"@en .
 
 
+###  https://github.com/tibonto/aeon#AEON_0000074
+aeon:AEON_0000074 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf obo:OBI_0002815 ;
+                  rdfs:domain aeon:AEON_0000060 ;
+                  rdfs:range xsd:dateTimeStamp ;
+                  obo:IAO_0000115 "a data property which is intended to be used for the literal representation of a deadline specification the xsd:dateTimeStamp format"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/125"^^xsd:anyURI ;
+                  dc:date "2021-07-19T13:49:58Z"^^xsd:dateTime ;
+                  rdfs:label "has datetime value"@de ;
+                  ns:term_status obo:IAO_0000123 .
+
+
 ###  https://github.com/tibonto/aeon#CORE_ranking
 aeon:CORE_ranking rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf aeon:metric ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:label "CORE ranking"@en .
-
-
-###  https://github.com/tibonto/aeon#abstract_deadline
-aeon:abstract_deadline rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf aeon:deadline ;
-                       rdfs:domain aeon:AEON_0000001 ;
-                       rdfs:range xsd:dateTimeStamp ;
-                       rdfs:label "abstract deadline"@en .
 
 
 ###  https://github.com/tibonto/aeon#acceptance_rate
@@ -1309,14 +1340,6 @@ aeon:accepted_short_papers rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf aeon:metric ;
                            rdfs:domain aeon:AEON_0000001 ;
                            rdfs:label "accepted short papers"@en .
-
-
-###  https://github.com/tibonto/aeon#camera-ready_deadline
-aeon:camera-ready_deadline rdf:type owl:DatatypeProperty ;
-                           rdfs:subPropertyOf aeon:deadline ;
-                           rdfs:domain aeon:AEON_0000001 ;
-                           rdfs:range xsd:dateTimeStamp ;
-                           rdfs:label "camera-ready deadline"@en .
 
 
 ###  https://github.com/tibonto/aeon#contact
@@ -1352,22 +1375,6 @@ aeon:coordinates rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf aeon:location ;
                  rdfs:domain obo:GAZ_00000448 ;
                  rdfs:label "coordinates"@en .
-
-
-###  https://github.com/tibonto/aeon#deadline
-aeon:deadline rdf:type owl:DatatypeProperty ;
-              rdfs:subPropertyOf owl:topDataProperty ;
-              rdfs:domain aeon:AEON_0000001 ;
-              rdfs:range xsd:dateTime ;
-              rdfs:label "deadline"@en .
-
-
-###  https://github.com/tibonto/aeon#demo_deadline
-aeon:demo_deadline rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf aeon:deadline ;
-                   rdfs:domain aeon:AEON_0000001 ;
-                   rdfs:range xsd:dateTimeStamp ;
-                   rdfs:label "demo deadline"@en .
 
 
 ###  https://github.com/tibonto/aeon#duration
@@ -1544,14 +1551,6 @@ aeon:name rdf:type owl:DatatypeProperty ;
           rdfs:label "name"@en .
 
 
-###  https://github.com/tibonto/aeon#notification_deadline
-aeon:notification_deadline rdf:type owl:DatatypeProperty ;
-                           rdfs:subPropertyOf aeon:deadline ;
-                           rdfs:domain aeon:AEON_0000001 ;
-                           rdfs:range xsd:dateTimeStamp ;
-                           rdfs:label "notification deadline"@en .
-
-
 ###  https://github.com/tibonto/aeon#number_of_attendees
 aeon:number_of_attendees rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:metric ;
@@ -1576,14 +1575,6 @@ aeon:organizational_name rdf:type owl:DatatypeProperty ;
                          rdfs:label "organizational name"@en .
 
 
-###  https://github.com/tibonto/aeon#paper_deadline
-aeon:paper_deadline rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf aeon:deadline ;
-                    rdfs:domain aeon:AEON_0000001 ;
-                    rdfs:range xsd:dateTimeStamp ;
-                    rdfs:label "paper deadline"@en .
-
-
 ###  https://github.com/tibonto/aeon#personal_name
 aeon:personal_name rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf aeon:name ;
@@ -1591,14 +1582,6 @@ aeon:personal_name rdf:type owl:DatatypeProperty ;
                    rdfs:range xsd:string ;
                    obo:IAO_0000115 "The literal value of the name to denote a person."@en ;
                    rdfs:label "personal name value"@en .
-
-
-###  https://github.com/tibonto/aeon#poster_deadline
-aeon:poster_deadline rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf aeon:deadline ;
-                     rdfs:domain aeon:AEON_0000001 ;
-                     rdfs:range xsd:dateTimeStamp ;
-                     rdfs:label "poster deadline"@en .
 
 
 ###  https://github.com/tibonto/aeon#previous_end_date
@@ -1711,14 +1694,6 @@ aeon:state rdf:type owl:DatatypeProperty ;
            rdfs:label "state"@en .
 
 
-###  https://github.com/tibonto/aeon#submission_deadline
-aeon:submission_deadline rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf aeon:deadline ;
-                         rdfs:domain aeon:AEON_0000001 ;
-                         rdfs:range xsd:dateTimeStamp ;
-                         rdfs:label "submission deadline"@en .
-
-
 ###  https://github.com/tibonto/aeon#submitted_papers
 aeon:submitted_papers rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf aeon:metric ;
@@ -1738,14 +1713,6 @@ aeon:summary_licence rdf:type owl:DatatypeProperty ;
                      rdfs:label "summary licence"@en .
 
 
-###  https://github.com/tibonto/aeon#tutorial_deadline
-aeon:tutorial_deadline rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf aeon:deadline ;
-                       rdfs:domain aeon:AEON_0000001 ;
-                       rdfs:range xsd:dateTimeStamp ;
-                       rdfs:label "tutorial deadline"@en .
-
-
 ###  https://github.com/tibonto/aeon#venue
 aeon:venue rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf aeon:location ;
@@ -1759,14 +1726,6 @@ aeon:venue_URL rdf:type owl:DatatypeProperty ;
                rdfs:domain aeon:AEON_0000025 ;
                rdfs:range xsd:anyURI ;
                rdfs:label "venue website"@en .
-
-
-###  https://github.com/tibonto/aeon#workshop_deadline
-aeon:workshop_deadline rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf aeon:deadline ;
-                       rdfs:domain aeon:AEON_0000001 ;
-                       rdfs:range xsd:dateTimeStamp ;
-                       rdfs:label "workshop deadline"@en .
 
 
 #################################################################
@@ -2499,7 +2458,7 @@ obo:IAO_0022014 rdf:type owl:Class ;
                 obo:IAO_0000117 "PERSON: Michael Conlon"@en ;
                 obo:IAO_0000119 "https://isni.org/page/what-is-isni/"@en ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/ido/release/2021-02-19/ido.owl"^^xsd:string ;
-                rdfs:label "international standard name identifier"@en .
+                rdfs:label "international standard name identifier (IAO tbc)"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0022019
@@ -2512,7 +2471,7 @@ obo:IAO_0022019 rdf:type owl:Class ;
                 obo:IAO_0000117 "PERSON: Michael Conlon"@en ;
                 obo:IAO_0000119 "https://en.wikipedia.org/wiki/ORCID"@en ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/ido/release/2021-02-19/ido.owl"^^xsd:string ;
-                rdfs:label "open researcher and contributor identifier"@en .
+                rdfs:label "open researcher and contributor identifier (IAO tbc)"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0022022
@@ -2525,7 +2484,7 @@ obo:IAO_0022022 rdf:type owl:Class ;
                 obo:IAO_0000117 "PERSON: Michael Conlon"@en ;
                 obo:IAO_0000119 "http://ror.org"@en ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/ido/release/2021-02-19/ido.owl"^^xsd:string ;
-                rdfs:label "research organization registry identifier"@en .
+                rdfs:label "research organization registry identifier (IAO tbc)"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0022027
@@ -2538,7 +2497,7 @@ obo:IAO_0022027 rdf:type owl:Class ;
                 obo:IAO_0000117 "PERSON: Michael Conlon"@en ;
                 obo:IAO_0000119 "https://www.wikidata.org/wiki/Q43649390"@en ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/ido/release/2021-02-19/ido.owl"^^xsd:string ;
-                rdfs:label "wikidata q number"@en .
+                rdfs:label "wikidata q number (IAO tbc)"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0022034
@@ -2549,7 +2508,7 @@ obo:IAO_0022034 rdf:type owl:Class ;
                 obo:IAO_0000115 "An identifier assigned to an ice by a repository in which it is held"@en ;
                 obo:IAO_0000117 "PERSON: Michael Conlon"@en ;
                 obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/ido/release/2021-02-19/ido.owl"^^xsd:string ;
-                rdfs:label "local information content entity identifier"@en .
+                rdfs:label "local information content entity identifier (IAO tbc)"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0022041
@@ -2750,6 +2709,10 @@ aeon:AEON_0000004 rdf:type owl:Class ;
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000051 ;
                                     owl:someValuesFrom aeon:AEON_0000030
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000051 ;
+                                    owl:someValuesFrom aeon:AEON_0000060
                                   ] ;
                   obo:IAO_0000111 "event type"@en ;
                   obo:IAO_0000115 "An academic event type specification is a plan specification that specifies the sociocultural format or type of an academic event by providing specifications of the objectives, conditions and actions needed in the realization of the academic event."@en ;
@@ -3163,6 +3126,7 @@ aeon:AEON_0000030 rdf:type owl:Class ;
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
+                  owl:disjointWith aeon:AEON_0000060 ;
                   obo:IAO_0000115 "An event fee specification is a conditional specification that, as part of a plan specification, specifies the currency and the amount of money that has to be paid by participants of an event depending on their role in that event."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/117"^^xsd:anyURI ;
@@ -3190,6 +3154,162 @@ aeon:AEON_0000042 rdf:type owl:Class ;
 Academic event committees are usually formed in the planning process of those academic events that need to subdevide and delegate the tasks that need to be carried out for the realization of the academic event.."""@en ;
                   obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
                   rdfs:label "academic event committee"@en .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000060
+aeon:AEON_0000060 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:IAO_0000001 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000050 ;
+                                    owl:someValuesFrom obo:IAO_0000007
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000050 ;
+                                    owl:someValuesFrom aeon:AEON_0000004
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty aeon:AEON_0000072 ;
+                                    owl:someValuesFrom obo:OBI_0000011
+                                  ] ;
+                  obo:IAO_0000115 "A deadline specification is a conditional specification that, as part of an action specification, defines until when a specified action has to be carried out."@en ;
+                  obo:IAO_0000116 "Given the fact that deadlines are specified in various planned processes this term should probably be regarded as a placeholder which ought to be defined in a broader ontology, maybe something like IAO?"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/125"@en ;
+                  dc:date "2021-07-19T08:50:13Z"^^xsd:dateTime ;
+                  rdfs:label "deadline specification"@en ;
+                  ns:term_status obo:IAO_0000423 .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000061
+aeon:AEON_0000061 rdf:type owl:Class ;
+                  rdfs:subClassOf aeon:AEON_0000067 ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000050 ;
+                                    owl:someValuesFrom aeon:AEON_0000071
+                                  ] ;
+                  obo:IAO_0000115 "An abstract deadline is a submission deadline that, as part of a call for abstracts of an academic event, specifies the date until which a contribution to a planned process in form of an abstract has to be submitted."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/125"^^xsd:anyURI ;
+                  dc:date "2021-07-19T09:55:44Z"^^xsd:dateTime ;
+                  rdfs:label "abstract deadline"@en ;
+                  ns:term_status obo:IAO_0000123 .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000062
+aeon:AEON_0000062 rdf:type owl:Class ;
+                  rdfs:subClassOf aeon:AEON_0000067 ;
+                  obo:IAO_0000115 "A camera-ready deadline is a submission deadline that, as part of a call for papers of an academic event, specifies the date until which a contribution to a planned process that is ready for publishing has to be submitted."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/125"^^xsd:anyURI ;
+                  dc:date "2021-07-19T09:55:44Z"^^xsd:dateTime ;
+                  rdfs:label "camera-ready deadline"@en ;
+                  ns:term_status obo:IAO_0000123 .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000063
+aeon:AEON_0000063 rdf:type owl:Class ;
+                  rdfs:subClassOf aeon:AEON_0000067 ;
+                  obo:IAO_0000115 "A demo deadline is a submission deadline that, as part of a call for papers of an academic event, specifies the date until which a contribution to a planned process in form of a demonstration has to be submitted."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/125"^^xsd:anyURI ;
+                  dc:date "2021-07-19T09:55:44Z"^^xsd:dateTime ;
+                  rdfs:label "demo deadline"@de ;
+                  ns:term_status obo:IAO_0000123 .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000064
+aeon:AEON_0000064 rdf:type owl:Class ;
+                  rdfs:subClassOf aeon:AEON_0000060 ;
+                  obo:IAO_0000115 "A notification deadline is a deadline specification that specifies until when a participant of a planned process has to inform another participant of that process about something concering the plan of the process."@en ;
+                  obo:IAO_0000116 "Given the fact that notification deadlines are specified in various planned processes this term should probably be regarded as a placeholder which ought to be defined in a broader ontology, maybe something like IAO?"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/125"^^xsd:anyURI ;
+                  dc:date "2021-07-19T09:55:44Z"^^xsd:dateTime ;
+                  rdfs:label "notification deadline"@en ;
+                  ns:term_status obo:IAO_0000423 .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000065
+aeon:AEON_0000065 rdf:type owl:Class ;
+                  rdfs:subClassOf aeon:AEON_0000067 ;
+                  obo:IAO_0000115 "A paper deadline is a submission deadline that, as part of a call for papers of an academic event, specifies the date until which a contribution to a planned process in form of a paper has to be submitted."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/125"^^xsd:anyURI ;
+                  dc:date "2021-07-19T09:55:44Z"^^xsd:dateTime ;
+                  rdfs:label "paper deadline"@en ;
+                  ns:term_status obo:IAO_0000123 .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000066
+aeon:AEON_0000066 rdf:type owl:Class ;
+                  rdfs:subClassOf aeon:AEON_0000067 ;
+                  obo:IAO_0000115 "A poster deadline is a submission deadline that, as part of a call for papers of an academic event, specifies the date until which a contribution to a planned process in form of a poster has to be submitted."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/125"^^xsd:anyURI ;
+                  dc:date "2021-07-19T09:55:44Z"^^xsd:dateTime ;
+                  rdfs:label "poster deadline"@en ;
+                  ns:term_status obo:IAO_0000123 .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000067
+aeon:AEON_0000067 rdf:type owl:Class ;
+                  rdfs:subClassOf aeon:AEON_0000060 ;
+                  obo:IAO_0000115 "A conditional specification that, as part of an academic event type specification, specifies the date until which contributions that answer the call for papers of an academic event have to be submitted."@en ;
+                  obo:IAO_0000116 "Given the fact that submission deadlines are specified in various planned processes this term should probably be regarded as a placeholder which ought to be defined in a broader ontology, maybe something like IAO?"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/125"^^xsd:anyURI ;
+                  dc:date "2021-07-19T09:55:44Z"^^xsd:dateTime ;
+                  rdfs:label "submission deadline"@en ;
+                  ns:term_status obo:IAO_0000423 .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000068
+aeon:AEON_0000068 rdf:type owl:Class ;
+                  rdfs:subClassOf aeon:AEON_0000067 ;
+                  obo:IAO_0000115 "A tutorial deadline is a submission deadline that, as part of a call for papers of an academic event, specifies the date until which a contribution to a planned process in form of a tutorial has to be submitted."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/125"^^xsd:anyURI ;
+                  dc:date "2021-07-19T09:55:44Z"^^xsd:dateTime ;
+                  rdfs:label "tutorial deadline"@en ;
+                  ns:term_status obo:IAO_0000123 .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000069
+aeon:AEON_0000069 rdf:type owl:Class ;
+                  rdfs:subClassOf aeon:AEON_0000067 ;
+                  obo:IAO_0000115 "A workshop deadline is a submission deadline that, as part of a call for papers of an academic event, specifies the date until which a contribution to a planned process in form of a workshop has to be submitted."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/125"^^xsd:anyURI ;
+                  dc:date "2021-07-19T09:55:44Z"^^xsd:dateTime ;
+                  rdfs:label "workshop deadline"@en ;
+                  ns:term_status obo:IAO_0000123 .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000070
+aeon:AEON_0000070 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:IAO_0000007 ;
+                  owl:disjointWith aeon:AEON_0000071 ;
+                  obo:IAO_0000115 "A call for papers is an action specification in which the organizers of an academic event describe to prospective presenters the broad theme of the event, list the event's topics and formalities such as what kind of paper has to be submitted, to whom, and by what deadline."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                  obo:IAO_0000118 "CFP"@en ;
+                  obo:IAO_0000119 "https://en.wikipedia.org/wiki/Academic_conference#Organizing_an_academic_conference"@en ;
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/125"@en ;
+                  dc:date "2021-07-19T10:06:59Z"^^xsd:dateTime ;
+                  rdfs:label "call for papers"@en ;
+                  ns:term_status obo:IAO_0000123 ;
+                  skos:altLabel "CFP"@en .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000071
+aeon:AEON_0000071 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:IAO_0000007 ;
+                  obo:IAO_0000115 "A call for abstracts is an action specification in which the organizers of an academic event describe to prospective presenters the broad theme of the event, list the event's topics and formalities such as what kind of abstract has to be submitted, to whom, and by what deadline."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                  obo:IAO_0000119 "https://en.wikipedia.org/wiki/Academic_conference#Organizing_an_academic_conference"@en ;
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/125"@en ;
+                  dc:date "2021-07-19T11:24:02Z"^^xsd:dateTime ;
+                  rdfs:label "call for abstracts"@de ;
+                  ns:term_status obo:IAO_0000123 .
 
 
 ###  https://github.com/tibonto/aeon#attendance_fee_specification
@@ -4302,6 +4422,18 @@ aeon:__PIDapalooza_Role_2 rdf:type owl:NamedIndividual ;
                 aeon:AEON_0000011
                 aeon:AEON_0000012
                 aeon:AEON_0000013
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( aeon:AEON_0000061
+                aeon:AEON_0000062
+                aeon:AEON_0000063
+                aeon:AEON_0000065
+                aeon:AEON_0000066
+                aeon:AEON_0000068
+                aeon:AEON_0000069
               )
 ] .
 
