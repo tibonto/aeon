@@ -1349,11 +1349,6 @@ aeon:contact_email rdf:type owl:DatatypeProperty ;
                    rdfs:label "contact email value"@en .
 
 
-###  https://github.com/tibonto/aeon#contact_person_name
-aeon:contact_person_name rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf aeon:contact ;
-                         rdfs:domain aeon:AEON_0000009 ;
-                         rdfs:label "contact person value"@en .
 
 
 ###  https://github.com/tibonto/aeon#contact_phone
