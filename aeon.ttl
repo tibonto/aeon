@@ -1342,13 +1342,6 @@ aeon:accepted_short_papers rdf:type owl:DatatypeProperty ;
                            rdfs:label "accepted short papers"@en .
 
 
-###  https://github.com/tibonto/aeon#contact
-aeon:contact rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf owl:topDataProperty ;
-             rdfs:domain aeon:AEON_0000009 ;
-             rdfs:label "contact"@en .
-
-
 ###  https://github.com/tibonto/aeon#contact_email
 aeon:contact_email rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf aeon:contact ;
