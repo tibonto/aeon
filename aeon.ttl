@@ -1344,18 +1344,31 @@ aeon:accepted_short_papers rdf:type owl:DatatypeProperty ;
 
 ###  https://github.com/tibonto/aeon#contact_email
 aeon:contact_email rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf aeon:contact ;
-                   rdfs:domain aeon:AEON_0000009 ;
-                   rdfs:label "contact email value"@en .
-
-
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain aeon:contributor ;
+                   obo:IAO_0000112 "contact@academic-event.org"@en ;
+                   obo:IAO_0000115 "This data property associates an email adress with a contributor."@en ;
+                   obo:IAO_0000116 """It needs to be discussed, if we need this information to be modeled more finegrained using e.g. iao:'email address' (see alsohttps://github.com/information-artifact-ontology/IAO/issues/130).
+For now it seems sufficient to have a data property."""@en ;
+                   obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
+                   obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/129"@en ;
+                   rdfs:label "email address value"@en ;
+                   ns:term_status obo:IAO_0000125 .
 
 
 ###  https://github.com/tibonto/aeon#contact_phone
 aeon:contact_phone rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf aeon:contact ;
-                   rdfs:domain aeon:AEON_0000009 ;
-                   rdfs:label "contact phone value"@en .
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain aeon:contributor ;
+                   rdfs:range xsd:string ;
+                   obo:IAO_0000112 "0049 176 123456"@en ;
+                   obo:IAO_0000115 "This data property associates a telephone number with a contributor"@en ;
+                   obo:IAO_0000116 """It needs to be discussed, if we need this information to be modeled more finegrained using e.g. iao:'email address' (see alsohttps://github.com/information-artifact-ontology/IAO/issues/130).
+For now it seems sufficient to have a data property."""@en ;
+                   obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
+                   obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/129"@en ;
+                   rdfs:label "phone number value"@en ;
+                   ns:term_status obo:IAO_0000125 .
 
 
 ###  https://github.com/tibonto/aeon#coordinates
