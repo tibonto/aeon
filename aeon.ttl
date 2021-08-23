@@ -14,7 +14,7 @@
 @base <https://github.com/tibonto/aeon> .
 
 <https://github.com/tibonto/aeon> rdf:type owl:Ontology ;
-                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.4.6> ;
+                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.4.7> ;
                                    dc:contributor "Christian Hauschke" ,
                                                   "Christoph Lange" ,
                                                   "Michael Conlon" ;
@@ -23,7 +23,7 @@
                                    dc:title "Academic Event Ontology"@en ;
                                    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                    rdfs:comment "AEON is being developed as a part of the ConfIDent project (https://projects.tib.eu/confident)." ;
-                                   owl:versionInfo "v0.4.6" .
+                                   owl:versionInfo "v0.4.7" .
 
 #################################################################
 #    Annotation properties
@@ -1503,7 +1503,14 @@ aeon:first_name rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#language
 aeon:language rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
-              rdfs:label "language"@en ;
+              rdfs:domain aeon:AEON_0000001 ;
+              rdfs:range xsd:string ;
+              obo:IAO_0000115 "This data property should be used to provide the language that is officially spoken at an event . The allowed string should preferrably be encoded in the ISO 639-1 standard (e.g. German would be \"de\")."@en ;
+              obo:IAO_0000116 "It needs to be discussed, if a data property is sufficient for our use case, or if it might be better to model the officially spoken language of an academic event as a generically dependent continuant that participates in this planned process as sugessted by the developers of the language ontology (https://github.com/vivo-ontologies/language-ontology/wiki/Usage)."@en ;
+              obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"@en ;
+              obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/127"@en ;
+              rdfs:label "event language"@en ;
+              ns:term_status obo:IAO_0000428 ;
               aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2936\", \"label\": \"language_usedLabel\"}}"^^xsd:string .
 
 
