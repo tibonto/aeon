@@ -4363,6 +4363,7 @@ aeon:_PIDapalooza2020 rdf:type owl:NamedIndividual ;
 aeon:_PIDapalooza_Role_3 rdf:type owl:NamedIndividual ;
                          obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
                          dc:date "2021-08-23T11:56:25Z"^^xsd:dateTime ;
+                         rdfs:label "_PIDapalooza_Role_3" ;
                          ns:term_status obo:IAO_0000002 .
 
 
@@ -4392,6 +4393,7 @@ aeon:_Person_3 rdf:type owl:NamedIndividual ;
                aeon:contact_phone "0012 3456789"^^xsd:string ;
                obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
                dc:date "2021-08-23T11:56:08Z"^^xsd:dateTime ;
+               rdfs:label "_Person_3" ;
                ns:term_status obo:IAO_0000002 .
 
 
