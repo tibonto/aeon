@@ -14,7 +14,7 @@
 @base <https://github.com/tibonto/aeon> .
 
 <https://github.com/tibonto/aeon> rdf:type owl:Ontology ;
-                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.4.7> ;
+                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.4.8> ;
                                    dc:contributor "Christian Hauschke" ,
                                                   "Christoph Lange" ,
                                                   "Michael Conlon" ;
@@ -23,7 +23,7 @@
                                    dc:title "Academic Event Ontology"@en ;
                                    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                    rdfs:comment "AEON is being developed as a part of the ConfIDent project (https://projects.tib.eu/confident)." ;
-                                   owl:versionInfo "v0.4.7" .
+                                   owl:versionInfo "v0.4.8" .
 
 #################################################################
 #    Annotation properties
@@ -1342,32 +1342,33 @@ aeon:accepted_short_papers rdf:type owl:DatatypeProperty ;
                            rdfs:label "accepted short papers"@en .
 
 
-###  https://github.com/tibonto/aeon#contact
-aeon:contact rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf owl:topDataProperty ;
-             rdfs:domain aeon:AEON_0000009 ;
-             rdfs:label "contact"@en .
-
-
 ###  https://github.com/tibonto/aeon#contact_email
 aeon:contact_email rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf aeon:contact ;
-                   rdfs:domain aeon:AEON_0000009 ;
-                   rdfs:label "contact email value"@en .
-
-
-###  https://github.com/tibonto/aeon#contact_person_name
-aeon:contact_person_name rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf aeon:contact ;
-                         rdfs:domain aeon:AEON_0000009 ;
-                         rdfs:label "contact person value"@en .
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain aeon:contributor ;
+                   obo:IAO_0000112 "contact@academic-event.org"@en ;
+                   obo:IAO_0000115 "This data property associates an email adress with a contributor."@en ;
+                   obo:IAO_0000116 """It needs to be discussed, if we need this information to be modeled more finegrained using e.g. iao:'email address' (see alsohttps://github.com/information-artifact-ontology/IAO/issues/130).
+For now it seems sufficient to have a data property."""@en ;
+                   obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
+                   obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/129"@en ;
+                   rdfs:label "email address value"@en ;
+                   ns:term_status obo:IAO_0000125 .
 
 
 ###  https://github.com/tibonto/aeon#contact_phone
 aeon:contact_phone rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf aeon:contact ;
-                   rdfs:domain aeon:AEON_0000009 ;
-                   rdfs:label "contact phone value"@en .
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain aeon:contributor ;
+                   rdfs:range xsd:string ;
+                   obo:IAO_0000112 "0049 176 123456"@en ;
+                   obo:IAO_0000115 "This data property associates a telephone number with a contributor"@en ;
+                   obo:IAO_0000116 """It needs to be discussed, if we need this information to be modeled more finegrained using e.g. iao:'email address' (see alsohttps://github.com/information-artifact-ontology/IAO/issues/130).
+For now it seems sufficient to have a data property."""@en ;
+                   obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
+                   obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/129"@en ;
+                   rdfs:label "phone number value"@en ;
+                   ns:term_status obo:IAO_0000125 .
 
 
 ###  https://github.com/tibonto/aeon#coordinates
@@ -4342,9 +4343,11 @@ aeon:_PIDapalooza rdf:type owl:NamedIndividual ;
 
 ###  https://github.com/tibonto/aeon#_PIDapalooza2020
 aeon:_PIDapalooza2020 rdf:type owl:NamedIndividual ;
-                      obo:BFO_0000055 aeon:__PIDapalooza_Role_1 ,
+                      obo:BFO_0000055 aeon:_PIDapalooza_Role_3 ,
+                                      aeon:__PIDapalooza_Role_1 ,
                                       aeon:__PIDapalooza_Role_2 ;
                       aeon:AEON_0000050 aeon:_Person_1 ;
+                      aeon:AEON_0000053 aeon:_Person_3 ;
                       aeon:AEON_0000055 aeon:_Person_2 ;
                       aeon:AEON_0000080 <https://www.wikidata.org/wiki/Q65929359> ;
                       aeon:AEON_0000084 aeon:_PIDapalooza ;
@@ -4356,9 +4359,16 @@ aeon:_PIDapalooza2020 rdf:type owl:NamedIndividual ;
                       rdfs:label "_PIDapalooza2020"@en .
 
 
+###  https://github.com/tibonto/aeon#_PIDapalooza_Role_3
+aeon:_PIDapalooza_Role_3 rdf:type owl:NamedIndividual ;
+                         obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                         dc:date "2021-08-23T11:56:25Z"^^xsd:dateTime ;
+                         rdfs:label "_PIDapalooza_Role_3" ;
+                         ns:term_status obo:IAO_0000002 .
+
+
 ###  https://github.com/tibonto/aeon#_Person_1
 aeon:_Person_1 rdf:type owl:NamedIndividual ;
-               obo:IAO_0000235 <https://orcid.org/0000-0002-1595-3213> ;
                obo:RO_0000087 aeon:__PIDapalooza_Role_1 ;
                aeon:AEON_0000078 <https://orcid.org/0000-0002-1595-3213> ;
                aeon:first_name "Philip"^^xsd:string ;
@@ -4374,6 +4384,17 @@ aeon:_Person_2 rdf:type owl:NamedIndividual ;
                obo:IAO_0000114 obo:IAO_0000002 ;
                obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                rdfs:label "_Person_2" .
+
+
+###  https://github.com/tibonto/aeon#_Person_3
+aeon:_Person_3 rdf:type owl:NamedIndividual ;
+               obo:RO_0000087 aeon:_PIDapalooza_Role_3 ;
+               aeon:contact_email "contact@pidapalooza.org"^^xsd:string ;
+               aeon:contact_phone "0012 3456789"^^xsd:string ;
+               obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+               dc:date "2021-08-23T11:56:08Z"^^xsd:dateTime ;
+               rdfs:label "_Person_3" ;
+               ns:term_status obo:IAO_0000002 .
 
 
 ###  https://github.com/tibonto/aeon#__PIDapalooza_Role_1
