@@ -1492,15 +1492,6 @@ aeon:fee_currency rdf:type owl:DatatypeProperty ;
                   rdfs:label "event fee currency"@en .
 
 
-###  https://github.com/tibonto/aeon#first_name
-aeon:first_name rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf aeon:personal_name ;
-                rdfs:domain obo:NCBITaxon_9606 ;
-                rdfs:range xsd:string ;
-                obo:IAO_0000115 "The literal value of the first name of a person."@en ;
-                rdfs:label "first name"@en .
-
-
 ###  https://github.com/tibonto/aeon#language
 aeon:language rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
@@ -1513,15 +1504,6 @@ aeon:language rdf:type owl:DatatypeProperty ;
               rdfs:label "event language"@en ;
               ns:term_status obo:IAO_0000428 ;
               aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2936\", \"label\": \"language_usedLabel\"}}"^^xsd:string .
-
-
-###  https://github.com/tibonto/aeon#last_name
-aeon:last_name rdf:type owl:DatatypeProperty ;
-               rdfs:subPropertyOf aeon:personal_name ;
-               rdfs:domain obo:NCBITaxon_9606 ;
-               rdfs:range xsd:string ;
-               obo:IAO_0000115 "The literal value of the last name, or family name, of a person."@en ;
-               rdfs:label "last name"@en .
 
 
 ###  https://github.com/tibonto/aeon#location
@@ -1552,13 +1534,6 @@ aeon:metric rdf:type owl:DatatypeProperty ;
             rdfs:label "metric"@en .
 
 
-###  https://github.com/tibonto/aeon#name
-aeon:name rdf:type owl:DatatypeProperty ;
-          rdfs:subPropertyOf owl:topDataProperty ;
-          obo:IAO_0000115 "The literal value of the name of a thing."@en ;
-          rdfs:label "name"@en .
-
-
 ###  https://github.com/tibonto/aeon#number_of_attendees
 aeon:number_of_attendees rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf aeon:metric ;
@@ -1572,24 +1547,6 @@ aeon:number_of_tracks rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf aeon:metric ;
                       rdfs:domain aeon:AEON_0000001 ;
                       rdfs:label "number of tracks"@en .
-
-
-###  https://github.com/tibonto/aeon#organizational_name
-aeon:organizational_name rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf aeon:name ;
-                         rdfs:domain obo:OBI_0000245 ;
-                         rdfs:range xsd:string ;
-                         obo:IAO_0000115 "The literal value of the name to denote an organization."@en ;
-                         rdfs:label "organizational name"@en .
-
-
-###  https://github.com/tibonto/aeon#personal_name
-aeon:personal_name rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf aeon:name ;
-                   rdfs:domain obo:NCBITaxon_9606 ;
-                   rdfs:range xsd:string ;
-                   obo:IAO_0000115 "The literal value of the name to denote a person."@en ;
-                   rdfs:label "personal name value"@en .
 
 
 ###  https://github.com/tibonto/aeon#previous_end_date
@@ -1621,41 +1578,6 @@ aeon:proceedings_site_count rdf:type owl:DatatypeProperty ;
                             rdfs:subPropertyOf aeon:metric ;
                             rdfs:domain aeon:AEON_0000001 ;
                             rdfs:label "proceeding cite count"@en .
-
-
-###  https://github.com/tibonto/aeon#process_acronym
-aeon:process_acronym rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf aeon:name ;
-                     rdfs:range xsd:string ;
-                     obo:IAO_0000112 "\"DILS 2019\" is the official acronym of the academic event \"13th International Conference on Data Integration in Life Science\""@en ;
-                     obo:IAO_0000115 "The literal value of the official acronym of an aeon:process, that is either an academic event or event series."@en ;
-                     rdfs:label "acronym"@en ;
-                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P1813\", \"label\": \"short_nameLabel\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#abbreviatedNameForTheConferenceOrEvent\", \"label\": \"Abbreviated name for the conference or event\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Acronym\", \"label\": \"Acronym\"}, \"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"acronym\"}}}"^^xsd:string .
-
-
-###  https://github.com/tibonto/aeon#process_alternative_name
-aeon:process_alternative_name rdf:type owl:DatatypeProperty ;
-                              rdfs:subPropertyOf aeon:name ;
-                              rdfs:range xsd:string ;
-                              rdfs:comment "The Literal value of an alternative name of an aeon:process, that is either an academic event or event series."@en ;
-                              rdfs:label "alternative name"@en ;
-                              aeon:AEON_0000026 "{\"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#variantNameForTheConferenceOrEvent\", \"label\": \"Variant name for the conference or event\"}, \"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=title\", \"json_api_key\": \"title\"}}"^^xsd:string .
-
-
-###  https://github.com/tibonto/aeon#process_former_name
-aeon:process_former_name rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf aeon:name ;
-                         rdfs:range xsd:string ;
-                         rdfs:comment "The Literal value of the former official name of an aeon:process, that is either an academic event or event series."@en ;
-                         rdfs:label "former name"@en .
-
-
-###  https://github.com/tibonto/aeon#process_translated_name
-aeon:process_translated_name rdf:type owl:DatatypeProperty ;
-                             rdfs:subPropertyOf aeon:name ;
-                             rdfs:range xsd:string ;
-                             obo:IAO_0000115 "The literal value of the translation of the official name (title) of an aeon:process, that is either an academic event or event series."@en ;
-                             rdfs:label "translated name"@en .
 
 
 ###  https://github.com/tibonto/aeon#process_website
