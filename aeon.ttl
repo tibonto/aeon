@@ -4292,9 +4292,6 @@ aeon:_PIDapalooza_Role_3 rdf:type owl:NamedIndividual ;
 ###  https://github.com/tibonto/aeon#_Person_1
 aeon:_Person_1 rdf:type owl:NamedIndividual ;
                obo:RO_0000087 aeon:__PIDapalooza_Role_1 ;
-               aeon:AEON_0000078 <https://orcid.org/0000-0002-1595-3213> ;
-               aeon:first_name "Philip"^^xsd:string ;
-               aeon:last_name "Strömert"^^xsd:string ;
                obo:IAO_0000114 obo:IAO_0000002 ;
                rdfs:label "_Person_1" .
 
@@ -4302,7 +4299,6 @@ aeon:_Person_1 rdf:type owl:NamedIndividual ;
 ###  https://github.com/tibonto/aeon#_Person_2
 aeon:_Person_2 rdf:type owl:NamedIndividual ;
                obo:RO_0000087 aeon:__PIDapalooza_Role_2 ;
-               aeon:personal_name "Sam general committee Chair" ;
                obo:IAO_0000114 obo:IAO_0000002 ;
                obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                rdfs:label "_Person_2" .
