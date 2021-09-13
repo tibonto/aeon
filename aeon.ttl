@@ -14,7 +14,7 @@
 @base <https://github.com/tibonto/aeon> .
 
 <https://github.com/tibonto/aeon> rdf:type owl:Ontology ;
-                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.4.8> ;
+                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.4.9> ;
                                    dc:contributor "Christian Hauschke" ,
                                                   "Christoph Lange" ,
                                                   "Michael Conlon" ;
@@ -23,7 +23,7 @@
                                    dc:title "Academic Event Ontology"@en ;
                                    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                    rdfs:comment "AEON is being developed as a part of the ConfIDent project (https://projects.tib.eu/confident)." ;
-                                   owl:versionInfo "v0.4.8" .
+                                   owl:versionInfo "v0.4.9" .
 
 #################################################################
 #    Annotation properties
