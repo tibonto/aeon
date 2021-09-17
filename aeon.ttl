@@ -304,6 +304,16 @@ aeon:AEON_0000026 rdf:type owl:AnnotationProperty ;
                   rdfs:label "maps to"@de .
 
 
+###  https://github.com/tibonto/aeon#AEON_0000091
+aeon:AEON_0000091 rdf:type owl:AnnotationProperty ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "A proper name that has been formed from the initial components of a longer proper name or name phrase, usually using individual initial letters."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/132"@en ;
+                  dc:date "2021-09-13T08:55:02Z"^^xsd:dateTime ;
+                  rdfs:label "acronym"@en .
+
+
 #################################################################
 #    Object Properties
 #################################################################
@@ -3240,6 +3250,25 @@ aeon:AEON_0000071 rdf:type owl:Class ;
                   dc:date "2021-07-19T11:24:02Z"^^xsd:dateTime ;
                   rdfs:label "call for abstracts"@de ;
                   ns:term_status obo:IAO_0000123 .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000090
+aeon:AEON_0000090 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( obo:IAO_0020000
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:IAO_0000219 ;
+                                                               owl:allValuesFrom obo:OBI_0000011
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "An identifier that is a proper name identifying a planned process."@en ;
+                  obo:IAO_0000116 "TODO: request term from IAO"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/132"@en ;
+                  dc:date "2021-09-13T08:55:02Z"^^xsd:dateTime ;
+                  rdfs:label "planned process name"@en .
 
 
 ###  https://github.com/tibonto/aeon#attendance_fee_specification
