@@ -1306,12 +1306,12 @@ aeon:AEON_0000074 rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf obo:OBI_0002815 ;
                   rdfs:domain aeon:AEON_0000060 ;
                   rdfs:range xsd:dateTimeStamp ;
-                  obo:IAO_0000115 "a data property which is intended to be used for the literal representation of a deadline specification the xsd:dateTimeStamp format"@en ;
+                  obo:IAO_0000115 "A data property which is intended to be used for the literal representation of a deadline specification in the xsd:dateTimeStamp format"@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
                   obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/125"^^xsd:anyURI ;
                   dc:date "2021-07-19T13:49:58Z"^^xsd:dateTime ;
-                  rdfs:label "has datetime value"@de ;
-                  ns:term_status obo:IAO_0000123 .
+                  rdfs:label "deadline datetime value"@en ;
+                  ns:term_status obo:IAO_0000423 .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000091
@@ -1324,7 +1324,7 @@ aeon:AEON_0000091 rdf:type owl:DatatypeProperty ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
                   obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/132"@en ;
                   dc:date "2021-09-13T08:55:02Z"^^xsd:dateTime ;
-                  rdfs:label "acronym"@en .
+                  rdfs:label "planned process acronym"@en .
 
 
 ###  https://github.com/tibonto/aeon#CORE_ranking
@@ -1534,7 +1534,7 @@ aeon:logo rdf:type owl:DatatypeProperty ;
 
 ###  https://github.com/tibonto/aeon#meeting_URL
 aeon:meeting_URL rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf aeon:location ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
                  rdfs:domain aeon:AEON_0000029 ;
                  rdfs:range xsd:anyURI ;
                  rdfs:label "meeting URL"@en .
@@ -2372,7 +2372,7 @@ obo:IAO_0020015 rdf:type owl:Class ;
                 obo:IAO_0000115 "A personal name is a proper name identifying an individual person."@en ;
                 obo:IAO_0000117 "Mathias Brochhausen" ;
                 obo:IAO_0000119 "http://en.wikipedia.org/wiki/Personal_name" ;
-                obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/pno/release/2020-04-18/pno.owl"^^xsd:string ;
+                obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/pno/release/2021-06-11/pno.owl"^^xsd:string ;
                 rdfs:comment "Personal names \"today usually comprises a given name bestowed at birth or at a young age plus a surname. It is nearly universal for a human to have a name; except in rare cases, for example feral children growing up in isolation, or infants orphaned by natural disaster for whom no written record survives.[citation needed] The Convention on the Rights of the Child specifies that a child has the right from birth to a name. Certain isolated tribes, such as the Machiguenga of the Amazon, also lack personal names.\" (http://en.wikipedia.org/wiki/Personal_name)"@en ,
                              "Sep 29, 2016: The comment that including the wikipedia definition of personal name is not to be interpreted in a way that restricts this class to only contain strings of letters. A numerical or alphanumerical identifier that denotes a human is being is a personal name, too. (MB)"@en ;
                 rdfs:label "personal name"@en .
@@ -2631,7 +2631,6 @@ aeon:AEON_0000003 rdf:type owl:Class ;
                   obo:IAO_0000115 "An internal identifier is an iao:identifier that is only meant to be used inside the reference system, such as an application, in which it is declared."@en ;
                   obo:IAO_0000116 "The alternative term \"ConfIDent ID\" is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident) to be used in its service. Thus the internal identifier is called \"ConfIDent ID\". You will probably want to change that in your implementation."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  obo:IAO_0000118 "ConfIDent ID"@en ;
                   rdfs:label "internal identifier"@en .
 
 
@@ -3516,8 +3515,7 @@ aeon:contributor rdf:type owl:Class ;
                  obo:IAO_0000114 obo:IAO_0000423 ,
                                  "TODO: There needs to be an ICE branch in AEON covering the action and objective specifications which the various contributors have to concretize when realizing their roles. The concretization of these specification calsses needs to be axiomized here and in the various contributor roles."@en ;
                  obo:IAO_0000115 "A contributor is a person or organization that holds a contributor role which is being realized in a planned process."@en ;
-                 obo:IAO_0000116 ""@en ,
-                                 "An academic conference is being realized by the contributions of different kinds of people and organizations. The organizers plan the program and manage the needed logistics. The sponsors provide the resources and funds needed for the realization. The speakers contribute by presenting their academic work. The reviewers make sure the submitted work is worth to be presented. The moderators make sure that the mode of communication is caried out as planned by the organizer. The attendees contribute by being there as the audience, providing feedback and by making up the pool of possible future collaborators."@en ,
+                 obo:IAO_0000116 "An academic conference is being realized by the contributions of different kinds of people and organizations. The organizers plan the program and manage the needed logistics. The sponsors provide the resources and funds needed for the realization. The speakers contribute by presenting their academic work. The reviewers make sure the submitted work is worth to be presented. The moderators make sure that the mode of communication is caried out as planned by the organizer. The attendees contribute by being there as the audience, providing feedback and by making up the pool of possible future collaborators."@en ,
                                  """This class and its children should be defined in an ontology that covers the domain of contributorship in the sciences. 
 The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to be the best place. However at the moment CRO only covers \"the diverse roles performed in the work leading to a published research output in the sciences.\" An academic event or event series should ot be understood as a published research output, as they are procceses (occurents) and not ICEs."""@en ;
                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
