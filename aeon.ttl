@@ -4318,9 +4318,10 @@ aeon:_VIVO2020 rdf:type owl:NamedIndividual ;
 
 ###  https://github.com/tibonto/aeon#_VIVO2020_name
 aeon:_VIVO2020_name rdf:type owl:NamedIndividual ;
+                    obo:BFO_0000050 <https://www.wikidata.org/wiki/Q108430463> ;
                     aeon:AEON_0000091 "VIVO 2020"^^xsd:string ;
                     terms:source "https://www.wikidata.org/wiki/Q108430463" ;
-                    rdfs:label "_VIVO2020_name" ;
+                    rdfs:label "_VIVO2020_name_from_WikiData" ;
                     ns:term_status obo:IAO_0000002 ;
                     skos:altLabel "VIVO Conference 2020"@en ;
                     skos:prefLabel "11th Annual International VIVO Conference 2020"@en .
