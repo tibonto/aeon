@@ -1,5 +1,7 @@
 Change history:
 
+v0.4.8 - date: 08.2021
+	* FIX issue #129 (improve "contact" data properties)
 
 v0.4.7 - date: 08.2021
     * FIX issue #127 (improve "language" data property)

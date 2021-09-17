@@ -14,7 +14,7 @@
 @base <https://github.com/tibonto/aeon> .
 
 <https://github.com/tibonto/aeon> rdf:type owl:Ontology ;
-                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.4.8> ;
+                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.4.9> ;
                                    dc:contributor "Christian Hauschke" ,
                                                   "Christoph Lange" ,
                                                   "Michael Conlon" ;
@@ -23,7 +23,7 @@
                                    dc:title "Academic Event Ontology"@en ;
                                    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                    rdfs:comment "AEON is being developed as a part of the ConfIDent project (https://projects.tib.eu/confident)." ;
-                                   owl:versionInfo "v0.4.8" .
+                                   owl:versionInfo "v0.4.9" .
 
 #################################################################
 #    Annotation properties
@@ -1306,12 +1306,25 @@ aeon:AEON_0000074 rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf obo:OBI_0002815 ;
                   rdfs:domain aeon:AEON_0000060 ;
                   rdfs:range xsd:dateTimeStamp ;
-                  obo:IAO_0000115 "a data property which is intended to be used for the literal representation of a deadline specification the xsd:dateTimeStamp format"@en ;
+                  obo:IAO_0000115 "A data property which is intended to be used for the literal representation of a deadline specification in the xsd:dateTimeStamp format"@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
                   obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/125"^^xsd:anyURI ;
                   dc:date "2021-07-19T13:49:58Z"^^xsd:dateTime ;
-                  rdfs:label "has datetime value"@de ;
-                  ns:term_status obo:IAO_0000123 .
+                  rdfs:label "deadline datetime value"@en ;
+                  ns:term_status obo:IAO_0000423 .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000091
+aeon:AEON_0000091 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf obo:OBI_0002815 ;
+                  rdfs:domain aeon:AEON_0000090 ;
+                  rdfs:range xsd:string ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "A shortend representation of a planned process name that has been formed from the initial components of a planned process name representation, usually using individual initial letters."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/132"@en ;
+                  dc:date "2021-09-13T08:55:02Z"^^xsd:dateTime ;
+                  rdfs:label "planned process acronym"@en .
 
 
 ###  https://github.com/tibonto/aeon#CORE_ranking
@@ -1492,15 +1505,6 @@ aeon:fee_currency rdf:type owl:DatatypeProperty ;
                   rdfs:label "event fee currency"@en .
 
 
-###  https://github.com/tibonto/aeon#first_name
-aeon:first_name rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf aeon:personal_name ;
-                rdfs:domain obo:NCBITaxon_9606 ;
-                rdfs:range xsd:string ;
-                obo:IAO_0000115 "The literal value of the first name of a person."@en ;
-                rdfs:label "first name"@en .
-
-
 ###  https://github.com/tibonto/aeon#language
 aeon:language rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
@@ -1513,15 +1517,6 @@ aeon:language rdf:type owl:DatatypeProperty ;
               rdfs:label "event language"@en ;
               ns:term_status obo:IAO_0000428 ;
               aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2936\", \"label\": \"language_usedLabel\"}}"^^xsd:string .
-
-
-###  https://github.com/tibonto/aeon#last_name
-aeon:last_name rdf:type owl:DatatypeProperty ;
-               rdfs:subPropertyOf aeon:personal_name ;
-               rdfs:domain obo:NCBITaxon_9606 ;
-               rdfs:range xsd:string ;
-               obo:IAO_0000115 "The literal value of the last name, or family name, of a person."@en ;
-               rdfs:label "last name"@en .
 
 
 ###  https://github.com/tibonto/aeon#location
@@ -1539,7 +1534,7 @@ aeon:logo rdf:type owl:DatatypeProperty ;
 
 ###  https://github.com/tibonto/aeon#meeting_URL
 aeon:meeting_URL rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf aeon:location ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
                  rdfs:domain aeon:AEON_0000029 ;
                  rdfs:range xsd:anyURI ;
                  rdfs:label "meeting URL"@en .
@@ -1550,13 +1545,6 @@ aeon:metric rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf owl:topDataProperty ;
             rdfs:domain obo:OBI_0000011 ;
             rdfs:label "metric"@en .
-
-
-###  https://github.com/tibonto/aeon#name
-aeon:name rdf:type owl:DatatypeProperty ;
-          rdfs:subPropertyOf owl:topDataProperty ;
-          obo:IAO_0000115 "The literal value of the name of a thing."@en ;
-          rdfs:label "name"@en .
 
 
 ###  https://github.com/tibonto/aeon#number_of_attendees
@@ -1572,24 +1560,6 @@ aeon:number_of_tracks rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf aeon:metric ;
                       rdfs:domain aeon:AEON_0000001 ;
                       rdfs:label "number of tracks"@en .
-
-
-###  https://github.com/tibonto/aeon#organizational_name
-aeon:organizational_name rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf aeon:name ;
-                         rdfs:domain obo:OBI_0000245 ;
-                         rdfs:range xsd:string ;
-                         obo:IAO_0000115 "The literal value of the name to denote an organization."@en ;
-                         rdfs:label "organizational name"@en .
-
-
-###  https://github.com/tibonto/aeon#personal_name
-aeon:personal_name rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf aeon:name ;
-                   rdfs:domain obo:NCBITaxon_9606 ;
-                   rdfs:range xsd:string ;
-                   obo:IAO_0000115 "The literal value of the name to denote a person."@en ;
-                   rdfs:label "personal name value"@en .
 
 
 ###  https://github.com/tibonto/aeon#previous_end_date
@@ -1621,41 +1591,6 @@ aeon:proceedings_site_count rdf:type owl:DatatypeProperty ;
                             rdfs:subPropertyOf aeon:metric ;
                             rdfs:domain aeon:AEON_0000001 ;
                             rdfs:label "proceeding cite count"@en .
-
-
-###  https://github.com/tibonto/aeon#process_acronym
-aeon:process_acronym rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf aeon:name ;
-                     rdfs:range xsd:string ;
-                     obo:IAO_0000112 "\"DILS 2019\" is the official acronym of the academic event \"13th International Conference on Data Integration in Life Science\""@en ;
-                     obo:IAO_0000115 "The literal value of the official acronym of an aeon:process, that is either an academic event or event series."@en ;
-                     rdfs:label "acronym"@en ;
-                     aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P1813\", \"label\": \"short_nameLabel\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#abbreviatedNameForTheConferenceOrEvent\", \"label\": \"Abbreviated name for the conference or event\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Acronym\", \"label\": \"Acronym\"}, \"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"acronym\"}}}"^^xsd:string .
-
-
-###  https://github.com/tibonto/aeon#process_alternative_name
-aeon:process_alternative_name rdf:type owl:DatatypeProperty ;
-                              rdfs:subPropertyOf aeon:name ;
-                              rdfs:range xsd:string ;
-                              rdfs:comment "The Literal value of an alternative name of an aeon:process, that is either an academic event or event series."@en ;
-                              rdfs:label "alternative name"@en ;
-                              aeon:AEON_0000026 "{\"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#variantNameForTheConferenceOrEvent\", \"label\": \"Variant name for the conference or event\"}, \"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=title\", \"json_api_key\": \"title\"}}"^^xsd:string .
-
-
-###  https://github.com/tibonto/aeon#process_former_name
-aeon:process_former_name rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf aeon:name ;
-                         rdfs:range xsd:string ;
-                         rdfs:comment "The Literal value of the former official name of an aeon:process, that is either an academic event or event series."@en ;
-                         rdfs:label "former name"@en .
-
-
-###  https://github.com/tibonto/aeon#process_translated_name
-aeon:process_translated_name rdf:type owl:DatatypeProperty ;
-                             rdfs:subPropertyOf aeon:name ;
-                             rdfs:range xsd:string ;
-                             obo:IAO_0000115 "The literal value of the translation of the official name (title) of an aeon:process, that is either an academic event or event series."@en ;
-                             rdfs:label "translated name"@en .
 
 
 ###  https://github.com/tibonto/aeon#process_website
@@ -2437,7 +2372,7 @@ obo:IAO_0020015 rdf:type owl:Class ;
                 obo:IAO_0000115 "A personal name is a proper name identifying an individual person."@en ;
                 obo:IAO_0000117 "Mathias Brochhausen" ;
                 obo:IAO_0000119 "http://en.wikipedia.org/wiki/Personal_name" ;
-                obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/pno/release/2020-04-18/pno.owl"^^xsd:string ;
+                obo:IAO_0000412 "http://purl.obolibrary.org/obo/iao/pno/release/2021-06-11/pno.owl"^^xsd:string ;
                 rdfs:comment "Personal names \"today usually comprises a given name bestowed at birth or at a young age plus a surname. It is nearly universal for a human to have a name; except in rare cases, for example feral children growing up in isolation, or infants orphaned by natural disaster for whom no written record survives.[citation needed] The Convention on the Rights of the Child specifies that a child has the right from birth to a name. Certain isolated tribes, such as the Machiguenga of the Amazon, also lack personal names.\" (http://en.wikipedia.org/wiki/Personal_name)"@en ,
                              "Sep 29, 2016: The comment that including the wikipedia definition of personal name is not to be interpreted in a way that restricts this class to only contain strings of letters. A numerical or alphanumerical identifier that denotes a human is being is a personal name, too. (MB)"@en ;
                 rdfs:label "personal name"@en .
@@ -2696,7 +2631,6 @@ aeon:AEON_0000003 rdf:type owl:Class ;
                   obo:IAO_0000115 "An internal identifier is an iao:identifier that is only meant to be used inside the reference system, such as an application, in which it is declared."@en ;
                   obo:IAO_0000116 "The alternative term \"ConfIDent ID\" is used here, as the ontology is being developed by the ConfIDent project (https://projects.tib.eu/en/confident) to be used in its service. Thus the internal identifier is called \"ConfIDent ID\". You will probably want to change that in your implementation."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  obo:IAO_0000118 "ConfIDent ID"@en ;
                   rdfs:label "internal identifier"@en .
 
 
@@ -3320,6 +3254,32 @@ aeon:AEON_0000071 rdf:type owl:Class ;
                   ns:term_status obo:IAO_0000123 .
 
 
+###  https://github.com/tibonto/aeon#AEON_0000090
+aeon:AEON_0000090 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( obo:IAO_0020000
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty obo:IAO_0000219 ;
+                                                               owl:allValuesFrom obo:OBI_0000011
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000050 ;
+                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                         owl:onProperty obo:IAO_0000219 ;
+                                                         owl:someValuesFrom obo:OBI_0000011
+                                                       ]
+                                  ] ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "An identifier that is a proper name identifying a planned process."@en ;
+                  obo:IAO_0000116 "TODO: request term from IAO"@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/132"@en ;
+                  dc:date "2021-09-13T08:55:02Z"^^xsd:dateTime ;
+                  rdfs:label "planned process name"@en .
+
+
 ###  https://github.com/tibonto/aeon#attendance_fee_specification
 aeon:attendance_fee_specification rdf:type owl:Class ;
                                   rdfs:subClassOf aeon:AEON_0000030 ;
@@ -3555,8 +3515,7 @@ aeon:contributor rdf:type owl:Class ;
                  obo:IAO_0000114 obo:IAO_0000423 ,
                                  "TODO: There needs to be an ICE branch in AEON covering the action and objective specifications which the various contributors have to concretize when realizing their roles. The concretization of these specification calsses needs to be axiomized here and in the various contributor roles."@en ;
                  obo:IAO_0000115 "A contributor is a person or organization that holds a contributor role which is being realized in a planned process."@en ;
-                 obo:IAO_0000116 ""@en ,
-                                 "An academic conference is being realized by the contributions of different kinds of people and organizations. The organizers plan the program and manage the needed logistics. The sponsors provide the resources and funds needed for the realization. The speakers contribute by presenting their academic work. The reviewers make sure the submitted work is worth to be presented. The moderators make sure that the mode of communication is caried out as planned by the organizer. The attendees contribute by being there as the audience, providing feedback and by making up the pool of possible future collaborators."@en ,
+                 obo:IAO_0000116 "An academic conference is being realized by the contributions of different kinds of people and organizations. The organizers plan the program and manage the needed logistics. The sponsors provide the resources and funds needed for the realization. The speakers contribute by presenting their academic work. The reviewers make sure the submitted work is worth to be presented. The moderators make sure that the mode of communication is caried out as planned by the organizer. The attendees contribute by being there as the audience, providing feedback and by making up the pool of possible future collaborators."@en ,
                                  """This class and its children should be defined in an ontology that covers the domain of contributorship in the sciences. 
 The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to be the best place. However at the moment CRO only covers \"the diverse roles performed in the work leading to a published research output in the sciences.\" An academic event or event series should ot be understood as a published research output, as they are procceses (occurents) and not ICEs."""@en ;
                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
@@ -4202,6 +4161,12 @@ obo:IAO_0000428 rdf:type owl:NamedIndividual ,
                 rdfs:label "requires discussion"@en .
 
 
+###  https://confident.dbis.rwth-aachen.de/or/index.php?title=VIVO_2020
+<https://confident.dbis.rwth-aachen.de/or/index.php?title=VIVO_2020> rdf:type owl:NamedIndividual ;
+                                                                     rdfs:label "_OR_event_1" ;
+                                                                     ns:term_status obo:IAO_0000002 .
+
+
 ###  https://github.com/tibonto/aeon#AEON_0010000
 aeon:AEON_0010000 rdf:type owl:NamedIndividual ,
                            aeon:AEON_0000004 ;
@@ -4335,92 +4300,60 @@ aeon:Lisbon rdf:type owl:NamedIndividual .
 aeon:Portugal rdf:type owl:NamedIndividual .
 
 
-###  https://github.com/tibonto/aeon#_PIDapalooza
-aeon:_PIDapalooza rdf:type owl:NamedIndividual ;
-                  rdfs:comment obo:IAO_0000002 ;
-                  rdfs:label "_PIDapalooza"@en .
-
-
-###  https://github.com/tibonto/aeon#_PIDapalooza2020
-aeon:_PIDapalooza2020 rdf:type owl:NamedIndividual ;
-                      obo:BFO_0000055 aeon:_PIDapalooza_Role_3 ,
-                                      aeon:__PIDapalooza_Role_1 ,
-                                      aeon:__PIDapalooza_Role_2 ;
-                      aeon:AEON_0000050 aeon:_Person_1 ;
-                      aeon:AEON_0000053 aeon:_Person_3 ;
-                      aeon:AEON_0000055 aeon:_Person_2 ;
-                      aeon:AEON_0000080 <https://www.wikidata.org/wiki/Q65929359> ;
-                      aeon:AEON_0000084 aeon:_PIDapalooza ;
-                      aeon:end_date "2020-01-30T17:00:00Z"^^xsd:dateTimeStamp ;
-                      aeon:number_of_attendees 117 ;
-                      aeon:number_of_tracks 13 ;
-                      aeon:start_date "2020-01-29T09:00:00Z"^^xsd:dateTimeStamp ;
-                      rdfs:comment obo:IAO_0000002 ;
-                      rdfs:label "_PIDapalooza2020"@en .
-
-
-###  https://github.com/tibonto/aeon#_PIDapalooza_Role_3
-aeon:_PIDapalooza_Role_3 rdf:type owl:NamedIndividual ;
-                         obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
-                         dc:date "2021-08-23T11:56:25Z"^^xsd:dateTime ;
-                         rdfs:label "_PIDapalooza_Role_3" ;
-                         ns:term_status obo:IAO_0000002 .
-
-
 ###  https://github.com/tibonto/aeon#_Person_1
 aeon:_Person_1 rdf:type owl:NamedIndividual ;
-               obo:RO_0000087 aeon:__PIDapalooza_Role_1 ;
                aeon:AEON_0000078 <https://orcid.org/0000-0002-1595-3213> ;
-               aeon:first_name "Philip"^^xsd:string ;
-               aeon:last_name "Strömert"^^xsd:string ;
-               obo:IAO_0000114 obo:IAO_0000002 ;
-               rdfs:label "_Person_1" .
-
-
-###  https://github.com/tibonto/aeon#_Person_2
-aeon:_Person_2 rdf:type owl:NamedIndividual ;
-               obo:RO_0000087 aeon:__PIDapalooza_Role_2 ;
-               aeon:personal_name "Sam general committee Chair" ;
-               obo:IAO_0000114 obo:IAO_0000002 ;
-               obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-               rdfs:label "_Person_2" .
-
-
-###  https://github.com/tibonto/aeon#_Person_3
-aeon:_Person_3 rdf:type owl:NamedIndividual ;
-               obo:RO_0000087 aeon:_PIDapalooza_Role_3 ;
-               aeon:contact_email "contact@pidapalooza.org"^^xsd:string ;
-               aeon:contact_phone "0012 3456789"^^xsd:string ;
-               obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
-               dc:date "2021-08-23T11:56:08Z"^^xsd:dateTime ;
-               rdfs:label "_Person_3" ;
+               rdfs:label "_Person_1" ;
                ns:term_status obo:IAO_0000002 .
 
 
-###  https://github.com/tibonto/aeon#__PIDapalooza_Role_1
-aeon:__PIDapalooza_Role_1 rdf:type owl:NamedIndividual ;
-                          obo:IAO_0000114 obo:IAO_0000002 ;
-                          obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                          rdfs:label "_PIDapalooza_Role_1" .
+###  https://github.com/tibonto/aeon#_VIVO2020
+aeon:_VIVO2020 rdf:type owl:NamedIndividual ;
+               obo:IAO_0000235 <https://confident.dbis.rwth-aachen.de/or/index.php?title=VIVO_2020> ,
+                               aeon:_VIVO2020_name ,
+                               <https://www.wikidata.org/wiki/Q108430463> ;
+               aeon:AEON_0000032 aeon:AEON_0010001 ;
+               aeon:AEON_0000050 aeon:_Person_1 ;
+               aeon:AEON_0000084 aeon:_VIVO_series ;
+               aeon:end_date "2020-06-18T19:00:00Z"^^xsd:dateTimeStamp ;
+               aeon:start_date "2020-06-16T09:00:00Z"^^xsd:dateTimeStamp ;
+               rdfs:label "_VIVO2020" ;
+               ns:term_status obo:IAO_0000002 .
 
 
-###  https://github.com/tibonto/aeon#__PIDapalooza_Role_2
-aeon:__PIDapalooza_Role_2 rdf:type owl:NamedIndividual ;
-                          obo:IAO_0000114 obo:IAO_0000002 ;
-                          obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                          rdfs:label "_PIDapalooza_Role_2" .
+###  https://github.com/tibonto/aeon#_VIVO2020_name
+aeon:_VIVO2020_name rdf:type owl:NamedIndividual ;
+                    obo:BFO_0000050 <https://www.wikidata.org/wiki/Q108430463> ;
+                    aeon:AEON_0000091 "VIVO 2020"^^xsd:string ;
+                    terms:source "https://www.wikidata.org/wiki/Q108430463" ;
+                    rdfs:label "_VIVO2020_name_from_WikiData" ;
+                    ns:term_status obo:IAO_0000002 ;
+                    skos:altLabel "VIVO Conference 2020"@en ;
+                    skos:prefLabel "11th Annual International VIVO Conference 2020"@en .
+
+
+###  https://github.com/tibonto/aeon#_VIVO_series
+aeon:_VIVO_series rdf:type owl:NamedIndividual ;
+                  obo:IAO_0000235 <https://www.wikidata.org/wiki/Q97595211> ;
+                  rdfs:label "_VIVO_series" .
 
 
 ###  https://orcid.org/0000-0002-1595-3213
 <https://orcid.org/0000-0002-1595-3213> rdf:type owl:NamedIndividual ;
                                         obo:IAO_0000114 obo:IAO_0000002 ;
-                                        rdfs:label <https://github.com/tibonto/_0000-0002-1595-3213> .
+                                        rdfs:label "_0000-0002-1595-3213" .
 
 
-###  https://www.wikidata.org/wiki/Q65929359
-<https://www.wikidata.org/wiki/Q65929359> rdf:type owl:NamedIndividual ;
-                                          rdfs:comment obo:IAO_0000002 ;
-                                          rdfs:label "_Q65929359" .
+###  https://www.wikidata.org/wiki/Q108430463
+<https://www.wikidata.org/wiki/Q108430463> rdf:type owl:NamedIndividual ;
+                                           rdfs:label "_Q108430463" ;
+                                           ns:term_status obo:IAO_0000002 .
+
+
+###  https://www.wikidata.org/wiki/Q97595211
+<https://www.wikidata.org/wiki/Q97595211> rdf:type owl:NamedIndividual ;
+                                          rdfs:label "_Q97595211" ;
+                                          ns:term_status obo:IAO_0000002 .
 
 
 #################################################################
