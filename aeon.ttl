@@ -304,16 +304,6 @@ aeon:AEON_0000026 rdf:type owl:AnnotationProperty ;
                   rdfs:label "maps to"@de .
 
 
-###  https://github.com/tibonto/aeon#AEON_0000091
-aeon:AEON_0000091 rdf:type owl:AnnotationProperty ;
-                  obo:IAO_0000114 obo:IAO_0000423 ;
-                  obo:IAO_0000115 "A proper name that has been formed from the initial components of a longer proper name or name phrase, usually using individual initial letters."@en ;
-                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
-                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/132"@en ;
-                  dc:date "2021-09-13T08:55:02Z"^^xsd:dateTime ;
-                  rdfs:label "acronym"@en .
-
-
 #################################################################
 #    Object Properties
 #################################################################
@@ -1322,6 +1312,19 @@ aeon:AEON_0000074 rdf:type owl:DatatypeProperty ;
                   dc:date "2021-07-19T13:49:58Z"^^xsd:dateTime ;
                   rdfs:label "has datetime value"@de ;
                   ns:term_status obo:IAO_0000123 .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000091
+aeon:AEON_0000091 rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf obo:OBI_0002815 ;
+                  rdfs:domain aeon:AEON_0000090 ;
+                  rdfs:range xsd:string ;
+                  obo:IAO_0000114 obo:IAO_0000423 ;
+                  obo:IAO_0000115 "A shortend representation of a planned process name that has been formed from the initial components of a planned process name representation, usually using individual initial letters."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:string ;
+                  obo:IAO_0000233 "https://github.com/tibonto/aeon/issues/132"@en ;
+                  dc:date "2021-09-13T08:55:02Z"^^xsd:dateTime ;
+                  rdfs:label "acronym"@en .
 
 
 ###  https://github.com/tibonto/aeon#CORE_ranking
