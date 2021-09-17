@@ -3265,6 +3265,13 @@ aeon:AEON_0000090 rdf:type owl:Class ;
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty obo:BFO_0000050 ;
+                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                         owl:onProperty obo:IAO_0000219 ;
+                                                         owl:someValuesFrom obo:OBI_0000011
+                                                       ]
+                                  ] ;
                   obo:IAO_0000114 obo:IAO_0000423 ;
                   obo:IAO_0000115 "An identifier that is a proper name identifying a planned process."@en ;
                   obo:IAO_0000116 "TODO: request term from IAO"@en ;
