@@ -4332,13 +4332,19 @@ aeon:_VIVO_series rdf:type owl:NamedIndividual ;
 ###  https://orcid.org/0000-0002-1595-3213
 <https://orcid.org/0000-0002-1595-3213> rdf:type owl:NamedIndividual ;
                                         obo:IAO_0000114 obo:IAO_0000002 ;
-                                        rdfs:label <https://github.com/tibonto/_0000-0002-1595-3213> .
+                                        rdfs:label "_0000-0002-1595-3213" .
 
 
-###  https://www.wikidata.org/wiki/Q65929359
-<https://www.wikidata.org/wiki/Q65929359> rdf:type owl:NamedIndividual ;
-                                          rdfs:comment obo:IAO_0000002 ;
-                                          rdfs:label "_Q65929359" .
+###  https://www.wikidata.org/wiki/Q108430463
+<https://www.wikidata.org/wiki/Q108430463> rdf:type owl:NamedIndividual ;
+                                           rdfs:label "_Q108430463" ;
+                                           ns:term_status obo:IAO_0000002 .
+
+
+###  https://www.wikidata.org/wiki/Q97595211
+<https://www.wikidata.org/wiki/Q97595211> rdf:type owl:NamedIndividual ;
+                                          rdfs:label "_Q97595211" ;
+                                          ns:term_status obo:IAO_0000002 .
 
 
 #################################################################
