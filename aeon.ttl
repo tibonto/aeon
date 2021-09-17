@@ -4312,6 +4312,7 @@ aeon:_VIVO2020 rdf:type owl:NamedIndividual ;
                aeon:AEON_0000084 aeon:_VIVO_series ;
                aeon:end_date "2020-06-18T19:00:00Z"^^xsd:dateTimeStamp ;
                aeon:start_date "2020-06-16T09:00:00Z"^^xsd:dateTimeStamp ;
+               rdfs:label "_VIVO2020" ;
                ns:term_status obo:IAO_0000002 .
 
 
@@ -4319,6 +4320,7 @@ aeon:_VIVO2020 rdf:type owl:NamedIndividual ;
 aeon:_VIVO2020_name rdf:type owl:NamedIndividual ;
                     aeon:AEON_0000091 "VIVO 2020"^^xsd:string ;
                     terms:source "https://www.wikidata.org/wiki/Q108430463" ;
+                    rdfs:label "_VIVO2020_name" ;
                     ns:term_status obo:IAO_0000002 ;
                     skos:altLabel "VIVO Conference 2020"@en ;
                     skos:prefLabel "11th Annual International VIVO Conference 2020"@en .
@@ -4326,7 +4328,8 @@ aeon:_VIVO2020_name rdf:type owl:NamedIndividual ;
 
 ###  https://github.com/tibonto/aeon#_VIVO_series
 aeon:_VIVO_series rdf:type owl:NamedIndividual ;
-                  obo:IAO_0000235 <https://www.wikidata.org/wiki/Q97595211> .
+                  obo:IAO_0000235 <https://www.wikidata.org/wiki/Q97595211> ;
+                  rdfs:label "_VIVO_series" .
 
 
 ###  https://orcid.org/0000-0002-1595-3213
