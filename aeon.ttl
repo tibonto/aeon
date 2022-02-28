@@ -14,7 +14,7 @@
 @base <https://github.com/tibonto/aeon> .
 
 <https://github.com/tibonto/aeon> rdf:type owl:Ontology ;
-                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.4.9> ;
+                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.4.10> ;
                                    dc:contributor "Christian Hauschke" ,
                                                   "Christoph Lange" ,
                                                   "Michael Conlon" ;
@@ -23,7 +23,7 @@
                                    dc:title "Academic Event Ontology"@en ;
                                    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                    rdfs:comment "AEON is being developed as a part of the ConfIDent project (https://projects.tib.eu/confident)." ;
-                                   owl:versionInfo "v0.4.9" .
+                                   owl:versionInfo "v0.4.10" .
 
 #################################################################
 #    Annotation properties
@@ -704,14 +704,25 @@ obo:TXPO_0002523 rdf:type owl:ObjectProperty ;
                  rdfs:label "has occurrent part" .
 
 
+###  https://github.com/tibonto/aeon#AEON_0000031
+aeon:AEON_0000031 rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf obo:IAO_0000136 ;
+                  owl:inverseOf aeon:AEON_0000032 ;
+                  rdfs:domain aeon:AEON_0000004 ;
+                  rdfs:range aeon:AEON_0000001 ;
+                  obo:IAO_0000115 "A relation obtaining between an 'academic event type specification' and an 'academic event', in which the former is used to descibe the sociocultural format of the latter. A set of possible common academic event type specification is provided in AEON as named individuals."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:label "specifies academic event type"@en .
+
+
 ###  https://github.com/tibonto/aeon#AEON_0000032
 aeon:AEON_0000032 rdf:type owl:ObjectProperty ;
-                  owl:inverseOf aeon:academic_event_type_of ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000004 ;
                   obo:IAO_0000115 "A relation obtaining between an 'academic event' and an 'academic event type specification' that specifies the sociocultrural format of the 'academic event'."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "has academic event type"@en ;
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"event_type\"}, \"openresearch\": {\"uri\": null, \"label\": \"Type\"}}"^^xsd:string .
 
 
@@ -1079,16 +1090,6 @@ aeon:AEON_0000089 rdf:type owl:ObjectProperty ;
                   obo:IAO_0000115 "A relation obtaining between a bfo:occurent and the event venue in which it occurs."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "occurs in event venue"@en .
-
-
-###  https://github.com/tibonto/aeon#academic_event_type_of
-aeon:academic_event_type_of rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf obo:IAO_0000136 ;
-                            rdfs:domain aeon:AEON_0000004 ;
-                            rdfs:range aeon:AEON_0000001 ;
-                            obo:IAO_0000115 "A relation obtaining between an 'academic event type specification' and an 'academic event', in which the former is used to descibe the sociocultural format of the latter. A set of possible common academic event type specification is provided in AEON as named individuals."@en ;
-                            obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                            rdfs:label "specifies academic event type"@en .
 
 
 ###  https://github.com/tibonto/aeon#academic_field_of
@@ -1468,7 +1469,8 @@ aeon:event_type_other rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf owl:topDataProperty ;
                       rdfs:domain aeon:AEON_0000004 ;
                       rdfs:range xsd:string ;
-                      rdfs:label "event type other"@en .
+                      rdfs:label "event type other"@en ;
+                      rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
 
 
 ###  https://github.com/tibonto/aeon#event_year
@@ -2638,7 +2640,7 @@ aeon:AEON_0000003 rdf:type owl:Class ;
 aeon:AEON_0000004 rdf:type owl:Class ;
                   owl:equivalentClass [ owl:intersectionOf ( obo:IAO_0000104
                                                              [ rdf:type owl:Restriction ;
-                                                               owl:onProperty aeon:academic_event_type_of ;
+                                                               owl:onProperty aeon:AEON_0000031 ;
                                                                owl:someValuesFrom aeon:AEON_0000001
                                                              ]
                                                            ) ;
@@ -2657,11 +2659,12 @@ aeon:AEON_0000004 rdf:type owl:Class ;
                                     owl:someValuesFrom aeon:AEON_0000060
                                   ] ;
                   obo:IAO_0000111 "event type"@en ;
-                  obo:IAO_0000115 "An academic event type specification is a plan specification that specifies the sociocultural format or type of an academic event by providing specifications of the objectives, conditions and actions needed in the realization of the academic event."@en ;
+                  obo:IAO_0000115 "An academic event format specification is a plan specification that classifies a planned gathering of people in an academic context according to some sociocultural format, which provides implicit and explicit details on how this gathing is to be carried out by its participants in terms of achieving certain objectives, fulfiling certain conditions and performing certain actions."@en ;
                   obo:IAO_0000116 "It needs to be discussed whether this class should be expanded to also describe the format of an 'academic event series', e.g. conference series. At the moment it is assumed that an 'academic event series', understood as a obi:'planned process', has no destinct format itself. Since this process is defined as the set of all recurring academic events of a destinct identity, the event series type would also only be the set of the academic event types of the academic events in this series."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  obo:IAO_0000118 "academic event type"@en ;
-                  rdfs:label "academic event type specification"@en .
+                  obo:IAO_0000118 "event type"@en ;
+                  rdfs:label "academic event format specification"@en ;
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000005
