@@ -717,7 +717,6 @@ aeon:AEON_0000031 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000032
 aeon:AEON_0000032 rdf:type owl:ObjectProperty ;
-                  owl:inverseOf aeon:AEON_0000031 ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000004 ;
                   obo:IAO_0000115 "A relation obtaining between an 'academic event' and an 'academic event type specification' that specifies the sociocultrural format of the 'academic event'."@en ;
@@ -2660,7 +2659,7 @@ aeon:AEON_0000004 rdf:type owl:Class ;
                                     owl:someValuesFrom aeon:AEON_0000060
                                   ] ;
                   obo:IAO_0000111 "event type"@en ;
-                  obo:IAO_0000115 "An academic event format specification is a plan specification that determines the sociocultural format of the gathering that defines an academic event, by providing details on its objectives, conditions and needed actions."@en ;
+                  obo:IAO_0000115 "An academic event format specification is a plan specification that classifies a planned gathering of people in an academic context according to some sociocultural format, which provides implicit and explicit details on how this gathing is to be carried out by its participants in terms of achieving certain objectives, fulfiling certain conditions and performing certain actions."@en ;
                   obo:IAO_0000116 "It needs to be discussed whether this class should be expanded to also describe the format of an 'academic event series', e.g. conference series. At the moment it is assumed that an 'academic event series', understood as a obi:'planned process', has no destinct format itself. Since this process is defined as the set of all recurring academic events of a destinct identity, the event series type would also only be the set of the academic event types of the academic events in this series."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   obo:IAO_0000118 "event type"@en ;
