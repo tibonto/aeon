@@ -4170,131 +4170,6 @@ obo:IAO_0000428 rdf:type owl:NamedIndividual ,
                                                                      ns:term_status obo:IAO_0000002 .
 
 
-###  https://github.com/tibonto/aeon#AEON_0010000
-aeon:AEON_0010000 rdf:type owl:NamedIndividual ,
-                           aeon:AEON_0000004 ;
-                  obo:OBI_0002815 "This academic event is planned to be a colloquium."@en ;
-                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a colloquium, when all that is known about the academic event type specification is the label colloquium (e.g. the event type colloquium is only specified in the name of the event). Hence, its representation can only be a statement asserting that the sociocultural format of the academic event is planned to be a colloquium format without further specifications on what objectives, conditions or actions are entailed."@en ;
-                  rdfs:label "colloquium plan specification"@en .
-
-
-###  https://github.com/tibonto/aeon#AEON_0010001
-aeon:AEON_0010001 rdf:type owl:NamedIndividual ,
-                           aeon:AEON_0000004 ;
-                  obo:OBI_0002815 "This academic event is planned to be a conference."@en ;
-                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a conference, when all that is known about the academic event type specification is the label conference (e.g. the event type conference is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a conference format without further specifications on what objectives, conditions or actions are entailed."@en ;
-                  rdfs:label "conference plan specification"@en .
-
-
-###  https://github.com/tibonto/aeon#AEON_0010002
-aeon:AEON_0010002 rdf:type owl:NamedIndividual ,
-                           aeon:AEON_0000004 ;
-                  obo:OBI_0002815 "This academic event is planned to be a forum."@en ;
-                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a forum, when all that is known about the academic event type specification is the label forum (e.g. the event type forum is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a forum format without further specifications on what objectives, conditions or actions this entails."@en ;
-                  rdfs:label "forum plan specification"@en .
-
-
-###  https://github.com/tibonto/aeon#AEON_0010003
-aeon:AEON_0010003 rdf:type owl:NamedIndividual ,
-                           aeon:AEON_0000004 ;
-                  obo:OBI_0002815 "This academic event is planned to be a hackathon."@en ;
-                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a hackathon, when all that is known about the academic event type specification is the label hackathon (e.g. the event type hackathon is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a hackathon format without further specifications on what objectives, conditions or actions this entails."@en ;
-                  rdfs:label "hackathon plan specification"@en .
-
-
-###  https://github.com/tibonto/aeon#AEON_0010004
-aeon:AEON_0010004 rdf:type owl:NamedIndividual ,
-                           aeon:AEON_0000004 ;
-                  obo:OBI_0002815 "This academic event is planned to be a seminar."@en ;
-                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a seminar, when all that is known about the academic event type specification is the label seminar (e.g. the event type seminar is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a seminar format without further specifications on what objectives, conditions or actions this entails."@en ;
-                  rdfs:label "seminar plan specification"@en .
-
-
-###  https://github.com/tibonto/aeon#AEON_0010005
-aeon:AEON_0010005 rdf:type owl:NamedIndividual ,
-                           aeon:AEON_0000004 ;
-                  obo:OBI_0002815 "This academic event is planned to be a session."@en ;
-                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a session, when all that is known about the academic event type specification is the label session (e.g. the event type session is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a session format without further specifications on what objectives, conditions or actions this entails."@en ;
-                  rdfs:label "session plan specification"@en .
-
-
-###  https://github.com/tibonto/aeon#AEON_0010006
-aeon:AEON_0010006 rdf:type owl:NamedIndividual ,
-                           aeon:AEON_0000004 ;
-                  obo:OBI_0002815 "This academic event is planned to be a symposium."@en ;
-                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a symposium, when all that is known about the academic event type specification is the label symposium (e.g. the event type symposium is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a symposium format without further specifications on what objectives, conditions or actions are entailed."@en ;
-                  rdfs:label "symposium plan specification"@en .
-
-
-###  https://github.com/tibonto/aeon#AEON_0010007
-aeon:AEON_0010007 rdf:type owl:NamedIndividual ,
-                           aeon:AEON_0000004 ;
-                  obo:OBI_0002815 "This academic event is planned to be a keynote speech."@en ;
-                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a keynote speech, when all that is known about the academic event type specification is that it's labeled as a keynote speech (e.g. the event type keynote speech is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a keynote speech format without further specifications on what objectives, conditions or actions this entails."@en ;
-                  rdfs:label "keynote plan specification"@en .
-
-
-###  https://github.com/tibonto/aeon#AEON_0010008
-aeon:AEON_0010008 rdf:type owl:NamedIndividual ,
-                           aeon:AEON_0000004 ;
-                  obo:OBI_0002815 "This academic event is planned to be a track."@en ;
-                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a track, when all that is known about the academic event type specification is the label track (e.g. the event type track is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a track format without further specifications on what objectives, conditions or actions are entailed."@en ;
-                  rdfs:label "track plan specification"@en .
-
-
-###  https://github.com/tibonto/aeon#AEON_0010009
-aeon:AEON_0010009 rdf:type owl:NamedIndividual ,
-                           aeon:AEON_0000004 ;
-                  obo:OBI_0002815 "This academic event is planned to be a tutotial."@en ;
-                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a tutorial, when all that is known about the academic event type specification is the label tutorial (e.g. the event type tutorial is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a tutorial format without further specifications on what objectives, conditions or actions are entailed."@en ;
-                  rdfs:label "tutorial plan specification"@en .
-
-
-###  https://github.com/tibonto/aeon#AEON_0010010
-aeon:AEON_0010010 rdf:type owl:NamedIndividual ,
-                           aeon:AEON_0000004 ;
-                  obo:OBI_0002815 "This academic event is planned to be a workshop."@en ;
-                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a workshop, when all that is known about the academic event type specification is the label workshop (e.g. the event type workshop is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a workshop format without further specifications on what objectives, conditions or actions are entailed."@en ;
-                  rdfs:label "workshop plan specification"@en .
-
-
-###  https://github.com/tibonto/aeon#AEON_0010011
-aeon:AEON_0010011 rdf:type owl:NamedIndividual ,
-                           aeon:AEON_0000004 ;
-                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"@en ;
-                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a congress, when all that is known about the academic event type specification is the label congress (e.g. the event type congress is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a congress format without further specifications on what objectives, conditions or actions are entailed."@en ;
-                  rdfs:label "congress plan specification"@en .
-
-
-###  https://github.com/tibonto/aeon#AEON_0010012
-aeon:AEON_0010012 rdf:type owl:NamedIndividual ,
-                           aeon:AEON_0000004 ;
-                  obo:OBI_0002815 "This academic event is planned to be a talk."@en ;
-                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a talk, when all that is known about the academic event type specification is the label talk (e.g. the event type talk is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a talk format without further specifications on what objectives, conditions or actions are entailed."@en ;
-                  rdfs:label "talk plan specification"@en .
-
-
-###  https://github.com/tibonto/aeon#AEON_0010013
-aeon:AEON_0010013 rdf:type owl:NamedIndividual ,
-                           aeon:AEON_0000004 ;
-                  obo:OBI_0002815 "This academic event is planned to be a poster session."@en ;
-                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "This instance of an academic event type specification can be used as a default to classify / decribe an academic event as a poster session, when all that is known about the academic event type specification is the label poster session (e.g. the event type poster session is only specified in the name of the event). Hence, its representation can only be a literal statement asserting that the sociocultural format of the academic event is planned to be a poster session format without further specifications on what objectives, conditions or actions are entailed."@en ;
-                  rdfs:label "poster session plan specification"@en .
-
-
 ###  https://github.com/tibonto/aeon#Lisbon
 aeon:Lisbon rdf:type owl:NamedIndividual .
 
@@ -4315,7 +4190,6 @@ aeon:_VIVO2020 rdf:type owl:NamedIndividual ;
                obo:IAO_0000235 <https://confident.dbis.rwth-aachen.de/or/index.php?title=VIVO_2020> ,
                                aeon:_VIVO2020_name ,
                                <https://www.wikidata.org/wiki/Q108430463> ;
-               aeon:AEON_0000032 aeon:AEON_0010001 ;
                aeon:AEON_0000050 aeon:_Person_1 ;
                aeon:AEON_0000084 aeon:_VIVO_series ;
                aeon:end_date "2020-06-18T19:00:00Z"^^xsd:dateTimeStamp ;
@@ -4407,25 +4281,6 @@ aeon:_VIVO_series rdf:type owl:NamedIndividual ;
                         obo:IAO_0000227
                         obo:IAO_0000228
                         obo:IAO_0000229
-                      )
-] .
-
-
-[ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( aeon:AEON_0010000
-                        aeon:AEON_0010001
-                        aeon:AEON_0010002
-                        aeon:AEON_0010003
-                        aeon:AEON_0010004
-                        aeon:AEON_0010005
-                        aeon:AEON_0010006
-                        aeon:AEON_0010007
-                        aeon:AEON_0010008
-                        aeon:AEON_0010009
-                        aeon:AEON_0010010
-                        aeon:AEON_0010011
-                        aeon:AEON_0010012
-                        aeon:AEON_0010013
                       )
 ] .
 
