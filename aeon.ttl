@@ -719,7 +719,7 @@ aeon:AEON_0000031 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000032 rdf:type owl:ObjectProperty ;
                   rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000004 ;
-                  obo:IAO_0000115 "A relation obtaining between an 'academic event' and an 'academic event type specification' that specifies the sociocultrural format of the 'academic event'."@en ;
+                  obo:IAO_0000115 "A relation obtaining between an 'academic event' and an 'academic event format specification' that specifies the sociocultrural format of the 'academic event'."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "has academic event type"@en ;
                   rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI ;
