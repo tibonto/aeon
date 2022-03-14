@@ -712,7 +712,8 @@ aeon:AEON_0000031 rdf:type owl:ObjectProperty ;
                   rdfs:range aeon:AEON_0000001 ;
                   obo:IAO_0000115 "A relation obtaining between an 'academic event type specification' and an 'academic event', in which the former is used to descibe the sociocultural format of the latter. A set of possible common academic event type specification is provided in AEON as named individuals."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:label "specifies academic event type"@en .
+                  rdfs:label "specifies academic event type"@en ;
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000032
