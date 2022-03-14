@@ -3283,6 +3283,284 @@ aeon:AEON_0000090 rdf:type owl:Class ;
                   rdfs:label "planned process name"@en .
 
 
+###  https://github.com/tibonto/aeon#AEON_0000101
+aeon:AEON_0000101 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000001
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000032 ;
+                                                               owl:someValuesFrom aeon:AEON_0000100
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  obo:IAO_0000114 obo:IAO_0000125 ;
+                  obo:IAO_0000115 "An academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a colloquium."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000600 """A possible definition could be the following, where one can also see how the definition depends on certain planned objectives, conditions and actions:
+A colloquium is an academic event that usually lasts only a few hours and serves to discuss a specific topic. Colloquia are usually part of the academic exchange in everyday university life with only one speaker, but can also take place on special occasions (anniversaries, start or end of the lecture phase, etc.) and can have more than one speaker."""@en ;
+                  rdfs:label "academic colloquium"@en .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000103
+aeon:AEON_0000103 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000001
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000032 ;
+                                                               owl:someValuesFrom aeon:AEON_0000102
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  obo:IAO_0000114 obo:IAO_0000125 ;
+                  obo:IAO_0000115 "An academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a conference."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000600 """A possible literature based definition could be the following, where one can also see how the definition depends on certain planned objectives, conditions and actions:
+A conference is an academic event that lasts up to several days and serves as a forum for presentations on a specific topic or subject area. In addition to subject-specific conferences, there are also interdisciplinary conferences which allow both a broader focus and more specific questions on a particular (academic) problem. Conferences often have a highly formalized structure of parallel, clearly defined sessions with several short presentations and plenary sessions with invited (keynote) speakers who are considered multipliers in their (research) field. Ideally, the selection of the speakers and their contributions is subject to a review process."""@en ;
+                  rdfs:label "academic conference"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource aeon:AEON_0000103 ;
+   owl:annotatedProperty obo:IAO_0000600 ;
+   owl:annotatedTarget """A possible literature based definition could be the following, where one can also see how the definition depends on certain planned objectives, conditions and actions:
+A conference is an academic event that lasts up to several days and serves as a forum for presentations on a specific topic or subject area. In addition to subject-specific conferences, there are also interdisciplinary conferences which allow both a broader focus and more specific questions on a particular (academic) problem. Conferences often have a highly formalized structure of parallel, clearly defined sessions with several short presentations and plenary sessions with invited (keynote) speakers who are considered multipliers in their (research) field. Ideally, the selection of the speakers and their contributions is subject to a review process."""@en ;
+   obo:IAO_0000119 "Casserly, P. (2019). Symposium vs. conference, what’s the difference? A symposium versus a conference. What’s the actual difference? And how does it affect organising or submitting to one? Ex Ordo. https://www.exordo.com/blog/symposium-vs-conference/" ,
+                   "Hansen, Thomas Trøst; Pedersen, David Budtz; Foley, Carmel (PRE-PRINT). Academic Event: an empirically-grounded typology and their academic impact. DOI: https://doi.org/10.3727/152599519X15506259856598."
+ ] .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000105
+aeon:AEON_0000105 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000001
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000032 ;
+                                                               owl:someValuesFrom aeon:AEON_0000104
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  obo:IAO_0000114 obo:IAO_0000125 ;
+                  obo:IAO_0000115 "An academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a forum."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000600 "A forum is an academic event that usually is public and involves audience discussion."@en ;
+                  rdfs:label "academic forum"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource aeon:AEON_0000105 ;
+   owl:annotatedProperty obo:IAO_0000600 ;
+   owl:annotatedTarget "A forum is an academic event that usually is public and involves audience discussion."@en ;
+   obo:IAO_0000119 "https://www.merriam-webster.com/dictionary/forum"
+ ] .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000107
+aeon:AEON_0000107 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000001
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000032 ;
+                                                               owl:someValuesFrom aeon:AEON_0000106
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  obo:IAO_0000114 obo:IAO_0000125 ;
+                  obo:IAO_0000115 "An academic event in which computer programmers and others involved in software development, including graphic designers, interface designers, project managers, domain experts, and others collaborate intensively in a design sprint-like manner on software projects."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000119 "Briscoe, G., & Mulligan, C. (2014). Digital innovation: the hackathon phenomenon (Creativeworks London). https://qmro.qmul.ac.uk/xmlui/handle/123456789/11418"@en ,
+                                  "https://en.wikipedia.org/wiki/Hackathon"@en ;
+                  rdfs:label "academic hackathon"@en .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000109
+aeon:AEON_0000109 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000001
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000032 ;
+                                                               owl:someValuesFrom aeon:AEON_0000108
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  obo:IAO_0000114 obo:IAO_0000125 ;
+                  obo:IAO_0000115 "An academic event that has the function to instruct a small group or small groups, often for recurring meetings, on some particular subject, in which everyone present is usually encouraged to participate."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000119 "https://en.wikipedia.org/wiki/Seminar"^^xsd:anyURI ;
+                  rdfs:label "academic seminar"@en .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000111
+aeon:AEON_0000111 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000001
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000032 ;
+                                                               owl:someValuesFrom aeon:AEON_0000110
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  obo:IAO_0000114 obo:IAO_0000125 ;
+                  obo:IAO_0000115 "An academic event that is a clearly defined part of a larger academic event, such as an academic conference or track, in which a small number of presenters (usually 2-5) focus on a specific topic. A session is usually formally accompanied by a session chair, who assumes the function of a moderator."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  rdfs:label "academic event session"@en .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000113
+aeon:AEON_0000113 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000001
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000032 ;
+                                                               owl:someValuesFrom aeon:AEON_0000112
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  obo:IAO_0000114 obo:IAO_0000125 ;
+                  obo:IAO_0000115 "An academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a symposium."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000600 """A possible literature based definition could be the following:
+A symposium is a specific type of conference with a narrower thematic focus, with fewer participants and of shorter duration. The degree of structuring lies between a classic conference and a workshop, allows more discussion than the larger conference, but is usually more formalized than the workshop."""@en ;
+                  rdfs:label "academic symposium"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource aeon:AEON_0000113 ;
+   owl:annotatedProperty obo:IAO_0000600 ;
+   owl:annotatedTarget """A possible literature based definition could be the following:
+A symposium is a specific type of conference with a narrower thematic focus, with fewer participants and of shorter duration. The degree of structuring lies between a classic conference and a workshop, allows more discussion than the larger conference, but is usually more formalized than the workshop."""@en ;
+   obo:IAO_0000119 "Canadian Institute for Knowledge Development (CIKD). (2019). Difference between scientific events. NCM Conferences blog. https://ncmconferences.com/difference-between-scientific-events/" ,
+                   "Casserly, P. (2019). Symposium vs. conference, what’s the difference? A symposium versus a conference. What’s the actual difference? And how does it affect organising or submitting to one? Ex Ordo. https://www.exordo.com/blog/symposium-vs-conference/" ,
+                   "Hansen, Thomas Trøst; Pedersen, David Budtz; Foley, Carmel (PRE-PRINT). Academic Event: an empirically-grounded typology and their academic impact. DOI: https://doi.org/10.3727/152599519X15506259856598."
+ ] .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000115
+aeon:AEON_0000115 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000125
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000032 ;
+                                                               owl:someValuesFrom aeon:AEON_0000114
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  obo:IAO_0000114 obo:IAO_0000125 ;
+                  obo:IAO_0000115 "A keynote speech is a special talk that has the function to set the underlying tone and summarize the core message or most important revelation off the academic at which it is given."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000118 "keynote"@en ,
+                                  "keynote lecture"@en ;
+                  obo:IAO_0000119 "https://en.wikipedia.org/wiki/Keynote"^^xsd:anyURI ;
+                  rdfs:label "keynote speech"@en .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000117
+aeon:AEON_0000117 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000001
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000032 ;
+                                                               owl:someValuesFrom aeon:AEON_0000116
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  obo:IAO_0000114 obo:IAO_0000125 ;
+                  obo:IAO_0000115 "An academic event that, as a part of a larger academic event, has the function to group even smaller parts of the academic event, like sessions and talks, according to a shared theme or topic. It usually has dedicated chairs and program committees."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000118 "stream"@en ;
+                  obo:IAO_0000119 "https://www.conftool.net/ctforum/index.php/topic,99.0.html"^^xsd:anyURI ;
+                  rdfs:label "academic event track"@en .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000119
+aeon:AEON_0000119 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000001
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000032 ;
+                                                               owl:someValuesFrom aeon:AEON_0000118
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  obo:IAO_0000114 obo:IAO_0000125 ;
+                  obo:IAO_0000115 "An academic event that has the function to educate the audience on a certain topic. A tutorial is often realized as an academic event talk or academic event session."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000119 "https://en.wikipedia.org/wiki/Tutorial"^^xsd:anyURI ;
+                  rdfs:label "academic tutorial"@en .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000121
+aeon:AEON_0000121 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000001
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000032 ;
+                                                               owl:someValuesFrom aeon:AEON_0000120
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  obo:IAO_0000114 obo:IAO_0000125 ;
+                  obo:IAO_0000115 "A smaller academic event that serves to exchange information on a specific topic or problem. It usually last one or two days and offers space for discussion and the development of content and solutions. Group work is often part of the event concept."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000119 "Alston, J. M. (2019). What's the difference between a conference, a seminar, a workshop and a symposium? Conference Monkey Insights. https://conferencemonkey.org/insight/whats-the-difference-between-a-conference-a-seminar-a-workshop-and-a-symposium-1075915"@en ,
+                                  "Canadian Institute for Knowledge Development (CIKD). (2019). Difference between scientific events. NCM Conferences blog. https://ncmconferences.com/difference-between-scientific-events/"@en ;
+                  rdfs:label "academic workshop"@en .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000123
+aeon:AEON_0000123 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000001
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000032 ;
+                                                               owl:someValuesFrom aeon:AEON_0000122
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  obo:IAO_0000115 "Academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a congress. It usually is a larger type of conference with regard to the number of participants and organizers."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000600 """A possible literature based definition could be the following:
+A congress is a conference that is characterised by a larger number of participants (often several hundred) and is oftentimes organised jointly by large, established (e.g. specialised societies) and/or several institutions. Congresses have a broader thematic focus than simple conferences, take place in certain cycles, but can still target an exclusive group of participants (e.g. representatives of a single discipline)."""@en ;
+                  rdfs:label "academic congress"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource aeon:AEON_0000123 ;
+   owl:annotatedProperty obo:IAO_0000600 ;
+   owl:annotatedTarget """A possible literature based definition could be the following:
+A congress is a conference that is characterised by a larger number of participants (often several hundred) and is oftentimes organised jointly by large, established (e.g. specialised societies) and/or several institutions. Congresses have a broader thematic focus than simple conferences, take place in certain cycles, but can still target an exclusive group of participants (e.g. representatives of a single discipline)."""@en ;
+   obo:IAO_0000119 "Canadian Institute for Knowledge Development (CIKD). (2019). Difference between scientific events. NCM Conferences blog. https://ncmconferences.com/difference-between-scientific-events/" ,
+                   "Hansen, Thomas Trøst; Pedersen, David Budtz; Foley, Carmel (PRE-PRINT). Academic Event: an empirically-grounded typology and their academic impact. DOI: https://doi.org/10.3727/152599519X15506259856598."
+ ] .
+
+
+###  https://github.com/tibonto/aeon#AEON_0000125
+aeon:AEON_0000125 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000001
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000032 ;
+                                                               owl:someValuesFrom aeon:AEON_0000124
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  obo:IAO_0000111 "presentation"@en ;
+                  obo:IAO_0000115 "An academic event that is a unit of a larger academic event, such as an academic event session, at which a specific topic is being presented in a rather short way often as a part of a larger academic event such as a session, conference or workshop."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000118 "presentation"@en ,
+                                  "speech"@en ;
+                  rdfs:label "academic event talk"@en .
+###  https://github.com/tibonto/aeon#AEON_0000127
+aeon:AEON_0000127 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000111
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000032 ;
+                                                               owl:someValuesFrom aeon:AEON_0000126
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  obo:IAO_0000115 "A poster session is a session at which poster papers are presented."@en ;
+                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
+                  obo:IAO_0000119 "https://en.wikipedia.org/wiki/Poster_session"^^xsd:anyURI ;
+                  rdfs:label "poster session"@en .
+
+
 ###  https://github.com/tibonto/aeon#attendance_fee_specification
 aeon:attendance_fee_specification rdf:type owl:Class ;
                                   rdfs:subClassOf aeon:AEON_0000030 ;
@@ -3321,31 +3599,6 @@ Defining 'attendee' is not trivial, as the expectations of what an attendee must
               obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
               obo:IAO_0000600 "A person who participates actively or passively in an event."@en ;
               rdfs:label "attendee"@en .
-
-
-###  https://github.com/tibonto/aeon#colloquium
-aeon:colloquium rdf:type owl:Class ;
-                rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty aeon:AEON_0000032 ;
-                                                         owl:hasValue aeon:AEON_0010000
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ;
-                obo:IAO_0000114 obo:IAO_0000125 ;
-                obo:IAO_0000115 "An academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a colloquium."@en ;
-                obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                obo:IAO_0000600 """A possible definition could be the following, where one can also see how the definition depends on certain planned objectives, conditions and actions:
-A colloquium is an academic event that usually lasts only a few hours and serves to discuss a specific topic. Colloquia are usually part of the academic exchange in everyday university life with only one speaker, but can also take place on special occasions (anniversaries, start or end of the lecture phase, etc.) and can have more than one speaker."""@en ;
-                rdfs:label "academic colloquium"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource aeon:colloquium ;
-   owl:annotatedProperty obo:IAO_0000115 ;
-   owl:annotatedTarget "An academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a colloquium."@en ;
-   obo:IAO_0000116 aeon:AEON_0010000
- ] .
 
 
 ###  https://github.com/tibonto/aeon#committee_chair
@@ -3402,73 +3655,6 @@ aeon:committee_member rdf:type owl:Class ;
                       obo:IAO_0000115 "A committee member is an organizer that holds a committee member role which is being realized in a planned process."@en ;
                       obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                       rdfs:label "event committee member"@en .
-
-
-###  https://github.com/tibonto/aeon#conference
-aeon:conference rdf:type owl:Class ;
-                rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty aeon:AEON_0000032 ;
-                                                         owl:hasValue aeon:AEON_0010001
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ;
-                obo:IAO_0000114 obo:IAO_0000125 ;
-                obo:IAO_0000115 "An academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a conference."@en ;
-                obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                obo:IAO_0000600 """A possible literature based definition could be the following, where one can also see how the definition depends on certain planned objectives, conditions and actions:
-A conference is an academic event that lasts up to several days and serves as a forum for presentations on a specific topic or subject area. In addition to subject-specific conferences, there are also interdisciplinary conferences which allow both a broader focus and more specific questions on a particular (academic) problem. Conferences often have a highly formalized structure of parallel, clearly defined sessions with several short presentations and plenary sessions with invited (keynote) speakers who are considered multipliers in their (research) field. Ideally, the selection of the speakers and their contributions is subject to a review process."""@en ;
-                rdfs:label "academic conference"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource aeon:conference ;
-   owl:annotatedProperty obo:IAO_0000115 ;
-   owl:annotatedTarget "An academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a conference."@en ;
-   obo:IAO_0000116 aeon:AEON_0010001
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource aeon:conference ;
-   owl:annotatedProperty obo:IAO_0000600 ;
-   owl:annotatedTarget """A possible literature based definition could be the following, where one can also see how the definition depends on certain planned objectives, conditions and actions:
-A conference is an academic event that lasts up to several days and serves as a forum for presentations on a specific topic or subject area. In addition to subject-specific conferences, there are also interdisciplinary conferences which allow both a broader focus and more specific questions on a particular (academic) problem. Conferences often have a highly formalized structure of parallel, clearly defined sessions with several short presentations and plenary sessions with invited (keynote) speakers who are considered multipliers in their (research) field. Ideally, the selection of the speakers and their contributions is subject to a review process."""@en ;
-   obo:IAO_0000119 "Casserly, P. (2019). Symposium vs. conference, what’s the difference? A symposium versus a conference. What’s the actual difference? And how does it affect organising or submitting to one? Ex Ordo. https://www.exordo.com/blog/symposium-vs-conference/" ,
-                   "Hansen, Thomas Trøst; Pedersen, David Budtz; Foley, Carmel (PRE-PRINT). Academic Event: an empirically-grounded typology and their academic impact. DOI: https://doi.org/10.3727/152599519X15506259856598."
- ] .
-
-
-###  https://github.com/tibonto/aeon#congress
-aeon:congress rdf:type owl:Class ;
-              rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
-                                                     [ rdf:type owl:Restriction ;
-                                                       owl:onProperty aeon:AEON_0000032 ;
-                                                       owl:hasValue aeon:AEON_0010011
-                                                     ]
-                                                   ) ;
-                                rdf:type owl:Class
-                              ] ;
-              obo:IAO_0000115 "Academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a congress. It usually is a larger type of conference with regard to the number of participants and organizers."@en ;
-              obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-              obo:IAO_0000600 """A possible literature based definition could be the following:
-A congress is a conference that is characterised by a larger number of participants (often several hundred) and is oftentimes organised jointly by large, established (e.g. specialised societies) and/or several institutions. Congresses have a broader thematic focus than simple conferences, take place in certain cycles, but can still target an exclusive group of participants (e.g. representatives of a single discipline)."""@en ;
-              rdfs:label "academic congress"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource aeon:congress ;
-   owl:annotatedProperty obo:IAO_0000115 ;
-   owl:annotatedTarget "Academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a congress. It usually is a larger type of conference with regard to the number of participants and organizers."@en ;
-   obo:IAO_0000116 aeon:AEON_0010011
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource aeon:congress ;
-   owl:annotatedProperty obo:IAO_0000600 ;
-   owl:annotatedTarget """A possible literature based definition could be the following:
-A congress is a conference that is characterised by a larger number of participants (often several hundred) and is oftentimes organised jointly by large, established (e.g. specialised societies) and/or several institutions. Congresses have a broader thematic focus than simple conferences, take place in certain cycles, but can still target an exclusive group of participants (e.g. representatives of a single discipline)."""@en ;
-   obo:IAO_0000119 "Canadian Institute for Knowledge Development (CIKD). (2019). Difference between scientific events. NCM Conferences blog. https://ncmconferences.com/difference-between-scientific-events/" ,
-                   "Hansen, Thomas Trøst; Pedersen, David Budtz; Foley, Carmel (PRE-PRINT). Academic Event: an empirically-grounded typology and their academic impact. DOI: https://doi.org/10.3727/152599519X15506259856598."
- ] .
 
 
 ###  https://github.com/tibonto/aeon#contact_person
@@ -3536,37 +3722,6 @@ aeon:finance_committee rdf:type owl:Class ;
                        rdfs:label "event finance committee"@en .
 
 
-###  https://github.com/tibonto/aeon#forum
-aeon:forum rdf:type owl:Class ;
-           rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty aeon:AEON_0000032 ;
-                                                    owl:hasValue aeon:AEON_0010002
-                                                  ]
-                                                ) ;
-                             rdf:type owl:Class
-                           ] ;
-           obo:IAO_0000114 obo:IAO_0000125 ;
-           obo:IAO_0000115 "An academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a forum."@en ;
-           obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-           obo:IAO_0000600 "A forum is an academic event that usually is public and involves audience discussion."@en ;
-           rdfs:label "academic forum"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource aeon:forum ;
-   owl:annotatedProperty obo:IAO_0000115 ;
-   owl:annotatedTarget "An academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a forum."@en ;
-   obo:IAO_0000116 aeon:AEON_0010002
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource aeon:forum ;
-   owl:annotatedProperty obo:IAO_0000600 ;
-   owl:annotatedTarget "A forum is an academic event that usually is public and involves audience discussion."@en ;
-   obo:IAO_0000119 "https://www.merriam-webster.com/dictionary/forum"
- ] .
-
-
 ###  https://github.com/tibonto/aeon#general_committee
 aeon:general_committee rdf:type owl:Class ;
                        rdfs:subClassOf aeon:AEON_0000042 ;
@@ -3575,31 +3730,6 @@ aeon:general_committee rdf:type owl:Class ;
                        obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
                        obo:IAO_0000118 "steering committee"@en ;
                        rdfs:label "general committee"@en .
-
-
-###  https://github.com/tibonto/aeon#hackathon
-aeon:hackathon rdf:type owl:Class ;
-               rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
-                                                      [ rdf:type owl:Restriction ;
-                                                        owl:onProperty aeon:AEON_0000032 ;
-                                                        owl:hasValue aeon:AEON_0010003
-                                                      ]
-                                                    ) ;
-                                 rdf:type owl:Class
-                               ] ;
-               obo:IAO_0000114 obo:IAO_0000125 ;
-               obo:IAO_0000115 "An academic event in which computer programmers and others involved in software development, including graphic designers, interface designers, project managers, domain experts, and others collaborate intensively in a design sprint-like manner on software projects."@en ;
-               obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-               obo:IAO_0000119 "Briscoe, G., & Mulligan, C. (2014). Digital innovation: the hackathon phenomenon (Creativeworks London). https://qmro.qmul.ac.uk/xmlui/handle/123456789/11418"@en ,
-                               "https://en.wikipedia.org/wiki/Hackathon"@en ;
-               rdfs:label "academic hackathon"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource aeon:hackathon ;
-   owl:annotatedProperty obo:IAO_0000115 ;
-   owl:annotatedTarget "An academic event in which computer programmers and others involved in software development, including graphic designers, interface designers, project managers, domain experts, and others collaborate intensively in a design sprint-like manner on software projects."@en ;
-   obo:IAO_0000116 aeon:AEON_0010003
- ] .
 
 
 ###  https://github.com/tibonto/aeon#keynote_speaker
@@ -3625,32 +3755,6 @@ aeon:keynote_speaker rdf:type owl:Class ;
                      obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                      obo:IAO_0000600 "An invited person - often a multiplier in his or her (research) field - responsible for delivering a keynote speech."@en ;
                      rdfs:label "keynote speaker"@en .
-
-
-###  https://github.com/tibonto/aeon#keynote_speech
-aeon:keynote_speech rdf:type owl:Class ;
-                    rdfs:subClassOf [ owl:intersectionOf ( aeon:talk
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty aeon:AEON_0000032 ;
-                                                             owl:hasValue aeon:AEON_0010007
-                                                           ]
-                                                         ) ;
-                                      rdf:type owl:Class
-                                    ] ;
-                    obo:IAO_0000114 obo:IAO_0000125 ;
-                    obo:IAO_0000115 "A keynote speech is a special talk that has the function to set the underlying tone and summarize the core message or most important revelation off the academic at which it is given."@en ;
-                    obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                    obo:IAO_0000118 "keynote"@en ,
-                                    "keynote lecture"@en ;
-                    obo:IAO_0000119 "https://en.wikipedia.org/wiki/Keynote"^^xsd:anyURI ;
-                    rdfs:label "keynote speech"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource aeon:keynote_speech ;
-   owl:annotatedProperty obo:IAO_0000115 ;
-   owl:annotatedTarget "A keynote speech is a special talk that has the function to set the underlying tone and summarize the core message or most important revelation off the academic at which it is given."@en ;
-   obo:IAO_0000116 aeon:AEON_0010007
- ] .
 
 
 ###  https://github.com/tibonto/aeon#local_committee
@@ -3712,29 +3816,6 @@ aeon:organizer rdf:type owl:Class ;
                rdfs:label "organizer"@en .
 
 
-###  https://github.com/tibonto/aeon#poster_session
-aeon:poster_session rdf:type owl:Class ;
-                    rdfs:subClassOf [ owl:intersectionOf ( aeon:session
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty aeon:AEON_0000032 ;
-                                                             owl:hasValue aeon:AEON_0010013
-                                                           ]
-                                                         ) ;
-                                      rdf:type owl:Class
-                                    ] ;
-                    obo:IAO_0000115 "A poster session is a session at which poster papers are presented."@en ;
-                    obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                    obo:IAO_0000119 "https://en.wikipedia.org/wiki/Poster_session"^^xsd:anyURI ;
-                    rdfs:label "poster session"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource aeon:poster_session ;
-   owl:annotatedProperty obo:IAO_0000115 ;
-   owl:annotatedTarget "A poster session is a session at which poster papers are presented."@en ;
-   obo:IAO_0000116 aeon:AEON_0010013
- ] .
-
-
 ###  https://github.com/tibonto/aeon#program_committee
 aeon:program_committee rdf:type owl:Class ;
                        rdfs:subClassOf aeon:AEON_0000042 ;
@@ -3784,57 +3865,6 @@ aeon:reviewer rdf:type owl:Class ;
               obo:IAO_0000115 "A reviewer is a contributer that holds a reviewer role which is being realized in a planned process."@en ;
               obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
               rdfs:label "reviewer"@en .
-
-
-###  https://github.com/tibonto/aeon#seminar
-aeon:seminar rdf:type owl:Class ;
-             rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty aeon:AEON_0000032 ;
-                                                      owl:hasValue aeon:AEON_0010004
-                                                    ]
-                                                  ) ;
-                               rdf:type owl:Class
-                             ] ;
-             obo:IAO_0000114 obo:IAO_0000125 ;
-             obo:IAO_0000115 "An academic event that has the function to instruct a small group or small groups, often for recurring meetings, on some particular subject, in which everyone present is usually encouraged to participate."@en ;
-             obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-             obo:IAO_0000119 "https://en.wikipedia.org/wiki/Seminar"^^xsd:anyURI ;
-             rdfs:label "academic seminar"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource aeon:seminar ;
-   owl:annotatedProperty obo:IAO_0000115 ;
-   owl:annotatedTarget "An academic event that has the function to instruct a small group or small groups, often for recurring meetings, on some particular subject, in which everyone present is usually encouraged to participate."@en ;
-   obo:IAO_0000116 aeon:AEON_0010004
- ] .
-
-
-###  https://github.com/tibonto/aeon#session
-aeon:session rdf:type owl:Class ;
-             rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty aeon:AEON_0000032 ;
-                                                      owl:hasValue aeon:AEON_0010005
-                                                    ]
-                                                  ) ;
-                               rdf:type owl:Class
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty obo:RO_0002012 ;
-                               owl:someValuesFrom aeon:AEON_0000001
-                             ] ;
-             obo:IAO_0000114 obo:IAO_0000125 ;
-             obo:IAO_0000115 "An academic event that is a clearly defined part of a larger academic event, such as an academic conference or track, in which a small number of presenters (usually 2-5) focus on a specific topic. A session is usually formally accompanied by a session chair, who assumes the function of a moderator."@en ;
-             obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-             rdfs:label "academic event session"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource aeon:session ;
-   owl:annotatedProperty obo:IAO_0000115 ;
-   owl:annotatedTarget "An academic event that is a clearly defined part of a larger academic event, such as an academic conference or track, in which a small number of presenters (usually 2-5) focus on a specific topic. A session is usually formally accompanied by a session chair, who assumes the function of a moderator."@en ;
-   obo:IAO_0000116 aeon:AEON_0010005
- ] .
 
 
 ###  https://github.com/tibonto/aeon#speaker
@@ -3907,70 +3937,6 @@ aeon:sponsorship_committee rdf:type owl:Class ;
                            rdfs:label "sponsorship committee"@en .
 
 
-###  https://github.com/tibonto/aeon#symposium
-aeon:symposium rdf:type owl:Class ;
-               rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
-                                                      [ rdf:type owl:Restriction ;
-                                                        owl:onProperty aeon:AEON_0000032 ;
-                                                        owl:hasValue aeon:AEON_0010006
-                                                      ]
-                                                    ) ;
-                                 rdf:type owl:Class
-                               ] ;
-               obo:IAO_0000114 obo:IAO_0000125 ;
-               obo:IAO_0000115 "An academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a symposium."@en ;
-               obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-               obo:IAO_0000600 """A possible literature based definition could be the following:
-A symposium is a specific type of conference with a narrower thematic focus, with fewer participants and of shorter duration. The degree of structuring lies between a classic conference and a workshop, allows more discussion than the larger conference, but is usually more formalized than the workshop."""@en ;
-               rdfs:label "academic symposium"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource aeon:symposium ;
-   owl:annotatedProperty obo:IAO_0000115 ;
-   owl:annotatedTarget "An academic event whose sociocultural format is determined in an academic event type specification that classifies the academic event as a symposium."@en ;
-   obo:IAO_0000116 aeon:AEON_0010006
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource aeon:symposium ;
-   owl:annotatedProperty obo:IAO_0000600 ;
-   owl:annotatedTarget """A possible literature based definition could be the following:
-A symposium is a specific type of conference with a narrower thematic focus, with fewer participants and of shorter duration. The degree of structuring lies between a classic conference and a workshop, allows more discussion than the larger conference, but is usually more formalized than the workshop."""@en ;
-   obo:IAO_0000119 "Canadian Institute for Knowledge Development (CIKD). (2019). Difference between scientific events. NCM Conferences blog. https://ncmconferences.com/difference-between-scientific-events/" ,
-                   "Casserly, P. (2019). Symposium vs. conference, what’s the difference? A symposium versus a conference. What’s the actual difference? And how does it affect organising or submitting to one? Ex Ordo. https://www.exordo.com/blog/symposium-vs-conference/" ,
-                   "Hansen, Thomas Trøst; Pedersen, David Budtz; Foley, Carmel (PRE-PRINT). Academic Event: an empirically-grounded typology and their academic impact. DOI: https://doi.org/10.3727/152599519X15506259856598."
- ] .
-
-
-###  https://github.com/tibonto/aeon#talk
-aeon:talk rdf:type owl:Class ;
-          rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
-                                                 [ rdf:type owl:Restriction ;
-                                                   owl:onProperty aeon:AEON_0000032 ;
-                                                   owl:hasValue aeon:AEON_0010012
-                                                 ]
-                                               ) ;
-                            rdf:type owl:Class
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty obo:RO_0002012 ;
-                            owl:someValuesFrom aeon:AEON_0000001
-                          ] ;
-          obo:IAO_0000111 "presentation"@en ;
-          obo:IAO_0000115 "An academic event that is a unit of a larger academic event, such as an academic event session, at which a specific topic is being presented in a rather short way often as a part of a larger academic event such as a session, conference or workshop."@en ;
-          obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-          obo:IAO_0000118 "presentation"@en ,
-                          "speech"@en ;
-          rdfs:label "academic event talk"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource aeon:talk ;
-   owl:annotatedProperty obo:IAO_0000115 ;
-   owl:annotatedTarget "An academic event that is a unit of a larger academic event, such as an academic event session, at which a specific topic is being presented in a rather short way often as a part of a larger academic event such as a session, conference or workshop."@en ;
-   obo:IAO_0000116 aeon:AEON_0010012
- ] .
-
-
 ###  https://github.com/tibonto/aeon#technical_committee
 aeon:technical_committee rdf:type owl:Class ;
                          rdfs:subClassOf aeon:AEON_0000042 ;
@@ -3978,59 +3944,6 @@ aeon:technical_committee rdf:type owl:Class ;
                          obo:IAO_0000115 "The technical committee ia an academic event committee that is responsible for the technical needs associated with the realization of an academic event."@en ;
                          obo:IAO_0000117 <https://orcid.org/0000-0002-1595-3213> ;
                          rdfs:label "technical committee"@en .
-
-
-###  https://github.com/tibonto/aeon#track
-aeon:track rdf:type owl:Class ;
-           rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty aeon:AEON_0000032 ;
-                                                    owl:hasValue aeon:AEON_0010008
-                                                  ]
-                                                ) ;
-                             rdf:type owl:Class
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty obo:RO_0002012 ;
-                             owl:someValuesFrom aeon:AEON_0000001
-                           ] ;
-           obo:IAO_0000114 obo:IAO_0000125 ;
-           obo:IAO_0000115 "An academic event that, as a part of a larger academic event, has the function to group even smaller parts of the academic event, like sessions and talks, according to a shared theme or topic. It usually has dedicated chairs and program committees."@en ;
-           obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-           obo:IAO_0000118 "stream"@en ;
-           obo:IAO_0000119 "https://www.conftool.net/ctforum/index.php/topic,99.0.html"^^xsd:anyURI ;
-           rdfs:label "academic event track"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource aeon:track ;
-   owl:annotatedProperty obo:IAO_0000115 ;
-   owl:annotatedTarget "An academic event that, as a part of a larger academic event, has the function to group even smaller parts of the academic event, like sessions and talks, according to a shared theme or topic. It usually has dedicated chairs and program committees."@en ;
-   obo:IAO_0000116 aeon:AEON_0010008
- ] .
-
-
-###  https://github.com/tibonto/aeon#tutorial
-aeon:tutorial rdf:type owl:Class ;
-              rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
-                                                     [ rdf:type owl:Restriction ;
-                                                       owl:onProperty aeon:AEON_0000032 ;
-                                                       owl:hasValue aeon:AEON_0010009
-                                                     ]
-                                                   ) ;
-                                rdf:type owl:Class
-                              ] ;
-              obo:IAO_0000114 obo:IAO_0000125 ;
-              obo:IAO_0000115 "An academic event that has the function to educate the audience on a certain topic. A tutorial is often realized as an academic event talk or academic event session."@en ;
-              obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-              obo:IAO_0000119 "https://en.wikipedia.org/wiki/Tutorial"^^xsd:anyURI ;
-              rdfs:label "academic tutorial"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource aeon:tutorial ;
-   owl:annotatedProperty obo:IAO_0000115 ;
-   owl:annotatedTarget "An academic event that has the function to educate the audience on a certain topic. A tutorial is often realized as an academic event talk or academic event session."@en ;
-   obo:IAO_0000116 aeon:AEON_0010009
- ] .
 
 
 ###  https://github.com/tibonto/aeon#wikiCFP_ID
@@ -4042,31 +3955,6 @@ aeon:wikiCFP_ID rdf:type owl:Class ;
                 obo:IAO_0000118 "wikiCFP ID"@en ;
                 obo:IAO_0000119 "http://www.wikicfp.com/cfp/"^^xsd:anyURI ;
                 rdfs:label "wikiCFP identifier"@en .
-
-
-###  https://github.com/tibonto/aeon#workshop
-aeon:workshop rdf:type owl:Class ;
-              rdfs:subClassOf [ owl:intersectionOf ( aeon:AEON_0000001
-                                                     [ rdf:type owl:Restriction ;
-                                                       owl:onProperty aeon:AEON_0000032 ;
-                                                       owl:hasValue aeon:AEON_0010010
-                                                     ]
-                                                   ) ;
-                                rdf:type owl:Class
-                              ] ;
-              obo:IAO_0000114 obo:IAO_0000125 ;
-              obo:IAO_0000115 "A smaller academic event that serves to exchange information on a specific topic or problem. It usually last one or two days and offers space for discussion and the development of content and solutions. Group work is often part of the event concept."@en ;
-              obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-              obo:IAO_0000119 "Alston, J. M. (2019). What's the difference between a conference, a seminar, a workshop and a symposium? Conference Monkey Insights. https://conferencemonkey.org/insight/whats-the-difference-between-a-conference-a-seminar-a-workshop-and-a-symposium-1075915"@en ,
-                              "Canadian Institute for Knowledge Development (CIKD). (2019). Difference between scientific events. NCM Conferences blog. https://ncmconferences.com/difference-between-scientific-events/"@en ;
-              rdfs:label "academic workshop"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource aeon:workshop ;
-   owl:annotatedProperty obo:IAO_0000115 ;
-   owl:annotatedTarget "A smaller academic event that serves to exchange information on a specific topic or problem. It usually last one or two days and offers space for discussion and the development of content and solutions. Group work is often part of the event concept."@en ;
-   obo:IAO_0000116 aeon:AEON_0010010
- ] .
 
 
 #################################################################
