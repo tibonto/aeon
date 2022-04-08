@@ -1057,6 +1057,7 @@ aeon:AEON_0000086 rdf:type owl:ObjectProperty ;
                   obo:IAO_0000115 "A relation obtaining between a bfo:occurent and the country in which it occurs."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "occurs in country"@en ;
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/142"^^xsd:anyURI ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P17\", \"label\": \"countryLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_country\", \"label\": \"Has_location_country\"}}"^^xsd:string .
 
 
@@ -1068,6 +1069,7 @@ aeon:AEON_0000087 rdf:type owl:ObjectProperty ;
                   obo:IAO_0000115 "A relation obtaining between a bfo:occurent and the city in which it occurs."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "occurs in city"@en ;
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/142"^^xsd:anyURI ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P276\", \"label\": \"locationLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_city\", \"label\": \"Has_location_city\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#placeOfConferenceOrEvent\", \"label\": \"Place of conference or event\"}}"^^xsd:string .
 
 
@@ -1079,6 +1081,7 @@ aeon:AEON_0000088 rdf:type owl:ObjectProperty ;
                   obo:IAO_0000115 "A relation obtaining between a bfo:occurent and the province in which it occurs."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "occurs in province"@en ;
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/142"^^xsd:anyURI ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P131\", \"label\": \"located_in_the_administrative_territorial_entityLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_state\", \"label\": \"Has_location_state\"}}"^^xsd:string .
 
 
@@ -2965,7 +2968,8 @@ aeon:AEON_0000021 rdf:type owl:Class ;
 aeon:AEON_0000022 rdf:type owl:Class ;
                   rdfs:comment "replaced by ENVO:00000856"^^xsd:string ;
                   rdfs:label "DEPRECATED city"@en ;
-                  rdfs:seeAlso obo:ENVO_00000856 ;
+                  rdfs:seeAlso obo:ENVO_00000856 ,
+                               "https://github.com/tibonto/aeon/issues/142"^^xsd:anyURI ;
                   owl:deprecated "true"^^xsd:boolean .
 
 
@@ -2973,7 +2977,8 @@ aeon:AEON_0000022 rdf:type owl:Class ;
 aeon:AEON_0000023 rdf:type owl:Class ;
                   rdfs:comment "replaced by ENVO term"^^xsd:string ;
                   rdfs:label "DEPRECATED country"@en ;
-                  rdfs:seeAlso obo:ENVO_00000009 ;
+                  rdfs:seeAlso obo:ENVO_00000009 ,
+                               "https://github.com/tibonto/aeon/issues/142"^^xsd:anyURI ;
                   owl:deprecated "true"^^xsd:boolean .
 
 
@@ -2981,7 +2986,8 @@ aeon:AEON_0000023 rdf:type owl:Class ;
 aeon:AEON_0000024 rdf:type owl:Class ;
                   rdfs:comment "replaced by ENVO term"^^xsd:string ;
                   rdfs:label "DEPRECATED province"@en ;
-                  rdfs:seeAlso obo:ENVO_00000005 ;
+                  rdfs:seeAlso obo:ENVO_00000005 ,
+                               "https://github.com/tibonto/aeon/issues/142"^^xsd:anyURI ;
                   owl:deprecated "true"^^xsd:boolean .
 
 
