@@ -1053,10 +1053,11 @@ aeon:AEON_0000085 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000086 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:BFO_0000066 ;
                   rdfs:domain obo:BFO_0000003 ;
-                  rdfs:range aeon:AEON_0000023 ;
+                  rdfs:range obo:ENVO_00000009 ;
                   obo:IAO_0000115 "A relation obtaining between a bfo:occurent and the country in which it occurs."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "occurs in country"@en ;
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/142"^^xsd:anyURI ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P17\", \"label\": \"countryLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_country\", \"label\": \"Has_location_country\"}}"^^xsd:string .
 
 
@@ -1064,10 +1065,11 @@ aeon:AEON_0000086 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000087 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:BFO_0000066 ;
                   rdfs:domain obo:BFO_0000003 ;
-                  rdfs:range aeon:AEON_0000022 ;
+                  rdfs:range obo:ENVO_00000856 ;
                   obo:IAO_0000115 "A relation obtaining between a bfo:occurent and the city in which it occurs."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "occurs in city"@en ;
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/142"^^xsd:anyURI ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P276\", \"label\": \"locationLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_city\", \"label\": \"Has_location_city\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#placeOfConferenceOrEvent\", \"label\": \"Place of conference or event\"}}"^^xsd:string .
 
 
@@ -1075,10 +1077,11 @@ aeon:AEON_0000087 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000088 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf obo:BFO_0000066 ;
                   rdfs:domain obo:BFO_0000003 ;
-                  rdfs:range aeon:AEON_0000024 ;
+                  rdfs:range obo:ENVO_00000005 ;
                   obo:IAO_0000115 "A relation obtaining between a bfo:occurent and the province in which it occurs."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "occurs in province"@en ;
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/142"^^xsd:anyURI ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P131\", \"label\": \"located_in_the_administrative_territorial_entityLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_location_state\", \"label\": \"Has_location_state\"}}"^^xsd:string .
 
 
@@ -1388,7 +1391,6 @@ For now it seems sufficient to have a data property."""@en ;
 ###  https://github.com/tibonto/aeon#coordinates
 aeon:coordinates rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf aeon:location ;
-                 rdfs:domain obo:GAZ_00000448 ;
                  rdfs:label "coordinates"@en .
 
 
@@ -1635,7 +1637,7 @@ aeon:start_date rdf:type owl:DatatypeProperty ;
 ###  https://github.com/tibonto/aeon#state
 aeon:state rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf aeon:location ;
-           rdfs:domain aeon:AEON_0000024 ;
+           rdfs:domain obo:ENVO_00000005 ;
            rdfs:label "state"@en .
 
 
@@ -2038,12 +2040,22 @@ obo:BFO_0000148 rdf:type owl:Class ;
                 rdfs:label "zero-dimensional temporal region"@en .
 
 
-###  http://purl.obolibrary.org/obo/GAZ_00000448
-obo:GAZ_00000448 rdf:type owl:Class ;
-                 rdfs:subClassOf obo:BFO_0000029 ;
-                 obo:IAO_0000115 "A reference to a place on the Earth, by its name or by its geographical location."@en ;
-                 obo:IAO_0000118 "geographic region"@en ;
-                 rdfs:label "geographic location"@en .
+###  http://purl.obolibrary.org/obo/ENVO_00000005
+obo:ENVO_00000005 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000029 ;
+                  rdfs:label "first-order administrative region" .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000009
+obo:ENVO_00000009 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000029 ;
+                  rdfs:label "national geopolitical entity" .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000856
+obo:ENVO_00000856 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000029 ;
+                  rdfs:label "city" .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000001
@@ -2954,43 +2966,36 @@ aeon:AEON_0000021 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000022
 aeon:AEON_0000022 rdf:type owl:Class ;
-                  rdfs:subClassOf obo:GAZ_00000448 ;
-                  obo:IAO_0000114 obo:IAO_0000423 ;
-                  obo:IAO_0000115 "A city is gaz:geographic location that represents a large human settlement."@en ;
-                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  obo:IAO_0000119 "https://en.wikipedia.org/wiki/City" ;
-                  obo:IAO_0006011 "http://purl.obolibrary.org/obo/ENVO_00000856"^^xsd:anyURI ;
-                  rdfs:label "city"@en .
+                  rdfs:comment "replaced by ENVO:00000856"^^xsd:string ;
+                  rdfs:label "DEPRECATED city"@en ;
+                  rdfs:seeAlso obo:ENVO_00000856 ,
+                               "https://github.com/tibonto/aeon/issues/142"^^xsd:anyURI ;
+                  owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000023
 aeon:AEON_0000023 rdf:type owl:Class ;
-                  rdfs:subClassOf obo:GAZ_00000448 ;
-                  obo:IAO_0000114 obo:IAO_0000423 ;
-                  obo:IAO_0000115 "A country is a gaz:geographic location that may be an independent sovereign state or part of a larger state, as a non-sovereign or formerly sovereign political division, a physical territory with a government, or a geographic region associated with sets of previously independent or differently associated people with distinct political characteristics."@en ;
-                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  obo:IAO_0000119 "https://en.wikipedia.org/wiki/Country"^^xsd:anyURI ;
-                  rdfs:label "country"@en .
+                  rdfs:comment "replaced by ENVO term"^^xsd:string ;
+                  rdfs:label "DEPRECATED country"@en ;
+                  rdfs:seeAlso obo:ENVO_00000009 ,
+                               "https://github.com/tibonto/aeon/issues/142"^^xsd:anyURI ;
+                  owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000024
 aeon:AEON_0000024 rdf:type owl:Class ;
-                  rdfs:subClassOf obo:GAZ_00000448 ;
-                  obo:IAO_0000114 obo:IAO_0000423 ;
-                  obo:IAO_0000115 "A province is a gaz:geographic location that is an administrative division within a country."@en ;
-                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  obo:IAO_0000118 "administrative division"@en ,
-                                  "administrative region"@en ,
-                                  "administrative unit"@en ;
-                  obo:IAO_0000119 "https://en.wikipedia.org/wiki/Province"^^xsd:anyURI ;
-                  rdfs:label "province"@en .
+                  rdfs:comment "replaced by ENVO term"^^xsd:string ;
+                  rdfs:label "DEPRECATED province"@en ;
+                  rdfs:seeAlso obo:ENVO_00000005 ,
+                               "https://github.com/tibonto/aeon/issues/142"^^xsd:anyURI ;
+                  owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000025
 aeon:AEON_0000025 rdf:type owl:Class ;
-                  rdfs:subClassOf obo:GAZ_00000448 ;
+                  rdfs:subClassOf obo:BFO_0000029 ;
                   obo:IAO_0000114 obo:IAO_0000125 ;
-                  obo:IAO_0000115 "An event venue is a gaz:geographical location that is a building or a collection of buildings and grounds where an event takes place."@en ;
+                  obo:IAO_0000115 "An event venue is a site where an event takes place."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "event venue"@en .
 
