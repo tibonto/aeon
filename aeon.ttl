@@ -712,7 +712,7 @@ aeon:AEON_0000031 rdf:type owl:ObjectProperty ;
                   rdfs:range aeon:AEON_0000001 ;
                   obo:IAO_0000115 "A relation obtaining between an 'academic event type specification' and an 'academic event', in which the former is used to descibe the sociocultural format of the latter. A set of possible common academic event type specification is provided in AEON as named individuals."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:label "specifies academic event type"@en ;
+                  rdfs:label "specifies academic event format of"@en ;
                   rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
 
 
@@ -722,9 +722,8 @@ aeon:AEON_0000032 rdf:type owl:ObjectProperty ;
                   rdfs:range aeon:AEON_0000004 ;
                   obo:IAO_0000115 "A relation obtaining between an 'academic event' and an 'academic event format specification' that specifies the sociocultrural format of the 'academic event'."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:label "has academic event type"@en ;
-                  rdfs:seeAlso <https://github.com/tibonto/aeon/issues/139> ;
-                  aeon:AEON_0000026 "{\"wikidata\": {\"uri\": null, \"label\": \"event_type\"}, \"openresearch\": {\"uri\": null, \"label\": \"Type\"}}"^^xsd:string .
+                  rdfs:label "has academic event format"@en ;
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000033
@@ -3291,10 +3290,17 @@ aeon:AEON_0000090 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000100
 aeon:AEON_0000100 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000004
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000031 ;
+                                                               owl:someValuesFrom aeon:AEON_0000101
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf aeon:AEON_0000004 ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a colloquium."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "An instance of this class is expected to be some kind of text that determines the academic event to which it refers as a colloquium in some kind of from. An example could be a section of a call for papers or some other text announcing the event, in which the word \"colloquium\" is used to describe the event and which often also consists of some other organizational information as to what is needed to participate (deadline, fee, registration information and conditions) or what is the aim/goal of the event (objective specification)."@en ;
                   rdfs:label "colloquium plan specification"@en ;
                   rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
 
@@ -3319,10 +3325,17 @@ A colloquium is an academic event that usually lasts only a few hours and serves
 
 ###  https://github.com/tibonto/aeon#AEON_0000102
 aeon:AEON_0000102 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000004
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000031 ;
+                                                               owl:someValuesFrom aeon:AEON_0000103
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf aeon:AEON_0000004 ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a conference."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "An instance of this class is expected to be some kind of text that determines the academic event to which it refers as a conference in some kind of from. An example could be a section of a call for papers or some other text announcing the event, in which the word \"conference\" is used to describe the event and which often also consists of some other organizational information as to what is needed to participate (deadline, fee, registration information and conditions) or what is the aim/goal of the event (objective specification)."@en ;
                   rdfs:label "conference plan specification"@en ;
                   rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
 
@@ -3356,10 +3369,17 @@ A conference is an academic event that lasts up to several days and serves as a 
 
 ###  https://github.com/tibonto/aeon#AEON_0000104
 aeon:AEON_0000104 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000004
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000031 ;
+                                                               owl:someValuesFrom aeon:AEON_0000105
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf aeon:AEON_0000004 ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a forum."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "An instance of this class is expected to be some kind of text that determines the academic event to which it refers as a forum in some kind of from. An example could be a section of a call for papers or some other text announcing the event, in which the word \"forum\" is used to describe the event and which often also consists of some other organizational information as to what is needed to participate (deadline, fee, registration information and conditions) or what is the aim/goal of the event (objective specification)."@en ;
                   rdfs:label "forum plan specification"@en ;
                   rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
 
@@ -3390,10 +3410,17 @@ aeon:AEON_0000105 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000106
 aeon:AEON_0000106 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000004
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000031 ;
+                                                               owl:someValuesFrom aeon:AEON_0000107
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf aeon:AEON_0000004 ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a hackathon."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "An instance of this class is expected to be some kind of text that determines the academic event to which it refers as a hackathon in some kind of from. An example could be a section of a call for papers or some other text announcing the event, in which the word \"hackathon\" is used to describe the event and which often also consists of some other organizational information as to what is needed to participate (deadline, fee, registration information and conditions) or what is the aim/goal of the event (objective specification)."@en ;
                   rdfs:label "hackathon plan specification"@en ;
                   rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
 
@@ -3418,10 +3445,17 @@ aeon:AEON_0000107 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000108
 aeon:AEON_0000108 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000004
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000031 ;
+                                                               owl:someValuesFrom aeon:AEON_0000109
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf aeon:AEON_0000004 ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a seminar."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "An instance of this class is expected to be some kind of text that determines the academic event to which it refers as a seminar in some kind of from. An example could be a section of a call for papers or some other text announcing the event, in which the word \"seminar\" is used to describe the event and which often also consists of some other organizational information as to what is needed to participate (deadline, fee, registration information and conditions) or what is the aim/goal of the event (objective specification)."@en ;
                   rdfs:label "seminar plan specification"@en ;
                   rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
 
@@ -3445,10 +3479,17 @@ aeon:AEON_0000109 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000110
 aeon:AEON_0000110 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000004
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000031 ;
+                                                               owl:someValuesFrom aeon:AEON_0000111
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf aeon:AEON_0000004 ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a session."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "An instance of this class is expected to be some kind of text that determines the academic event to which it refers as a session in some kind of from. An example could be a section of a call for papers or some other text announcing the event, in which the word \"session\" is used to describe the event and which often also consists of some other organizational information as to what is needed to participate (deadline, fee, registration information and conditions) or what is the aim/goal of the event (objective specification)."@en ;
                   rdfs:label "session plan specification"@en ;
                   rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
 
@@ -3471,10 +3512,17 @@ aeon:AEON_0000111 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000112
 aeon:AEON_0000112 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000004
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000031 ;
+                                                               owl:someValuesFrom aeon:AEON_0000113
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf aeon:AEON_0000004 ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a symposium."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "An instance of this class is expected to be some kind of text that determines the academic event to which it refers as a symposium in some kind of from. An example could be a section of a call for papers or some other text announcing the event, in which the word \"symposium\" is used to describe the event and which often also consists of some other organizational information as to what is needed to participate (deadline, fee, registration information and conditions) or what is the aim/goal of the event (objective specification)."@en ;
                   rdfs:label "symposium plan specification"@en ;
                   rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
 
@@ -3509,10 +3557,17 @@ A symposium is a specific type of conference with a narrower thematic focus, wit
 
 ###  https://github.com/tibonto/aeon#AEON_0000114
 aeon:AEON_0000114 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000004
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000031 ;
+                                                               owl:someValuesFrom aeon:AEON_0000115
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf aeon:AEON_0000124 ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a keynote speech."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "An instance of this class is expected to be some kind of text that determines the academic event to which it refers as a keynote speech in some kind of from. An example could be a section of a call for papers or some other text announcing the event, in which the word \"keynote speech\" is used to describe the event and which often also consists of some other organizational information as to what is needed to participate (deadline, fee, registration information and conditions) or what is the aim/goal of the event (objective specification)."@en ;
                   rdfs:label "keynote plan specification"@en ;
                   rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
 
@@ -3533,15 +3588,22 @@ aeon:AEON_0000115 rdf:type owl:Class ;
                   obo:IAO_0000118 "keynote"@en ,
                                   "keynote lecture"@en ;
                   obo:IAO_0000119 "https://en.wikipedia.org/wiki/Keynote"^^xsd:anyURI ;
-                  rdfs:label "keynote speech"@en .
+                  rdfs:label "academic keynote speech"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000116
 aeon:AEON_0000116 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000004
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000031 ;
+                                                               owl:someValuesFrom aeon:AEON_0000117
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf aeon:AEON_0000004 ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a track."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "An instance of this class is expected to be some kind of text that determines the academic event to which it refers as a track in some kind of from. An example could be a section of a call for papers or some other text announcing the event, in which the word \"track\" is used to describe the event and which often also consists of some other organizational information as to what is needed to participate (deadline, fee, registration information and conditions) or what is the aim/goal of the event (objective specification)."@en ;
                   rdfs:label "track plan specification"@en ;
                   rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
 
@@ -3566,10 +3628,17 @@ aeon:AEON_0000117 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000118
 aeon:AEON_0000118 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000004
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000031 ;
+                                                               owl:someValuesFrom aeon:AEON_0000119
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf aeon:AEON_0000004 ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a tutorial."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "An instance of this class is expected to be some kind of text that determines the academic event to which it refers as a tutorial in some kind of from. An example could be a section of a call for papers or some other text announcing the event, in which the word \"tutorial\" is used to describe the event and which often also consists of some other organizational information as to what is needed to participate (deadline, fee, registration information and conditions) or what is the aim/goal of the event (objective specification)."@en ;
                   rdfs:label "tutorial plan specification"@en ;
                   rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
 
@@ -3593,10 +3662,17 @@ aeon:AEON_0000119 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000120
 aeon:AEON_0000120 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000004
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000031 ;
+                                                               owl:someValuesFrom aeon:AEON_0000121
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf aeon:AEON_0000004 ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a workshop."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "An instance of this class is expected to be some kind of text that determines the academic event to which it refers as a workshop in some kind of from. An example could be a section of a call for papers or some other text announcing the event, in which the word \"workshop\" is used to describe the event and which often also consists of some other organizational information as to what is needed to participate (deadline, fee, registration information and conditions) or what is the aim/goal of the event (objective specification)."@en ;
                   rdfs:label "workshop plan specification"@en ;
                   rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
 
@@ -3621,10 +3697,17 @@ aeon:AEON_0000121 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000122
 aeon:AEON_0000122 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000004
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000031 ;
+                                                               owl:someValuesFrom aeon:AEON_0000123
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf aeon:AEON_0000004 ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a congress."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "An instance of this class is expected to be some kind of text that determines the academic event to which it refers as a congress in some kind of from. An example could be a section of a call for papers or some other text announcing the event, in which the word \"congress\" is used to describe the event and which often also consists of some other organizational information as to what is needed to participate (deadline, fee, registration information and conditions) or what is the aim/goal of the event (objective specification)."@en ;
                   rdfs:label "congress plan specification"@en ;
                   rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
 
@@ -3657,10 +3740,17 @@ A congress is a conference that is characterised by a larger number of participa
 
 ###  https://github.com/tibonto/aeon#AEON_0000124
 aeon:AEON_0000124 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000004
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000031 ;
+                                                               owl:someValuesFrom aeon:AEON_0000125
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf aeon:AEON_0000004 ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a talk."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "An instance of this class is expected to be some kind of text that determines the academic event to which it refers as a talk in some kind of from. An example could be a section of a call for papers or some other text announcing the event, in which the word \"talk\" is used to describe the event and which often also consists of some other organizational information as to what is needed to participate (deadline, fee, registration information and conditions) or what is the aim/goal of the event (objective specification)."@en ;
                   rdfs:label "talk plan specification"@en ;
                   rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
 
@@ -3685,10 +3775,17 @@ aeon:AEON_0000125 rdf:type owl:Class ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000126
 aeon:AEON_0000126 rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( aeon:AEON_0000110
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty aeon:AEON_0000031 ;
+                                                               owl:someValuesFrom aeon:AEON_0000127
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
                   rdfs:subClassOf aeon:AEON_0000110 ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a poster session."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:comment "An instance of this class is expected to be some kind of text that determines the academic event to which it refers as a poster session in some kind of from. An example could be a section of a call for papers or some other text announcing the event, in which the word \"poster session\" is used to describe the event and which often also consists of some other organizational information as to what is needed to participate (deadline, fee, registration information and conditions) or what is the aim/goal of the event (objective specification)."@en ;
                   rdfs:label "poster session plan specification"@en ;
                   rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
 
@@ -3706,7 +3803,7 @@ aeon:AEON_0000127 rdf:type owl:Class ;
                   obo:IAO_0000115 "A poster session is a session at which poster papers are presented."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   obo:IAO_0000119 "https://en.wikipedia.org/wiki/Poster_session"^^xsd:anyURI ;
-                  rdfs:label "poster session"@en .
+                  rdfs:label "academic poster session"@en .
 
 
 ###  https://github.com/tibonto/aeon#attendance_fee_specification
