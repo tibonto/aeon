@@ -1,8 +1,7 @@
 Change history:
 
-v0.4.10 - date 03.2022
+v0.4.10 - date 04.2022
 	* rethink modeling of 'academic event format specification' #139 
-	* adding subclasses of academic event specification and axioms to use those in the definition of the academic event subclasses
 	* deleting the named individuals that were previously used to determine specific formats (e.g. conference format)
 
 v0.4.9 -date 09.2021

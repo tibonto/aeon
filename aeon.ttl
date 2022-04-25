@@ -3302,7 +3302,7 @@ aeon:AEON_0000100 rdf:type owl:Class ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a colloquium."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "colloquium plan specification"@en ;
-                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000101
@@ -3337,7 +3337,7 @@ aeon:AEON_0000102 rdf:type owl:Class ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a conference."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "conference plan specification"@en ;
-                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000103
@@ -3381,7 +3381,7 @@ aeon:AEON_0000104 rdf:type owl:Class ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a forum."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "forum plan specification"@en ;
-                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000105
@@ -3422,7 +3422,7 @@ aeon:AEON_0000106 rdf:type owl:Class ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a hackathon."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "hackathon plan specification"@en ;
-                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000107
@@ -3457,7 +3457,7 @@ aeon:AEON_0000108 rdf:type owl:Class ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a seminar."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "seminar plan specification"@en ;
-                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000109
@@ -3491,7 +3491,7 @@ aeon:AEON_0000110 rdf:type owl:Class ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a session."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "session plan specification"@en ;
-                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000111
@@ -3524,7 +3524,7 @@ aeon:AEON_0000112 rdf:type owl:Class ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a symposium."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "symposium plan specification"@en ;
-                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000113
@@ -3569,7 +3569,7 @@ aeon:AEON_0000114 rdf:type owl:Class ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a keynote speech."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "keynote plan specification"@en ;
-                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000115
@@ -3605,7 +3605,7 @@ aeon:AEON_0000116 rdf:type owl:Class ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a track."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "track plan specification"@en ;
-                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000117
@@ -3640,7 +3640,7 @@ aeon:AEON_0000118 rdf:type owl:Class ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a tutorial."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "tutorial plan specification"@en ;
-                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000119
@@ -3674,7 +3674,7 @@ aeon:AEON_0000120 rdf:type owl:Class ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a workshop."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "workshop plan specification"@en ;
-                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000121
@@ -3709,7 +3709,7 @@ aeon:AEON_0000122 rdf:type owl:Class ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a congress."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "congress plan specification"@en ;
-                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000123
@@ -3752,7 +3752,7 @@ aeon:AEON_0000124 rdf:type owl:Class ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a talk."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "talk plan specification"@en ;
-                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000125
@@ -3787,7 +3787,7 @@ aeon:AEON_0000126 rdf:type owl:Class ;
                   obo:IAO_0000115 "An academic event format specification that classifies an academic event as a poster session."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "poster session plan specification"@en ;
-                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI .
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/139" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000127
