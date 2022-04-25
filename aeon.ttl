@@ -4337,6 +4337,7 @@ aeon:_VIVO2020 rdf:type owl:NamedIndividual ,
 ###  https://github.com/tibonto/aeon#_VIVO2020_format
 aeon:_VIVO2020_format rdf:type owl:NamedIndividual ;
                       dc:creator <http://orcid.org/0000-0002-1595-3213> ;
+                      rdfs:label "_VIVO2020_format" ;
                       ns:term_status obo:IAO_0000002 .
 
 
@@ -4354,6 +4355,7 @@ aeon:_VIVO2020_name rdf:type owl:NamedIndividual ;
 ###  https://github.com/tibonto/aeon#_VIVO2020_speaker1_role
 aeon:_VIVO2020_speaker1_role rdf:type owl:NamedIndividual ;
                              dc:creator <http://orcid.org/0000-0002-1595-3213> ;
+                             rdfs:label "_VIVO2020_speaker1_role" ;
                              ns:term_status obo:IAO_0000002 .
 
 
