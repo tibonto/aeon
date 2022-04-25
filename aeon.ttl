@@ -2703,7 +2703,8 @@ aeon:AEON_0000005 rdf:type owl:Class ;
                   obo:IAO_0000115 "The contributor role inheres in a person or organization that participates in a planned process by somehow contributing to it."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   dc:date "2020-09-28T12:51:02Z"^^xsd:dateTime ;
-                  rdfs:label "contributor role"@en .
+                  rdfs:label "contributor role"@en ;
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000006
@@ -2721,7 +2722,8 @@ aeon:AEON_0000006 rdf:type owl:Class ;
                                       ] ;
                   obo:IAO_0000115 "The organizer role inheres in a person or organization that contributes to a planned process by planning and managing its realization."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:label "organizer role"@en .
+                  rdfs:label "organizer role"@en ;
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000007
@@ -2740,7 +2742,8 @@ aeon:AEON_0000007 rdf:type owl:Class ;
                   owl:disjointWith aeon:AEON_0000009 ;
                   obo:IAO_0000115 "The 'committee member role' inheres in a person who contributes to a planned process by somehow realizing the function of the committe he is a member of."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:label "event committee member role"@en .
+                  rdfs:label "event committee member role"@en ;
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000008
@@ -2758,7 +2761,8 @@ aeon:AEON_0000008 rdf:type owl:Class ;
                                       ] ;
                   obo:IAO_0000115 "The 'committee chair role' inheres in a person who contributes to a planned process by somehow realizing the function of the committee he is a chair of."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:label "event committee chair role"@en .
+                  rdfs:label "event committee chair role"@en ;
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000009
@@ -2776,7 +2780,8 @@ aeon:AEON_0000009 rdf:type owl:Class ;
                                       ] ;
                   obo:IAO_0000115 "The contact person role inheres in a person that contributes to a planned process by functioning as the addressee of the planned process who answers general inquiries and redirects more complex inqueries to a more appropriate addressee."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:label "contact person role"@en .
+                  rdfs:label "contact person role"@en ;
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000010
@@ -2795,7 +2800,8 @@ aeon:AEON_0000010 rdf:type owl:Class ;
                   rdfs:subClassOf aeon:AEON_0000005 ;
                   obo:IAO_0000115 "The attendee role inheres in a person that contributes to a planned process by attending it."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:label "attendee role"@en .
+                  rdfs:label "attendee role"@en ;
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000011
@@ -2814,7 +2820,8 @@ aeon:AEON_0000011 rdf:type owl:Class ;
                   rdfs:subClassOf aeon:AEON_0000005 ;
                   obo:IAO_0000115 "The moderating role inheres in a person that contributes to a planned process by facilitating the communication."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:label "moderator role"@en .
+                  rdfs:label "moderator role"@en ;
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000012
@@ -2834,7 +2841,8 @@ aeon:AEON_0000012 rdf:type owl:Class ;
                   obo:IAO_0000116 "ToDo: use CRO IRI http://purl.obolibrary.org/obo/CRO_0000101"@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   obo:IAO_0000118 "manuscript review role"@en ;
-                  rdfs:label "reviewer role"@en .
+                  rdfs:label "reviewer role"@en ;
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000013
@@ -2854,7 +2862,8 @@ aeon:AEON_0000013 rdf:type owl:Class ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   obo:IAO_0000118 "invited speaker role"@en ;
                   obo:IAO_0006011 "http://purl.obolibrary.org/obo/CRO_0000100"^^xsd:anyURI ;
-                  rdfs:label "presenter role"@en .
+                  rdfs:label "presenter role"@en ;
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000014
@@ -2872,7 +2881,8 @@ aeon:AEON_0000014 rdf:type owl:Class ;
                                       ] ;
                   obo:IAO_0000115 "The keynote speaker role inheres in a person that contributes to a planned process by holding a keynote speech at a planned process."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:label "keynote speaker role"@en .
+                  rdfs:label "keynote speaker role"@en ;
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000015
@@ -2891,7 +2901,8 @@ aeon:AEON_0000015 rdf:type owl:Class ;
                   obo:IAO_0000115 "The sponsor role inheres in a person or organization that contributes to a planned process by providing the financial or material ressources needed to realize a planned process."@en ;
                   obo:IAO_0000116 "PS 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...). As the possible sponsor types can have various schemes, it seems best to have named individuals of the aeon:Sponsor class at the moment." ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:label "sponsor role"@en .
+                  rdfs:label "sponsor role"@en ;
+                  rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000016
@@ -3843,7 +3854,8 @@ Defining 'attendee' is not trivial, as the expectations of what an attendee must
                               "We need this concept of an attendee in order to be able to properly quantify the participation in a planned process. For this we would also need to have an action specification that is the conretizaion of the attendee role."@en ;
               obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
               obo:IAO_0000600 "A person who participates actively or passively in an event."@en ;
-              rdfs:label "attendee"@en .
+              rdfs:label "attendee"@en ;
+              rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#committee_chair
@@ -3867,7 +3879,8 @@ aeon:committee_chair rdf:type owl:Class ;
                      obo:IAO_0000115 "A committee chair is a committee member that holds a committee chair role which is being realized in a planned process."@en ;
                      obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                      obo:IAO_0000600 "A committee chair is a committe member that is expected to speak on behalf of and to be responsible for the committee. The person who is in charge of a committee with primary responsibility for carrying out the committee's duties."@en ;
-                     rdfs:label "event committee chair"@en .
+                     rdfs:label "event committee chair"@en ;
+                     rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#committee_member
@@ -3899,7 +3912,8 @@ aeon:committee_member rdf:type owl:Class ;
                       obo:IAO_0000114 obo:IAO_0000423 ;
                       obo:IAO_0000115 "A committee member is an organizer that holds a committee member role which is being realized in a planned process."@en ;
                       obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                      rdfs:label "event committee member"@en .
+                      rdfs:label "event committee member"@en ;
+                      rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#contact_person
@@ -3920,7 +3934,8 @@ aeon:contact_person rdf:type owl:Class ;
                     obo:IAO_0000115 "A contact person is an organizer that holds a contact person role which is being realized in a planned process."@en ;
                     obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                     obo:IAO_0000600 "A contact peron is defined by its role to be the person who answers general questions about a planned process and who forwards any further inquiries to the appropriate recipiant."@en ;
-                    rdfs:label "contact person"@en .
+                    rdfs:label "contact person"@en ;
+                    rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#contributor
@@ -3954,7 +3969,8 @@ aeon:contributor rdf:type owl:Class ;
 The contributor ontology (CRO - http://purl.obolibrary.org/obo/cro.owl) seems to be the best place. However at the moment CRO only covers \"the diverse roles performed in the work leading to a published research output in the sciences.\" An academic event or event series should ot be understood as a published research output, as they are procceses (occurents) and not ICEs."""@en ;
                  obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                  obo:IAO_0000600 "A person or organization can only be considered a contributor of some planned process, if and only if the act of contributing has been fulfilled. The contributor role is being realized, when the task (objective specification) attached to this role has been achieved somehow. It can thus be possible for a person or organization to hold multiple roles either in the same or in different planned processes."@en ;
-                 rdfs:label "contributor"@en .
+                 rdfs:label "contributor"@en ;
+                 rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#finance_committee
@@ -3999,7 +4015,8 @@ aeon:keynote_speaker rdf:type owl:Class ;
                      obo:IAO_0000115 "A 'keynote speaker' is a presenter that holds a keynote speaker role which is being realized in a planned process."@en ;
                      obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                      obo:IAO_0000600 "An invited person - often a multiplier in his or her (research) field - responsible for delivering a keynote speech."@en ;
-                     rdfs:label "keynote speaker"@en .
+                     rdfs:label "keynote speaker"@en ;
+                     rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#local_committee
@@ -4032,7 +4049,8 @@ aeon:moderator rdf:type owl:Class ;
                obo:IAO_0000115 "A moderator is a contributer that holds a moderating role which is being realized in a planned process."@en ;
                obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                obo:IAO_0000600 "A person responsible for facilitating a session at an academic event."@en ;
-               rdfs:label "moderator"@en .
+               rdfs:label "moderator"@en ;
+               rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#organizer
@@ -4058,7 +4076,8 @@ aeon:organizer rdf:type owl:Class ;
                obo:IAO_0000115 "An organizer is a contributer that holds an organizing role which is being realized in a planned process."@en ;
                obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                obo:IAO_0000600 "A person or organization that is responsible for the planning and realization of a planned process." ;
-               rdfs:label "organizer"@en .
+               rdfs:label "organizer"@en ;
+               rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#program_committee
@@ -4109,7 +4128,8 @@ aeon:reviewer rdf:type owl:Class ;
               obo:IAO_0000114 obo:IAO_0000423 ;
               obo:IAO_0000115 "A reviewer is a contributer that holds a reviewer role which is being realized in a planned process."@en ;
               obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-              rdfs:label "reviewer"@en .
+              rdfs:label "reviewer"@en ;
+              rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#speaker
@@ -4135,7 +4155,8 @@ aeon:speaker rdf:type owl:Class ;
              obo:IAO_0000115 "A presenter is a contributer that holds a presenter role which is being realized in a planned process."@en ;
              obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
              obo:IAO_0000118 "speaker"@en ;
-             rdfs:label "presenter"@en .
+             rdfs:label "presenter"@en ;
+             rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#sponsor
@@ -4160,7 +4181,8 @@ aeon:sponsor rdf:type owl:Class ;
              obo:IAO_0000115 "A sponsor is a contributer that holds a sponsor role which is being realized in a planned process."@en ;
              obo:IAO_0000116 "Philip Strömert 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...), as there are various schemes. At the moment any sponsor type other than gold, silver or bronze can be further specified by using the data property \"sponsor_type\". We could also reuse the \"event type a SKOS:concept\" pattern here. But it seems best to have a clear definition of each sponsor type, in order to be able to subclass them here and add the corresponding roles and properties."@en ;
              obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-             rdfs:label "sponsor"@en .
+             rdfs:label "sponsor"@en ;
+             rdfs:seeAlso "https://github.com/tibonto/aeon/issues/144" .
 
 
 ###  https://github.com/tibonto/aeon#sponsor_fee_specification
