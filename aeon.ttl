@@ -4298,8 +4298,9 @@ obo:IAO_0000428 rdf:type owl:NamedIndividual ,
 
 
 ###  https://confident.dbis.rwth-aachen.de/or/index.php?title=VIVO_2020
-<https://confident.dbis.rwth-aachen.de/or/index.php?title=VIVO_2020> rdf:type owl:NamedIndividual ;
-                                                                     rdfs:label "_OR_event_1" ;
+<https://confident.dbis.rwth-aachen.de/or/index.php?title=VIVO_2020> rdf:type owl:NamedIndividual ,
+                                                                              aeon:AEON_0000003 ;
+                                                                     rdfs:label "_VIVO2020_ConfIDentID" ;
                                                                      ns:term_status obo:IAO_0000002 .
 
 
@@ -4313,17 +4314,19 @@ aeon:Portugal rdf:type owl:NamedIndividual .
 
 ###  https://github.com/tibonto/aeon#_Person_1
 aeon:_Person_1 rdf:type owl:NamedIndividual ;
-               aeon:AEON_0000078 <https://orcid.org/0000-0002-1595-3213> ;
-               rdfs:label "_Person_1" ;
+               obo:RO_0000087 aeon:_VIVO2020_speaker1_role ;
+               rdfs:label "_VIVO2020_speaker1" ;
                ns:term_status obo:IAO_0000002 .
 
 
 ###  https://github.com/tibonto/aeon#_VIVO2020
-aeon:_VIVO2020 rdf:type owl:NamedIndividual ;
+aeon:_VIVO2020 rdf:type owl:NamedIndividual ,
+                        aeon:AEON_0000103 ;
                obo:IAO_0000235 <https://confident.dbis.rwth-aachen.de/or/index.php?title=VIVO_2020> ,
-                               aeon:_VIVO2020_name ,
-                               <https://www.wikidata.org/wiki/Q108430463> ;
+                               aeon:_VIVO2020_name ;
+               aeon:AEON_0000032 aeon:_VIVO2020_format ;
                aeon:AEON_0000050 aeon:_Person_1 ;
+               aeon:AEON_0000080 <https://www.wikidata.org/wiki/Q108430463> ;
                aeon:AEON_0000084 aeon:_VIVO_series ;
                aeon:end_date "2020-06-18T19:00:00Z"^^xsd:dateTimeStamp ;
                aeon:start_date "2020-06-16T09:00:00Z"^^xsd:dateTimeStamp ;
@@ -4331,21 +4334,34 @@ aeon:_VIVO2020 rdf:type owl:NamedIndividual ;
                ns:term_status obo:IAO_0000002 .
 
 
+###  https://github.com/tibonto/aeon#_VIVO2020_format
+aeon:_VIVO2020_format rdf:type owl:NamedIndividual ;
+                      dc:creator <http://orcid.org/0000-0002-1595-3213> ;
+                      ns:term_status obo:IAO_0000002 .
+
+
 ###  https://github.com/tibonto/aeon#_VIVO2020_name
 aeon:_VIVO2020_name rdf:type owl:NamedIndividual ;
                     obo:BFO_0000050 <https://www.wikidata.org/wiki/Q108430463> ;
                     aeon:AEON_0000091 "VIVO 2020"^^xsd:string ;
                     terms:source "https://www.wikidata.org/wiki/Q108430463" ;
-                    rdfs:label "_VIVO2020_name_from_WikiData" ;
+                    rdfs:label "_VIVO2020_name" ;
                     ns:term_status obo:IAO_0000002 ;
                     skos:altLabel "VIVO Conference 2020"@en ;
                     skos:prefLabel "11th Annual International VIVO Conference 2020"@en .
 
 
+###  https://github.com/tibonto/aeon#_VIVO2020_speaker1_role
+aeon:_VIVO2020_speaker1_role rdf:type owl:NamedIndividual ;
+                             dc:creator <http://orcid.org/0000-0002-1595-3213> ;
+                             ns:term_status obo:IAO_0000002 .
+
+
 ###  https://github.com/tibonto/aeon#_VIVO_series
 aeon:_VIVO_series rdf:type owl:NamedIndividual ;
-                  obo:IAO_0000235 <https://www.wikidata.org/wiki/Q97595211> ;
-                  rdfs:label "_VIVO_series" .
+                  aeon:AEON_0000080 <https://www.wikidata.org/wiki/Q97595211> ;
+                  rdfs:label "_VIVO_series" ;
+                  ns:term_status obo:IAO_0000002 .
 
 
 ###  https://orcid.org/0000-0002-1595-3213
@@ -4356,13 +4372,13 @@ aeon:_VIVO_series rdf:type owl:NamedIndividual ;
 
 ###  https://www.wikidata.org/wiki/Q108430463
 <https://www.wikidata.org/wiki/Q108430463> rdf:type owl:NamedIndividual ;
-                                           rdfs:label "_Q108430463" ;
+                                           rdfs:label "_VIVO2020_QID" ;
                                            ns:term_status obo:IAO_0000002 .
 
 
 ###  https://www.wikidata.org/wiki/Q97595211
 <https://www.wikidata.org/wiki/Q97595211> rdf:type owl:NamedIndividual ;
-                                          rdfs:label "_Q97595211" ;
+                                          rdfs:label "_VIVO_series_QID" ;
                                           ns:term_status obo:IAO_0000002 .
 
 
