@@ -19,7 +19,9 @@
                                                   "Christoph Lange" ,
                                                   "Michael Conlon" ;
                                    dc:creator "Philip Strömert" ;
-                                   dc:description "The Academic Event Ontology (AEON) is used to represent information regarding academic events. The ontology supports the identification, development, management, evaluation, and impact assessment of events, components of events and event series, as well as identification and reuse of works presented or developed at events. The ontology is independent of knowledge, creative domain, or topics related to events. AEON is focused on events and assumes the representation of many entities associated with events such as attendees, locations, academic works, datetimes, and processes are defined in compatible ontologies." ;
+                                   dc:description """DISCLAIMER: AEON is still Work In Progress = not ready for production
+
+The Academic Event Ontology (AEON) is used to represent information regarding academic events. The ontology supports the identification, development, management, evaluation, and impact assessment of events, components of events and event series, as well as identification and reuse of works presented or developed at events. The ontology is independent of knowledge, creative domain, or topics related to events. AEON is focused on events and assumes the representation of many entities associated with events such as attendees, locations, academic works, datetimes, and processes are defined in compatible ontologies.""" ;
                                    dc:title "Academic Event Ontology"@en ;
                                    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                    rdfs:comment "AEON is being developed as a part of the ConfIDent project (https://projects.tib.eu/confident)." ;
