@@ -1,0 +1,32 @@
+CRO:0000000	contributor role
+CRO:0000007	marketing and communication role
+CRO:0000016	education and training role
+CRO:0000022	policy development role
+CRO:0000025	regulatory and compliance role
+CRO:0000031	team management role
+CRO:0000045	training material role
+CRO:0000046	training program development role
+CRO:0000047	instruction role
+CRO:0000048	hardware role
+CRO:0000053	protocol creation role
+CRO:0000051	system administrator role
+CRO:0000058	equipment technician role
+CRO:0000059	survey and questionnaire development role
+CRO:0000065	project management role
+CRO:0000078	infrastructure role
+CRO:0000079	project, policy or program evaluation role
+CRO:0000081	coordination role
+CRO:0000083	community engagement role
+CRO:0000084	outreach materials development role
+CRO:0000097	funding source role
+CRO:0000100	presenter role
+CRO:0000101	peer review role
+CRO:0000102	advisory role
+CRO:0000104	acceptor role
+CRO:0000105	submitter role
+CRO:0000106	evaluator role
+http://purl.org/credit/ontology#CREDIT_00000001	conceptualization role
+http://purl.org/credit/ontology#CREDIT_00000004	funding acquisition role
+http://purl.org/credit/ontology#CREDIT_00000007	project administration role
+http://purl.org/credit/ontology#CREDIT_00000008	resources role
+http://purl.org/credit/ontology#CREDIT_00000010	supervision role
