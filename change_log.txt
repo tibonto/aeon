@@ -1,5 +1,8 @@
 Change history:
 
+v0.4.11 - date 06.2022
+	* make academic event series a child of academic event see #147
+
 v0.4.10 - date 04.2022
 	* rethink modeling of 'academic event format specification' #139 
 	* deleting the named individuals that were previously used to determine specific formats (e.g. conference format)
