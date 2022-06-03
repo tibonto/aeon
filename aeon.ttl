@@ -14,7 +14,7 @@
 @base <https://github.com/tibonto/aeon> .
 
 <https://github.com/tibonto/aeon> rdf:type owl:Ontology ;
-                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.4.10> ;
+                                   owl:versionIRI <https://github.com/tibonto/aeon/releases/tag/v0.4.11> ;
                                    dc:contributor "Christian Hauschke" ,
                                                   "Christoph Lange" ,
                                                   "Michael Conlon" ;
@@ -25,7 +25,7 @@ The Academic Event Ontology (AEON) is used to represent information regarding ac
                                    dc:title "Academic Event Ontology"@en ;
                                    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                    rdfs:comment "AEON is being developed as a part of the ConfIDent project (https://projects.tib.eu/confident)." ;
-                                   owl:versionInfo "v0.4.10" .
+                                   owl:versionInfo "v0.4.11" .
 
 #################################################################
 #    Annotation properties
@@ -745,9 +745,9 @@ aeon:AEON_0000033 rdf:type owl:ObjectProperty ;
 aeon:AEON_0000040 rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf owl:topObjectProperty ;
                   owl:inverseOf aeon:academic_field_of ;
-                  rdfs:domain obo:OBI_0000011 ;
+                  rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000027 ;
-                  obo:IAO_0000115 "A relation obtaining between a obi:'planned process' and an academic field descriptor that is used to describe the scientific subject of the planned process according to some controlled vocabulary or thesaurus."@en ;
+                  obo:IAO_0000115 "A relation obtaining between an 'academic event' and an academic field descriptor that is used to describe the scientific subject of the planned process according to some controlled vocabulary or thesaurus."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
                   rdfs:label "has academic field descriptor"@en .
 
@@ -914,7 +914,7 @@ aeon:AEON_0000072 rdf:type owl:ObjectProperty ;
 
 ###  https://github.com/tibonto/aeon#AEON_0000073
 aeon:AEON_0000073 rdf:type owl:ObjectProperty ;
-                  rdfs:domain obo:OBI_0000011 ;
+                  rdfs:domain aeon:AEON_0000001 ;
                   rdfs:range aeon:AEON_0000060 ;
                   obo:IAO_0000115 "a relation between a planned process and a deadline specification"@en ;
                   obo:IAO_0000116 "Given the fact that deadlines are specified in various planned processes this term should probably be regarded as a placeholder which ought to be defined in a broader ontology, maybe something like IAO?"@en ;
@@ -1005,7 +1005,7 @@ aeon:AEON_0000081 rdf:type owl:ObjectProperty ;
                   rdfs:domain aeon:AEON_0000002 ;
                   rdfs:range aeon:AEON_0000001 ;
                   obo:IAO_0000115 "A relation obtaining between an academic event series and an academic event. It is used to express that the academic event series has a specific academic event as its part."@en ;
-                  rdfs:label "has academic event"@en .
+                  rdfs:label "academic event series of"@en .
 
 
 ###  https://github.com/tibonto/aeon#AEON_0000082
@@ -1036,7 +1036,7 @@ aeon:AEON_0000084 rdf:type owl:ObjectProperty ;
                   rdfs:range aeon:AEON_0000002 ;
                   obo:IAO_0000115 "A relation obtaining between an academic event and an academic event series. It is used to express that the academic event is part of a specific event series."@en ;
                   obo:IAO_0000117 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI ;
-                  rdfs:label "part of series"@en ;
+                  rdfs:label "part of academic event series"@en ;
                   aeon:AEON_0000026 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P179\", \"label\": \"part_of_the_seriesLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Event_in_series\", \"label\": \"Event_in_series\"}}"^^xsd:string .
 
 
@@ -2621,7 +2621,7 @@ It is the intention of the ConfIDent project to collect and analyse a large body
 
 ###  https://github.com/tibonto/aeon#AEON_0000002
 aeon:AEON_0000002 rdf:type owl:Class ;
-                  rdfs:subClassOf obo:OBI_0000011 ,
+                  rdfs:subClassOf aeon:AEON_0000001 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty obo:BFO_0000055 ;
                                     owl:someValuesFrom aeon:AEON_0000005
