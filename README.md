@@ -9,7 +9,7 @@ The application ontology of the TIB project [ConfIDent](https://projects.tib.eu/
 
 Additional analysis is needed regarding the reuse of external terms from related ontologies and schemas, such as:
 
-- [SEO - The Scientific Event Ontology](http://kddste.sda.tech/SEOontology/Documentation/)
+- [SEO - The Scientific Event Ontology](https://saidfathalla.github.io/SEOontology)
 
     - reuses:
     
