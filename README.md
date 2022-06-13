@@ -21,7 +21,7 @@ Additional analysis is needed regarding the reuse of external terms from related
 
 -   [GND Ontology](https://d-nb.info/standards/elementset/gnd) (not very elaborate for events)
 
--   [BIBO](http://bibliontology.com/) has some classes for conferences and alike events
+-   [BIBO]([http://bibliontology.com/](https://service.tib.eu/webvowl/#iri=https://raw.githubusercontent.com/structureddynamics/Bibliographic-Ontology-BIBO/master/bibo.owl)) imports Event class and sub-event object property from Event Ontology and adds the relevant classes: [Conference](http://purl.org/ontology/bibo/Conference) and [Workshop](http://purl.org/ontology/bibo/Workshop)
 
 -   [FRAPO](https://sparontologies.github.io/frapo/current/frapo.html#d4e2645) - has classes like conference fee etc.
 
