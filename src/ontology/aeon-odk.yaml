@@ -1,0 +1,126 @@
+io.owlallow_equivalents: asserted-only
+catalog_file: catalog-v001.xml
+ci:
+- github_actions
+components: null
+contact: null
+contributors: null
+create_obo_metadata: true
+creators: null
+custom_makefile_header: '
+
+  # ----------------------------------------
+
+  # More information: https://github.com/INCATools/ontology-development-kit/
+
+  '
+description: None
+documentation: null
+dosdp_tools_options: --obo-prefixes=true
+edit_format: owl
+exclude_tautologies: structural
+export_formats:
+- owl
+- obo
+export_project_yaml: false
+git_main_branch: main
+git_user: 'StroemPhi'
+git_email: 'philip.stroemert@tib.eu'
+github_org: StroemPhi
+gzip_main: false
+id: aeon
+import_group:
+  annotation_properties:
+  - rdfs:label
+  - IAO:0000115
+  directory: imports/
+  disabled: false
+  exclude_iri_patterns: null
+  export_obo: false
+  ids:
+  - bfo
+  - ro
+  - omo
+  - iao
+  - cro
+  - txpo
+  - ico
+  - obi
+  mirror_max_time_download: 200
+  mirror_retry_download: 4
+  module_type: slme
+  module_type_slme: BOT
+  products:
+  - id: bfo
+    module_type: mirror
+  - id: ro
+    module_type: slme
+    slme_individuals: exclude
+    use_base: True
+  - id: omo
+    module_type: mirror
+  - id: iao
+    module_type: slme
+    slme_individuals: include
+  - id: cro
+    module_type: custom
+  - id: envo
+    module_type: custom
+  - id: txpo
+    module_type: custom
+  - id: ico
+    module_type: custom
+  - id: obi
+    module_type: custom
+  rebuild_if_source_changes: true
+  release_imports: false
+  slme_individuals: include
+  use_base_merging: false
+import_pattern_ontology: false
+license: https://creativecommons.org/licenses/by/4.0/
+namespaces: null
+obo_format_options: ''
+owltools_memory: ''
+pattern_group: null
+pattern_pipelines_group: null
+primary_release: full
+public_release: none
+public_release_assets: null
+reasoner: ELK
+release_artefacts:
+- full
+- base
+release_date: false
+remove_owl_nothing: false
+repo: aeon
+robot_java_args: ''
+robot_report:
+  custom_profile: false
+  custom_sparql_checks:
+  - owldef-self-reference
+  - iri-range
+  - label-with-iri
+  custom_sparql_exports:
+  - basic-report
+  - class-count-by-prefix
+  - edges
+  - xrefs
+  - obsoletes
+  - synonyms
+  ensure_owl2dl_profile: true
+  fail_on: null
+  release_reports: false
+  report_on:
+  - edit
+  use_labels: true
+robot_settings: null
+robot_version: null
+robotemplate_group: null
+subset_group: null
+title: Academic Event Ontology
+description: "_WIP - NOT READY FOR PRODUCTION_ The Academic Event Ontology (AEON) is used to represent information regarding academic events. The ontology supports the identification, development, management, evaluation, and impact assessment of events, components of events and event series, as well as identification and reuse of works presented or developed at events. The ontology is independent of knowledge, creative domain, or topics related to events. AEON is focused on events and assumes the representation of many entities associated with events such as attendees, locations, academic works, datetimes, and processes are defined in compatible ontologies."
+travis_emails: null
+uribase: http://purl.obolibrary.org/obo
+use_custom_import_module: false
+use_dosdps: false
+use_external_date: false
