@@ -1,0 +1,8 @@
+ENVO:00000005	# first-order administrative region
+ENVO:00000009	# national geopolitical entity
+ENVO:00000856	# city
+ENVO:00000004	# 'administrative region'
+ENVO:01000658	# 'dense settlement'
+ENVO:00000123	# 'political entity'
+ENVO:00000062	# 'populated place'
+ENVO:01000408

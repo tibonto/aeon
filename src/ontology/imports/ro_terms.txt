@@ -1,0 +1,20 @@
+RO:0000052	# inheres in
+RO:0000053	# bearer of
+RO:0000056	# participates in
+RO:0000057	# has participant
+RO:0000081	# role of
+RO:0000087	# has role
+RO:0001900	# temporal interpretation
+RO:0002012	# occurent part of
+RO:0002222	# temporally related to
+RO:0002223	# starts
+RO:0002224	# starts with
+RO:0002229	# ends
+RO:0002230	# ends with
+RO:0002234	# has output
+RO:0002350	# member of
+RO:0002351	# has member
+RO:0002353	# output of
+BFO:0000066 # occurs in
+BFO:0000054 # realized in
+BFO:0000055 # realizes

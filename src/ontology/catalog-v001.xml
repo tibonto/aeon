@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/aeon/releases/2022-06-24/imports/credit_import.owl" uri="imports/credit_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/credit/releases/2019-04-11/credit.owl" uri="mirror/credit.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/aeon/releases/2022-06-20/imports/credit_import.owl" uri="imports/credit_import.owl"/>
+    <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/bfo_import.obo" uri="imports/bfo_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/ro_import.owl" uri="imports/ro_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/ro_import.obo" uri="imports/ro_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/omo_import.owl" uri="imports/omo_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/omo_import.obo" uri="imports/omo_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/iao_import.owl" uri="imports/iao_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/iao_import.obo" uri="imports/iao_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/cro_import.owl" uri="imports/cro_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/cro_import.obo" uri="imports/cro_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/credit_import.owl" uri="imports/credit_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/credit_import.obo" uri="imports/credit_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/envo_import.owl" uri="imports/envo_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/envo_import.obo" uri="imports/envo_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/txpo_import.owl" uri="imports/txpo_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/txpo_import.obo" uri="imports/txpo_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/ico_import.owl" uri="imports/ico_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/ico_import.obo" uri="imports/ico_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/obi_import.owl" uri="imports/obi_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/obi_import.obo" uri="imports/obi_import.obo"/>
+    </group>
+</catalog>

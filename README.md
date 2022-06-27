@@ -1,7 +1,7 @@
+![Build Status](https://github.com/StroemPhi/aeon/workflows/CI/badge.svg)
 # Academic Event Ontology (AEON)
-## Context
 
-AEON is currently a work in progress and far from a final product, as can be seen by the version number. It\'s not ready for productive systems.
+Description: _WIP - NOT READY FOR PRODUCTION_ The Academic Event Ontology (AEON) is used to represent information regarding academic events. The ontology supports the identification, development, management, evaluation, and impact assessment of events, components of events and event series, as well as identification and reuse of works presented or developed at events. The ontology is independent of knowledge, creative domain, or topics related to events. AEON is focused on events and assumes the representation of many entities associated with events such as attendees, locations, academic works, datetimes, and processes are defined in compatible ontologies.
 
 A first draft of AEON was discussed at the [VIVO Ontology Workshop in February 2020](https://docs.google.com/document/d/1C9vs3_pCqhS_ujcqmUeu9TSXtgxFIvsBv-fW3sXl7yk) with regard to the process of renewing the VIVO ontology to make it [BFO](https://basic-formal-ontology.org/) conform.
 
@@ -106,23 +106,25 @@ CAVE/TODO: I've wrongly labeled the edges for the subclasses in this version, as
 ![](docs/AEON_how.PNG)
 This is still a very early draft and it needs to be discussed if and how the various metrics and deadlines can be modeled better using classes and object properties instead of just data properties.
 
+## Versions
 
-## Development
-It is intended to have a CI/CD pipeline for the development. Unfortunately the use of the ODK is not possible at the moment due to too old IT. The plan is to migrate to using it when this changes. Until then, we try to make as much as possible with ROBOT and GitHub actions/workflows. Using TSV-templates and a better repo folder structure is planned, but we need to learn this first in the little time we have for this project ;)
-### Tests
-**Tests `tests/` are run at every merge request and push into the master branch, by github actions.**
+### Stable release versions
 
-github actions are define in `.github/workflows/`
+The latest version of the ontology can always be found at:
 
-But if test are to be run locally, follow the instructions in next sections
+http://purl.obolibrary.org/obo/aeon.owl
 
-#### Create test enviroment
-* create python virtual environment
-* install python libaries `pip install -r requirements.txt`
-* test files are located in `tests/` dir and start with test*.py
-* test definitions, such as markers are set in `pytest.ini`
+(note this will not show up until the request has been approved by obofoundry.org)
 
-#### Run tests
-* **all tests**: `pytest`  
-* **some tests**, using the marker to specify which tests, ie: `pytest -m ontology`
+### Editors' version
 
+Editors of this ontology should use the edit version, [src/ontology/aeon-edit.owl](src/ontology/aeon-edit.owl)
+
+
+## Contact
+
+Please use this GitHub repository's [Issue tracker](https://github.com/tibonto/aeon/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
+
+## Acknowledgements
+
+This ontology repository was created using the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit).
