@@ -1,0 +1,568 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/aeon/imports/envo_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/aeon/imports/envo_import.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aeon/imports/envo_import.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aeon/releases/2022-06-27/imports/envo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-06-27</owl:versionInfo>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/envo/releases/2021-05-14/envo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/envo/releases/2021-05-14/envo.owl"/>
+        <oboInOwl:hasDbXref>FTT:1242</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:1252</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:15</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:16</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:18</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:19</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:21</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:22</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:23</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:24</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:25</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:26</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:27</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:28</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:29</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:37</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SWEETRealm:AdministrativeRegion</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGN:80001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGN:81099</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGN:81123</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Administrative_region</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>administrative area</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>administrative division</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>administrative entity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>boundary region</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>civil area</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>district</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>free trade zone</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>governed place</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>leased area (government)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>leased zone (government)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>neutral zone (political)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>prefecture</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>protectorate</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>sheikdom</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>sultanate</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>trade zone</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>administrative region</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>administrative area</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>leased area (government)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>leased zone (government)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>neutral zone (political)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>prefecture</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>protectorate</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>sheikdom</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>sultanate</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>trade zone</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>administrative division</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>administrative division</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Getty:TGN</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>administrative entity</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Getty:TGN</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>boundary region</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>civil area</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>district</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>free trade zone</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>governed place</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
+        <obo:IAO_0000115>A primary administrative division of a country, such as a state in the United States.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/envo/releases/2021-05-14/envo.owl"/>
+        <oboInOwl:hasDbXref>FTT:414</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:569</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Geonames:A.ADM1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGN:81100</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>countries, 1st order division</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>first level subdivision</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>first-order administrative division</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>ENVO:00000005</oboInOwl:id>
+        <rdfs:label>first-order administrative region</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000005"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A primary administrative division of a country, such as a state in the United States.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geonames:http://www.geonames.org/export/codes.html</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000005"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>countries, 1st order division</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000005"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>first level subdivision</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Getty:TGN</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000005"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>first-order administrative division</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geonames:feature</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000123"/>
+        <obo:IAO_0000115>A political association with effective dominion over a geographic area.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/envo/releases/2021-05-14/envo.owl"/>
+        <oboInOwl:hasDbXref>FTT:424</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:566</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:567</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:571</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SWEETRealm:Country</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SWEETRealm:State</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGN:80006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGN:81010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGN:81011</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGN:81102</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Nation</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>nation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>independent nation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>independent political entity</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>independent sovereign nation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>country</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>political entity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>state</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>ENVO:00000009</oboInOwl:id>
+        <rdfs:label>national geopolitical entity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000009"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A political association with effective dominion over a geographic area.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/State</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000009"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>nation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000009"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>independent nation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Getty:TGN</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000009"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>independent political entity</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Getty:TGN</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000009"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>independent sovereign nation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Getty:TGN</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000009"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>country</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000009"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>political entity</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000408"/>
+        <obo:IAO_0000115>Place or area with clustered or scattered buildings and a permanent human population.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/envo/releases/2021-05-14/envo.owl"/>
+        <oboInOwl:hasBroadSynonym>place</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>FTT:1097</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:33</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Geonames:P.PPL</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Geonames:P.PPLS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGN:22201</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGN:83002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Populated_place</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>inhabited place</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>populated place</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>populated places</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>settlement</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>inhabited region</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>populated locality</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>ENVO:00000062</oboInOwl:id>
+        <rdfs:label>populated place</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000062"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Place or area with clustered or scattered buildings and a permanent human population.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USGS:http://mapping.usgs.gov/www/ti/GNIS/gnis_users_guide_appendixc.html</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000062"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+        <owl:annotatedTarget>place</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USGS:SDTS</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000062"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>inhabited place</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Getty:TGN</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000062"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>populated place</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geonames:feature</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000062"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>populated places</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geonames:feature</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000062"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>settlement</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USGS:SDTS</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
+        <obo:IAO_0000115>A geographical region whose affairs and population are administered by an authority.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/envo/releases/2021-05-14/envo.owl"/>
+        <oboInOwl:hasDbXref>FTT:1093</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Geonames:A.PCL</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGN:80002</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym>political entity</oboInOwl:hasRelatedSynonym>
+        <rdfs:label>political entity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000123"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A geographical region whose affairs and population are administered by an authority.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MA:ma</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000123"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>political entity</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geonames:feature</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000856 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000856">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000658"/>
+        <obo:IAO_0000115>Incorporated populated place.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/envo/releases/2021-05-14/envo.owl"/>
+        <oboInOwl:hasBroadSynonym>urban area</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>EcoLexicon:city</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:430</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:483</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:484</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FTT:485</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SWEETRealm:City</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGN:83020</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGN:83040</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGN:83043</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/City</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>ENVO:00000856</oboInOwl:id>
+        <rdfs:label>city</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000856"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Incorporated populated place.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000856"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+        <owl:annotatedTarget>urban area</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000408 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000408">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <obo:IAO_0000115>A site which has its extent determined by the presence or influence of one or more components of an environmental system or the processes occurring therein.</obo:IAO_0000115>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/envo/releases/2021-05-14/envo.owl"/>
+        <oboInOwl:hasRelatedSynonym>environmental area</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
+        <rdfs:comment>Formerly, this class was an experimental class and a subclass of &quot;environmental feature&quot;. It is now aligned to BFO. The class was not obsoleted as the core semantics maintained their stability through its transition.</rdfs:comment>
+        <rdfs:label>environmental zone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000658 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000658">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000062"/>
+        <obo:IAO_0000115>A settlement with a high density of buildings and inhabitants.</obo:IAO_0000115>
+        <obo:IAO_0000116>See also: http://www.ecotope.org/anthromes/v1/guide/urban/12_dense_settlements/default.aspx</obo:IAO_0000116>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/envo/releases/2021-05-14/envo.owl"/>
+        <rdfs:comment>The thresholds for what makes a settlment &quot;dense&quot; can be determined as needed. If there is a specific threshold that should be added to ENVO, please make a new class request.</rdfs:comment>
+        <rdfs:label xml:lang="en">dense settlement</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+

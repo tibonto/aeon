@@ -1,0 +1,45 @@
+IAO:0000001	# conditional specification
+IAO:0000005	# objective specification
+IAO:0000007	# action specification
+IAO:0000027	# data item
+IAO:0000028	# symbol
+IAO:0000030	# information content entity
+IAO:0000033	# directive information entity
+IAO:0000055	# rule
+IAO:0000078	# curation status specification
+IAO:0000100	# data set
+IAO:0000102	# data about an ontology part
+IAO:0000104	# plan specification
+IAO:0000111	# editor preferred term
+IAO:0000112	# example of usage
+IAO:0000114	# has curation status
+IAO:0000115	# definition
+IAO:0000116	# editor note
+IAO:0000117	# term editor
+IAO:0000118	# alternative term
+IAO:0000119	# definition source
+IAO:0000136	# is about
+IAO:0000219	# denotes
+IAO:0000225	# obsolescence reason specification
+IAO:0000231	# has obsolescence reason
+IAO:0000232	# curator note
+IAO:0000233	# term tracker item
+IAO:0000234	# ontology term requester
+IAO:0000235	# denoted by
+IAO:0000310	# document
+IAO:0000412	# imported from
+IAO:0000577	# centrally registered identifier symbol
+IAO:0000578	# centrally registered identifier
+IAO:0000579	# centrally registered identifier registry
+IAO:0000600	# elucidation
+IAO:0006011	# may be identical to
+IAO:0020000	# identifier
+IAO:0020015	# personal name
+IAO:0022000	# distributed identifier  (IAO tbc)
+IAO:0022014	# international standard name identifier (IAO tbc)
+IAO:0022019	# open researcher and contributor identifier (IAO tbc)
+IAO:0022022	# research organization registry identifier (IAO tbc)
+IAO:0022027	# wikidata q number (IAO tbc)
+IAO:0022034	# local information content entity identifier (IAO tbc)
+IAO:0022041	# digital object identifier (IAO tbc)
+IAO:0100001	# term replaced by
