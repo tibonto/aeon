@@ -15,7 +15,8 @@ custom_makefile_header: '
 
   '
 description: None
-documentation: null
+documentation:
+  documentation_system: mkdocs
 dosdp_tools_options: --obo-prefixes=true
 edit_format: owl
 exclude_tautologies: structural
@@ -26,7 +27,7 @@ export_project_yaml: false
 git_main_branch: main
 git_user: 'StroemPhi'
 git_email: 'philip.stroemert@tib.eu'
-github_org: StroemPhi
+github_org: tibonto
 gzip_main: false
 id: aeon
 import_group:

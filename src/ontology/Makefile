@@ -551,6 +551,8 @@ update_repo:
 	sh $(SCRIPTSDIR)/update_repo.sh
 	
 
+update_docs:
+	mkdocs gh-deploy --config-file ../../mkdocs.yaml
 
 # Note to future generations: prepending ./ is a safety measure to ensure that 
 # the environment does not malicously set `CLEANFILES` to `\`.
