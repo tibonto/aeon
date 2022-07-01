@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.obolibrary.org/obo/aeon.owl#>)
+Prefix(:=<http://purl.obolibrary.org/obo/aeon.owl/>)
 Prefix(ns:=<http://www.w3.org/2003/06/sw-vocab-status/ns#>)
 Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
