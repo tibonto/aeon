@@ -3,4 +3,11 @@ OBI:0000245	# organization
 OBI:0002815	# has representation
 OBI:0100026	# organism
 
+###########################################################
+# external classes needed due to OBI axioms of term above #
+###########################################################
 http://purl.obolibrary.org/obo/NCBITaxon_9606 # homo sapiens
+http://purl.obolibrary.org/obo/BFO_0000055 # realizes
+http://purl.obolibrary.org/obo/RO_0000059 # concretizes
+
+http://purl.obolibrary.org/obo/IAO_0000104 # plan specification
