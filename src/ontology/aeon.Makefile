@@ -43,7 +43,7 @@ $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms.txt
 	if [ $(IMP) = true ]; then $(ROBOT) filter -i $< -T $(IMPORTDIR)/obi_terms.txt --select " self ancestors" --signature false --trim true \
 		--output $@.tmp.owl; fi
 	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module_provo.ru \
-		filter -T $(IMPORTDIR)/obi_terms.txt --select "self annotations ontology equivalents domains ranges" --signature true --trim true \
+		filter -T $(IMPORTDIR)/obi_terms.txt --select "self annotations ontology equivalents" --signature true --trim true \
 		query --update ../sparql/postprocess-module_2.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		merge -i $@.tmp.owl \
