@@ -1157,7 +1157,7 @@ EquivalentClasses(obo:AEON_0000001 ObjectIntersectionOf(obo:OBI_0000011 ObjectSo
 SubClassOf(obo:AEON_0000001 obo:OBI_0000011)
 SubClassOf(obo:AEON_0000001 ObjectSomeValuesFrom(obo:AEON_0000043 obo:AEON_0000030))
 SubClassOf(obo:AEON_0000001 ObjectSomeValuesFrom(obo:AEON_0000084 obo:AEON_0000002))
-SubClassOf(obo:AEON_0000001 ObjectSomeValuesFrom(obo:BFO_0000055 obo:AEON_0000005))
+SubClassOf(obo:AEON_0000001 ObjectSomeValuesFrom(obo:BFO_0000055 obo:CRO_0000000))
 
 # Class: obo:AEON_0000002 (academic event series)
 
@@ -1166,7 +1166,7 @@ AnnotationAssertion(obo:IAO_0000112 obo:AEON_0000002 "International Semantic Web
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000002 "An academic event series is an academic event that is the set of all recurring academic events of a destinct identity. This destinct identity is usually demarked by a shared name that only differs with regard to some ordnial symbol, such as 1st or the year of the academic event."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000002 "academic event series")
 EquivalentClasses(obo:AEON_0000002 ObjectIntersectionOf(obo:AEON_0000001 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000128)))
-SubClassOf(obo:AEON_0000002 ObjectSomeValuesFrom(obo:BFO_0000055 obo:AEON_0000005))
+SubClassOf(obo:AEON_0000002 ObjectSomeValuesFrom(obo:BFO_0000055 obo:CRO_0000000))
 SubClassOf(obo:AEON_0000002 ObjectSomeValuesFrom(obo:RO_0002224 obo:AEON_0000001))
 SubClassOf(obo:AEON_0000002 ObjectSomeValuesFrom(obo:RO_0002230 obo:AEON_0000001))
 
@@ -1192,16 +1192,18 @@ EquivalentClasses(obo:AEON_0000004 ObjectIntersectionOf(obo:IAO_0000104 ObjectSo
 SubClassOf(obo:AEON_0000004 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000030))
 SubClassOf(obo:AEON_0000004 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000060))
 
-# Class: obo:AEON_0000005 (aeon contributor role)
+# Class: obo:AEON_0000005 (DEPRECATED aeon contributor role)
 
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000005 "The contributor role inheres in a person or organization that participates in a planned process by somehow contributing to it."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000005 "usign CRO's contributor role instead"^^xsd:string)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000005 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
+AnnotationAssertion(obo:IAO_0000231 obo:AEON_0000005 obo:IAO_0000226)
+AnnotationAssertion(obo:IAO_0100001 obo:AEON_0000005 obo:CRO_0000000)
 AnnotationAssertion(dce:date obo:AEON_0000005 "2020-09-28T12:51:02Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:AEON_0000005 "aeon contributor role"@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000005 "DEPRECATED aeon contributor role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000005 "https://github.com/tibonto/aeon/issues/144")
-SubClassOf(obo:AEON_0000005 obo:BFO_0000023)
-SubClassOf(obo:AEON_0000005 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000001))
-SubClassOf(obo:AEON_0000005 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000002))
+AnnotationAssertion(owl:deprecated obo:AEON_0000005 "true"^^xsd:boolean)
+SubClassOf(obo:AEON_0000005 <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:AEON_0000006 (organizer role)
 
@@ -1209,7 +1211,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000006 "The organizer role inheres
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000006 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000006 "organizer role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000006 "https://github.com/tibonto/aeon/issues/144")
-EquivalentClasses(obo:AEON_0000006 ObjectIntersectionOf(obo:AEON_0000005 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(obo:RO_0000056 obo:OBI_0000011))))
+SubClassOf(obo:AEON_0000006 obo:CRO_0000000)
 
 # Class: obo:AEON_0000007 (event committee member role)
 
@@ -1250,8 +1252,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000011 "The moderating role inhere
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000011 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000011 "moderator role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000011 "https://github.com/tibonto/aeon/issues/144")
-EquivalentClasses(obo:AEON_0000011 ObjectIntersectionOf(obo:AEON_0000005 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(obo:RO_0000056 obo:OBI_0000011))))
-SubClassOf(obo:AEON_0000011 obo:AEON_0000005)
+SubClassOf(obo:AEON_0000011 obo:CRO_0000000)
 
 # Class: obo:AEON_0000012 (reviewer role)
 
@@ -1261,7 +1262,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000012 "https://orcid.org/0000-000
 AnnotationAssertion(obo:IAO_0000118 obo:AEON_0000012 "manuscript review role"@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000012 "reviewer role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000012 "https://github.com/tibonto/aeon/issues/144")
-EquivalentClasses(obo:AEON_0000012 ObjectIntersectionOf(obo:AEON_0000005 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(obo:RO_0000056 obo:OBI_0000011))))
+SubClassOf(obo:AEON_0000012 obo:CRO_0000000)
 
 # Class: obo:AEON_0000013 (aeon presenter role)
 
@@ -1271,7 +1272,7 @@ AnnotationAssertion(obo:IAO_0000118 obo:AEON_0000013 "invited speaker role"@en)
 AnnotationAssertion(obo:IAO_0006011 obo:AEON_0000013 "http://purl.obolibrary.org/obo/CRO_0000100"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000013 "aeon presenter role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000013 "https://github.com/tibonto/aeon/issues/144")
-EquivalentClasses(obo:AEON_0000013 ObjectIntersectionOf(obo:AEON_0000005 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(obo:RO_0000056 obo:OBI_0000011))))
+SubClassOf(obo:AEON_0000013 obo:CRO_0000000)
 
 # Class: obo:AEON_0000014 (keynote speaker role)
 
@@ -1288,7 +1289,7 @@ AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000015 "PS 2-9-2020: For me there 
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000015 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000015 "sponsor role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000015 "https://github.com/tibonto/aeon/issues/144")
-EquivalentClasses(obo:AEON_0000015 ObjectIntersectionOf(obo:AEON_0000005 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(obo:RO_0000056 obo:OBI_0000011))))
+SubClassOf(obo:AEON_0000015 obo:CRO_0000000)
 
 # Class: obo:AEON_0000016 (DOI)
 
@@ -1893,7 +1894,7 @@ AnnotationAssertion(rdfs:seeAlso obo:attendee "https://github.com/tibonto/aeon/i
 AnnotationAssertion(owl:deprecated obo:attendee "true"^^xsd:boolean)
 SubClassOf(obo:attendee obo:contributor)
 
-# Class: obo:committee_chair (obsolete_event committee chair)
+# Class: obo:committee_chair (DEPRECATED event committee chair)
 
 AnnotationAssertion(obo:IAO_0000114 obo:committee_chair obo:IAO_0000423)
 AnnotationAssertion(obo:IAO_0000115 obo:committee_chair "A committee chair is a committee member that holds a committee chair role which is being realized in a planned process."@en)
@@ -1901,7 +1902,7 @@ AnnotationAssertion(obo:IAO_0000116 obo:committee_chair "PS: The contributor rol
 AnnotationAssertion(obo:IAO_0000117 obo:committee_chair "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(obo:IAO_0000231 obo:committee_chair obo:IAO_0000103)
 AnnotationAssertion(obo:IAO_0000600 obo:committee_chair "A committee chair is a committe member that is expected to speak on behalf of and to be responsible for the committee. The person who is in charge of a committee with primary responsibility for carrying out the committee's duties."@en)
-AnnotationAssertion(rdfs:label obo:committee_chair "obsolete_event committee chair"@en)
+AnnotationAssertion(rdfs:label obo:committee_chair "DEPRECATED event committee chair"@en)
 AnnotationAssertion(rdfs:seeAlso obo:committee_chair "https://github.com/tibonto/aeon/issues/144")
 AnnotationAssertion(owl:deprecated obo:committee_chair "true"^^xsd:boolean)
 SubClassOf(obo:committee_chair obo:committee_member)
