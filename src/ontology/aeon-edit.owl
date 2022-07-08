@@ -1864,6 +1864,7 @@ EquivalentClasses(obo:AEON_0000127 ObjectIntersectionOf(obo:AEON_0000111 ObjectS
 AnnotationAssertion(dce:creator obo:AEON_0000128 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(dce:date obo:AEON_0000128 "2022-07-08T10:28:46Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:AEON_0000128 "academic event series format specification"@de)
+EquivalentClasses(obo:AEON_0000128 ObjectIntersectionOf(obo:AEON_0000004 ObjectSomeValuesFrom(obo:AEON_0000031 obo:AEON_0000002)))
 SubClassOf(obo:AEON_0000128 obo:AEON_0000004)
 
 # Class: obo:attendance_fee_specification (attendance fee specification)
