@@ -1188,10 +1188,9 @@ AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000004 "https://orcid.org/0000-000
 AnnotationAssertion(obo:IAO_0000118 obo:AEON_0000004 "event type"@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000004 "academic event format specification"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000004 <https://github.com/tibonto/aeon/issues/139>)
-EquivalentClasses(obo:AEON_0000004 ObjectIntersectionOf(obo:IAO_0000104 ObjectSomeValuesFrom(obo:AEON_0000031 obo:AEON_0000001)))
+EquivalentClasses(obo:AEON_0000004 ObjectIntersectionOf(obo:IAO_0000104 ObjectSomeValuesFrom(obo:AEON_0000031 obo:AEON_0000001) ObjectSomeValuesFrom(obo:BFO_0000051 obo:IAO_0000001)))
 SubClassOf(obo:AEON_0000004 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000030))
 SubClassOf(obo:AEON_0000004 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000060))
-SubClassOf(obo:AEON_0000004 ObjectSomeValuesFrom(obo:BFO_0000051 obo:IAO_0000001))
 
 # Class: obo:AEON_0000005 (aeon contributor role)
 
