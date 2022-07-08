@@ -63,6 +63,19 @@ $(IMPORTDIR)/cro_import.owl: $(MIRRORDIR)/cro.owl $(IMPORTDIR)/cro_terms.txt
 		merge -i $@.tmp.owl \
 		--output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
+## Module for ontology: obib
+
+$(IMPORTDIR)/obib_import.owl: $(MIRRORDIR)/obib.owl $(IMPORTDIR)/obib_terms.txt
+	if [ $(IMP) = true ]; then $(ROBOT) filter -i $< -T $(IMPORTDIR)/obib_terms.txt --select "self ancestors" --signature false --trim true \
+		--output $@.tmp.owl; fi
+	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
+		query --update ../sparql/preprocess-module_provo.ru \
+		filter -T $(IMPORTDIR)/obib_terms.txt --select "self annotations ontology" --signature false --trim true \
+	    query --update ../sparql/postprocess-module_2.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		merge -i $@.tmp.owl \
+		--output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
 
 ## Module for ontology: envo
 

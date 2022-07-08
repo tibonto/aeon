@@ -1,3 +1,2 @@
 ICO:0000048	# nonprofit organization
 ICO:0000049	# profit organization
-ICO:0000230	# contact person role

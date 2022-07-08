@@ -97,7 +97,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  bfo ro omo iao cro envo txpo ico obi
+IMPORTS =  bfo ro omo iao cro envo txpo ico obi obib
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -275,12 +275,8 @@ $(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl $(IMPORTDIR)/bfo_terms_combine
 
 ## Module for ontology: ro
 
-$(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/preprocess-module.ru \
-		extract -T $(IMPORTDIR)/ro_terms_combined.txt --copy-ontology-annotations true --force true --individuals exclude --method BOT \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
+$(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in aeon.Makefile!" && false
 ## Module for ontology: omo
 
 $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl $(IMPORTDIR)/omo_terms_combined.txt
@@ -290,12 +286,8 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl $(IMPORTDIR)/omo_terms_combine
 
 ## Module for ontology: iao
 
-$(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/preprocess-module.ru \
-		extract -T $(IMPORTDIR)/iao_terms_combined.txt --copy-ontology-annotations true --force true --individuals include --method BOT \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
+$(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in aeon.Makefile!" && false
 ## Module for ontology: cro
 
 $(IMPORTDIR)/cro_import.owl: $(MIRRORDIR)/cro.owl
@@ -315,6 +307,10 @@ $(IMPORTDIR)/ico_import.owl: $(MIRRORDIR)/ico.owl
 ## Module for ontology: obi
 
 $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in aeon.Makefile!" && false
+## Module for ontology: obib
+
+$(IMPORTDIR)/obib_import.owl: $(MIRRORDIR)/obib.owl
 	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in aeon.Makefile!" && false
 
 .PHONY: refresh-imports
@@ -424,6 +420,15 @@ mirror-ico: | $(TMPDIR)
 mirror-obi: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/obi.owl --create-dirs -o $(MIRRORDIR)/obi.owl --retry 4 --max-time 200 &&\
 		$(ROBOT) convert -i $(MIRRORDIR)/obi.owl -o $@.tmp.owl &&\
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+
+## ONTOLOGY: obib
+.PHONY: mirror-obib
+.PRECIOUS: $(MIRRORDIR)/obib.owl
+mirror-obib: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/obib.owl --create-dirs -o $(MIRRORDIR)/obib.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/obib.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 

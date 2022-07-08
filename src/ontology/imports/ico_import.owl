@@ -77,31 +77,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
     </owl:Class>
     
 
@@ -134,19 +109,6 @@
         <obo:IAO_0000117 xml:lang="en">Yongqun He</obo:IAO_0000117>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/ico.owl"/>
         <rdfs:label xml:lang="en">profit organization</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICO_0000230 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICO_0000230">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <obo:IAO_0000115 xml:lang="en">A role inhering in a person who is a designated contact for some other agent.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">J. Neil Otte</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/ico.owl"/>
-        <rdfs:comment xml:lang="en">The subclasses of &apos;contact person role&apos; distinguish two types: a contact person who has been designated by an organization for others (primarily patients and human research subjects in clinical settings) to contact, and a contact person whom an agent has specified for an organization to contact in the event that the organization needs to contact the patient. Examples of the latter include &apos;emergency contact&apos; persons, who are frequently specified in a form.</rdfs:comment>
-        <rdfs:label xml:lang="en">contact person role</rdfs:label>
     </owl:Class>
     
 

@@ -11,8 +11,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aeon/imports/cro_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aeon/releases/2022-07-01/imports/cro_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-01</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aeon/releases/2022-07-08/imports/cro_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-08</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl"/>
     </owl:Ontology>
     
@@ -136,16 +136,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CRO_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRO_0000000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000024"/>
         <obo:IAO_0000111>contributor role</obo:IAO_0000111>
         <obo:IAO_0000114>http://purl.obolibrary.org/obo/IAO_0000120</obo:IAO_0000114>
         <obo:IAO_0000115>A high-level classification of the diverse roles performed in the work leading to a published research output in the sciences. Its purpose to provide transparency in contributions to scholarly published work, to enable improved systems of attribution, credit, and accountability.</obo:IAO_0000115>
@@ -330,26 +324,6 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A software systems role that involves maintenance and operation of a computer system and/or network.</owl:annotatedTarget>
         <obo:IAO_0000119>https://www.wikidata.org/wiki/Q327353</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CRO_0000053 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRO_0000053">
-        <rdfs:subClassOf rdf:resource="http://purl.org/credit/ontology#CREDIT_00000006"/>
-        <obo:IAO_0000115>A methodology role that involves creation of a detailed plan of a scientific or medical experiment, treatment, or procedure.</obo:IAO_0000115>
-        <obo:IAO_0000118>protocol development role</obo:IAO_0000118>
-        <dc:creator rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-14T20:19:56Z</dc:date>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl"/>
-        <rdfs:label>protocol creation role</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CRO_0000053"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A methodology role that involves creation of a detailed plan of a scientific or medical experiment, treatment, or procedure.</owl:annotatedTarget>
-        <obo:IAO_0000119>https://www.merriam-webster.com/dictionary/protocol</obo:IAO_0000119>
     </owl:Axiom>
     
 
@@ -637,20 +611,9 @@
     
 
 
-    <!-- http://purl.org/credit/ontology#CREDIT_00000006 -->
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000024 -->
 
-    <owl:Class rdf:about="http://purl.org/credit/ontology#CREDIT_00000006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRO_0000000"/>
-        <obo:IAO_0000111>methodology role</obo:IAO_0000111>
-        <obo:IAO_0000114>http://purl.obolibrary.org/obo/IAO_0000120</obo:IAO_0000114>
-        <obo:IAO_0000115>Development or design of methodology; creation of models.</obo:IAO_0000115>
-        <obo:IAO_0000117>https://orcid.org/0000-0001-5059-4132</obo:IAO_0000117>
-        <obo:IAO_0000119>http://dictionary.casrai.org/Contributor_Roles/Methodology</obo:IAO_0000119>
-        <obo:IAO_0000412>http://purl.org/credit/ontology</obo:IAO_0000412>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl"/>
-        <oboInOwl:hasDbXref>f21e2be9-4e38-4ab7-8691-d6f72d5d5843</oboInOwl:hasDbXref>
-        <rdfs:label xml:lang="en">methodology role</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000024"/>
     
 
 
