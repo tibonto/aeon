@@ -8,7 +8,6 @@ http://purl.obolibrary.org/obo/CRO_0000045	# training material role
 http://purl.obolibrary.org/obo/CRO_0000046	# training program development role
 http://purl.obolibrary.org/obo/CRO_0000047	# instruction role
 http://purl.obolibrary.org/obo/CRO_0000048	# hardware role
-http://purl.obolibrary.org/obo/CRO_0000053	# protocol creation role
 http://purl.obolibrary.org/obo/CRO_0000051	# system administrator role
 http://purl.obolibrary.org/obo/CRO_0000058	# equipment technician role
 http://purl.obolibrary.org/obo/CRO_0000059	# survey and questionnaire development role
@@ -27,6 +26,4 @@ http://purl.obolibrary.org/obo/CRO_0000105	# submitter role
 http://purl.obolibrary.org/obo/CRO_0000106	# evaluator role
 http://purl.obolibrary.org/obo/CRO_0000026 # 
 
-
-http://purl.org/credit/ontology#CREDIT_00000006 # 'methodology role'
 http://purl.org/credit/ontology#CREDIT_00000009 # 'software role'
