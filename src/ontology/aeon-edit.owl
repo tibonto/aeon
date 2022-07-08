@@ -266,6 +266,19 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Object Properties
 ############################
 
+# Object Property: obo:RO_0000056 (participates in)
+
+InverseObjectProperties(obo:RO_0000056 :AEON_0000045)
+InverseObjectProperties(obo:RO_0000056 :AEON_0000046)
+InverseObjectProperties(obo:RO_0000056 :AEON_0000047)
+InverseObjectProperties(obo:RO_0000056 :AEON_0000048)
+InverseObjectProperties(obo:RO_0000056 :AEON_0000049)
+InverseObjectProperties(obo:RO_0000056 :AEON_0000050)
+InverseObjectProperties(obo:RO_0000056 :AEON_0000051)
+InverseObjectProperties(obo:RO_0000056 :AEON_0000052)
+InverseObjectProperties(obo:RO_0000056 :AEON_0000053)
+InverseObjectProperties(obo:RO_0000056 :AEON_0000054)
+
 # Object Property: :AEON_0000031 (specifies academic event format of)
 
 AnnotationAssertion(obo:IAO_0000115 :AEON_0000031 "A relation obtaining between an 'academic event type specification' and an 'academic event', in which the former is used to descibe the sociocultural format of the latter. A set of possible common academic event type specification is provided in AEON as named individuals."@en)
@@ -335,9 +348,8 @@ AnnotationAssertion(obo:IAO_0000116 :AEON_0000045 "has participant is sufficient
 AnnotationAssertion(obo:IAO_0000117 :AEON_0000045 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(obo:IAO_0000231 :AEON_0000045 obo:IAO_0000103)
 AnnotationAssertion(obo:IAO_0100001 :AEON_0000045 obo:RO_0000057)
-AnnotationAssertion(owl:deprecated :AEON_0000045 "true"^^xsd:boolean)
 AnnotationAssertion(rdfs:label :AEON_0000045 "OBSOLETE has contributor"@en)
-InverseObjectProperties(:AEON_0000045 :contibutes_to)
+AnnotationAssertion(owl:deprecated :AEON_0000045 "true"^^xsd:boolean)
 
 # Object Property: :AEON_0000046 (OBSOLETE has attendee)
 
@@ -349,7 +361,6 @@ AnnotationAssertion(obo:IAO_0100001 :AEON_0000046 obo:RO_0000057)
 AnnotationAssertion(:AEON_0000026 :AEON_0000046 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P710\", \"label\": \"participantLabel\"}}"^^xsd:string)
 AnnotationAssertion(rdfs:label :AEON_0000046 "OBSOLETE has attendee"@en)
 AnnotationAssertion(owl:deprecated :AEON_0000046 "true"^^xsd:boolean)
-InverseObjectProperties(:AEON_0000046 :attends_at)
 
 # Object Property: :AEON_0000047 (OBSOLETE has moderator)
 
@@ -360,7 +371,6 @@ AnnotationAssertion(obo:IAO_0000231 :AEON_0000047 obo:IAO_0000103)
 AnnotationAssertion(obo:IAO_0100001 :AEON_0000047 obo:RO_0000057)
 AnnotationAssertion(rdfs:label :AEON_0000047 "OBSOLETE has moderator"@en)
 AnnotationAssertion(owl:deprecated :AEON_0000047 "true"^^xsd:boolean)
-InverseObjectProperties(:AEON_0000047 :moderates_at)
 
 # Object Property: :AEON_0000048 (OBSOLETE has organizer)
 
@@ -368,11 +378,10 @@ AnnotationAssertion(obo:IAO_0000115 :AEON_0000048 "A relation obtaining between 
 AnnotationAssertion(obo:IAO_0000116 :AEON_0000048 "has participant is sufficient enough, no need for subproperties thereof"^^xsd:string)
 AnnotationAssertion(obo:IAO_0000117 :AEON_0000048 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(obo:IAO_0000231 :AEON_0000048 obo:IAO_0000103)
+AnnotationAssertion(obo:IAO_0100001 :AEON_0000048 obo:RO_0000057)
 AnnotationAssertion(:AEON_0000026 :AEON_0000048 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P664\", \"label\": \"organizerLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Has_organizer\", \"label\": \"Has_organizer\"},\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"sponsor\"}}}"^^xsd:string)
 AnnotationAssertion(rdfs:label :AEON_0000048 "OBSOLETE has organizer"@en)
-AnnotationAssertion(obo:IAO_0100001 :AEON_0000048 obo:RO_0000057)
 AnnotationAssertion(owl:deprecated :AEON_0000048 "true"^^xsd:boolean)
-InverseObjectProperties(:AEON_0000048 :organizes)
 
 # Object Property: :AEON_0000049 (OBSOLETE has reviewer)
 
@@ -380,10 +389,9 @@ AnnotationAssertion(obo:IAO_0000115 :AEON_0000049 "A relation obtaining between 
 AnnotationAssertion(obo:IAO_0000116 :AEON_0000049 "has participant is sufficient enough, no need for subproperties thereof"^^xsd:string)
 AnnotationAssertion(obo:IAO_0000117 :AEON_0000049 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(obo:IAO_0000231 :AEON_0000049 obo:IAO_0000103)
-AnnotationAssertion(rdfs:label :AEON_0000049 "OBSOLETE has reviewer"@en)
 AnnotationAssertion(obo:IAO_0100001 :AEON_0000049 obo:RO_0000057)
+AnnotationAssertion(rdfs:label :AEON_0000049 "OBSOLETE has reviewer"@en)
 AnnotationAssertion(owl:deprecated :AEON_0000049 "true"^^xsd:boolean)
-InverseObjectProperties(:AEON_0000049 :reviews_at)
 
 # Object Property: :AEON_0000050 (OBSOLETE has presenter)
 
@@ -395,7 +403,6 @@ AnnotationAssertion(obo:IAO_0100001 :AEON_0000050 obo:RO_0000057)
 AnnotationAssertion(:AEON_0000026 :AEON_0000050 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P823\", \"label\": \"speaker\"}}"^^xsd:string)
 AnnotationAssertion(rdfs:label :AEON_0000050 "OBSOLETE has presenter"@en)
 AnnotationAssertion(owl:deprecated :AEON_0000050 "true"^^xsd:boolean)
-InverseObjectProperties(:AEON_0000050 :speaks_at)
 
 # Object Property: :AEON_0000051 (OBSOLETE has sponsor)
 
@@ -406,7 +413,6 @@ AnnotationAssertion(obo:IAO_0000231 :AEON_0000051 obo:IAO_0000103)
 AnnotationAssertion(obo:IAO_0100001 :AEON_0000051 obo:RO_0000057)
 AnnotationAssertion(rdfs:label :AEON_0000051 "OBSOLETE has sponsor"@en)
 AnnotationAssertion(owl:deprecated :AEON_0000051 "true"^^xsd:boolean)
-InverseObjectProperties(:AEON_0000051 :sponsors)
 
 # Object Property: :AEON_0000052 (OBSOLETE has committee member)
 
@@ -417,7 +423,6 @@ AnnotationAssertion(obo:IAO_0000231 :AEON_0000052 obo:IAO_0000103)
 AnnotationAssertion(obo:IAO_0100001 :AEON_0000052 obo:RO_0000057)
 AnnotationAssertion(rdfs:label :AEON_0000052 "OBSOLETE has committee member"@en)
 AnnotationAssertion(owl:deprecated :AEON_0000052 "true"^^xsd:boolean)
-InverseObjectProperties(:AEON_0000052 :committee_member_in)
 
 # Object Property: :AEON_0000053 (OBSOLETE has contact person)
 
@@ -428,7 +433,6 @@ AnnotationAssertion(obo:IAO_0000231 :AEON_0000053 obo:IAO_0000103)
 AnnotationAssertion(obo:IAO_0100001 :AEON_0000053 obo:RO_0000057)
 AnnotationAssertion(rdfs:label :AEON_0000053 "OBSOLETE has contact person"@en)
 AnnotationAssertion(owl:deprecated :AEON_0000053 "true"^^xsd:boolean)
-InverseObjectProperties(:AEON_0000053 :contact_person_of)
 
 # Object Property: :AEON_0000054 (OBSOLETE has keynote speaker)
 
@@ -439,7 +443,6 @@ AnnotationAssertion(obo:IAO_0000231 :AEON_0000054 obo:IAO_0000103)
 AnnotationAssertion(obo:IAO_0100001 :AEON_0000054 obo:RO_0000057)
 AnnotationAssertion(rdfs:label :AEON_0000054 "OBSOLETE has keynote speaker"@en)
 AnnotationAssertion(owl:deprecated :AEON_0000054 "true"^^xsd:boolean)
-InverseObjectProperties(:AEON_0000054 :holds_keynote_at)
 
 # Object Property: :AEON_0000055 (OBSOLETE has committee chair)
 
@@ -639,50 +642,54 @@ SubObjectPropertyOf(:academic_field_of obo:IAO_0000136)
 ObjectPropertyDomain(:academic_field_of :AEON_0000027)
 ObjectPropertyRange(:academic_field_of obo:OBI_0000011)
 
-# Object Property: :attends_at (attends at planned process)
+# Object Property: :attends_at (OBSOLETE attends at planned process)
 
 AnnotationAssertion(obo:IAO_0000115 :attends_at "A relation obtaining between a person and a planned process, in which the person holds an attendee role that is being realized by the planned process the moment the person is actually a member of the audience of said planned process."@en)
+AnnotationAssertion(obo:IAO_0000116 :attends_at "participates in is sufficient enough"^^xsd:string)
 AnnotationAssertion(obo:IAO_0000117 :attends_at "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label :attends_at "attends at planned process"@en)
-SubObjectPropertyOf(:attends_at :contibutes_to)
-ObjectPropertyDomain(:attends_at :attendee)
-ObjectPropertyRange(:attends_at obo:OBI_0000011)
+AnnotationAssertion(obo:IAO_0000231 :attends_at obo:IAO_0000103)
+AnnotationAssertion(obo:IAO_0100001 :attends_at obo:RO_0000056)
+AnnotationAssertion(rdfs:label :attends_at "OBSOLETE attends at planned process"@en)
+AnnotationAssertion(owl:deprecated :attends_at "true"^^xsd:boolean)
 
-# Object Property: :committee_chair_in (is committee chair in)
+# Object Property: :committee_chair_in (OBSOLETE is committee chair in)
 
 AnnotationAssertion(obo:IAO_0000115 :committee_chair_in "A relation obtaining between a person and a planned process, in which the person holds a committee chair role that is being realized by the planned process."@en)
+AnnotationAssertion(obo:IAO_0000116 :committee_chair_in "participates in is sufficient enough"^^xsd:string)
 AnnotationAssertion(obo:IAO_0000117 :committee_chair_in "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label :committee_chair_in "is committee chair in"@en)
-SubObjectPropertyOf(:committee_chair_in :committee_member_in)
-ObjectPropertyDomain(:committee_chair_in :committee_chair)
-ObjectPropertyRange(:committee_chair_in obo:OBI_0000011)
+AnnotationAssertion(obo:IAO_0000231 :committee_chair_in obo:IAO_0000103)
+AnnotationAssertion(rdfs:label :committee_chair_in "OBSOLETE is committee chair in"@en)
+AnnotationAssertion(owl:deprecated :committee_chair_in "true"^^xsd:boolean)
 
-# Object Property: :committee_member_in (is committee member in)
+# Object Property: :committee_member_in (OBSOLETE is committee member in)
 
 AnnotationAssertion(obo:IAO_0000115 :committee_member_in "A relation obtaining between a person and a planned process, in which the person holds a committee member role that is being realized by the planned process."@en)
+AnnotationAssertion(obo:IAO_0000116 :committee_member_in "participates in is sufficient enough"^^xsd:string)
 AnnotationAssertion(obo:IAO_0000117 :committee_member_in "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label :committee_member_in "is committee member in"@en)
-SubObjectPropertyOf(:committee_member_in :organizes)
-ObjectPropertyDomain(:committee_member_in :committee_member)
-ObjectPropertyRange(:committee_member_in obo:OBI_0000011)
+AnnotationAssertion(obo:IAO_0000231 :committee_member_in obo:IAO_0000103)
+AnnotationAssertion(obo:IAO_0100001 :committee_member_in obo:RO_0000056)
+AnnotationAssertion(rdfs:label :committee_member_in "OBSOLETE is committee member in"@en)
+AnnotationAssertion(owl:deprecated :committee_member_in "true"^^xsd:boolean)
 
-# Object Property: :contact_person_of (is contact person of)
+# Object Property: :contact_person_of (OBSOLETE is contact person of)
 
 AnnotationAssertion(obo:IAO_0000115 :contact_person_of "A relation obtaining between a person and a planned process, in which the person holds the role of being the designated contact person and that role is being realized by the planned process."@en)
+AnnotationAssertion(obo:IAO_0000116 :contact_person_of "participates in is sufficient enough"^^xsd:string)
 AnnotationAssertion(obo:IAO_0000117 :contact_person_of "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label :contact_person_of "is contact person of"@en)
-SubObjectPropertyOf(:contact_person_of :organizes)
-ObjectPropertyDomain(:contact_person_of :contact_person)
-ObjectPropertyRange(:contact_person_of obo:OBI_0000011)
+AnnotationAssertion(obo:IAO_0000231 :contact_person_of obo:IAO_0000103)
+AnnotationAssertion(obo:IAO_0100001 :contact_person_of obo:RO_0000056)
+AnnotationAssertion(rdfs:label :contact_person_of "OBSOLETE is contact person of"@en)
+AnnotationAssertion(owl:deprecated :contact_person_of "true"^^xsd:boolean)
 
-# Object Property: :contibutes_to (contributes to planned process)
+# Object Property: :contibutes_to (OBSOLETE contributes to planned process)
 
 AnnotationAssertion(obo:IAO_0000115 :contibutes_to "A relation obtaining between a person or organization and a planned process, in which the person or organization holds a contributor role that is being realized by the planned process."@en)
+AnnotationAssertion(obo:IAO_0000116 :contibutes_to "participates in is sufficient enough"^^xsd:string)
 AnnotationAssertion(obo:IAO_0000117 :contibutes_to "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label :contibutes_to "contributes to planned process"@en)
-SubObjectPropertyOf(:contibutes_to obo:RO_0000056)
-ObjectPropertyDomain(:contibutes_to :contributor)
-ObjectPropertyRange(:contibutes_to obo:OBI_0000011)
+AnnotationAssertion(obo:IAO_0000231 :contibutes_to obo:IAO_0000103)
+AnnotationAssertion(obo:IAO_0100001 :contibutes_to obo:RO_0000056)
+AnnotationAssertion(rdfs:label :contibutes_to "OBSOLETE contributes to planned process"@en)
+AnnotationAssertion(owl:deprecated :contibutes_to "true"^^xsd:boolean)
 
 # Object Property: :has_WikiCFP_ID (has WikiCFP identifier)
 
@@ -723,50 +730,55 @@ SubObjectPropertyOf(:has_umbrella_event obo:TXPO_0002523)
 ObjectPropertyDomain(:has_umbrella_event :AEON_0000001)
 ObjectPropertyRange(:has_umbrella_event :AEON_0000001)
 
-# Object Property: :holds_keynote_at (holds keynote speech at)
+# Object Property: :holds_keynote_at (OBSOLETE holds keynote speech at)
 
 AnnotationAssertion(obo:IAO_0000115 :holds_keynote_at "A relation between a person and a planned process, in which the person holds a keynote speaker role that is being realized by the planned process."@en)
+AnnotationAssertion(obo:IAO_0000116 :holds_keynote_at "participates in is sufficient enough"^^xsd:string)
 AnnotationAssertion(obo:IAO_0000117 :holds_keynote_at "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label :holds_keynote_at "holds keynote speech at"@en)
-SubObjectPropertyOf(:holds_keynote_at :speaks_at)
-ObjectPropertyDomain(:holds_keynote_at :keynote_speaker)
-ObjectPropertyRange(:holds_keynote_at obo:OBI_0000011)
+AnnotationAssertion(obo:IAO_0000231 :holds_keynote_at obo:IAO_0000103)
+AnnotationAssertion(obo:IAO_0100001 :holds_keynote_at obo:RO_0000056)
+AnnotationAssertion(rdfs:label :holds_keynote_at "OBSOLETE holds keynote speech at"@en)
+AnnotationAssertion(owl:deprecated :holds_keynote_at "true"^^xsd:boolean)
 
-# Object Property: :moderates_at (moderates at)
+# Object Property: :moderates_at (OBSOLETE moderates at)
 
 AnnotationAssertion(obo:IAO_0000115 :moderates_at "A relation obtaining between a person and a planned process, in which the person holds a moderator role that is being realized by the planned process."@en)
+AnnotationAssertion(obo:IAO_0000116 :moderates_at "participates in is sufficient enough"^^xsd:string)
 AnnotationAssertion(obo:IAO_0000117 :moderates_at "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label :moderates_at "moderates at"@en)
-SubObjectPropertyOf(:moderates_at :contibutes_to)
-ObjectPropertyDomain(:moderates_at :moderator)
-ObjectPropertyRange(:moderates_at obo:OBI_0000011)
+AnnotationAssertion(obo:IAO_0000231 :moderates_at obo:IAO_0000103)
+AnnotationAssertion(obo:IAO_0100001 :moderates_at obo:RO_0000056)
+AnnotationAssertion(rdfs:label :moderates_at "OBSOLETE moderates at"@en)
+AnnotationAssertion(owl:deprecated :moderates_at "true"^^xsd:boolean)
 
-# Object Property: :organizes (organizes)
+# Object Property: :organizes (OBSOLETE organizes)
 
 AnnotationAssertion(obo:IAO_0000115 :organizes "A relation obtaining between a person or organization and a planned process, in which the person or organization holds an organizer role that is being realized by the planned process."@en)
+AnnotationAssertion(obo:IAO_0000116 :organizes "participates in is sufficient enough"^^xsd:string)
 AnnotationAssertion(obo:IAO_0000117 :organizes "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label :organizes "organizes"@en)
-SubObjectPropertyOf(:organizes :contibutes_to)
-ObjectPropertyDomain(:organizes :organizer)
-ObjectPropertyRange(:organizes obo:OBI_0000011)
+AnnotationAssertion(obo:IAO_0000231 :organizes obo:IAO_0000103)
+AnnotationAssertion(obo:IAO_0100001 :organizes obo:RO_0000056)
+AnnotationAssertion(rdfs:label :organizes "OBSOLETE organizes"@en)
+AnnotationAssertion(owl:deprecated :organizes "true"^^xsd:boolean)
 
-# Object Property: :reviews_at (reviews at)
+# Object Property: :reviews_at (OBSOLETE reviews at)
 
 AnnotationAssertion(obo:IAO_0000115 :reviews_at "A relation between a person and a planned process, in which the person holds a reviewer role that is being realized by the planned process."@en)
+AnnotationAssertion(obo:IAO_0000116 :reviews_at "participates in is sufficient enough"^^xsd:string)
 AnnotationAssertion(obo:IAO_0000117 :reviews_at "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label :reviews_at "reviews at"@en)
-SubObjectPropertyOf(:reviews_at :contibutes_to)
-ObjectPropertyDomain(:reviews_at :reviewer)
-ObjectPropertyRange(:reviews_at obo:OBI_0000011)
+AnnotationAssertion(obo:IAO_0000231 :reviews_at obo:IAO_0000103)
+AnnotationAssertion(obo:IAO_0100001 :reviews_at obo:RO_0000056)
+AnnotationAssertion(rdfs:label :reviews_at "OBSOLETE reviews at"@en)
+AnnotationAssertion(owl:deprecated :reviews_at "true"^^xsd:boolean)
 
-# Object Property: :speaks_at (presents at)
+# Object Property: :speaks_at (OBSOLETE presents at)
 
 AnnotationAssertion(obo:IAO_0000115 :speaks_at "A relation obtaining between a person and a planned process, in which the person holds a presenter role that is being realized by the planned process."@en)
+AnnotationAssertion(obo:IAO_0000116 :speaks_at "participates in is sufficient enough"^^xsd:string)
 AnnotationAssertion(obo:IAO_0000117 :speaks_at "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label :speaks_at "presents at"@en)
-SubObjectPropertyOf(:speaks_at :contibutes_to)
-ObjectPropertyDomain(:speaks_at :speaker)
-ObjectPropertyRange(:speaks_at obo:OBI_0000011)
+AnnotationAssertion(obo:IAO_0000231 :speaks_at obo:IAO_0000103)
+AnnotationAssertion(obo:IAO_0100001 :speaks_at obo:RO_0000056)
+AnnotationAssertion(rdfs:label :speaks_at "OBSOLETE presents at"@en)
+AnnotationAssertion(owl:deprecated :speaks_at "true"^^xsd:boolean)
 
 # Object Property: :specifies_event_fee (specifies event fee of)
 
@@ -779,14 +791,15 @@ SubObjectPropertyOf(:specifies_event_fee obo:IAO_0000136)
 ObjectPropertyDomain(:specifies_event_fee :AEON_0000030)
 ObjectPropertyRange(:specifies_event_fee obo:OBI_0000011)
 
-# Object Property: :sponsors (sponsors)
+# Object Property: :sponsors (OBSOLETE sponsors)
 
 AnnotationAssertion(obo:IAO_0000115 :sponsors "A relation obtaining between a person or organization and a planned process, in which the person or organization holds a sponsor role that is being realized by the planned process."@en)
+AnnotationAssertion(obo:IAO_0000116 :sponsors "participates in is sufficient enough"^^xsd:string)
 AnnotationAssertion(obo:IAO_0000117 :sponsors "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label :sponsors "sponsors"@en)
-SubObjectPropertyOf(:sponsors :contibutes_to)
-ObjectPropertyDomain(:sponsors :sponsor)
-ObjectPropertyRange(:sponsors obo:OBI_0000011)
+AnnotationAssertion(obo:IAO_0000231 :sponsors obo:IAO_0000103)
+AnnotationAssertion(obo:IAO_0100001 :sponsors obo:RO_0000056)
+AnnotationAssertion(rdfs:label :sponsors "OBSOLETE sponsors"@en)
+AnnotationAssertion(owl:deprecated :sponsors "true"^^xsd:boolean)
 
 # Object Property: :topic_of (describes event topic)
 
@@ -1189,6 +1202,7 @@ AnnotationAssertion(obo:IAO_0000117 :AEON_0000005 "https://orcid.org/0000-0002-1
 AnnotationAssertion(dce:date :AEON_0000005 "2020-09-28T12:51:02Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label :AEON_0000005 "aeon contributor role"@en)
 AnnotationAssertion(rdfs:seeAlso :AEON_0000005 "https://github.com/tibonto/aeon/issues/144")
+SubClassOf(:AEON_0000005 obo:BFO_0000023)
 SubClassOf(:AEON_0000005 ObjectSomeValuesFrom(obo:BFO_0000054 :AEON_0000001))
 SubClassOf(:AEON_0000005 ObjectSomeValuesFrom(obo:BFO_0000054 :AEON_0000002))
 
@@ -1198,7 +1212,7 @@ AnnotationAssertion(obo:IAO_0000115 :AEON_0000006 "The organizer role inheres in
 AnnotationAssertion(obo:IAO_0000117 :AEON_0000006 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label :AEON_0000006 "organizer role"@en)
 AnnotationAssertion(rdfs:seeAlso :AEON_0000006 "https://github.com/tibonto/aeon/issues/144")
-EquivalentClasses(:AEON_0000006 ObjectIntersectionOf(:AEON_0000005 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(:organizes obo:OBI_0000011))))
+EquivalentClasses(:AEON_0000006 ObjectIntersectionOf(:AEON_0000005 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(obo:RO_0000056 obo:OBI_0000011))))
 
 # Class: :AEON_0000007 (event committee member role)
 
@@ -1206,7 +1220,7 @@ AnnotationAssertion(obo:IAO_0000115 :AEON_0000007 "The 'committee member role' i
 AnnotationAssertion(obo:IAO_0000117 :AEON_0000007 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label :AEON_0000007 "event committee member role"@en)
 AnnotationAssertion(rdfs:seeAlso :AEON_0000007 "https://github.com/tibonto/aeon/issues/144")
-EquivalentClasses(:AEON_0000007 ObjectIntersectionOf(:AEON_0000006 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(:committee_member_in obo:OBI_0000011))))
+EquivalentClasses(:AEON_0000007 ObjectIntersectionOf(:AEON_0000006 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(obo:RO_0000056 obo:OBI_0000011))))
 DisjointClasses(:AEON_0000007 :AEON_0000009)
 
 # Class: :AEON_0000008 (event committee chair role)
@@ -1223,7 +1237,7 @@ AnnotationAssertion(obo:IAO_0000115 :AEON_0000009 "The contact person role inher
 AnnotationAssertion(obo:IAO_0000117 :AEON_0000009 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label :AEON_0000009 "contact person role"@en)
 AnnotationAssertion(rdfs:seeAlso :AEON_0000009 "https://github.com/tibonto/aeon/issues/144")
-EquivalentClasses(:AEON_0000009 ObjectIntersectionOf(:AEON_0000006 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(:contact_person_of obo:OBI_0000011))))
+EquivalentClasses(:AEON_0000009 ObjectIntersectionOf(:AEON_0000006 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(obo:RO_0000056 obo:OBI_0000011))))
 
 # Class: :AEON_0000010 (attendee role)
 
@@ -1239,7 +1253,7 @@ AnnotationAssertion(obo:IAO_0000115 :AEON_0000011 "The moderating role inheres i
 AnnotationAssertion(obo:IAO_0000117 :AEON_0000011 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label :AEON_0000011 "moderator role"@en)
 AnnotationAssertion(rdfs:seeAlso :AEON_0000011 "https://github.com/tibonto/aeon/issues/144")
-EquivalentClasses(:AEON_0000011 ObjectIntersectionOf(:AEON_0000005 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(:moderates_at obo:OBI_0000011))))
+EquivalentClasses(:AEON_0000011 ObjectIntersectionOf(:AEON_0000005 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(obo:RO_0000056 obo:OBI_0000011))))
 SubClassOf(:AEON_0000011 :AEON_0000005)
 
 # Class: :AEON_0000012 (reviewer role)
@@ -1250,7 +1264,7 @@ AnnotationAssertion(obo:IAO_0000117 :AEON_0000012 "https://orcid.org/0000-0002-1
 AnnotationAssertion(obo:IAO_0000118 :AEON_0000012 "manuscript review role"@en)
 AnnotationAssertion(rdfs:label :AEON_0000012 "reviewer role"@en)
 AnnotationAssertion(rdfs:seeAlso :AEON_0000012 "https://github.com/tibonto/aeon/issues/144")
-EquivalentClasses(:AEON_0000012 ObjectIntersectionOf(:AEON_0000005 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(:reviews_at obo:OBI_0000011))))
+EquivalentClasses(:AEON_0000012 ObjectIntersectionOf(:AEON_0000005 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(obo:RO_0000056 obo:OBI_0000011))))
 
 # Class: :AEON_0000013 (aeon presenter role)
 
@@ -1260,7 +1274,7 @@ AnnotationAssertion(obo:IAO_0000118 :AEON_0000013 "invited speaker role"@en)
 AnnotationAssertion(obo:IAO_0006011 :AEON_0000013 "http://purl.obolibrary.org/obo/CRO_0000100"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label :AEON_0000013 "aeon presenter role"@en)
 AnnotationAssertion(rdfs:seeAlso :AEON_0000013 "https://github.com/tibonto/aeon/issues/144")
-EquivalentClasses(:AEON_0000013 ObjectIntersectionOf(:AEON_0000005 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(:speaks_at obo:OBI_0000011))))
+EquivalentClasses(:AEON_0000013 ObjectIntersectionOf(:AEON_0000005 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(obo:RO_0000056 obo:OBI_0000011))))
 
 # Class: :AEON_0000014 (keynote speaker role)
 
@@ -1277,7 +1291,7 @@ AnnotationAssertion(obo:IAO_0000116 :AEON_0000015 "PS 2-9-2020: For me there is 
 AnnotationAssertion(obo:IAO_0000117 :AEON_0000015 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label :AEON_0000015 "sponsor role"@en)
 AnnotationAssertion(rdfs:seeAlso :AEON_0000015 "https://github.com/tibonto/aeon/issues/144")
-EquivalentClasses(:AEON_0000015 ObjectIntersectionOf(:AEON_0000005 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(:sponsors obo:OBI_0000011))))
+EquivalentClasses(:AEON_0000015 ObjectIntersectionOf(:AEON_0000005 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(obo:RO_0000056 obo:OBI_0000011))))
 
 # Class: :AEON_0000016 (DOI)
 
