@@ -1457,7 +1457,7 @@ AnnotationAssertion(obo:IAO_0000115 :AEON_0000042 "An academic event committee i
 Academic event committees are usually formed in the planning process of those academic events that need to subdevide and delegate the tasks that need to be carried out for the realization of the academic event.."@en)
 AnnotationAssertion(obo:IAO_0000117 :AEON_0000042 <https://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label :AEON_0000042 "academic event committee"@en)
-SubClassOf(:AEON_0000042 obo:BFO_0000027)
+SubClassOf(:AEON_0000042 obo:OBI_0000245)
 
 # Class: :AEON_0000060 (deadline specification)
 
