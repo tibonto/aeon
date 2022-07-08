@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.obolibrary.org/obo/aeon.owl/>)
+Prefix(:=<http://purl.obolibrary.org/obo/>)
 Prefix(ns:=<http://www.w3.org/2003/06/sw-vocab-status/ns#>)
 Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
@@ -104,6 +104,7 @@ Declaration(Class(:AEON_0000124))
 Declaration(Class(:AEON_0000125))
 Declaration(Class(:AEON_0000126))
 Declaration(Class(:AEON_0000127))
+Declaration(Class(:AEON_0000128))
 Declaration(Class(:attendance_fee_specification))
 Declaration(Class(:attendee))
 Declaration(Class(:committee_chair))
@@ -1163,11 +1164,11 @@ SubClassOf(:AEON_0000001 ObjectSomeValuesFrom(:AEON_0000084 :AEON_0000002))
 
 # Class: :AEON_0000002 (academic event series)
 
-AnnotationAssertion(obo:IAO_0000112 :AEON_0000002 "International Semantic Web Conference (ISWC) series")
-AnnotationAssertion(obo:IAO_0000115 :AEON_0000002 "An academic event series is a planned process that is the set of all recurring academic events of a destinct identity. This destinct identity is usually demarked by a shared name that only differs with regard to some ordnial symbol, such as 1st or the year of the academic event."@en)
+AnnotationAssertion(obo:IAO_0000112 :AEON_0000002 "International Semantic Web Conference (ISWC)")
+AnnotationAssertion(obo:IAO_0000115 :AEON_0000002 "An academic event series is an academic event that is the set of all recurring academic events of a destinct identity. This destinct identity is usually demarked by a shared name that only differs with regard to some ordnial symbol, such as 1st or the year of the academic event."@en)
 AnnotationAssertion(:AEON_0000026 :AEON_0000002 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Q15900647\", \"label\": \"conference_seriesLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Category:Event_series\", \"label\": \"Event_series\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#SeriesOfConferenceOrEvent\", \"label\": \"Series of conference or event\"}}"^^xsd:string)
 AnnotationAssertion(rdfs:label :AEON_0000002 "academic event series")
-SubClassOf(:AEON_0000002 :AEON_0000001)
+EquivalentClasses(:AEON_0000002 ObjectIntersectionOf(:AEON_0000001 ObjectSomeValuesFrom(:AEON_0000032 :AEON_0000128)))
 SubClassOf(:AEON_0000002 ObjectSomeValuesFrom(obo:BFO_0000055 :AEON_0000005))
 SubClassOf(:AEON_0000002 ObjectSomeValuesFrom(obo:RO_0002224 :AEON_0000001))
 SubClassOf(:AEON_0000002 ObjectSomeValuesFrom(obo:RO_0002230 :AEON_0000001))
@@ -1860,6 +1861,13 @@ AnnotationAssertion(obo:IAO_0000117 :AEON_0000127 "https://orcid.org/0000-0002-1
 AnnotationAssertion(obo:IAO_0000119 :AEON_0000127 "https://en.wikipedia.org/wiki/Poster_session"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label :AEON_0000127 "academic poster session"@en)
 EquivalentClasses(:AEON_0000127 ObjectIntersectionOf(:AEON_0000111 ObjectSomeValuesFrom(:AEON_0000032 :AEON_0000126)))
+
+# Class: :AEON_0000128 (academic event series format specification)
+
+AnnotationAssertion(dce:creator :AEON_0000128 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date :AEON_0000128 "2022-07-08T10:28:46Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label :AEON_0000128 "academic event series format specification"@de)
+SubClassOf(:AEON_0000128 :AEON_0000004)
 
 # Class: :attendance_fee_specification (attendance fee specification)
 
