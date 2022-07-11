@@ -340,7 +340,6 @@ AnnotationAssertion(obo:IAO_0000231 obo:AEON_0000045 obo:IAO_0000103)
 AnnotationAssertion(obo:IAO_0100001 obo:AEON_0000045 obo:RO_0000057)
 AnnotationAssertion(rdfs:label obo:AEON_0000045 "DEPRECATED has contributor"@en)
 AnnotationAssertion(owl:deprecated obo:AEON_0000045 "true"^^xsd:boolean)
-InverseObjectProperties(obo:AEON_0000045 obo:RO_0000056)
 
 # Object Property: obo:AEON_0000046 (DEPRECATED has attendee)
 
@@ -352,7 +351,6 @@ AnnotationAssertion(obo:IAO_0000231 obo:AEON_0000046 obo:IAO_0000103)
 AnnotationAssertion(obo:IAO_0100001 obo:AEON_0000046 obo:RO_0000057)
 AnnotationAssertion(rdfs:label obo:AEON_0000046 "DEPRECATED has attendee"@en)
 AnnotationAssertion(owl:deprecated obo:AEON_0000046 "true"^^xsd:boolean)
-InverseObjectProperties(obo:AEON_0000046 obo:RO_0000056)
 
 # Object Property: obo:AEON_0000047 (DEPRECATED has moderator)
 
@@ -363,7 +361,6 @@ AnnotationAssertion(obo:IAO_0000231 obo:AEON_0000047 obo:IAO_0000103)
 AnnotationAssertion(obo:IAO_0100001 obo:AEON_0000047 obo:RO_0000057)
 AnnotationAssertion(rdfs:label obo:AEON_0000047 "DEPRECATED has moderator"@en)
 AnnotationAssertion(owl:deprecated obo:AEON_0000047 "true"^^xsd:boolean)
-InverseObjectProperties(obo:AEON_0000047 obo:RO_0000056)
 
 # Object Property: obo:AEON_0000048 (DEPRECATED has organizer)
 
@@ -375,7 +372,6 @@ AnnotationAssertion(obo:IAO_0000231 obo:AEON_0000048 obo:IAO_0000103)
 AnnotationAssertion(obo:IAO_0100001 obo:AEON_0000048 obo:RO_0000057)
 AnnotationAssertion(rdfs:label obo:AEON_0000048 "DEPRECATED has organizer"@en)
 AnnotationAssertion(owl:deprecated obo:AEON_0000048 "true"^^xsd:boolean)
-InverseObjectProperties(obo:AEON_0000048 obo:RO_0000056)
 
 # Object Property: obo:AEON_0000049 (DEPRECATED has reviewer)
 
@@ -386,7 +382,6 @@ AnnotationAssertion(obo:IAO_0000231 obo:AEON_0000049 obo:IAO_0000103)
 AnnotationAssertion(obo:IAO_0100001 obo:AEON_0000049 obo:RO_0000057)
 AnnotationAssertion(rdfs:label obo:AEON_0000049 "DEPRECATED has reviewer"@en)
 AnnotationAssertion(owl:deprecated obo:AEON_0000049 "true"^^xsd:boolean)
-InverseObjectProperties(obo:AEON_0000049 obo:RO_0000056)
 
 # Object Property: obo:AEON_0000050 (DEPRECATED has presenter)
 
@@ -398,7 +393,6 @@ AnnotationAssertion(obo:IAO_0000231 obo:AEON_0000050 obo:IAO_0000103)
 AnnotationAssertion(obo:IAO_0100001 obo:AEON_0000050 obo:RO_0000057)
 AnnotationAssertion(rdfs:label obo:AEON_0000050 "DEPRECATED has presenter"@en)
 AnnotationAssertion(owl:deprecated obo:AEON_0000050 "true"^^xsd:boolean)
-InverseObjectProperties(obo:AEON_0000050 obo:RO_0000056)
 
 # Object Property: obo:AEON_0000051 (DEPRECATED has sponsor)
 
@@ -409,7 +403,6 @@ AnnotationAssertion(obo:IAO_0000231 obo:AEON_0000051 obo:IAO_0000103)
 AnnotationAssertion(obo:IAO_0100001 obo:AEON_0000051 obo:RO_0000057)
 AnnotationAssertion(rdfs:label obo:AEON_0000051 "DEPRECATED has sponsor"@en)
 AnnotationAssertion(owl:deprecated obo:AEON_0000051 "true"^^xsd:boolean)
-InverseObjectProperties(obo:AEON_0000051 obo:RO_0000056)
 
 # Object Property: obo:AEON_0000052 (DEPRECATED has committee member)
 
@@ -420,7 +413,6 @@ AnnotationAssertion(obo:IAO_0000231 obo:AEON_0000052 obo:IAO_0000103)
 AnnotationAssertion(obo:IAO_0100001 obo:AEON_0000052 obo:RO_0000057)
 AnnotationAssertion(rdfs:label obo:AEON_0000052 "DEPRECATED has committee member"@en)
 AnnotationAssertion(owl:deprecated obo:AEON_0000052 "true"^^xsd:boolean)
-InverseObjectProperties(obo:AEON_0000052 obo:RO_0000056)
 
 # Object Property: obo:AEON_0000053 (DEPRECATED has contact person)
 
@@ -431,7 +423,6 @@ AnnotationAssertion(obo:IAO_0000231 obo:AEON_0000053 obo:IAO_0000103)
 AnnotationAssertion(obo:IAO_0100001 obo:AEON_0000053 obo:RO_0000057)
 AnnotationAssertion(rdfs:label obo:AEON_0000053 "DEPRECATED has contact person"@en)
 AnnotationAssertion(owl:deprecated obo:AEON_0000053 "true"^^xsd:boolean)
-InverseObjectProperties(obo:AEON_0000053 obo:RO_0000056)
 
 # Object Property: obo:AEON_0000054 (DEPRECATED has keynote speaker)
 
@@ -442,7 +433,6 @@ AnnotationAssertion(obo:IAO_0000231 obo:AEON_0000054 obo:IAO_0000103)
 AnnotationAssertion(obo:IAO_0100001 obo:AEON_0000054 obo:RO_0000057)
 AnnotationAssertion(rdfs:label obo:AEON_0000054 "DEPRECATED has keynote speaker"@en)
 AnnotationAssertion(owl:deprecated obo:AEON_0000054 "true"^^xsd:boolean)
-InverseObjectProperties(obo:AEON_0000054 obo:RO_0000056)
 
 # Object Property: obo:AEON_0000055 (DEPRECATED has committee chair)
 
@@ -1206,11 +1196,11 @@ AnnotationAssertion(rdfs:seeAlso obo:AEON_0000005 "https://github.com/tibonto/ae
 AnnotationAssertion(owl:deprecated obo:AEON_0000005 "true"^^xsd:boolean)
 SubClassOf(obo:AEON_0000005 <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
-# Class: obo:AEON_0000006 (organizer role)
+# Class: obo:AEON_0000006 (event organizer role)
 
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000006 "The organizer role inheres in a person or organization that contributes to a planned process by planning and managing its realization."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000006 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label obo:AEON_0000006 "organizer role"@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000006 "event organizer role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000006 "https://github.com/tibonto/aeon/issues/144")
 SubClassOf(obo:AEON_0000006 obo:CRO_0000000)
 
@@ -1237,7 +1227,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000009 "The contact person role in
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000009 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000009 "contact person role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000009 "https://github.com/tibonto/aeon/issues/144")
-EquivalentClasses(obo:AEON_0000009 ObjectIntersectionOf(obo:AEON_0000006 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(obo:RO_0000056 obo:OBI_0000011))))
+SubClassOf(obo:AEON_0000009 obo:OMRSE_00000024)
 
 # Class: obo:AEON_0000010 (attendee role)
 
@@ -1263,17 +1253,17 @@ AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000012 "https://orcid.org/0000-000
 AnnotationAssertion(obo:IAO_0000118 obo:AEON_0000012 "manuscript review role"@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000012 "reviewer role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000012 "https://github.com/tibonto/aeon/issues/144")
-SubClassOf(obo:AEON_0000012 obo:CRO_0000000)
+SubClassOf(obo:AEON_0000012 obo:CRO_0000101)
 
-# Class: obo:AEON_0000013 (aeon presenter role)
+# Class: obo:AEON_0000013 (presenter role)
 
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000013 "The presenter role inheres in a person that contributes to a planned process by presenting something of interest at a planned process."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000013 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(obo:IAO_0000118 obo:AEON_0000013 "invited speaker role"@en)
 AnnotationAssertion(obo:IAO_0006011 obo:AEON_0000013 "http://purl.obolibrary.org/obo/CRO_0000100"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label obo:AEON_0000013 "aeon presenter role"@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000013 "presenter role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000013 "https://github.com/tibonto/aeon/issues/144")
-SubClassOf(obo:AEON_0000013 obo:CRO_0000000)
+SubClassOf(obo:AEON_0000013 obo:CRO_0000100)
 
 # Class: obo:AEON_0000014 (keynote speaker role)
 
@@ -1281,7 +1271,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000014 "The keynote speaker role i
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000014 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000014 "keynote speaker role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000014 "https://github.com/tibonto/aeon/issues/144")
-SubClassOf(obo:AEON_0000014 obo:CRO_0000100)
+SubClassOf(obo:AEON_0000014 obo:AEON_0000013)
 
 # Class: obo:AEON_0000015 (sponsor role)
 
