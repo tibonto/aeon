@@ -1211,7 +1211,6 @@ AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000007 "https://orcid.org/0000-000
 AnnotationAssertion(rdfs:label obo:AEON_0000007 "event committee member role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000007 "https://github.com/tibonto/aeon/issues/144")
 EquivalentClasses(obo:AEON_0000007 ObjectIntersectionOf(obo:AEON_0000006 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(obo:RO_0000056 obo:OBI_0000011))))
-DisjointClasses(obo:AEON_0000007 obo:OBIB_0000625)
 
 # Class: obo:AEON_0000008 (event committee chair role)
 
