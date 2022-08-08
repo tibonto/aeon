@@ -1234,7 +1234,7 @@ SubClassOf(obo:AEON_0000009 <http://www.geneontology.org/formats/oboInOwl#Obsole
 
 # Class: obo:AEON_0000010 (attendee role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000010 "The attendee role inheres in a person that contributes to a planned process by attending it."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000010 "A contributor role that inheres in a person who contributes to a planned social process, such as a conference, by attending it. For this role to be realized, there needs to be some kind of accreditation sub-process."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000010 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000010 "attendee role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000010 "https://github.com/tibonto/aeon/issues/144")
