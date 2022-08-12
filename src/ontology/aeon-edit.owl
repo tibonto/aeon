@@ -128,6 +128,14 @@ Declaration(Class(obo:sponsor_fee_specification))
 Declaration(Class(obo:sponsorship_committee))
 Declaration(Class(obo:technical_committee))
 Declaration(Class(obo:wikiCFP_ID))
+Declaration(Class(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000129>))
+Declaration(Class(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000130>))
+Declaration(Class(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000131>))
+Declaration(Class(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000132>))
+Declaration(Class(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000133>))
+Declaration(Class(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000134>))
+Declaration(Class(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000135>))
+Declaration(Class(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000136>))
 Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))
 Declaration(ObjectProperty(obo:AEON_0000031))
 Declaration(ObjectProperty(obo:AEON_0000032))
@@ -1198,27 +1206,29 @@ SubClassOf(obo:AEON_0000005 <http://www.geneontology.org/formats/oboInOwl#Obsole
 
 # Class: obo:AEON_0000006 (event organizer role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000006 "The organizer role inheres in a person or organization that contributes to a planned process by planning and managing its realization."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000006 "A contributor role that inheres in a person or organization responsible for the planning, management and realization of a social event."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000006 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000006 "event organizer role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000006 "https://github.com/tibonto/aeon/issues/144")
 SubClassOf(obo:AEON_0000006 obo:CRO_0000000)
 
-# Class: obo:AEON_0000007 (event committee member role)
+# Class: obo:AEON_0000007 (DEPRECATED event committee member role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000007 "The 'committee member role' inheres in a person who contributes to a planned process by somehow realizing the function of the committe he is a member of."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000007 "OBSOLETE An event organizer role that inheres in a person who is a member of an event committee and thus performs certain actions associated with the objectives/functions of that event committee."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000007 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label obo:AEON_0000007 "event committee member role"@en)
+AnnotationAssertion(rdfs:comment obo:AEON_0000007 "This role is not needed, as the ro:\"member of\" relation is sufficient enough."^^xsd:string)
+AnnotationAssertion(rdfs:label obo:AEON_0000007 "DEPRECATED event committee member role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000007 "https://github.com/tibonto/aeon/issues/144")
-EquivalentClasses(obo:AEON_0000007 ObjectIntersectionOf(obo:AEON_0000006 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(obo:RO_0000056 obo:OBI_0000011))))
+AnnotationAssertion(owl:deprecated obo:AEON_0000007 "true"^^xsd:boolean)
+SubClassOf(obo:AEON_0000007 <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:AEON_0000008 (event committee chair role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000008 "The 'committee chair role' inheres in a person who contributes to a planned process by somehow realizing the function of the committee he is a chair of."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000008 "An event organizer role that inheres in a person who is designated to be responsible for the actions and outcomes of an event committee."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000008 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000008 "event committee chair role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000008 "https://github.com/tibonto/aeon/issues/144")
-EquivalentClasses(obo:AEON_0000008 ObjectIntersectionOf(obo:AEON_0000007 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(obo:committee_chair_in obo:OBI_0000011))))
+SubClassOf(obo:AEON_0000008 obo:AEON_0000006)
 
 # Class: obo:AEON_0000009 (DEPRECATED_contact person role)
 
@@ -1865,6 +1875,9 @@ AnnotationAssertion(rdfs:label obo:AEON_0000128 "academic event series format sp
 EquivalentClasses(obo:AEON_0000128 ObjectIntersectionOf(obo:AEON_0000004 ObjectSomeValuesFrom(obo:AEON_0000031 obo:AEON_0000002)))
 SubClassOf(obo:AEON_0000128 obo:AEON_0000004)
 
+# Class: obo:OBIB_0000625 (contact role)
+
+
 # Class: obo:attendance_fee_specification (attendance fee specification)
 
 AnnotationAssertion(obo:IAO_0000115 obo:attendance_fee_specification "An attendance fee specification is an event fee specification that, as part of a plan specification, defines the currency and amount of money a person has to pay to attend an event."@en)
@@ -2149,6 +2162,65 @@ AnnotationAssertion(obo:IAO_0000119 obo:wikiCFP_ID "http://www.wikicfp.com/cfp/"
 AnnotationAssertion(rdfs:label obo:wikiCFP_ID "wikiCFP identifier"@en)
 SubClassOf(obo:wikiCFP_ID obo:IAO_0000578)
 
+# Class: <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000129> (funding aquisition role)
+
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000129> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000129> "2022-08-08T18:01:10Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000129> "funding aquisition role"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000129> obo:AEON_0000006)
+
+# Class: <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000130> (general committee role)
+
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000130> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000130> "2022-08-08T18:02:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000130> "general committee role"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000130> obo:AEON_0000006)
+
+# Class: <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000131> (local committee role)
+
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000131> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000131> "2022-08-08T18:02:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000131> "local committee role"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000131> obo:AEON_0000006)
+SubClassOf(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000131> ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000026))
+
+# Class: <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000132> (program committee role)
+
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000132> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000132> "2022-08-08T18:02:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000132> "program committee role"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000132> obo:AEON_0000006)
+
+# Class: <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000133> (publicity committee role)
+
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000133> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000133> "2022-08-08T18:02:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000133> "publicity committee role"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000133> obo:AEON_0000006)
+SubClassOf(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000133> ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000007))
+
+# Class: <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000134> (sponsorship committee role)
+
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000134> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000134> "2022-08-08T18:02:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000134> "sponsorship committee role"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000134> obo:AEON_0000006)
+
+# Class: <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000135> (publication committee role)
+
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000135> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000135> "2022-08-08T18:02:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000135> "publication committee role"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000135> obo:AEON_0000006)
+SubClassOf(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000135> ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000101))
+
+# Class: <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000136> (technical committee role)
+
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000136> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000136> "2022-08-08T18:03:32Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000136> "technical committee role"@de)
+SubClassOf(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000136> obo:AEON_0000006)
+
 
 ############################
 #   Named Individuals
@@ -2225,6 +2297,10 @@ AnnotationAssertion(rdfs:label <https://www.wikidata.org/wiki/Q97595211> "_VIVO_
 AnnotationAssertion(ns:term_status <https://www.wikidata.org/wiki/Q97595211> obo:IAO_0000002)
 
 
-DisjointClasses(obo:AEON_0000006 obo:AEON_0000010 obo:AEON_0000011 obo:AEON_0000012 obo:AEON_0000013 obo:AEON_0000015)
+DisjointClasses(Annotation(obo:IAO_0000116 "Disjoint axiom unjected via AEON, needs to be discussed, if this is ok with OBIB"@en) obo:AEON_0000006 obo:AEON_0000010 obo:AEON_0000011 obo:AEON_0000012 obo:AEON_0000013 obo:AEON_0000015 obo:OBIB_0000625)
+DisjointClasses(obo:AEON_0000008 <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000129> <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000130> <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000131> <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000132> <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000133> <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000134> <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000135>)
 DisjointClasses(obo:AEON_0000061 obo:AEON_0000062 obo:AEON_0000063 obo:AEON_0000065 obo:AEON_0000066 obo:AEON_0000068 obo:AEON_0000069)
+AnnotationAssertion(rdfs:comment obo:BFO_0000027 "For a better understanding why the examples of \"object aggregate\" that include \"organizations\" is misleading, see also this discussion: https://github.com/BFO-ontology/BFO-2020/issues/19 
+
+TDLR: BFO 2020 dropped these examples, but this has not been adjusted in the OBO-BFO-Classes-only version yet.")
 )
