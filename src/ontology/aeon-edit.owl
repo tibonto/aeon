@@ -1260,15 +1260,19 @@ AnnotationAssertion(rdfs:label obo:AEON_0000011 "moderator role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000011 "https://github.com/tibonto/aeon/issues/144")
 SubClassOf(obo:AEON_0000011 obo:CRO_0000000)
 
-# Class: obo:AEON_0000012 (reviewer role)
+# Class: obo:AEON_0000012 (DEPRECATED reviewer role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000012 "Evaluation of scientific, academic, or professional work, such as manuscripts or grants by others working in the same field. The reviewer role inheres in a person that contributes to a planned process by reviewing something of interest in a planned process."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000012 "OBSOLETE Evaluation of scientific, academic, or professional work, such as manuscripts or grants by others working in the same field. The reviewer role inheres in a person that contributes to a planned process by reviewing something of interest in a planned process."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000012 "ToDo: use CRO IRI http://purl.obolibrary.org/obo/CRO_0000101"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000012 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(obo:IAO_0000118 obo:AEON_0000012 "manuscript review role"@en)
-AnnotationAssertion(rdfs:label obo:AEON_0000012 "reviewer role"@en)
+AnnotationAssertion(obo:IAO_0000231 obo:AEON_0000012 obo:IAO_0000228)
+AnnotationAssertion(obo:IAO_0100001 obo:AEON_0000012 obo:CRO_0000101)
+AnnotationAssertion(rdfs:comment obo:AEON_0000012 "This role was already present in the Contributor Role Ontology CRO"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:AEON_0000012 "DEPRECATED reviewer role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000012 "https://github.com/tibonto/aeon/issues/144")
-SubClassOf(obo:AEON_0000012 obo:CRO_0000101)
+AnnotationAssertion(owl:deprecated obo:AEON_0000012 "true"^^xsd:boolean)
+SubClassOf(obo:AEON_0000012 <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:AEON_0000013 (presenter role)
 
