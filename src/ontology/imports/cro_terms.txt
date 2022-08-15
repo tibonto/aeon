@@ -1,22 +1,10 @@
-http://purl.obolibrary.org/obo/CRO_0000000	# # contributor role
-http://purl.obolibrary.org/obo/CRO_0000007	# # marketing and communication role
-http://purl.obolibrary.org/obo/CRO_0000016	# # education and training role
-http://purl.obolibrary.org/obo/CRO_0000022	# policy development role
-http://purl.obolibrary.org/obo/CRO_0000025	# regulatory and compliance role
-http://purl.obolibrary.org/obo/CRO_0000031	# team management role
-http://purl.obolibrary.org/obo/CRO_0000045	# training material role
-http://purl.obolibrary.org/obo/CRO_0000046	# training program development role
-http://purl.obolibrary.org/obo/CRO_0000047	# instruction role
-http://purl.obolibrary.org/obo/CRO_0000048	# hardware role
-http://purl.obolibrary.org/obo/CRO_0000051	# system administrator role
+http://purl.obolibrary.org/obo/CRO_0000000	# contributor role
+http://purl.obolibrary.org/obo/CRO_0000007	# marketing and communication role
 http://purl.obolibrary.org/obo/CRO_0000058	# equipment technician role
-http://purl.obolibrary.org/obo/CRO_0000059	# survey and questionnaire development role
 http://purl.obolibrary.org/obo/CRO_0000065	# project management role
 http://purl.obolibrary.org/obo/CRO_0000078	# infrastructure role
 http://purl.obolibrary.org/obo/CRO_0000079	# project, policy or program evaluation role
 http://purl.obolibrary.org/obo/CRO_0000081	# coordination role
-http://purl.obolibrary.org/obo/CRO_0000083	# community engagement role
-http://purl.obolibrary.org/obo/CRO_0000084	# outreach materials development role
 http://purl.obolibrary.org/obo/CRO_0000097	# funding source role
 http://purl.obolibrary.org/obo/CRO_0000100	# presenter role
 http://purl.obolibrary.org/obo/CRO_0000101	# peer review role
@@ -24,6 +12,5 @@ http://purl.obolibrary.org/obo/CRO_0000102	# advisory role
 http://purl.obolibrary.org/obo/CRO_0000104	# acceptor role
 http://purl.obolibrary.org/obo/CRO_0000105	# submitter role
 http://purl.obolibrary.org/obo/CRO_0000106	# evaluator role
-http://purl.obolibrary.org/obo/CRO_0000026 # 
+http://purl.obolibrary.org/obo/CRO_0000026  # instrumentation role
 
-http://purl.org/credit/ontology#CREDIT_00000009 # 'software role'
