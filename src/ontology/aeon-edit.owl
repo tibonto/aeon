@@ -1368,6 +1368,8 @@ SubClassOf(obo:AEON_0000021 obo:IAO_0000578)
 
 # Class: obo:AEON_0000022 (DEPRECATED city)
 
+AnnotationAssertion(obo:IAO_0000231 obo:AEON_0000022 obo:IAO_0000228)
+AnnotationAssertion(obo:IAO_0100001 obo:AEON_0000022 obo:ENVO_00000856)
 AnnotationAssertion(rdfs:comment obo:AEON_0000022 "replaced by ENVO:00000856"^^xsd:string)
 AnnotationAssertion(rdfs:label obo:AEON_0000022 "DEPRECATED city"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000022 obo:ENVO_00000856)
@@ -1377,6 +1379,8 @@ SubClassOf(obo:AEON_0000022 <http://www.geneontology.org/formats/oboInOwl#Obsole
 
 # Class: obo:AEON_0000023 (DEPRECATED country)
 
+AnnotationAssertion(obo:IAO_0000231 obo:AEON_0000023 obo:IAO_0000228)
+AnnotationAssertion(obo:IAO_0100001 obo:AEON_0000023 obo:ENVO_00000009)
 AnnotationAssertion(rdfs:comment obo:AEON_0000023 "replaced by ENVO term"^^xsd:string)
 AnnotationAssertion(rdfs:label obo:AEON_0000023 "DEPRECATED country"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000023 obo:ENVO_00000009)
@@ -1386,6 +1390,8 @@ SubClassOf(obo:AEON_0000023 <http://www.geneontology.org/formats/oboInOwl#Obsole
 
 # Class: obo:AEON_0000024 (DEPRECATED province)
 
+AnnotationAssertion(obo:IAO_0000231 obo:AEON_0000024 obo:IAO_0000228)
+AnnotationAssertion(obo:IAO_0100001 obo:AEON_0000024 obo:ENVO_00000005)
 AnnotationAssertion(rdfs:comment obo:AEON_0000024 "replaced by ENVO term"^^xsd:string)
 AnnotationAssertion(rdfs:label obo:AEON_0000024 "DEPRECATED province"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000024 obo:ENVO_00000005)
