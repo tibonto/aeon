@@ -61,6 +61,7 @@ import_group:
     use_base: True
   - id: omo
     module_type: mirror
+    make_base: true
   - id: iao
     module_type: custom
     #slme_individuals: include
@@ -70,8 +71,10 @@ import_group:
     module_type: custom
   - id: txpo
     module_type: custom
+    make_base: true
   - id: ico
     module_type: custom
+    make_base: true
   - id: obi
     module_type: custom
   - id: obib
