@@ -1464,18 +1464,17 @@ AnnotationAssertion(dce:date obo:AEON_0000034 "2020-11-20T17:31:33Z"^^xsd:dateTi
 AnnotationAssertion(rdfs:label obo:AEON_0000034 "decentralized identifier document"@en)
 SubClassOf(obo:AEON_0000034 obo:IAO_0020000)
 
-# Class: obo:AEON_0000042 (DEPRECATED_academic event committee)
+# Class: obo:AEON_0000042 (academic event committee)
 
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000042 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000042 "An academic event committee is a body of one or more persons (object aggregate) that is responsible for the realization of a certain task or aspect in an academic event. 
-Academic event committees are usually formed in the planning process of those academic events that need to subdevide and delegate the tasks that need to be carried out for the realization of the academic event.."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000042 "OBSOLETION REASON: The contributor roles are enough for the contribution via a role pattern, the bearers of these roles do not need to be defined classes. PS"^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000042 "A committe that has the role of being responsible for the organization and realization of an academic event. 
+Academic event committees are usually formed in the planning process of academic events that are, due to their size and objectives, too big or complex to be organized by just a one or few people."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000042 <https://orcid.org/0000-0002-1595-3213>)
-AnnotationAssertion(obo:IAO_0000231 obo:AEON_0000042 obo:IAO_0000103)
-AnnotationAssertion(rdfs:label obo:AEON_0000042 "DEPRECATED_academic event committee"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasSynonym> obo:AEON_0000042 "general event committee"@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000042 "academic event committee"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000042 <https://github.com/tibonto/aeon/issues/144>)
-AnnotationAssertion(owl:deprecated obo:AEON_0000042 "true"^^xsd:boolean)
-SubClassOf(obo:AEON_0000042 <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
+AnnotationAssertion(skos:altLabel obo:AEON_0000042 "general event committee"@en)
+SubClassOf(obo:AEON_0000042 obo:OOSTT_00000114)
 
 # Class: obo:AEON_0000060 (deadline specification)
 
@@ -1986,7 +1985,7 @@ AnnotationAssertion(obo:IAO_0000231 obo:finance_committee obo:IAO_0000103)
 AnnotationAssertion(rdfs:label obo:finance_committee "DEPRECATED_event finance committee"@en)
 AnnotationAssertion(rdfs:seeAlso obo:finance_committee <https://github.com/tibonto/aeon/issues/144>)
 AnnotationAssertion(owl:deprecated obo:finance_committee "true"^^xsd:boolean)
-SubClassOf(obo:finance_committee obo:AEON_0000042)
+SubClassOf(obo:finance_committee <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:general_committee (DEPRECATED_general committee)
 
@@ -1999,7 +1998,7 @@ AnnotationAssertion(obo:IAO_0000231 obo:general_committee obo:IAO_0000103)
 AnnotationAssertion(rdfs:label obo:general_committee "DEPRECATED_general committee"@en)
 AnnotationAssertion(rdfs:seeAlso obo:general_committee <https://github.com/tibonto/aeon/issues/144>)
 AnnotationAssertion(owl:deprecated obo:general_committee "true"^^xsd:boolean)
-SubClassOf(obo:general_committee obo:AEON_0000042)
+SubClassOf(obo:general_committee <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:keynote_speaker (DEPRECATED keynote speaker)
 
@@ -2024,7 +2023,7 @@ AnnotationAssertion(obo:IAO_0000231 obo:local_committee obo:IAO_0000103)
 AnnotationAssertion(rdfs:label obo:local_committee "DEPRECATED_local committee"@en)
 AnnotationAssertion(rdfs:seeAlso obo:local_committee <https://github.com/tibonto/aeon/issues/144>)
 AnnotationAssertion(owl:deprecated obo:local_committee "true"^^xsd:boolean)
-SubClassOf(obo:local_committee obo:AEON_0000042)
+SubClassOf(obo:local_committee <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:moderator (DEPRECATED moderator)
 
@@ -2064,7 +2063,7 @@ AnnotationAssertion(obo:IAO_0000231 obo:program_committee obo:IAO_0000103)
 AnnotationAssertion(rdfs:label obo:program_committee "DEPRECATED_program committee"@en)
 AnnotationAssertion(rdfs:seeAlso obo:program_committee <https://github.com/tibonto/aeon/issues/144>)
 AnnotationAssertion(owl:deprecated obo:program_committee "true"^^xsd:boolean)
-SubClassOf(obo:program_committee obo:AEON_0000042)
+SubClassOf(obo:program_committee <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:publication_committee (DEPRECATED_publication committee)
 
@@ -2076,7 +2075,7 @@ AnnotationAssertion(obo:IAO_0000231 obo:publication_committee obo:IAO_0000103)
 AnnotationAssertion(rdfs:label obo:publication_committee "DEPRECATED_publication committee"@en)
 AnnotationAssertion(rdfs:seeAlso obo:publication_committee <https://github.com/tibonto/aeon/issues/144>)
 AnnotationAssertion(owl:deprecated obo:publication_committee "true"^^xsd:boolean)
-SubClassOf(obo:publication_committee obo:AEON_0000042)
+SubClassOf(obo:publication_committee <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:publicity_committee (DEPRECATED_publicity committee)
 
@@ -2088,7 +2087,7 @@ AnnotationAssertion(obo:IAO_0000231 obo:publicity_committee obo:IAO_0000103)
 AnnotationAssertion(rdfs:label obo:publicity_committee "DEPRECATED_publicity committee"@en)
 AnnotationAssertion(rdfs:seeAlso obo:publicity_committee <https://github.com/tibonto/aeon/issues/144>)
 AnnotationAssertion(owl:deprecated obo:publicity_committee "true"^^xsd:boolean)
-SubClassOf(obo:publicity_committee obo:AEON_0000042)
+SubClassOf(obo:publicity_committee <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:reviewer (DEPRECATED reviewer)
 
@@ -2151,7 +2150,7 @@ AnnotationAssertion(obo:IAO_0000231 obo:sponsorship_committee obo:IAO_0000103)
 AnnotationAssertion(rdfs:label obo:sponsorship_committee "DEPRECATED_sponsorship committee"@en)
 AnnotationAssertion(rdfs:seeAlso obo:sponsorship_committee <https://github.com/tibonto/aeon/issues/144>)
 AnnotationAssertion(owl:deprecated obo:sponsorship_committee "true"^^xsd:boolean)
-SubClassOf(obo:sponsorship_committee obo:AEON_0000042)
+SubClassOf(obo:sponsorship_committee <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:technical_committee (DEPRECATED_technical committee)
 
@@ -2163,7 +2162,7 @@ AnnotationAssertion(obo:IAO_0000231 obo:technical_committee obo:IAO_0000103)
 AnnotationAssertion(rdfs:label obo:technical_committee "DEPRECATED_technical committee"@en)
 AnnotationAssertion(rdfs:seeAlso obo:technical_committee <https://github.com/tibonto/aeon/issues/144>)
 AnnotationAssertion(owl:deprecated obo:technical_committee "true"^^xsd:boolean)
-SubClassOf(obo:technical_committee obo:AEON_0000042)
+SubClassOf(obo:technical_committee <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:wikiCFP_ID (wikiCFP identifier)
 
