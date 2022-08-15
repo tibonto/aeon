@@ -27,6 +27,7 @@ These are the current imports in AEON
 | obi | http://purl.obolibrary.org/obo/obi.owl | custom |
 | obib | http://purl.obolibrary.org/obo/obib.owl | custom |
 | omrse | http://purl.obolibrary.org/obo/omrse.owl | custom |
+| oostt | http://purl.obolibrary.org/obo/oostt.owl | custom |
 
 ## Components
 Components, in contrast to imports, are considered full members of the ontology. This means that any axiom in a component is also included in the ontology base - which means it is considered _native_ to the ontology. While this sounds complicated, consider this: conceptually, no component should be part of more than one ontology. If that seems to be the case, we are most likely talking about an import. Components are often not needed for ontologies, but there are some use cases:
