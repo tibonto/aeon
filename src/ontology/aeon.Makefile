@@ -71,6 +71,14 @@ $(IMPORTDIR)/obib_import.owl: $(MIRRORDIR)/obib.owl $(IMPORTDIR)/obib_terms.txt
 	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
 		query --update ../sparql/preprocess-module_provo.ru \
 		filter -T $(IMPORTDIR)/obib_terms.txt --select "self annotations ontology" --signature false --trim true \
+## Module for ontology: omrse
+
+$(IMPORTDIR)/omrse_import.owl: $(MIRRORDIR)/omrse.owl $(IMPORTDIR)/omrse_terms.txt
+	if [ $(IMP) = true ]; then $(ROBOT) filter -i $< -T $(IMPORTDIR)/omrse_terms.txt --select "self ancestors domains ranges equivalents" --signature true --trim true \
+		--output $@.tmp.owl; fi
+	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
+		query --update ../sparql/preprocess-module_provo.ru \
+		filter -T $(IMPORTDIR)/omrse_terms.txt --select "self annotations ontology equivalents" --signature true --trim true --axioms "tbox"\
 	    query --update ../sparql/postprocess-module_2.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		merge -i $@.tmp.owl \

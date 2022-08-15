@@ -79,6 +79,8 @@ import_group:
     module_type: custom
   - id: obib
     module_type: custom
+  - id: omrse
+    module_type: custom
   rebuild_if_source_changes: true
   release_imports: false
   slme_individuals: include

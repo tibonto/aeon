@@ -21,5 +21,7 @@
         <uri name="http://purl.obolibrary.org/obo/aeon/imports/obi_import.obo" uri="imports/obi_import.obo"/>
         <uri name="http://purl.obolibrary.org/obo/aeon/imports/obib_import.owl" uri="imports/obib_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/aeon/imports/obib_import.obo" uri="imports/obib_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/omrse_import.owl" uri="imports/omrse_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/aeon/imports/omrse_import.obo" uri="imports/omrse_import.obo"/>
     </group>
 </catalog>
