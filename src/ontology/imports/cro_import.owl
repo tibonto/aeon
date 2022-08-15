@@ -11,8 +11,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aeon/imports/cro_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aeon/releases/2022-07-08/imports/cro_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-08</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aeon/releases/2022-08-15/imports/cro_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-15</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl"/>
     </owl:Ontology>
     
@@ -139,7 +139,7 @@
     <!-- http://purl.obolibrary.org/obo/CRO_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRO_0000000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000024"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002072"/>
         <obo:IAO_0000111>contributor role</obo:IAO_0000111>
         <obo:IAO_0000114>http://purl.obolibrary.org/obo/IAO_0000120</obo:IAO_0000114>
         <obo:IAO_0000115>A high-level classification of the diverse roles performed in the work leading to a published research output in the sciences. Its purpose to provide transparency in contributions to scholarly published work, to enable improved systems of attribution, credit, and accountability.</obo:IAO_0000115>
@@ -611,9 +611,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000024 -->
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002072 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000024"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002072"/>
     
 
 

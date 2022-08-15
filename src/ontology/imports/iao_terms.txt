@@ -43,3 +43,6 @@ IAO:0022027	# wikidata q number (IAO tbc)
 IAO:0022034	# local information content entity identifier (IAO tbc)
 IAO:0022041	# digital object identifier (IAO tbc)
 IAO:0100001	# term replaced by
+IAO:0021008 # deontic role
+IAO:0020026 # obligee role
+IAO:0020025 # obligor role
