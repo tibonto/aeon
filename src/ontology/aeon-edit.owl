@@ -1208,11 +1208,12 @@ SubClassOf(obo:AEON_0000005 <http://www.geneontology.org/formats/oboInOwl#Obsole
 
 # Class: obo:AEON_0000006 (event organizer role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000006 "A contributor role that inheres in a person or organization responsible for the planning, management and realization of a social event."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000006 "A contributor role that inheres in a person or organization responsible for the general planning, management and realization of a social event."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000006 "In the context of academic events this role would be the one held by a group pf people often refered to as the event's \"general committee\"."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000006 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000006 "event organizer role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000006 "https://github.com/tibonto/aeon/issues/144")
-SubClassOf(obo:AEON_0000006 obo:CRO_0000000)
+SubClassOf(obo:AEON_0000006 obo:OMRSE_00002072)
 
 # Class: obo:AEON_0000007 (DEPRECATED event committee member role)
 
