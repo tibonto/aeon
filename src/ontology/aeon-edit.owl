@@ -241,6 +241,7 @@ Declaration(NamedIndividual(ex:_Munin))
 Declaration(NamedIndividual(ex:_Munin2022))
 Declaration(NamedIndividual(ex:_Munin2022_abstract_deadline))
 Declaration(NamedIndividual(ex:_Munin2022_camera-ready_deadline))
+Declaration(NamedIndividual(ex:_Munin2022_general_committee))
 Declaration(NamedIndividual(ex:_Munin2022_name))
 Declaration(NamedIndividual(ex:_Munin2022_notification_deadline))
 Declaration(NamedIndividual(ex:_Munin_name))
@@ -254,6 +255,7 @@ Declaration(NamedIndividual(ex:_VIVO2020_speaker1_role))
 Declaration(NamedIndividual(ex:_VIVO_series))
 Declaration(NamedIndividual(<https://confident.dbis.rwth-aachen.de/or/index.php?title=VIVO_2020>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0002-1595-3213>))
+Declaration(NamedIndividual(<https://site.uit.no/muninconf/call-for-submissions/>))
 Declaration(NamedIndividual(<https://www.wikidata.org/wiki/Q108430463>))
 Declaration(NamedIndividual(<https://www.wikidata.org/wiki/Q97595211>))
 Declaration(AnnotationProperty(obo:AEON_0000026))
@@ -2340,6 +2342,12 @@ AnnotationAssertion(dce:creator ex:_Munin2022_camera-ready_deadline <http://orci
 ClassAssertion(obo:AEON_0000062 ex:_Munin2022_camera-ready_deadline)
 DataPropertyAssertion(obo:AEON_0000074 ex:_Munin2022_camera-ready_deadline "2022-10-31T00:00:00Z"^^xsd:dateTimeStamp)
 
+# Individual: ex:_Munin2022_general_committee (ex:_Munin2022_general_committee)
+
+AnnotationAssertion(dce:creator ex:_Munin2022_general_committee <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(<http://xmlns.com/foaf/0.1/mbox> ex:_Munin2022_general_committee "muninconference@ub.uit.no"@en)
+ClassAssertion(obo:AEON_0000134 ex:_Munin2022_general_committee)
+
 # Individual: ex:_Munin2022_name (ex:_Munin2022_name)
 
 AnnotationAssertion(dce:creator ex:_Munin2022_name <http://orcid.org/0000-0002-1595-3213>)
@@ -2347,6 +2355,7 @@ AnnotationAssertion(skos:altLabel ex:_Munin2022_name "The Munin Conference"@en)
 AnnotationAssertion(skos:prefLabel ex:_Munin2022_name "17th Munin Conference 2022"@en)
 AnnotationAssertion(skos:prefLabel ex:_Munin2022_name "17th Munin Conference on Scholarly Publishing"@en)
 ClassAssertion(obo:AEON_0000090 ex:_Munin2022_name)
+DataPropertyAssertion(obo:AEON_0000091 ex:_Munin2022_name "MuninConf 2022"^^xsd:string)
 
 # Individual: ex:_Munin2022_notification_deadline (ex:_Munin2022_notification_deadline)
 
@@ -2421,6 +2430,14 @@ ClassAssertion(obo:AEON_0000003 <https://confident.dbis.rwth-aachen.de/or/index.
 
 AnnotationAssertion(obo:IAO_0000114 <https://orcid.org/0000-0002-1595-3213> obo:IAO_0000002)
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-1595-3213> "_StroemPhi_ORCID")
+
+# Individual: <https://site.uit.no/muninconf/call-for-submissions/> (_Munin2022_call_for submissions)
+
+AnnotationAssertion(rdfs:label <https://site.uit.no/muninconf/call-for-submissions/> "_Munin2022_call_for submissions"@en)
+ClassAssertion(obo:IAO_0000007 <https://site.uit.no/muninconf/call-for-submissions/>)
+ObjectPropertyAssertion(obo:BFO_0000051 <https://site.uit.no/muninconf/call-for-submissions/> ex:_Munin2022_abstract_deadline)
+ObjectPropertyAssertion(obo:BFO_0000051 <https://site.uit.no/muninconf/call-for-submissions/> ex:_Munin2022_camera-ready_deadline)
+ObjectPropertyAssertion(obo:BFO_0000051 <https://site.uit.no/muninconf/call-for-submissions/> ex:_Munin2022_notification_deadline)
 
 # Individual: <https://www.wikidata.org/wiki/Q108430463> (_VIVO2020_QID)
 
