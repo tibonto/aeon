@@ -1216,7 +1216,7 @@ AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000006 "In the context of academic
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000006 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000006 "event organizer role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000006 "https://github.com/tibonto/aeon/issues/144")
-SubClassOf(obo:AEON_0000006 obo:OMRSE_00002072)
+SubClassOf(obo:AEON_0000006 obo:CRO_0000000)
 SubClassOf(obo:AEON_0000006 ObjectUnionOf(obo:OBI_0000245 ObjectSomeValuesFrom(obo:RO_0000081 obo:NCBITaxon_9606)))
 SubClassOf(obo:AEON_0000006 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000001))
 
