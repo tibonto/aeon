@@ -1,0 +1,2 @@
+http://purl.obolibrary.org/obo/OOSTT_00000114 # committee
+http://purl.obolibrary.org/obo/OOSTT_00000117 # committee member role

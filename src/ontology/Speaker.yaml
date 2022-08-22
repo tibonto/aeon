@@ -1,0 +1,59 @@
+Contributor:
+  
+	slots:
+  - type
+  - role
+  slot_usage:
+    type:
+      range: ContributorType
+    role:
+      range: ContributorRole
+
+
+Contributor_Role:
+  slots:
+    - contributor_role
+
+
+ContributorType:
+    title: Contributor Type
+    description: An enumaration used to distinguish the contributors of an event or event series with regard to them being either an organization or a person.
+    permissible_values:
+      organization:
+        description: An institution, or an association that has one or more people as members and which actsas some kind of participant in an event or event series.
+        meaning: OBI:0000245
+      person:
+        description: A human being that acts as some kind of participant in an event or event series.
+        meaning: NCBITaxon:9606
+
+ContributorRole:
+  title: Contributor Role
+  description: An enum to hold all possible contributor roles needed in the realization of academic events and series.
+  permissible_values: 
+    Sponsor:
+      description: A person or an organization whose role it is to sponsor an academic event or event series.
+    Attendee:
+      description: A person whose only role it is to attend an academic event.
+    Moderator:
+      description: A person that has the role to moderate an academic event.
+    Reviewer:
+      description: A person that has the role to review the submissions of an academic event.
+    Organizer:
+      description: An organizer of an academic event or event series.
+    ContactPerson:
+      description: The contact person of an academic event or event series.
+    CommitteeMember:
+      description: A members of an academic event committee.
+    CommitteeChair:
+      description: The head of an academic event committee.
+    Presenter:
+      description: A person that presents its work at an academic event.
+    KeynoteSpeaker:
+      description: A 'keynote speaker' is a presenter that is an invited person - often a multiplier in his or her (research) field - responsible for delivering a keynote speech.
+
+
+
+    Event:
+      slots:
+        - has_contributing_organization
+        - has_contributing_person

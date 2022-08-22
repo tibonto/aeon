@@ -46,6 +46,7 @@ import_group:
   - cro
   - txpo
   - ico
+  - obib
   - obi
   mirror_max_time_download: 200
   mirror_retry_download: 4
@@ -55,23 +56,32 @@ import_group:
   - id: bfo
     module_type: mirror
   - id: ro
-    module_type: slme
-    slme_individuals: exclude
+    module_type: custom
+    #slme_individuals: exclude
     use_base: True
   - id: omo
     module_type: mirror
+    make_base: true
   - id: iao
-    module_type: slme
-    slme_individuals: include
+    module_type: custom
+    #slme_individuals: include
   - id: cro
     module_type: custom
   - id: envo
     module_type: custom
   - id: txpo
     module_type: custom
+    make_base: true
   - id: ico
     module_type: custom
+    make_base: true
   - id: obi
+    module_type: custom
+  - id: obib
+    module_type: custom
+  - id: omrse
+    module_type: custom
+  - id: oostt
     module_type: custom
   rebuild_if_source_changes: true
   release_imports: false

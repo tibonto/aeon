@@ -1,18 +1,15 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/aeon/imports/ico_import.owl#"
      xml:base="http://purl.obolibrary.org/obo/aeon/imports/ico_import.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aeon/imports/ico_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aeon/releases/2022-07-01/imports/ico_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-01</owl:versionInfo>
-        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/ico.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aeon/releases/2022-08-15/imports/ico_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-15</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -40,12 +37,6 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/source -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -57,45 +48,12 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ICO_0000048 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICO_0000048">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
         <obo:IAO_0000115 xml:lang="en">An organization that is operated without the principal goal of making a financial profit.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Yongqun He</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/ico.owl"/>
         <rdfs:label xml:lang="en">nonprofit organization</rdfs:label>
     </owl:Class>
     
@@ -107,7 +65,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
         <obo:IAO_0000115 xml:lang="en">An organization which has the principle goal of earning financial profit.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Yongqun He</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/ico.owl"/>
         <rdfs:label xml:lang="en">profit organization</rdfs:label>
     </owl:Class>
     
@@ -115,15 +72,7 @@
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#Thing -->
-
-    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
 </rdf:RDF>
 
 

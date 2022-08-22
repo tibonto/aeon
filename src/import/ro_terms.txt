@@ -15,10 +15,3 @@ RO:0002234	# has output
 RO:0002350	# member of
 RO:0002351	# has member
 RO:0002353	# output of
-BFO:0000066 # occurs in
-BFO:0000054 # realized in
-BFO:0000055 # realizes
-RO:0002431 # 'involved in or involved in regulation of'
-RO:0002331 # 'involved in'
-RO:0002428 # 'involved in regulation of'
-RO:0002500 # 'causal agent in process'

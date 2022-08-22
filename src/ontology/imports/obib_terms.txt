@@ -1,0 +1,12 @@
+http://purl.obolibrary.org/obo/OBIB_0000625 # contact role
+http://purl.obolibrary.org/obo/OBIB_0000624 # contacting
+
+
+###########################################################
+# external classes needed due to OBI axioms of term above #
+###########################################################
+http://purl.obolibrary.org/obo/NCBITaxon_9606 # homo sapiens
+http://purl.obolibrary.org/obo/BFO_0000054 # realized in
+http://purl.obolibrary.org/obo/RO_0000052 # # inheres in
+http://purl.obolibrary.org/obo/OBI_0000846 # is member of organization
+http://purl.obolibrary.org/obo/OBI_0000245	# organization

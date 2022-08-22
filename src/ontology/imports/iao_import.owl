@@ -11,8 +11,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aeon/imports/iao_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aeon/releases/2022-07-01/imports/iao_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-07-01</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aeon/releases/2022-08-15/imports/iao_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-15</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
     </owl:Ontology>
     
@@ -673,37 +673,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">has_role</obo:IAO_0000118>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <rdfs:label xml:lang="en">has role</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002350 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002350">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
-        <obo:IAO_0000112>An organism that is a member of a population of organisms</obo:IAO_0000112>
-        <obo:IAO_0000115>is member of is a mereological relation between a item and a collection.</obo:IAO_0000115>
-        <obo:IAO_0000118>is member of</obo:IAO_0000118>
-        <obo:IAO_0000118>member part of</obo:IAO_0000118>
-        <obo:IAO_0000119>SIO</obo:IAO_0000119>
-        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
-        <rdfs:label xml:lang="en">member of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002351 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002351">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <obo:IAO_0000115>has member is a mereological relation between a collection and an item.</obo:IAO_0000115>
-        <obo:IAO_0000119>SIO</obo:IAO_0000119>
-        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
-        <rdfs:label xml:lang="en">has member</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1885,6 +1854,15 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
         <rdfs:label xml:lang="en">planned process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass">
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <rdfs:label>Obsolete Class</rdfs:label>
     </owl:Class>
     
 

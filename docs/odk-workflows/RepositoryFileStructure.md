@@ -17,14 +17,17 @@ These are the current imports in AEON
 | Import | URL | Type |
 | ------ | --- | ---- |
 | bfo | http://purl.obolibrary.org/obo/bfo.owl | mirror |
-| ro | http://purl.obolibrary.org/obo/ro.owl | slme |
+| ro | http://purl.obolibrary.org/obo/ro.owl | custom |
 | omo | http://purl.obolibrary.org/obo/omo.owl | mirror |
-| iao | http://purl.obolibrary.org/obo/iao.owl | slme |
+| iao | http://purl.obolibrary.org/obo/iao.owl | custom |
 | cro | http://purl.obolibrary.org/obo/cro.owl | custom |
 | envo | http://purl.obolibrary.org/obo/envo.owl | custom |
 | txpo | http://purl.obolibrary.org/obo/txpo.owl | custom |
 | ico | http://purl.obolibrary.org/obo/ico.owl | custom |
 | obi | http://purl.obolibrary.org/obo/obi.owl | custom |
+| obib | http://purl.obolibrary.org/obo/obib.owl | custom |
+| omrse | http://purl.obolibrary.org/obo/omrse.owl | custom |
+| oostt | http://purl.obolibrary.org/obo/oostt.owl | custom |
 
 ## Components
 Components, in contrast to imports, are considered full members of the ontology. This means that any axiom in a component is also included in the ontology base - which means it is considered _native_ to the ontology. While this sounds complicated, consider this: conceptually, no component should be part of more than one ontology. If that seems to be the case, we are most likely talking about an import. Components are often not needed for ontologies, but there are some use cases:
