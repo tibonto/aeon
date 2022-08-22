@@ -1,4 +1,4 @@
-These notes are for the EDITORS of aeon
+These notes are for the EDITORS of AEON
 
 This project was created using the [ontology development kit](https://github.com/INCATools/ontology-development-kit). See the site for details.
 
@@ -58,19 +58,13 @@ For now, consult the [GO Tutorial on configuring Protege](http://go-protege-tuto
 
 All import modules are in the [imports/](imports/) folder.
 
-There are two ways to include new classes in an import module
-
- 1. Reference an external ontology class in the edit ontology. In Protege: "add new entity", then paste in the PURL
- 2. Add to the imports/ont_terms.txt file, for example imports/go_terms.txt
+To include new classes in an import module, add to the imports/ont_terms.txt file, for example imports/go_terms.txt.
 
 After doing this, you can run
 
-`./run.sh make all_imports`
+`./run.sh make all_imports` or `./run.sh make refresh-[ont]` 
 
 to regenerate imports.
-
-Note: the ont_terms.txt file may include 'starter' classes seeded from
-the ontology starter kit. It is safe to remove these.
 
 ## Release Manager notes
 
@@ -114,8 +108,8 @@ Finally type:
 
 IMMEDIATELY AFTERWARDS (do *not* make further modifications) go here:
 
- * https://github.com/StroemPhi/aeon/releases
- * https://github.com/StroemPhi/aeon/releases/new
+ * https://github.com/tibonto/aeon/releases
+ * https://github.com/tibonto/aeon/releases/new
 
 __IMPORTANT__: The value of the "Tag version" field MUST be
 
@@ -144,15 +138,3 @@ correct ontologies. Try it!
  * http://purl.obolibrary.org/obo/aeon/releases/YYYY-MM-DD.owl <-- change to the release you just made
 
 For questions on this contact Chris Mungall or email obo-admin AT obofoundry.org
-
-# Travis Continuous Integration System
-
-Check the build status here: [![Build Status](https://travis-ci.org/StroemPhi/aeon.svg?branch=master)](https://travis-ci.org/StroemPhi/aeon)
-
-Note: if you have only just created this project you will need to authorize travis for this repo.
-
- 1. Go to [https://travis-ci.org/profile/StroemPhi](https://travis-ci.org/profile/StroemPhi)
- 2. click the "Sync account" button
- 3. Click the tick symbol next to aeon
-
-Travis builds should now be activated
