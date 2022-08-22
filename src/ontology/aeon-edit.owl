@@ -178,23 +178,23 @@ Declaration(ObjectProperty(obo:AEON_0000087))
 Declaration(ObjectProperty(obo:AEON_0000088))
 Declaration(ObjectProperty(obo:AEON_0000089))
 Declaration(ObjectProperty(obo:AEON_0000175))
+Declaration(ObjectProperty(obo:AEON_0000176))
+Declaration(ObjectProperty(obo:AEON_0000177))
+Declaration(ObjectProperty(obo:AEON_0000178))
+Declaration(ObjectProperty(obo:AEON_0000179))
+Declaration(ObjectProperty(obo:AEON_0000180))
+Declaration(ObjectProperty(obo:AEON_0000181))
 Declaration(ObjectProperty(obo:attends_at))
 Declaration(ObjectProperty(obo:committee_chair_in))
 Declaration(ObjectProperty(obo:committee_member_in))
 Declaration(ObjectProperty(obo:contact_person_of))
 Declaration(ObjectProperty(obo:contibutes_to))
-Declaration(ObjectProperty(obo:AEON_0000181))
-Declaration(ObjectProperty(obo:AEON_0000176))
-Declaration(ObjectProperty(obo:AEON_0000177))
-Declaration(ObjectProperty(obo:AEON_0000178))
 Declaration(ObjectProperty(obo:holds_keynote_at))
 Declaration(ObjectProperty(obo:moderates_at))
 Declaration(ObjectProperty(obo:organizes))
 Declaration(ObjectProperty(obo:reviews_at))
 Declaration(ObjectProperty(obo:speaks_at))
-Declaration(ObjectProperty(obo:AEON_0000179))
 Declaration(ObjectProperty(obo:sponsors))
-Declaration(ObjectProperty(obo:AEON_0000180))
 Declaration(DataProperty(obo:AEON_0000074))
 Declaration(DataProperty(obo:AEON_0000091))
 Declaration(DataProperty(obo:AEON_0000140))
@@ -227,13 +227,20 @@ Declaration(DataProperty(obo:AEON_0000166))
 Declaration(DataProperty(obo:AEON_0000167))
 Declaration(DataProperty(obo:AEON_0000168))
 Declaration(DataProperty(obo:AEON_0000169))
-Declaration(DataProperty(obo:OBI_0002815))
 Declaration(DataProperty(obo:AEON_0000170))
-Declaration(DataProperty(obo:AEON_0000173))
-Declaration(DataProperty(obo:AEON_0000174))
 Declaration(DataProperty(obo:AEON_0000171))
 Declaration(DataProperty(obo:AEON_0000172))
+Declaration(DataProperty(obo:AEON_0000173))
+Declaration(DataProperty(obo:AEON_0000174))
+Declaration(DataProperty(obo:OBI_0002815))
 Declaration(NamedIndividual(ex:_Lisbon))
+Declaration(NamedIndividual(ex:_Munin))
+Declaration(NamedIndividual(ex:_Munin2022))
+Declaration(NamedIndividual(ex:_Munin2022_abstract_deadline))
+Declaration(NamedIndividual(ex:_Munin2022_camera-ready_deadline))
+Declaration(NamedIndividual(ex:_Munin2022_name))
+Declaration(NamedIndividual(ex:_Munin2022_notification_deadline))
+Declaration(NamedIndividual(ex:_Munin_name))
 Declaration(NamedIndividual(ex:_Person_1))
 Declaration(NamedIndividual(ex:_Portugal))
 Declaration(NamedIndividual(ex:_StroemPhi))
@@ -246,11 +253,6 @@ Declaration(NamedIndividual(<https://confident.dbis.rwth-aachen.de/or/index.php?
 Declaration(NamedIndividual(<https://orcid.org/0000-0002-1595-3213>))
 Declaration(NamedIndividual(<https://www.wikidata.org/wiki/Q108430463>))
 Declaration(NamedIndividual(<https://www.wikidata.org/wiki/Q97595211>))
-Declaration(NamedIndividual(ex:_Munin))
-Declaration(NamedIndividual(ex:_Munin2020_abstract_deadline))
-Declaration(NamedIndividual(ex:_Munin2020_camera-ready_deadline))
-Declaration(NamedIndividual(ex:_Munin2020_notification_deadline))
-Declaration(NamedIndividual(ex:_Munin))
 Declaration(AnnotationProperty(obo:AEON_0000026))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
@@ -652,6 +654,65 @@ SubObjectPropertyOf(obo:AEON_0000175 obo:IAO_0000136)
 ObjectPropertyDomain(obo:AEON_0000175 obo:AEON_0000027)
 ObjectPropertyRange(obo:AEON_0000175 obo:OBI_0000011)
 
+# Object Property: obo:AEON_0000176 (has collocated event)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000176 "A relation obtaining between an academic event and another academic event. A collocated event is an event that takes place at the same location and time as another academic event."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000176 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
+AnnotationAssertion(rdfs:label obo:AEON_0000176 "has collocated event"@en)
+SubObjectPropertyOf(obo:AEON_0000176 obo:TXPO_0002523)
+ObjectPropertyDomain(obo:AEON_0000176 obo:AEON_0000001)
+ObjectPropertyRange(obo:AEON_0000176 obo:AEON_0000001)
+
+# Object Property: obo:AEON_0000177 (has joint event)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000177 "A relation obtaining between an academic event and another academic event. A joint event is an event that shares some of the planning and organizing logistics with another academic event, but is otherwise independent from it."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000177 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
+AnnotationAssertion(rdfs:label obo:AEON_0000177 "has joint event"@en)
+SubObjectPropertyOf(obo:AEON_0000177 obo:TXPO_0002523)
+ObjectPropertyDomain(obo:AEON_0000177 obo:AEON_0000001)
+ObjectPropertyRange(obo:AEON_0000177 obo:AEON_0000001)
+
+# Object Property: obo:AEON_0000178 (has umbrella event)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000178 "A relation obtaining between an academic event and another academic event or event series. An umbrelle event is a superordinate event that combines several smaller academic events at the same time. To say p 'has umbrella event' d =def. there exists an academic event d that is a superordinate event of p and that there must be other academic events that have the same relation."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000178 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
+AnnotationAssertion(rdfs:label obo:AEON_0000178 "has umbrella event"@en)
+SubObjectPropertyOf(obo:AEON_0000178 obo:TXPO_0002523)
+ObjectPropertyDomain(obo:AEON_0000178 obo:AEON_0000001)
+ObjectPropertyRange(obo:AEON_0000178 obo:AEON_0000001)
+
+# Object Property: obo:AEON_0000179 (specifies event fee of)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000179 "A relation obtaining between an 'event fee specification' and a obi:'planned process'."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000179 "https://orcid.org/0000-0002-1595-3213"^^xsd:string)
+AnnotationAssertion(dce:date obo:AEON_0000179 "2021-06-28T12:48:49Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:AEON_0000179 "specifies event fee of"@en)
+AnnotationAssertion(rdfs:seeAlso obo:AEON_0000179 <https://github.com/tibonto/aeon/issues/117>)
+SubObjectPropertyOf(obo:AEON_0000179 obo:IAO_0000136)
+ObjectPropertyDomain(obo:AEON_0000179 obo:AEON_0000030)
+ObjectPropertyRange(obo:AEON_0000179 obo:OBI_0000011)
+
+# Object Property: obo:AEON_0000180 (describes event topic)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000180 "see also inverse property: A relation obtaining between an 'event topic descriptor' and a obi:'planned process', in which the former is used to descibe the theme of the latter."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000180 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
+AnnotationAssertion(rdfs:label obo:AEON_0000180 "describes event topic"@en)
+SubObjectPropertyOf(obo:AEON_0000180 obo:IAO_0000136)
+ObjectPropertyDomain(obo:AEON_0000180 obo:AEON_0000028)
+ObjectPropertyRange(obo:AEON_0000180 obo:OBI_0000011)
+
+# Object Property: obo:AEON_0000181 (has WikiCFP identifier)
+
+AnnotationAssertion(obo:AEON_0000026 obo:AEON_0000181 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P5127\", \"label\": \"WikiCFP_conference_series_ID\"}}")
+AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000181 obo:IAO_0000423)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000181 "A relation obtaining between an 'academic event' or 'academic event series' and the WikiCFP identifier used to denote this 'academic event' or 'academic event series' in the wikiCFP database."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000181 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
+AnnotationAssertion(obo:IAO_0000119 obo:AEON_0000181 "http://www.wikicfp.com/cfp/"^^xsd:anyURI)
+AnnotationAssertion(rdfs:label obo:AEON_0000181 "has WikiCFP identifier"@en)
+SubObjectPropertyOf(obo:AEON_0000181 obo:IAO_0000235)
+ObjectPropertyDomain(obo:AEON_0000181 ObjectUnionOf(obo:AEON_0000001 obo:AEON_0000002))
+ObjectPropertyRange(obo:AEON_0000181 obo:wikiCFP_ID)
+
 # Object Property: obo:attends_at (deprecated_attends at planned process)
 
 AnnotationAssertion(obo:IAO_0000115 obo:attends_at "A relation obtaining between a person and a planned process, in which the person holds an attendee role that is being realized by the planned process the moment the person is actually a member of the audience of said planned process."@en)
@@ -700,45 +761,6 @@ AnnotationAssertion(obo:IAO_0000231 obo:contibutes_to obo:IAO_0000103)
 AnnotationAssertion(obo:IAO_0100001 obo:contibutes_to obo:RO_0000056)
 AnnotationAssertion(rdfs:label obo:contibutes_to "deprecated_contributes to planned process"@en)
 AnnotationAssertion(owl:deprecated obo:contibutes_to "true"^^xsd:boolean)
-
-# Object Property: obo:AEON_0000181 (has WikiCFP identifier)
-
-AnnotationAssertion(obo:AEON_0000026 obo:AEON_0000181 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P5127\", \"label\": \"WikiCFP_conference_series_ID\"}}")
-AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000181 obo:IAO_0000423)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000181 "A relation obtaining between an 'academic event' or 'academic event series' and the WikiCFP identifier used to denote this 'academic event' or 'academic event series' in the wikiCFP database."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000181 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(obo:IAO_0000119 obo:AEON_0000181 "http://www.wikicfp.com/cfp/"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label obo:AEON_0000181 "has WikiCFP identifier"@en)
-SubObjectPropertyOf(obo:AEON_0000181 obo:IAO_0000235)
-ObjectPropertyDomain(obo:AEON_0000181 ObjectUnionOf(obo:AEON_0000001 obo:AEON_0000002))
-ObjectPropertyRange(obo:AEON_0000181 obo:wikiCFP_ID)
-
-# Object Property: obo:AEON_0000176 (has collocated event)
-
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000176 "A relation obtaining between an academic event and another academic event. A collocated event is an event that takes place at the same location and time as another academic event."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000176 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label obo:AEON_0000176 "has collocated event"@en)
-SubObjectPropertyOf(obo:AEON_0000176 obo:TXPO_0002523)
-ObjectPropertyDomain(obo:AEON_0000176 obo:AEON_0000001)
-ObjectPropertyRange(obo:AEON_0000176 obo:AEON_0000001)
-
-# Object Property: obo:AEON_0000177 (has joint event)
-
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000177 "A relation obtaining between an academic event and another academic event. A joint event is an event that shares some of the planning and organizing logistics with another academic event, but is otherwise independent from it."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000177 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label obo:AEON_0000177 "has joint event"@en)
-SubObjectPropertyOf(obo:AEON_0000177 obo:TXPO_0002523)
-ObjectPropertyDomain(obo:AEON_0000177 obo:AEON_0000001)
-ObjectPropertyRange(obo:AEON_0000177 obo:AEON_0000001)
-
-# Object Property: obo:AEON_0000178 (has umbrella event)
-
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000178 "A relation obtaining between an academic event and another academic event or event series. An umbrelle event is a superordinate event that combines several smaller academic events at the same time. To say p 'has umbrella event' d =def. there exists an academic event d that is a superordinate event of p and that there must be other academic events that have the same relation."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000178 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label obo:AEON_0000178 "has umbrella event"@en)
-SubObjectPropertyOf(obo:AEON_0000178 obo:TXPO_0002523)
-ObjectPropertyDomain(obo:AEON_0000178 obo:AEON_0000001)
-ObjectPropertyRange(obo:AEON_0000178 obo:AEON_0000001)
 
 # Object Property: obo:holds_keynote_at (deprecated_holds keynote speech at)
 
@@ -790,17 +812,6 @@ AnnotationAssertion(obo:IAO_0100001 obo:speaks_at obo:RO_0000056)
 AnnotationAssertion(rdfs:label obo:speaks_at "deprecated_presents at"@en)
 AnnotationAssertion(owl:deprecated obo:speaks_at "true"^^xsd:boolean)
 
-# Object Property: obo:AEON_0000179 (specifies event fee of)
-
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000179 "A relation obtaining between an 'event fee specification' and a obi:'planned process'."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000179 "https://orcid.org/0000-0002-1595-3213"^^xsd:string)
-AnnotationAssertion(dce:date obo:AEON_0000179 "2021-06-28T12:48:49Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:AEON_0000179 "specifies event fee of"@en)
-AnnotationAssertion(rdfs:seeAlso obo:AEON_0000179 <https://github.com/tibonto/aeon/issues/117>)
-SubObjectPropertyOf(obo:AEON_0000179 obo:IAO_0000136)
-ObjectPropertyDomain(obo:AEON_0000179 obo:AEON_0000030)
-ObjectPropertyRange(obo:AEON_0000179 obo:OBI_0000011)
-
 # Object Property: obo:sponsors (deprecated_sponsors)
 
 AnnotationAssertion(obo:IAO_0000115 obo:sponsors "A relation obtaining between a person or organization and a planned process, in which the person or organization holds a sponsor role that is being realized by the planned process."@en)
@@ -810,15 +821,6 @@ AnnotationAssertion(obo:IAO_0000231 obo:sponsors obo:IAO_0000103)
 AnnotationAssertion(obo:IAO_0100001 obo:sponsors obo:RO_0000056)
 AnnotationAssertion(rdfs:label obo:sponsors "deprecated_sponsors"@en)
 AnnotationAssertion(owl:deprecated obo:sponsors "true"^^xsd:boolean)
-
-# Object Property: obo:AEON_0000180 (describes event topic)
-
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000180 "see also inverse property: A relation obtaining between an 'event topic descriptor' and a obi:'planned process', in which the former is used to descibe the theme of the latter."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000180 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label obo:AEON_0000180 "describes event topic"@en)
-SubObjectPropertyOf(obo:AEON_0000180 obo:IAO_0000136)
-ObjectPropertyDomain(obo:AEON_0000180 obo:AEON_0000028)
-ObjectPropertyRange(obo:AEON_0000180 obo:OBI_0000011)
 
 
 ############################
@@ -1111,16 +1113,6 @@ AnnotationAssertion(rdfs:label obo:AEON_0000170 "submitted papers"@en)
 SubDataPropertyOf(obo:AEON_0000170 obo:AEON_0000158)
 DataPropertyDomain(obo:AEON_0000170 obo:AEON_0000001)
 
-# Data Property: obo:AEON_0000173 (summary)
-
-AnnotationAssertion(rdfs:label obo:AEON_0000173 "summary"@en)
-SubDataPropertyOf(obo:AEON_0000173 owl:topDataProperty)
-
-# Data Property: obo:AEON_0000174 (summary licence)
-
-AnnotationAssertion(rdfs:label obo:AEON_0000174 "summary licence"@en)
-SubDataPropertyOf(obo:AEON_0000174 obo:AEON_0000173)
-
 # Data Property: obo:AEON_0000171 (venue)
 
 AnnotationAssertion(rdfs:label obo:AEON_0000171 "venue"@en)
@@ -1133,6 +1125,16 @@ AnnotationAssertion(rdfs:label obo:AEON_0000172 "venue website"@en)
 SubDataPropertyOf(obo:AEON_0000172 obo:AEON_0000171)
 DataPropertyDomain(obo:AEON_0000172 obo:AEON_0000025)
 DataPropertyRange(obo:AEON_0000172 xsd:anyURI)
+
+# Data Property: obo:AEON_0000173 (summary)
+
+AnnotationAssertion(rdfs:label obo:AEON_0000173 "summary"@en)
+SubDataPropertyOf(obo:AEON_0000173 owl:topDataProperty)
+
+# Data Property: obo:AEON_0000174 (summary licence)
+
+AnnotationAssertion(rdfs:label obo:AEON_0000174 "summary licence"@en)
+SubDataPropertyOf(obo:AEON_0000174 obo:AEON_0000173)
 
 
 
@@ -2283,6 +2285,56 @@ SubClassOf(obo:wikiCFP_ID obo:IAO_0000578)
 #   Named Individuals
 ############################
 
+# Individual: ex:_Munin (ex:_Munin)
+
+AnnotationAssertion(dce:creator ex:_Munin <http://orcid.org/0000-0002-1595-3213>)
+ClassAssertion(obo:AEON_0000002 ex:_Munin)
+
+# Individual: ex:_Munin2022 (ex:_Munin2022)
+
+AnnotationAssertion(dce:creator ex:_Munin2022 <http://orcid.org/0000-0002-1595-3213>)
+ClassAssertion(obo:AEON_0000103 ex:_Munin2022)
+ObjectPropertyAssertion(obo:AEON_0000073 ex:_Munin2022 ex:_Munin2022_abstract_deadline)
+ObjectPropertyAssertion(obo:AEON_0000073 ex:_Munin2022 ex:_Munin2022_camera-ready_deadline)
+ObjectPropertyAssertion(obo:AEON_0000073 ex:_Munin2022 ex:_Munin2022_notification_deadline)
+ObjectPropertyAssertion(obo:AEON_0000084 ex:_Munin2022 ex:_Munin)
+ObjectPropertyAssertion(obo:IAO_0000235 ex:_Munin2022 ex:_Munin2022_name)
+DataPropertyAssertion(obo:AEON_0000140 ex:_Munin2022 "17"^^rdfs:Literal)
+DataPropertyAssertion(obo:AEON_0000141 ex:_Munin2022 "2022-12-01T20:00:00Z"^^xsd:dateTimeStamp)
+DataPropertyAssertion(obo:AEON_0000142 ex:_Munin2022 "2022-11-29T09:00:00Z"^^xsd:dateTimeStamp)
+
+# Individual: ex:_Munin2022_abstract_deadline (ex:_Munin2022_abstract_deadline)
+
+AnnotationAssertion(dce:creator ex:_Munin2022_abstract_deadline <http://orcid.org/0000-0002-1595-3213>)
+ClassAssertion(obo:AEON_0000061 ex:_Munin2022_abstract_deadline)
+DataPropertyAssertion(obo:AEON_0000074 ex:_Munin2022_abstract_deadline "2022-08-22T00:00:00Z"^^xsd:dateTimeStamp)
+
+# Individual: ex:_Munin2022_camera-ready_deadline (ex:_Munin2022_camera-ready_deadline)
+
+AnnotationAssertion(dce:creator ex:_Munin2022_camera-ready_deadline <http://orcid.org/0000-0002-1595-3213>)
+ClassAssertion(obo:AEON_0000062 ex:_Munin2022_camera-ready_deadline)
+DataPropertyAssertion(obo:AEON_0000074 ex:_Munin2022_camera-ready_deadline "2022-10-31T00:00:00Z"^^xsd:dateTimeStamp)
+
+# Individual: ex:_Munin2022_name (ex:_Munin2022_name)
+
+AnnotationAssertion(dce:creator ex:_Munin2022_name <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(skos:altLabel ex:_Munin2022_name "The Munin Conference"@en)
+AnnotationAssertion(skos:prefLabel ex:_Munin2022_name "17th Munin Conference 2022"@en)
+AnnotationAssertion(skos:prefLabel ex:_Munin2022_name "17th Munin Conference on Scholarly Publishing"@en)
+ClassAssertion(obo:AEON_0000090 ex:_Munin2022_name)
+
+# Individual: ex:_Munin2022_notification_deadline (ex:_Munin2022_notification_deadline)
+
+AnnotationAssertion(dce:creator ex:_Munin2022_notification_deadline <http://orcid.org/0000-0002-1595-3213>)
+ClassAssertion(obo:AEON_0000064 ex:_Munin2022_notification_deadline)
+DataPropertyAssertion(obo:AEON_0000074 ex:_Munin2022_notification_deadline "2022-09-05T00:00:00Z"^^xsd:dateTimeStamp)
+
+# Individual: ex:_Munin_name (ex:_Munin_name)
+
+AnnotationAssertion(dce:creator ex:_Munin_name <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(skos:prefLabel ex:_Munin_name "The Munin Conference on Scholarly Publishing"@en)
+ClassAssertion(obo:AEON_0000090 ex:_Munin_name)
+
 # Individual: ex:_Person_1 (_VIVO2020_speaker1)
 
 AnnotationAssertion(rdfs:label ex:_Person_1 "_VIVO2020_speaker1")
@@ -2354,37 +2406,6 @@ AnnotationAssertion(ns:term_status <https://www.wikidata.org/wiki/Q108430463> ob
 
 AnnotationAssertion(rdfs:label <https://www.wikidata.org/wiki/Q97595211> "_VIVO_series_QID")
 AnnotationAssertion(ns:term_status <https://www.wikidata.org/wiki/Q97595211> obo:IAO_0000002)
-
-# Individual: ex:_Munin (ex:_Munin)
-
-AnnotationAssertion(dce:creator ex:_Munin <http://orcid.org/0000-0002-1595-3213>)
-
-# Individual: ex:_Munin2020_abstract_deadline (ex:_Munin2020_abstract_deadline)
-
-AnnotationAssertion(dce:creator ex:_Munin2020_abstract_deadline <http://orcid.org/0000-0002-1595-3213>)
-ClassAssertion(obo:AEON_0000061 ex:_Munin2020_abstract_deadline)
-DataPropertyAssertion(obo:AEON_0000074 ex:_Munin2020_abstract_deadline "2022-08-22T00:00:00Z"^^xsd:dateTimeStamp)
-
-# Individual: ex:_Munin2020_camera-ready_deadline (ex:_Munin2020_camera-ready_deadline)
-
-AnnotationAssertion(dce:creator ex:_Munin2020_camera-ready_deadline <http://orcid.org/0000-0002-1595-3213>)
-ClassAssertion(obo:AEON_0000062 ex:_Munin2020_camera-ready_deadline)
-DataPropertyAssertion(obo:AEON_0000074 ex:_Munin2020_camera-ready_deadline "2022-10-31T00:00:00Z"^^xsd:dateTimeStamp)
-
-# Individual: ex:_Munin2020_notification_deadline (ex:_Munin2020_notification_deadline)
-
-AnnotationAssertion(dce:creator ex:_Munin2020_notification_deadline <http://orcid.org/0000-0002-1595-3213>)
-ClassAssertion(obo:AEON_0000064 ex:_Munin2020_notification_deadline)
-DataPropertyAssertion(obo:AEON_0000074 ex:_Munin2020_notification_deadline "2022-09-05T00:00:00Z"^^xsd:dateTimeStamp)
-
-# Individual: ex:_Munin (ex:_Munin)
-
-AnnotationAssertion(dce:creator ex:_Munin <http://orcid.org/0000-0002-1595-3213>)
-ClassAssertion(obo:AEON_0000103 ex:_Munin)
-ObjectPropertyAssertion(obo:AEON_0000084 ex:_Munin ex:_Munin)
-DataPropertyAssertion(obo:AEON_0000140 ex:_Munin "17"^^rdfs:Literal)
-DataPropertyAssertion(obo:AEON_0000141 ex:_Munin "2022-12-01T20:00:00Z"^^xsd:dateTimeStamp)
-DataPropertyAssertion(obo:AEON_0000142 ex:_Munin "2022-11-29T09:00:00Z"^^xsd:dateTimeStamp)
 
 
 DisjointClasses(obo:AEON_0000061 obo:AEON_0000062 obo:AEON_0000063 obo:AEON_0000065 obo:AEON_0000066 obo:AEON_0000068 obo:AEON_0000069)
