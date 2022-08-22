@@ -1949,7 +1949,7 @@ AnnotationAssertion(obo:IAO_0000600 obo:attendee "A person who participates acti
 AnnotationAssertion(rdfs:label obo:attendee "deprecated_attendee"@en)
 AnnotationAssertion(rdfs:seeAlso obo:attendee "https://github.com/tibonto/aeon/issues/144")
 AnnotationAssertion(owl:deprecated obo:attendee "true"^^xsd:boolean)
-SubClassOf(obo:attendee obo:contributor)
+SubClassOf(obo:attendee <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:committee_chair (deprecated_event committee chair)
 
@@ -1962,7 +1962,7 @@ AnnotationAssertion(obo:IAO_0000600 obo:committee_chair "A committee chair is a 
 AnnotationAssertion(rdfs:label obo:committee_chair "deprecated_event committee chair"@en)
 AnnotationAssertion(rdfs:seeAlso obo:committee_chair "https://github.com/tibonto/aeon/issues/144")
 AnnotationAssertion(owl:deprecated obo:committee_chair "true"^^xsd:boolean)
-SubClassOf(obo:committee_chair obo:committee_member)
+SubClassOf(obo:committee_chair <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:committee_member (deprecated_event committee member)
 
@@ -1974,7 +1974,7 @@ AnnotationAssertion(obo:IAO_0000231 obo:committee_member obo:IAO_0000103)
 AnnotationAssertion(rdfs:label obo:committee_member "deprecated_event committee member"@en)
 AnnotationAssertion(rdfs:seeAlso obo:committee_member "https://github.com/tibonto/aeon/issues/144")
 AnnotationAssertion(owl:deprecated obo:committee_member "true"^^xsd:boolean)
-SubClassOf(obo:committee_member obo:organizer)
+SubClassOf(obo:committee_member <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:contact_person (deprecated_contact person)
 
@@ -1987,7 +1987,7 @@ AnnotationAssertion(obo:IAO_0000600 obo:contact_person "A contact peron is defin
 AnnotationAssertion(rdfs:label obo:contact_person "deprecated_contact person"@en)
 AnnotationAssertion(rdfs:seeAlso obo:contact_person "https://github.com/tibonto/aeon/issues/144")
 AnnotationAssertion(owl:deprecated obo:contact_person "true"^^xsd:boolean)
-SubClassOf(obo:contact_person obo:organizer)
+SubClassOf(obo:contact_person <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:contributor (deprecated_contributor)
 
@@ -2044,7 +2044,7 @@ AnnotationAssertion(obo:IAO_0000600 obo:keynote_speaker "An invited person - oft
 AnnotationAssertion(rdfs:label obo:keynote_speaker "deprecated_keynote speaker"@en)
 AnnotationAssertion(rdfs:seeAlso obo:keynote_speaker "https://github.com/tibonto/aeon/issues/144")
 AnnotationAssertion(owl:deprecated obo:keynote_speaker "true"^^xsd:boolean)
-SubClassOf(obo:keynote_speaker obo:contributor)
+SubClassOf(obo:keynote_speaker <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:local_committee (deprecated_local committee)
 
@@ -2069,7 +2069,7 @@ AnnotationAssertion(obo:IAO_0000600 obo:moderator "A person responsible for faci
 AnnotationAssertion(rdfs:label obo:moderator "deprecated_moderator"@en)
 AnnotationAssertion(rdfs:seeAlso obo:moderator "https://github.com/tibonto/aeon/issues/144")
 AnnotationAssertion(owl:deprecated obo:moderator "true"^^xsd:boolean)
-SubClassOf(obo:moderator obo:contributor)
+SubClassOf(obo:moderator <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:organizer (deprecated_organizer)
 
@@ -2084,7 +2084,7 @@ AnnotationAssertion(obo:IAO_0000600 obo:organizer "A person or organization that
 AnnotationAssertion(rdfs:label obo:organizer "deprecated_organizer"@en)
 AnnotationAssertion(rdfs:seeAlso obo:organizer "https://github.com/tibonto/aeon/issues/144")
 AnnotationAssertion(owl:deprecated obo:organizer "true"^^xsd:boolean)
-SubClassOf(obo:organizer obo:contributor)
+SubClassOf(obo:organizer <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:program_committee (deprecated_program committee)
 
@@ -2133,7 +2133,7 @@ AnnotationAssertion(obo:IAO_0000231 obo:reviewer obo:IAO_0000103)
 AnnotationAssertion(rdfs:label obo:reviewer "deprecated_reviewer"@en)
 AnnotationAssertion(rdfs:seeAlso obo:reviewer "https://github.com/tibonto/aeon/issues/144")
 AnnotationAssertion(owl:deprecated obo:reviewer "true"^^xsd:boolean)
-SubClassOf(obo:reviewer obo:organizer)
+SubClassOf(obo:reviewer <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:speaker (deprecated_presenter)
 
@@ -2148,7 +2148,7 @@ AnnotationAssertion(obo:IAO_0000231 obo:speaker obo:IAO_0000103)
 AnnotationAssertion(rdfs:label obo:speaker "deprecated_presenter"@en)
 AnnotationAssertion(rdfs:seeAlso obo:speaker "https://github.com/tibonto/aeon/issues/144")
 AnnotationAssertion(owl:deprecated obo:speaker "true"^^xsd:boolean)
-SubClassOf(obo:speaker obo:contributor)
+SubClassOf(obo:speaker <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:sponsor (deprecated_sponsor)
 
@@ -2162,7 +2162,7 @@ AnnotationAssertion(obo:IAO_0000231 obo:sponsor obo:IAO_0000103)
 AnnotationAssertion(rdfs:label obo:sponsor "deprecated_sponsor"@en)
 AnnotationAssertion(rdfs:seeAlso obo:sponsor "https://github.com/tibonto/aeon/issues/144")
 AnnotationAssertion(owl:deprecated obo:sponsor "true"^^xsd:boolean)
-SubClassOf(obo:sponsor obo:contributor)
+SubClassOf(obo:sponsor <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:sponsor_fee_specification (sponsor fee specification)
 
