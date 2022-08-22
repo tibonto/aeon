@@ -1901,6 +1901,76 @@ AnnotationAssertion(rdfs:label obo:AEON_0000128 "academic event series format sp
 EquivalentClasses(obo:AEON_0000128 ObjectIntersectionOf(obo:AEON_0000004 ObjectSomeValuesFrom(obo:AEON_0000031 obo:AEON_0000002)))
 SubClassOf(obo:AEON_0000128 obo:AEON_0000004)
 
+# Class: obo:AEON_0000129 (event sponsor aquisition and management role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000129 "An event organizer role that inheres in a person or organization who is responsible for aquiring and managing the sponsors of an event.")
+AnnotationAssertion(dce:creator obo:AEON_0000129 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date obo:AEON_0000129 "2022-08-08T18:01:10Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:AEON_0000129 "event sponsor aquisition and management role"@en)
+SubClassOf(obo:AEON_0000129 obo:AEON_0000006)
+
+# Class: obo:AEON_0000130 (local event organizer role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000130 "An event organizer role that inheres in a person or organization responsible for the on-site planning, management and coordination of an event."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000130 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date obo:AEON_0000130 "2022-08-08T18:02:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:AEON_0000130 "local event organizer role"@en)
+SubClassOf(obo:AEON_0000130 obo:AEON_0000006)
+SubClassOf(obo:AEON_0000130 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000026))
+
+# Class: obo:AEON_0000131 (event program development role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000131 "An event organizer role that inheres in a person or organization who is responsible for the development of the event program according to the chosen event format specification. This includes such tasks as inviting suitable presenters, evaluating, reviewing, accepting or declining the work submitted for presentation as well as determining the schedule of the event."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000131 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date obo:AEON_0000131 "2022-08-08T18:02:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:AEON_0000131 "event program development role"@en)
+SubClassOf(obo:AEON_0000131 obo:AEON_0000006)
+SubClassOf(obo:AEON_0000131 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000101))
+SubClassOf(obo:AEON_0000131 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000104))
+SubClassOf(obo:AEON_0000131 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000106))
+
+# Class: obo:AEON_0000132 (event promoter role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000132 "An event organizer role that inheres in a person or organization who is responsible for the promotion and public relations of an event."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000132 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000132 "event promoter role"@en)
+SubClassOf(obo:AEON_0000132 obo:AEON_0000006)
+SubClassOf(obo:AEON_0000132 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000007))
+
+# Class: obo:AEON_0000133 (event finances accounting role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000133 "An event organizer role that is being realized by its bearer in the processes that are associated with the job of balancing the event budged."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000133 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date obo:AEON_0000133 "2022-08-08T18:02:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:AEON_0000133 "event finances accounting role"@en)
+SubClassOf(obo:AEON_0000133 obo:AEON_0000006)
+SubClassOf(obo:AEON_0000133 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000007))
+
+# Class: obo:AEON_0000134 (general event committee)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000134 "An academic event committee that has the role to manage the general/overall organiation of an event."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000134 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date obo:AEON_0000134 "2022-08-08T18:02:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:AEON_0000134 "general event committee"@en)
+EquivalentClasses(obo:AEON_0000134 ObjectIntersectionOf(obo:AEON_0000042 ObjectSomeValuesFrom(obo:RO_0000087 obo:AEON_0000006)))
+SubClassOf(obo:AEON_0000134 obo:AEON_0000042)
+
+# Class: obo:AEON_0000135 (sponsorship event committee)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000135 "An academic event committee that has the role to take care of the aquisition and management of the sponsor(s) involved in the organization of an academic event."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000135 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000135 "sponsorship event committee"@en)
+EquivalentClasses(obo:AEON_0000135 ObjectIntersectionOf(obo:AEON_0000042 ObjectSomeValuesFrom(obo:RO_0000087 obo:AEON_0000129)))
+SubClassOf(obo:AEON_0000135 obo:AEON_0000042)
+
+# Class: obo:AEON_0000136 (local event committee)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000136 "An academic event committee that has the role to manage all the local organizational aspects associated with the realization of an academic event."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000136 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000136 "local event committee"@en)
+EquivalentClasses(obo:AEON_0000136 ObjectIntersectionOf(obo:AEON_0000042 ObjectSomeValuesFrom(obo:RO_0000087 obo:AEON_0000130)))
+SubClassOf(obo:AEON_0000136 obo:AEON_0000042)
+
 # Class: obo:AEON_0000137 (finance event committee)
 
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000137 "An academic event committee that has the role of managing the buget of an event."@en)
@@ -2207,76 +2277,6 @@ AnnotationAssertion(obo:IAO_0000118 obo:wikiCFP_ID "wikiCFP ID"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:wikiCFP_ID "http://www.wikicfp.com/cfp/"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:wikiCFP_ID "wikiCFP identifier"@en)
 SubClassOf(obo:wikiCFP_ID obo:IAO_0000578)
-
-# Class: obo:AEON_0000129 (event sponsor aquisition and management role)
-
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000129 "An event organizer role that inheres in a person or organization who is responsible for aquiring and managing the sponsors of an event.")
-AnnotationAssertion(dce:creator obo:AEON_0000129 <http://orcid.org/0000-0002-1595-3213>)
-AnnotationAssertion(dce:date obo:AEON_0000129 "2022-08-08T18:01:10Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:AEON_0000129 "event sponsor aquisition and management role"@en)
-SubClassOf(obo:AEON_0000129 obo:AEON_0000006)
-
-# Class: obo:AEON_0000130 (local event organizer role)
-
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000130 "An event organizer role that inheres in a person or organization responsible for the on-site planning, management and coordination of an event."@en)
-AnnotationAssertion(dce:creator obo:AEON_0000130 <http://orcid.org/0000-0002-1595-3213>)
-AnnotationAssertion(dce:date obo:AEON_0000130 "2022-08-08T18:02:56Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:AEON_0000130 "local event organizer role"@en)
-SubClassOf(obo:AEON_0000130 obo:AEON_0000006)
-SubClassOf(obo:AEON_0000130 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000026))
-
-# Class: obo:AEON_0000131 (event program development role)
-
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000131 "An event organizer role that inheres in a person or organization who is responsible for the development of the event program according to the chosen event format specification. This includes such tasks as inviting suitable presenters, evaluating, reviewing, accepting or declining the work submitted for presentation as well as determining the schedule of the event."@en)
-AnnotationAssertion(dce:creator obo:AEON_0000131 <http://orcid.org/0000-0002-1595-3213>)
-AnnotationAssertion(dce:date obo:AEON_0000131 "2022-08-08T18:02:56Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:AEON_0000131 "event program development role"@en)
-SubClassOf(obo:AEON_0000131 obo:AEON_0000006)
-SubClassOf(obo:AEON_0000131 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000101))
-SubClassOf(obo:AEON_0000131 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000104))
-SubClassOf(obo:AEON_0000131 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000106))
-
-# Class: obo:AEON_0000132 (event promoter role)
-
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000132 "An event organizer role that inheres in a person or organization who is responsible for the promotion and public relations of an event."@en)
-AnnotationAssertion(dce:creator obo:AEON_0000132 <http://orcid.org/0000-0002-1595-3213>)
-AnnotationAssertion(rdfs:label obo:AEON_0000132 "event promoter role"@en)
-SubClassOf(obo:AEON_0000132 obo:AEON_0000006)
-SubClassOf(obo:AEON_0000132 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000007))
-
-# Class: obo:AEON_0000133 (event finances accounting role)
-
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000133 "An event organizer role that is being realized by its bearer in the processes that are associated with the job of balancing the event budged."@en)
-AnnotationAssertion(dce:creator obo:AEON_0000133 <http://orcid.org/0000-0002-1595-3213>)
-AnnotationAssertion(dce:date obo:AEON_0000133 "2022-08-08T18:02:56Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:AEON_0000133 "event finances accounting role"@en)
-SubClassOf(obo:AEON_0000133 obo:AEON_0000006)
-SubClassOf(obo:AEON_0000133 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000007))
-
-# Class: obo:AEON_0000134 (general event committee)
-
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000134 "An academic event committee that has the role to manage the general/overall organiation of an event."@en)
-AnnotationAssertion(dce:creator obo:AEON_0000134 <http://orcid.org/0000-0002-1595-3213>)
-AnnotationAssertion(dce:date obo:AEON_0000134 "2022-08-08T18:02:56Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:AEON_0000134 "general event committee"@en)
-EquivalentClasses(obo:AEON_0000134 ObjectIntersectionOf(obo:AEON_0000042 ObjectSomeValuesFrom(obo:RO_0000087 obo:AEON_0000006)))
-SubClassOf(obo:AEON_0000134 obo:AEON_0000042)
-
-# Class: obo:AEON_0000135deprecated_sponsorship event committee)
-
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000135 "An academic event committee that has the role to take care of the aquisition and management of the sponsor(s) involved in the organization of an academic event."@en)
-AnnotationAssertion(dce:creator obo:AEON_0000135 <http://orcid.org/0000-0002-1595-3213>)
-AnnotationAssertion(rdfs:label obo:AEON_0000135 "sponsorship event committee"@en)
-EquivalentClasses(obo:AEON_0000135 ObjectIntersectionOf(obo:AEON_0000042 ObjectSomeValuesFrom(obo:RO_0000087 obo:AEON_0000129)))
-SubClassOf(obo:AEON_0000135 obo:AEON_0000042)
-
-# Class: obo:AEON_0000136deprecated_local event committee)
-
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000136 "An academic event committee that has the role to manage all the local organizational aspects associated with the realization of an academic event."@en)
-AnnotationAssertion(dce:creator obo:AEON_0000136 <http://orcid.org/0000-0002-1595-3213>)
-AnnotationAssertion(rdfs:label obo:AEON_0000136 "local event committee"@en)
-EquivalentClasses(obo:AEON_0000136 ObjectIntersectionOf(obo:AEON_0000042 ObjectSomeValuesFrom(obo:RO_0000087 obo:AEON_0000130)))
-SubClassOf(obo:AEON_0000136 obo:AEON_0000042)
 
 
 ############################
