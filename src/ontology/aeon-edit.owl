@@ -2322,7 +2322,7 @@ SubClassOf(obo:wikiCFP_ID obo:IAO_0000578)
 
 AnnotationAssertion(dce:creator ex:_Aysa_Ekanger <http://orcid.org/0000-0002-1595-3213>)
 ClassAssertion(obo:NCBITaxon_9606 ex:_Aysa_Ekanger)
-ObjectPropertyAssertion(obo:OBI_0000846 ex:_Aysa_Ekanger ex:_Munin2022_general_committee)
+ObjectPropertyAssertion(obo:RO_0002350 ex:_Aysa_Ekanger ex:_Munin2022_general_committee)
 
 # Individual: ex:_Jan_Erik_Frantsvåg (ex:_Jan_Erik_Frantsvåg)
 
