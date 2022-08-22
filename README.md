@@ -1,4 +1,4 @@
-![Build Status](https://github.com/StroemPhi/aeon/workflows/CI/badge.svg)
+![Build Status](https://github.com/tibonto/aeon/workflows/CI/badge.svg)
 # Academic Event Ontology (AEON)
 
 _WIP - NOT READY FOR PRODUCTION_ 
