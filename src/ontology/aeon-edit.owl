@@ -2286,6 +2286,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000136> obo:AEON_00000
 
 AnnotationAssertion(rdfs:label obo:_Person_1 "_VIVO2020_speaker1")
 AnnotationAssertion(ns:term_status obo:_Person_1 obo:IAO_0000002)
+ClassAssertion(obo:NCBITaxon_9606 obo:_Person_1)
 ObjectPropertyAssertion(obo:RO_0000087 obo:_Person_1 obo:_VIVO2020_speaker1_role)
 
 # Individual: obo:_VIVO2020 (_VIVO2020)
@@ -2294,11 +2295,11 @@ AnnotationAssertion(rdfs:label obo:_VIVO2020 "_VIVO2020")
 AnnotationAssertion(ns:term_status obo:_VIVO2020 obo:IAO_0000002)
 ClassAssertion(obo:AEON_0000103 obo:_VIVO2020)
 ObjectPropertyAssertion(obo:AEON_0000032 obo:_VIVO2020 obo:_VIVO2020_format)
-ObjectPropertyAssertion(obo:AEON_0000050 obo:_VIVO2020 obo:_Person_1)
 ObjectPropertyAssertion(obo:AEON_0000080 obo:_VIVO2020 <https://www.wikidata.org/wiki/Q108430463>)
 ObjectPropertyAssertion(obo:AEON_0000084 obo:_VIVO2020 obo:_VIVO_series)
 ObjectPropertyAssertion(obo:IAO_0000235 obo:_VIVO2020 obo:_VIVO2020_name)
 ObjectPropertyAssertion(obo:IAO_0000235 obo:_VIVO2020 <https://confident.dbis.rwth-aachen.de/or/index.php?title=VIVO_2020>)
+ObjectPropertyAssertion(obo:RO_0000057 obo:_VIVO2020 obo:_Person_1)
 DataPropertyAssertion(obo:end_date obo:_VIVO2020 "2020-06-18T19:00:00Z"^^xsd:dateTimeStamp)
 DataPropertyAssertion(obo:start_date obo:_VIVO2020 "2020-06-16T09:00:00Z"^^xsd:dateTimeStamp)
 
@@ -2323,6 +2324,7 @@ DataPropertyAssertion(obo:AEON_0000091 obo:_VIVO2020_name "VIVO 2020"^^xsd:strin
 AnnotationAssertion(dce:creator obo:_VIVO2020_speaker1_role <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:_VIVO2020_speaker1_role "_VIVO2020_speaker1_role")
 AnnotationAssertion(ns:term_status obo:_VIVO2020_speaker1_role obo:IAO_0000002)
+ClassAssertion(obo:AEON_0000013 obo:_VIVO2020_speaker1_role)
 ObjectPropertyAssertion(obo:BFO_0000054 obo:_VIVO2020_speaker1_role obo:_VIVO2020)
 
 # Individual: obo:_VIVO_series (_VIVO_series)
