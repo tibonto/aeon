@@ -1224,7 +1224,7 @@ SubClassOf(obo:AEON_0000006 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_000000
 
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000007 "OBSOLETE An event organizer role that inheres in a person who is a member of an event committee and thus performs certain actions associated with the objectives/functions of that event committee."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000007 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:comment obo:AEON_0000007 "This role is not needed, as the ro:\"member of\" relation is sufficient enough."^^xsd:string)
+AnnotationAssertion(rdfs:comment obo:AEON_0000007 "DEPRECATION REASON: This role is not needed, as the oostt:\"committee member role\" relation is sufficient enough."^^xsd:string)
 AnnotationAssertion(rdfs:label obo:AEON_0000007 "DEPRECATED event committee member role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000007 "https://github.com/tibonto/aeon/issues/144")
 AnnotationAssertion(owl:deprecated obo:AEON_0000007 "true"^^xsd:boolean)
