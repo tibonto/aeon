@@ -1250,21 +1250,21 @@ AnnotationAssertion(rdfs:seeAlso obo:AEON_0000009 "https://github.com/tibonto/ae
 AnnotationAssertion(owl:deprecated obo:AEON_0000009 "true"^^xsd:boolean)
 SubClassOf(obo:AEON_0000009 <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
-# Class: obo:AEON_0000010 (attendee role)
+# Class: obo:AEON_0000010 (event attendee role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000010 "A contributor role that inheres in a person who contributes to a planned social process, such as a conference, by attending it. For this role to be realized, there needs to be some kind of accreditation sub-process."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000010 "A contributor role that inheres in a person who contributes to an event, such as a conference, by attending it. For this role to be realized, there needs to be some kind of event accreditation sub-process."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000010 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label obo:AEON_0000010 "attendee role"@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000010 "event attendee role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000010 "https://github.com/tibonto/aeon/issues/144")
 SubClassOf(obo:AEON_0000010 obo:CRO_0000000)
 SubClassOf(obo:AEON_0000010 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000001))
 SubClassOf(obo:AEON_0000010 ObjectAllValuesFrom(obo:RO_0000081 obo:NCBITaxon_9606))
 
-# Class: obo:AEON_0000011 (moderator role)
+# Class: obo:AEON_0000011 (event moderator role)
 
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000011 "The moderating role inheres in a person that contributes to a planned process by facilitating the communication."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000011 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label obo:AEON_0000011 "moderator role"@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000011 "event moderator role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000011 "https://github.com/tibonto/aeon/issues/144")
 SubClassOf(obo:AEON_0000011 obo:CRO_0000000)
 SubClassOf(obo:AEON_0000011 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000001))
@@ -1286,7 +1286,7 @@ SubClassOf(obo:AEON_0000012 <http://www.geneontology.org/formats/oboInOwl#Obsole
 
 # Class: obo:AEON_0000013 (presenter role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000013 "The presenter role inheres in a person that contributes to a planned process by presenting something of interest at a planned process."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000013 "A contributor role that inheres in a person who speaks about a certain topic at an event, either in the form of presenting or teaching information to an audience."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000013 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(obo:IAO_0000118 obo:AEON_0000013 "invited speaker role"@en)
 AnnotationAssertion(obo:IAO_0006011 obo:AEON_0000013 "http://purl.obolibrary.org/obo/CRO_0000100"^^xsd:anyURI)
