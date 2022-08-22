@@ -247,6 +247,9 @@ Declaration(NamedIndividual(<https://orcid.org/0000-0002-1595-3213>))
 Declaration(NamedIndividual(<https://www.wikidata.org/wiki/Q108430463>))
 Declaration(NamedIndividual(<https://www.wikidata.org/wiki/Q97595211>))
 Declaration(NamedIndividual(<www.example.com/_Munin>))
+Declaration(NamedIndividual(<www.example.com/_Munin2020_abstract_deadline>))
+Declaration(NamedIndividual(<www.example.com/_Munin2020_camera-ready_deadline>))
+Declaration(NamedIndividual(<www.example.com/_Munin2020_notification_deadline>))
 Declaration(NamedIndividual(<www.example.com/_Munin2022>))
 Declaration(AnnotationProperty(obo:AEON_0000026))
 Declaration(AnnotationProperty(dcterms:description))
@@ -2356,14 +2359,32 @@ AnnotationAssertion(ns:term_status <https://www.wikidata.org/wiki/Q97595211> obo
 
 AnnotationAssertion(dce:creator <www.example.com/_Munin> <http://orcid.org/0000-0002-1595-3213>)
 
+# Individual: <www.example.com/_Munin2020_abstract_deadline> (<www.example.com/_Munin2020_abstract_deadline>)
+
+AnnotationAssertion(dce:creator <www.example.com/_Munin2020_abstract_deadline> <http://orcid.org/0000-0002-1595-3213>)
+ClassAssertion(obo:AEON_0000061 <www.example.com/_Munin2020_abstract_deadline>)
+DataPropertyAssertion(obo:AEON_0000074 <www.example.com/_Munin2020_abstract_deadline> "2022-08-22T00:00:00Z"^^xsd:dateTimeStamp)
+
+# Individual: <www.example.com/_Munin2020_camera-ready_deadline> (<www.example.com/_Munin2020_camera-ready_deadline>)
+
+AnnotationAssertion(dce:creator <www.example.com/_Munin2020_camera-ready_deadline> <http://orcid.org/0000-0002-1595-3213>)
+ClassAssertion(obo:AEON_0000062 <www.example.com/_Munin2020_camera-ready_deadline>)
+DataPropertyAssertion(obo:AEON_0000074 <www.example.com/_Munin2020_camera-ready_deadline> "2022-10-31T00:00:00Z"^^xsd:dateTimeStamp)
+
+# Individual: <www.example.com/_Munin2020_notification_deadline> (<www.example.com/_Munin2020_notification_deadline>)
+
+AnnotationAssertion(dce:creator <www.example.com/_Munin2020_notification_deadline> <http://orcid.org/0000-0002-1595-3213>)
+ClassAssertion(obo:AEON_0000064 <www.example.com/_Munin2020_notification_deadline>)
+DataPropertyAssertion(obo:AEON_0000074 <www.example.com/_Munin2020_notification_deadline> "2022-09-05T00:00:00Z"^^xsd:dateTimeStamp)
+
 # Individual: <www.example.com/_Munin2022> (<www.example.com/_Munin2022>)
 
 AnnotationAssertion(dce:creator <www.example.com/_Munin2022> <http://orcid.org/0000-0002-1595-3213>)
 ClassAssertion(obo:AEON_0000103 <www.example.com/_Munin2022>)
 ObjectPropertyAssertion(obo:AEON_0000084 <www.example.com/_Munin2022> <www.example.com/_Munin>)
-DataPropertyAssertion(obo:end_date <www.example.com/_Munin2022> "2022-12-01T20:00:00Z"^^xsd:dateTimeStamp)
-DataPropertyAssertion(obo:event_number <www.example.com/_Munin2022> "17"^^rdfs:Literal)
-DataPropertyAssertion(obo:start_date <www.example.com/_Munin2022> "2022-11-29T09:00:00Z"^^xsd:dateTimeStamp)
+DataPropertyAssertion(obo:AEON_0000140 <www.example.com/_Munin2022> "17"^^rdfs:Literal)
+DataPropertyAssertion(obo:AEON_0000141 <www.example.com/_Munin2022> "2022-12-01T20:00:00Z"^^xsd:dateTimeStamp)
+DataPropertyAssertion(obo:AEON_0000142 <www.example.com/_Munin2022> "2022-11-29T09:00:00Z"^^xsd:dateTimeStamp)
 
 
 DisjointClasses(obo:AEON_0000061 obo:AEON_0000062 obo:AEON_0000063 obo:AEON_0000065 obo:AEON_0000066 obo:AEON_0000068 obo:AEON_0000069)
