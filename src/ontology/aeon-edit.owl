@@ -936,7 +936,7 @@ AnnotationAssertion(obo:AEON_0000026 obo:event_number "{\"crossref\": {\"api_pro
 AnnotationAssertion(obo:IAO_0000115 obo:event_number "The ordinal number of an academic event, if it is a part of an event series.")
 AnnotationAssertion(rdfs:label obo:event_number "event number"@en)
 DataPropertyDomain(obo:event_number obo:AEON_0000001)
-DataPropertyRange(obo:event_number xsd:string)
+DataPropertyRange(obo:event_number xsd:integer)
 
 # Data Property: obo:event_status (event status)
 
@@ -2367,6 +2367,10 @@ AnnotationAssertion(dce:creator <www.example.com/_Munin> <http://orcid.org/0000-
 
 AnnotationAssertion(dce:creator <www.example.com/_Munin2022> <http://orcid.org/0000-0002-1595-3213>)
 ClassAssertion(obo:AEON_0000103 <www.example.com/_Munin2022>)
+ObjectPropertyAssertion(obo:AEON_0000084 <www.example.com/_Munin2022> <www.example.com/_Munin>)
+DataPropertyAssertion(obo:end_date <www.example.com/_Munin2022> "2022-12-01T20:00:00Z"^^xsd:dateTimeStamp)
+DataPropertyAssertion(obo:event_number <www.example.com/_Munin2022> "17"^^rdfs:Literal)
+DataPropertyAssertion(obo:start_date <www.example.com/_Munin2022> "2022-11-29T09:00:00Z"^^xsd:dateTimeStamp)
 
 
 DisjointClasses(obo:AEON_0000061 obo:AEON_0000062 obo:AEON_0000063 obo:AEON_0000065 obo:AEON_0000066 obo:AEON_0000068 obo:AEON_0000069)
