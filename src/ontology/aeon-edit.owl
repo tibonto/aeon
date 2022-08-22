@@ -1217,6 +1217,8 @@ AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000006 "https://orcid.org/0000-000
 AnnotationAssertion(rdfs:label obo:AEON_0000006 "event organizer role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000006 "https://github.com/tibonto/aeon/issues/144")
 SubClassOf(obo:AEON_0000006 obo:OMRSE_00002072)
+SubClassOf(obo:AEON_0000006 ObjectUnionOf(obo:OBI_0000245 ObjectSomeValuesFrom(obo:RO_0000081 obo:NCBITaxon_9606)))
+SubClassOf(obo:AEON_0000006 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000001))
 
 # Class: obo:AEON_0000007 (DEPRECATED event committee member role)
 
@@ -1255,6 +1257,8 @@ AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000010 "https://orcid.org/0000-000
 AnnotationAssertion(rdfs:label obo:AEON_0000010 "attendee role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000010 "https://github.com/tibonto/aeon/issues/144")
 SubClassOf(obo:AEON_0000010 obo:CRO_0000000)
+SubClassOf(obo:AEON_0000010 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000001))
+SubClassOf(obo:AEON_0000010 ObjectAllValuesFrom(obo:RO_0000081 obo:NCBITaxon_9606))
 
 # Class: obo:AEON_0000011 (moderator role)
 
@@ -1263,6 +1267,8 @@ AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000011 "https://orcid.org/0000-000
 AnnotationAssertion(rdfs:label obo:AEON_0000011 "moderator role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000011 "https://github.com/tibonto/aeon/issues/144")
 SubClassOf(obo:AEON_0000011 obo:CRO_0000000)
+SubClassOf(obo:AEON_0000011 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000001))
+SubClassOf(obo:AEON_0000011 ObjectAllValuesFrom(obo:RO_0000081 obo:NCBITaxon_9606))
 
 # Class: obo:AEON_0000012 (DEPRECATED reviewer role)
 
@@ -1286,7 +1292,9 @@ AnnotationAssertion(obo:IAO_0000118 obo:AEON_0000013 "invited speaker role"@en)
 AnnotationAssertion(obo:IAO_0006011 obo:AEON_0000013 "http://purl.obolibrary.org/obo/CRO_0000100"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000013 "presenter role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000013 "https://github.com/tibonto/aeon/issues/144")
-SubClassOf(obo:AEON_0000013 obo:CRO_0000100)
+SubClassOf(obo:AEON_0000013 obo:CRO_0000000)
+SubClassOf(obo:AEON_0000013 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000001))
+SubClassOf(obo:AEON_0000013 ObjectAllValuesFrom(obo:RO_0000081 obo:NCBITaxon_9606))
 
 # Class: obo:AEON_0000014 (keynote speaker role)
 
@@ -1304,6 +1312,8 @@ AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000015 "https://orcid.org/0000-000
 AnnotationAssertion(rdfs:label obo:AEON_0000015 "event sponsor role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000015 "https://github.com/tibonto/aeon/issues/144")
 SubClassOf(obo:AEON_0000015 obo:CRO_0000000)
+SubClassOf(obo:AEON_0000015 ObjectUnionOf(obo:OBI_0000245 ObjectAllValuesFrom(obo:RO_0000081 obo:NCBITaxon_9606)))
+SubClassOf(obo:AEON_0000015 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000001))
 
 # Class: obo:AEON_0000016 (DOI)
 
