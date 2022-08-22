@@ -120,6 +120,9 @@ Declaration(Class(obo:AEON_0000136))
 Declaration(Class(obo:AEON_0000137))
 Declaration(Class(obo:AEON_0000138))
 Declaration(Class(obo:AEON_0000139))
+Declaration(Class(obo:AEON_0000182))
+Declaration(Class(obo:AEON_0000183))
+Declaration(Class(obo:AEON_0000184))
 Declaration(Class(obo:attendance_fee_specification))
 Declaration(Class(obo:attendee))
 Declaration(Class(obo:committee_chair))
@@ -1601,7 +1604,7 @@ SubClassOf(obo:AEON_0000069 obo:AEON_0000067)
 
 # Class: obo:AEON_0000070 (call for papers)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000070 "A call for papers is an action specification in which the organizers of an academic event describe to prospective presenters the broad theme of the event, list the event's topics and formalities such as what kind of paper has to be submitted, to whom, and by what deadline."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000070 "A call for submissions that calls for paper submissions."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000070 "https://orcid.org/0000-0002-1595-3213"^^xsd:string)
 AnnotationAssertion(obo:IAO_0000118 obo:AEON_0000070 "CFP"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:AEON_0000070 "https://en.wikipedia.org/wiki/Academic_conference#Organizing_an_academic_conference"@en)
@@ -1610,19 +1613,19 @@ AnnotationAssertion(rdfs:label obo:AEON_0000070 "call for papers"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000070 <https://github.com/tibonto/aeon/issues/125>)
 AnnotationAssertion(ns:term_status obo:AEON_0000070 obo:IAO_0000123)
 AnnotationAssertion(skos:altLabel obo:AEON_0000070 "CFP"@en)
-SubClassOf(obo:AEON_0000070 obo:IAO_0000007)
+SubClassOf(obo:AEON_0000070 obo:AEON_0000182)
 DisjointClasses(obo:AEON_0000070 obo:AEON_0000071)
 
 # Class: obo:AEON_0000071 (call for abstracts)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000071 "A call for abstracts is an action specification in which the organizers of an academic event describe to prospective presenters the broad theme of the event, list the event's topics and formalities such as what kind of abstract has to be submitted, to whom, and by what deadline."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000071 "A call for submissions that calls for abstract submissions."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000071 "https://orcid.org/0000-0002-1595-3213"^^xsd:string)
 AnnotationAssertion(obo:IAO_0000119 obo:AEON_0000071 "https://en.wikipedia.org/wiki/Academic_conference#Organizing_an_academic_conference"@en)
 AnnotationAssertion(dce:date obo:AEON_0000071 "2021-07-19T11:24:02Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:AEON_0000071 "call for abstracts"@de)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000071 <https://github.com/tibonto/aeon/issues/125>)
 AnnotationAssertion(ns:term_status obo:AEON_0000071 obo:IAO_0000123)
-SubClassOf(obo:AEON_0000071 obo:IAO_0000007)
+SubClassOf(obo:AEON_0000071 obo:AEON_0000182)
 
 # Class: obo:AEON_0000090 (planned process name)
 
@@ -1995,6 +1998,28 @@ AnnotationAssertion(dce:creator obo:AEON_0000139 <http://orcid.org/0000-0002-159
 AnnotationAssertion(rdfs:label obo:AEON_0000139 "public relations event committee"@en)
 EquivalentClasses(obo:AEON_0000139 ObjectIntersectionOf(obo:AEON_0000042 ObjectSomeValuesFrom(obo:RO_0000087 obo:AEON_0000132)))
 SubClassOf(obo:AEON_0000139 obo:AEON_0000042)
+
+# Class: obo:AEON_0000182 (call for submissions)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000182 "An action specification in which the organizers of an academic event describe to prospective presenters the broad theme of the event, list the event's topics and submission formalities such as what kind of scientific work is expected to be submitted, to whom, and by what deadline."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000182 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000182 "call for submissions"@en)
+SubClassOf(obo:AEON_0000182 obo:IAO_0000007)
+SubClassOf(obo:AEON_0000182 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000060))
+
+# Class: obo:AEON_0000183 (call for posters)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000183 "A call for submissions that calls for poster submissions."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000183 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000183 "call for posters"@en)
+SubClassOf(obo:AEON_0000183 obo:AEON_0000182)
+
+# Class: obo:AEON_0000184 (call for videos)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000184 "A call for submissions that calls for video submissions."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000184 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000184 "call for videos"@en)
+SubClassOf(obo:AEON_0000184 obo:AEON_0000182)
 
 # Class: obo:attendance_fee_specification (attendance fee specification)
 
