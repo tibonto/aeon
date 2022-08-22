@@ -236,6 +236,9 @@ Declaration(DataProperty(obo:AEON_0000172))
 Declaration(DataProperty(obo:AEON_0000173))
 Declaration(DataProperty(obo:AEON_0000174))
 Declaration(DataProperty(obo:OBI_0002815))
+Declaration(NamedIndividual(ex:_Aysa_Ekanger))
+Declaration(NamedIndividual(ex:_Jan_Erik_Frantsvåg))
+Declaration(NamedIndividual(ex:_Linnea_Nordström))
 Declaration(NamedIndividual(ex:_Lisbon))
 Declaration(NamedIndividual(ex:_Munin))
 Declaration(NamedIndividual(ex:_Munin2022))
@@ -245,9 +248,12 @@ Declaration(NamedIndividual(ex:_Munin2022_general_committee))
 Declaration(NamedIndividual(ex:_Munin2022_name))
 Declaration(NamedIndividual(ex:_Munin2022_notification_deadline))
 Declaration(NamedIndividual(ex:_Munin_name))
+Declaration(NamedIndividual(ex:_Per_Pippin_Aspaas))
 Declaration(NamedIndividual(ex:_Person_1))
 Declaration(NamedIndividual(ex:_Portugal))
 Declaration(NamedIndividual(ex:_StroemPhi))
+Declaration(NamedIndividual(ex:_Tanja_Larssen))
+Declaration(NamedIndividual(ex:_Terje_Bergli))
 Declaration(NamedIndividual(ex:_VIVO2020))
 Declaration(NamedIndividual(ex:_VIVO2020_format))
 Declaration(NamedIndividual(ex:_VIVO2020_name))
@@ -2312,6 +2318,24 @@ SubClassOf(obo:wikiCFP_ID obo:IAO_0000578)
 #   Named Individuals
 ############################
 
+# Individual: ex:_Aysa_Ekanger (ex:_Aysa_Ekanger)
+
+AnnotationAssertion(dce:creator ex:_Aysa_Ekanger <http://orcid.org/0000-0002-1595-3213>)
+ClassAssertion(obo:NCBITaxon_9606 ex:_Aysa_Ekanger)
+ObjectPropertyAssertion(obo:OBI_0000846 ex:_Aysa_Ekanger ex:_Munin2022_general_committee)
+
+# Individual: ex:_Jan_Erik_Frantsvåg (ex:_Jan_Erik_Frantsvåg)
+
+AnnotationAssertion(dce:creator ex:_Jan_Erik_Frantsvåg <http://orcid.org/0000-0002-1595-3213>)
+ClassAssertion(obo:NCBITaxon_9606 ex:_Jan_Erik_Frantsvåg)
+ObjectPropertyAssertion(obo:OBI_0000846 ex:_Jan_Erik_Frantsvåg ex:_Munin2022_general_committee)
+
+# Individual: ex:_Linnea_Nordström (ex:_Linnea_Nordström)
+
+AnnotationAssertion(dce:creator ex:_Linnea_Nordström <http://orcid.org/0000-0002-1595-3213>)
+ClassAssertion(obo:NCBITaxon_9606 ex:_Linnea_Nordström)
+ObjectPropertyAssertion(obo:OBI_0000846 ex:_Linnea_Nordström ex:_Munin2022_general_committee)
+
 # Individual: ex:_Munin (ex:_Munin)
 
 AnnotationAssertion(dce:creator ex:_Munin <http://orcid.org/0000-0002-1595-3213>)
@@ -2369,12 +2393,30 @@ AnnotationAssertion(dce:creator ex:_Munin_name <http://orcid.org/0000-0002-1595-
 AnnotationAssertion(skos:prefLabel ex:_Munin_name "The Munin Conference on Scholarly Publishing"@en)
 ClassAssertion(obo:AEON_0000090 ex:_Munin_name)
 
+# Individual: ex:_Per_Pippin_Aspaas (ex:_Per_Pippin_Aspaas)
+
+AnnotationAssertion(dce:creator ex:_Per_Pippin_Aspaas <http://orcid.org/0000-0002-1595-3213>)
+ClassAssertion(obo:NCBITaxon_9606 ex:_Per_Pippin_Aspaas)
+ObjectPropertyAssertion(obo:OBI_0000846 ex:_Per_Pippin_Aspaas ex:_Munin2022_general_committee)
+
 # Individual: ex:_Person_1 (_VIVO2020_speaker1)
 
 AnnotationAssertion(rdfs:label ex:_Person_1 "_VIVO2020_speaker1")
 AnnotationAssertion(ns:term_status ex:_Person_1 obo:IAO_0000002)
 ClassAssertion(obo:NCBITaxon_9606 ex:_Person_1)
 ObjectPropertyAssertion(obo:RO_0000087 ex:_Person_1 ex:_VIVO2020_speaker1_role)
+
+# Individual: ex:_Tanja_Larssen (ex:_Tanja_Larssen)
+
+AnnotationAssertion(dce:creator ex:_Tanja_Larssen <http://orcid.org/0000-0002-1595-3213>)
+ClassAssertion(obo:NCBITaxon_9606 ex:_Tanja_Larssen)
+ObjectPropertyAssertion(obo:OBI_0000846 ex:_Tanja_Larssen ex:_Munin2022_general_committee)
+
+# Individual: ex:_Terje_Bergli (ex:_Terje_Bergli)
+
+AnnotationAssertion(dce:creator ex:_Terje_Bergli <http://orcid.org/0000-0002-1595-3213>)
+ClassAssertion(obo:NCBITaxon_9606 ex:_Terje_Bergli)
+ObjectPropertyAssertion(obo:OBI_0000846 ex:_Terje_Bergli ex:_Munin2022_general_committee)
 
 # Individual: ex:_VIVO2020 (_VIVO2020)
 
