@@ -2350,9 +2350,11 @@ ObjectPropertyAssertion(obo:AEON_0000073 ex:_Munin2022 ex:_Munin2022_camera-read
 ObjectPropertyAssertion(obo:AEON_0000073 ex:_Munin2022 ex:_Munin2022_notification_deadline)
 ObjectPropertyAssertion(obo:AEON_0000084 ex:_Munin2022 ex:_Munin)
 ObjectPropertyAssertion(obo:IAO_0000235 ex:_Munin2022 ex:_Munin2022_name)
+ObjectPropertyAssertion(obo:RO_0000057 ex:_Munin2022 ex:_Munin2022_general_committee)
 DataPropertyAssertion(obo:AEON_0000140 ex:_Munin2022 "17"^^rdfs:Literal)
 DataPropertyAssertion(obo:AEON_0000141 ex:_Munin2022 "2022-12-01T20:00:00Z"^^xsd:dateTimeStamp)
 DataPropertyAssertion(obo:AEON_0000142 ex:_Munin2022 "2022-11-29T09:00:00Z"^^xsd:dateTimeStamp)
+DataPropertyAssertion(obo:AEON_0000164 ex:_Munin2022 "https://site.uit.no/muninconf/"^^xsd:anyURI)
 
 # Individual: ex:_Munin2022_abstract_deadline (ex:_Munin2022_abstract_deadline)
 
