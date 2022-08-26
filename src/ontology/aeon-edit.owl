@@ -1977,14 +1977,14 @@ AnnotationAssertion(rdfs:label obo:AEON_0000133 "event finances accounting role"
 SubClassOf(obo:AEON_0000133 obo:AEON_0000006)
 SubClassOf(obo:AEON_0000133 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000007))
 
-# Class: obo:AEON_0000134 (general event committee)
+# Class: obo:AEON_0000134 (general organizing event committee)
 
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000134 "An academic event committee that has the role to manage the general/overall organiation of an event."@en)
 AnnotationAssertion(obo:IAO_0000233 obo:AEON_0000134 <https://github.com/tibonto/aeon/issues/144>)
 AnnotationAssertion(dce:creator obo:AEON_0000134 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(dce:date obo:AEON_0000134 "2022-08-08T18:02:56Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasSynonym> obo:AEON_0000134 "organizing committee"@en)
-AnnotationAssertion(rdfs:label obo:AEON_0000134 "general event committee"@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000134 "general organizing event committee"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000134 obo:IAO_0000125)
 EquivalentClasses(obo:AEON_0000134 ObjectIntersectionOf(obo:AEON_0000042 ObjectSomeValuesFrom(obo:RO_0000087 obo:AEON_0000006)))
 SubClassOf(obo:AEON_0000134 obo:AEON_0000042)
