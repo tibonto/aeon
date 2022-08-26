@@ -1011,9 +1011,10 @@ DataPropertyRange(obo:AEON_0000153 xsd:decimal)
 # Data Property: obo:AEON_0000154 (event language)
 
 AnnotationAssertion(obo:AEON_0000026 obo:AEON_0000154 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2936\", \"label\": \"language_usedLabel\"}}"^^xsd:string)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000154 "This data property should be used to provide the language that is officially spoken at an event . The allowed string should preferrably be encoded in the ISO 639-1 standard (e.g. German would be \"de\")."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000154 "This data property should be used to provide the language that is officially spoken at an event. Its xsd:string range should preferrably be encoded in the ISO 639-1 standard (e.g. German would be \"de\")."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000154 "It needs to be discussed, if a data property is sufficient for our use case, or if it might be better to model the officially spoken language of an academic event as a generically dependent continuant that participates in this planned process as sugessted by the developers of the language ontology (https://github.com/vivo-ontologies/language-ontology/wiki/Usage)."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000154 "https://orcid.org/0000-0002-1595-3213"@en)
+AnnotationAssertion(dce:creator obo:AEON_0000154 <https://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:AEON_0000154 "event language"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000154 <https://github.com/tibonto/aeon/issues/127>)
 AnnotationAssertion(ns:term_status obo:AEON_0000154 obo:IAO_0000428)
@@ -2436,6 +2437,10 @@ AnnotationAssertion(ns:term_status ex:_Person_1 obo:IAO_0000002)
 ClassAssertion(obo:NCBITaxon_9606 ex:_Person_1)
 ObjectPropertyAssertion(obo:RO_0000087 ex:_Person_1 ex:_VIVO2020_speaker1_role)
 
+# Individual: ex:_StroemPhi (ex:_StroemPhi)
+
+AnnotationAssertion(ns:term_status ex:_StroemPhi obo:IAO_0000002)
+
 # Individual: ex:_Tanja_Larssen (ex:_Tanja_Larssen)
 
 AnnotationAssertion(dce:creator ex:_Tanja_Larssen <http://orcid.org/0000-0002-1595-3213>)
@@ -2498,10 +2503,9 @@ AnnotationAssertion(rdfs:label <https://confident.dbis.rwth-aachen.de/or/index.p
 AnnotationAssertion(ns:term_status <https://confident.dbis.rwth-aachen.de/or/index.php?title=VIVO_2020> obo:IAO_0000002)
 ClassAssertion(obo:AEON_0000003 <https://confident.dbis.rwth-aachen.de/or/index.php?title=VIVO_2020>)
 
-# Individual: <https://orcid.org/0000-0002-1595-3213> (_StroemPhi_ORCID)
+# Individual: <https://orcid.org/0000-0002-1595-3213> (ORCID:Philip Strömert)
 
-AnnotationAssertion(obo:IAO_0000114 <https://orcid.org/0000-0002-1595-3213> obo:IAO_0000002)
-AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-1595-3213> "_StroemPhi_ORCID")
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-1595-3213> "ORCID:Philip Strömert")
 
 # Individual: <https://site.uit.no/muninconf/call-for-submissions/> (_Munin2022_call_for submissions)
 
