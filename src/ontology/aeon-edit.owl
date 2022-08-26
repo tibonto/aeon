@@ -1979,7 +1979,7 @@ SubClassOf(obo:AEON_0000133 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000007
 
 # Class: obo:AEON_0000134 (general organizing event committee)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000134 "An academic event committee that has the role to manage the general/overall organiation of an event."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000134 "An event committee that has the role to manage the general/overall organiation of an event."@en)
 AnnotationAssertion(obo:IAO_0000233 obo:AEON_0000134 <https://github.com/tibonto/aeon/issues/144>)
 AnnotationAssertion(dce:creator obo:AEON_0000134 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(dce:date obo:AEON_0000134 "2022-08-08T18:02:56Z"^^xsd:dateTime)
@@ -1991,7 +1991,7 @@ SubClassOf(obo:AEON_0000134 obo:AEON_0000042)
 
 # Class: obo:AEON_0000135 (sponsorship event committee)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000135 "An academic event committee that has the role to take care of the aquisition and management of the sponsor(s) involved in the organization of an academic event."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000135 "An event committee that has the role to take care of the aquisition and management of the sponsor(s) involved in the organization of an academic event."@en)
 AnnotationAssertion(obo:IAO_0000233 obo:AEON_0000135 <https://github.com/tibonto/aeon/issues/144>)
 AnnotationAssertion(dce:creator obo:AEON_0000135 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:AEON_0000135 "sponsorship event committee"@en)
@@ -2001,7 +2001,7 @@ SubClassOf(obo:AEON_0000135 obo:AEON_0000042)
 
 # Class: obo:AEON_0000136 (local event committee)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000136 "An academic event committee that has the role to manage all the local organizational aspects associated with the realization of an academic event."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000136 "An event committee that has the role to manage all the local organizational aspects associated with the realization of an academic event."@en)
 AnnotationAssertion(obo:IAO_0000233 obo:AEON_0000136 <https://github.com/tibonto/aeon/issues/144>)
 AnnotationAssertion(dce:creator obo:AEON_0000136 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:AEON_0000136 "local event committee"@en)
@@ -2011,7 +2011,7 @@ SubClassOf(obo:AEON_0000136 obo:AEON_0000042)
 
 # Class: obo:AEON_0000137 (finance event committee)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000137 "An academic event committee that has the role of managing the buget of an event."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000137 "An event committee that has the role of managing the buget of an event."@en)
 AnnotationAssertion(obo:IAO_0000233 obo:AEON_0000137 <https://github.com/tibonto/aeon/issues/144>)
 AnnotationAssertion(dce:creator obo:AEON_0000137 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:AEON_0000137 "finance event committee"@en)
