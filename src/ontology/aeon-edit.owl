@@ -146,6 +146,7 @@ Declaration(Class(obo:sponsorship_committee))
 Declaration(Class(obo:technical_committee))
 Declaration(Class(obo:wikiCFP_ID))
 Declaration(Class(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000182>))
+Declaration(Class(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000184>))
 Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))
 Declaration(ObjectProperty(obo:AEON_0000031))
 Declaration(ObjectProperty(obo:AEON_0000032))
@@ -2355,6 +2356,14 @@ AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/aeon.owl/AEON_00001
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000182> "Twitter account"@en)
 AnnotationAssertion(ns:term_status <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000182> obo:IAO_0000423)
 SubClassOf(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000182> obo:IAO_0000030)
+
+# Class: <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000184> (event series maintainer role)
+
+AnnotationAssertion(obo:IAO_0000115 <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000184> "An event organizer role that inheres in a person or organization who is designated to be responsible for maintaining an event series."@en)
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000184> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000184> "2022-08-26T16:38:21Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000184> "event series maintainer role"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000184> obo:AEON_0000006)
 
 
 ############################
