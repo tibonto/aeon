@@ -123,6 +123,9 @@ Declaration(Class(obo:AEON_0000139))
 Declaration(Class(obo:AEON_0000182))
 Declaration(Class(obo:AEON_0000183))
 Declaration(Class(obo:AEON_0000184))
+Declaration(Class(obo:AEON_0000185))
+Declaration(Class(obo:AEON_0000186))
+Declaration(Class(obo:AEON_0000187))
 Declaration(Class(obo:attendance_fee_specification))
 Declaration(Class(obo:attendee))
 Declaration(Class(obo:committee_chair))
@@ -145,9 +148,6 @@ Declaration(Class(obo:sponsor_fee_specification))
 Declaration(Class(obo:sponsorship_committee))
 Declaration(Class(obo:technical_committee))
 Declaration(Class(obo:wikiCFP_ID))
-Declaration(Class(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000182>))
-Declaration(Class(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000184>))
-Declaration(Class(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185>))
 Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))
 Declaration(ObjectProperty(obo:AEON_0000031))
 Declaration(ObjectProperty(obo:AEON_0000032))
@@ -862,7 +862,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/aeon.owl/AEON_000
 AnnotationAssertion(ns:term_status <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000183> obo:IAO_0000423)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000183> owl:topObjectProperty)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000183> obo:BFO_0000001)
-ObjectPropertyRange(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000183> <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000182>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000183> obo:AEON_0000185)
 
 
 ############################
@@ -2078,6 +2078,41 @@ AnnotationAssertion(dce:creator obo:AEON_0000184 <http://orcid.org/0000-0002-159
 AnnotationAssertion(rdfs:label obo:AEON_0000184 "call for videos"@en)
 SubClassOf(obo:AEON_0000184 obo:AEON_0000182)
 
+# Class: obo:AEON_0000185 (Twitter account)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000185 "An information content entity that represents the Twitter account of an entity"@en)
+AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000185 "It needs to be discussed where to subsume this class more precisely and in which ontology this should be defined. At present, 2022-08-26, no BFO based ontology that properly represents scocial media plattforms could be identified."@en)
+AnnotationAssertion(obo:IAO_0000233 obo:AEON_0000185 <https://github.com/tibonto/aeon/issues/28>)
+AnnotationAssertion(dce:creator obo:AEON_0000185 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date obo:AEON_0000185 "2022-08-26T13:21:50Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:AEON_0000185 "Twitter account"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000185 obo:IAO_0000423)
+SubClassOf(obo:AEON_0000185 obo:IAO_0000030)
+
+# Class: obo:AEON_0000186 (event series maintainer role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000186 "An event organizer role that inheres in a person or organization who is designated to be responsible for maintaining an event series."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000186 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date obo:AEON_0000186 "2022-08-26T16:38:21Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:AEON_0000186 "event series maintainer role"@en)
+SubClassOf(obo:AEON_0000186 obo:AEON_0000006)
+
+# Class: obo:AEON_0000187 (ISO 3166-1 alpha-2 code)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000187 "An identifier that consists of two letters, is part of the ISO 3166-1, and designates countries, dependent territories, and special areas of geographical interest."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000187 "http://purl.obolibrary.org/obo/OBIB_0000620 was not yet used due to the fact that it has a subclassOf axiom that clashes with the used ENVO classes for country (http://purl.obolibrary.org/obo/ENVO_00000009)
+
+see also: https://github.com/OBOFoundry/COB/issues/138 wrt the problem of OBO classes to reuse for country, city and region --> it is still an open question whetehr to consider these a bfo:material entity or a bfo:site, if I (PS) understood it right."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:AEON_0000187 <http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>)
+AnnotationAssertion(obo:IAO_0000233 obo:AEON_0000187 <https://github.com/tibonto/aeon/issues/153>)
+AnnotationAssertion(obo:IAO_0006011 obo:AEON_0000187 obo:OBIB_0000620)
+AnnotationAssertion(dce:creator obo:AEON_0000187 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date obo:AEON_0000187 "2022-08-29T10:26:20Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment obo:AEON_0000187 "Two-letter country codes defined in ISO 3166-1, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), to designate countries, dependent territories, and special areas of geographical interest."@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000187 "ISO 3166-1 alpha-2 code"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000187 obo:IAO_0000428)
+SubClassOf(obo:AEON_0000187 obo:IAO_0020000)
+
 # Class: obo:attendance_fee_specification (attendance fee specification)
 
 AnnotationAssertion(obo:IAO_0000115 obo:attendance_fee_specification "An attendance fee specification is an event fee specification that, as part of a plan specification, defines the currency and amount of money a person has to pay to attend an event."@en)
@@ -2361,41 +2396,6 @@ AnnotationAssertion(obo:IAO_0000118 obo:wikiCFP_ID "wikiCFP ID"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:wikiCFP_ID "http://www.wikicfp.com/cfp/"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:wikiCFP_ID "wikiCFP identifier"@en)
 SubClassOf(obo:wikiCFP_ID obo:IAO_0000578)
-
-# Class: <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000182> (Twitter account)
-
-AnnotationAssertion(obo:IAO_0000115 <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000182> "An information content entity that represents the Twitter account of an entity"@en)
-AnnotationAssertion(obo:IAO_0000116 <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000182> "It needs to be discussed where to subsume this class more precisely and in which ontology this should be defined. At present, 2022-08-26, no BFO based ontology that properly represents scocial media plattforms could be identified."@en)
-AnnotationAssertion(obo:IAO_0000233 <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000182> <https://github.com/tibonto/aeon/issues/28>)
-AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000182> <http://orcid.org/0000-0002-1595-3213>)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000182> "2022-08-26T13:21:50Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000182> "Twitter account"@en)
-AnnotationAssertion(ns:term_status <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000182> obo:IAO_0000423)
-SubClassOf(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000182> obo:IAO_0000030)
-
-# Class: <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000184> (event series maintainer role)
-
-AnnotationAssertion(obo:IAO_0000115 <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000184> "An event organizer role that inheres in a person or organization who is designated to be responsible for maintaining an event series."@en)
-AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000184> <http://orcid.org/0000-0002-1595-3213>)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000184> "2022-08-26T16:38:21Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000184> "event series maintainer role"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000184> obo:AEON_0000006)
-
-# Class: <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> (ISO 3166-1 alpha-2 code)
-
-AnnotationAssertion(obo:IAO_0000115 <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> "An identifier that consists of two letters, is part of the ISO 3166-1, and designates countries, dependent territories, and special areas of geographical interest."@en)
-AnnotationAssertion(obo:IAO_0000116 <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> "http://purl.obolibrary.org/obo/OBIB_0000620 was not yet used due to the fact that it has a subclassOf axiom that clashes with the used ENVO classes for country (http://purl.obolibrary.org/obo/ENVO_00000009)
-
-see also: https://github.com/OBOFoundry/COB/issues/138 wrt the problem of OBO classes to reuse for country, city and region --> it is still an open question whetehr to consider these a bfo:material entity or a bfo:site, if I (PS) understood it right."@en)
-AnnotationAssertion(obo:IAO_0000119 <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> <http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>)
-AnnotationAssertion(obo:IAO_0000233 <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> <https://github.com/tibonto/aeon/issues/153>)
-AnnotationAssertion(obo:IAO_0006011 <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> obo:OBIB_0000620)
-AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> <http://orcid.org/0000-0002-1595-3213>)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> "2022-08-29T10:26:20Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> "Two-letter country codes defined in ISO 3166-1, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), to designate countries, dependent territories, and special areas of geographical interest."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> "ISO 3166-1 alpha-2 code"@en)
-AnnotationAssertion(ns:term_status <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> obo:IAO_0000428)
-SubClassOf(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> obo:IAO_0020000)
 
 
 ############################
