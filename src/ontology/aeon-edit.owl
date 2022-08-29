@@ -147,6 +147,7 @@ Declaration(Class(obo:technical_committee))
 Declaration(Class(obo:wikiCFP_ID))
 Declaration(Class(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000182>))
 Declaration(Class(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000184>))
+Declaration(Class(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185>))
 Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))
 Declaration(ObjectProperty(obo:AEON_0000031))
 Declaration(ObjectProperty(obo:AEON_0000032))
@@ -2379,6 +2380,22 @@ AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/aeon.owl/AEON_00
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000184> "2022-08-26T16:38:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000184> "event series maintainer role"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000184> obo:AEON_0000006)
+
+# Class: <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> (ISO 3166-1 alpha-2 code)
+
+AnnotationAssertion(obo:IAO_0000115 <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> "An identifier that consists of two letters, is part of the ISO 3166-1, and designates countries, dependent territories, and special areas of geographical interest."@en)
+AnnotationAssertion(obo:IAO_0000116 <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> "http://purl.obolibrary.org/obo/OBIB_0000620 was not yet used due to the fact that it has a subclassOf axiom that clashes with the used ENVO classes for country (http://purl.obolibrary.org/obo/ENVO_00000009)
+
+see also: https://github.com/OBOFoundry/COB/issues/138 wrt the problem of OBO classes to reuse for country, city and region --> it is still an open question whetehr to consider these a bfo:material entity or a bfo:site, if I (PS) understood it right."@en)
+AnnotationAssertion(obo:IAO_0000119 <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> <http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>)
+AnnotationAssertion(obo:IAO_0000233 <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> <https://github.com/tibonto/aeon/issues/153>)
+AnnotationAssertion(obo:IAO_0006011 <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> obo:OBIB_0000620)
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> "2022-08-29T10:26:20Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> "Two-letter country codes defined in ISO 3166-1, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), to designate countries, dependent territories, and special areas of geographical interest."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> "ISO 3166-1 alpha-2 code"@en)
+AnnotationAssertion(ns:term_status <http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> obo:IAO_0000428)
+SubClassOf(<http://purl.obolibrary.org/obo/aeon.owl/AEON_0000185> obo:IAO_0020000)
 
 
 ############################
