@@ -1540,7 +1540,7 @@ SubClassOf(obo:AEON_0000042 obo:OOSTT_00000114)
 
 # Class: obo:AEON_0000060 (deadline specification)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000060 "A deadline specification is a conditional specification that, as part of an action specification, defines until when a specified action has to be carried out."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000060 "A deadline specification is a conditional specification that, as part of an action specification, defines until when the specified action has to be carried out."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000060 "Given the fact that deadlines are specified in various planned processes this term should probably be regarded as a placeholder which ought to be defined in a broader ontology, maybe something like IAO?"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000060 "https://orcid.org/0000-0002-1595-3213"^^xsd:string)
 AnnotationAssertion(dce:date obo:AEON_0000060 "2021-07-19T08:50:13Z"^^xsd:dateTime)
