@@ -1616,8 +1616,7 @@ SubClassOf(obo:AEON_0000066 obo:AEON_0000067)
 
 # Class: obo:AEON_0000067 (submission deadline)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000067 "A conditional specification that, as part of an academic event type specification, specifies the date until which contributions that answer the call for papers of an academic event have to be submitted."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000067 "Given the fact that submission deadlines are specified in various planned processes this term should probably be regarded as a placeholder which ought to be defined in a broader ontology, maybe something like IAO?"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000067 "A deadline specification that determines until when a participant (agent) of a planned process has to submit something to someone or somewhere associated with the further processing of this said something."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000067 "https://orcid.org/0000-0002-1595-3213"^^xsd:string)
 AnnotationAssertion(dce:date obo:AEON_0000067 "2021-07-19T09:55:44Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:AEON_0000067 "submission deadline"@en)
