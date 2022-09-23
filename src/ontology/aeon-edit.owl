@@ -1261,18 +1261,16 @@ AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000003 "https://orcid.org/0000-000
 AnnotationAssertion(rdfs:label obo:AEON_0000003 "internal identifier"@en)
 SubClassOf(obo:AEON_0000003 obo:IAO_0020000)
 
-# Class: obo:AEON_0000004 (academic event format specification)
+# Class: obo:AEON_0000004 (academic event format)
 
-AnnotationAssertion(obo:IAO_0000111 obo:AEON_0000004 "event type"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000004 "An academic event format specification is a plan specification that classifies a planned gathering of people in an academic context according to some sociocultural format, which provides implicit and explicit details on how this gathing is to be carried out by its participants in terms of achieving certain objectives, fulfiling certain conditions and performing certain actions."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000004 "It needs to be discussed whether this class should be expanded to also describe the format of an 'academic event series', e.g. conference series. At the moment it is assumed that an 'academic event series', understood as a obi:'planned process', has no destinct format itself. Since this process is defined as the set of all recurring academic events of a destinct identity, the event series type would also only be the set of the academic event types of the academic events in this series."@en)
+AnnotationAssertion(obo:IAO_0000112 obo:AEON_0000004 "The parts of an academic event website that state: the official name of an academic event, its topic and academic field, when it is going to take place and where, what the schedule/program is, what kind of deadlines have to be adhered to for submitting work to be present, whether or not one has to pay to attend and how much, etc."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000004 "A sociocultural event format that states that the primary purpose (objective) of an organised sociocultural event is to facilitate a knowledge exchange between the participants of that event within the context of an academic field.")
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000004 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(obo:IAO_0000118 obo:AEON_0000004 "event type"@en)
-AnnotationAssertion(rdfs:label obo:AEON_0000004 "academic event format specification"@en)
-AnnotationAssertion(rdfs:seeAlso obo:AEON_0000004 <https://github.com/tibonto/aeon/issues/139>)
-EquivalentClasses(obo:AEON_0000004 ObjectIntersectionOf(obo:IAO_0000104 ObjectSomeValuesFrom(obo:AEON_0000031 obo:AEON_0000001) ObjectSomeValuesFrom(obo:BFO_0000051 obo:IAO_0000001)))
+AnnotationAssertion(obo:IAO_0000233 obo:AEON_0000004 <https://github.com/tibonto/aeon/issues/139>)
+AnnotationAssertion(rdfs:label obo:AEON_0000004 "academic event format"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000004 obo:IAO_0000125)
+EquivalentClasses(obo:AEON_0000004 ObjectIntersectionOf(obo:AEON_0000195 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000027) ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000201)))
 SubClassOf(obo:AEON_0000004 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000030))
-SubClassOf(obo:AEON_0000004 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000060))
 
 # Class: obo:AEON_0000005 (deprecated_aeon contributor role)
 
