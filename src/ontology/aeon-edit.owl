@@ -1227,17 +1227,19 @@ SubClassOf(obo:AEON_0000000 obo:OBI_0000011)
 
 AnnotationAssertion(obo:AEON_0000026 obo:AEON_0000001 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Q1656682\", \"label\": \"eventLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Category:Event\", \"label\": \"Event\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#ConferenceOrEvent\", \"label\": \"Conference or Event\"}}"^^xsd:string)
 AnnotationAssertion(obo:IAO_0000112 obo:AEON_0000001 "The 19th International Semantic Web Conference (ISWC2020) is an academic  event."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000001 "An academic event is a planned process that refers to a gathering of researchers (not necessarily academics), in which these researches have the chance to present and discuss their work and possible future collaborations according to a certain sociocultural format."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000001 "At the moment a general differentiation between some academic events, such as conference, colloquium, forum and symposium, is not as clear as it should be from an ontologist perspektive, as the use of these terms varies significantly throughout different sociocultural contexts. 
-However, as ConfIDent tries to shed light on the culture of academic events, understanding them simply as synonyms would be too broad at the moment. Hence they are defined here rather adhoc with the reference to a specific academic event type specification that specifies its sociocultural format. These specific plan specifications are provided in AEON as named individuals for the purpose of automatically classifying academic events within the application of the ConfIDent project.
-It is the intention of the ConfIDent project to collect and analyse a large body of empirical data on academic events and series, especially with regard to the inherent academic event plan specifications, so that an evidence based diffirentiation might be possible. This means that the subclasses of academic event in question are prone to be edited in the future."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000001 "An organized sociocultural event that refers to a gathering of researchers (not necessarily academics) in which these researches have the chance to present and discuss their work and possible future collaborations, according to a certain sociocultural format that is specified more or less explicitly in the announcement of the academic event."@en)
+AnnotationAssertion(Annotation(rdfs:seeAlso "https://doi.org/10.1371/journal.pcbi.1010395") Annotation(rdfs:seeAlso "https://phdcomics.com/comics.php?f=1704") obo:IAO_0000116 obo:AEON_0000001 "Defining the boundaries that set academic events apart is hard from an ontological perspective, as the labels used for demarcation, such as conference, congress or annual meeting, vary depending on sociocultural contexts. Sometimes they are used synonymously and sometimes to demark their difference."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000001 "TODO:
 * It needs to be discussed, if we need the \"process boundary\" class to describe the start and end of an academic event or event series.
 * It needs to be discussed, if we need the \"temporal region\" and \"spatiotemporal region\"  classes to describe the duration and manifestation in spacetime of an academic event or event series."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000001 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000001 "academic event"@en)
-EquivalentClasses(obo:AEON_0000001 ObjectIntersectionOf(obo:OBI_0000011 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000004)))
-SubClassOf(obo:AEON_0000001 obo:OBI_0000011)
+AnnotationAssertion(rdfs:seeAlso obo:AEON_0000001 "https://www.wikidata.org/wiki/Q52260246")
+AnnotationAssertion(ns:term_status obo:AEON_0000001 obo:IAO_0000125)
+AnnotationAssertion(skos:altLabel obo:AEON_0000001 "scientific event"@en)
+AnnotationAssertion(skos:altLabel obo:AEON_0000001 "wissenschaftliche Veranstaltung"@de)
+AnnotationAssertion(skos:closeMatch obo:AEON_0000001 <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent>)
+EquivalentClasses(obo:AEON_0000001 ObjectIntersectionOf(obo:AEON_0000196 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000004) ObjectSomeValuesFrom(obo:BFO_0000055 obo:CRO_0000000)))
 SubClassOf(obo:AEON_0000001 ObjectSomeValuesFrom(obo:AEON_0000043 obo:AEON_0000030))
 SubClassOf(obo:AEON_0000001 ObjectSomeValuesFrom(obo:AEON_0000084 obo:AEON_0000002))
 SubClassOf(obo:AEON_0000001 ObjectSomeValuesFrom(obo:BFO_0000055 obo:CRO_0000000))
