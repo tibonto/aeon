@@ -1247,12 +1247,10 @@ SubClassOf(obo:AEON_0000001 ObjectSomeValuesFrom(obo:AEON_0000084 obo:AEON_00000
 
 AnnotationAssertion(obo:AEON_0000026 obo:AEON_0000002 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Q15900647\", \"label\": \"conference_seriesLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Category:Event_series\", \"label\": \"Event_series\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#SeriesOfConferenceOrEvent\", \"label\": \"Series of conference or event\"}}"^^xsd:string)
 AnnotationAssertion(obo:IAO_0000112 obo:AEON_0000002 "International Semantic Web Conference (ISWC)")
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000002 "An academic event series is an academic event that is the set of all recurring academic events of a destinct identity. This destinct identity is usually demarked by a shared name that only differs with regard to some ordnial symbol, such as 1st or the year of the academic event."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000002 "An academic event that is the ordered set of all recurring academic events of a destinct identity. This destinct identity is usually demarked by a shared name that only differs with regard to some ordnial symbol, such as 1st or the year of the academic event."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000002 "academic event series")
-EquivalentClasses(obo:AEON_0000002 ObjectIntersectionOf(obo:AEON_0000001 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000128)))
-SubClassOf(obo:AEON_0000002 ObjectSomeValuesFrom(obo:BFO_0000055 obo:CRO_0000000))
-SubClassOf(obo:AEON_0000002 ObjectSomeValuesFrom(obo:RO_0002224 obo:AEON_0000001))
-SubClassOf(obo:AEON_0000002 ObjectSomeValuesFrom(obo:RO_0002230 obo:AEON_0000001))
+AnnotationAssertion(ns:term_status obo:AEON_0000002 obo:IAO_0000125)
+EquivalentClasses(obo:AEON_0000002 ObjectIntersectionOf(obo:AEON_0000001 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000128) ObjectSomeValuesFrom(obo:AEON_0000081 obo:AEON_0000001)))
 
 # Class: obo:AEON_0000003 (internal identifier)
 
