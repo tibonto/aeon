@@ -138,6 +138,22 @@ Declaration(Class(obo:AEON_0000194))
 Declaration(Class(obo:AEON_0000195))
 Declaration(Class(obo:AEON_0000196))
 Declaration(Class(obo:AEON_0000197))
+Declaration(Class(obo:AEON_0000198))
+Declaration(Class(obo:AEON_0000199))
+Declaration(Class(obo:AEON_0000200))
+Declaration(Class(obo:AEON_0000201))
+Declaration(Class(obo:AEON_0000202))
+Declaration(Class(obo:AEON_0000203))
+Declaration(Class(obo:AEON_0000204))
+Declaration(Class(obo:AEON_0000205))
+Declaration(Class(obo:AEON_0000206))
+Declaration(Class(obo:AEON_0000207))
+Declaration(Class(obo:AEON_0000208))
+Declaration(Class(obo:AEON_0000209))
+Declaration(Class(obo:AEON_0000210))
+Declaration(Class(obo:AEON_0000211))
+Declaration(Class(obo:AEON_0000212))
+Declaration(Class(obo:AEON_0000213))
 Declaration(Class(obo:attendance_fee_specification))
 Declaration(Class(obo:attendee))
 Declaration(Class(obo:committee_chair))
@@ -2217,6 +2233,160 @@ AnnotationAssertion(rdfs:label obo:AEON_0000197 "organized sociocultural event s
 AnnotationAssertion(ns:term_status obo:AEON_0000197 obo:IAO_0000428)
 EquivalentClasses(obo:AEON_0000197 ObjectIntersectionOf(obo:AEON_0000196 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000128) ObjectSomeValuesFrom(obo:AEON_0000081 obo:AEON_0000196) ObjectSomeValuesFrom(obo:RO_0002224 obo:AEON_0000196) ObjectSomeValuesFrom(obo:RO_0002230 obo:AEON_0000196)))
 
+# Class: obo:AEON_0000198 (academic workshop series)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000198 "An academic event series that consists of academic events of a workshop format."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000198 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000198 "academic workshop series"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000198 obo:IAO_0000125)
+AnnotationAssertion(skos:closeMatch obo:AEON_0000198 <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#WorkshopSeries>)
+EquivalentClasses(obo:AEON_0000198 ObjectIntersectionOf(obo:AEON_0000002 ObjectSomeValuesFrom(obo:AEON_0000081 obo:AEON_0000121)))
+SubClassOf(obo:AEON_0000198 obo:AEON_0000002)
+
+# Class: obo:AEON_0000199 (academic conference series)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000199 "An academic event series that consists of academic events of a conference format."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000199 <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000199 "academic conference series"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000199 obo:IAO_0000125)
+EquivalentClasses(obo:AEON_0000199 ObjectIntersectionOf(obo:AEON_0000002 ObjectSomeValuesFrom(obo:AEON_0000081 obo:AEON_0000103)))
+SubClassOf(obo:AEON_0000199 obo:AEON_0000002)
+
+# Class: obo:AEON_0000200 (business event format)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000200 "A sociocultural event format that states that the primary purpose (objective) of an organised sociocultural event is to facilitate a busines communication and actions between its participants and which specifies the formal mode of this communication process.")
+AnnotationAssertion(dce:creator obo:AEON_0000200 <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000200 "business event format"@en)
+EquivalentClasses(obo:AEON_0000200 ObjectIntersectionOf(obo:AEON_0000195 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000203)))
+SubClassOf(obo:AEON_0000200 obo:AEON_0000195)
+
+# Class: obo:AEON_0000201 (knowledge exchange objective)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000201 "An objective specifiaction that describes one of the main goals of a planned process to be the facilitation of an excahnge of knowledge between the participants of this planned process."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000201 <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000201 "knowledge exchange objective"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000201 obo:IAO_0000125)
+SubClassOf(obo:AEON_0000201 obo:IAO_0000005)
+
+# Class: obo:AEON_0000202 (business event)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000202 "An organized sociocultural event that refers to a gathering of people in which these people engage in some kind of business communication or action, according to their work related roles and a certain sociocultural format that is specified more or less explicitly in the announcement of such an event."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000202 <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000202 "business event"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000202 obo:IAO_0000423)
+EquivalentClasses(obo:AEON_0000202 ObjectIntersectionOf(obo:AEON_0000196 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000200)))
+SubClassOf(obo:AEON_0000202 obo:AEON_0000196)
+
+# Class: obo:AEON_0000203 (business objective)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000203 "An objective specifiaction that describes one of the main goals of a planned process to be the facilitation of business related comminucation and actions between the participant of this planned process."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000203 "An objective specification that"@en)
+AnnotationAssertion(dce:creator obo:AEON_0000203 <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000203 "business objective"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000203 obo:IAO_0000428)
+SubClassOf(obo:AEON_0000203 obo:IAO_0000005)
+
+# Class: obo:AEON_0000204 (interactive talk format)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000204 "A talk format that specifies the active involvement of the otherwise passive audience of a talk, by allowing a discussion on the presented topic or by having some sort of audience feedback integrated into the talk."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000204 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000204 "interactive talk format"@en)
+SubClassOf(obo:AEON_0000204 obo:AEON_0000124)
+
+# Class: obo:AEON_0000205 (flash talk format)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000205 "A talk format that specifies a talk to be very brief, usually not more than 5 minutes long."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000205 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000205 "flash talk format"@en)
+SubClassOf(obo:AEON_0000205 obo:AEON_0000124)
+
+# Class: obo:AEON_0000206 (demonstration format)
+
+AnnotationAssertion(Annotation(obo:IAO_0000119 "https://www.merriam-webster.com/dictionary/demonstration") Annotation(rdfs:seeAlso "https://en.wikipedia.org/wiki/Demonstration_(teaching)"^^xsd:anyURI) Annotation(rdfs:seeAlso "https://en.wikipedia.org/wiki/Product_demonstration"^^xsd:anyURI) Annotation(rdfs:seeAlso "https://en.wikipedia.org/wiki/Scientific_demonstration"^^xsd:anyURI) obo:IAO_0000115 obo:AEON_0000206 "A sociocultural event format that specifies the general set-up of an organized sociocultural event in which the characteristics of an entity are made clear by the means of presenting examples."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000206 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000206 "demonstration format"@en)
+SubClassOf(obo:AEON_0000206 obo:AEON_0000195)
+
+# Class: obo:AEON_0000207 (demo session format)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000207 "A session format that has as part some demonstration format."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000207 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000207 "demo session format"@en)
+EquivalentClasses(obo:AEON_0000207 ObjectIntersectionOf(obo:AEON_0000110 obo:AEON_0000206))
+SubClassOf(obo:AEON_0000207 obo:AEON_0000110)
+
+# Class: obo:AEON_0000208 (breakout session format)
+
+AnnotationAssertion(Annotation(obo:IAO_0000119 "https://fourwaves.com/blog/breakout-session/") obo:IAO_0000115 obo:AEON_0000208 "A session format that is often used in online events and that has the aim to initialise a change from a monodirectional presentation based fromat to a more interactive one, by encouraging the participants of the session to engage in deeper discussions."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000208 <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000208 "breakout session format"@en)
+SubClassOf(obo:AEON_0000208 obo:AEON_0000110)
+
+# Class: obo:AEON_0000209 (academic breakout session)
+
+AnnotationAssertion(Annotation(obo:IAO_0000119 "https://fourwaves.com/blog/breakout-session/") obo:IAO_0000115 obo:AEON_0000209 "An academic event session that offers its participants a break from passively listening to presentations, by encouraging engagement and interaction, and providing a venue for interesting and in-depth discussions that could influence the direction of a research project, spark ideas for new studies, or set the foundation for long-lasting partnerships between researchers."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000209 <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(dce:date obo:AEON_0000209 "2022-09-16T18:11:27Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:AEON_0000209 "academic breakout session"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000209 obo:IAO_0000125)
+EquivalentClasses(obo:AEON_0000209 ObjectIntersectionOf(obo:AEON_0000111 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000208)))
+
+# Class: obo:AEON_0000210 (academic industry session)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000210 "An academic event session in which companies have the chance to present their work or services to an academic audience, as a means of doing business, public relations, networking or all of these.")
+AnnotationAssertion(obo:IAO_0000118 obo:AEON_0000210 "industr conference track"@en)
+AnnotationAssertion(dce:creator obo:AEON_0000210 <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000210 "academic industry session"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000210 obo:IAO_0000125)
+EquivalentClasses(obo:AEON_0000210 ObjectIntersectionOf(obo:AEON_0000111 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000200)))
+
+# Class: obo:AEON_0000211 (academic industry track)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000211 "An academic event track that has the purpose to facilitate the knowledge exchange between industry and academia."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000211 <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000211 "academic industry track"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000211 obo:IAO_0000125)
+AnnotationAssertion(skos:closeMatch obo:AEON_0000211 <https://w3id.org/seo#IndustryTrack>)
+EquivalentClasses(obo:AEON_0000211 ObjectIntersectionOf(obo:AEON_0000117 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000200)))
+
+# Class: obo:AEON_0000212 (academic flash talk)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000212 "An academic event talk that is very brief (usually around 5 minutes)."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000212 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000212 "academic flash talk"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000212 obo:IAO_0000125)
+EquivalentClasses(obo:AEON_0000212 ObjectIntersectionOf(obo:AEON_0000125 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000205)))
+
+# Class: obo:AEON_0000213 (academic demo track)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000213 "An academic event track that has the goal to allow exemplary demonstrations of of work that has been implemented in a particular context and that fits into the topic (theme) of the academic event of which this track is a part of."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000213 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000213 "academic demo track"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000213 obo:IAO_0000125)
+AnnotationAssertion(skos:closeMatch obo:AEON_0000213 <https://w3id.org/seo#DemosTrack>)
+EquivalentClasses(obo:AEON_0000213 ObjectIntersectionOf(obo:AEON_0000117 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000206)))
+SubClassOf(obo:AEON_0000213 obo:AEON_0000117)
+
+# Class: obo:AEON_0000214 (academic symposium series)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000214 "An academic event series that consists of academic events of a symposium format.")
+AnnotationAssertion(dce:creator obo:AEON_0000214 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000214 "academic symposium series"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000214 obo:IAO_0000125)
+AnnotationAssertion(skos:closeMatch obo:AEON_0000214 <https://w3id.org/seo#SymposiumSeries>)
+EquivalentClasses(obo:AEON_0000214 ObjectIntersectionOf(obo:AEON_0000002 ObjectSomeValuesFrom(obo:AEON_0000081 obo:AEON_0000113)))
+SubClassOf(obo:AEON_0000214 obo:AEON_0000002)
+
+# Class: obo:AEON_0000215 (academic tutorial series)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000215 "An academic event series that consists of academic events of a tutorial format.")
+AnnotationAssertion(dce:creator obo:AEON_0000215 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000215 "academic tutorial series"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000215 obo:IAO_0000125)
+AnnotationAssertion(skos:closeMatch obo:AEON_0000215 <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#TutorialSeries>)
+EquivalentClasses(obo:AEON_0000215 ObjectIntersectionOf(obo:AEON_0000002 ObjectSomeValuesFrom(obo:AEON_0000081 obo:AEON_0000119)))
+SubClassOf(obo:AEON_0000215 obo:AEON_0000002)
+
 # Class: obo:attendance_fee_specification (attendance fee specification)
 
 AnnotationAssertion(obo:IAO_0000115 obo:attendance_fee_specification "An attendance fee specification is an event fee specification that, as part of a plan specification, defines the currency and amount of money a person has to pay to attend an event."@en)
@@ -2687,4 +2857,5 @@ AnnotationAssertion(ns:term_status <https://www.wikidata.org/wiki/Q97595211> obo
 
 
 DisjointClasses(obo:AEON_0000061 obo:AEON_0000062 obo:AEON_0000063 obo:AEON_0000065 obo:AEON_0000066 obo:AEON_0000068 obo:AEON_0000069)
+DisjointClasses(obo:AEON_0000189 obo:AEON_0000190 obo:AEON_0000191)
 )
