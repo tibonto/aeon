@@ -1273,7 +1273,6 @@ AnnotationAssertion(obo:IAO_0000233 obo:AEON_0000004 <https://github.com/tibonto
 AnnotationAssertion(rdfs:label obo:AEON_0000004 "academic event format"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000004 obo:IAO_0000125)
 EquivalentClasses(obo:AEON_0000004 ObjectIntersectionOf(obo:AEON_0000195 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000027) ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000201)))
-SubClassOf(obo:AEON_0000004 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000030))
 
 # Class: obo:AEON_0000005 (deprecated_aeon contributor role)
 
