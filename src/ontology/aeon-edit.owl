@@ -1223,11 +1223,6 @@ SubDataPropertyOf(obo:AEON_0000174 obo:AEON_0000173)
 #   Classes
 ############################
 
-# Class: obo:AEON_0000000 (root node)
-
-AnnotationAssertion(rdfs:label obo:AEON_0000000 "root node"@en)
-SubClassOf(obo:AEON_0000000 obo:OBI_0000011)
-
 # Class: obo:AEON_0000001 (academic event)
 
 AnnotationAssertion(obo:AEON_0000026 obo:AEON_0000001 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Q1656682\", \"label\": \"eventLabel\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Category:Event\", \"label\": \"Event\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#ConferenceOrEvent\", \"label\": \"Conference or Event\"}}"^^xsd:string)
