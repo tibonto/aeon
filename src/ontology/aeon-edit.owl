@@ -714,7 +714,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000175 "https://orcid.org/0000-000
 AnnotationAssertion(rdfs:label obo:AEON_0000175 "describes academic field of"@en)
 SubObjectPropertyOf(obo:AEON_0000175 obo:IAO_0000136)
 ObjectPropertyDomain(obo:AEON_0000175 obo:AEON_0000027)
-ObjectPropertyRange(obo:AEON_0000175 obo:OBI_0000011)
+ObjectPropertyRange(obo:AEON_0000175 ObjectUnionOf(obo:IAO_0000030 obo:OBI_0000011))
 
 # Object Property: obo:AEON_0000176 (has collocated event)
 
