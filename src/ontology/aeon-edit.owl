@@ -340,25 +340,27 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Object Properties
 ############################
 
-# Object Property: obo:AEON_0000031 (specifies academic event format of)
+# Object Property: obo:AEON_0000031 (specifies event format of)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000031 "A relation obtaining between an 'academic event type specification' and an 'academic event', in which the former is used to descibe the sociocultural format of the latter. A set of possible common academic event type specification is provided in AEON as named individuals."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000031 "A relation obtaining between an 'sociocultural event format' and an  'organized sociocultural event', in which the former determines the planned sociocultural conventions of the latter."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000031 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label obo:AEON_0000031 "specifies academic event format of"@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000031 "specifies event format of"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000031 "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI)
+AnnotationAssertion(ns:term_status obo:AEON_0000031 obo:IAO_0000428)
 SubObjectPropertyOf(obo:AEON_0000031 obo:IAO_0000136)
 InverseObjectProperties(obo:AEON_0000031 obo:AEON_0000032)
-ObjectPropertyDomain(obo:AEON_0000031 obo:AEON_0000004)
-ObjectPropertyRange(obo:AEON_0000031 obo:AEON_0000001)
+ObjectPropertyDomain(obo:AEON_0000031 obo:AEON_0000195)
+ObjectPropertyRange(obo:AEON_0000031 obo:AEON_0000196)
 
-# Object Property: obo:AEON_0000032 (has academic event format)
+# Object Property: obo:AEON_0000032 (has event format)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000032 "A relation obtaining between an 'academic event' and an 'academic event format specification' that specifies the sociocultrural format of the 'academic event'."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000032 "A relation obtaining between an 'organized sociocultural event' and an 'sociocultural event format specification' that determines the planned sociocultrural conventions of the 'organized sociocultural event'."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000032 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label obo:AEON_0000032 "has academic event format"@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000032 "has event format"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000032 "https://github.com/tibonto/aeon/issues/139"^^xsd:anyURI)
-ObjectPropertyDomain(obo:AEON_0000032 obo:AEON_0000001)
-ObjectPropertyRange(obo:AEON_0000032 obo:AEON_0000004)
+AnnotationAssertion(ns:term_status obo:AEON_0000032 obo:IAO_0000428)
+ObjectPropertyDomain(obo:AEON_0000032 obo:AEON_0000196)
+ObjectPropertyRange(obo:AEON_0000032 obo:AEON_0000195)
 
 # Object Property: obo:AEON_0000033 (has DID)
 
