@@ -126,6 +126,13 @@ Declaration(Class(obo:AEON_0000184))
 Declaration(Class(obo:AEON_0000185))
 Declaration(Class(obo:AEON_0000186))
 Declaration(Class(obo:AEON_0000187))
+Declaration(Class(obo:AEON_0000188))
+Declaration(Class(obo:AEON_0000189))
+Declaration(Class(obo:AEON_0000190))
+Declaration(Class(obo:AEON_0000191))
+Declaration(Class(obo:AEON_0000192))
+Declaration(Class(obo:AEON_0000193))
+Declaration(Class(obo:AEON_0000194))
 Declaration(Class(obo:attendance_fee_specification))
 Declaration(Class(obo:attendee))
 Declaration(Class(obo:committee_chair))
@@ -2112,6 +2119,61 @@ AnnotationAssertion(rdfs:comment obo:AEON_0000187 "Two-letter country codes defi
 AnnotationAssertion(rdfs:label obo:AEON_0000187 "ISO 3166-1 alpha-2 code"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000187 obo:IAO_0000428)
 SubClassOf(obo:AEON_0000187 obo:IAO_0020000)
+
+# Class: obo:AEON_0000188 (event presence format)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000188 "An sociocultural event format that specifies the mode in which the participants of an organized sociocultural event have to be present, whether virtually or in person."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000188 <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000188 "event presence format"@en)
+SubClassOf(obo:AEON_0000188 obo:AEON_0000195)
+
+# Class: obo:AEON_0000189 (hybrid presence format)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000189 "An event presence format that specifies that one can participate in an organized sociocultural event either in person on site or virtually via some social meeting software solution."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000189 <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000189 "hybrid presence format"@en)
+SubClassOf(obo:AEON_0000189 obo:AEON_0000188)
+
+# Class: obo:AEON_0000190 (online presence format)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000190 "An event presence format that specifies that one can participate in an organized sociocultural event only virtually via some social meeting software solution."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000190 <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000190 "online presence format"@en)
+SubClassOf(obo:AEON_0000190 obo:AEON_0000188)
+
+# Class: obo:AEON_0000191 (in person presence format)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000191 "An event presence format that specifies that one can participate in an organized sociocultural event only in person on site."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000191 <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000191 "in person presence format"@en)
+SubClassOf(obo:AEON_0000191 obo:AEON_0000188)
+
+# Class: obo:AEON_0000192 (in person event)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000192 "An organized sociocultural event in which the participants can only attend in person on site."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000192 <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000192 "in person event"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000192 obo:IAO_0000423)
+EquivalentClasses(obo:AEON_0000192 ObjectIntersectionOf(obo:AEON_0000196 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000191)))
+SubClassOf(obo:AEON_0000192 obo:AEON_0000196)
+
+# Class: obo:AEON_0000193 (online event)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000193 "An organized sociocultural event in which the participants can attend only virtually."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000193 <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000193 "online event"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000193 obo:IAO_0000423)
+EquivalentClasses(obo:AEON_0000193 ObjectIntersectionOf(obo:AEON_0000196 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000190)))
+SubClassOf(obo:AEON_0000193 obo:AEON_0000196)
+
+# Class: obo:AEON_0000194 (hybrid event)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000194 "An organized sociocultural event in which the participants can attend either virtually or in person on site."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000194 <https://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000194 "hybrid event"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000194 obo:IAO_0000423)
+EquivalentClasses(obo:AEON_0000194 ObjectIntersectionOf(obo:AEON_0000196 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000189)))
+SubClassOf(obo:AEON_0000194 obo:AEON_0000196)
 
 # Class: obo:attendance_fee_specification (attendance fee specification)
 
