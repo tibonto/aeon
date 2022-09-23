@@ -618,10 +618,11 @@ ObjectPropertyRange(obo:AEON_0000080 obo:AEON_0000021)
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000081 "A relation obtaining between an academic event series and an academic event. It is used to express that the academic event series has a specific academic event as its part."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000081 "event series of"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000081 obo:IAO_0000125)
+AnnotationAssertion(provo:wasDerivedFrom obo:AEON_0000081 <https://w3id.org/seo#hasEvent>)
 SubObjectPropertyOf(obo:AEON_0000081 obo:TXPO_0002523)
 InverseObjectProperties(obo:AEON_0000081 obo:AEON_0000084)
-ObjectPropertyDomain(obo:AEON_0000081 obo:AEON_0000002)
-ObjectPropertyRange(obo:AEON_0000081 obo:AEON_0000001)
+ObjectPropertyDomain(obo:AEON_0000081 obo:AEON_0000197)
+ObjectPropertyRange(obo:AEON_0000081 obo:AEON_0000196)
 
 # Object Property: obo:AEON_0000082 (collocated event of)
 
@@ -648,9 +649,10 @@ AnnotationAssertion(obo:AEON_0000026 obo:AEON_0000084 "{\"wikidata\": {\"uri\": 
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000084 "A relation obtaining between an academic event and an academic event series. It is used to express that the academic event is part of a specific event series."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000084 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000084 "part of event series"@en)
+AnnotationAssertion(skos:relatedMatch obo:AEON_0000084 <https://w3id.org/seo#belongsToSeries>)
 SubObjectPropertyOf(obo:AEON_0000084 obo:RO_0002012)
-ObjectPropertyDomain(obo:AEON_0000084 obo:AEON_0000001)
-ObjectPropertyRange(obo:AEON_0000084 obo:AEON_0000002)
+ObjectPropertyDomain(obo:AEON_0000084 obo:AEON_0000196)
+ObjectPropertyRange(obo:AEON_0000084 obo:AEON_0000197)
 
 # Object Property: obo:AEON_0000085 (umbrella event of)
 
