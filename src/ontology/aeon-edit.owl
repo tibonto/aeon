@@ -2318,8 +2318,8 @@ SubClassOf(obo:AEON_0000199 obo:AEON_0000002)
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000200 "A sociocultural event format that states that the primary purpose (objective) of an organised sociocultural event is to facilitate a busines communication and actions between its participants and which specifies the formal mode of this communication process.")
 AnnotationAssertion(dce:creator obo:AEON_0000200 <https://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:AEON_0000200 "business event format"@en)
-EquivalentClasses(obo:AEON_0000200 ObjectIntersectionOf(obo:AEON_0000195 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000203)))
 SubClassOf(obo:AEON_0000200 obo:AEON_0000195)
+SubClassOf(obo:AEON_0000200 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000203))
 
 # Class: obo:AEON_0000201 (knowledge exchange objective)
 
