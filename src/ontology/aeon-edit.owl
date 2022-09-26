@@ -994,37 +994,47 @@ DataPropertyDomain(obo:AEON_0000144 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_000
 
 # Data Property: obo:AEON_0000145 (acceptance rate)
 
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000145 "An academic event metric that provides a rate consiting of the number of accepted papers devided by the number of submitted papers."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000145 "acceptance rate"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000145 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000145 obo:AEON_0000158)
 DataPropertyDomain(obo:AEON_0000145 obo:AEON_0000001)
 
 # Data Property: obo:AEON_0000146 (accepted papers)
 
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000146 "An academic event metric that provides the literal value for the number of papers that where accepted to be present at an academic event."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000146 "accepted papers"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000146 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000146 obo:AEON_0000158)
 DataPropertyDomain(obo:AEON_0000146 obo:AEON_0000001)
 
 # Data Property: obo:AEON_0000147 (accepted short papers)
 
 AnnotationAssertion(rdfs:label obo:AEON_0000147 "accepted short papers"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000147 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000147 obo:AEON_0000158)
 DataPropertyDomain(obo:AEON_0000147 obo:AEON_0000001)
 
 # Data Property: obo:AEON_0000148 (coordinates)
 
+AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000148 "A data property to provide a literal value for the coordinates of an academic event."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000148 "coordinates"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000148 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000148 obo:AEON_0000155)
 
 # Data Property: obo:AEON_0000149 (event frequency)
 
 AnnotationAssertion(obo:AEON_0000026 obo:AEON_0000149 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2257\", \"label\": \"event_interval_inmonths\"}}"^^xsd:string)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000149 "The event frequency is the literal value of the number of month until the next event in a certain takes place.")
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000149 "An academic event series metric that provides the literal value of the event frequency which represents the timespan until the next event in a series takes place.")
 AnnotationAssertion(rdfs:label obo:AEON_0000149 "event frequency"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000149 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000149 obo:AEON_0000158)
 DataPropertyDomain(obo:AEON_0000149 obo:AEON_0000002)
 
 # Data Property: obo:AEON_0000150 (event status)
 
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000150 "A data property that determines whether an academic event takes/took place as planned or was canceled, delayed, planned or postponed."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000150 "It is still an open question whether a data property suffices for this."@en)
 AnnotationAssertion(rdfs:comment obo:AEON_0000150 "maps_to: DataCite:dateType 
 ---
 allowed value mapping 
@@ -1034,21 +1044,26 @@ scheduled → valid
 postponed → updated
 cancled → withdrawn"@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000150 "event status"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000150 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000150 owl:topDataProperty)
-DataPropertyDomain(obo:AEON_0000150 obo:AEON_0000001)
+DataPropertyDomain(obo:AEON_0000150 obo:AEON_0000196)
 DataPropertyRange(obo:AEON_0000150 DataOneOf("as scheduled" "canceled" "delayed" "planned" "postponed"))
 
 # Data Property: obo:AEON_0000151 (event type other)
 
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000151 "A data property that can be used to literally specify a sociocultural event format when the sublcasses of 'sociocultural event format' defined in AEON do not fit for a given event format."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000151 "event type other"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000151 <https://github.com/tibonto/aeon/issues/139>)
-SubDataPropertyOf(obo:AEON_0000151 owl:topDataProperty)
-DataPropertyDomain(obo:AEON_0000151 obo:AEON_0000004)
+AnnotationAssertion(ns:term_status obo:AEON_0000151 obo:IAO_0000125)
+SubDataPropertyOf(obo:AEON_0000151 obo:OBI_0002815)
+DataPropertyDomain(obo:AEON_0000151 obo:AEON_0000195)
 DataPropertyRange(obo:AEON_0000151 xsd:string)
 
 # Data Property: obo:AEON_0000152 (CORE ranking)
 
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000152 "An academic event metric to provide the literal value of the CORE rank. See also: https://www.core.edu.au/conference-portal"@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000152 "CORE ranking"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000152 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000152 obo:AEON_0000158)
 DataPropertyDomain(obo:AEON_0000152 obo:AEON_0000001)
 
@@ -1074,62 +1089,77 @@ AnnotationAssertion(rdfs:label obo:AEON_0000154 "event language"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000154 <https://github.com/tibonto/aeon/issues/127>)
 AnnotationAssertion(ns:term_status obo:AEON_0000154 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000154 owl:topDataProperty)
-DataPropertyDomain(obo:AEON_0000154 obo:AEON_0000001)
+DataPropertyDomain(obo:AEON_0000154 obo:AEON_0000196)
 DataPropertyRange(obo:AEON_0000154 xsd:string)
 
 # Data Property: obo:AEON_0000155 (location)
 
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000155 "A data property to provide a literal value for the location (site) of an academic event."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000155 "This is an artefact from a very early version of AEON that is most likely to be obsoleted, as there should be better ways to model the locations of an academic event."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000155 "location"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000155 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000155 owl:topDataProperty)
 DataPropertyDomain(obo:AEON_0000155 obo:BFO_0000029)
 
 # Data Property: obo:AEON_0000156 (logo)
 
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000156 "A data property to prove a logo of an academic event."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000156 "This is a data property from the very early stages of AEON and it needs to be discussed whether this is really needed and if using a data property is really the way to go."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000156 "logo"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000156 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000156 owl:topDataProperty)
 
 # Data Property: obo:AEON_0000157 (meeting URL)
 
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000157 "A data property to proved the meeting link to a virtual academic event."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000157 "meeting URL"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000157 obo:IAO_0000125)
 SubDataPropertyOf(obo:AEON_0000157 owl:topDataProperty)
 DataPropertyDomain(obo:AEON_0000157 obo:AEON_0000029)
 DataPropertyRange(obo:AEON_0000157 xsd:anyURI)
 
 # Data Property: obo:AEON_0000158 (metric)
 
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000158 "A data property to provide a literal value for an academic event metric."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000158 "Using data properties for the modeling of academic event metrics was the first adhoc way of representing this. It thus needs to be discussed and worked on."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000158 "metric"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000158 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000158 owl:topDataProperty)
 DataPropertyDomain(obo:AEON_0000158 obo:OBI_0000011)
 
 # Data Property: obo:AEON_0000159 (number of attendess)
 
 AnnotationAssertion(obo:AEON_0000026 obo:AEON_0000159 "{\"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Attendees\", \"label\": \"Attendees\"}}"^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000159 "An academic event metric that provides a literal value for the number of attendees of an academic event."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000159 "number of attendess"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000159 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000159 obo:AEON_0000158)
 DataPropertyDomain(obo:AEON_0000159 obo:AEON_0000001)
 
 # Data Property: obo:AEON_0000160 (number of tracks)
 
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000160 "An academic event metric that provides a literal value for the numer of tracks of an academic event."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000160 "number of tracks"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000160 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000160 obo:AEON_0000158)
 DataPropertyDomain(obo:AEON_0000160 obo:AEON_0000001)
 
-# Data Property: obo:AEON_0000161 (previously planned end date)
+# Data Property: obo:AEON_0000161 (previous end date)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000161 "A data property to provide the previously planned end date of  an academic event in the xsd:dateTimeStamp format, when the planned end date has been rescheduled."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000161 "A data property to provide the previously planned end date of an academic event in the xsd:dateTimeStamp format, when the planned end date has been rescheduled."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000161 "https://orcid.org/0000-0002-1595-3213"@en)
-AnnotationAssertion(rdfs:label obo:AEON_0000161 "previously planned end date"@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000161 "previous end date"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000161 <https://github.com/tibonto/aeon/issues/122>)
 AnnotationAssertion(ns:term_status obo:AEON_0000161 obo:IAO_0000125)
 SubDataPropertyOf(obo:AEON_0000161 obo:AEON_0000141)
 DataPropertyDomain(obo:AEON_0000161 obo:AEON_0000001)
 DataPropertyRange(obo:AEON_0000161 xsd:dateTime)
 
-# Data Property: obo:AEON_0000162 (previously planned start date)
+# Data Property: obo:AEON_0000162 (previous start date)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000162 "A data property to provide the previously planned start date of  an academic event in the xsd:dateTimeStamp format, when the planned start date has been rescheduled."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000162 "A data property to provide the previously planned start date of an academic event in the xsd:dateTimeStamp format, when the planned start date has been rescheduled."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000162 "https://orcid.org/0000-0002-1595-3213"@en)
-AnnotationAssertion(rdfs:label obo:AEON_0000162 "previously planned start date"@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000162 "previous start date"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000162 <https://github.com/tibonto/aeon/issues/122>)
 AnnotationAssertion(ns:term_status obo:AEON_0000162 obo:IAO_0000125)
 SubDataPropertyOf(obo:AEON_0000162 obo:AEON_0000142)
@@ -1138,21 +1168,27 @@ DataPropertyRange(obo:AEON_0000162 xsd:dateTimeStamp)
 
 # Data Property: obo:AEON_0000163 (proceeding cite count)
 
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000163 "An academic event metric to be used to provide the literal value of the number of times the proceedings of an academic event have being cited."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000163 "proceeding cite count"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000163 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000163 obo:AEON_0000158)
 DataPropertyDomain(obo:AEON_0000163 obo:AEON_0000001)
 
-# Data Property: obo:AEON_0000164 (process website)
+# Data Property: obo:AEON_0000164 (event website)
 
 AnnotationAssertion(obo:AEON_0000026 obo:AEON_0000164 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P856\", \"label\": \"official_website\"}, \"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Homepage\", \"label\": \"Homepage\"}}"^^xsd:string)
-AnnotationAssertion(rdfs:label obo:AEON_0000164 "process website"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000164 "A data property that provides the official website of a planned process."@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000164 "event website"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000164 obo:IAO_0000423)
 SubDataPropertyOf(obo:AEON_0000164 owl:topDataProperty)
 DataPropertyDomain(obo:AEON_0000164 obo:OBI_0000011)
 DataPropertyRange(obo:AEON_0000164 xsd:anyURI)
 
 # Data Property: obo:AEON_0000165 (series cite count)
 
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000165 "An academic event series metric to be used to provide the literal value of the number of times the series was being cited."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000165 "series cite count"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000165 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000165 obo:AEON_0000158)
 DataPropertyDomain(obo:AEON_0000165 obo:AEON_0000002)
 
@@ -1171,53 +1207,70 @@ DataPropertyRange(obo:AEON_0000166 xsd:normalizedString)
 
 # Data Property: obo:AEON_0000167 (event year)
 
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000167 "A data property to provide the year in which an academic event took place."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000167 "The year in which an event takes place."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000167 "The value of this property can be derived (most likely in a computational manner) from the planned start date of an academic event. It is still an open question whether this is really needed."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000167 "event year"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000167 obo:IAO_0000428)
 DataPropertyDomain(obo:AEON_0000167 obo:AEON_0000001)
 DataPropertyRange(obo:AEON_0000167 xsd:integer)
 
 # Data Property: obo:AEON_0000168 (duration)
 
 AnnotationAssertion(obo:AEON_0000026 obo:AEON_0000168 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2047\", \"label\": \"duration\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#dateOfConferenceOrEvent\", \"label\": \"Date of conference or event\"}}"^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000168 "A data property that assigns a time duration to an academic event."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000168 "duration"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000168 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000168 owl:topDataProperty)
 DataPropertyDomain(obo:AEON_0000168 obo:AEON_0000001)
 
 # Data Property: obo:AEON_0000169 (sponsor type)
 
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000169 "A data property of an event sponsor role with which to describe the kind of sponsorship that was provided."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000169 "It is still an open question as to how the various types of sponsor roles need to be modeled with regard to differentiating between something like \"gold sponsor\" and other possible sponsor demarcatins used in different contexts."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000169 "sponsor type"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000169 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000169 owl:topDataProperty)
 DataPropertyDomain(obo:AEON_0000169 obo:AEON_0000015)
 DataPropertyRange(obo:AEON_0000169 xsd:string)
 
 # Data Property: obo:AEON_0000170 (submitted papers)
 
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000170 "An academic event metric that provides the literal value for the number of papers that where submitted to be present at an academic event."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000170 "submitted papers"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000170 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000170 obo:AEON_0000158)
 DataPropertyDomain(obo:AEON_0000170 obo:AEON_0000001)
 
-# Data Property: obo:AEON_0000171 (venue)
+# Data Property: obo:AEON_0000171 (event venue literal)
 
-AnnotationAssertion(rdfs:label obo:AEON_0000171 "venue"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000171 "A data property to provide a literal value for more information about an event venue."@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000171 "event venue literal"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000171 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000171 obo:AEON_0000155)
 DataPropertyDomain(obo:AEON_0000171 obo:AEON_0000025)
 
 # Data Property: obo:AEON_0000172 (venue website)
 
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000172 "A data property to provide a website for an event venue."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000172 "venue website"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000172 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000172 obo:AEON_0000171)
 DataPropertyDomain(obo:AEON_0000172 obo:AEON_0000025)
 DataPropertyRange(obo:AEON_0000172 xsd:anyURI)
 
 # Data Property: obo:AEON_0000173 (summary)
 
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000173 "A data property that can be used to provide further summarizing information on an academic event."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000173 "summary"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000173 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000173 owl:topDataProperty)
 
 # Data Property: obo:AEON_0000174 (summary licence)
 
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000174 "A data property that associates a licence to a summary data property value."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000174 "summary licence"@en)
-SubDataPropertyOf(obo:AEON_0000174 obo:AEON_0000173)
+AnnotationAssertion(ns:term_status obo:AEON_0000174 obo:IAO_0000428)
 
 
 
