@@ -156,6 +156,7 @@ Declaration(Class(obo:AEON_0000212))
 Declaration(Class(obo:AEON_0000213))
 Declaration(Class(obo:AEON_0000214))
 Declaration(Class(obo:AEON_0000215))
+Declaration(Class(obo:AEON_0000220))
 Declaration(Class(obo:attendance_fee_specification))
 Declaration(Class(obo:attendee))
 Declaration(Class(obo:committee_chair))
@@ -2378,6 +2379,14 @@ AnnotationAssertion(ns:term_status obo:AEON_0000215 obo:IAO_0000125)
 AnnotationAssertion(skos:closeMatch obo:AEON_0000215 <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#TutorialSeries>)
 EquivalentClasses(obo:AEON_0000215 ObjectIntersectionOf(obo:AEON_0000002 ObjectSomeValuesFrom(obo:AEON_0000081 obo:AEON_0000119)))
 SubClassOf(obo:AEON_0000215 obo:AEON_0000002)
+
+# Class: obo:AEON_0000220 (event registration deadline)
+
+AnnotationAssertion(dce:creator obo:AEON_0000220 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000220 "event registration deadline"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000220 obo:IAO_0000423)
+AnnotationAssertion(ns:term_status obo:AEON_0000220 "A deadline specification that specifies until when a registration process has to be completed"@en)
+SubClassOf(obo:AEON_0000220 obo:AEON_0000060)
 
 # Class: obo:attendance_fee_specification (attendance fee specification)
 
