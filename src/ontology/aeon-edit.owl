@@ -1658,7 +1658,6 @@ AnnotationAssertion(rdfs:label obo:AEON_0000061 "abstract deadline"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000061 <https://github.com/tibonto/aeon/issues/125>)
 AnnotationAssertion(ns:term_status obo:AEON_0000061 obo:IAO_0000123)
 SubClassOf(obo:AEON_0000061 obo:AEON_0000067)
-SubClassOf(obo:AEON_0000061 ObjectSomeValuesFrom(obo:BFO_0000050 obo:AEON_0000071))
 
 # Class: obo:AEON_0000062 (camera-ready deadline)
 
@@ -1751,6 +1750,7 @@ AnnotationAssertion(rdfs:seeAlso obo:AEON_0000070 <https://github.com/tibonto/ae
 AnnotationAssertion(ns:term_status obo:AEON_0000070 obo:IAO_0000123)
 AnnotationAssertion(skos:altLabel obo:AEON_0000070 "CFP"@en)
 SubClassOf(obo:AEON_0000070 obo:AEON_0000182)
+SubClassOf(obo:AEON_0000070 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000065))
 DisjointClasses(obo:AEON_0000070 obo:AEON_0000071)
 
 # Class: obo:AEON_0000071 (call for abstracts)
@@ -1763,6 +1763,7 @@ AnnotationAssertion(rdfs:label obo:AEON_0000071 "call for abstracts"@de)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000071 <https://github.com/tibonto/aeon/issues/125>)
 AnnotationAssertion(ns:term_status obo:AEON_0000071 obo:IAO_0000123)
 SubClassOf(obo:AEON_0000071 obo:AEON_0000182)
+SubClassOf(obo:AEON_0000071 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000061))
 
 # Class: obo:AEON_0000090 (planned process name)
 
@@ -2156,6 +2157,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000183 "A call for submissions tha
 AnnotationAssertion(dce:creator obo:AEON_0000183 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:AEON_0000183 "call for posters"@en)
 SubClassOf(obo:AEON_0000183 obo:AEON_0000182)
+SubClassOf(obo:AEON_0000183 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000066))
 
 # Class: obo:AEON_0000184 (call for videos)
 
