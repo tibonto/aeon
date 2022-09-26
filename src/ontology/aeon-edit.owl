@@ -2261,7 +2261,10 @@ AnnotationAssertion(obo:IAO_0000118 obo:AEON_0000195 "event format")
 AnnotationAssertion(dce:creator obo:AEON_0000195 <https://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:AEON_0000195 "sociocultural event format"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000195 obo:IAO_0000428)
-EquivalentClasses(obo:AEON_0000195 ObjectIntersectionOf(obo:IAO_0000104 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000028) ObjectSomeValuesFrom(obo:BFO_0000051 obo:IAO_0000001) ObjectSomeValuesFrom(obo:BFO_0000051 obo:IAO_0000005) ObjectSomeValuesFrom(obo:BFO_0000051 obo:IAO_0000007)))
+SubClassOf(obo:AEON_0000195 obo:IAO_0000104)
+SubClassOf(obo:AEON_0000195 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000028))
+SubClassOf(obo:AEON_0000195 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000219))
+SubClassOf(obo:AEON_0000195 ObjectSomeValuesFrom(obo:BFO_0000051 obo:IAO_0000001))
 
 # Class: obo:AEON_0000196 (organized sociocultural event)
 
