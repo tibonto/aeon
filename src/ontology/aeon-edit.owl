@@ -269,6 +269,7 @@ Declaration(DataProperty(obo:AEON_0000171))
 Declaration(DataProperty(obo:AEON_0000172))
 Declaration(DataProperty(obo:AEON_0000173))
 Declaration(DataProperty(obo:AEON_0000174))
+Declaration(DataProperty(obo:AEON_0000216))
 Declaration(DataProperty(obo:OBI_0002815))
 Declaration(NamedIndividual(ex:Person3))
 Declaration(NamedIndividual(ex:Person4))
@@ -1271,6 +1272,14 @@ SubDataPropertyOf(obo:AEON_0000173 owl:topDataProperty)
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000174 "A data property that associates a licence to a summary data property value."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000174 "summary licence"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000174 obo:IAO_0000428)
+
+# Data Property: obo:AEON_0000216 (submission link)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000216 "A data property of a call for submission that is used to provide the URL of the submission system which ought to be used."@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000216 "submission link"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000216 obo:IAO_0000125)
+DataPropertyDomain(obo:AEON_0000216 obo:AEON_0000182)
+DataPropertyRange(obo:AEON_0000216 xsd:anyURI)
 
 
 
