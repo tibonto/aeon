@@ -2382,10 +2382,11 @@ SubClassOf(obo:AEON_0000215 obo:AEON_0000002)
 
 # Class: obo:AEON_0000220 (event registration deadline)
 
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000220 "A deadline specification that specifies until when some kind of registration or RSVP process has to be completed in order to be allowed to attend a sociocultural event."@en)
+AnnotationAssertion(obo:IAO_0000118 obo:AEON_0000220 "RSVP deadline"@en)
 AnnotationAssertion(dce:creator obo:AEON_0000220 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:AEON_0000220 "event registration deadline"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000220 obo:IAO_0000423)
-AnnotationAssertion(ns:term_status obo:AEON_0000220 "A deadline specification that specifies until when a registration process has to be completed"@en)
 SubClassOf(obo:AEON_0000220 obo:AEON_0000060)
 
 # Class: obo:attendance_fee_specification (attendance fee specification)
