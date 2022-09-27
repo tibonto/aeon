@@ -1092,7 +1092,7 @@ AnnotationAssertion(ns:term_status obo:AEON_0000156 obo:IAO_0000428)
 
 # Data Property: obo:AEON_0000157 (meeting URL)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000157 "A data property to proved the meeting link to a virtual academic event."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000157 "A data property to provide the meeting link to a virtual event."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000157 "meeting URL"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000157 obo:IAO_0000125)
 DataPropertyDomain(obo:AEON_0000157 obo:AEON_0000029)
