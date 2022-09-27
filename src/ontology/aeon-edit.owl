@@ -2480,13 +2480,26 @@ SubClassOf(obo:wikiCFP_ID obo:IAO_0000578)
 #   Named Individuals
 ############################
 
-# Individual: <https://doi.org/10.25798/qsdh-en13> (_DOI:)
+# Individual: <https://doi.org/10.25798/qsdh-en13> (<https://doi.org/10.25798/qsdh-en13>)
 
-AnnotationAssertion(rdfs:label <https://doi.org/10.25798/qsdh-en13> "_DOI:")
+ClassAssertion(obo:AEON_0000016 <https://doi.org/10.25798/qsdh-en13>)
 
 # Individual: <https://orcid.org/0000-0002-1595-3213> (<https://orcid.org/0000-0002-1595-3213>)
 
 AnnotationAssertion(rdfs:comment <https://orcid.org/0000-0002-1595-3213> "ORCID of Philip Strömert")
+ClassAssertion(obo:AEON_0000019 <https://orcid.org/0000-0002-1595-3213>)
+
+# Individual: <https://orcid.org/0000-0003-2499-7741> (<https://orcid.org/0000-0003-2499-7741>)
+
+ClassAssertion(obo:AEON_0000019 <https://orcid.org/0000-0003-2499-7741>)
+
+# Individual: <https://ror.org/04aj4c181> (<https://ror.org/04aj4c181>)
+
+ClassAssertion(obo:AEON_0000020 <https://ror.org/04aj4c181>)
+
+# Individual: confid:Information_Science (confid:Information_Science)
+
+ClassAssertion(obo:AEON_0000027 confid:Academic_Field:Information_Science)
 
 # Individual: confid:VIVO_2021 (Event:VIVO_2021)
 
@@ -2496,6 +2509,7 @@ Due to the pandemic situation, the VIVO Project is organizing a free, virtual ev
 AnnotationAssertion(rdfs:label confid:Event:VIVO_2021 "Event:VIVO_2021")
 ClassAssertion(obo:AEON_0000001 confid:Event:VIVO_2021)
 ObjectPropertyAssertion(obo:AEON_0000032 confid:Event:VIVO_2021 confid:Event:VIVO_2021_format)
+ObjectPropertyAssertion(obo:AEON_0000040 confid:Event:VIVO_2021 confid:Academic_Field:Information_Science)
 ObjectPropertyAssertion(obo:AEON_0000041 confid:Event:VIVO_2021 confid:Event:VIVO_2021_topic1)
 ObjectPropertyAssertion(obo:AEON_0000041 confid:Event:VIVO_2021 confid:Event:VIVO_2021_topic2)
 ObjectPropertyAssertion(obo:AEON_0000041 confid:Event:VIVO_2021 confid:Event:VIVO_2021_topic3)
@@ -2505,6 +2519,7 @@ ObjectPropertyAssertion(obo:AEON_0000084 confid:Event:VIVO_2021 confid:Event_Ser
 ObjectPropertyAssertion(obo:BFO_0000055 confid:Event:VIVO_2021 confid:Event:VIVO_2021_role1)
 ObjectPropertyAssertion(obo:IAO_0000235 confid:Event:VIVO_2021 confid:Event:VIVO_2021_id)
 ObjectPropertyAssertion(obo:IAO_0000235 confid:Event:VIVO_2021 confid:Event:VIVO_2021_name)
+ObjectPropertyAssertion(obo:IAO_0000235 confid:Event:VIVO_2021 <https://www.wikidata.org/wiki/Q108430522>)
 DataPropertyAssertion(Annotation(provo:wasDerivedFrom "https://vivoconference.org/vivo2020/schedule/") obo:AEON_0000141 confid:Event:VIVO_2021 "2021-06-25T21:00:00Z"^^xsd:dateTimeStamp)
 DataPropertyAssertion(Annotation(provo:wasDerivedFrom "https://vivoconference.org/vivo2020/schedule/") obo:AEON_0000142 confid:Event:VIVO_2021 "2021-06-23T17:00:00Z"^^xsd:dateTimeStamp)
 DataPropertyAssertion(obo:AEON_0000164 confid:Event:VIVO_2021 "https://vivoconference.org/vivo2021"^^xsd:anyURI)
@@ -2679,22 +2694,26 @@ AnnotationAssertion(rdfs:label confid:Event_Series:VIVO_format "Event_Series:VIV
 # Individual: <https://www.confident-conference.org/index.php/Organization:1> (_Organization:1)
 
 AnnotationAssertion(rdfs:label <https://www.confident-conference.org/index.php/Organization:1> "_Organization:1")
+ClassAssertion(obo:OBI_0000245 <https://www.confident-conference.org/index.php/Organization:1>)
 
 # Individual: <https://www.confident-conference.org/index.php/Person:1> (_Person:1)
 
 AnnotationAssertion(rdfs:label <https://www.confident-conference.org/index.php/Person:1> "_Person:1")
+ClassAssertion(obo:NCBITaxon_9606 <https://www.confident-conference.org/index.php/Person:1>)
 
 # Individual: <https://www.confident-conference.org/index.php/Person:2> (_Person:2)
 
 AnnotationAssertion(rdfs:label <https://www.confident-conference.org/index.php/Person:2> "_Person:2")
+ClassAssertion(obo:NCBITaxon_9606 <https://www.confident-conference.org/index.php/Person:2>)
 
 # Individual: <https://www.confident-conference.org/index.php/Person:3> (_Person:3)
 
 AnnotationAssertion(rdfs:label <https://www.confident-conference.org/index.php/Person:3> "_Person:3")
+ClassAssertion(obo:NCBITaxon_9606 <https://www.confident-conference.org/index.php/Person:3>)
 
-# Individual: <https://www.wikidata.org/wiki/Q108430522> (_WikidataID:)
+# Individual: <https://www.wikidata.org/wiki/Q108430522> (<https://www.wikidata.org/wiki/Q108430522>)
 
-AnnotationAssertion(rdfs:label <https://www.wikidata.org/wiki/Q108430522> "_WikidataID:")
+ClassAssertion(obo:AEON_0000021 <https://www.wikidata.org/wiki/Q108430522>)
 
 
 DisjointClasses(obo:AEON_0000061 obo:AEON_0000062 obo:AEON_0000063 obo:AEON_0000065 obo:AEON_0000066 obo:AEON_0000068 obo:AEON_0000069)
