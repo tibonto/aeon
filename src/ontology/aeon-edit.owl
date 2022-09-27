@@ -1183,16 +1183,6 @@ SubDataPropertyOf(obo:AEON_0000166 obo:OBI_0002815)
 DataPropertyDomain(obo:AEON_0000166 obo:AEON_0000030)
 DataPropertyRange(obo:AEON_0000166 xsd:normalizedString)
 
-# Data Property: obo:AEON_0000167 (event year)
-
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000167 "A data property to provide the year in which an academic event took place."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000167 "The year in which an event takes place."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000167 "The value of this property can be derived (most likely in a computational manner) from the planned start date of an academic event. It is still an open question whether this is really needed."@en)
-AnnotationAssertion(rdfs:label obo:AEON_0000167 "event year"@en)
-AnnotationAssertion(ns:term_status obo:AEON_0000167 obo:IAO_0000428)
-DataPropertyDomain(obo:AEON_0000167 obo:AEON_0000001)
-DataPropertyRange(obo:AEON_0000167 xsd:integer)
-
 # Data Property: obo:AEON_0000168 (obsolete_duration)
 
 AnnotationAssertion(obo:AEON_0000026 obo:AEON_0000168 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2047\", \"label\": \"duration\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#dateOfConferenceOrEvent\", \"label\": \"Date of conference or event\"}}"^^xsd:string)
