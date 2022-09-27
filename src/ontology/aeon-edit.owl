@@ -233,7 +233,6 @@ Declaration(DataProperty(obo:AEON_0000152))
 Declaration(DataProperty(obo:AEON_0000153))
 Declaration(DataProperty(obo:AEON_0000154))
 Declaration(DataProperty(obo:AEON_0000155))
-Declaration(DataProperty(obo:AEON_0000156))
 Declaration(DataProperty(obo:AEON_0000157))
 Declaration(DataProperty(obo:AEON_0000158))
 Declaration(DataProperty(obo:AEON_0000159))
@@ -1081,13 +1080,6 @@ AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000155 "This is an artefact from a
 AnnotationAssertion(rdfs:label obo:AEON_0000155 "location"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000155 obo:IAO_0000428)
 DataPropertyDomain(obo:AEON_0000155 obo:BFO_0000029)
-
-# Data Property: obo:AEON_0000156 (logo)
-
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000156 "A data property to prove a logo of an academic event."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000156 "This is a data property from the very early stages of AEON and it needs to be discussed whether this is really needed and if using a data property is really the way to go."@en)
-AnnotationAssertion(rdfs:label obo:AEON_0000156 "logo"@en)
-AnnotationAssertion(ns:term_status obo:AEON_0000156 obo:IAO_0000428)
 
 # Data Property: obo:AEON_0000157 (obsolete_meeting URL)
 
