@@ -927,7 +927,7 @@ DataPropertyRange(obo:AEON_0000091 xsd:string)
 AnnotationAssertion(obo:AEON_0000026 obo:AEON_0000140 "{\"crossref\": {\"api_proceedings_endpoint_uri\": \"https://api.crossref.org/types/proceedings/works?select=event\", \"json_api_key\": {\"event\": \"number\"}}}"^^xsd:string)
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000140 "The ordinal number of an academic event, if it is a part of an event series.")
 AnnotationAssertion(rdfs:label obo:AEON_0000140 "event number"@en)
-DataPropertyDomain(obo:AEON_0000140 obo:AEON_0000001)
+DataPropertyDomain(obo:AEON_0000140 obo:AEON_0000196)
 DataPropertyRange(obo:AEON_0000140 xsd:integer)
 
 # Data Property: obo:AEON_0000141 (end date)
