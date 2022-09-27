@@ -1193,12 +1193,14 @@ AnnotationAssertion(ns:term_status obo:AEON_0000167 obo:IAO_0000428)
 DataPropertyDomain(obo:AEON_0000167 obo:AEON_0000001)
 DataPropertyRange(obo:AEON_0000167 xsd:integer)
 
-# Data Property: obo:AEON_0000168 (duration)
+# Data Property: obo:AEON_0000168 (obsolete_duration)
 
 AnnotationAssertion(obo:AEON_0000026 obo:AEON_0000168 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2047\", \"label\": \"duration\"}, \"gnd\": {\"uri\": \"https://d-nb.info/standards/elementset/gnd#dateOfConferenceOrEvent\", \"label\": \"Date of conference or event\"}}"^^xsd:string)
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000168 "A data property that assigns a time duration to an academic event."@en)
-AnnotationAssertion(rdfs:label obo:AEON_0000168 "duration"@en)
-AnnotationAssertion(ns:term_status obo:AEON_0000168 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000168 "not needed, as it could be calculated from the start and end data properties"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:AEON_0000168 "obsolete_duration"@en)
+AnnotationAssertion(owl:deprecated obo:AEON_0000168 "true"^^xsd:boolean)
+AnnotationAssertion(ns:term_status obo:AEON_0000168 obo:IAO_0000103)
 SubDataPropertyOf(obo:AEON_0000168 owl:topDataProperty)
 DataPropertyDomain(obo:AEON_0000168 obo:AEON_0000001)
 
