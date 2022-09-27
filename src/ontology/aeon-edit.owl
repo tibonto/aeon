@@ -969,7 +969,7 @@ DataPropertyRange(obo:AEON_0000143 xsd:string)
 
 AnnotationAssertion(obo:IAO_0000112 obo:AEON_0000144 "contact@academic-event.org"@en)
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000144 "This data property associates an email adress with a contributor."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000144 "It needs to be discussed, if we need this information to be modeled more finegrained using e.g. iao:'email address' (see alsohttps://github.com/information-artifact-ontology/IAO/issues/130).
+AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000144 "It needs to be discussed, if we need this information to be modeled more finegrained using e.g. iao:'email address' (see also https://github.com/information-artifact-ontology/IAO/issues/130).
 For now it seems sufficient to have a data property."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000144 <https://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:AEON_0000144 "email address value"@en)
