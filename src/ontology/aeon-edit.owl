@@ -2264,7 +2264,6 @@ AnnotationAssertion(ns:term_status obo:AEON_0000196 obo:IAO_0000428)
 AnnotationAssertion(skos:closeMatch obo:AEON_0000196 <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent>)
 EquivalentClasses(obo:AEON_0000196 ObjectIntersectionOf(obo:OBI_0000011 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000195)))
 SubClassOf(obo:AEON_0000196 obo:OBI_0000011)
-SubClassOf(obo:AEON_0000196 ObjectSomeValuesFrom(obo:BFO_0000055 ObjectSomeValuesFrom(obo:RO_0000059 obo:AEON_0000004)))
 
 # Class: obo:AEON_0000197 (organized sociocultural event series)
 
