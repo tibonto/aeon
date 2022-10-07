@@ -733,6 +733,7 @@ SubDataPropertyOf(obo:AEON_0000146 obo:AEON_0000158)
 # Data Property: obo:AEON_0000147 (accepted short papers)
 
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000147 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000147 "An academic event metric that provides the literal value for the number of short papers that where accepted to be present at an academic event.")
 AnnotationAssertion(rdfs:label obo:AEON_0000147 "accepted short papers"@en)
 SubDataPropertyOf(obo:AEON_0000147 obo:AEON_0000158)
 
@@ -2301,7 +2302,9 @@ DataPropertyAssertion(obo:OBI_0002815 confid:Event:VIVO_2021_fee "The VIVO Confe
 
 AnnotationAssertion(rdfs:label confid:Event:VIVO_2021_format "Event:VIVO_2021_format")
 AnnotationAssertion(provo:wasDerivedFrom confid:Event:VIVO_2021_format "https://vivoconference.org/vivo2021/news/call-for-proposals")
-ClassAssertion(ObjectIntersectionOf(obo:AEON_0000004 obo:AEON_0000102 obo:AEON_0000190) confid:Event:VIVO_2021_format)
+ClassAssertion(obo:AEON_0000004 confid:Event:VIVO_2021_format)
+ClassAssertion(obo:AEON_0000102 confid:Event:VIVO_2021_format)
+ClassAssertion(obo:AEON_0000190 confid:Event:VIVO_2021_format)
 ObjectPropertyAssertion(obo:BFO_0000051 confid:Event:VIVO_2021_format confid:Event:VIVO_2021_CfP)
 ObjectPropertyAssertion(obo:BFO_0000051 confid:Event:VIVO_2021_format confid:Event:VIVO_2021_fee)
 ObjectPropertyAssertion(obo:BFO_0000051 confid:Event:VIVO_2021_format confid:Event:VIVO_2021_schedule)
@@ -2457,5 +2460,4 @@ ClassAssertion(obo:AEON_0000021 <https://www.wikidata.org/wiki/Q108430522>)
 
 DisjointClasses(obo:AEON_0000061 obo:AEON_0000062 obo:AEON_0000063 obo:AEON_0000065 obo:AEON_0000066 obo:AEON_0000068 obo:AEON_0000069)
 DisjointClasses(obo:AEON_0000189 obo:AEON_0000190 obo:AEON_0000191)
-AnnotationAssertion(dce:source <https://doi.org/10.25798/frnp-sn04> "https://commons.datacite.org/doi.org/10.25798/qsdh-en13")
 )

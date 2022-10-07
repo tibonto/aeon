@@ -22,7 +22,6 @@ edit_format: owl
 exclude_tautologies: structural
 export_formats:
 - owl
-- obo
 export_project_yaml: false
 git_main_branch: main
 git_user: 'StroemPhi'
