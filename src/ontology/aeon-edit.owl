@@ -240,6 +240,7 @@ Declaration(NamedIndividual(confid:Event:VIVO_2021_CfP))
 Declaration(NamedIndividual(confid:Event:VIVO_2021_condition1))
 Declaration(NamedIndividual(confid:Event:VIVO_2021_deadline1))
 Declaration(NamedIndividual(confid:Event:VIVO_2021_deadline2))
+Declaration(NamedIndividual(confid:Event:VIVO_2021_description))
 Declaration(NamedIndividual(confid:Event:VIVO_2021_fee))
 Declaration(NamedIndividual(confid:Event:VIVO_2021_format))
 Declaration(NamedIndividual(confid:Event:VIVO_2021_id))
@@ -251,8 +252,6 @@ Declaration(NamedIndividual(confid:Event:VIVO_2021_role3))
 Declaration(NamedIndividual(confid:Event:VIVO_2021_role4))
 Declaration(NamedIndividual(confid:Event:VIVO_2021_schedule))
 Declaration(NamedIndividual(confid:Event:VIVO_2021_session1))
-Declaration(NamedIndividual(confid:Event:VIVO_2021_sponsor1))
-Declaration(NamedIndividual(confid:Event:VIVO_2021_sponsor2))
 Declaration(NamedIndividual(confid:Event:VIVO_2021_talk1))
 Declaration(NamedIndividual(confid:Event:VIVO_2021_talk1_format))
 Declaration(NamedIndividual(confid:Event:VIVO_2021_talk2))
@@ -265,7 +264,6 @@ Declaration(NamedIndividual(confid:Event_Series:VIVO_format))
 Declaration(NamedIndividual(<https://www.confident-conference.org/index.php/Organization:1>))
 Declaration(NamedIndividual(<https://www.confident-conference.org/index.php/Person:1>))
 Declaration(NamedIndividual(<https://www.confident-conference.org/index.php/Person:2>))
-Declaration(NamedIndividual(<https://www.confident-conference.org/index.php/Person:3>))
 Declaration(NamedIndividual(<https://www.wikidata.org/wiki/Q108430522>))
 Declaration(AnnotationProperty(obo:AEON_0000026))
 Declaration(AnnotationProperty(dcterms:description))
@@ -634,7 +632,6 @@ AnnotationAssertion(rdfs:label obo:AEON_0000217 "has Twitter account"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000217 obo:IAO_0000423)
 ObjectPropertyDomain(obo:AEON_0000217 obo:BFO_0000001)
 ObjectPropertyRange(obo:AEON_0000217 obo:AEON_0000185)
-
 
 
 ############################
@@ -2221,9 +2218,6 @@ ClassAssertion(obo:AEON_0000027 confid:Academic_Field:Information_Science)
 
 # Individual: confid:VIVO_2021 (Event:VIVO_2021)
 
-AnnotationAssertion(dcterms:description confid:Event:VIVO_2021 "Dear VIVO community,
-We are happy to announce that the 11th VIVO conference will be held online from June 16 to 18, 2020.
-Due to the pandemic situation, the VIVO Project is organizing a free, virtual event and we’ll be inviting everyone in the global VIVO community to participate.")
 AnnotationAssertion(rdfs:label confid:Event:VIVO_2021 "Event:VIVO_2021")
 ClassAssertion(obo:AEON_0000001 confid:Event:VIVO_2021)
 ObjectPropertyAssertion(obo:AEON_0000032 confid:Event:VIVO_2021 confid:Event:VIVO_2021_format)
@@ -2238,6 +2232,7 @@ ObjectPropertyAssertion(obo:BFO_0000055 confid:Event:VIVO_2021 confid:Event:VIVO
 ObjectPropertyAssertion(obo:IAO_0000235 confid:Event:VIVO_2021 confid:Event:VIVO_2021_id)
 ObjectPropertyAssertion(obo:IAO_0000235 confid:Event:VIVO_2021 confid:Event:VIVO_2021_name)
 ObjectPropertyAssertion(obo:IAO_0000235 confid:Event:VIVO_2021 <https://www.wikidata.org/wiki/Q108430522>)
+ObjectPropertyAssertion(obo:RO_0000057 confid:Event:VIVO_2021 confid:Event:VIVO_2021_orga_committee)
 DataPropertyAssertion(Annotation(provo:wasDerivedFrom "https://vivoconference.org/vivo2020/schedule/") obo:AEON_0000141 confid:Event:VIVO_2021 "2021-06-25T21:00:00Z"^^xsd:dateTimeStamp)
 DataPropertyAssertion(Annotation(provo:wasDerivedFrom "https://vivoconference.org/vivo2020/schedule/") obo:AEON_0000142 confid:Event:VIVO_2021 "2021-06-23T17:00:00Z"^^xsd:dateTimeStamp)
 DataPropertyAssertion(obo:AEON_0000164 confid:Event:VIVO_2021 "https://vivoconference.org/vivo2021"^^xsd:anyURI)
@@ -2250,6 +2245,9 @@ ClassAssertion(obo:AEON_0000182 confid:Event:VIVO_2021_CfP)
 ObjectPropertyAssertion(obo:BFO_0000051 confid:Event:VIVO_2021_CfP confid:Event:VIVO_2021_condition1)
 ObjectPropertyAssertion(obo:BFO_0000051 confid:Event:VIVO_2021_CfP confid:Event:VIVO_2021_deadline1)
 ObjectPropertyAssertion(obo:BFO_0000051 confid:Event:VIVO_2021_CfP confid:Event:VIVO_2021_deadline2)
+ObjectPropertyAssertion(obo:BFO_0000051 confid:Event:VIVO_2021_CfP confid:Event:VIVO_2021_topic1)
+ObjectPropertyAssertion(obo:BFO_0000051 confid:Event:VIVO_2021_CfP confid:Event:VIVO_2021_topic2)
+ObjectPropertyAssertion(obo:BFO_0000051 confid:Event:VIVO_2021_CfP confid:Event:VIVO_2021_topic3)
 DataPropertyAssertion(obo:AEON_0000216 confid:Event:VIVO_2021_CfP "https://openreview.net/group?id=vivoconference.org/VIVO/2021/Conference"^^xsd:anyURI)
 DataPropertyAssertion(obo:OBI_0002815 confid:Event:VIVO_2021_CfP "VIVO 2021 Call for Proposals is now open!
 Present your work and ideas at VIVO 2021
@@ -2267,7 +2265,6 @@ DataPropertyAssertion(obo:OBI_0002815 confid:Event:VIVO_2021_condition1 "The VIV
 AnnotationAssertion(rdfs:label confid:Event:VIVO_2021_deadline1 "Event:VIVO_2021_deadline1")
 AnnotationAssertion(provo:wasDerivedFrom confid:Event:VIVO_2021_deadline1 "https://vivoconference.org/vivo2021/news/call-for-proposals")
 ClassAssertion(obo:AEON_0000067 confid:Event:VIVO_2021_deadline1)
-ObjectPropertyAssertion(obo:BFO_0000051 confid:Event:VIVO_2021_deadline1 confid:Event:VIVO_2021_deadline1)
 DataPropertyAssertion(Annotation(dce:source "https://openreview.net/group?id=vivoconference.org/VIVO/2021/Conference") obo:AEON_0000074 confid:Event:VIVO_2021_deadline1 "2021-05-17T23:59:00Z"^^xsd:dateTimeStamp)
 
 # Individual: confid:VIVO_2021_deadline2 (Event:VIVO_2021_deadline2)
@@ -2276,6 +2273,12 @@ AnnotationAssertion(rdfs:label confid:Event:VIVO_2021_deadline2 "Event:VIVO_2021
 AnnotationAssertion(provo:wasDerivedFrom confid:Event:VIVO_2021_deadline2 "https://vivoconference.org/vivo2021/news/call-for-proposals")
 ClassAssertion(obo:AEON_0000064 confid:Event:VIVO_2021_deadline2)
 DataPropertyAssertion(obo:AEON_0000074 confid:Event:VIVO_2021_deadline2 "2021-05-21T00:00:00Z"^^xsd:dateTime)
+
+# Individual: confid:VIVO_2021_description (confid:VIVO_2021_description)
+
+ClassAssertion(obo:AEON_0000224 confid:Event:VIVO_2021_description)
+ObjectPropertyAssertion(obo:BFO_0000051 confid:Event:VIVO_2021_description confid:Event:VIVO_2021_format)
+ObjectPropertyAssertion(obo:IAO_0000136 confid:Event:VIVO_2021_description confid:Event:VIVO_2021)
 
 # Individual: confid:VIVO_2021_fee (Event:VIVO_2021_fee)
 
@@ -2293,9 +2296,6 @@ ClassAssertion(ObjectIntersectionOf(obo:AEON_0000004 obo:AEON_0000102 obo:AEON_0
 ObjectPropertyAssertion(obo:BFO_0000051 confid:Event:VIVO_2021_format confid:Event:VIVO_2021_CfP)
 ObjectPropertyAssertion(obo:BFO_0000051 confid:Event:VIVO_2021_format confid:Event:VIVO_2021_fee)
 ObjectPropertyAssertion(obo:BFO_0000051 confid:Event:VIVO_2021_format confid:Event:VIVO_2021_schedule)
-ObjectPropertyAssertion(obo:BFO_0000051 confid:Event:VIVO_2021_format confid:Event:VIVO_2021_topic1)
-ObjectPropertyAssertion(obo:BFO_0000051 confid:Event:VIVO_2021_format confid:Event:VIVO_2021_topic2)
-ObjectPropertyAssertion(obo:BFO_0000051 confid:Event:VIVO_2021_format confid:Event:VIVO_2021_topic3)
 DataPropertyAssertion(Annotation(provo:wasDerivedFrom "https://vivoconference.org/vivo2021/news/call-for-proposals") obo:OBI_0002815 confid:Event:VIVO_2021_format "As last year, VIVO 2021 will be an online, virtual conference. We encourage submissions from people who are new to the VIVO community, and formats that work well online. We are planning two session lengths: presentations (20 minutes) &  lightning talks (6 minutes). Your presentation or lightning talk may take the form of a demonstration (screen share in Zoom), a panel discussion, an interview, a virtual poster (single slide), a brainstorming session, an interactive survey session, or other. The lightning talk can be seen as a replacement for the poster session that will not take part this year. If you would have submitted a poster, please consider submitting your idea as a lightning talk."@en)
 
 # Individual: confid:VIVO_2021_id (Event:VIVO_2021_id)
