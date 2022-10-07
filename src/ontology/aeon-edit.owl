@@ -758,11 +758,10 @@ SubDataPropertyOf(obo:AEON_0000148 obo:AEON_0000155)
 # Data Property: obo:AEON_0000149 (event frequency)
 
 AnnotationAssertion(obo:AEON_0000026 obo:AEON_0000149 "{\"wikidata\": {\"uri\": \"https://www.wikidata.org/wiki/Property:P2257\", \"label\": \"event_interval_inmonths\"}}"^^xsd:string)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000149 "An academic event series metric that provides the literal value of the event frequency which represents the timespan until the next event in a series takes place.")
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000149 "An data property that provides the literal value of the timespan until the next event in a series takes place.")
 AnnotationAssertion(rdfs:label obo:AEON_0000149 "event frequency"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000149 obo:IAO_0000428)
-SubDataPropertyOf(obo:AEON_0000149 obo:AEON_0000158)
-DataPropertyDomain(obo:AEON_0000149 obo:AEON_0000002)
+DataPropertyDomain(obo:AEON_0000149 obo:AEON_0000128)
 
 # Data Property: obo:AEON_0000150 (event status)
 
