@@ -1448,6 +1448,7 @@ AnnotationAssertion(rdfs:label obo:AEON_0000090 "planned process name"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000090 <https://github.com/tibonto/aeon/issues/132>)
 EquivalentClasses(obo:AEON_0000090 ObjectIntersectionOf(obo:IAO_0020000 ObjectAllValuesFrom(obo:IAO_0000219 obo:OBI_0000011)))
 SubClassOf(obo:AEON_0000090 ObjectSomeValuesFrom(obo:BFO_0000050 ObjectSomeValuesFrom(obo:IAO_0000219 obo:OBI_0000011)))
+SubClassOf(obo:AEON_0000090 DataSomeValuesFrom(obo:AEON_0000091 xsd:string))
 
 # Class: obo:AEON_0000100 (colloquium format)
 
