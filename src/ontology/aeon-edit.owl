@@ -1132,10 +1132,11 @@ SubClassOf(obo:AEON_0000013 ObjectAllValuesFrom(obo:RO_0000081 obo:NCBITaxon_960
 
 # Class: obo:AEON_0000014 (keynote speaker role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000014 "The keynote speaker role inheres in a person that contributes to a planned process by holding a keynote speech at a planned process."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000014 "The keynote speaker role inheres in a person that participates in an organized sociocultural event by holding a keynote speech."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000014 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000014 "keynote speaker role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000014 "https://github.com/tibonto/aeon/issues/144")
+EquivalentClasses(obo:AEON_0000014 ObjectIntersectionOf(obo:AEON_0000013 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(obo:RO_0000056 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000114)))))
 SubClassOf(obo:AEON_0000014 obo:AEON_0000013)
 
 # Class: obo:AEON_0000015 (event sponsor role)
