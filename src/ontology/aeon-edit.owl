@@ -2215,6 +2215,7 @@ ClassAssertion(obo:AEON_0000020 <https://ror.org/04aj4c181>)
 # Individual: confid:Information_Science (confid:Information_Science)
 
 ClassAssertion(obo:AEON_0000027 confid:Academic_Field:Information_Science)
+ObjectPropertyAssertion(obo:BFO_0000050 confid:Academic_Field:Information_Science confid:Event:VIVO_2021_format)
 
 # Individual: confid:VIVO_2021 (Event:VIVO_2021)
 
@@ -2317,6 +2318,7 @@ DataPropertyAssertion(obo:AEON_0000091 confid:Event:VIVO_2021_name "VIVO 2021"^^
 AnnotationAssertion(rdfs:label confid:Event:VIVO_2021_orga_committee "Event:VIVO_2021_orga_committee")
 ClassAssertion(obo:AEON_0000134 confid:Event:VIVO_2021_orga_committee)
 ObjectPropertyAssertion(obo:RO_0000087 confid:Event:VIVO_2021_orga_committee confid:Event:VIVO_2021_role1)
+ObjectPropertyAssertion(obo:RO_0002351 confid:Event:VIVO_2021_orga_committee <https://www.confident-conference.org/index.php/Person:1>)
 DataPropertyAssertion(obo:AEON_0000144 confid:Event:VIVO_2021_orga_committee "mailto:conference@vivoweb.org"^^xsd:anyURI)
 
 # Individual: confid:VIVO_2021_role1 (Event:VIVO_2021_role1)
@@ -2324,22 +2326,28 @@ DataPropertyAssertion(obo:AEON_0000144 confid:Event:VIVO_2021_orga_committee "ma
 AnnotationAssertion(obo:IAO_0000115 confid:Event:VIVO_2021_role1 "Example role1")
 AnnotationAssertion(rdfs:label confid:Event:VIVO_2021_role1 "Event:VIVO_2021_role1")
 ClassAssertion(obo:AEON_0000006 confid:Event:VIVO_2021_role1)
-ObjectPropertyAssertion(obo:RO_0000081 confid:Event:VIVO_2021_role1 <https://www.confident-conference.org/index.php/Organization:1>)
+ObjectPropertyAssertion(obo:BFO_0000054 confid:Event:VIVO_2021_role1 confid:Event:VIVO_2021)
 
 # Individual: confid:VIVO_2021_role2 (Event:VIVO_2021_role2)
 
 AnnotationAssertion(obo:IAO_0000115 confid:Event:VIVO_2021_role2 "Example role2")
 AnnotationAssertion(rdfs:label confid:Event:VIVO_2021_role2 "Event:VIVO_2021_role2")
+ClassAssertion(obo:AEON_0000013 confid:Event:VIVO_2021_role2)
+ObjectPropertyAssertion(obo:BFO_0000054 confid:Event:VIVO_2021_role2 confid:Event:VIVO_2021)
+ObjectPropertyAssertion(obo:RO_0000081 confid:Event:VIVO_2021_role2 <https://www.confident-conference.org/index.php/Person:2>)
 
 # Individual: confid:VIVO_2021_role3 (Event:VIVO_2021_role3)
 
 AnnotationAssertion(obo:IAO_0000115 confid:Event:VIVO_2021_role3 "Example role3")
 AnnotationAssertion(rdfs:label confid:Event:VIVO_2021_role3 "Event:VIVO_2021_role3")
+ClassAssertion(obo:OOSTT_00000117 confid:Event:VIVO_2021_role3)
+ObjectPropertyAssertion(obo:BFO_0000054 confid:Event:VIVO_2021_role3 confid:Event:VIVO_2021)
 
 # Individual: confid:VIVO_2021_role4 (Event:VIVO_2021_role4)
 
 AnnotationAssertion(obo:IAO_0000115 confid:Event:VIVO_2021_role4 "Example role4")
 AnnotationAssertion(rdfs:label confid:Event:VIVO_2021_role4 "Event:VIVO_2021_role4")
+ObjectPropertyAssertion(obo:BFO_0000054 confid:Event:VIVO_2021_role4 confid:Event:VIVO_2021)
 
 # Individual: confid:VIVO_2021_schedule (Event:VIVO_2021_schedule)
 
@@ -2372,7 +2380,7 @@ ObjectPropertyAssertion(obo:AEON_0000032 confid:Event:VIVO_2021_talk2 confid:Eve
 
 # Individual: confid:VIVO_2021_talk2_format (confid:VIVO_2021_talk2_format)
 
-ClassAssertion(obo:AEON_0000124 confid:Event:VIVO_2021_talk2_format)
+ClassAssertion(obo:AEON_0000114 confid:Event:VIVO_2021_talk2_format)
 
 # Individual: confid:VIVO_2021_topic1 (Event:VIVO_2021_topic1)
 
@@ -2402,32 +2410,36 @@ DataPropertyAssertion(obo:OBI_0002815 confid:Event:VIVO_2021_topic3 "Ontological
 
 AnnotationAssertion(Annotation(dce:source "https://vivoconference.org/vivo2020/") dcterms:description confid:Event_Series:VIVO "\"The VIVO conference has been bringing people together since 2010 to share the latest work in semantic web academic profiles. Whether an experienced user, or just starting out, this is the event to attend.\"")
 AnnotationAssertion(rdfs:label confid:Event_Series:VIVO "Event_Series:VIVO")
-ClassAssertion(obo:AEON_0000002 confid:Event_Series:VIVO)
+ClassAssertion(obo:AEON_0000001 confid:Event_Series:VIVO)
+ObjectPropertyAssertion(obo:AEON_0000032 confid:Event_Series:VIVO confid:Event_Series:VIVO_format)
+ObjectPropertyAssertion(obo:AEON_0000081 confid:Event_Series:VIVO confid:Event:VIVO_2021)
 
 # Individual: confid:VIVO_format (Event_Series:VIVO_format)
 
 AnnotationAssertion(obo:IAO_0000115 confid:Event_Series:VIVO_format "An example academic event series format")
 AnnotationAssertion(rdfs:label confid:Event_Series:VIVO_format "Event_Series:VIVO_format")
+ClassAssertion(obo:AEON_0000004 confid:Event_Series:VIVO_format)
+ClassAssertion(obo:AEON_0000128 confid:Event_Series:VIVO_format)
 
 # Individual: <https://www.confident-conference.org/index.php/Organization:1> (_Organization:1)
 
 AnnotationAssertion(rdfs:label <https://www.confident-conference.org/index.php/Organization:1> "_Organization:1")
 ClassAssertion(obo:OBI_0000245 <https://www.confident-conference.org/index.php/Organization:1>)
+ObjectPropertyAssertion(obo:RO_0000087 <https://www.confident-conference.org/index.php/Organization:1> confid:Event:VIVO_2021_role4)
 
 # Individual: <https://www.confident-conference.org/index.php/Person:1> (_Person:1)
 
 AnnotationAssertion(rdfs:label <https://www.confident-conference.org/index.php/Person:1> "_Person:1")
 ClassAssertion(obo:NCBITaxon_9606 <https://www.confident-conference.org/index.php/Person:1>)
+ObjectPropertyAssertion(obo:IAO_0000235 <https://www.confident-conference.org/index.php/Person:1> <https://orcid.org/0000-0003-2499-7741>)
+ObjectPropertyAssertion(obo:RO_0000087 <https://www.confident-conference.org/index.php/Person:1> confid:Event:VIVO_2021_role3)
 
 # Individual: <https://www.confident-conference.org/index.php/Person:2> (_Person:2)
 
 AnnotationAssertion(rdfs:label <https://www.confident-conference.org/index.php/Person:2> "_Person:2")
 ClassAssertion(obo:NCBITaxon_9606 <https://www.confident-conference.org/index.php/Person:2>)
-
-# Individual: <https://www.confident-conference.org/index.php/Person:3> (_Person:3)
-
-AnnotationAssertion(rdfs:label <https://www.confident-conference.org/index.php/Person:3> "_Person:3")
-ClassAssertion(obo:NCBITaxon_9606 <https://www.confident-conference.org/index.php/Person:3>)
+ObjectPropertyAssertion(obo:RO_0000056 <https://www.confident-conference.org/index.php/Person:2> confid:Event:VIVO_2021_talk2)
+ObjectPropertyAssertion(obo:RO_0000087 <https://www.confident-conference.org/index.php/Person:2> confid:Event:VIVO_2021_role2)
 
 # Individual: <https://www.wikidata.org/wiki/Q108430522> (<https://www.wikidata.org/wiki/Q108430522>)
 
