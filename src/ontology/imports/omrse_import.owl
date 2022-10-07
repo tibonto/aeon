@@ -305,23 +305,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000024 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000115 xml:lang="en">A role inhering in an entity realized by social interactions in human society.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/omrse.owl</obo:IAO_0000412>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-09-06/omrse.owl"/>
-        <rdfs:comment xml:lang="en">Previous definition: A role played by an entity in human social processes.</rdfs:comment>
-        <rdfs:label xml:lang="en">obsolete role in human social processes</rdfs:label>
-        <rdfs:label xml:lang="en">role in human social processes</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000048 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000048">
@@ -372,12 +355,6 @@
         <rdfs:comment xml:lang="en">Previous definition: A role played by an entity in human social processes.</rdfs:comment>
         <rdfs:label xml:lang="en">role in human social processes</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
-
-    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
 </rdf:RDF>
 
 
