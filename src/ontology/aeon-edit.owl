@@ -1707,6 +1707,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000128 "A sociocultural event form
 AnnotationAssertion(dce:creator obo:AEON_0000128 <https://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:AEON_0000128 "event series format"@de)
 SubClassOf(obo:AEON_0000128 obo:AEON_0000195)
+SubClassOf(obo:AEON_0000128 DataSomeValuesFrom(obo:AEON_0000149 rdfs:Literal))
 
 # Class: obo:AEON_0000129 (event sponsor aquisition and management role)
 
