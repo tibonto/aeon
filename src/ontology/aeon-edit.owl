@@ -2202,21 +2202,25 @@ SubClassOf(obo:wikiCFP_ID obo:IAO_0000578)
 
 ClassAssertion(obo:AEON_0000016 <https://doi.org/10.25798/qsdh-en13>)
 
-# Individual: <https://orcid.org/0000-0002-1595-3213> (<https://orcid.org/0000-0002-1595-3213>)
+# Individual: <https://orcid.org/0000-0002-1595-3213> (ORCID:0000-0002-1595-3213)
 
 AnnotationAssertion(rdfs:comment <https://orcid.org/0000-0002-1595-3213> "ORCID of Philip Strömert")
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-1595-3213> "ORCID:0000-0002-1595-3213")
 ClassAssertion(obo:AEON_0000019 <https://orcid.org/0000-0002-1595-3213>)
 
-# Individual: <https://orcid.org/0000-0003-2499-7741> (<https://orcid.org/0000-0003-2499-7741>)
+# Individual: <https://orcid.org/0000-0003-2499-7741> (ORCID:0000-0003-2499-7741)
 
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0003-2499-7741> "ORCID:0000-0003-2499-7741")
 ClassAssertion(obo:AEON_0000019 <https://orcid.org/0000-0003-2499-7741>)
 
-# Individual: <https://ror.org/04aj4c181> (<https://ror.org/04aj4c181>)
+# Individual: <https://ror.org/04aj4c181> (ROR:04aj4c181)
 
+AnnotationAssertion(rdfs:label <https://ror.org/04aj4c181> "ROR:04aj4c181")
 ClassAssertion(obo:AEON_0000020 <https://ror.org/04aj4c181>)
 
-# Individual: confid:Information_Science (confid:Information_Science)
+# Individual: confid:Information_Science (Academic_Field:Information_Science)
 
+AnnotationAssertion(rdfs:label confid:Academic_Field:Information_Science "Academic_Field:Information_Science")
 ClassAssertion(obo:AEON_0000027 confid:Academic_Field:Information_Science)
 ObjectPropertyAssertion(obo:BFO_0000050 confid:Academic_Field:Information_Science confid:Event:VIVO_2021_format)
 
@@ -2278,8 +2282,9 @@ AnnotationAssertion(provo:wasDerivedFrom confid:Event:VIVO_2021_deadline2 "https
 ClassAssertion(obo:AEON_0000064 confid:Event:VIVO_2021_deadline2)
 DataPropertyAssertion(obo:AEON_0000074 confid:Event:VIVO_2021_deadline2 "2021-05-21T00:00:00Z"^^xsd:dateTime)
 
-# Individual: confid:VIVO_2021_description (confid:VIVO_2021_description)
+# Individual: confid:VIVO_2021_description (Event:VIVO_2021_description)
 
+AnnotationAssertion(rdfs:label confid:Event:VIVO_2021_description "Event:VIVO_2021_description")
 ClassAssertion(obo:AEON_0000224 confid:Event:VIVO_2021_description)
 ObjectPropertyAssertion(obo:BFO_0000051 confid:Event:VIVO_2021_description confid:Event:VIVO_2021_format)
 ObjectPropertyAssertion(obo:IAO_0000136 confid:Event:VIVO_2021_description confid:Event:VIVO_2021)
@@ -2309,8 +2314,9 @@ AnnotationAssertion(rdfs:label confid:Event:VIVO_2021_id "Event:VIVO_2021_id")
 ClassAssertion(obo:AEON_0000003 confid:Event:VIVO_2021_id)
 DataPropertyAssertion(obo:OBI_0002815 confid:Event:VIVO_2021_id "VIVO_2020"^^xsd:string)
 
-# Individual: confid:VIVO_2021_name (confid:VIVO_2021_name)
+# Individual: confid:VIVO_2021_name (Event:VIVO_2021_name)
 
+AnnotationAssertion(rdfs:label confid:Event:VIVO_2021_name "Event:VIVO_2021_name")
 AnnotationAssertion(skos:altLabel confid:Event:VIVO_2021_name "12th Annual VIVO Conference 2021")
 AnnotationAssertion(skos:prefLabel confid:Event:VIVO_2021_name "12th International VIVO Conference 2021")
 ClassAssertion(obo:AEON_0000090 confid:Event:VIVO_2021_name)
