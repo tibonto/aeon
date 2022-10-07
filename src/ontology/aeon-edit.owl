@@ -291,14 +291,6 @@ AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000026 "Philip Strömert"^^xsd:str
 AnnotationAssertion(dce:date obo:AEON_0000026 "2020-10-14T15:31:27Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:AEON_0000026 "maps to"@de)
 
-# Annotation Property: dcterms:license (license)
-
-AnnotationAssertion(rdfs:label dcterms:license "license")
-
-# Annotation Property: dcterms:title (title)
-
-AnnotationAssertion(rdfs:label dcterms:title "title")
-
 
 ############################
 #   Object Properties
