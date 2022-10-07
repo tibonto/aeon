@@ -733,6 +733,7 @@ SubDataPropertyOf(obo:AEON_0000146 obo:AEON_0000158)
 # Data Property: obo:AEON_0000147 (accepted short papers)
 
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000147 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000147 "An academic event metric that provides the literal value for the number of short papers that where accepted to be present at an academic event.")
 AnnotationAssertion(rdfs:label obo:AEON_0000147 "accepted short papers"@en)
 SubDataPropertyOf(obo:AEON_0000147 obo:AEON_0000158)
 
