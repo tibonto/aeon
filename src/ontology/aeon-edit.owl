@@ -2197,8 +2197,9 @@ SubClassOf(obo:wikiCFP_ID obo:IAO_0000578)
 #   Named Individuals
 ############################
 
-# Individual: <https://doi.org/10.25798/qsdh-en13> (<https://doi.org/10.25798/qsdh-en13>)
+# Individual: <https://doi.org/10.25798/qsdh-en13> (DOI:10.25798/qsdh-en13)
 
+AnnotationAssertion(rdfs:label <https://doi.org/10.25798/qsdh-en13> "DOI:10.25798/qsdh-en13")
 ClassAssertion(obo:AEON_0000016 <https://doi.org/10.25798/qsdh-en13>)
 
 # Individual: <https://orcid.org/0000-0002-1595-3213> (ORCID:0000-0002-1595-3213)
