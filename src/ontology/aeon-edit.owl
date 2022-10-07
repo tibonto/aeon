@@ -158,6 +158,7 @@ Declaration(Class(obo:AEON_0000214))
 Declaration(Class(obo:AEON_0000215))
 Declaration(Class(obo:AEON_0000219))
 Declaration(Class(obo:AEON_0000220))
+Declaration(Class(obo:AEON_0000223))
 Declaration(Class(obo:attendance_fee_specification))
 Declaration(Class(obo:sponsor_fee_specification))
 Declaration(Class(obo:wikiCFP_ID))
@@ -734,7 +735,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000145 "An academic event metric t
 AnnotationAssertion(rdfs:label obo:AEON_0000145 "acceptance rate"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000145 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000145 obo:AEON_0000158)
-DataPropertyDomain(obo:AEON_0000145 obo:AEON_0000001)
 
 # Data Property: obo:AEON_0000146 (accepted papers)
 
@@ -742,14 +742,12 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000146 "An academic event metric t
 AnnotationAssertion(rdfs:label obo:AEON_0000146 "accepted papers"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000146 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000146 obo:AEON_0000158)
-DataPropertyDomain(obo:AEON_0000146 obo:AEON_0000001)
 
 # Data Property: obo:AEON_0000147 (accepted short papers)
 
 AnnotationAssertion(rdfs:label obo:AEON_0000147 "accepted short papers"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000147 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000147 obo:AEON_0000158)
-DataPropertyDomain(obo:AEON_0000147 obo:AEON_0000001)
 
 # Data Property: obo:AEON_0000148 (coordinates)
 
@@ -800,7 +798,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000152 "An academic event metric t
 AnnotationAssertion(rdfs:label obo:AEON_0000152 "CORE ranking"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000152 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000152 obo:AEON_0000158)
-DataPropertyDomain(obo:AEON_0000152 obo:AEON_0000001)
 
 # Data Property: obo:AEON_0000153 (event fee value)
 
@@ -842,13 +839,14 @@ AnnotationAssertion(rdfs:label obo:AEON_0000157 "obsolete_meeting URL"@en)
 AnnotationAssertion(owl:deprecated obo:AEON_0000157 "true"^^xsd:boolean)
 AnnotationAssertion(ns:term_status obo:AEON_0000157 obo:IAO_0000103)
 
-# Data Property: obo:AEON_0000158 (metric)
+# Data Property: obo:AEON_0000158 (academic event metric value)
 
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000158 "A data property to provide a literal value for an academic event metric."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000158 "Using data properties for the modeling of academic event metrics was the first adhoc way of representing this. It thus needs to be discussed and worked on."@en)
-AnnotationAssertion(rdfs:label obo:AEON_0000158 "metric"@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000158 "academic event metric value"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000158 obo:IAO_0000428)
-DataPropertyDomain(obo:AEON_0000158 obo:OBI_0000011)
+SubDataPropertyOf(obo:AEON_0000158 obo:OBI_0002815)
+DataPropertyDomain(obo:AEON_0000158 obo:AEON_0000223)
 
 # Data Property: obo:AEON_0000159 (number of attendess)
 
@@ -857,7 +855,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000159 "An academic event metric t
 AnnotationAssertion(rdfs:label obo:AEON_0000159 "number of attendess"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000159 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000159 obo:AEON_0000158)
-DataPropertyDomain(obo:AEON_0000159 obo:AEON_0000001)
 
 # Data Property: obo:AEON_0000160 (number of tracks)
 
@@ -865,7 +862,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000160 "An academic event metric t
 AnnotationAssertion(rdfs:label obo:AEON_0000160 "number of tracks"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000160 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000160 obo:AEON_0000158)
-DataPropertyDomain(obo:AEON_0000160 obo:AEON_0000001)
 
 # Data Property: obo:AEON_0000161 (previous end date)
 
@@ -895,7 +891,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000163 "An academic event metric t
 AnnotationAssertion(rdfs:label obo:AEON_0000163 "proceeding cite count"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000163 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000163 obo:AEON_0000158)
-DataPropertyDomain(obo:AEON_0000163 obo:AEON_0000001)
 
 # Data Property: obo:AEON_0000164 (event website)
 
@@ -913,7 +908,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000165 "An academic event series m
 AnnotationAssertion(rdfs:label obo:AEON_0000165 "series cite count"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000165 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000165 obo:AEON_0000158)
-DataPropertyDomain(obo:AEON_0000165 obo:AEON_0000002)
 
 # Data Property: obo:AEON_0000166 (event fee currency)
 
@@ -954,7 +948,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000170 "An academic event metric t
 AnnotationAssertion(rdfs:label obo:AEON_0000170 "submitted papers"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000170 obo:IAO_0000428)
 SubDataPropertyOf(obo:AEON_0000170 obo:AEON_0000158)
-DataPropertyDomain(obo:AEON_0000170 obo:AEON_0000001)
 
 # Data Property: obo:AEON_0000171 (event venue literal)
 
@@ -2172,6 +2165,16 @@ AnnotationAssertion(dce:creator obo:AEON_0000220 <http://orcid.org/0000-0002-159
 AnnotationAssertion(rdfs:label obo:AEON_0000220 "event registration deadline"@en)
 AnnotationAssertion(ns:term_status obo:AEON_0000220 obo:IAO_0000423)
 SubClassOf(obo:AEON_0000220 obo:AEON_0000060)
+
+# Class: obo:AEON_0000223 (academic event metric)
+
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000223 "A data item that contains assertions about meassurable aspects of an academic event, such as the number of its participants, submitted and accepted papers."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000223 "For the moment (Sep 2022) a further subtyping of this class is not intended and specific data properties are used to associate event metrics via this class with an academic event."@en)
+AnnotationAssertion(dce:creator obo:AEON_0000223 <http://orcid.org/0000-0002-1595-3213>)
+AnnotationAssertion(rdfs:label obo:AEON_0000223 "academic event metric"@en)
+AnnotationAssertion(ns:term_status obo:AEON_0000223 obo:IAO_0000125)
+SubClassOf(obo:AEON_0000223 obo:IAO_0000027)
+SubClassOf(obo:AEON_0000223 ObjectSomeValuesFrom(obo:IAO_0000136 obo:AEON_0000001))
 
 # Class: obo:attendance_fee_specification (attendance fee specification)
 
