@@ -10,9 +10,9 @@
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aeon/imports/omrse_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aeon/releases/2022-08-22/imports/omrse_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-22</owl:versionInfo>
-        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-04-06/omrse.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aeon/releases/2022-10-07/imports/omrse_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-07</owl:versionInfo>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-09-06/omrse.owl"/>
     </owl:Ontology>
     
 
@@ -150,7 +150,7 @@
         <obo:IAO_0000116 xml:lang="en">A dependent inheres in its bearer at all times for which the dependent exists.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">inheres_in</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-04-06/omrse.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-09-06/omrse.owl"/>
         <rdfs:comment>Note that this relation was previously called &quot;inheres in&quot;, but was changed to be called &quot;characteristic of&quot; because BFO2 uses &quot;inheres in&quot; in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.</rdfs:comment>
         <rdfs:label xml:lang="en">characteristic of</rdfs:label>
         <rdfs:label xml:lang="en">inheres in</rdfs:label>
@@ -262,7 +262,7 @@
         <obo:IAO_0000602>(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] </obo:IAO_0000602>
         <obo:IAO_0000602>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] </obo:IAO_0000602>
         <obo:IAO_0000602>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] </obo:IAO_0000602>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-04-06/omrse.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-09-06/omrse.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">material entity</rdfs:label>
     </owl:Class>
@@ -308,13 +308,15 @@
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A role inhering in an entity realized by social interactions in human society.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/omrse.owl</obo:IAO_0000412>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-04-06/omrse.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-09-06/omrse.owl"/>
         <rdfs:comment xml:lang="en">Previous definition: A role played by an entity in human social processes.</rdfs:comment>
         <rdfs:label xml:lang="en">obsolete role in human social processes</rdfs:label>
+        <rdfs:label xml:lang="en">role in human social processes</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -347,7 +349,7 @@
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-04-06/omrse.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-09-06/omrse.owl"/>
         <rdfs:label xml:lang="en">material entity role</rdfs:label>
     </owl:Class>
     
@@ -366,7 +368,7 @@
         <obo:IAO_0000115 xml:lang="en">A role inhering in an entity realized by social interactions in human society.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-04-06/omrse.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-09-06/omrse.owl"/>
         <rdfs:comment xml:lang="en">Previous definition: A role played by an entity in human social processes.</rdfs:comment>
         <rdfs:label xml:lang="en">role in human social processes</rdfs:label>
     </owl:Class>
