@@ -26,7 +26,6 @@ These are the current imports in AEON
 | ico | http://purl.obolibrary.org/obo/ico.owl | custom |
 | obi | http://purl.obolibrary.org/obo/obi.owl | custom |
 | obib | http://purl.obolibrary.org/obo/obib.owl | custom |
-| omrse | http://purl.obolibrary.org/obo/omrse.owl | custom |
 | oostt | http://purl.obolibrary.org/obo/oostt.owl | custom |
 
 ## Components

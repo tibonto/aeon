@@ -1,8 +1,0 @@
-OMRSE:00000048 # material entity role
-OMRSE:00002072 # role in human social processes
-
-###########################################################
-# external classes needed due to OBI axioms of term above #
-###########################################################
-http://purl.obolibrary.org/obo/BFO_0000040 # material entity
-http://purl.obolibrary.org/obo/RO_0000052 # # inheres in
