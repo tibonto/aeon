@@ -97,7 +97,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  bfo ro omo iao cro envo txpo ico obi obib oostt
+IMPORTS =  bfo ro omo iao envo txpo ico obi obib oostt
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -288,10 +288,6 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl $(IMPORTDIR)/omo_terms_combine
 
 $(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl
 	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in aeon.Makefile!" && false
-## Module for ontology: cro
-
-$(IMPORTDIR)/cro_import.owl: $(MIRRORDIR)/cro.owl
-	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in aeon.Makefile!" && false
 ## Module for ontology: envo
 
 $(IMPORTDIR)/envo_import.owl: $(MIRRORDIR)/envo.owl
@@ -380,15 +376,6 @@ mirror-omo: | $(TMPDIR)
 mirror-iao: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/iao.owl --create-dirs -o $(MIRRORDIR)/iao.owl --retry 4 --max-time 200 &&\
 		$(ROBOT) convert -i $(MIRRORDIR)/iao.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-
-## ONTOLOGY: cro
-.PHONY: mirror-cro
-.PRECIOUS: $(MIRRORDIR)/cro.owl
-mirror-cro: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/cro.owl --create-dirs -o $(MIRRORDIR)/cro.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/cro.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 

@@ -18,7 +18,6 @@ Prefix(dcmi-terms:=<http://dublincore.org/specifications/dublin-core/dcmi-terms/
 
 Ontology(<http://purl.obolibrary.org/obo/aeon.owl>
 Import(<http://purl.obolibrary.org/obo/aeon/imports/bfo_import.owl>)
-Import(<http://purl.obolibrary.org/obo/aeon/imports/cro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/aeon/imports/envo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/aeon/imports/iao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/aeon/imports/ico_import.owl>)
@@ -268,6 +267,7 @@ Declaration(AnnotationProperty(obo:AEON_0000026))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasSynonym>))
 Declaration(AnnotationProperty(skos:altLabel))
 Declaration(AnnotationProperty(skos:closeMatch))
 Declaration(AnnotationProperty(skos:definition))
@@ -982,7 +982,7 @@ AnnotationAssertion(rdfs:seeAlso obo:AEON_0000001 "https://www.wikidata.org/wiki
 AnnotationAssertion(skos:altLabel obo:AEON_0000001 "scientific event"@en)
 AnnotationAssertion(skos:altLabel obo:AEON_0000001 "wissenschaftliche Veranstaltung"@de)
 AnnotationAssertion(skos:closeMatch obo:AEON_0000001 <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent>)
-EquivalentClasses(obo:AEON_0000001 ObjectIntersectionOf(obo:AEON_0000196 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000004) ObjectSomeValuesFrom(obo:BFO_0000055 obo:CRO_0000000)))
+EquivalentClasses(obo:AEON_0000001 ObjectIntersectionOf(obo:AEON_0000196 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000004)))
 SubClassOf(obo:AEON_0000001 ObjectSomeValuesFrom(obo:AEON_0000043 obo:AEON_0000030))
 SubClassOf(obo:AEON_0000001 ObjectSomeValuesFrom(obo:AEON_0000084 obo:AEON_0000002))
 SubClassOf(obo:AEON_0000001 ObjectSomeValuesFrom(ObjectInverseOf(obo:IAO_0000136) obo:AEON_0000223))
@@ -1039,7 +1039,7 @@ AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000006 "In the context of academic
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000006 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000006 "event organizer role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000006 "https://github.com/tibonto/aeon/issues/144")
-SubClassOf(obo:AEON_0000006 obo:CRO_0000000)
+SubClassOf(obo:AEON_0000006 obo:BFO_0000023)
 SubClassOf(obo:AEON_0000006 ObjectUnionOf(ObjectSomeValuesFrom(obo:RO_0000081 obo:NCBITaxon_9606) ObjectSomeValuesFrom(obo:RO_0000081 obo:OBI_0000245)))
 SubClassOf(obo:AEON_0000006 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000001))
 
@@ -1069,7 +1069,7 @@ AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000009 "This role should better be
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000009 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000009 "contact person role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000009 "https://github.com/tibonto/aeon/issues/144")
-SubClassOf(obo:AEON_0000009 obo:CRO_0000000)
+SubClassOf(obo:AEON_0000009 obo:BFO_0000023)
 SubClassOf(obo:AEON_0000009 ObjectAllValuesFrom(obo:BFO_0000054 obo:OBIB_0000624))
 SubClassOf(obo:AEON_0000009 ObjectAllValuesFrom(obo:RO_0000081 ObjectIntersectionOf(obo:NCBITaxon_9606 ObjectSomeValuesFrom(obo:OBI_0000846 obo:OBI_0000245))))
 
@@ -1079,7 +1079,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000010 "A contributor role that in
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000010 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000010 "event attendee role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000010 "https://github.com/tibonto/aeon/issues/144")
-SubClassOf(obo:AEON_0000010 obo:CRO_0000000)
+SubClassOf(obo:AEON_0000010 obo:BFO_0000023)
 SubClassOf(obo:AEON_0000010 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000001))
 SubClassOf(obo:AEON_0000010 ObjectAllValuesFrom(obo:RO_0000081 obo:NCBITaxon_9606))
 
@@ -1089,7 +1089,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000011 "The moderating role inhere
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000011 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000011 "event moderator role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000011 "https://github.com/tibonto/aeon/issues/144")
-SubClassOf(obo:AEON_0000011 obo:CRO_0000000)
+SubClassOf(obo:AEON_0000011 obo:BFO_0000023)
 SubClassOf(obo:AEON_0000011 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000001))
 SubClassOf(obo:AEON_0000011 ObjectAllValuesFrom(obo:RO_0000081 obo:NCBITaxon_9606))
 
@@ -1117,7 +1117,7 @@ AnnotationAssertion(obo:IAO_0000118 obo:AEON_0000013 "invited speaker role"@en)
 AnnotationAssertion(obo:IAO_0006011 obo:AEON_0000013 "http://purl.obolibrary.org/obo/CRO_0000100"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000013 "presenter role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000013 "https://github.com/tibonto/aeon/issues/144")
-SubClassOf(obo:AEON_0000013 obo:CRO_0000000)
+SubClassOf(obo:AEON_0000013 obo:BFO_0000023)
 SubClassOf(obo:AEON_0000013 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000001))
 SubClassOf(obo:AEON_0000013 ObjectAllValuesFrom(obo:RO_0000081 obo:NCBITaxon_9606))
 
@@ -1138,9 +1138,8 @@ AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000015 "The difference of this rol
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000015 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000015 "event sponsor role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000015 "https://github.com/tibonto/aeon/issues/144")
-SubClassOf(obo:AEON_0000015 obo:CRO_0000000)
+SubClassOf(obo:AEON_0000015 obo:BFO_0000023)
 SubClassOf(obo:AEON_0000015 ObjectUnionOf(ObjectSomeValuesFrom(obo:RO_0000081 obo:NCBITaxon_9606) ObjectSomeValuesFrom(obo:RO_0000081 obo:OBI_0000245)))
-SubClassOf(obo:AEON_0000015 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000097))
 SubClassOf(obo:AEON_0000015 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000001))
 
 # Class: obo:AEON_0000016 (DOI)
@@ -1724,7 +1723,6 @@ AnnotationAssertion(dce:creator obo:AEON_0000130 <http://orcid.org/0000-0002-159
 AnnotationAssertion(dce:date obo:AEON_0000130 "2022-08-08T18:02:56Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:AEON_0000130 "local event organizer role"@en)
 SubClassOf(obo:AEON_0000130 obo:AEON_0000006)
-SubClassOf(obo:AEON_0000130 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000026))
 
 # Class: obo:AEON_0000131 (event program development role)
 
@@ -1733,9 +1731,6 @@ AnnotationAssertion(dce:creator obo:AEON_0000131 <http://orcid.org/0000-0002-159
 AnnotationAssertion(dce:date obo:AEON_0000131 "2022-08-08T18:02:56Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:AEON_0000131 "event program development role"@en)
 SubClassOf(obo:AEON_0000131 obo:AEON_0000006)
-SubClassOf(obo:AEON_0000131 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000101))
-SubClassOf(obo:AEON_0000131 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000104))
-SubClassOf(obo:AEON_0000131 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000106))
 
 # Class: obo:AEON_0000132 (event promoter role)
 
@@ -1743,7 +1738,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000132 "An event organizer role th
 AnnotationAssertion(dce:creator obo:AEON_0000132 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:AEON_0000132 "event promoter role"@en)
 SubClassOf(obo:AEON_0000132 obo:AEON_0000006)
-SubClassOf(obo:AEON_0000132 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000007))
 
 # Class: obo:AEON_0000133 (event finances accounting role)
 
@@ -1752,7 +1746,6 @@ AnnotationAssertion(dce:creator obo:AEON_0000133 <http://orcid.org/0000-0002-159
 AnnotationAssertion(dce:date obo:AEON_0000133 "2022-08-08T18:02:56Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:AEON_0000133 "event finances accounting role"@en)
 SubClassOf(obo:AEON_0000133 obo:AEON_0000006)
-SubClassOf(obo:AEON_0000133 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CRO_0000007))
 
 # Class: obo:AEON_0000134 (general organizing event committee)
 
