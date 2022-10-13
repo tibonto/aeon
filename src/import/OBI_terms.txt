@@ -1,4 +1,0 @@
-OBI:0000011	# planned process
-OBI:0000245	# organization
-OBI:0002815	# has representation
-OBI:0100026	# organism

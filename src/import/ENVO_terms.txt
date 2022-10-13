@@ -1,3 +1,0 @@
-ENVO:00000005	# first-order administrative region
-ENVO:00000009	# national geopolitical entity
-ENVO:00000856	# city
