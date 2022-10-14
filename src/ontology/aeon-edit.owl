@@ -1064,6 +1064,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000008 "https://orcid.org/0000-000
 AnnotationAssertion(rdfs:label obo:AEON_0000008 "event committee chair role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000008 "https://github.com/tibonto/aeon/issues/144")
 SubClassOf(obo:AEON_0000008 obo:AEON_0000006)
+SubClassOf(obo:AEON_0000008 obo:OOSTT_00000117)
 
 # Class: obo:AEON_0000009 (contact person role)
 
