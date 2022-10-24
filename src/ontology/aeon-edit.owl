@@ -1127,7 +1127,6 @@ SubClassOf(obo:AEON_0000013 ObjectAllValuesFrom(obo:RO_0000081 obo:NCBITaxon_960
 
 # Class: obo:AEON_0000014 (keynote speaker role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000014 "The keynote speaker role inheres in a person that participates in an organized sociocultural event by holding a keynote speech."@en)
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000014 obo:IAO_0000125)
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000014 "A presenter role that inheres in a person who participates in an organized sociocultural event by holding a keynote speech."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000014 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
