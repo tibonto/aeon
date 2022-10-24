@@ -16,6 +16,7 @@ These are the current imports in AEON
 
 | Import | URL | Type |
 | ------ | --- | ---- |
+| apollo_sv | http://purl.obolibrary.org/obo/apollo_sv.owl | slme |
 | bfo | http://purl.obolibrary.org/obo/bfo.owl | mirror |
 | ro | http://purl.obolibrary.org/obo/ro.owl | custom |
 | omo | http://purl.obolibrary.org/obo/omo.owl | mirror |
