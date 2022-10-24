@@ -1137,15 +1137,16 @@ SubClassOf(obo:AEON_0000014 obo:AEON_0000013)
 
 # Class: obo:AEON_0000015 (event sponsor role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000015 "A contributor role that inheres in a person or organization who provides money, material ressources or special services needed in the realization of an event in return of being officially credited for this role."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000015 "PS 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...).")
-AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000015 "The difference of this role to the obi:'sponsor role' (http://purl.obolibrary.org/obo/OBI_0000243) is that the latter has the constraint to be a sponsor of scientific studies.Changing the label to something like \"sponsoring a planned process role\" might be more fitting but is quite long."@en)
+AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000015 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000015 "A role that inheres in a person or organization who provides money, material ressources or special services needed in the realization of an organized sociocultural event in return of being officially credited for this role."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000015 "PS 2-9-2020: There is still the open question on how to best model different sponsor types (e.g. gold, silver, bronze...).")
+AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000015 "The difference of this role to the obi:'sponsor role' (http://purl.obolibrary.org/obo/OBI_0000243) is that the latter has the constraint to be a sponsor of scientific studies."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000015 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000015 "event sponsor role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000015 "https://github.com/tibonto/aeon/issues/144")
 SubClassOf(obo:AEON_0000015 obo:BFO_0000023)
 SubClassOf(obo:AEON_0000015 ObjectUnionOf(ObjectSomeValuesFrom(obo:RO_0000081 obo:NCBITaxon_9606) ObjectSomeValuesFrom(obo:RO_0000081 obo:OBI_0000245)))
-SubClassOf(obo:AEON_0000015 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000001))
+SubClassOf(obo:AEON_0000015 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000196))
 
 # Class: obo:AEON_0000016 (DOI)
 
