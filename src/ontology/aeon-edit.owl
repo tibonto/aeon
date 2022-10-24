@@ -1059,6 +1059,7 @@ SubClassOf(obo:AEON_0000007 <http://www.geneontology.org/formats/oboInOwl#Obsole
 
 # Class: obo:AEON_0000008 (event committee chair role)
 
+AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000008 obo:IAO_0000125)
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000008 "An event organizer role that inheres in a person who is designated to be responsible for the actions and outcomes of an event committee."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000008 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000008 "event committee chair role"@en)
@@ -1716,6 +1717,7 @@ SubClassOf(obo:AEON_0000128 DataSomeValuesFrom(obo:AEON_0000149 rdfs:Literal))
 
 # Class: obo:AEON_0000129 (event sponsor aquisition and management role)
 
+AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000129 obo:IAO_0000125)
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000129 "An event organizer role that inheres in a person or organization who is responsible for aquiring and managing the sponsors of an event.")
 AnnotationAssertion(dce:creator obo:AEON_0000129 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(dce:date obo:AEON_0000129 "2022-08-08T18:01:10Z"^^xsd:dateTime)
@@ -1724,6 +1726,7 @@ SubClassOf(obo:AEON_0000129 obo:AEON_0000006)
 
 # Class: obo:AEON_0000130 (local event organizer role)
 
+AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000130 obo:IAO_0000125)
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000130 "An event organizer role that inheres in a person or organization responsible for the on-site planning, management and coordination of an event."@en)
 AnnotationAssertion(dce:creator obo:AEON_0000130 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(dce:date obo:AEON_0000130 "2022-08-08T18:02:56Z"^^xsd:dateTime)
@@ -1732,6 +1735,7 @@ SubClassOf(obo:AEON_0000130 obo:AEON_0000006)
 
 # Class: obo:AEON_0000131 (event program development role)
 
+AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000131 obo:IAO_0000125)
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000131 "An event organizer role that inheres in a person or organization who is responsible for the development of the event program according to the chosen event format specification. This includes such tasks as inviting suitable presenters, evaluating, reviewing, accepting or declining the work submitted for presentation as well as determining the schedule of the event."@en)
 AnnotationAssertion(dce:creator obo:AEON_0000131 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(dce:date obo:AEON_0000131 "2022-08-08T18:02:56Z"^^xsd:dateTime)
@@ -1740,6 +1744,7 @@ SubClassOf(obo:AEON_0000131 obo:AEON_0000006)
 
 # Class: obo:AEON_0000132 (event promoter role)
 
+AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000132 obo:IAO_0000125)
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000132 "An event organizer role that inheres in a person or organization who is responsible for the promotion and public relations of an event."@en)
 AnnotationAssertion(dce:creator obo:AEON_0000132 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:AEON_0000132 "event promoter role"@en)
@@ -1747,6 +1752,7 @@ SubClassOf(obo:AEON_0000132 obo:AEON_0000006)
 
 # Class: obo:AEON_0000133 (event finances accounting role)
 
+AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000133 obo:IAO_0000125)
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000133 "An event organizer role that is being realized by its bearer in the processes that are associated with the job of balancing the event budged."@en)
 AnnotationAssertion(dce:creator obo:AEON_0000133 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(dce:date obo:AEON_0000133 "2022-08-08T18:02:56Z"^^xsd:dateTime)
@@ -1858,6 +1864,7 @@ SubClassOf(obo:AEON_0000185 obo:IAO_0000030)
 
 # Class: obo:AEON_0000186 (event series maintainer role)
 
+AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000186 obo:IAO_0000125)
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000186 "An event organizer role that inheres in a person or organization who is designated to be responsible for maintaining an event series."@en)
 AnnotationAssertion(dce:creator obo:AEON_0000186 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(dce:date obo:AEON_0000186 "2022-08-26T16:38:21Z"^^xsd:dateTime)
