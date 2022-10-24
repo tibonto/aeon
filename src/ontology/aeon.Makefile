@@ -49,20 +49,6 @@ $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms.txt
 		merge -i $@.tmp.owl \
 		--output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
-
-## Module for ontology: cro
-
-$(IMPORTDIR)/cro_import.owl: $(MIRRORDIR)/cro.owl $(IMPORTDIR)/cro_terms.txt
-	if [ $(IMP) = true ]; then $(ROBOT) filter -i $< -T $(IMPORTDIR)/cro_terms.txt --select "self ancestors" --signature false --trim true \
-		--output $@.tmp.owl; fi
-	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
-		query --update ../sparql/preprocess-module_provo.ru \
-		filter -T $(IMPORTDIR)/cro_terms.txt --select "self annotations ontology" --signature false --trim true \
-	    query --update ../sparql/postprocess-module_2.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		merge -i $@.tmp.owl \
-		--output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
 ## Module for ontology: obib
 
 $(IMPORTDIR)/obib_import.owl: $(MIRRORDIR)/obib.owl $(IMPORTDIR)/obib_terms.txt
@@ -76,20 +62,7 @@ $(IMPORTDIR)/obib_import.owl: $(MIRRORDIR)/obib.owl $(IMPORTDIR)/obib_terms.txt
 		merge -i $@.tmp.owl \
 		--output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
-## Module for ontology: omrse
-
-$(IMPORTDIR)/omrse_import.owl: $(MIRRORDIR)/omrse.owl $(IMPORTDIR)/omrse_terms.txt
-	if [ $(IMP) = true ]; then $(ROBOT) filter -i $< -T $(IMPORTDIR)/omrse_terms.txt --select "self ancestors domains ranges equivalents" --signature true --trim true \
-		--output $@.tmp.owl; fi
-	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
-		query --update ../sparql/preprocess-module_provo.ru \
-		filter -T $(IMPORTDIR)/omrse_terms.txt --select "self annotations ontology equivalents" --signature true --trim true --axioms "tbox"\
-	    query --update ../sparql/postprocess-module_2.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		merge -i $@.tmp.owl \
-		--output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
-## Module for ontology: omrse
+## Module for ontology: oostt
 
 $(IMPORTDIR)/oostt_import.owl: $(MIRRORDIR)/oostt.owl $(IMPORTDIR)/oostt_terms.txt
 	if [ $(IMP) = true ]; then $(ROBOT) filter -i $< -T $(IMPORTDIR)/oostt_terms.txt --select "self ancestors domains ranges equivalents" --signature true --trim true \
@@ -101,8 +74,6 @@ $(IMPORTDIR)/oostt_import.owl: $(MIRRORDIR)/oostt.owl $(IMPORTDIR)/oostt_terms.t
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		merge -i $@.tmp.owl \
 		--output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
-
 
 ## Module for ontology: envo
 

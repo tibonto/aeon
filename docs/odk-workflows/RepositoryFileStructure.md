@@ -20,13 +20,11 @@ These are the current imports in AEON
 | ro | http://purl.obolibrary.org/obo/ro.owl | custom |
 | omo | http://purl.obolibrary.org/obo/omo.owl | mirror |
 | iao | http://purl.obolibrary.org/obo/iao.owl | custom |
-| cro | http://purl.obolibrary.org/obo/cro.owl | custom |
 | envo | http://purl.obolibrary.org/obo/envo.owl | custom |
 | txpo | http://purl.obolibrary.org/obo/txpo.owl | custom |
 | ico | http://purl.obolibrary.org/obo/ico.owl | custom |
 | obi | http://purl.obolibrary.org/obo/obi.owl | custom |
 | obib | http://purl.obolibrary.org/obo/obib.owl | custom |
-| omrse | http://purl.obolibrary.org/obo/omrse.owl | custom |
 | oostt | http://purl.obolibrary.org/obo/oostt.owl | custom |
 
 ## Components

@@ -42,11 +42,12 @@ import_group:
   - ro
   - omo
   - iao
-  - cro
+  - envo
   - txpo
   - ico
-  - obib
   - obi
+  - obib
+  - oostt
   mirror_max_time_download: 200
   mirror_retry_download: 4
   module_type: slme
@@ -64,8 +65,6 @@ import_group:
   - id: iao
     module_type: custom
     #slme_individuals: include
-  - id: cro
-    module_type: custom
   - id: envo
     module_type: custom
   - id: txpo
@@ -77,8 +76,6 @@ import_group:
   - id: obi
     module_type: custom
   - id: obib
-    module_type: custom
-  - id: omrse
     module_type: custom
   - id: oostt
     module_type: custom

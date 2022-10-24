@@ -97,7 +97,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  bfo ro omo iao cro envo txpo ico obi obib omrse oostt
+IMPORTS =  bfo ro omo iao envo txpo ico obi obib oostt
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -288,10 +288,6 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl $(IMPORTDIR)/omo_terms_combine
 
 $(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl
 	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in aeon.Makefile!" && false
-## Module for ontology: cro
-
-$(IMPORTDIR)/cro_import.owl: $(MIRRORDIR)/cro.owl
-	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in aeon.Makefile!" && false
 ## Module for ontology: envo
 
 $(IMPORTDIR)/envo_import.owl: $(MIRRORDIR)/envo.owl
@@ -311,10 +307,6 @@ $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl
 ## Module for ontology: obib
 
 $(IMPORTDIR)/obib_import.owl: $(MIRRORDIR)/obib.owl
-	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in aeon.Makefile!" && false
-## Module for ontology: omrse
-
-$(IMPORTDIR)/omrse_import.owl: $(MIRRORDIR)/omrse.owl
 	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in aeon.Makefile!" && false
 ## Module for ontology: oostt
 
@@ -387,15 +379,6 @@ mirror-iao: | $(TMPDIR)
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
-## ONTOLOGY: cro
-.PHONY: mirror-cro
-.PRECIOUS: $(MIRRORDIR)/cro.owl
-mirror-cro: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/cro.owl --create-dirs -o $(MIRRORDIR)/cro.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/cro.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-
 ## ONTOLOGY: envo
 .PHONY: mirror-envo
 .PRECIOUS: $(MIRRORDIR)/envo.owl
@@ -440,15 +423,6 @@ mirror-obi: | $(TMPDIR)
 mirror-obib: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/obib.owl --create-dirs -o $(MIRRORDIR)/obib.owl --retry 4 --max-time 200 &&\
 		$(ROBOT) convert -i $(MIRRORDIR)/obib.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-
-## ONTOLOGY: omrse
-.PHONY: mirror-omrse
-.PRECIOUS: $(MIRRORDIR)/omrse.owl
-mirror-omrse: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/omrse.owl --create-dirs -o $(MIRRORDIR)/omrse.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/omrse.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
