@@ -1079,12 +1079,12 @@ SubClassOf(obo:AEON_0000009 ObjectAllValuesFrom(obo:RO_0000081 obo:NCBITaxon_960
 
 # Class: obo:AEON_0000010 (event attendee role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000010 "A contributor role that inheres in a person who contributes to an event, such as a conference, by attending it. For this role to be realized, there needs to be some kind of event accreditation sub-process."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000010 "A role that inheres in a person who contributes to an event, such as a conference, by attending it. For this role to be realized, there needs to be some kind of event accreditation sub-process."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000010 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000010 "event attendee role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000010 "https://github.com/tibonto/aeon/issues/144")
 SubClassOf(obo:AEON_0000010 obo:BFO_0000023)
-SubClassOf(obo:AEON_0000010 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000001))
+SubClassOf(obo:AEON_0000010 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000196))
 SubClassOf(obo:AEON_0000010 ObjectAllValuesFrom(obo:RO_0000081 obo:NCBITaxon_9606))
 
 # Class: obo:AEON_0000011 (event moderator role)
