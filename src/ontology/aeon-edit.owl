@@ -1066,17 +1066,16 @@ AnnotationAssertion(rdfs:seeAlso obo:AEON_0000008 "https://github.com/tibonto/ae
 SubClassOf(obo:AEON_0000008 obo:AEON_0000006)
 SubClassOf(obo:AEON_0000008 obo:OOSTT_00000117)
 
-# Class: obo:AEON_0000009 (contact person role)
+# Class: obo:AEON_0000009 (event contact person role)
 
-AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000009 obo:IAO_0000423)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000009 "The contact person role inheres in a person that contributes to a planned process by functioning as the addressee of the planned process who answers general inquiries and redirects more complex inqueries to a more appropriate addressee."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000009 "This role should better be replaced with http://purl.obolibrary.org/obo/OBIB_0000625, however at the moment this one os not in sync with its parent see also https://github.com/ufbmi/OMRSE/issues/188 & https://github.com/biobanking/biobanking/issues/89"^^xsd:string)
+AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000009 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000009 "A role that inheres in a person who is designated to answer inquiries regarding an organized sociocultural event."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000009 "A possible parent class is OMRSE:\"role in human social processes\" (http://purl.obolibrary.org/obo/OMRSE_00002072), which wasn't used due to the error reported in https://github.com/ufbmi/OMRSE/issues/188#issuecomment-1272083405. Another possible parent could be ICO:\"contact person role\" (http://purl.obolibrary.org/obo/ICO_0000230), which could also be a child of OMRSE:\"role in human social processes\", but isn't. However, ICO:\"contact person role\" wasn't reused due to the intended type restriction stated in its rdfs:comment.")
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000009 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label obo:AEON_0000009 "contact person role"@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000009 "event contact person role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000009 "https://github.com/tibonto/aeon/issues/144")
-SubClassOf(obo:AEON_0000009 obo:BFO_0000023)
-SubClassOf(obo:AEON_0000009 ObjectAllValuesFrom(obo:BFO_0000054 obo:OBIB_0000624))
-SubClassOf(obo:AEON_0000009 ObjectAllValuesFrom(obo:RO_0000081 ObjectIntersectionOf(obo:NCBITaxon_9606 ObjectSomeValuesFrom(obo:OBI_0000846 obo:OBI_0000245))))
+SubClassOf(obo:AEON_0000009 obo:AEON_0000006)
+SubClassOf(obo:AEON_0000009 ObjectAllValuesFrom(obo:RO_0000081 obo:NCBITaxon_9606))
 
 # Class: obo:AEON_0000010 (event attendee role)
 
