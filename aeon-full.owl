@@ -14,9 +14,10 @@
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aeon/aeon-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aeon/releases/2022-10-07/aeon-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aeon/releases/2022-10-24/aeon-full.owl"/>
         <dc:contributor>Christian Hauschke</dc:contributor>
         <dc:contributor>Christoph Lange</dc:contributor>
         <dc:contributor>Michael Conlon</dc:contributor>
@@ -25,7 +26,7 @@
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>Academic Event Ontology</terms:title>
         <rdfs:comment>AEON is being developed as a part of the ConfIDent project (https://projects.tib.eu/confident).</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-07</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-24</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -385,6 +386,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/RO_0040042 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0040042"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040"/>
     
 
 
@@ -775,7 +782,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AEON_0000078">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000235"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AEON_0000019"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000496"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115 xml:lang="en">A relation obtaining between a person and the &apos;ORCID&apos; used to denote the person in the ORCID database.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
@@ -1162,7 +1169,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000118 xml:lang="en">realized_in</obo:IAO_0000118>
         <obo:IAO_0000600 xml:lang="en">[copied from inverse property &apos;realizes&apos;] to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obib/2021-11-12/obib.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2022-09-07/ro-base.owl"/>
         <rdfs:comment>Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
@@ -1363,9 +1369,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000119>Person:Alan Ruttenberg</obo:IAO_0000119>
         <obo:IAO_0000119>Person:Helen Parkinson</obo:IAO_0000119>
         <obo:IAO_0000232>2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000232>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obib/2021-11-12/obib.owl"/>
         <rdfs:label>is member of organization</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1374,7 +1378,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002314"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <obo:IAO_0000111 xml:lang="en">inheres in</obo:IAO_0000111>
@@ -1388,8 +1391,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">inheres_in</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obib/2021-11-12/obib.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-09-06/omrse.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2022-09-07/ro-base.owl"/>
         <rdfs:comment>Note that this relation was previously called &quot;inheres in&quot;, but was changed to be called &quot;characteristic of&quot; because BFO2 uses &quot;inheres in&quot; in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.</rdfs:comment>
         <rdfs:label xml:lang="en">characteristic of</rdfs:label>
@@ -1639,14 +1640,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0002314 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002314">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002502"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RO_0002331 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002331">
@@ -1749,12 +1742,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2022-09-07/ro-base.owl"/>
         <rdfs:label>causal agent in process</rdfs:label>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002502 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002502"/>
     
 
 
@@ -1938,8 +1925,9 @@ For now it seems sufficient to have a data property.</obo:IAO_0000116>
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AEON_0000148">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000155"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AEON_0000025"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <obo:IAO_0000116 xml:lang="en">A data property to provide a literal value for the coordinates of an academic event.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">A data property to provide a literal value for the coordinates of an organanized sociocultural event venue.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">coordinates</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -2072,9 +2060,10 @@ cancled → withdrawn</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/AEON_0000155 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AEON_0000155">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000171"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AEON_0000025"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <obo:IAO_0000115 xml:lang="en">A data property to provide a literal value for the location (site) of an academic event.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A data property to provide a literal value for the location (e.g. address) of an organized sociocultural event.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">This is an artefact from a very early version of AEON that is most likely to be obsoleted, as there should be better ways to model the locations of an academic event.</obo:IAO_0000116>
         <rdfs:label xml:lang="en">location</rdfs:label>
     </owl:DatatypeProperty>
@@ -2329,10 +2318,6 @@ cancled → withdrawn</rdfs:comment>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AEON_0000032"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000004"/>
                     </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CRO_0000000"/>
-                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -2353,12 +2338,6 @@ cancled → withdrawn</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AEON_0000084"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CRO_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2506,8 +2485,7 @@ cancled → withdrawn</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/AEON_0000006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AEON_0000006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRO_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -2525,10 +2503,11 @@ cancled → withdrawn</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000196"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A contributor role that inheres in a person or organization responsible for the general planning, management and realization of a social event.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000115 xml:lang="en">A role that inheres in a person or organization that is somehow responsible for the planning, management and realization of an organized sociocultural event.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">In the context of academic events this role would be the one held by a group pf people often refered to as the event&apos;s &quot;general committee&quot;.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">event organizer role</rdfs:label>
@@ -2555,6 +2534,8 @@ cancled → withdrawn</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AEON_0000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OOSTT_00000117"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">An event organizer role that inheres in a person who is designated to be responsible for the actions and outcomes of an event committee.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">event committee chair role</rdfs:label>
@@ -2566,15 +2547,19 @@ cancled → withdrawn</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/AEON_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AEON_0000009">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000115 xml:lang="en">The contact person role inheres in a person that contributes to a planned process by functioning as the addressee of the planned process who answers general inquiries and redirects more complex inqueries to a more appropriate addressee.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBSOLETION REASON: Term already existed</obo:IAO_0000116>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000115 xml:lang="en">A role that inheres in a person who is designated to answer inquiries regarding an organized sociocultural event.</obo:IAO_0000115>
+        <obo:IAO_0000116>A possible parent class is OMRSE:&quot;role in human social processes&quot; (http://purl.obolibrary.org/obo/OMRSE_00002072), which wasn&apos;t used due to the error reported in https://github.com/ufbmi/OMRSE/issues/188#issuecomment-1272083405. Another possible parent could be ICO:&quot;contact person role&quot; (http://purl.obolibrary.org/obo/ICO_0000230), which could also be a child of OMRSE:&quot;role in human social processes&quot;, but isn&apos;t. However, ICO:&quot;contact person role&quot; wasn&apos;t reused due to the intended type restriction stated in its rdfs:comment.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
-        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000228"/>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/OBIB_0000625"/>
-        <rdfs:label xml:lang="en">deprecated_contact person role</rdfs:label>
+        <rdfs:label xml:lang="en">event contact person role</rdfs:label>
         <rdfs:seeAlso>https://github.com/tibonto/aeon/issues/144</rdfs:seeAlso>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2582,12 +2567,11 @@ cancled → withdrawn</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/AEON_0000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AEON_0000010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRO_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000196"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2596,7 +2580,7 @@ cancled → withdrawn</rdfs:comment>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A contributor role that inheres in a person who contributes to an event, such as a conference, by attending it. For this role to be realized, there needs to be some kind of event accreditation sub-process.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A role that inheres in a person who contributes to an event, such as a conference, by attending it. For this role to be realized, there needs to be some kind of event accreditation sub-process.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">event attendee role</rdfs:label>
         <rdfs:seeAlso>https://github.com/tibonto/aeon/issues/144</rdfs:seeAlso>
@@ -2607,12 +2591,11 @@ cancled → withdrawn</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/AEON_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AEON_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRO_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000196"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2632,17 +2615,21 @@ cancled → withdrawn</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/AEON_0000012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AEON_0000012">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000115 xml:lang="en">OBSOLETE Evaluation of scientific, academic, or professional work, such as manuscripts or grants by others working in the same field. The reviewer role inheres in a person that contributes to a planned process by reviewing something of interest in a planned process.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">ToDo: use CRO IRI http://purl.obolibrary.org/obo/CRO_0000101</obo:IAO_0000116>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>Someone who reviews a manuscript submitted for publication or presentation at an academic event bears a reviewer role.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000115 xml:lang="en">A role that inheres in a person who is designated to analyse and judge the information (e.g. text or code) that is the specified input of a particular reviewing process. This role is realized when the reviewing process has been completed as intended.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Contributor Role Ontology CRO contains a role that seems equivalent (http://purl.obolibrary.org/obo/CRO_0000101), but which cannot be used instead, as long as https://github.com/data2health/contributor-role-ontology/issues/135 is not sufficiently answered.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">manuscript review role</obo:IAO_0000118>
-        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000228"/>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CRO_0000101"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This role was already present in the Contributor Role Ontology CRO</rdfs:comment>
-        <rdfs:label xml:lang="en">deprecated_reviewer role</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">peer-review role</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">human reviewer role</rdfs:label>
         <rdfs:seeAlso>https://github.com/tibonto/aeon/issues/144</rdfs:seeAlso>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2650,12 +2637,48 @@ cancled → withdrawn</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/AEON_0000013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AEON_0000013">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRO_0000000"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AEON_0000032"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000124"/>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000196"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AEON_0000032"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000124"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2664,8 +2687,8 @@ cancled → withdrawn</rdfs:comment>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115 xml:lang="en">A contributor role that inheres in a person who speaks about a certain topic at a social event, either in form of presenting or teaching information to an audience.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000115 xml:lang="en">A role that inheres in a person who speaks about a certain topic at a organized sociocultural event, either in form of presenting or teaching information to an audience.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Could be replaced with the CRO equivalent, if the proposal made in https://github.com/data2health/contributor-role-ontology/issues/134 is being accepted and merged.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">invited speaker role</obo:IAO_0000118>
@@ -2717,7 +2740,8 @@ cancled → withdrawn</rdfs:comment>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">The keynote speaker role inheres in a person that participates in an organized sociocultural event by holding a keynote speech.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A presenter role that inheres in a person who participates in an organized sociocultural event by holding a keynote speech.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">keynote speaker role</rdfs:label>
         <rdfs:seeAlso>https://github.com/tibonto/aeon/issues/144</rdfs:seeAlso>
@@ -2728,8 +2752,7 @@ cancled → withdrawn</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/AEON_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AEON_0000015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRO_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -2746,19 +2769,14 @@ cancled → withdrawn</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CRO_0000097"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000001"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000196"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A contributor role that inheres in a person or organization who provides money, material ressources or special services needed in the realization of an event in return of being officially credited for this role.</obo:IAO_0000115>
-        <obo:IAO_0000116>PS 2-9-2020: For me there is still the open question on how to best model the different sponsor types (e.g. gold, silver, bronze...).</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">The difference of this role to the obi:&apos;sponsor role&apos; (http://purl.obolibrary.org/obo/OBI_0000243) is that the latter has the constraint to be a sponsor of scientific studies.Changing the label to something like &quot;sponsoring a planned process role&quot; might be more fitting but is quite long.</obo:IAO_0000116>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000115 xml:lang="en">A role that inheres in a person or organization who provides money, material ressources or special services needed in the realization of an organized sociocultural event in return of being officially credited for this role.</obo:IAO_0000115>
+        <obo:IAO_0000116>PS 2-9-2020: There is still the open question on how to best model different sponsor types (e.g. gold, silver, bronze...).</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">The difference of this role to the obi:&apos;sponsor role&apos; (http://purl.obolibrary.org/obo/OBI_0000243) is that the latter has the constraint to be a sponsor of scientific studies.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">event sponsor role</rdfs:label>
         <rdfs:seeAlso>https://github.com/tibonto/aeon/issues/144</rdfs:seeAlso>
@@ -2811,13 +2829,16 @@ cancled → withdrawn</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/AEON_0000019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AEON_0000019">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
-        <obo:IAO_0000115 xml:lang="en">An &apos;ORCID&apos; is a iao:&apos;centrally registered identifier&apos; that denotes authors and contributors of scholarly communication in the ORCID database.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">OBSOLETE An &apos;ORCID&apos; is a iao:&apos;centrally registered identifier&apos; that denotes authors and contributors of scholarly communication in the ORCID database.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">Open Researcher and Contributor ID</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/ORCID</obo:IAO_0000119>
-        <rdfs:label>ORCID</rdfs:label>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000496"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Term imported from Apollo_SV</rdfs:comment>
+        <rdfs:label>deprecated_ORCID</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4015,6 +4036,7 @@ A congress is a conference that is characterised by a larger number of participa
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AEON_0000129">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000006"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115>An event organizer role that inheres in a person or organization who is responsible for aquiring and managing the sponsors of an event.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-08T18:01:10Z</dc:date>
@@ -4027,12 +4049,7 @@ A congress is a conference that is characterised by a larger number of participa
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AEON_0000130">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000006"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CRO_0000026"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">An event organizer role that inheres in a person or organization responsible for the on-site planning, management and coordination of an event.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-08T18:02:56Z</dc:date>
@@ -4045,24 +4062,7 @@ A congress is a conference that is characterised by a larger number of participa
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AEON_0000131">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000006"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CRO_0000101"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CRO_0000104"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CRO_0000106"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">An event organizer role that inheres in a person or organization who is responsible for the development of the event program according to the chosen event format specification. This includes such tasks as inviting suitable presenters, evaluating, reviewing, accepting or declining the work submitted for presentation as well as determining the schedule of the event.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-08T18:02:56Z</dc:date>
@@ -4075,12 +4075,7 @@ A congress is a conference that is characterised by a larger number of participa
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AEON_0000132">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000006"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CRO_0000007"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">An event organizer role that inheres in a person or organization who is responsible for the promotion and public relations of an event.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">event promoter role</rdfs:label>
@@ -4092,12 +4087,7 @@ A congress is a conference that is characterised by a larger number of participa
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AEON_0000133">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000006"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CRO_0000007"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">An event organizer role that is being realized by its bearer in the processes that are associated with the job of balancing the event budged.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-08T18:02:56Z</dc:date>
@@ -4380,6 +4370,7 @@ A congress is a conference that is characterised by a larger number of participa
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AEON_0000186">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000006"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">An event organizer role that inheres in a person or organization who is designated to be responsible for maintaining an event series.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-26T16:38:21Z</dc:date>
@@ -5185,6 +5176,21 @@ This class is only defined as a placeholder in AEON and should actually better b
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-05T10:15:52Z</dc:date>
         <rdfs:label xml:lang="en">sponsor fee specification</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/tibonto/aeon/issues/117"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000496 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000496">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <obo:IAO_0000115 xml:lang="en">An identifier curated by ORCID, Inc. to denote some academic author.</obo:IAO_0000115>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000117>William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000600 xml:lang="en">An identifier curated by ORCID, Inc. to denote some academic author.</obo:IAO_0000600>
+        <apollo_sv:APOLLO_SV_0000040>orcId</apollo_sv:APOLLO_SV_0000040>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/apollo_sv/v4.1.1./apollo_sv.owl"/>
+        <rdfs:label xml:lang="en">ORCID</rdfs:label>
     </owl:Class>
     
 
@@ -6437,12 +6443,9 @@ This class is only defined as a placeholder in AEON and should actually better b
         <obo:IAO_0000112 xml:lang="en">an energy wave</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">an epidemic</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the undetached arm of a human being</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Material entities (continuants) can preserve their identity even while gaining and losing material parts. Continuants are contrasted with occurrents, which unfold themselves in successive temporal parts or phases [60</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Object, Fiat Object Part and Object Aggregate are not intended to be exhaustive of Material Entity. Users are invited to propose new subcategories of Material Entity.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: ‘Matter’ is intended to encompass both mass and energy (we will address the ontological treatment of portions of energy in a later version of BFO). A portion of matter is anything that includes elementary particles among its proper or improper parts: quarks and leptons, including electrons, as the smallest particles thus far discovered; baryons (including protons and neutrons) at a higher level of granularity; atoms and molecules at still higher levels, forming the cells, organs, organisms and other material entities studied by biologists, the portions of rock studied by geologists, the fossils studied by paleontologists, and so on.Material entities are three-dimensional entities (entities extended in three spatial dimensions), as contrasted with the processes in which they participate, which are four-dimensional entities (entities extended also along the dimension of time).According to the FMA, material entities may have immaterial entities as parts – including the entities identified below as sites; for example the interior (or ‘lumen’) of your small intestine is a part of your body. BFO 2.0 embodies a decision to follow the FMA here.</obo:IAO_0000116>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
         <obo:IAO_0000600 xml:lang="en">A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])</obo:IAO_0000600>
         <obo:IAO_0000601 xml:lang="en">Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])</obo:IAO_0000601>
         <obo:IAO_0000601 xml:lang="en">every entity of which a material entity is continuant part is also a material entity. (axiom label in BFO2 Reference: [021-002])</obo:IAO_0000601>
@@ -6450,7 +6453,6 @@ This class is only defined as a placeholder in AEON and should actually better b
         <obo:IAO_0000602>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] </obo:IAO_0000602>
         <obo:IAO_0000602>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] </obo:IAO_0000602>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-09-06/omrse.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">material entity</rdfs:label>
     </owl:Class>
@@ -6772,284 +6774,6 @@ This class is only defined as a placeholder in AEON and should actually better b
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CRO_0000000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRO_0000000">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <obo:IAO_0000111>contributor role</obo:IAO_0000111>
-        <obo:IAO_0000114>http://purl.obolibrary.org/obo/IAO_0000120</obo:IAO_0000114>
-        <obo:IAO_0000115>A high-level classification of the diverse roles performed in the work leading to a published research output in the sciences. Its purpose to provide transparency in contributions to scholarly published work, to enable improved systems of attribution, credit, and accountability.</obo:IAO_0000115>
-        <obo:IAO_0000117>https://orcid.org/0000-0001-5059-4132</obo:IAO_0000117>
-        <obo:IAO_0000119>http://dictionary.casrai.org/Contributor_Roles</obo:IAO_0000119>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl"/>
-        <oboInOwl:hasDbXref>9dbb95f4-55ed-4e43-9301-a9f0e3e17afe</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonym rdf:resource="http://purl.org/credit/ontology#CREDIT_00000000"/>
-        <rdfs:label xml:lang="en">contributor role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CRO_0000007 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRO_0000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRO_0000000"/>
-        <obo:IAO_0000115>Coordination of research dissemination through popular media and the press, as well as community outreach and liaising of project directly to the community.</obo:IAO_0000115>
-        <obo:IAO_0000116>Similar to vivo:OutreachProviderRole?</obo:IAO_0000116>
-        <obo:IAO_0000118>communication role</obo:IAO_0000118>
-        <obo:IAO_0000118>outreach role</obo:IAO_0000118>
-        <dc:creator rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-14T19:51:26Z</dc:date>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl"/>
-        <rdfs:label>marketing and communication role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CRO_0000026 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRO_0000026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRO_0000000"/>
-        <obo:IAO_0000115>A person that is responsible for usage of instrumentation, such as equipment or devices, or instruments like a survey or questionnaire.</obo:IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-14T20:06:00Z</dc:date>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl"/>
-        <rdfs:label>instrumentation role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CRO_0000058 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRO_0000058">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRO_0000026"/>
-        <obo:IAO_0000115>A person that is responsible for operating equipment or instrumentation and/or that ensures equipment is well-maintained, properly configured, and safely functional.</obo:IAO_0000115>
-        <obo:IAO_0000118>instrument technician role</obo:IAO_0000118>
-        <dc:creator rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-14T20:23:44Z</dc:date>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl"/>
-        <rdfs:label>equipment technician role</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CRO_0000058"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A person that is responsible for operating equipment or instrumentation and/or that ensures equipment is well-maintained, properly configured, and safely functional.</owl:annotatedTarget>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Biomedical_equipment_technician</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CRO_0000065 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRO_0000065">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRO_0000078"/>
-        <obo:IAO_0000115>Planning, management, and monitoring of projects.</obo:IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-14T20:25:55Z</dc:date>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl"/>
-        <rdfs:label>project management role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CRO_0000078 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRO_0000078">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRO_0000000"/>
-        <obo:IAO_0000115>Contribution to the basic, underlying framework or features of a system or organization.</obo:IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-10-01T20:48:11Z</dc:date>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl"/>
-        <rdfs:label>infrastructure role</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CRO_0000078"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Contribution to the basic, underlying framework or features of a system or organization.</owl:annotatedTarget>
-        <obo:IAO_0000119>https://www.dictionary.com/browse/infrastructure</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CRO_0000079 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRO_0000079">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRO_0000078"/>
-        <obo:IAO_0000115>Evaluation is a systematic method for collecting, analyzing, and using information to answer questions about projects, policies and programs, particularly about their effectiveness and efficiency.</obo:IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-10-01T20:48:24Z</dc:date>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl"/>
-        <rdfs:label>project, policy or program evaluation role</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CRO_0000079"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Evaluation is a systematic method for collecting, analyzing, and using information to answer questions about projects, policies and programs, particularly about their effectiveness and efficiency.</owl:annotatedTarget>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Program_evaluation</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CRO_0000081 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRO_0000081">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRO_0000078"/>
-        <obo:IAO_0000115>The organization of the different elements needed to implement a study.</obo:IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-10-01T20:49:10Z</dc:date>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl"/>
-        <rdfs:label>coordination role</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CRO_0000081"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The organization of the different elements needed to implement a study.</owl:annotatedTarget>
-        <obo:IAO_0000119>https://learn.nursing.jhu.edu/face-to-face/courses/research-coordinator/index.html</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CRO_0000097 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRO_0000097">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRO_0000000"/>
-        <obo:IAO_0000115>The person or organization that provides money for a particular purpose, such as a grant to perform research.</obo:IAO_0000115>
-        <obo:IAO_0000118>funder role</obo:IAO_0000118>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl"/>
-        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
-        <rdfs:label>funding source role</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CRO_0000097"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The person or organization that provides money for a particular purpose, such as a grant to perform research.</owl:annotatedTarget>
-        <obo:IAO_0000119>https://www.lexico.com/en/definition/funder</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CRO_0000100 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRO_0000100">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRO_0000000"/>
-        <obo:IAO_0000115>Oral presentation intended to present information or teach people about a particular subject, such as a talk or poster presentation at a conference.</obo:IAO_0000115>
-        <obo:IAO_0000118>lecture role</obo:IAO_0000118>
-        <obo:IAO_0000118>lecturer role</obo:IAO_0000118>
-        <obo:IAO_0000118>presentation role</obo:IAO_0000118>
-        <obo:IAO_0000118>speaker role</obo:IAO_0000118>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl"/>
-        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
-        <rdfs:label>presenter role</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CRO_0000100"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Oral presentation intended to present information or teach people about a particular subject, such as a talk or poster presentation at a conference.</owl:annotatedTarget>
-        <obo:IAO_0000119>https://www.wikidata.org/wiki/Q603773</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CRO_0000101 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRO_0000101">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRO_0000000"/>
-        <obo:IAO_0000115>Evaluation of scientific, academic, or professional work, such as manuscripts or grants by others working in the same field.</obo:IAO_0000115>
-        <obo:IAO_0000118>manuscript review role</obo:IAO_0000118>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl"/>
-        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
-        <rdfs:label>peer review role</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CRO_0000101"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Evaluation of scientific, academic, or professional work, such as manuscripts or grants by others working in the same field.</owl:annotatedTarget>
-        <obo:IAO_0000119>https://www.lexico.com/en/definition/peer_review</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CRO_0000102 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRO_0000102">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRO_0000000"/>
-        <obo:IAO_0000115>A role that involves giving advice in a particular field.</obo:IAO_0000115>
-        <obo:IAO_0000234>https://orcid.org/0000-0001-8420-5254</obo:IAO_0000234>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl"/>
-        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
-        <rdfs:label>advisory role</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CRO_0000102"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget>advisory role</owl:annotatedTarget>
-        <obo:IAO_0000119>https://www.lexico.com/en/definition/adviser</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CRO_0000104 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRO_0000104">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRO_0000000"/>
-        <obo:IAO_0000115>A role that is realized through the act of formally accepting an artifact for inclusion in some larger resource (e.g. database, registry, collection, etc.)</obo:IAO_0000115>
-        <obo:IAO_0000234>https://orcid.org/0000-0002-1048-5019</obo:IAO_0000234>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl"/>
-        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
-        <rdfs:comment>An agent accepting an artifact possesses the authority to decide if it belongs in a particular resource or collection. This agent may or may not also have directly evaluated it themselves - but if they did, an &apos;evaluator role&apos; could additionally be captured.</rdfs:comment>
-        <rdfs:label>acceptor role</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CRO_0000104"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A role that is realized through the act of formally accepting an artifact for inclusion in some larger resource (e.g. database, registry, collection, etc.)</owl:annotatedTarget>
-        <obo:IAO_0000119>https://orcid.org/0000-0002-1048-5019</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CRO_0000105 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRO_0000105">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRO_0000000"/>
-        <obo:IAO_0000115>A role that is realized through the act of formally submitting or depositing an artifact to be included in some larger resource (e.g. database, registry, collection, etc.)</obo:IAO_0000115>
-        <obo:IAO_0000118>depositor role</obo:IAO_0000118>
-        <obo:IAO_0000234>https://orcid.org/0000-0002-1048-5019</obo:IAO_0000234>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl"/>
-        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
-        <rdfs:comment>An agent submitting an artifact may or may not also have contributed to its creation. If they did, and additional ‘creator role’ can be applied.</rdfs:comment>
-        <rdfs:label>submitter role</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CRO_0000105"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A role that is realized through the act of formally submitting or depositing an artifact to be included in some larger resource (e.g. database, registry, collection, etc.)</owl:annotatedTarget>
-        <obo:IAO_0000119>https://orcid.org/0000-0002-1048-5019</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CRO_0000106 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRO_0000106">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRO_0000078"/>
-        <obo:IAO_0000115>A role that is realized through the review and evaluation of an artifact - generally to assess its quality, completeness, relevance, or other characteristics.</obo:IAO_0000115>
-        <obo:IAO_0000118>assessor role</obo:IAO_0000118>
-        <obo:IAO_0000118>reviewer role</obo:IAO_0000118>
-        <obo:IAO_0000234>https://orcid.org/0000-0002-1048-5019</obo:IAO_0000234>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl"/>
-        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
-        <rdfs:comment>Evaluating an artifact does not involve modification of the assessed artifact - however the suggestion of alterations can be a separate outcome of an evaluation. If the artifact is modified by the agent during or subsequent to the evaluation, a &apos;modifier role&apos; should additionally be applied.</rdfs:comment>
-        <rdfs:label>evaluator role</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CRO_0000106"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A role that is realized through the review and evaluation of an artifact - generally to assess its quality, completeness, relevance, or other characteristics.</owl:annotatedTarget>
-        <obo:IAO_0000119>https://orcid.org/0000-0002-1048-5019</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_00000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000004">
@@ -7220,7 +6944,7 @@ This class is only defined as a placeholder in AEON and should actually better b
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000005"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A primary administrative division of a country, such as a state in the United States.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geonames:http://www.geonames.org/export/codes.html</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Geonames:http://www.geonames.org/export/codes.html</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000005"/>
@@ -8043,7 +7767,6 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118>man</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obib/2021-11-12/obib.owl"/>
         <rdfs:label>Homo sapiens</rdfs:label>
     </owl:Class>
     
@@ -8058,46 +7781,6 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/obib/2021-11-12/obib.owl"/>
         <rdfs:comment xml:lang="en">Contacting is the process of one human being starting a communication process with another human being. Contacting can be done using all modes of communication used by humans.</rdfs:comment>
         <rdfs:label xml:lang="en">contacting</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBIB_0000625 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIB_0000625">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000024"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIB_0000624"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIB_0000624"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000846"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A role borne by a human being that is part of an group of individuals and acts as contact person for the group. This role gets realized by the bearer being a participant in a contacting process.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obib/2021-11-12/obib.owl"/>
-        <rdfs:label xml:lang="en">contact role</rdfs:label>
     </owl:Class>
     
 
@@ -8188,9 +7871,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000117>PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON: Susanna Sansone</obo:IAO_0000117>
         <obo:IAO_0000119>GROUP: OBI</obo:IAO_0000119>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/obib/2021-11-12/obib.owl"/>
         <rdfs:label xml:lang="en">organization</rdfs:label>
     </owl:Class>
     
@@ -8215,76 +7896,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2022-07-11/obi.owl"/>
         <rdfs:label xml:lang="en">organism</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000024 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000115 xml:lang="en">A role inhering in an entity realized by social interactions in human society.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/omrse.owl</obo:IAO_0000412>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-09-06/omrse.owl"/>
-        <rdfs:comment xml:lang="en">Previous definition: A role played by an entity in human social processes.</rdfs:comment>
-        <rdfs:label xml:lang="en">obsolete role in human social processes</rdfs:label>
-        <rdfs:label xml:lang="en">role in human social processes</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000048 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000048">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-09-06/omrse.owl"/>
-        <rdfs:label xml:lang="en">material entity role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00002072 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002072">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000048"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A role inhering in an entity realized by social interactions in human society.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
-        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-09-06/omrse.owl"/>
-        <rdfs:comment xml:lang="en">Previous definition: A role played by an entity in human social processes.</rdfs:comment>
-        <rdfs:label xml:lang="en">role in human social processes</rdfs:label>
     </owl:Class>
     
 
@@ -8558,10 +8169,18 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     
 
 
+    <!-- https://orcid.org/0000-0001-8249-1752 -->
+
+    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0001-8249-1752">
+        <rdfs:label>ORCID:0000-0001-8249-1752</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://orcid.org/0000-0002-1595-3213 -->
 
     <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-1595-3213">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AEON_0000019"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000496"/>
         <rdfs:comment>ORCID of Philip Strömert</rdfs:comment>
         <rdfs:label>ORCID:0000-0002-1595-3213</rdfs:label>
     </owl:NamedIndividual>
@@ -8571,7 +8190,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <!-- https://orcid.org/0000-0003-2499-7741 -->
 
     <owl:NamedIndividual rdf:about="https://orcid.org/0000-0003-2499-7741">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AEON_0000019"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000496"/>
         <rdfs:label>ORCID:0000-0003-2499-7741</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8608,11 +8227,12 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:AEON_0000073 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021_deadline1"/>
         <obo:AEON_0000073 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021_deadline2"/>
         <obo:AEON_0000084 rdf:resource="https://www.confident-conference.org/index.php/Event_Series:VIVO"/>
-        <obo:BFO_0000055 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021_role1"/>
         <obo:IAO_0000235 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021_id"/>
         <obo:IAO_0000235 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021_name"/>
         <obo:IAO_0000235 rdf:resource="https://www.wikidata.org/wiki/Q108430522"/>
         <obo:RO_0000057 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021_orga_committee"/>
+        <obo:RO_0000057 rdf:resource="https://www.confident-conference.org/index.php/Organization:1"/>
+        <obo:TXPO_0002523 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021_day1"/>
         <obo:AEON_0000141 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2021-06-25T21:00:00Z</obo:AEON_0000141>
         <obo:AEON_0000142 rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2021-06-23T17:00:00Z</obo:AEON_0000142>
         <obo:AEON_0000164 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://vivoconference.org/vivo2021</obo:AEON_0000164>
@@ -8660,6 +8280,19 @@ Do you help make scholarly data open, found, and consumed? Do you have fresh ide
         <obo:OBI_0002815 xml:lang="en">The VIVO conference requires that your work be publically available from a repository of your choice. Your repository must assign your work a DOI and must make your work open and freely available to all. We recommend your work be licensed using a Creative Commons license. Repositories that provide that will allow you to satisfy these requirements include figshare and Zenodo.</obo:OBI_0002815>
         <rdfs:label>Event:VIVO_2021_condition1</rdfs:label>
         <prov:wasDerivedFrom>https://vivoconference.org/vivo2021/news/call-for-proposals</prov:wasDerivedFrom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.confident-conference.org/index.php/Event:VIVO_2021_day1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.confident-conference.org/index.php/Event:VIVO_2021_day1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AEON_0000001"/>
+        <obo:TXPO_0002523 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021_talk1"/>
+        <obo:TXPO_0002523 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021_talk2"/>
+        <obo:IAO_0000115>The first day of the VIVO 2021 conference.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://vivoconference.org/vivo2021/schedule/</obo:IAO_0000119>
+        <rdfs:label>Event:VIVO_2021_day1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8763,8 +8396,7 @@ Do you help make scholarly data open, found, and consumed? Do you have fresh ide
     <!-- https://www.confident-conference.org/index.php/Event:VIVO_2021_orga_committee -->
 
     <owl:NamedIndividual rdf:about="https://www.confident-conference.org/index.php/Event:VIVO_2021_orga_committee">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AEON_0000134"/>
-        <obo:RO_0000087 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021_role1"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AEON_0000042"/>
         <obo:RO_0002351 rdf:resource="https://www.confident-conference.org/index.php/Person:1"/>
         <obo:AEON_0000144 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">mailto:conference@vivoweb.org</obo:AEON_0000144>
         <rdfs:label>Event:VIVO_2021_orga_committee</rdfs:label>
@@ -8777,8 +8409,10 @@ Do you help make scholarly data open, found, and consumed? Do you have fresh ide
     <owl:NamedIndividual rdf:about="https://www.confident-conference.org/index.php/Event:VIVO_2021_role1">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AEON_0000006"/>
         <obo:BFO_0000054 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021"/>
-        <obo:IAO_0000115>Example role1</obo:IAO_0000115>
+        <obo:RO_0000081 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021_orga_committee"/>
+        <obo:IAO_0000115>Role of VIVO 2021 organizing committee</obo:IAO_0000115>
         <rdfs:label>Event:VIVO_2021_role1</rdfs:label>
+        <prov:wasDerivedFrom>https://vivoconference.org/vivo2021/team/</prov:wasDerivedFrom>
     </owl:NamedIndividual>
     
 
@@ -8786,11 +8420,12 @@ Do you help make scholarly data open, found, and consumed? Do you have fresh ide
     <!-- https://www.confident-conference.org/index.php/Event:VIVO_2021_role2 -->
 
     <owl:NamedIndividual rdf:about="https://www.confident-conference.org/index.php/Event:VIVO_2021_role2">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AEON_0000013"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OOSTT_00000117"/>
         <obo:BFO_0000054 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021"/>
-        <obo:RO_0000081 rdf:resource="https://www.confident-conference.org/index.php/Person:2"/>
-        <obo:IAO_0000115>Example role2</obo:IAO_0000115>
+        <obo:RO_0000081 rdf:resource="https://www.confident-conference.org/index.php/Person:1"/>
+        <obo:IAO_0000115>VIVO 2021 organizing committee member role of Christian Hauschke</obo:IAO_0000115>
         <rdfs:label>Event:VIVO_2021_role2</rdfs:label>
+        <prov:wasDerivedFrom>https://vivoconference.org/vivo2021/team/</prov:wasDerivedFrom>
     </owl:NamedIndividual>
     
 
@@ -8798,20 +8433,12 @@ Do you help make scholarly data open, found, and consumed? Do you have fresh ide
     <!-- https://www.confident-conference.org/index.php/Event:VIVO_2021_role3 -->
 
     <owl:NamedIndividual rdf:about="https://www.confident-conference.org/index.php/Event:VIVO_2021_role3">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OOSTT_00000117"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AEON_0000015"/>
         <obo:BFO_0000054 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021"/>
-        <obo:IAO_0000115>Example role3</obo:IAO_0000115>
+        <obo:RO_0000081 rdf:resource="https://www.confident-conference.org/index.php/Organization:1"/>
+        <obo:IAO_0000115>Role of VIVO 2021 sponsor Ontocale</obo:IAO_0000115>
         <rdfs:label>Event:VIVO_2021_role3</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.confident-conference.org/index.php/Event:VIVO_2021_role4 -->
-
-    <owl:NamedIndividual rdf:about="https://www.confident-conference.org/index.php/Event:VIVO_2021_role4">
-        <obo:BFO_0000054 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021"/>
-        <obo:IAO_0000115>Example role4</obo:IAO_0000115>
-        <rdfs:label>Event:VIVO_2021_role4</rdfs:label>
+        <prov:wasDerivedFrom>https://vivoconference.org/vivo2021/</prov:wasDerivedFrom>
     </owl:NamedIndividual>
     
 
@@ -8820,17 +8447,10 @@ Do you help make scholarly data open, found, and consumed? Do you have fresh ide
 
     <owl:NamedIndividual rdf:about="https://www.confident-conference.org/index.php/Event:VIVO_2021_schedule">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AEON_0000219"/>
+        <obo:OBI_0002815>https://vivoconference.org/vivo2021/schedule/</obo:OBI_0002815>
+        <obo:IAO_0000115>The schedule of VIVO 2021</obo:IAO_0000115>
         <rdfs:label>Event:VIVO_2021_schedule</rdfs:label>
         <prov:wasDerivedFrom>https://vivoconference.org/vivo2021/schedule/</prov:wasDerivedFrom>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.confident-conference.org/index.php/Event:VIVO_2021_session1 -->
-
-    <owl:NamedIndividual rdf:about="https://www.confident-conference.org/index.php/Event:VIVO_2021_session1">
-        <obo:IAO_0000115>Example session</obo:IAO_0000115>
-        <rdfs:label>Event:VIVO_2021_session1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8840,8 +8460,11 @@ Do you help make scholarly data open, found, and consumed? Do you have fresh ide
     <owl:NamedIndividual rdf:about="https://www.confident-conference.org/index.php/Event:VIVO_2021_talk1">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AEON_0000001"/>
         <obo:AEON_0000032 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021_talk1_format"/>
-        <obo:IAO_0000115>Example VIVO_2020_talk1</obo:IAO_0000115>
+        <obo:RO_0000057 rdf:resource="https://www.confident-conference.org/index.php/Person:2"/>
+        <obo:IAO_0000115>The sixth talk of VIVO 2021 day 1</obo:IAO_0000115>
         <rdfs:label>Event:VIVO_2021_talk1</rdfs:label>
+        <skos:prefLabel>AEON development workflow - how I managed to never open the command line and yet have automated workflows</skos:prefLabel>
+        <prov:wasDerivedFrom>https://vivoconference.org/vivo2021/schedule/#session-20</prov:wasDerivedFrom>
     </owl:NamedIndividual>
     
 
@@ -8849,7 +8472,19 @@ Do you help make scholarly data open, found, and consumed? Do you have fresh ide
     <!-- https://www.confident-conference.org/index.php/Event:VIVO_2021_talk1_format -->
 
     <owl:NamedIndividual rdf:about="https://www.confident-conference.org/index.php/Event:VIVO_2021_talk1_format">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AEON_0000205"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AEON_0000124"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.confident-conference.org/index.php/Event:VIVO_2021_talk1_role1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.confident-conference.org/index.php/Event:VIVO_2021_talk1_role1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AEON_0000013"/>
+        <obo:BFO_0000054 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021_talk1"/>
+        <obo:RO_0000081 rdf:resource="https://www.confident-conference.org/index.php/Person:2"/>
+        <obo:IAO_0000115>Example role2</obo:IAO_0000115>
+        <rdfs:label>Event:VIVO_2021_talk1_role1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8859,8 +8494,11 @@ Do you help make scholarly data open, found, and consumed? Do you have fresh ide
     <owl:NamedIndividual rdf:about="https://www.confident-conference.org/index.php/Event:VIVO_2021_talk2">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AEON_0000001"/>
         <obo:AEON_0000032 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021_talk2_format"/>
-        <obo:IAO_0000115>Example Event:VIVO_2021_talk2</obo:IAO_0000115>
+        <obo:RO_0000057 rdf:resource="https://www.confident-conference.org/index.php/Person:3"/>
+        <obo:IAO_0000115>The keynote of VIVO 2021 day 1.</obo:IAO_0000115>
         <rdfs:label>Event:VIVO_2021_talk2</rdfs:label>
+        <skos:prefLabel>Open research information for responsible research assessment</skos:prefLabel>
+        <prov:wasDerivedFrom>https://vivoconference.org/vivo2021/schedule/#session-39</prov:wasDerivedFrom>
     </owl:NamedIndividual>
     
 
@@ -8869,6 +8507,17 @@ Do you help make scholarly data open, found, and consumed? Do you have fresh ide
 
     <owl:NamedIndividual rdf:about="https://www.confident-conference.org/index.php/Event:VIVO_2021_talk2_format">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AEON_0000114"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.confident-conference.org/index.php/Event:VIVO_2021_talk2_role1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.confident-conference.org/index.php/Event:VIVO_2021_talk2_role1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AEON_0000014"/>
+        <obo:BFO_0000054 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021_talk2"/>
+        <obo:RO_0000081 rdf:resource="https://www.confident-conference.org/index.php/Person:3"/>
+        <rdfs:label>Event:VIVO_2021_talk2_role1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8941,9 +8590,9 @@ Do you help make scholarly data open, found, and consumed? Do you have fresh ide
     <!-- https://www.confident-conference.org/index.php/Organization:1 -->
 
     <owl:NamedIndividual rdf:about="https://www.confident-conference.org/index.php/Organization:1">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <obo:RO_0000087 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021_role4"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/ICO_0000049"/>
         <rdfs:label>_Organization:1</rdfs:label>
+        <skos:prefLabel>Ontocale</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -8953,8 +8602,8 @@ Do you help make scholarly data open, found, and consumed? Do you have fresh ide
     <owl:NamedIndividual rdf:about="https://www.confident-conference.org/index.php/Person:1">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:IAO_0000235 rdf:resource="https://orcid.org/0000-0003-2499-7741"/>
-        <obo:RO_0000087 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021_role3"/>
         <rdfs:label>_Person:1</rdfs:label>
+        <skos:altLabel>Christian Hauschke</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -8963,9 +8612,20 @@ Do you help make scholarly data open, found, and consumed? Do you have fresh ide
 
     <owl:NamedIndividual rdf:about="https://www.confident-conference.org/index.php/Person:2">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-        <obo:RO_0000056 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021_talk2"/>
-        <obo:RO_0000087 rdf:resource="https://www.confident-conference.org/index.php/Event:VIVO_2021_role2"/>
+        <obo:IAO_0000235 rdf:resource="https://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label>_Person:2</rdfs:label>
+        <skos:altLabel>Philip Strömert</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.confident-conference.org/index.php/Person:3 -->
+
+    <owl:NamedIndividual rdf:about="https://www.confident-conference.org/index.php/Person:3">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <obo:IAO_0000235 rdf:resource="https://orcid.org/0000-0001-8249-1752"/>
+        <rdfs:label>_Person:3</rdfs:label>
+        <skos:prefLabel>Ludo Waltman</skos:prefLabel>
     </owl:NamedIndividual>
     
 
