@@ -1094,7 +1094,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000011 "https://orcid.org/0000-000
 AnnotationAssertion(rdfs:label obo:AEON_0000011 "event moderator role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000011 "https://github.com/tibonto/aeon/issues/144")
 SubClassOf(obo:AEON_0000011 obo:BFO_0000023)
-SubClassOf(obo:AEON_0000011 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000001))
+SubClassOf(obo:AEON_0000011 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000196))
 SubClassOf(obo:AEON_0000011 ObjectAllValuesFrom(obo:RO_0000081 obo:NCBITaxon_9606))
 
 # Class: obo:AEON_0000012 (deprecated_reviewer role)
