@@ -48,11 +48,14 @@ import_group:
   - obi
   - obib
   - oostt
+  - apollo_sv
   mirror_max_time_download: 200
   mirror_retry_download: 4
   module_type: slme
   module_type_slme: BOT
   products:
+  - id: apollo_sv
+    module_type: custom
   - id: bfo
     module_type: mirror
   - id: ro

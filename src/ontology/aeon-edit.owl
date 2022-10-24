@@ -17,6 +17,7 @@ Prefix(dcmi-terms:=<http://dublincore.org/specifications/dublin-core/dcmi-terms/
 
 
 Ontology(<http://purl.obolibrary.org/obo/aeon.owl>
+Import(<http://purl.obolibrary.org/obo/aeon/imports/apollo_sv_import.owl>)
 Import(<http://purl.obolibrary.org/obo/aeon/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/aeon/imports/envo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/aeon/imports/iao_import.owl>)
@@ -425,7 +426,7 @@ AnnotationAssertion(obo:IAO_0000233 obo:AEON_0000078 <https://github.com/tibonto
 AnnotationAssertion(rdfs:label obo:AEON_0000078 "has ORCID"@en)
 SubObjectPropertyOf(obo:AEON_0000078 obo:IAO_0000235)
 ObjectPropertyDomain(obo:AEON_0000078 obo:NCBITaxon_9606)
-ObjectPropertyRange(obo:AEON_0000078 obo:AEON_0000019)
+ObjectPropertyRange(obo:AEON_0000078 obo:APOLLO_SV_00000496)
 
 # Object Property: obo:AEON_0000079 (has ROR)
 
@@ -1179,15 +1180,18 @@ AnnotationAssertion(obo:IAO_0000119 obo:AEON_0000018 "https://isni.org/page/what
 AnnotationAssertion(rdfs:label obo:AEON_0000018 "ISNI")
 SubClassOf(obo:AEON_0000018 obo:IAO_0000578)
 
-# Class: obo:AEON_0000019 (ORCID)
+# Class: obo:AEON_0000019 (deprecated_ORCID)
 
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000019 obo:IAO_0000423)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000019 "An 'ORCID' is a iao:'centrally registered identifier' that denotes authors and contributors of scholarly communication in the ORCID database."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000019 "OBSOLETE An 'ORCID' is a iao:'centrally registered identifier' that denotes authors and contributors of scholarly communication in the ORCID database."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000019 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(obo:IAO_0000118 obo:AEON_0000019 "Open Researcher and Contributor ID"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:AEON_0000019 "https://en.wikipedia.org/wiki/ORCID"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label obo:AEON_0000019 "ORCID")
-SubClassOf(obo:AEON_0000019 obo:IAO_0000578)
+AnnotationAssertion(obo:IAO_0100001 obo:AEON_0000019 obo:APOLLO_SV_00000496)
+AnnotationAssertion(rdfs:comment obo:AEON_0000019 "Term imported from Apollo_SV"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:AEON_0000019 "deprecated_ORCID")
+AnnotationAssertion(owl:deprecated obo:AEON_0000019 "true"^^xsd:boolean)
+SubClassOf(obo:AEON_0000019 <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: obo:AEON_0000020 (ROR ID)
 
@@ -2216,12 +2220,12 @@ AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-8249-1752> "ORCID:00
 
 AnnotationAssertion(rdfs:comment <https://orcid.org/0000-0002-1595-3213> "ORCID of Philip Strömert")
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-1595-3213> "ORCID:0000-0002-1595-3213")
-ClassAssertion(obo:AEON_0000019 <https://orcid.org/0000-0002-1595-3213>)
+ClassAssertion(obo:APOLLO_SV_00000496 <https://orcid.org/0000-0002-1595-3213>)
 
 # Individual: <https://orcid.org/0000-0003-2499-7741> (ORCID:0000-0003-2499-7741)
 
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0003-2499-7741> "ORCID:0000-0003-2499-7741")
-ClassAssertion(obo:AEON_0000019 <https://orcid.org/0000-0003-2499-7741>)
+ClassAssertion(obo:APOLLO_SV_00000496 <https://orcid.org/0000-0003-2499-7741>)
 
 # Individual: <https://ror.org/04aj4c181> (ROR:04aj4c181)
 
