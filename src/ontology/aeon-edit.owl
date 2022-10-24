@@ -1112,21 +1112,24 @@ SubClassOf(obo:AEON_0000012 ObjectAllValuesFrom(obo:RO_0000081 obo:NCBITaxon_960
 
 # Class: obo:AEON_0000013 (presenter role)
 
-AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000013 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000013 "A contributor role that inheres in a person who speaks about a certain topic at a social event, either in form of presenting or teaching information to an audience."@en)
+AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000013 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000013 "A role that inheres in a person who speaks about a certain topic at a organized sociocultural event, either in form of presenting or teaching information to an audience."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000013 "Could be replaced with the CRO equivalent, if the proposal made in https://github.com/data2health/contributor-role-ontology/issues/134 is being accepted and merged."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000013 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(obo:IAO_0000118 obo:AEON_0000013 "invited speaker role"@en)
 AnnotationAssertion(obo:IAO_0006011 obo:AEON_0000013 "http://purl.obolibrary.org/obo/CRO_0000100"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000013 "presenter role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000013 "https://github.com/tibonto/aeon/issues/144")
+EquivalentClasses(obo:AEON_0000013 ObjectIntersectionOf(obo:BFO_0000023 ObjectSomeValuesFrom(obo:RO_0000081 ObjectSomeValuesFrom(obo:RO_0000056 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000124)))))
 SubClassOf(obo:AEON_0000013 obo:BFO_0000023)
-SubClassOf(obo:AEON_0000013 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000001))
+SubClassOf(obo:AEON_0000013 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000196))
 SubClassOf(obo:AEON_0000013 ObjectAllValuesFrom(obo:RO_0000081 obo:NCBITaxon_9606))
 
 # Class: obo:AEON_0000014 (keynote speaker role)
 
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000014 "The keynote speaker role inheres in a person that participates in an organized sociocultural event by holding a keynote speech."@en)
+AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000014 obo:IAO_0000125)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000014 "A presenter role that inheres in a person who participates in an organized sociocultural event by holding a keynote speech."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000014 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000014 "keynote speaker role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000014 "https://github.com/tibonto/aeon/issues/144")
