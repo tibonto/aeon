@@ -97,7 +97,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  apollo_sv bfo ro omo iao envo txpo ico obi obib oostt
+IMPORTS =  bfo ro omo iao envo txpo ico obi obib oostt
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -266,14 +266,6 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms_combined.txt
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
-## Module for ontology: apollo_sv
-
-$(IMPORTDIR)/apollo_sv_import.owl: $(MIRRORDIR)/apollo_sv.owl $(IMPORTDIR)/apollo_sv_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/preprocess-module.ru \
-		extract -T $(IMPORTDIR)/apollo_sv_terms_combined.txt --copy-ontology-annotations true --force true --individuals include --method BOT \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
 ## Module for ontology: bfo
 
 $(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl $(IMPORTDIR)/bfo_terms_combined.txt
@@ -349,15 +341,6 @@ IMP=true # Global parameter to bypass import generation
 MIR=true # Global parameter to bypass mirror generation
 IMP_LARGE=true # Global parameter to bypass handling of large imports
 
-
-
-## ONTOLOGY: apollo_sv
-.PHONY: mirror-apollo_sv
-.PRECIOUS: $(MIRRORDIR)/apollo_sv.owl
-mirror-apollo_sv: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/apollo_sv.owl --create-dirs -o $(MIRRORDIR)/apollo_sv.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/apollo_sv.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
 ## ONTOLOGY: bfo
