@@ -18,3 +18,4 @@ IAO:0020015	# personal name
 IAO:0000136	# is about
 IAO:0000219	# denotes
 IAO:0000235	# denoted by
+IAO:0000708	# ORCID id

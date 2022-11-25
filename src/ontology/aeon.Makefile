@@ -3,18 +3,6 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
-## Module for ontology: apollo_sv
-
-$(IMPORTDIR)/apollo_sv_import.owl: $(MIRRORDIR)/apollo_sv.owl $(IMPORTDIR)/apollo_sv_terms.txt
-	if [ $(IMP) = true ]; then $(ROBOT) filter -i $< -T $(IMPORTDIR)/apollo_sv_terms.txt --select "self ancestors domains ranges equivalents" --signature true --trim true \
-		--output $@.tmp.owl; fi
-	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
-		query --update ../sparql/preprocess-module_provo.ru \
-		filter -T $(IMPORTDIR)/apollo_sv_terms.txt --select "self annotations ontology equivalents" --signature true --trim true --axioms "tbox"\
-	    query --update ../sparql/postprocess-module_2.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		merge -i $@.tmp.owl \
-		--output $@.tmp.owl && mv $@.tmp.owl $@; fi
 ## Module for ontology: bfo
 
 $(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl $(IMPORTDIR)/bfo_terms_combined.txt
