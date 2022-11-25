@@ -10,8 +10,8 @@
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aeon/imports/txpo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aeon/releases/2022-10-24/imports/txpo_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-24</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aeon/releases/2022-11-25/imports/txpo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-25</owl:versionInfo>
         <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/txpo/releases/2020-03-03/txpo.owl"/>
     </owl:Ontology>
     

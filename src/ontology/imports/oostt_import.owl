@@ -10,9 +10,9 @@
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aeon/imports/oostt_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aeon/releases/2022-10-24/imports/oostt_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-24</owl:versionInfo>
-        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/oostt/release/2022-09-23/oostt.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aeon/releases/2022-11-25/imports/oostt_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-25</owl:versionInfo>
+        <prov:wasDerivedFrom rdf:resource="http://purl.obolibrary.org/obo/oostt/release/2022-10-27/oostt.owl"/>
     </owl:Ontology>
     
 
@@ -82,7 +82,7 @@
         <obo:IAO_0000115 xml:lang="en">an organization consisting of persons who bear committee member role where that organization is appointed by an organization or members of an organization to realize a role.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">J. Neil Otte</obo:IAO_0000117>
         <obo:OOSTT_00000030 xml:lang="en">A group of individuals appointed by an organization or organization leader to complete a specific task or to fulfill a specific set of responsibilities.</obo:OOSTT_00000030>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/oostt/release/2022-09-23/oostt.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/oostt/release/2022-10-27/oostt.owl"/>
         <rdfs:comment xml:lang="en">Dec 10, 2016: The definition originally stated that the committee was realizing a function. After review of the BFO definition of function I decided to change it to &quot;role&quot;. M. Brochhausen</rdfs:comment>
         <rdfs:label xml:lang="en">committee</rdfs:label>
     </owl:Class>
@@ -96,7 +96,7 @@
         <obo:IAO_0000115 xml:lang="en">a role that, if realized, is realized in the organization context of a committee.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Neil J Otte</obo:IAO_0000117>
         <obo:OOSTT_00000030 xml:lang="en">The duties and responsibilities assigned to the member(s) of a committee.</obo:OOSTT_00000030>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/oostt/release/2022-09-23/oostt.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/oostt/release/2022-10-27/oostt.owl"/>
         <rdfs:label xml:lang="en">committee member role</rdfs:label>
     </owl:Class>
 </rdf:RDF>
