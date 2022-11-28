@@ -2064,7 +2064,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000207 "A session format that has 
 AnnotationAssertion(dce:creator obo:AEON_0000207 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:AEON_0000207 "demo session format"@en)
 EquivalentClasses(obo:AEON_0000207 ObjectIntersectionOf(obo:AEON_0000110 obo:AEON_0000206))
-SubClassOf(obo:AEON_0000207 obo:AEON_0000110)
 
 # Class: obo:AEON_0000208 (breakout session format)
 
@@ -2116,7 +2115,6 @@ AnnotationAssertion(dce:creator obo:AEON_0000213 <http://orcid.org/0000-0002-159
 AnnotationAssertion(rdfs:label obo:AEON_0000213 "academic demo track"@en)
 AnnotationAssertion(skos:closeMatch obo:AEON_0000213 <https://w3id.org/seo#DemosTrack>)
 EquivalentClasses(obo:AEON_0000213 ObjectIntersectionOf(obo:AEON_0000117 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000206)))
-SubClassOf(obo:AEON_0000213 obo:AEON_0000117)
 
 # Class: obo:AEON_0000214 (academic symposium series)
 
