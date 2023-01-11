@@ -566,8 +566,8 @@ AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000176 "https://orcid.org/0000-000
 AnnotationAssertion(obo:IAO_0000233 obo:AEON_0000176 <https://github.com/tibonto/aeon/issues/138>)
 AnnotationAssertion(rdfs:label obo:AEON_0000176 "has collocated event"@en)
 SubObjectPropertyOf(obo:AEON_0000176 obo:TXPO_0002523)
-ObjectPropertyDomain(obo:AEON_0000176 obo:AEON_0000001)
-ObjectPropertyRange(obo:AEON_0000176 obo:AEON_0000001)
+ObjectPropertyDomain(obo:AEON_0000176 obo:AEON_0000196)
+ObjectPropertyRange(obo:AEON_0000176 obo:AEON_0000196)
 
 # Object Property: obo:AEON_0000177 (has joint event)
 
@@ -577,8 +577,8 @@ AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000177 "https://orcid.org/0000-000
 AnnotationAssertion(obo:IAO_0000233 obo:AEON_0000177 <https://github.com/tibonto/aeon/issues/138>)
 AnnotationAssertion(rdfs:label obo:AEON_0000177 "has joint event"@en)
 SubObjectPropertyOf(obo:AEON_0000177 obo:TXPO_0002523)
-ObjectPropertyDomain(obo:AEON_0000177 obo:AEON_0000001)
-ObjectPropertyRange(obo:AEON_0000177 obo:AEON_0000001)
+ObjectPropertyDomain(obo:AEON_0000177 obo:AEON_0000196)
+ObjectPropertyRange(obo:AEON_0000177 obo:AEON_0000196)
 
 # Object Property: obo:AEON_0000178 (has umbrella event)
 
@@ -586,8 +586,8 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000178 "A relation obtaining betwe
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000178 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000178 "has umbrella event"@en)
 SubObjectPropertyOf(obo:AEON_0000178 obo:TXPO_0002523)
-ObjectPropertyDomain(obo:AEON_0000178 obo:AEON_0000001)
-ObjectPropertyRange(obo:AEON_0000178 obo:AEON_0000001)
+ObjectPropertyDomain(obo:AEON_0000178 obo:AEON_0000196)
+ObjectPropertyRange(obo:AEON_0000178 obo:AEON_0000196)
 
 # Object Property: obo:AEON_0000179 (specifies event fee of)
 

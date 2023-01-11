@@ -1,0 +1,36 @@
+Research Context:
+There are a variety of different academic events - conferences, workshops, symposia and much more, and they fulfill various roles in the science system. They are important meeting places for young and already established researchers and in this way serve to build personal and inter-institutional networks. Furthermore, they are the place where research results are shared and discussed. Results are shared at conferences in different ways: In presentations, in workshops, on posters and - usually in the aftermath of an event - in proceedings.
+Given the important role of conferences for science, it is evident that information about conferences plays an important role at various parts of the science system. This information - conference information or conference metadata - is used to describe the conference itself. 
+There are multiple groups of stakeholders that have different use cases and therefore distinct requirements for the metadata that can be used to describe an academic event.
+
+Previous to an academic event, researchers would like to know at which conferences they can find out about their topic in the future, network with peers or present their own research and subsequently publish their papers. Post-conference there might be a need to document participation in a conference, be it as a speaker or a conference chair, to document their scholarly community engagement in their research profiles. 
+On the other hand, conference organizers need information about potential competing events to schedule their own, they want to increase the outreach of their conference during the different phases (from call for proposals to registration and the post-conference documentation including published proceedings).
+Research administration, academic libraries, and scientometricians need machine-readable and machine-actionable metadata about conference activities to connect proceedings to conferences, to feed research information systems for proper research assessment, and to conduct research on scholarly communication (Franken et al 2021, PID for conferences).
+
+This paper adresses:
+AEON was developed according to the OBO Foundry principles (The OBI Consortium u. a. 2007) using the Ontology Development Kit (Matentzoglu u. a. 2022) for the technical implementation. This means that the AEON is iteratively developed in an Open GitHub repository with an open license (CC-BY 4.0), is aligned to the BFO 2.0 classes only version for the upper ontological level, reuses as much as possible from already existing OBO ontologies - especially from the Information Artefact Ontology (IAO), the Ontology for Biomedical Investigations (OBI) and the Relation Ontology (RO).
+
+--------
+
+I now need your help in writing the paper about AEON. I first need to write a section about the state of the art, comparing existing ontologies in that domain and arguing why AEON is needed to adress the issues these existing ontologies still contain.
+
+Before starting to develop AEON, I've done a systematcic literature search in Scopus, Web Of Science and Google Scholar, followed citations in the publications I found, and analysed at the source code, the owl, ttl or n3 files, of the found ontologies. 
+
+2005 - The Semantic Web for Research Communities (SWRC) Ontology
+“This ontology is centered around the notion of event, seen here as the way by which cognitive agents classify arbitrary time/space regions, which is essentially the view expressed by Allen and Fergusson”.
+Its URI: http://swrc.ontoware.org/ontology-07 does not resolve anymore! But an archived copy can be obtained via: https://web.archive.org/web/20180209213307/http://ontoware.org/swrc.
+
+
+2006 - The ESWC2006 Conference Ontology
+URI: https://eswc2006.org/technologies/ontology-content/2006-09-21.rdf
+2007 - The Event Ontology (EO)
+URI: https://motools.sourceforge.net/event/event.html 
+2009 - LODE: An ontology for Linking Open Descriptions of Events 
+URI: https://linkedevents.org/ontology/
+2010 - SEDE: An ontology for scholarly event description
+URI: https://web.archive.org/web/20091013234409/http://www.eventography.org/sede/0.1/sede.rdf 
+2016 - SWC: Semantic Web Conference Ontology
+URI: http://www.scholarlydata.org/ontology/conference-ontology.owl 
+2018 - SEO: A Scientific Events Data Model
+URI: https://w3id.org/seo 
+
