@@ -566,8 +566,8 @@ AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000176 "https://orcid.org/0000-000
 AnnotationAssertion(obo:IAO_0000233 obo:AEON_0000176 <https://github.com/tibonto/aeon/issues/138>)
 AnnotationAssertion(rdfs:label obo:AEON_0000176 "has collocated event"@en)
 SubObjectPropertyOf(obo:AEON_0000176 obo:TXPO_0002523)
-ObjectPropertyDomain(obo:AEON_0000176 obo:AEON_0000001)
-ObjectPropertyRange(obo:AEON_0000176 obo:AEON_0000001)
+ObjectPropertyDomain(obo:AEON_0000176 obo:AEON_0000196)
+ObjectPropertyRange(obo:AEON_0000176 obo:AEON_0000196)
 
 # Object Property: obo:AEON_0000177 (has joint event)
 
@@ -577,8 +577,8 @@ AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000177 "https://orcid.org/0000-000
 AnnotationAssertion(obo:IAO_0000233 obo:AEON_0000177 <https://github.com/tibonto/aeon/issues/138>)
 AnnotationAssertion(rdfs:label obo:AEON_0000177 "has joint event"@en)
 SubObjectPropertyOf(obo:AEON_0000177 obo:TXPO_0002523)
-ObjectPropertyDomain(obo:AEON_0000177 obo:AEON_0000001)
-ObjectPropertyRange(obo:AEON_0000177 obo:AEON_0000001)
+ObjectPropertyDomain(obo:AEON_0000177 obo:AEON_0000196)
+ObjectPropertyRange(obo:AEON_0000177 obo:AEON_0000196)
 
 # Object Property: obo:AEON_0000178 (has umbrella event)
 
@@ -586,8 +586,8 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000178 "A relation obtaining betwe
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000178 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000178 "has umbrella event"@en)
 SubObjectPropertyOf(obo:AEON_0000178 obo:TXPO_0002523)
-ObjectPropertyDomain(obo:AEON_0000178 obo:AEON_0000001)
-ObjectPropertyRange(obo:AEON_0000178 obo:AEON_0000001)
+ObjectPropertyDomain(obo:AEON_0000178 obo:AEON_0000196)
+ObjectPropertyRange(obo:AEON_0000178 obo:AEON_0000196)
 
 # Object Property: obo:AEON_0000179 (specifies event fee of)
 
@@ -1022,6 +1022,7 @@ AnnotationAssertion(rdfs:label obo:AEON_0000004 "academic event format"@en)
 SubClassOf(obo:AEON_0000004 obo:AEON_0000195)
 SubClassOf(obo:AEON_0000004 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000027))
 SubClassOf(obo:AEON_0000004 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000182))
+SubClassOf(obo:AEON_0000004 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000201))
 SubClassOf(obo:AEON_0000004 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_0000220))
 
 # Class: obo:AEON_0000005 (deprecated_aeon contributor role)
@@ -1949,6 +1950,7 @@ SubClassOf(obo:AEON_0000194 obo:AEON_0000196)
 
 # Class: obo:AEON_0000195 (sociocultural event format)
 
+AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000195 obo:IAO_0000423)
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000195 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000195 "A plan specification that defines an organized sociocultural event by providing its topic or purpose, as well as implicit and explicit details on who is suppose to attend and how this event is planned to be carried out by its participants, in terms of achieving particular objectives, fulfilling particular conditions and performing particular actions.")
 AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000195 "When we speak of implicit details in the definition of this class, we mean the fact that, apart from explicitly providing information about e.g. the location and participation conditions of such an event in its announcement, details regarding its sociocultural format often remains tacit and are implied by the use of commonly known event type labels. Saying for example, \"We're happy to announce the 11th international conference on sociolinguistics.\", implies this 'conference' to be planned and executed by legitimate organizers, to have a certain formal code of conduct expected to be adhered to by the participants, or that is intended for a rather large and diverse audience. Similarly denoting an organized sociocultural event as a \"birthday party\", implies that one has to be invited to attend, or that one would be considered rude if one were to 'steel the show' from the person being celebrated."@en)
@@ -1962,8 +1964,9 @@ SubClassOf(obo:AEON_0000195 ObjectSomeValuesFrom(obo:BFO_0000051 obo:IAO_0000001
 
 # Class: obo:AEON_0000196 (organized sociocultural event)
 
+AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000196 obo:IAO_0000423)
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000196 obo:IAO_0000428)
-AnnotationAssertion(Annotation(obo:IAO_0000119 "https://en.wikipedia.org/wiki/Category:Organized_events") obo:IAO_0000115 obo:AEON_0000196 "A planned process that is a gathering of people organized by one or more people for a particular purpose, often with a particular theme and to be realized within a particular sociocultural format. It may be one-time, occasional or sporadic, or recurring/periodic.")
+AnnotationAssertion(Annotation(obo:IAO_0000119 "https://en.wikipedia.org/wiki/Category:Organized_events") obo:IAO_0000115 obo:AEON_0000196 "A process that is a planned gathering of people organized by one or more people for a particular purpose, often with a particular theme and to be realized within a particular sociocultural format. It may be one-time, occasional or sporadic, or recurring/periodic.")
 AnnotationAssertion(Annotation(dce:creator <https://orcid.org/0000-0002-1595-3213>) obo:IAO_0000116 obo:AEON_0000196 "There are certain children of this “organized sociocultural event” class, that are most likely unproblematic to define using an Aristotelian approach, such as \"party\", \"online event\", \"business event\", \"networking event\" or \"academic event\". All of these are organised sociocultural events (OSCEs) with a rather clear theme, purpose and shared implied event format. A party, for example, will in most cultures be an OSCE that serves the purpose to celebrate something and its format will in most cases be rightly expected to be informal. Similarly, a business event will in most cultures be considered an OSCE with the primary goal of doing some form of business and thus its participants are expected to adhere to certain conventions on how to behave according to the sociocultural context of the particular OSCE. However, as soon as we try to get more specific in the definition of possible OSCE subclasses, we run into the problem of finding appropriate differentia criteria and that there is a multitude of possible combinations of such very general concepts. For example, we would need to define an \"online business networking party\" class, if we needed to represent an OSCE that entails all of these aspects as central part of its theme and context dependent sociocultural event format. Thus, the children of OSCEs should not be understood as universal classes but rather always as defined classes, if we need to take into account that the labels, used to denote the concepts representing the various types of OSCEs, differ depending on the social and cultural context in which they are used. In other words these concepts might better be understood as sociocultural constructs or prototypes. The dimensions in which OSCEs are to be defined by their sociocultural event format are the obvious \"what\", \"when\", \"who\", \"where\", and \"how\" questions. As planned processes they are determined by a plan to facilitate a gathering of people according to some kind of purpose or theme and sociocultural format. Yet, such a plan is not something we can easily make assertions about, since it resides in the brains of the participants of an OSCEs. What we can make assertions about is the communicated information from which the specification of an OSCE plan can be derived. What the organizers of an OSCE have stated about their plan, makes up the sociocultural format that defines the characteristics of an OSCE. Hence, we narrow the OBI pattern of defining a planned process via its plan specification, by introducing a special type of plan specification, called sociocultural event format, to define this class and its children, well knowing that this adds a layer of complexity usually not needed in human communication, but needed to enable machine reasoning.
 
 This class is only defined as a placeholder in AEON and should actually better be defined in a more general OBO based or BFO aligned ontology. Its current inclusion in AEON is thus meant only as a demonstration of the proposed organized sociocultural event pattern.")
@@ -1972,11 +1975,11 @@ AnnotationAssertion(obo:IAO_0000118 obo:AEON_0000196 "planned gathering"@en)
 AnnotationAssertion(dce:creator obo:AEON_0000196 <https://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:AEON_0000196 "organized sociocultural event"@en)
 AnnotationAssertion(skos:closeMatch obo:AEON_0000196 <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent>)
-EquivalentClasses(obo:AEON_0000196 ObjectIntersectionOf(obo:OBI_0000011 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000195)))
-SubClassOf(obo:AEON_0000196 obo:OBI_0000011)
+EquivalentClasses(obo:AEON_0000196 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:BFO_0000055 ObjectSomeValuesFrom(obo:RO_0000059 obo:AEON_0000195)) ObjectSomeValuesFrom(obo:RO_0000057 ObjectIntersectionOf(obo:NCBITaxon_9606 ObjectSomeValuesFrom(obo:RO_0000087 obo:AEON_0000006))) ObjectSomeValuesFrom(obo:RO_0000057 ObjectIntersectionOf(obo:NCBITaxon_9606 ObjectSomeValuesFrom(obo:RO_0000087 obo:AEON_0000010)))))
 
 # Class: obo:AEON_0000197 (organized sociocultural event series)
 
+AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000197 obo:IAO_0000423)
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000197 obo:IAO_0000428)
 AnnotationAssertion(Annotation(dce:creator <https://orcid.org/0000-0002-1595-3213>) obo:IAO_0000115 obo:AEON_0000197 "An organized sociocultural event that is the set of all recurring organized sociocultural events of a destinct identity. This destinct identity is usually demarked by a shared name that only differs with regard to some ordnial symbol, such as 1st or the year of the organized sociocultural event."@en)
 AnnotationAssertion(dce:creator obo:AEON_0000197 <https://orcid.org/0000-0002-1595-3213>)
@@ -2005,6 +2008,7 @@ SubClassOf(obo:AEON_0000199 obo:AEON_0000002)
 
 # Class: obo:AEON_0000200 (business event format)
 
+AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000200 obo:IAO_0000423)
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000200 "A sociocultural event format that states that the primary purpose (objective) of an organised sociocultural event is to facilitate a busines communication and actions between its participants and which specifies the formal mode of this communication process.")
 AnnotationAssertion(dce:creator obo:AEON_0000200 <https://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:AEON_0000200 "business event format"@en)
@@ -2014,7 +2018,8 @@ SubClassOf(obo:AEON_0000200 ObjectSomeValuesFrom(obo:BFO_0000051 obo:AEON_000020
 # Class: obo:AEON_0000201 (knowledge exchange objective)
 
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000201 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000201 "An objective specifiaction that describes one of the main goals of a planned process to be the facilitation of an excahnge of knowledge between the participants of this planned process."@en)
+AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000201 obo:IAO_0000423)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000201 "An objective specifiaction that describes one of the main goals of a planned process to be the facilitation of an exchange of knowledge between the participants of this planned process."@en)
 AnnotationAssertion(dce:creator obo:AEON_0000201 <https://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:AEON_0000201 "knowledge exchange objective"@en)
 SubClassOf(obo:AEON_0000201 obo:IAO_0000005)
@@ -2030,6 +2035,7 @@ SubClassOf(obo:AEON_0000202 obo:AEON_0000196)
 
 # Class: obo:AEON_0000203 (business objective)
 
+AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000203 obo:IAO_0000423)
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000203 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000203 "An objective specifiaction that describes one of the main goals of a planned process to be the facilitation of business related comminucation and actions between the participants of this planned process."@en)
 AnnotationAssertion(dce:creator obo:AEON_0000203 <https://orcid.org/0000-0002-1595-3213>)
@@ -2064,7 +2070,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000207 "A session format that has 
 AnnotationAssertion(dce:creator obo:AEON_0000207 <http://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:AEON_0000207 "demo session format"@en)
 EquivalentClasses(obo:AEON_0000207 ObjectIntersectionOf(obo:AEON_0000110 obo:AEON_0000206))
-SubClassOf(obo:AEON_0000207 obo:AEON_0000110)
 
 # Class: obo:AEON_0000208 (breakout session format)
 
@@ -2116,7 +2121,6 @@ AnnotationAssertion(dce:creator obo:AEON_0000213 <http://orcid.org/0000-0002-159
 AnnotationAssertion(rdfs:label obo:AEON_0000213 "academic demo track"@en)
 AnnotationAssertion(skos:closeMatch obo:AEON_0000213 <https://w3id.org/seo#DemosTrack>)
 EquivalentClasses(obo:AEON_0000213 ObjectIntersectionOf(obo:AEON_0000117 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000206)))
-SubClassOf(obo:AEON_0000213 obo:AEON_0000117)
 
 # Class: obo:AEON_0000214 (academic symposium series)
 
