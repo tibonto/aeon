@@ -15,7 +15,7 @@ $(IMPORTDIR)/bfo_import.owl: $(MIRRORDIR)/bfo.owl $(IMPORTDIR)/bfo_terms_combine
 
 $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl $(IMPORTDIR)/omo_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
-		query --update ../sparql/preprocess-module_provo.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module_2.ru \
+		query --update ../sparql/preprocess-module_provo.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module_2.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 
