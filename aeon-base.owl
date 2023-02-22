@@ -13,7 +13,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aeon/aeon-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aeon/releases/2022-11-25/aeon-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/aeon/releases/2023-02-22/aeon-base.owl"/>
         <dc:contributor>Christian Hauschke</dc:contributor>
         <dc:contributor>Christoph Lange</dc:contributor>
         <dc:contributor>Michael Conlon</dc:contributor>
@@ -23,7 +23,7 @@
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>Academic Event Ontology</terms:title>
         <rdfs:comment>AEON is being developed as a part of the ConfIDent project (https://projects.tib.eu/confident).</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-11-25</owl:versionInfo>
+        <owl:versionInfo>2023-02-22</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -42,7 +42,7 @@
     <!-- http://purl.obolibrary.org/obo/AEON_0000026 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/AEON_0000026">
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Philip Strömert</obo:IAO_0000117>
+        <obo:IAO_0000117>Philip Strömert</obo:IAO_0000117>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-14T15:31:27Z</dc:date>
         <rdfs:label xml:lang="de">maps to</rdfs:label>
     </owl:AnnotationProperty>
@@ -127,6 +127,12 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
@@ -142,6 +148,12 @@
     <!-- http://purl.org/dc/elements/1.1/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
     
 
 
@@ -338,7 +350,7 @@
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
         <obo:IAO_0000115 xml:lang="en">see inverse relation &apos;has deadline</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Given the fact that deadlines are specified in various planned processes this term should probably be regarded as a placeholder which ought to be defined in a broader ontology, maybe something like IAO?</obo:IAO_0000116>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000117>https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-19T11:29:50Z</dc:date>
         <rdfs:label xml:lang="de">specifies deadline of</rdfs:label>
     </owl:ObjectProperty>
@@ -353,7 +365,7 @@
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
         <obo:IAO_0000115 xml:lang="en">a relation between a planned process and a deadline specification</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Given the fact that deadlines are specified in various planned processes this term should probably be regarded as a placeholder which ought to be defined in a broader ontology, maybe something like IAO?</obo:IAO_0000116>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000117>https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-19T11:30:01Z</dc:date>
         <rdfs:label xml:lang="de">has deadline</rdfs:label>
     </owl:ObjectProperty>
@@ -381,7 +393,7 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000235"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AEON_0000017"/>
-        <obo:AEON_0000026 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P227&quot;, &quot;label&quot;: &quot;GND_ID&quot;}, &quot;gnd&quot;: {&quot;uri&quot;: &quot;https://d-nb.info/standards/elementset/gnd#gndIdentifier&quot;, &quot;label&quot;: &quot;GND-Identifier&quot;}}</obo:AEON_0000026>
+        <obo:AEON_0000026>{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P227&quot;, &quot;label&quot;: &quot;GND_ID&quot;}, &quot;gnd&quot;: {&quot;uri&quot;: &quot;https://d-nb.info/standards/elementset/gnd#gndIdentifier&quot;, &quot;label&quot;: &quot;GND-Identifier&quot;}}</obo:AEON_0000026>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115 xml:lang="en">A relation obtaining between an entity and the &apos;GND identifier&apos; used by the German national library to denote this entity.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
@@ -450,7 +462,7 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000235"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AEON_0000021"/>
-        <obo:AEON_0000026 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;wikidata&quot;: {&quot;uri&quot;: null, &quot;label&quot;: &quot;itemID&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Property:Wikidataid&quot;, &quot;label&quot;: &quot;Wikidataid&quot;}}</obo:AEON_0000026>
+        <obo:AEON_0000026>{&quot;wikidata&quot;: {&quot;uri&quot;: null, &quot;label&quot;: &quot;itemID&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Property:Wikidataid&quot;, &quot;label&quot;: &quot;Wikidataid&quot;}}</obo:AEON_0000026>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115 xml:lang="en">A relation obtaining between an entity and the Wikidata identifier used to denote this entity in the Wikidata database.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
@@ -479,13 +491,16 @@
     <!-- http://purl.obolibrary.org/obo/AEON_0000082 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AEON_0000082">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002012"/>
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000176"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AEON_0000001"/>
-        <obo:IAO_0000115>A relation between organized sociocultural events that share a common location.</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AEON_0000196"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AEON_0000196"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000115>A relation obtaining between organized sociocultural events that partly overlap in their duration because they share a location, but which are otherwise regarded distinct from each other. Typically a smaller or less known event is said to be co-located with a bigger or more more known event.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">collocated event of</rdfs:label>
+        <obo:IAO_0000233 rdf:resource="https://github.com/tibonto/aeon/issues/138"/>
+        <rdfs:label xml:lang="en">co-located with event</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Wikidata:Property_proposal/colocated_with"/>
         <skos:closeMatch rdf:resource="https://w3id.org/seo#colocatedWith"/>
     </owl:ObjectProperty>
     
@@ -494,12 +509,15 @@
     <!-- http://purl.obolibrary.org/obo/AEON_0000083 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AEON_0000083">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002012"/>
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000177"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AEON_0000001"/>
-        <obo:IAO_0000115 xml:lang="en">see also inverse property: A relation obtaining between an academic event and another academic event. A joint event is an event that shares some of the planning and organizing logistics with another academic event, but is otherwise independent from it.</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AEON_0000196"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AEON_0000196"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000115 xml:lang="en">A relation obtaining between organized sociocultural events that share some of the planning and/or organizing process, but which are otherwise considered destinct from each other.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en"></obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:resource="https://github.com/tibonto/aeon/issues/138"/>
         <rdfs:label xml:lang="en">joint event of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -511,7 +529,7 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002012"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AEON_0000196"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AEON_0000197"/>
-        <obo:AEON_0000026 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P179&quot;, &quot;label&quot;: &quot;part_of_the_seriesLabel&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Property:Event_in_series&quot;, &quot;label&quot;: &quot;Event_in_series&quot;}}</obo:AEON_0000026>
+        <obo:AEON_0000026>{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P179&quot;, &quot;label&quot;: &quot;part_of_the_seriesLabel&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Property:Event_in_series&quot;, &quot;label&quot;: &quot;Event_in_series&quot;}}</obo:AEON_0000026>
         <obo:IAO_0000115 xml:lang="en">A relation obtaining between an academic event and an academic event series. It is used to express that the academic event is part of a specific event series.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">part of event series</rdfs:label>
@@ -540,7 +558,7 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000009"/>
-        <obo:AEON_0000026 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P17&quot;, &quot;label&quot;: &quot;countryLabel&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Property:Has_location_country&quot;, &quot;label&quot;: &quot;Has_location_country&quot;}}</obo:AEON_0000026>
+        <obo:AEON_0000026>{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P17&quot;, &quot;label&quot;: &quot;countryLabel&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Property:Has_location_country&quot;, &quot;label&quot;: &quot;Has_location_country&quot;}}</obo:AEON_0000026>
         <obo:IAO_0000115 xml:lang="en">A relation obtaining between a bfo:occurent and the country in which it occurs.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">occurs in country</rdfs:label>
@@ -556,7 +574,7 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000856"/>
-        <obo:AEON_0000026 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P276&quot;, &quot;label&quot;: &quot;locationLabel&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Property:Has_location_city&quot;, &quot;label&quot;: &quot;Has_location_city&quot;}, &quot;gnd&quot;: {&quot;uri&quot;: &quot;https://d-nb.info/standards/elementset/gnd#placeOfConferenceOrEvent&quot;, &quot;label&quot;: &quot;Place of conference or event&quot;}}</obo:AEON_0000026>
+        <obo:AEON_0000026>{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P276&quot;, &quot;label&quot;: &quot;locationLabel&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Property:Has_location_city&quot;, &quot;label&quot;: &quot;Has_location_city&quot;}, &quot;gnd&quot;: {&quot;uri&quot;: &quot;https://d-nb.info/standards/elementset/gnd#placeOfConferenceOrEvent&quot;, &quot;label&quot;: &quot;Place of conference or event&quot;}}</obo:AEON_0000026>
         <obo:IAO_0000115 xml:lang="en">A relation obtaining between a bfo:occurent and the city in which it occurs.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">occurs in city</rdfs:label>
@@ -572,7 +590,7 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000005"/>
-        <obo:AEON_0000026 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P131&quot;, &quot;label&quot;: &quot;located_in_the_administrative_territorial_entityLabel&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Property:Has_location_state&quot;, &quot;label&quot;: &quot;Has_location_state&quot;}}</obo:AEON_0000026>
+        <obo:AEON_0000026>{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P131&quot;, &quot;label&quot;: &quot;located_in_the_administrative_territorial_entityLabel&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Property:Has_location_state&quot;, &quot;label&quot;: &quot;Has_location_state&quot;}}</obo:AEON_0000026>
         <obo:IAO_0000115 xml:lang="en">A relation obtaining between a bfo:occurent and the province in which it occurs.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">occurs in province</rdfs:label>
@@ -617,14 +635,15 @@
     <!-- http://purl.obolibrary.org/obo/AEON_0000176 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AEON_0000176">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/TXPO_0002523"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AEON_0000001"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <obo:IAO_0000115 xml:lang="en">A relation obtaining between an academic event and another academic event. A collocated event is an event that takes place at the same location and time as another academic event.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A relation obtaining between an organized sociocultural event and another organized sociocultural event. A collocated organized sociocultural event is an organized sociocultural event that takes place at the same location and time as another organized sociocultural event.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">The former inverse relation &quot;co-located with event&quot; (AEON_0000082) was made symetric, making this relation obsolete.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000227"/>
         <obo:IAO_0000233 rdf:resource="https://github.com/tibonto/aeon/issues/138"/>
-        <rdfs:label xml:lang="en">has collocated event</rdfs:label>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/AEON_0000082"/>
+        <rdfs:label xml:lang="en">obsolete_has co-located event</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
 
@@ -632,14 +651,15 @@
     <!-- http://purl.obolibrary.org/obo/AEON_0000177 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AEON_0000177">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/TXPO_0002523"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AEON_0000001"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <obo:IAO_0000115 xml:lang="en">A relation obtaining between an academic event and another academic event. A joint event is an event that shares some of the planning and organizing logistics with another academic event, but is otherwise independent from it.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A relation obtaining between an organized sociocultural event and another organized sociocultural event. A joint organized sociocultural event is an organized sociocultural event that shares some of the planning and/or organizing logistics with another organized sociocultural event, but is otherwise independent from it.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">The former inverse relation &quot;joint event of&quot; (AEON:0000083) was made symmetric, making this relation obsolete.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000227"/>
         <obo:IAO_0000233 rdf:resource="https://github.com/tibonto/aeon/issues/138"/>
-        <rdfs:label xml:lang="en">has joint event</rdfs:label>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/AEON_0000083"/>
+        <rdfs:label xml:lang="en">obsolete_has joint event</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
 
@@ -648,9 +668,9 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AEON_0000178">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/TXPO_0002523"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AEON_0000001"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AEON_0000001"/>
-        <obo:IAO_0000115 xml:lang="en">A relation obtaining between an academic event and another academic event or event series. An umbrelle event is a superordinate event that combines several smaller academic events at the same time. To say p &apos;has umbrella event&apos; d =def. there exists an academic event d that is a superordinate event of p and that there must be other academic events that have the same relation.</obo:IAO_0000115>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AEON_0000196"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AEON_0000196"/>
+        <obo:IAO_0000115 xml:lang="en">A relation obtaining between an organized sociocultural event and another organized sociocultural event or event series. An umbrella organized sociocultural event is a superordinate event that combines several smaller organized sociocultural events at the same time.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has umbrella event</rdfs:label>
     </owl:ObjectProperty>
@@ -664,7 +684,7 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AEON_0000030"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115 xml:lang="en">A relation obtaining between an &apos;event fee specification&apos; and a obi:&apos;planned process&apos;.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000117>https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-06-28T12:48:49Z</dc:date>
         <rdfs:label xml:lang="en">specifies event fee of</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/tibonto/aeon/issues/117"/>
@@ -743,6 +763,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000066 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000066"/>
@@ -776,6 +802,12 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000059"/>
     
 
 
@@ -840,7 +872,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
         <obo:IAO_0000115 xml:lang="en">A data property which is intended to be used for the literal representation of a deadline specification in the xsd:dateTimeStamp format</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000117>https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-19T13:49:58Z</dc:date>
         <rdfs:label xml:lang="en">deadline datetime value</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/tibonto/aeon/issues/125"/>
@@ -856,7 +888,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
         <obo:IAO_0000115 xml:lang="en">A shortend representation of a planned process name that has been formed from the initial components of a planned process name representation, usually using individual initial letters.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000117>https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-13T08:55:02Z</dc:date>
         <rdfs:label xml:lang="en">planned process acronym</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/tibonto/aeon/issues/132"/>
@@ -869,7 +901,7 @@
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AEON_0000140">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AEON_0000196"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <obo:AEON_0000026 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;crossref&quot;: {&quot;api_proceedings_endpoint_uri&quot;: &quot;https://api.crossref.org/types/proceedings/works?select=event&quot;, &quot;json_api_key&quot;: {&quot;event&quot;: &quot;number&quot;}}}</obo:AEON_0000026>
+        <obo:AEON_0000026>{&quot;crossref&quot;: {&quot;api_proceedings_endpoint_uri&quot;: &quot;https://api.crossref.org/types/proceedings/works?select=event&quot;, &quot;json_api_key&quot;: {&quot;event&quot;: &quot;number&quot;}}}</obo:AEON_0000026>
         <obo:IAO_0000115>The ordinal number of an academic event, if it is a part of an event series.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">event number</rdfs:label>
     </owl:DatatypeProperty>
@@ -881,7 +913,7 @@
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AEON_0000141">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AEON_0000196"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
-        <obo:AEON_0000026 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P582&quot;, &quot;label&quot;: &quot;end_time&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Property:End_date&quot;, &quot;label&quot;: &quot;End_date&quot;},&quot;crossref&quot;: {&quot;api_proceedings_endpoint_uri&quot;: &quot;https://api.crossref.org/types/proceedings/works?select=event&quot;, &quot;json_api_key&quot;: {&quot;event&quot;: &quot;end&quot;}}}</obo:AEON_0000026>
+        <obo:AEON_0000026>{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P582&quot;, &quot;label&quot;: &quot;end_time&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Property:End_date&quot;, &quot;label&quot;: &quot;End_date&quot;},&quot;crossref&quot;: {&quot;api_proceedings_endpoint_uri&quot;: &quot;https://api.crossref.org/types/proceedings/works?select=event&quot;, &quot;json_api_key&quot;: {&quot;event&quot;: &quot;end&quot;}}}</obo:AEON_0000026>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A data property to provide the planned end date of an organized sociocultural event in the xsd:dateTimeStamp format.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
@@ -896,7 +928,7 @@
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AEON_0000142">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AEON_0000196"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
-        <obo:AEON_0000026 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P580&quot;, &quot;label&quot;: &quot;start_time&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Property:Start_date&quot;, &quot;label&quot;: &quot;Start_date&quot;},&quot;crossref&quot;: {&quot;api_proceedings_endpoint_uri&quot;: &quot;https://api.crossref.org/types/proceedings/works?select=event&quot;, &quot;json_api_key&quot;: {&quot;event&quot;: &quot;start&quot;}}}</obo:AEON_0000026>
+        <obo:AEON_0000026>{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P580&quot;, &quot;label&quot;: &quot;start_time&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Property:Start_date&quot;, &quot;label&quot;: &quot;Start_date&quot;},&quot;crossref&quot;: {&quot;api_proceedings_endpoint_uri&quot;: &quot;https://api.crossref.org/types/proceedings/works?select=event&quot;, &quot;json_api_key&quot;: {&quot;event&quot;: &quot;start&quot;}}}</obo:AEON_0000026>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A data property to provide the planned end date of  an organized sociocultural event in the xsd:dateTimeStamp format.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
@@ -1002,7 +1034,7 @@ For now it seems sufficient to have a data property.</obo:IAO_0000116>
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AEON_0000149">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AEON_0000128"/>
-        <obo:AEON_0000026 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P2257&quot;, &quot;label&quot;: &quot;event_interval_inmonths&quot;}}</obo:AEON_0000026>
+        <obo:AEON_0000026>{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P2257&quot;, &quot;label&quot;: &quot;event_interval_inmonths&quot;}}</obo:AEON_0000026>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115>An data property that provides the literal value of the timespan until the next event in a series takes place.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">event frequency</rdfs:label>
@@ -1110,7 +1142,7 @@ cancled → withdrawn</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AEON_0000154">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AEON_0000196"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <obo:AEON_0000026 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P2936&quot;, &quot;label&quot;: &quot;language_usedLabel&quot;}}</obo:AEON_0000026>
+        <obo:AEON_0000026>{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P2936&quot;, &quot;label&quot;: &quot;language_usedLabel&quot;}}</obo:AEON_0000026>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115 xml:lang="en">This data property should be used to provide the language that is officially spoken at an event. Its xsd:string range should preferrably be encoded in the ISO 639-1 standard (e.g. German would be &quot;de&quot;).</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">It needs to be discussed, if a data property is sufficient for our use case, or if it might be better to model the officially spoken language of an academic event as a generically dependent continuant that participates in this planned process as sugessted by the developers of the language ontology (https://github.com/vivo-ontologies/language-ontology/wiki/Usage).</obo:IAO_0000116>
@@ -1140,7 +1172,7 @@ cancled → withdrawn</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AEON_0000157">
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
         <obo:IAO_0000115 xml:lang="en">A data property to provide the meeting link to a virtual event.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">not needed at the moment, but might be reactivated if needed</obo:IAO_0000116>
+        <obo:IAO_0000116>not needed at the moment, but might be reactivated if needed</obo:IAO_0000116>
         <rdfs:label xml:lang="en">obsolete_meeting URL</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:DatatypeProperty>
@@ -1164,7 +1196,7 @@ cancled → withdrawn</rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AEON_0000159">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000158"/>
-        <obo:AEON_0000026 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Property:Attendees&quot;, &quot;label&quot;: &quot;Attendees&quot;}}</obo:AEON_0000026>
+        <obo:AEON_0000026>{&quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Property:Attendees&quot;, &quot;label&quot;: &quot;Attendees&quot;}}</obo:AEON_0000026>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115 xml:lang="en">An academic event metric that provides a literal value for the number of attendees of an academic event.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">number of attendess</rdfs:label>
@@ -1229,7 +1261,7 @@ cancled → withdrawn</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AEON_0000164">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <obo:AEON_0000026 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P856&quot;, &quot;label&quot;: &quot;official_website&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Property:Homepage&quot;, &quot;label&quot;: &quot;Homepage&quot;}}</obo:AEON_0000026>
+        <obo:AEON_0000026>{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P856&quot;, &quot;label&quot;: &quot;official_website&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Property:Homepage&quot;, &quot;label&quot;: &quot;Homepage&quot;}}</obo:AEON_0000026>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
         <obo:IAO_0000115 xml:lang="en">A data property that provides the official website of a planned process.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">event website</rdfs:label>
@@ -1271,10 +1303,10 @@ cancled → withdrawn</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AEON_0000168">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AEON_0000001"/>
-        <obo:AEON_0000026 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P2047&quot;, &quot;label&quot;: &quot;duration&quot;}, &quot;gnd&quot;: {&quot;uri&quot;: &quot;https://d-nb.info/standards/elementset/gnd#dateOfConferenceOrEvent&quot;, &quot;label&quot;: &quot;Date of conference or event&quot;}}</obo:AEON_0000026>
+        <obo:AEON_0000026>{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Property:P2047&quot;, &quot;label&quot;: &quot;duration&quot;}, &quot;gnd&quot;: {&quot;uri&quot;: &quot;https://d-nb.info/standards/elementset/gnd#dateOfConferenceOrEvent&quot;, &quot;label&quot;: &quot;Date of conference or event&quot;}}</obo:AEON_0000026>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
         <obo:IAO_0000115 xml:lang="en">A data property that assigns a time duration to an academic event.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">not needed, as it could be calculated from the start and end data properties</obo:IAO_0000116>
+        <obo:IAO_0000116>not needed, as it could be calculated from the start and end data properties</obo:IAO_0000116>
         <rdfs:label xml:lang="en">obsolete_duration</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:DatatypeProperty>
@@ -1405,7 +1437,7 @@ cancled → withdrawn</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000224"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:AEON_0000026 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Q1656682&quot;, &quot;label&quot;: &quot;eventLabel&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Category:Event&quot;, &quot;label&quot;: &quot;Event&quot;}, &quot;gnd&quot;: {&quot;uri&quot;: &quot;https://d-nb.info/standards/elementset/gnd#ConferenceOrEvent&quot;, &quot;label&quot;: &quot;Conference or Event&quot;}}</obo:AEON_0000026>
+        <obo:AEON_0000026>{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Q1656682&quot;, &quot;label&quot;: &quot;eventLabel&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Category:Event&quot;, &quot;label&quot;: &quot;Event&quot;}, &quot;gnd&quot;: {&quot;uri&quot;: &quot;https://d-nb.info/standards/elementset/gnd#ConferenceOrEvent&quot;, &quot;label&quot;: &quot;Conference or Event&quot;}}</obo:AEON_0000026>
         <obo:IAO_0000112 xml:lang="en">The 19th International Semantic Web Conference (ISWC2020) is an academic  event.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">An organized sociocultural event that refers to a gathering of researchers (not necessarily academics) in which these researches have the chance to present and discuss their work and possible future collaborations, according to a certain sociocultural format that is specified more or less explicitly in the announcement of the academic event.</obo:IAO_0000115>
@@ -1448,7 +1480,7 @@ cancled → withdrawn</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:AEON_0000026 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Q15900647&quot;, &quot;label&quot;: &quot;conference_seriesLabel&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Category:Event_series&quot;, &quot;label&quot;: &quot;Event_series&quot;}, &quot;gnd&quot;: {&quot;uri&quot;: &quot;https://d-nb.info/standards/elementset/gnd#SeriesOfConferenceOrEvent&quot;, &quot;label&quot;: &quot;Series of conference or event&quot;}}</obo:AEON_0000026>
+        <obo:AEON_0000026>{&quot;wikidata&quot;: {&quot;uri&quot;: &quot;https://www.wikidata.org/wiki/Q15900647&quot;, &quot;label&quot;: &quot;conference_seriesLabel&quot;}, &quot;openresearch&quot;: {&quot;uri&quot;: &quot;https://www.openresearch.org/wiki/Category:Event_series&quot;, &quot;label&quot;: &quot;Event_series&quot;}, &quot;gnd&quot;: {&quot;uri&quot;: &quot;https://d-nb.info/standards/elementset/gnd#SeriesOfConferenceOrEvent&quot;, &quot;label&quot;: &quot;Series of conference or event&quot;}}</obo:AEON_0000026>
         <obo:IAO_0000112>International Semantic Web Conference (ISWC)</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">An academic event that is the ordered set of all recurring academic events of a destinct identity. This destinct identity is usually demarked by a shared name that only differs with regard to some ordnial symbol, such as 1st or the year of the academic event.</obo:IAO_0000115>
@@ -1489,6 +1521,12 @@ cancled → withdrawn</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000201"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000220"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1507,7 +1545,7 @@ cancled → withdrawn</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AEON_0000005">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">The contributor role inheres in a person or organization that participates in a planned process by somehow contributing to it.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">usign CRO&apos;s contributor role instead</obo:IAO_0000116>
+        <obo:IAO_0000116>usign CRO&apos;s contributor role instead</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CRO_0000000"/>
@@ -1559,7 +1597,7 @@ cancled → withdrawn</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">OBSOLETE An event organizer role that inheres in a person who is a member of an event committee and thus performs certain actions associated with the objectives/functions of that event committee.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEPRECATION REASON: This role is not needed, as the oostt:&quot;committee member role&quot; relation is sufficient enough.</rdfs:comment>
+        <rdfs:comment>DEPRECATION REASON: This role is not needed, as the oostt:&quot;committee member role&quot; relation is sufficient enough.</rdfs:comment>
         <rdfs:label xml:lang="en">deprecated_event committee member role</rdfs:label>
         <rdfs:seeAlso>https://github.com/tibonto/aeon/issues/144</rdfs:seeAlso>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -1662,7 +1700,7 @@ cancled → withdrawn</rdfs:comment>
         <obo:IAO_0000112>Someone who reviews a manuscript submitted for publication or presentation at an academic event bears a reviewer role.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115 xml:lang="en">A role that inheres in a person who is designated to analyse and judge the information (e.g. text or code) that is the specified input of a particular reviewing process. This role is realized when the reviewing process has been completed as intended.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Contributor Role Ontology CRO contains a role that seems equivalent (http://purl.obolibrary.org/obo/CRO_0000101), but which cannot be used instead, as long as https://github.com/data2health/contributor-role-ontology/issues/135 is not sufficiently answered.</obo:IAO_0000116>
+        <obo:IAO_0000116>The Contributor Role Ontology CRO contains a role that seems equivalent (http://purl.obolibrary.org/obo/CRO_0000101), but which cannot be used instead, as long as https://github.com/data2health/contributor-role-ontology/issues/135 is not sufficiently answered.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">peer-review role</obo:IAO_0000118>
         <rdfs:label xml:lang="en">human reviewer role</rdfs:label>
@@ -1841,7 +1879,7 @@ cancled → withdrawn</rdfs:comment>
         <obo:IAO_0000118 xml:lang="en">Open Researcher and Contributor ID</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/ORCID</obo:IAO_0000119>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000708"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Term imported from Apollo_SV</rdfs:comment>
+        <rdfs:comment>Term imported from Apollo_SV</rdfs:comment>
         <rdfs:label>deprecated_ORCID</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -1885,7 +1923,7 @@ cancled → withdrawn</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000228"/>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000856"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">replaced by ENVO:00000856</rdfs:comment>
+        <rdfs:comment>replaced by ENVO:00000856</rdfs:comment>
         <rdfs:label xml:lang="en">deprecated_city</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000856"/>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/tibonto/aeon/issues/142</rdfs:seeAlso>
@@ -1900,7 +1938,7 @@ cancled → withdrawn</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000228"/>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000009"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">replaced by ENVO term</rdfs:comment>
+        <rdfs:comment>replaced by ENVO term</rdfs:comment>
         <rdfs:label xml:lang="en">deprecated_country</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000009"/>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/tibonto/aeon/issues/142</rdfs:seeAlso>
@@ -1915,7 +1953,7 @@ cancled → withdrawn</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000228"/>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000005"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">replaced by ENVO term</rdfs:comment>
+        <rdfs:comment>replaced by ENVO term</rdfs:comment>
         <rdfs:label xml:lang="en">deprecated_province</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000005"/>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/tibonto/aeon/issues/142</rdfs:seeAlso>
@@ -1994,7 +2032,7 @@ cancled → withdrawn</rdfs:comment>
         <obo:IAO_0000112 xml:lang="en">The service Twitter provides is a virtual location, in which the Twitter users can communicate with each other in a mostly text-based mode.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
         <obo:IAO_0000115 xml:lang="en">A realizable entity that provides a digital space for humans and computers to interact with one another in various digital modes (e.g. text, audio, video, tactile). It specifically depends on the IT infrastructure that is used to realize the virtual location in the planned process of running certain code on certain computers.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">not needed at the moment, but might be reactivated, if needed</obo:IAO_0000116>
+        <obo:IAO_0000116>not needed at the moment, but might be reactivated, if needed</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-1595-3213"/>
         <obo:IAO_0000118 xml:lang="en">virtual site</obo:IAO_0000118>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-14T15:31:27Z</dc:date>
@@ -2082,7 +2120,7 @@ Event committees are usually formed in the planning process of social events, su
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
         <obo:IAO_0000115 xml:lang="en">A conditional specification that, as part of a plan specification or an action specification, defines until when a specified action has to be carried out.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Given the fact that deadlines are specified in various planned processes this term should probably be regarded as a placeholder which ought to be defined in a broader ontology, maybe something like IAO?</obo:IAO_0000116>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000117>https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">deadline specification</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/tibonto/aeon/issues/125"/>
     </owl:Class>
@@ -2095,7 +2133,7 @@ Event committees are usually formed in the planning process of social events, su
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000067"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115 xml:lang="en">An abstract deadline is a submission deadline that, as part of a call for abstracts of an academic event, specifies the date until which a contribution to a planned process in form of an abstract has to be submitted.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000117>https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">abstract deadline</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/tibonto/aeon/issues/125"/>
     </owl:Class>
@@ -2108,7 +2146,7 @@ Event committees are usually formed in the planning process of social events, su
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000067"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115 xml:lang="en">A camera-ready deadline is a submission deadline that, as part of a call for papers of an academic event, specifies the date until which a contribution to a planned process that is ready for publishing has to be submitted.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000117>https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">camera-ready deadline</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/tibonto/aeon/issues/125"/>
     </owl:Class>
@@ -2121,7 +2159,7 @@ Event committees are usually formed in the planning process of social events, su
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000067"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115 xml:lang="en">A demo deadline is a submission deadline that, as part of a call for papers of an academic event, specifies the date until which a contribution to a planned process in form of a demonstration has to be submitted.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000117>https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="de">demo deadline</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/tibonto/aeon/issues/125"/>
     </owl:Class>
@@ -2135,7 +2173,7 @@ Event committees are usually formed in the planning process of social events, su
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
         <obo:IAO_0000115 xml:lang="en">A deadline specification that specifies until when a participant of a planned process has to inform another participant of that process about something concering the plan of the process.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Given the fact that notification deadlines are specified in various planned processes this term should probably be regarded as a placeholder which ought to be defined in a broader ontology, maybe something like IAO?</obo:IAO_0000116>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000117>https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">notification deadline</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/tibonto/aeon/issues/125"/>
     </owl:Class>
@@ -2148,7 +2186,7 @@ Event committees are usually formed in the planning process of social events, su
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000067"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115 xml:lang="en">A paper deadline is a submission deadline that, as part of a call for papers of an academic event, specifies the date until which a contribution to a planned process in form of a paper has to be submitted.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000117>https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">paper deadline</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/tibonto/aeon/issues/125"/>
     </owl:Class>
@@ -2161,7 +2199,7 @@ Event committees are usually formed in the planning process of social events, su
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000067"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115 xml:lang="en">A poster deadline is a submission deadline that, as part of a call for papers of an academic event, specifies the date until which a contribution to a planned process in form of a poster has to be submitted.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000117>https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">poster deadline</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/tibonto/aeon/issues/125"/>
     </owl:Class>
@@ -2175,7 +2213,7 @@ Event committees are usually formed in the planning process of social events, su
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
         <obo:IAO_0000115 xml:lang="en">A deadline specification that determines until when a participant (agent) of a planned process has to submit something to someone or somewhere associated with the further processing of this said something.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Given the fact that submission deadlines are specified in various planned processes this term should probably be regarded as a placeholder which ought to be defined in a broader ontology, maybe something like IAO?</obo:IAO_0000116>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000117>https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">submission deadline</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/tibonto/aeon/issues/125"/>
     </owl:Class>
@@ -2188,7 +2226,7 @@ Event committees are usually formed in the planning process of social events, su
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000067"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115 xml:lang="en">A tutorial deadline is a submission deadline that, as part of a call for papers of an academic event, specifies the date until which a contribution to a planned process in form of a tutorial has to be submitted.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000117>https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">tutorial deadline</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/tibonto/aeon/issues/125"/>
     </owl:Class>
@@ -2201,7 +2239,7 @@ Event committees are usually formed in the planning process of social events, su
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000067"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115 xml:lang="en">A workshop deadline is a submission deadline that, as part of a call for papers of an academic event, specifies the date until which a contribution to a planned process in form of a workshop has to be submitted.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000117>https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="en">workshop deadline</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/tibonto/aeon/issues/125"/>
     </owl:Class>
@@ -2221,7 +2259,7 @@ Event committees are usually formed in the planning process of social events, su
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AEON_0000071"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A call for submissions that calls for paper submissions.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000117>https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">CFP</obo:IAO_0000118>
         <rdfs:label xml:lang="en">call for papers</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/tibonto/aeon/issues/125"/>
@@ -2242,7 +2280,7 @@ Event committees are usually formed in the planning process of social events, su
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A call for submissions that calls for abstract submissions.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000117>https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <rdfs:label xml:lang="de">call for abstracts</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/tibonto/aeon/issues/125"/>
     </owl:Class>
@@ -2283,7 +2321,7 @@ Event committees are usually formed in the planning process of social events, su
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
         <obo:IAO_0000115 xml:lang="en">An identifier that is a proper name identifying a planned process.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">TODO: request term from IAO</obo:IAO_0000116>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000117>https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-13T08:55:02Z</dc:date>
         <rdfs:label xml:lang="en">planned process name</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/tibonto/aeon/issues/132"/>
@@ -3379,6 +3417,7 @@ see also: https://github.com/OBOFoundry/COB/issues/138 wrt the problem of OBO cl
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115>A plan specification that defines an organized sociocultural event by providing its topic or purpose, as well as implicit and explicit details on who is suppose to attend and how this event is planned to be carried out by its participants, in terms of achieving particular objectives, fulfilling particular conditions and performing particular actions.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">When we speak of implicit details in the definition of this class, we mean the fact that, apart from explicitly providing information about e.g. the location and participation conditions of such an event in its announcement, details regarding its sociocultural format often remains tacit and are implied by the use of commonly known event type labels. Saying for example, &quot;We&apos;re happy to announce the 11th international conference on sociolinguistics.&quot;, implies this &apos;conference&apos; to be planned and executed by legitimate organizers, to have a certain formal code of conduct expected to be adhered to by the participants, or that is intended for a rather large and diverse audience. Similarly denoting an organized sociocultural event as a &quot;birthday party&quot;, implies that one has to be invited to attend, or that one would be considered rude if one were to &apos;steel the show&apos; from the person being celebrated.</obo:IAO_0000116>
@@ -3395,17 +3434,50 @@ see also: https://github.com/OBOFoundry/COB/issues/138 wrt the problem of OBO cl
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AEON_0000032"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000195"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000195"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000006"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000010"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <obo:IAO_0000115>A planned process that is a gathering of people organized by one or more people for a particular purpose, often with a particular theme and to be realized within a particular sociocultural format. It may be one-time, occasional or sporadic, or recurring/periodic.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process that is a planned gathering of people organized by one or more people for a particular purpose, often with a particular theme and to be realized within a particular sociocultural format. It may be one-time, occasional or sporadic, or recurring/periodic.</obo:IAO_0000115>
         <obo:IAO_0000116>There are certain children of this “organized sociocultural event” class, that are most likely unproblematic to define using an Aristotelian approach, such as &quot;party&quot;, &quot;online event&quot;, &quot;business event&quot;, &quot;networking event&quot; or &quot;academic event&quot;. All of these are organised sociocultural events (OSCEs) with a rather clear theme, purpose and shared implied event format. A party, for example, will in most cultures be an OSCE that serves the purpose to celebrate something and its format will in most cases be rightly expected to be informal. Similarly, a business event will in most cultures be considered an OSCE with the primary goal of doing some form of business and thus its participants are expected to adhere to certain conventions on how to behave according to the sociocultural context of the particular OSCE. However, as soon as we try to get more specific in the definition of possible OSCE subclasses, we run into the problem of finding appropriate differentia criteria and that there is a multitude of possible combinations of such very general concepts. For example, we would need to define an &quot;online business networking party&quot; class, if we needed to represent an OSCE that entails all of these aspects as central part of its theme and context dependent sociocultural event format. Thus, the children of OSCEs should not be understood as universal classes but rather always as defined classes, if we need to take into account that the labels, used to denote the concepts representing the various types of OSCEs, differ depending on the social and cultural context in which they are used. In other words these concepts might better be understood as sociocultural constructs or prototypes. The dimensions in which OSCEs are to be defined by their sociocultural event format are the obvious &quot;what&quot;, &quot;when&quot;, &quot;who&quot;, &quot;where&quot;, and &quot;how&quot; questions. As planned processes they are determined by a plan to facilitate a gathering of people according to some kind of purpose or theme and sociocultural format. Yet, such a plan is not something we can easily make assertions about, since it resides in the brains of the participants of an OSCEs. What we can make assertions about is the communicated information from which the specification of an OSCE plan can be derived. What the organizers of an OSCE have stated about their plan, makes up the sociocultural format that defines the characteristics of an OSCE. Hence, we narrow the OBI pattern of defining a planned process via its plan specification, by introducing a special type of plan specification, called sociocultural event format, to define this class and its children, well knowing that this adds a layer of complexity usually not needed in human communication, but needed to enable machine reasoning.
 
 This class is only defined as a placeholder in AEON and should actually better be defined in a more general OBO based or BFO aligned ontology. Its current inclusion in AEON is thus meant only as a demonstration of the proposed organized sociocultural event pattern.</obo:IAO_0000116>
@@ -3418,7 +3490,7 @@ This class is only defined as a placeholder in AEON and should actually better b
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/AEON_0000196"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A planned process that is a gathering of people organized by one or more people for a particular purpose, often with a particular theme and to be realized within a particular sociocultural format. It may be one-time, occasional or sporadic, or recurring/periodic.</owl:annotatedTarget>
+        <owl:annotatedTarget>A process that is a planned gathering of people organized by one or more people for a particular purpose, often with a particular theme and to be realized within a particular sociocultural format. It may be one-time, occasional or sporadic, or recurring/periodic.</owl:annotatedTarget>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Category:Organized_events</obo:IAO_0000119>
     </owl:Axiom>
     <owl:Axiom>
@@ -3458,6 +3530,7 @@ This class is only defined as a placeholder in AEON and should actually better b
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115 xml:lang="en">An organized sociocultural event that is the set of all recurring organized sociocultural events of a destinct identity. This destinct identity is usually demarked by a shared name that only differs with regard to some ordnial symbol, such as 1st or the year of the organized sociocultural event.</obo:IAO_0000115>
         <dc:creator rdf:resource="https://orcid.org/0000-0002-1595-3213"/>
@@ -3530,6 +3603,7 @@ This class is only defined as a placeholder in AEON and should actually better b
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AEON_0000203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
         <obo:IAO_0000115>A sociocultural event format that states that the primary purpose (objective) of an organised sociocultural event is to facilitate a busines communication and actions between its participants and which specifies the formal mode of this communication process.</obo:IAO_0000115>
         <dc:creator rdf:resource="https://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">business event format</rdfs:label>
@@ -3542,7 +3616,8 @@ This class is only defined as a placeholder in AEON and should actually better b
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AEON_0000201">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115 xml:lang="en">An objective specifiaction that describes one of the main goals of a planned process to be the facilitation of an excahnge of knowledge between the participants of this planned process.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
+        <obo:IAO_0000115 xml:lang="en">An objective specifiaction that describes one of the main goals of a planned process to be the facilitation of an exchange of knowledge between the participants of this planned process.</obo:IAO_0000115>
         <dc:creator rdf:resource="https://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">knowledge exchange objective</rdfs:label>
     </owl:Class>
@@ -3576,6 +3651,7 @@ This class is only defined as a placeholder in AEON and should actually better b
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AEON_0000203">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000423"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115 xml:lang="en">An objective specifiaction that describes one of the main goals of a planned process to be the facilitation of business related comminucation and actions between the participants of this planned process.</obo:IAO_0000115>
         <dc:creator rdf:resource="https://orcid.org/0000-0002-1595-3213"/>
@@ -3638,7 +3714,6 @@ This class is only defined as a placeholder in AEON and should actually better b
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000110"/>
         <obo:IAO_0000115 xml:lang="en">A session format that has as part some demonstration format.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <rdfs:label xml:lang="en">demo session format</rdfs:label>
@@ -3774,7 +3849,6 @@ This class is only defined as a placeholder in AEON and should actually better b
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000117"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">An academic event track that has the goal to allow exemplary demonstrations of of work that has been implemented in a particular context and that fits into the topic (theme) of the academic event of which this track is a part of.</obo:IAO_0000115>
         <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
@@ -3900,7 +3974,7 @@ This class is only defined as a placeholder in AEON and should actually better b
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000030"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/AEON_0000226"/>
         <obo:IAO_0000115 xml:lang="en">An event fee specification that, as part of a plan specification, defines the currency and amount of money a person has to pay to attend an event.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000117>https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-05T10:14:06Z</dc:date>
         <rdfs:label xml:lang="en">attendance fee specification</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/tibonto/aeon/issues/117"/>
@@ -3913,7 +3987,7 @@ This class is only defined as a placeholder in AEON and should actually better b
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/AEON_0000226">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AEON_0000030"/>
         <obo:IAO_0000115 xml:lang="en">An event fee specification that, as part of a plan specification, defines the currency and amount of money a sponsor has to pay to sponsor an event.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000117>https://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-05T10:15:52Z</dc:date>
         <rdfs:label xml:lang="en">sponsor fee specification</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/tibonto/aeon/issues/117"/>
@@ -3930,6 +4004,12 @@ This class is only defined as a placeholder in AEON and should actually better b
     <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
     
 
 
@@ -4296,7 +4376,7 @@ Do you help make scholarly data open, found, and consumed? Do you have fresh ide
 
     <owl:NamedIndividual rdf:about="https://www.confident-conference.org/index.php/Event:VIVO_2021_id">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AEON_0000003"/>
-        <obo:OBI_0002815 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VIVO_2020</obo:OBI_0002815>
+        <obo:OBI_0002815>VIVO_2020</obo:OBI_0002815>
         <obo:IAO_0000115>An example academic event internal ID.</obo:IAO_0000115>
         <rdfs:label>Event:VIVO_2021_id</rdfs:label>
     </owl:NamedIndividual>
@@ -4307,7 +4387,7 @@ Do you help make scholarly data open, found, and consumed? Do you have fresh ide
 
     <owl:NamedIndividual rdf:about="https://www.confident-conference.org/index.php/Event:VIVO_2021_name">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AEON_0000090"/>
-        <obo:AEON_0000091 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VIVO 2021</obo:AEON_0000091>
+        <obo:AEON_0000091>VIVO 2021</obo:AEON_0000091>
         <rdfs:label>Event:VIVO_2021_name</rdfs:label>
         <skos:altLabel>12th Annual VIVO Conference 2021</skos:altLabel>
         <skos:prefLabel>12th International VIVO Conference 2021</skos:prefLabel>
@@ -4592,5 +4672,5 @@ Do you help make scholarly data open, found, and consumed? Do you have fresh ide
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
 
