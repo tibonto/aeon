@@ -1307,7 +1307,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000030 "A conditional specificatio
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000030 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000030 "event fee specification"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000030 <https://github.com/tibonto/aeon/issues/117>)
-EquivalentClasses(obo:AEON_0000030 ObjectIntersectionOf(obo:IAO_0000001 ObjectSomeValuesFrom(obo:AEON_0000179 obo:OBI_0000011) DataExactCardinality(1 obo:AEON_0000153 xsd:decimal) DataExactCardinality(1 obo:AEON_0000166 xsd:normalizedString)))
+EquivalentClasses(obo:AEON_0000030 ObjectIntersectionOf(obo:IAO_0000001 ObjectSomeValuesFrom(obo:AEON_0000179 obo:AEON_0000196) DataExactCardinality(1 obo:AEON_0000153 xsd:decimal) DataExactCardinality(1 obo:AEON_0000166 xsd:normalizedString)))
 DisjointClasses(obo:AEON_0000030 obo:AEON_0000060)
 
 # Class: obo:AEON_0000034 (decentralized identifier document)
