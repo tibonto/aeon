@@ -997,7 +997,6 @@ AnnotationAssertion(skos:altLabel obo:AEON_0000001 "wissenschaftliche Veranstalt
 AnnotationAssertion(skos:closeMatch obo:AEON_0000001 <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent>)
 EquivalentClasses(obo:AEON_0000001 ObjectIntersectionOf(obo:AEON_0000196 ObjectSomeValuesFrom(obo:AEON_0000032 obo:AEON_0000004)))
 SubClassOf(obo:AEON_0000001 ObjectSomeValuesFrom(obo:AEON_0000043 obo:AEON_0000030))
-SubClassOf(obo:AEON_0000001 ObjectSomeValuesFrom(obo:AEON_0000084 obo:AEON_0000002))
 SubClassOf(obo:AEON_0000001 ObjectSomeValuesFrom(ObjectInverseOf(obo:IAO_0000136) obo:AEON_0000223))
 SubClassOf(obo:AEON_0000001 ObjectSomeValuesFrom(ObjectInverseOf(obo:IAO_0000136) obo:AEON_0000224))
 
