@@ -1101,13 +1101,11 @@ SubClassOf(obo:AEON_0000010 ObjectAllValuesFrom(obo:RO_0000081 obo:NCBITaxon_960
 
 # Class: obo:AEON_0000011 (event moderator role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000011 "The moderating role inheres in a person that contributes to a planned process by facilitating the communication."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000011 "An event attendee role that inheres in a person who officially facilitates the communication between attendees of an organized sociocultural event."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000011 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000011 "event moderator role"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000011 "https://github.com/tibonto/aeon/issues/144")
-SubClassOf(obo:AEON_0000011 obo:BFO_0000023)
-SubClassOf(obo:AEON_0000011 ObjectSomeValuesFrom(obo:BFO_0000054 obo:AEON_0000196))
-SubClassOf(obo:AEON_0000011 ObjectAllValuesFrom(obo:RO_0000081 obo:NCBITaxon_9606))
+SubClassOf(obo:AEON_0000011 obo:AEON_0000010)
 
 # Class: obo:AEON_0000012 (human reviewer role)
 
