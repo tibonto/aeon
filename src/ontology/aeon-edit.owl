@@ -610,12 +610,12 @@ ObjectPropertyRange(obo:AEON_0000179 obo:AEON_0000196)
 
 # Object Property: obo:AEON_0000180 (describes event topic of)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000180 "see also inverse property: A relation obtaining between an 'event topic descriptor' and a obi:'planned process', in which the former is used to descibe the theme of the latter."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000180 "see also inverse property: A relation obtaining between an 'event topic descriptor' and an 'organized sociocultural event', in which the former is used to descibe the theme of the latter."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000180 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000180 "describes event topic of"@en)
 SubObjectPropertyOf(obo:AEON_0000180 obo:IAO_0000136)
 ObjectPropertyDomain(obo:AEON_0000180 obo:AEON_0000028)
-ObjectPropertyRange(obo:AEON_0000180 obo:OBI_0000011)
+ObjectPropertyRange(obo:AEON_0000180 obo:AEON_0000196)
 
 # Object Property: obo:AEON_0000181 (has WikiCFP identifier)
 
