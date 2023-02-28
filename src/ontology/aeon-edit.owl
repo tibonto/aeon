@@ -350,12 +350,12 @@ ObjectPropertyRange(obo:AEON_0000041 obo:AEON_0000028)
 
 # Object Property: obo:AEON_0000043 (has event fee specification)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000043 "A relation obtaining between a obi:'planned process' and an 'event fee specification'."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000043 "inverse of 'specifies event fee of'"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000043 "https://orcid.org/0000-0002-1595-3213"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:AEON_0000043 "has event fee specification"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000043 <https://github.com/tibonto/aeon/issues/117>)
 InverseObjectProperties(obo:AEON_0000043 obo:AEON_0000179)
-ObjectPropertyDomain(obo:AEON_0000043 obo:OBI_0000011)
+ObjectPropertyDomain(obo:AEON_0000043 obo:AEON_0000196)
 ObjectPropertyRange(obo:AEON_0000043 obo:AEON_0000030)
 
 # Object Property: obo:AEON_0000072 (specifies deadline of)
