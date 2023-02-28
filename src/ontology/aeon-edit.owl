@@ -599,14 +599,14 @@ ObjectPropertyRange(obo:AEON_0000178 obo:AEON_0000196)
 
 # Object Property: obo:AEON_0000179 (specifies event fee of)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000179 "A relation obtaining between an 'event fee specification' and a obi:'planned process'."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000179 "A relation used to limit the kind of information about an 'organized sociocultural event' to be of the type 'event fee specification'."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:AEON_0000179 "https://orcid.org/0000-0002-1595-3213")
 AnnotationAssertion(dce:date obo:AEON_0000179 "2021-06-28T12:48:49Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:AEON_0000179 "specifies event fee of"@en)
 AnnotationAssertion(rdfs:seeAlso obo:AEON_0000179 <https://github.com/tibonto/aeon/issues/117>)
 SubObjectPropertyOf(obo:AEON_0000179 obo:IAO_0000136)
 ObjectPropertyDomain(obo:AEON_0000179 obo:AEON_0000030)
-ObjectPropertyRange(obo:AEON_0000179 obo:OBI_0000011)
+ObjectPropertyRange(obo:AEON_0000179 obo:AEON_0000196)
 
 # Object Property: obo:AEON_0000180 (describes event topic of)
 
