@@ -909,6 +909,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000163 "A data property of an acad
 AnnotationAssertion(rdfs:label obo:AEON_0000163 "proceedings cite count"@en)
 SubDataPropertyOf(obo:AEON_0000163 obo:AEON_0000158)
 DataPropertyDomain(obo:AEON_0000163 obo:AEON_0000223)
+DataPropertyRange(obo:AEON_0000163 xsd:integer)
 
 # Data Property: obo:AEON_0000164 (event website)
 
@@ -927,6 +928,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000165 "A data property of an acad
 AnnotationAssertion(rdfs:label obo:AEON_0000165 "series cite count"@en)
 SubDataPropertyOf(obo:AEON_0000165 obo:AEON_0000158)
 DataPropertyDomain(obo:AEON_0000165 obo:AEON_0000223)
+DataPropertyRange(obo:AEON_0000165 xsd:integer)
 
 # Data Property: obo:AEON_0000166 (event fee currency)
 
