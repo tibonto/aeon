@@ -561,11 +561,11 @@ ObjectPropertyRange(obo:AEON_0000088 obo:ENVO_00000005)
 # Object Property: obo:AEON_0000089 (occurs in event venue)
 
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000089 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000089 "A relation obtaining between a bfo:occurent and the event venue in which it occurs."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000089 "A relation obtaining between an organized sociocultural event and the venue in which it occurs."@en)
 AnnotationAssertion(dcterms:contributor obo:AEON_0000089 <https://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:AEON_0000089 "occurs in event venue"@en)
 SubObjectPropertyOf(obo:AEON_0000089 obo:BFO_0000066)
-ObjectPropertyDomain(obo:AEON_0000089 obo:BFO_0000003)
+ObjectPropertyDomain(obo:AEON_0000089 obo:AEON_0000196)
 ObjectPropertyRange(obo:AEON_0000089 obo:AEON_0000025)
 
 # Object Property: obo:AEON_0000175 (describes academic field of)
