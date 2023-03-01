@@ -897,7 +897,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000164 obo:IAO_0000423)
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000164 "A data property that provides the official website of a planned process."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000164 "event website"@en)
 AnnotationAssertion(skos:closeMatch obo:AEON_0000164 "https://www.wikidata.org/wiki/Property:P856")
-DataPropertyDomain(obo:AEON_0000164 obo:OBI_0000011)
+DataPropertyDomain(obo:AEON_0000164 obo:AEON_0000196)
 DataPropertyRange(obo:AEON_0000164 xsd:anyURI)
 
 # Data Property: obo:AEON_0000165 (series cite count)
