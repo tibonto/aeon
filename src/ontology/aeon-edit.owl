@@ -334,7 +334,7 @@ ObjectPropertyRange(obo:AEON_0000033 obo:AEON_0000034)
 
 # Object Property: obo:AEON_0000040 (has academic field descriptor)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000040 "A relation obtaining between an 'academic event' and an academic field descriptor that is used to describe the scientific subject of the planned process or information content entiy according to some controlled vocabulary or thesaurus."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000040 "A relation obtaining between a planned process or an information content entity and an academic field descriptor that is used to associate the planned process or information content entiy with an academic field (scientific subject) according to some controlled vocabulary or thesaurus."@en)
 AnnotationAssertion(dcterms:contributor obo:AEON_0000040 <https://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:AEON_0000040 "has academic field descriptor"@en)
 SubObjectPropertyOf(obo:AEON_0000040 ObjectInverseOf(obo:IAO_0000136))
@@ -563,7 +563,7 @@ ObjectPropertyRange(obo:AEON_0000089 obo:AEON_0000025)
 
 # Object Property: obo:AEON_0000175 (describes academic field of)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000175 "see also inverse property: A relation obtaining between an 'academic field descriptor' and a planned process or information content entity, in which the former is used to descibe the scientific subject of the latter according to some controlled vocabulary or thesaurus."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000175 "see  inverse property"@en)
 AnnotationAssertion(dcterms:contributor obo:AEON_0000175 <https://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:AEON_0000175 "describes academic field of"@en)
 SubObjectPropertyOf(obo:AEON_0000175 obo:IAO_0000136)
