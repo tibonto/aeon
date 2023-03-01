@@ -740,23 +740,28 @@ DataPropertyDomain(obo:AEON_0000144 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_000
 # Data Property: obo:AEON_0000145 (acceptance rate)
 
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000145 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000145 "An academic event metric that provides a rate consiting of the number of accepted papers devided by the number of submitted papers."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000145 "A data property of an academic event metric that provides a rate consiting of the number of accepted papers devided by the number of submitted papers."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000145 "acceptance rate"@en)
 SubDataPropertyOf(obo:AEON_0000145 obo:AEON_0000158)
+DataPropertyDomain(obo:AEON_0000145 obo:AEON_0000223)
 
-# Data Property: obo:AEON_0000146 (accepted papers)
+# Data Property: obo:AEON_0000146 (number of accepted papers)
 
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000146 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000146 "An academic event metric that provides the literal value for the number of papers that where accepted to be present at an academic event."@en)
-AnnotationAssertion(rdfs:label obo:AEON_0000146 "accepted papers"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000146 "A data property of an academic event metric that provides the literal value for the number of papers that where accepted to be present at an academic event."@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000146 "number of accepted papers"@en)
 SubDataPropertyOf(obo:AEON_0000146 obo:AEON_0000158)
+DataPropertyDomain(obo:AEON_0000146 obo:AEON_0000223)
+DataPropertyRange(obo:AEON_0000146 xsd:integer)
 
-# Data Property: obo:AEON_0000147 (accepted short papers)
+# Data Property: obo:AEON_0000147 (number of accepted short papers)
 
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000147 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000147 "An academic event metric that provides the literal value for the number of short papers that where accepted to be present at an academic event.")
-AnnotationAssertion(rdfs:label obo:AEON_0000147 "accepted short papers"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000147 "A data property of an academic event metric that provides the literal value for the number of short papers that where accepted to be present at an academic event.")
+AnnotationAssertion(rdfs:label obo:AEON_0000147 "number of accepted short papers"@en)
 SubDataPropertyOf(obo:AEON_0000147 obo:AEON_0000158)
+DataPropertyDomain(obo:AEON_0000147 obo:AEON_0000223)
+DataPropertyRange(obo:AEON_0000147 xsd:integer)
 
 # Data Property: obo:AEON_0000148 (coordinates)
 
@@ -791,12 +796,12 @@ AnnotationAssertion(rdfs:label obo:AEON_0000150 "event status"@en)
 DataPropertyDomain(obo:AEON_0000150 obo:AEON_0000196)
 DataPropertyRange(obo:AEON_0000150 DataOneOf("as scheduled" "canceled" "delayed" "planned" "postponed"))
 
-# Data Property: obo:AEON_0000151 (event type other)
+# Data Property: obo:AEON_0000151 (event format literal)
 
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000151 obo:IAO_0000125)
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000151 "A data property that can be used to literally specify a sociocultural event format when the sublcasses of 'sociocultural event format' defined in AEON do not fit for a given event format."@en)
 AnnotationAssertion(obo:IAO_0000233 obo:AEON_0000151 <https://github.com/tibonto/aeon/issues/139>)
-AnnotationAssertion(rdfs:label obo:AEON_0000151 "event type other"@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000151 "event format literal"@en)
 SubDataPropertyOf(obo:AEON_0000151 obo:OBI_0002815)
 DataPropertyDomain(obo:AEON_0000151 obo:AEON_0000195)
 DataPropertyRange(obo:AEON_0000151 xsd:string)
@@ -804,9 +809,10 @@ DataPropertyRange(obo:AEON_0000151 xsd:string)
 # Data Property: obo:AEON_0000152 (CORE ranking)
 
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000152 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000152 "An academic event metric to provide the literal value of the CORE rank. See also: https://www.core.edu.au/conference-portal"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000152 "A data property of an academic event metric to provide the literal value of the CORE rank. See also: https://www.core.edu.au/conference-portal"@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000152 "CORE ranking"@en)
 SubDataPropertyOf(obo:AEON_0000152 obo:AEON_0000158)
+DataPropertyDomain(obo:AEON_0000152 obo:AEON_0000223)
 
 # Data Property: obo:AEON_0000153 (event fee value)
 
@@ -850,7 +856,7 @@ AnnotationAssertion(owl:deprecated obo:AEON_0000157 "true"^^xsd:boolean)
 # Data Property: obo:AEON_0000158 (academic event metric value)
 
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000158 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000158 "A data property to provide a literal value for an academic event metric."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000158 "A data property of an academic event metric to provide a literal value for an academic event metric."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000158 "Using data properties for the modeling of academic event metrics was the first adhoc way of representing this. It thus needs to be discussed and worked on."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000158 "academic event metric value"@en)
 SubDataPropertyOf(obo:AEON_0000158 obo:OBI_0002815)
@@ -869,9 +875,11 @@ DataPropertyRange(obo:AEON_0000159 xsd:integer)
 # Data Property: obo:AEON_0000160 (number of tracks)
 
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000160 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000160 "An academic event metric that provides a literal value for the numer of tracks of an academic event."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000160 "A data property of an academic event metric that provides a literal value for the numer of tracks of an academic event."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000160 "number of tracks"@en)
 SubDataPropertyOf(obo:AEON_0000160 obo:AEON_0000158)
+DataPropertyDomain(obo:AEON_0000160 obo:AEON_0000223)
+DataPropertyRange(obo:AEON_0000160 xsd:integer)
 
 # Data Property: obo:AEON_0000161 (previous end date)
 
@@ -894,12 +902,14 @@ SubDataPropertyOf(obo:AEON_0000162 obo:AEON_0000142)
 DataPropertyDomain(obo:AEON_0000162 obo:AEON_0000196)
 DataPropertyRange(obo:AEON_0000162 xsd:dateTimeStamp)
 
-# Data Property: obo:AEON_0000163 (proceeding cite count)
+# Data Property: obo:AEON_0000163 (proceedings cite count)
 
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000163 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000163 "An academic event metric to be used to provide the literal value of the number of times the proceedings of an academic event have being cited."@en)
-AnnotationAssertion(rdfs:label obo:AEON_0000163 "proceeding cite count"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000163 "A data property of an academic event metric to provide the literal value of the number of times the proceedings of an academic event have being cited."@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000163 "proceedings cite count"@en)
 SubDataPropertyOf(obo:AEON_0000163 obo:AEON_0000158)
+DataPropertyDomain(obo:AEON_0000163 obo:AEON_0000223)
+DataPropertyRange(obo:AEON_0000163 xsd:integer)
 
 # Data Property: obo:AEON_0000164 (event website)
 
@@ -914,9 +924,11 @@ DataPropertyRange(obo:AEON_0000164 xsd:anyURI)
 # Data Property: obo:AEON_0000165 (series cite count)
 
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000165 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000165 "An academic event series metric to be used to provide the literal value of the number of times the series was being cited."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000165 "A data property of an academic event metric to be used to provide the literal value of the number of times the series was being cited."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000165 "series cite count"@en)
 SubDataPropertyOf(obo:AEON_0000165 obo:AEON_0000158)
+DataPropertyDomain(obo:AEON_0000165 obo:AEON_0000223)
+DataPropertyRange(obo:AEON_0000165 xsd:integer)
 
 # Data Property: obo:AEON_0000166 (event fee currency)
 
@@ -951,12 +963,14 @@ AnnotationAssertion(rdfs:label obo:AEON_0000169 "sponsor type"@en)
 DataPropertyDomain(obo:AEON_0000169 obo:AEON_0000015)
 DataPropertyRange(obo:AEON_0000169 xsd:string)
 
-# Data Property: obo:AEON_0000170 (submitted papers)
+# Data Property: obo:AEON_0000170 (number of submitted papers)
 
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000170 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000170 "An academic event metric that provides the literal value for the number of papers that where submitted to be present at an academic event."@en)
-AnnotationAssertion(rdfs:label obo:AEON_0000170 "submitted papers"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000170 "A data property of an academic event metric that provides the literal value for the number of papers that where submitted to be present at an academic event."@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000170 "number of submitted papers"@en)
 SubDataPropertyOf(obo:AEON_0000170 obo:AEON_0000158)
+DataPropertyDomain(obo:AEON_0000170 obo:AEON_0000223)
+DataPropertyRange(obo:AEON_0000170 xsd:integer)
 
 # Data Property: obo:AEON_0000171 (event venue literal)
 
