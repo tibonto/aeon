@@ -827,7 +827,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000155 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000155 "A data property to provide a literal value for the location (e.g. address) of an organized sociocultural event."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:AEON_0000155 "This is an artefact from a very early version of AEON that is most likely to be obsoleted, as there should be better ways to model the locations of an academic event."@en)
 AnnotationAssertion(rdfs:label obo:AEON_0000155 "location"@en)
-SubDataPropertyOf(obo:AEON_0000155 obo:AEON_0000171)
 DataPropertyDomain(obo:AEON_0000155 obo:AEON_0000025)
 
 # Data Property: obo:AEON_0000157 (obsolete_meeting URL)
