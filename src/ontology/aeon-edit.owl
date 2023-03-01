@@ -856,13 +856,15 @@ AnnotationAssertion(rdfs:label obo:AEON_0000158 "academic event metric value"@en
 SubDataPropertyOf(obo:AEON_0000158 obo:OBI_0002815)
 DataPropertyDomain(obo:AEON_0000158 obo:AEON_0000223)
 
-# Data Property: obo:AEON_0000159 (number of attendess)
+# Data Property: obo:AEON_0000159 (number of attendees)
 
 AnnotationAssertion(obo:AEON_0000026 obo:AEON_0000159 "{\"openresearch\": {\"uri\": \"https://www.openresearch.org/wiki/Property:Attendees\", \"label\": \"Attendees\"}}")
 AnnotationAssertion(obo:IAO_0000114 obo:AEON_0000159 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000159 "An academic event metric that provides a literal value for the number of attendees of an academic event."@en)
-AnnotationAssertion(rdfs:label obo:AEON_0000159 "number of attendess"@en)
-SubDataPropertyOf(obo:AEON_0000159 obo:AEON_0000158)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000159 "A data property that provides a literal value for the number of attendees of an organized sociocultural event."@en)
+AnnotationAssertion(rdfs:label obo:AEON_0000159 "number of attendees"@en)
+SubDataPropertyOf(obo:AEON_0000159 owl:topDataProperty)
+DataPropertyDomain(obo:AEON_0000159 obo:AEON_0000196)
+DataPropertyRange(obo:AEON_0000159 xsd:integer)
 
 # Data Property: obo:AEON_0000160 (number of tracks)
 
