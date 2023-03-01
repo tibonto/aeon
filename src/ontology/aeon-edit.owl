@@ -509,13 +509,13 @@ ObjectPropertyRange(obo:AEON_0000084 obo:AEON_0000197)
 
 # Object Property: obo:AEON_0000085 (umbrella event of)
 
-AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000085 "see also inverse property: A relation obtaining between an academic event and another academic event or event series. An umbrelle event/series is a superordinate event/series that combines several smaller academic events/series at the same time."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:AEON_0000085 "see also inverse property: 'has umbrella event'"@en)
 AnnotationAssertion(dcterms:contributor obo:AEON_0000085 <https://orcid.org/0000-0002-1595-3213>)
 AnnotationAssertion(rdfs:label obo:AEON_0000085 "umbrella event of"@en)
 SubObjectPropertyOf(obo:AEON_0000085 obo:RO_0002012)
 InverseObjectProperties(obo:AEON_0000085 obo:AEON_0000178)
-ObjectPropertyDomain(obo:AEON_0000085 obo:AEON_0000001)
-ObjectPropertyRange(obo:AEON_0000085 obo:AEON_0000001)
+ObjectPropertyDomain(obo:AEON_0000085 obo:AEON_0000196)
+ObjectPropertyRange(obo:AEON_0000085 obo:AEON_0000196)
 
 # Object Property: obo:AEON_0000086 (occurs in country)
 
